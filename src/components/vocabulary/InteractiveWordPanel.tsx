@@ -1,7 +1,8 @@
 import { motion, AnimatePresence } from 'framer-motion';
-import { X, Volume2, ExternalLink } from 'lucide-react';
+import { X, Volume2, ExternalLink, Loader2 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { VocabularyWord } from '@/types/learning';
+import { useSpeech, Accent } from '@/lib/speech';
 
 interface InteractiveWordPanelProps {
   word: VocabularyWord | null;
@@ -10,10 +11,16 @@ interface InteractiveWordPanelProps {
 }
 
 export function InteractiveWordPanel({ word, onClose, position }: InteractiveWordPanelProps) {
+  const { speak, isSpeaking, currentAccent, isSupported } = useSpeech();
+
   if (!word) return null;
 
-  const playAudio = (type: 'uk' | 'us') => {
-    console.log(`Playing ${type.toUpperCase()} pronunciation for: ${word.word}`);
+  const playAudio = async (accent: Accent) => {
+    if (!isSupported) {
+      console.warn('Speech synthesis not supported');
+      return;
+    }
+    await speak(word.word, accent);
   };
 
   return (
@@ -51,18 +58,32 @@ export function InteractiveWordPanel({ word, onClose, position }: InteractiveWor
                 variant="ghost"
                 size="icon-sm"
                 onClick={() => playAudio('uk')}
-                className="h-6 w-6 hover:text-primary"
+                disabled={isSpeaking}
+                className={`h-6 w-6 hover:text-primary ${
+                  isSpeaking && currentAccent === 'uk' ? 'text-primary' : ''
+                }`}
               >
-                <Volume2 className="w-3 h-3" />
+                {isSpeaking && currentAccent === 'uk' ? (
+                  <Loader2 className="w-3 h-3 animate-spin" />
+                ) : (
+                  <Volume2 className="w-3 h-3" />
+                )}
               </Button>
               <span className="text-xs text-muted-foreground">UK</span>
               <Button
                 variant="ghost"
                 size="icon-sm"
                 onClick={() => playAudio('us')}
-                className="h-6 w-6 hover:text-primary"
+                disabled={isSpeaking}
+                className={`h-6 w-6 hover:text-primary ${
+                  isSpeaking && currentAccent === 'us' ? 'text-primary' : ''
+                }`}
               >
-                <Volume2 className="w-3 h-3" />
+                {isSpeaking && currentAccent === 'us' ? (
+                  <Loader2 className="w-3 h-3 animate-spin" />
+                ) : (
+                  <Volume2 className="w-3 h-3" />
+                )}
               </Button>
               <span className="text-xs text-muted-foreground">US</span>
             </div>
