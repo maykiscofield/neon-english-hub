@@ -1,9 +1,10 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Volume2, ChevronDown, ChevronUp, Bookmark, BookmarkCheck } from 'lucide-react';
+import { Volume2, ChevronDown, ChevronUp, Bookmark, BookmarkCheck, Loader2 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { VocabularyWord } from '@/types/learning';
 import { LevelBadge } from '@/components/dashboard/LevelBadge';
+import { useSpeech, Accent } from '@/lib/speech';
 
 interface WordCardProps {
   word: VocabularyWord;
@@ -14,10 +15,14 @@ interface WordCardProps {
 export function WordCard({ word, showExamples = true, compact = false }: WordCardProps) {
   const [isExpanded, setIsExpanded] = useState(!compact);
   const [isSaved, setIsSaved] = useState(false);
+  const { speak, isSpeaking, currentAccent, isSupported } = useSpeech();
 
-  const playAudio = (type: 'uk' | 'us') => {
-    // In a real app, this would play the actual audio
-    console.log(`Playing ${type.toUpperCase()} pronunciation for: ${word.word}`);
+  const playAudio = async (accent: Accent) => {
+    if (!isSupported) {
+      console.warn('Speech synthesis not supported');
+      return;
+    }
+    await speak(word.word, accent);
   };
 
   return (
@@ -44,9 +49,16 @@ export function WordCard({ word, showExamples = true, compact = false }: WordCar
                 variant="ghost"
                 size="icon-sm"
                 onClick={() => playAudio('uk')}
-                className="hover:text-primary"
+                disabled={isSpeaking}
+                className={`hover:text-primary transition-all ${
+                  isSpeaking && currentAccent === 'uk' ? 'text-primary animate-pulse' : ''
+                }`}
               >
-                <Volume2 className="w-4 h-4" />
+                {isSpeaking && currentAccent === 'uk' ? (
+                  <Loader2 className="w-4 h-4 animate-spin" />
+                ) : (
+                  <Volume2 className="w-4 h-4" />
+                )}
                 <span className="sr-only">UK pronunciation</span>
               </Button>
               <span className="text-xs">UK</span>
@@ -55,9 +67,16 @@ export function WordCard({ word, showExamples = true, compact = false }: WordCar
                 variant="ghost"
                 size="icon-sm"
                 onClick={() => playAudio('us')}
-                className="hover:text-primary"
+                disabled={isSpeaking}
+                className={`hover:text-primary transition-all ${
+                  isSpeaking && currentAccent === 'us' ? 'text-primary animate-pulse' : ''
+                }`}
               >
-                <Volume2 className="w-4 h-4" />
+                {isSpeaking && currentAccent === 'us' ? (
+                  <Loader2 className="w-4 h-4 animate-spin" />
+                ) : (
+                  <Volume2 className="w-4 h-4" />
+                )}
                 <span className="sr-only">US pronunciation</span>
               </Button>
               <span className="text-xs">US</span>
