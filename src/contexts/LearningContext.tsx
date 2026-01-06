@@ -9,6 +9,10 @@ interface LearningContextType {
   progress: Map<string, LearningProgress>;
   updateProgress: (wordId: string, correct: boolean) => void;
   getProblematicWords: () => string[];
+  // --- YENİ EKLENENLER ---
+  savedWords: string[]; // Kaydedilen kelime ID'leri
+  toggleSaveWord: (wordId: string) => void; // Kaydet/Kaldır fonksiyonu
+  isWordSaved: (wordId: string) => boolean; // Kelime kayıtlı mı kontrolü
 }
 
 const LearningContext = createContext<LearningContextType | undefined>(undefined);
@@ -27,16 +31,25 @@ export function LearningProvider({ children }: { children: ReactNode }) {
   const [userProfile, setUserProfile] = useState<UserProfile | null>(null);
   const [isOnboarded, setIsOnboarded] = useState(false);
   const [progress, setProgress] = useState<Map<string, LearningProgress>>(new Map());
+  // --- YENİ STATE ---
+  const [savedWords, setSavedWords] = useState<string[]>([]);
 
+  // Profili ve Kaydedilen Kelimeleri Yükle
   useEffect(() => {
-    const saved = localStorage.getItem('preparatory-master-profile');
-    if (saved) {
-      const parsed = JSON.parse(saved);
-      setUserProfile(parsed);
+    const savedProfile = localStorage.getItem('preparatory-master-profile');
+    if (savedProfile) {
+      setUserProfile(JSON.parse(savedProfile));
       setIsOnboarded(true);
+    }
+
+    // Kaydedilen kelimeleri localStorage'dan çek
+    const savedList = localStorage.getItem('preparatory-master-saved');
+    if (savedList) {
+      setSavedWords(JSON.parse(savedList));
     }
   }, []);
 
+  // İlerlemeyi Yükle
   useEffect(() => {
     const savedProgress = localStorage.getItem('preparatory-master-progress');
     if (savedProgress) {
@@ -60,6 +73,21 @@ export function LearningProvider({ children }: { children: ReactNode }) {
     localStorage.setItem('preparatory-master-profile', JSON.stringify(profile));
   };
 
+  // --- YENİ FONKSİYONLAR ---
+  const toggleSaveWord = (wordId: string) => {
+    setSavedWords(prev => {
+      const isExist = prev.includes(wordId);
+      const newList = isExist 
+        ? prev.filter(id => id !== wordId) 
+        : [...prev, wordId];
+      
+      localStorage.setItem('preparatory-master-saved', JSON.stringify(newList));
+      return newList;
+    });
+  };
+
+  const isWordSaved = (wordId: string) => savedWords.includes(wordId);
+
   const updateProgress = (wordId: string, correct: boolean) => {
     setProgress(prev => {
       const newProgress = new Map(prev);
@@ -73,7 +101,6 @@ export function LearningProvider({ children }: { children: ReactNode }) {
         const newIncorrect = correct ? existing.incorrectCount : existing.incorrectCount + 1;
         const newStreak = correct ? existing.streak + 1 : 0;
         
-        // Spaced repetition: increase interval based on streak
         const intervalDays = correct ? Math.pow(2, newStreak) : 1;
         nextReview.setDate(now.getDate() + intervalDays);
         
@@ -99,14 +126,10 @@ export function LearningProvider({ children }: { children: ReactNode }) {
         });
       }
       
-      // Save to localStorage
-      const toSave = Object.fromEntries(newProgress);
-      localStorage.setItem('preparatory-master-progress', JSON.stringify(toSave));
-      
+      localStorage.setItem('preparatory-master-progress', JSON.stringify(Object.fromEntries(newProgress)));
       return newProgress;
     });
 
-    // Update user stats
     if (userProfile && correct) {
       const updated = {
         ...userProfile,
@@ -134,6 +157,10 @@ export function LearningProvider({ children }: { children: ReactNode }) {
         progress,
         updateProgress,
         getProblematicWords,
+        // Yeni değerler:
+        savedWords,
+        toggleSaveWord,
+        isWordSaved,
       }}
     >
       {children}

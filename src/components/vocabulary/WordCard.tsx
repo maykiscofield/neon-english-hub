@@ -5,6 +5,7 @@ import { Button } from '@/components/ui/button';
 import { VocabularyWord } from '@/types/learning';
 import { LevelBadge } from '@/components/dashboard/LevelBadge';
 import { useSpeech, Accent } from '@/lib/speech';
+import { useLearning } from '@/contexts/LearningContext'; // 1. Context'i import et
 
 interface WordCardProps {
   word: VocabularyWord;
@@ -14,7 +15,11 @@ interface WordCardProps {
 
 export function WordCard({ word, showExamples = true, compact = false }: WordCardProps) {
   const [isExpanded, setIsExpanded] = useState(!compact);
-  const [isSaved, setIsSaved] = useState(false);
+  
+  // 2. Local state yerine Context'ten gelen fonksiyonları ve listeyi kullan
+  const { toggleSaveWord, isWordSaved } = useLearning();
+  const saved = isWordSaved(word.id);
+
   const { speak, isSpeaking, currentAccent, isSupported } = useSpeech();
 
   const playAudio = async (accent: Accent) => {
@@ -29,7 +34,7 @@ export function WordCard({ word, showExamples = true, compact = false }: WordCar
     <motion.div
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
-      className="p-6 rounded-xl bg-card/50 border border-border/50 hover:border-primary/30 transition-all"
+      className="p-6 rounded-xl bg-card/50 border border-border/50 hover:border-primary/30 transition-all backdrop-blur-sm"
     >
       {/* Header */}
       <div className="flex items-start justify-between gap-4 mb-4">
@@ -84,28 +89,33 @@ export function WordCard({ word, showExamples = true, compact = false }: WordCar
           </div>
         </div>
         
+        {/* 3. Buton artık Context'teki fonksiyonu tetikliyor */}
         <Button
           variant="ghost"
           size="icon"
-          onClick={() => setIsSaved(!isSaved)}
-          className={isSaved ? 'text-primary' : 'text-muted-foreground hover:text-primary'}
+          onClick={() => toggleSaveWord(word.id)}
+          className={saved ? 'text-primary' : 'text-muted-foreground hover:text-primary'}
         >
-          {isSaved ? <BookmarkCheck className="w-5 h-5" /> : <Bookmark className="w-5 h-5" />}
+          {saved ? (
+            <BookmarkCheck className="w-6 h-6 fill-primary/20" /> 
+          ) : (
+            <Bookmark className="w-6 h-6" />
+          )}
         </Button>
       </div>
 
       {/* Definition */}
       <div className="mb-4">
-        <p className="text-foreground leading-relaxed">
+        <p className="text-foreground/90 leading-relaxed italic">
           {word.definition}
         </p>
       </div>
 
       {/* Usage Notes */}
       {word.usageNotes && (
-        <div className="p-3 rounded-lg bg-primary/5 border border-primary/20 mb-4">
+        <div className="p-3 rounded-lg bg-primary/5 border border-primary/10 mb-4">
           <p className="text-sm text-muted-foreground">
-            <span className="font-medium text-primary">Usage: </span>
+            <span className="font-medium text-primary">Note: </span>
             {word.usageNotes}
           </p>
         </div>
@@ -117,7 +127,7 @@ export function WordCard({ word, showExamples = true, compact = false }: WordCar
           {word.collocations.map((collocation) => (
             <span
               key={collocation}
-              className="px-2 py-1 text-sm bg-accent/50 border border-border rounded-md"
+              className="px-2 py-1 text-xs font-medium bg-accent/30 border border-border/50 rounded text-accent-foreground"
             >
               {collocation}
             </span>
@@ -125,26 +135,25 @@ export function WordCard({ word, showExamples = true, compact = false }: WordCar
         </div>
       )}
 
-      {/* Examples (Expandable) */}
+      {/* Examples Section */}
       {showExamples && word.examples.length > 0 && (
-        <div>
+        <div className="mt-4 pt-4 border-t border-border/30">
           <button
             onClick={() => setIsExpanded(!isExpanded)}
-            className="flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors mb-2"
+            className="flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-muted-foreground hover:text-primary transition-colors mb-3"
           >
-            {isExpanded ? <ChevronUp className="w-4 h-4" /> : <ChevronDown className="w-4 h-4" />}
-            {isExpanded ? 'Hide examples' : `Show ${word.examples.length} examples`}
+            {isExpanded ? <ChevronUp className="w-3 h-3" /> : <ChevronDown className="w-3 h-3" />}
+            Usage Examples
           </button>
           
           {isExpanded && (
             <motion.ul
               initial={{ opacity: 0, height: 0 }}
               animate={{ opacity: 1, height: 'auto' }}
-              exit={{ opacity: 0, height: 0 }}
-              className="space-y-2 pl-4 border-l-2 border-primary/30"
+              className="space-y-3 pl-3 border-l border-primary/20"
             >
               {word.examples.map((example, index) => (
-                <li key={index} className="text-sm text-muted-foreground">
+                <li key={index} className="text-sm text-muted-foreground leading-snug">
                   "{example}"
                 </li>
               ))}

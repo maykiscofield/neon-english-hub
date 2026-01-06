@@ -9,7 +9,7 @@ import Onboarding from "./pages/Onboarding";
 import Dashboard from "./pages/Dashboard";
 import Learn from "./pages/Learn";
 import Games from "./pages/Games";
-import Review from "./pages/Review";
+import Confusing from './pages/Confusing';
 import NotFound from "./pages/NotFound";
 import Topics from "@/pages/Topics";
 
@@ -30,7 +30,7 @@ const App = () => (
             <Route path="/learn" element={<Learn />} />
             <Route path="/games" element={<Games />} />
             <Route path="/topics" element={<Topics />} />
-            <Route path="/review" element={<Review />} />
+            <Route path="/confusing" element={<Confusing />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>

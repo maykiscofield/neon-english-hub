@@ -8,7 +8,7 @@ interface ActionCardProps {
   description: string;
   icon: React.ElementType;
   href: string;
-  variant: 'primary' | 'secondary' | 'warning' | 'purple'; // 'purple' eklendi
+  variant: 'primary' | 'secondary' | 'warning' | 'purple';
   badge?: string;
   delay: number;
 }
@@ -18,14 +18,14 @@ function ActionCard({ title, description, icon: Icon, href, variant, badge, dela
     primary: 'hover:border-primary/50 hover:shadow-[0_0_30px_hsl(var(--primary)/0.15)]',
     secondary: 'hover:border-secondary/50 hover:shadow-[0_0_30px_hsl(var(--secondary)/0.15)]',
     warning: 'hover:border-warning/50 hover:shadow-[0_0_30px_hsl(var(--warning)/0.15)]',
-    purple: 'hover:border-purple-500/50 hover:shadow-[0_0_30px_rgba(168,85,247,0.15)]', // Mor gölge efekti
+    purple: 'hover:border-purple-500/50 hover:shadow-[0_0_30_rgba(168,85,247,0.15)]',
   };
 
   const iconClasses = {
     primary: 'text-primary bg-primary/10 border-primary/30',
     secondary: 'text-secondary bg-secondary/10 border-secondary/30',
     warning: 'text-warning bg-warning/10 border-warning/30',
-    purple: 'text-purple-500 bg-purple-500/10 border-purple-500/30', // Mor ikon renkleri
+    purple: 'text-purple-500 bg-purple-500/10 border-purple-500/30',
   };
 
   return (
@@ -66,10 +66,14 @@ function ActionCard({ title, description, icon: Icon, href, variant, badge, dela
 }
 
 export function QuickActions() {
-  // useLearning hook'u hata verirse burayı geçici olarak silebilirsin,
-  // ama normalde badge sayısını göstermek için gereklidir.
-  const { getProblematicWords } = useLearning();
+  // Context'ten verileri çekiyoruz
+  const { getProblematicWords, savedWords } = useLearning();
+  
+  // İstatistikleri hesaplayalım
   const problematicCount = getProblematicWords ? getProblematicWords().length : 0;
+  
+  // Manuel kaydettiğin kelimelerin sayısı
+  const savedCount = savedWords ? savedWords.length : 0;
 
   const actions: ActionCardProps[] = [
     {
@@ -88,7 +92,6 @@ export function QuickActions() {
       variant: 'secondary',
       delay: 0.1,
     },
-    // --- YENİ EKLENEN KART (Topic Library) ---
     {
       title: 'Topic Library',
       description: 'Grammar, Tenses and special topics based on categories',
@@ -97,7 +100,6 @@ export function QuickActions() {
       variant: 'purple',
       delay: 0.15,
     },
-    // -----------------------------------------
     {
       title: 'Review Again',
       description: 'Deep review mode for words that need extra attention',
@@ -109,10 +111,12 @@ export function QuickActions() {
     },
     {
       title: 'Confusing Words',
-      description: 'Master commonly confused word pairs',
+      description: 'Master commonly confused word pairs and your saved list',
       icon: AlertTriangle,
       href: '/confusing',
       variant: 'warning',
+      // Buraya hem kayıtlı kelime sayısını ekledik hem de 'saved' ibaresi koyduk
+      badge: savedCount > 0 ? `${savedCount} saved` : undefined,
       delay: 0.3,
     },
   ];

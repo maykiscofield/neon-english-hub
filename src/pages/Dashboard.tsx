@@ -7,6 +7,7 @@ import { LevelBadge } from '@/components/dashboard/LevelBadge';
 import { Button } from '@/components/ui/button';
 import { useLearning } from '@/contexts/LearningContext';
 import { Navigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const Dashboard = () => {
   const { userProfile, isOnboarded } = useLearning();

@@ -1,0 +1,16 @@
+{
+  "pre-intermediate": [
+    { "id": "acquire", "word": "acquire", "definition": "to gain something by effort or to buy it", "ipa": "/əˈkwaɪər/", "examples": ["He acquired new skills.", "They acquired the company."], "level": "pre-intermediate", "usageNotes": "Formal way to say 'get'.", "collocations": ["acquire skills", "recently acquired"] },
+    { "id": "adequate", "word": "adequate", "definition": "enough in quantity or good enough in quality", "ipa": "/ˈæd.ɪ.kwət/", "examples": ["The food was adequate.", "We have adequate resources."], "level": "pre-intermediate", "usageNotes": "Means 'good enough', not 'perfect'.", "collocations": ["perfectly adequate", "adequate supply"] },
+    { "id": "brief", "word": "brief", "definition": "lasting only a short time", "ipa": "/briːf/", "examples": ["A brief meeting.", "Keep it brief."], "level": "pre-intermediate", "usageNotes": "Often used in business.", "collocations": ["brief summary", "brief overview"] },
+    { "id": "capable", "word": "capable", "definition": "having the ability to do something", "ipa": "/ˈkeɪ.pə.bəl/", "examples": ["She is capable of winning.", "A highly capable student."], "level": "pre-intermediate", "usageNotes": "Used with 'of'.", "collocations": ["capable of", "highly capable"] },
+    { "id": "determine", "word": "determine", "definition": "to decide or discover facts", "ipa": "/dɪˈtɜː.mɪn/", "examples": ["Determine the cause.", "The jury will determine."], "level": "pre-intermediate", "usageNotes": "Formal/Scientific.", "collocations": ["determine the outcome", "determine the cause"] }
+  ],
+  "intermediate": [
+    { "id": "ambiguous", "word": "ambiguous", "definition": "having more than one meaning; not clear", "ipa": "/æmˈbɪɡ.ju.əs/", "examples": ["An ambiguous message.", "The ending was ambiguous."], "level": "intermediate", "usageNotes": "Describes unclear language.", "collocations": ["deliberately ambiguous", "ambiguous statement"] },
+    { "id": "contemplate", "word": "contemplate", "definition": "to think deeply about something", "ipa": "/ˈkɒn.təm.pleɪt/", "examples": ["Contemplating his future.", "I contemplated leaving."], "level": "intermediate", "usageNotes": "Serious thought.", "collocations": ["contemplate action", "sit and contemplate"] }
+  ],
+  "upper-intermediate": [
+    { "id": "convoluted", "word": "convoluted", "definition": "extremely complex", "ipa": "/ˈkɒn.və.luː.tɪd/", "examples": ["A convoluted plot.", "Convoluted explanation."], "level": "upper-intermediate", "usageNotes": "Usually negative.", "collocations": ["convoluted argument", "unnecessarily convoluted"] }
+  ]
+}
