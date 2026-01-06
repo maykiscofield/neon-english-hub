@@ -4,13 +4,13 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { Gamepad2, Brain, Zap, Headphones, ArrowLeft, Trophy, Timer, Volume2, Heart, Eye, Turtle, SkipForward, CheckCircle2, Bomb, AlertTriangle } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useLearning } from '@/contexts/LearningContext'; // Kullanıcı seviyesini çekmek için
+import { Link } from 'react-router-dom'; // Yönlendirme için eklendi
 import confetti from 'canvas-confetti';
 
 // --- TİP TANIMLAMALARI ---
 type LevelType = 'Pre-Intermediate' | 'Intermediate' | 'Upper-Intermediate';
 
 // --- LEVEL-BASED DATA ---
-// Her seviye için ayrı içerik tanımlıyoruz
 const GAME_CONTENT = {
   'Pre-Intermediate': {
     grammar: [
@@ -68,7 +68,6 @@ const GAME_CONTENT = {
   }
 };
 
-// --- YARDIMCI: Cümledeki *kelimeyi* kalın yapan bileşen ---
 const HighlightedText = ({ text, className = "" }: { text: string, className?: string }) => {
   const parts = text.split('*');
   return (
@@ -81,13 +80,9 @@ const HighlightedText = ({ text, className = "" }: { text: string, className?: s
 };
 
 const Games = () => {
-  // Kullanıcı seviyesini çekiyoruz. Yoksa varsayılan Pre-Intermediate.
   const { userProfile } = useLearning(); 
   const userLevel: LevelType = (userProfile?.level as LevelType) || 'Pre-Intermediate';
-  
-  // O seviyeye ait verileri al
   const currentLevelData = GAME_CONTENT[userLevel] || GAME_CONTENT['Pre-Intermediate'];
-
   const [activeGame, setActiveGame] = useState<string | null>(null);
 
   // --- OYUN SEÇİM MENÜSÜ ---
@@ -109,10 +104,7 @@ const Games = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto">
         <GameCard id="matching" title="Word Matching" desc="Kelimeleri anlamlarıyla eşleştir." icon={Brain} color="cyan" difficulty="Medium" />
         <GameCard id="fill-blank" title="Grammar Master" desc="Boşlukları doğru gramer ile doldur." icon={Zap} color="pink" difficulty="Hard" />
-        
-        {/* YENİ EKLENEN BOMB DEFUSAL KARTI */}
         <GameCard id="bomb" title="Bomb Defusal" desc="Süre bitmeden bombayı imha et! (+3sn / -5sn)" icon={Bomb} color="red" difficulty="Extreme" />
-        
         <GameCard id="listening" title="Listening Quiz" desc="Dinle, yaz ve detaylı öğren." icon={Headphones} color="green" difficulty="Expert" />
       </div>
     </div>
@@ -124,7 +116,7 @@ const Games = () => {
       pink: "border-pink-500/30 hover:shadow-[0_0_40px_rgba(236,72,153,0.3)] text-pink-400 bg-pink-500/10",
       yellow: "border-yellow-500/30 hover:shadow-[0_0_40px_rgba(234,179,8,0.3)] text-yellow-400 bg-yellow-500/10",
       green: "border-green-500/30 hover:shadow-[0_0_40px_rgba(34,197,94,0.3)] text-green-400 bg-green-500/10",
-      red: "border-red-500/30 hover:shadow-[0_0_40px_rgba(239,68,68,0.4)] text-red-500 bg-red-500/10", // Kırmızı eklendi
+      red: "border-red-500/30 hover:shadow-[0_0_40px_rgba(239,68,68,0.4)] text-red-500 bg-red-500/10",
     };
 
     return (
@@ -152,14 +144,11 @@ const Games = () => {
     );
   };
 
-  // --- OYUN 1: MATCHING (DYNAMIC DATA) ---
   const MatchingGame = () => {
     const [items, setItems] = useState<any[]>([]);
     const [selected, setSelected] = useState<number[]>([]);
     const [matched, setMatched] = useState<number[]>([]);
     const [isWon, setIsWon] = useState(false);
-    
-    // Veriyi mevcut seviyeden al
     const DATA = currentLevelData.matching;
 
     useEffect(() => {
@@ -216,14 +205,11 @@ const Games = () => {
     );
   };
 
-  // --- OYUN 2: FILL BLANK (DYNAMIC DATA) ---
   const FillBlankGame = () => {
     const [currentQ, setCurrentQ] = useState(0);
     const [score, setScore] = useState(0);
     const [selectedOption, setSelectedOption] = useState<string | null>(null);
     const [isFinished, setIsFinished] = useState(false);
-    
-    // Veriyi mevcut seviyeden al
     const QUESTIONS = currentLevelData.grammar;
 
     const handleAnswer = (option: string) => {
@@ -270,17 +256,15 @@ const Games = () => {
     );
   };
 
-  // --- OYUN 3: BOMB DEFUSAL GAME (ESKİ SPEED CHALLENGE YERİNE) ---
   const BombGame = () => {
-    const DATA = currentLevelData.matching; // Veri kaynağı
-    
-    const [timeLeft, setTimeLeft] = useState(15); // Başlangıç süresi
+    const DATA = currentLevelData.matching;
+    const [timeLeft, setTimeLeft] = useState(15);
     const [score, setScore] = useState(0);
     const [currentWord, setCurrentWord] = useState(DATA[0]);
     const [options, setOptions] = useState<string[]>([]);
     const [isGameOver, setIsGameOver] = useState(false);
-    const [isExploded, setIsExploded] = useState(false); // Bomba patladı mı?
-    const [shake, setShake] = useState(false); // Yanlış cevapta titreme
+    const [isExploded, setIsExploded] = useState(false);
+    const [shake, setShake] = useState(false);
 
     const generateQuestion = () => {
       const randomPair = DATA[Math.floor(Math.random() * DATA.length)];
@@ -308,13 +292,13 @@ const Games = () => {
     const handleAnswer = (answer: string) => {
       if (answer === currentWord.match) {
         setScore(score + 10);
-        setTimeLeft(prev => Math.min(prev + 3, 30)); // Doğru cevap: +3 Saniye (Max 30sn)
+        setTimeLeft(prev => Math.min(prev + 3, 30));
         generateQuestion();
         try { confetti({ particleCount: 20, spread: 40, origin: { y: 0.8 } }); } catch(e){}
       } else {
         setShake(true);
         setTimeout(() => setShake(false), 500);
-        setTimeLeft(prev => Math.max(0, prev - 5)); // Yanlış cevap: -5 Saniye
+        setTimeLeft(prev => Math.max(0, prev - 5));
         generateQuestion();
       }
     };
@@ -341,15 +325,13 @@ const Games = () => {
     return (
       <GameLayout title="Bomb Defusal" score={score} onExit={() => setActiveGame(null)}>
         <div className={`w-full max-w-lg text-center ${shake ? 'animate-shake' : ''}`}>
-          
-          {/* Bomb Timer Bar */}
           <div className="relative w-full h-8 bg-gray-900 rounded-full mb-8 overflow-hidden border-2 border-red-900/50">
             <div className="absolute top-0 left-0 w-full h-full flex items-center justify-center z-10 font-mono font-bold text-white tracking-widest">
                 {timeLeft}s
             </div>
             <motion.div 
                 initial={{ width: "100%" }} 
-                animate={{ width: `${(timeLeft / 30) * 100}%` }} // 30sn max üzerinden oranla
+                animate={{ width: `${(timeLeft / 30) * 100}%` }}
                 className={`h-full ${timeLeft < 5 ? 'bg-red-600 animate-pulse' : 'bg-red-500'}`} 
             />
           </div>
@@ -374,11 +356,8 @@ const Games = () => {
     );
   };
 
-  // --- OYUN 4: LISTENING QUIZ (DYNAMIC DATA) ---
   const ListeningGame = () => {
-    // Veriyi mevcut seviyeden al
     const WORDS = currentLevelData.listening;
-
     const [current, setCurrent] = useState(0);
     const [input, setInput] = useState("");
     const [score, setScore] = useState(0);
@@ -388,7 +367,6 @@ const Games = () => {
     const [feedbackState, setFeedbackState] = useState<"typing" | "wrong" | "revealed">("typing");
     const [usedSlowMode, setUsedSlowMode] = useState(false); 
     const inputRef = useRef<HTMLInputElement>(null);
-
     const currentWordData = WORDS[current];
 
     const playAudio = (rate = 0.9) => {
@@ -401,56 +379,20 @@ const Games = () => {
       inputRef.current?.focus();
     };
 
-    const handleSkip = () => {
-      setScore(Math.max(0, score - 20)); 
-      setFeedbackState("revealed");
-    };
-
-    const handleShowAnswer = () => {
-      setScore(Math.max(0, score - 20));
-      setFeedbackState("revealed");
-    };
-
-    const handleNextQuestion = () => {
-      if (current + 1 < WORDS.length) {
-        setCurrent(current + 1);
-        setInput("");
-        setMistakes(0);
-        setLives(2);
-        setUsedSlowMode(false); 
-        setFeedbackState("typing");
-      } else {
-        setIsFinished(true);
-        if (score > 50) try { confetti(); } catch(e){}
-      }
-    };
-
     const checkAnswer = (e: React.FormEvent) => {
       e.preventDefault();
       if (feedbackState === "revealed") {
-        handleNextQuestion();
+        if (current + 1 < WORDS.length) {
+          setCurrent(current + 1); setInput(""); setLives(2); setUsedSlowMode(false); setFeedbackState("typing");
+        } else setIsFinished(true);
         return;
       }
-
       const cleanInput = input.trim().toLowerCase();
-      const cleanWord = currentWordData.word.toLowerCase();
-
-      if (cleanInput === cleanWord) {
-        const pointsToAdd = usedSlowMode ? 10 : 20;
-        setScore(score + pointsToAdd);
-        setFeedbackState("revealed");
-        try { confetti({ particleCount: 50, spread: 60, origin: { y: 0.7 } }); } catch(e){}
+      if (cleanInput === currentWordData.word.toLowerCase()) {
+        setScore(score + (usedSlowMode ? 10 : 20)); setFeedbackState("revealed"); confetti();
       } else {
-        setMistakes(mistakes + 1);
-        setScore(Math.max(0, score - 10)); 
-        if (lives > 1) {
-          setLives(lives - 1);
-          setFeedbackState("wrong");
-          setTimeout(() => setFeedbackState("typing"), 1000); 
-        } else {
-          setLives(0);
-          setFeedbackState("revealed");
-        }
+        setLives(lives - 1); setFeedbackState(lives === 1 ? "wrong" : "revealed");
+        if (lives > 1) setTimeout(() => setFeedbackState("typing"), 1000);
       }
     };
 
@@ -459,7 +401,6 @@ const Games = () => {
     return (
       <GameLayout title="Listening" score={score} onExit={() => setActiveGame(null)}>
         <div className="w-full max-w-lg text-center">
-          
           {feedbackState !== "revealed" && (
             <div className="flex justify-center gap-2 mb-6">
               {[...Array(2)].map((_, i) => (
@@ -467,91 +408,26 @@ const Games = () => {
               ))}
             </div>
           )}
-
           <div className="flex justify-center gap-4 mb-8">
-            <button 
-              onClick={() => playAudio(0.9)}
-              className="w-24 h-24 rounded-full bg-green-500/10 border-2 border-green-500/50 flex items-center justify-center hover:scale-110 hover:bg-green-500/20 transition-all shadow-[0_0_50px_rgba(34,197,94,0.2)]"
-              title="Play Normal"
-            >
+            <button onClick={() => playAudio(0.9)} className="w-24 h-24 rounded-full bg-green-500/10 border-2 border-green-500/50 flex items-center justify-center hover:scale-110 shadow-[0_0_50px_rgba(34,197,94,0.2)]">
               <Volume2 className="w-10 h-10 text-green-400" />
             </button>
-            <button 
-              onClick={() => playAudio(0.5)}
-              className={`w-16 h-16 rounded-full border-2 flex items-center justify-center hover:scale-110 transition-all mt-4 ${
-                usedSlowMode 
-                  ? "bg-yellow-500/20 border-yellow-500 shadow-[0_0_20px_rgba(234,179,8,0.3)]" 
-                  : "bg-yellow-500/10 border-yellow-500/50 hover:bg-yellow-500/20"
-              }`}
-              title="Play Slow (0.5x) - Points Halved!"
-            >
-              <Turtle className="w-6 h-6 text-yellow-400" />
-            </button>
+            <button onClick={() => playAudio(0.5)} className={`w-16 h-16 rounded-full border-2 flex items-center justify-center mt-4 ${usedSlowMode ? "bg-yellow-500/20 border-yellow-500" : "border-yellow-500/50"}`}><Turtle className="w-6 h-6 text-yellow-400" /></button>
           </div>
-          
           {feedbackState !== "revealed" ? (
-            <>
-              <p className="text-gray-400 mb-6">Click icons to listen. <span className="text-yellow-500 text-xs">(Turtle mode gives half points)</span></p>
-              <form onSubmit={checkAnswer} className="relative">
-                <input
-                  ref={inputRef}
-                  type="text"
-                  value={input}
-                  onChange={(e) => setInput(e.target.value)}
-                  className={`w-full bg-[#111] border-2 rounded-xl p-4 text-center text-2xl font-bold outline-none transition-all ${
-                    feedbackState === 'wrong' ? 'border-red-500 text-red-500 animate-shake' : 'border-gray-700 focus:border-green-500'
-                  }`}
-                  placeholder="Type here..."
-                  autoFocus
-                />
-                <Button type="submit" className="w-full mt-4 bg-green-600 hover:bg-green-700 text-white font-bold py-6">
-                  Check Answer
-                </Button>
-              </form>
-
-              <div className="flex justify-between mt-4">
-                <button onClick={handleSkip} className="text-gray-500 hover:text-white flex items-center text-sm">
-                  <SkipForward className="w-4 h-4 mr-1" /> Skip (-20 pts)
-                </button>
-                
-                {mistakes >= 1 && (
-                  <motion.button 
-                    initial={{ opacity: 0 }} animate={{ opacity: 1 }}
-                    onClick={handleShowAnswer} 
-                    className="text-yellow-500 hover:text-yellow-400 flex items-center text-sm"
-                  >
-                    <Eye className="w-4 h-4 mr-1" /> Show Answer (-20 pts)
-                  </motion.button>
-                )}
-              </div>
-            </>
+            <form onSubmit={checkAnswer}>
+              <input ref={inputRef} type="text" value={input} onChange={(e) => setInput(e.target.value)} className={`w-full bg-[#111] border-2 rounded-xl p-4 text-center text-2xl font-bold outline-none transition-all ${feedbackState === 'wrong' ? 'border-red-500 animate-shake' : 'border-gray-700 focus:border-green-500'}`} placeholder="Type here..." autoFocus />
+              <Button type="submit" className="w-full mt-4 bg-green-600 font-bold py-6">Check Answer</Button>
+            </form>
           ) : (
-            <motion.div 
-              initial={{ scale: 0.9, opacity: 0 }} 
-              animate={{ scale: 1, opacity: 1 }}
-              className="bg-[#111] border border-green-500/30 rounded-2xl p-6 text-left shadow-[0_0_50px_rgba(34,197,94,0.15)]"
-            >
-              <div className="flex items-center gap-3 mb-4 border-b border-gray-800 pb-4">
+            <motion.div initial={{ scale: 0.9, opacity: 0 }} animate={{ scale: 1, opacity: 1 }} className="bg-[#111] border border-green-500/30 rounded-2xl p-6 text-left shadow-[0_0_50px_rgba(34,197,94,0.15)]">
+              <div className="flex items-center gap-3 mb-4 pb-4 border-b border-gray-800">
                 <CheckCircle2 className="w-8 h-8 text-green-500" />
-                <div>
-                  <h3 className="text-3xl font-bold text-white">{currentWordData.word}</h3>
-                  <div className="flex items-center gap-2">
-                    <p className="text-green-400 italic">{currentWordData.meaning}</p>
-                    {usedSlowMode && <span className="text-xs text-yellow-500 bg-yellow-500/10 px-2 py-0.5 rounded border border-yellow-500/20">Slow Mode (-10pts)</span>}
-                  </div>
-                </div>
+                <div><h3 className="text-3xl font-bold text-white">{currentWordData.word}</h3><p className="text-green-400 italic">{currentWordData.meaning}</p></div>
               </div>
-
-              <div className="space-y-4 mb-6">
-                <div className="bg-white/5 p-4 rounded-lg">
-                  <HighlightedText text={currentWordData.exampleEn} className="text-gray-300 text-lg mb-1" />
-                  <HighlightedText text={currentWordData.exampleTr} className="text-gray-500 text-sm" />
-                </div>
-              </div>
-
-              <Button onClick={handleNextQuestion} className="w-full bg-green-600 hover:bg-green-700 text-white font-bold py-6">
-                Next Word <ArrowLeft className="w-5 h-5 ml-2 rotate-180" />
-              </Button>
+              <Button onClick={() => {
+                if (current + 1 < WORDS.length) { setCurrent(current + 1); setInput(""); setLives(2); setUsedSlowMode(false); setFeedbackState("typing"); } else setIsFinished(true);
+              }} className="w-full bg-green-600 font-bold py-6">Next Word</Button>
             </motion.div>
           )}
         </div>
@@ -559,7 +435,6 @@ const Games = () => {
     );
   };
 
-  // --- ORTAK BİLEŞENLER ---
   const GameLayout = ({ title, score, onExit, children }: any) => (
     <div className="container mx-auto px-4 pt-24 pb-12 flex flex-col items-center min-h-screen">
       <div className="w-full max-w-4xl flex items-center justify-between mb-12">
@@ -567,32 +442,50 @@ const Games = () => {
           <ArrowLeft className="mr-2 h-4 w-4" /> Exit
         </Button>
         <h2 className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-white to-gray-500">{title} Mode</h2>
-        <div className="text-xl font-bold font-mono bg-white/5 px-4 py-2 rounded-lg border border-white/10">
-          {score} PTS
-        </div>
+        <div className="text-xl font-bold font-mono bg-white/5 px-4 py-2 rounded-lg border border-white/10">{score} PTS</div>
       </div>
-      <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="w-full flex justify-center">
-        {children}
-      </motion.div>
+      <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="w-full flex justify-center">{children}</motion.div>
     </div>
   );
 
   const WinScreen = ({ score, onBack, title = "Level Complete!" }: any) => (
     <div className="flex flex-col items-center justify-center min-h-[60vh]">
-      <motion.div initial={{ scale: 0 }} animate={{ scale: 1 }} className="mb-8">
-        <Trophy className="w-32 h-32 text-yellow-400 drop-shadow-[0_0_30px_rgba(234,179,8,0.5)]" />
-      </motion.div>
+      <motion.div initial={{ scale: 0 }} animate={{ scale: 1 }} className="mb-8"><Trophy className="w-32 h-32 text-yellow-400 drop-shadow-[0_0_30px_rgba(234,179,8,0.5)]" /></motion.div>
       <h1 className="text-5xl font-bold text-white mb-4">{title}</h1>
       <p className="text-2xl text-gray-400 mb-8">Total Score: <span className="text-yellow-400 font-bold">{score}</span></p>
-      <Button onClick={onBack} size="lg" className="bg-white text-black hover:bg-gray-200 font-bold px-8">
-        Back to Arcade
-      </Button>
+      <Button onClick={onBack} size="lg" className="bg-white text-black font-bold px-8">Back to Arcade</Button>
     </div>
   );
 
   return (
-    <div className="min-h-screen bg-[#050505] text-white overflow-hidden font-sans">
+    <div className="min-h-screen bg-[#050505] text-white overflow-hidden font-sans relative">
       <Navbar />
+
+      {/* --- YENİ MODERN NEON GERİ DÖN BUTONU --- */}
+      <motion.div
+        initial={{ opacity: 0, x: -20 }}
+        animate={{ opacity: 1, x: 0 }}
+        className="fixed top-28 left-8 z-[100] hidden lg:block"
+      >
+        <Link 
+          to="/dashboard" 
+          className="group flex items-center gap-3 px-5 py-2.5 rounded-2xl bg-white/[0.03] border border-white/10 backdrop-blur-xl transition-all duration-500 hover:border-primary/50 hover:bg-primary/5 hover:shadow-[0_0_40px_rgba(var(--primary),0.2)]"
+        >
+          <div className="relative flex items-center justify-center">
+            <div className="absolute inset-0 bg-primary blur-md opacity-0 group-hover:opacity-100 transition-opacity" />
+            <ArrowLeft className="relative w-5 h-5 text-gray-500 group-hover:text-primary group-hover:-translate-x-2 transition-all duration-300" />
+          </div>
+          <div className="flex flex-col items-start leading-tight">
+            <span className="text-[10px] font-bold uppercase tracking-[0.2em] text-gray-600 group-hover:text-primary/70 transition-colors">
+              Exit Arcade
+            </span>
+            <span className="text-sm font-semibold text-gray-300 group-hover:text-white transition-colors">
+              DASHBOARD
+            </span>
+          </div>
+        </Link>
+      </motion.div>
+
       <div className="fixed inset-0 pointer-events-none z-0">
         <div className="absolute top-[-10%] left-[-10%] w-[500px] h-[500px] bg-purple-600/10 rounded-full blur-[120px]" />
         <div className="absolute bottom-[-10%] right-[-10%] w-[500px] h-[500px] bg-cyan-600/10 rounded-full blur-[120px]" />
@@ -603,7 +496,7 @@ const Games = () => {
           {!activeGame && <GameSelection />}
           {activeGame === 'matching' && <MatchingGame />}
           {activeGame === 'fill-blank' && <FillBlankGame />}
-          {activeGame === 'bomb' && <BombGame />} {/* Speed yerine Bomb */}
+          {activeGame === 'bomb' && <BombGame />}
           {activeGame === 'listening' && <ListeningGame />}
         </motion.div>
       </AnimatePresence>

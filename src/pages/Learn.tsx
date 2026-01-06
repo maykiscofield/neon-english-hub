@@ -1,12 +1,12 @@
 import { useState } from 'react';
-import { motion } from 'framer-motion';
-import { ChevronLeft, ChevronRight, Volume2 } from 'lucide-react';
+import { motion, AnimatePresence } from 'framer-motion';
+import { ChevronLeft, ChevronRight, Volume2, ArrowLeft } from 'lucide-react';
 import { Navbar } from '@/components/layout/Navbar';
 import { WordCard } from '@/components/vocabulary/WordCard';
 import { Button } from '@/components/ui/button';
 import { useLearning } from '@/contexts/LearningContext';
 import { getWordsByLevel } from '@/data/vocabulary';
-import { Navigate } from 'react-router-dom';
+import { Navigate, Link } from 'react-router-dom';
 
 const Learn = () => {
   const { userProfile, isOnboarded } = useLearning();
@@ -19,119 +19,123 @@ const Learn = () => {
   const words = getWordsByLevel(userProfile?.level || 'intermediate');
   const currentWord = words[currentIndex];
 
-  const goNext = () => {
-    setCurrentIndex((prev) => (prev + 1) % words.length);
-  };
-
-  const goPrev = () => {
-    setCurrentIndex((prev) => (prev - 1 + words.length) % words.length);
-  };
-
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-[#030303] text-white relative">
       <Navbar />
+
+      {/* --- MODERN NEON BACK BUTTON --- */}
+      <motion.div
+        initial={{ opacity: 0, x: -30 }}
+        animate={{ opacity: 1, x: 0 }}
+        className="fixed top-28 left-8 z-[100] hidden lg:block"
+      >
+        <Link 
+          to="/dashboard" 
+          className="group flex items-center gap-4 px-6 py-3 rounded-2xl bg-white/[0.03] border border-white/10 backdrop-blur-2xl transition-all duration-500 hover:border-primary/50 hover:bg-primary/5 hover:shadow-[0_0_40px_rgba(var(--primary),0.2)]"
+        >
+          <div className="relative">
+            <div className="absolute inset-0 bg-primary blur-md opacity-0 group-hover:opacity-100 transition-opacity" />
+            <ArrowLeft className="relative w-6 h-6 text-gray-500 group-hover:text-primary group-hover:-translate-x-2 transition-all duration-300" />
+          </div>
+          <div className="flex flex-col items-start leading-none">
+            <span className="text-[10px] font-black uppercase tracking-[0.3em] text-gray-600 group-hover:text-primary transition-colors mb-1">
+              Go Back
+            </span>
+            <span className="text-sm font-bold text-gray-300 group-hover:text-white transition-colors">
+              DASHBOARD
+            </span>
+          </div>
+        </Link>
+      </motion.div>
       
-      <main className="pt-20 pb-12">
+      <main className="pt-32 pb-20 relative z-10">
         <div className="container mx-auto px-4 max-w-3xl">
-          {/* Header */}
+          
+          {/* Neon Header */}
           <motion.div
-            initial={{ opacity: 0, y: -10 }}
+            initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
-            className="text-center mb-8"
+            className="text-center mb-12"
           >
-            <h1 className="font-heading text-3xl font-bold mb-2">
-              Vocabulary Learning
+            <h1 className="font-heading text-5xl font-black mb-4 bg-clip-text text-transparent bg-gradient-to-b from-white to-white/40 uppercase italic tracking-tighter">
+              Learning <span className="text-primary italic">Session</span>
             </h1>
-            <p className="text-muted-foreground">
-              Dictionary-first approach: understand before you use
-            </p>
+            <div className="h-1 w-20 bg-primary mx-auto rounded-full shadow-[0_0_15px_rgba(var(--primary),0.8)]" />
           </motion.div>
 
-          {/* Progress */}
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            className="flex items-center justify-center gap-4 mb-8"
-          >
-            <span className="text-sm text-muted-foreground">
-              Word {currentIndex + 1} of {words.length}
-            </span>
-            <div className="flex-1 max-w-xs h-1 bg-muted rounded-full overflow-hidden">
+          {/* Progress Bar */}
+          <div className="flex flex-col gap-3 mb-12">
+            <div className="flex justify-between items-end px-1">
+              <span className="text-[10px] font-black uppercase tracking-[0.2em] text-primary">Progress</span>
+              <span className="text-xs font-mono text-muted-foreground">
+                {currentIndex + 1} / {words.length}
+              </span>
+            </div>
+            <div className="h-1.5 bg-white/5 rounded-full overflow-hidden border border-white/5 p-[1px]">
               <motion.div
-                className="h-full bg-primary"
+                className="h-full bg-gradient-to-r from-primary to-blue-500 rounded-full shadow-[0_0_20px_rgba(var(--primary),0.6)]"
                 initial={{ width: 0 }}
                 animate={{ width: `${((currentIndex + 1) / words.length) * 100}%` }}
+                transition={{ type: "spring", stiffness: 40, damping: 15 }}
               />
             </div>
-          </motion.div>
+          </div>
 
-          {/* Word Card */}
-          {currentWord && (
-            <motion.div
-              key={currentWord.id}
-              initial={{ opacity: 0, x: 20 }}
-              animate={{ opacity: 1, x: 0 }}
-              exit={{ opacity: 0, x: -20 }}
-            >
-              <WordCard word={currentWord} />
-            </motion.div>
-          )}
+          {/* Word Card Wrapper */}
+          <AnimatePresence mode="wait">
+            {currentWord && (
+              <motion.div
+                key={currentWord.id}
+                initial={{ opacity: 0, x: 50, filter: "blur(20px)" }}
+                animate={{ opacity: 1, x: 0, filter: "blur(0px)" }}
+                exit={{ opacity: 0, x: -50, filter: "blur(20px)" }}
+                transition={{ duration: 0.5, ease: "circOut" }}
+                className="relative"
+              >
+                {/* Kartın arkasındaki hafif parlama */}
+                <div className="absolute -inset-4 bg-primary/5 blur-[100px] rounded-full opacity-50 pointer-events-none" />
+                <WordCard word={currentWord} />
+              </motion.div>
+            )}
+          </AnimatePresence>
 
-          {/* Navigation */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.2 }}
-            className="flex items-center justify-between mt-8"
-          >
+          {/* Navigation Controls */}
+          <div className="flex items-center justify-between mt-12">
             <Button
               variant="neon-outline"
-              onClick={goPrev}
-              disabled={words.length <= 1}
+              onClick={() => setCurrentIndex((prev) => (prev - 1 + words.length) % words.length)}
+              className="h-12 px-8 rounded-2xl border-white/10 hover:bg-white/5"
             >
-              <ChevronLeft className="w-4 h-4 mr-2" />
-              Previous
+              <ChevronLeft className="w-5 h-5 mr-2" />
+              PREV
             </Button>
 
-            <div className="flex gap-2">
+            <div className="hidden sm:flex gap-3">
               {words.slice(0, 5).map((_, idx) => (
-                <button
+                <div
                   key={idx}
-                  onClick={() => setCurrentIndex(idx)}
-                  className={`w-2 h-2 rounded-full transition-all ${
-                    idx === currentIndex
-                      ? 'bg-primary w-6'
-                      : 'bg-muted hover:bg-muted-foreground'
+                  className={`h-1 rounded-full transition-all duration-500 ${
+                    idx === currentIndex ? 'w-10 bg-primary shadow-[0_0_15px_rgba(var(--primary),0.5)]' : 'w-2 bg-white/10'
                   }`}
                 />
               ))}
-              {words.length > 5 && (
-                <span className="text-xs text-muted-foreground">...</span>
-              )}
             </div>
 
             <Button
               variant="neon"
-              onClick={goNext}
-              disabled={words.length <= 1}
+              onClick={() => setCurrentIndex((prev) => (prev + 1) % words.length)}
+              className="h-12 px-10 rounded-2xl font-black tracking-tighter"
             >
-              Next
-              <ChevronRight className="w-4 h-4 ml-2" />
+              NEXT
+              <ChevronRight className="w-5 h-5 ml-2" />
             </Button>
-          </motion.div>
-
-          {/* Hint */}
-          <motion.p
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.4 }}
-            className="text-center text-sm text-muted-foreground mt-8"
-          >
-            <Volume2 className="inline w-4 h-4 mr-1" />
-            Click the speaker icons to hear British and American pronunciations
-          </motion.p>
+          </div>
         </div>
       </main>
+
+      {/* Decorative Background Elements */}
+      <div className="fixed inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-[0.02] pointer-events-none mix-blend-overlay" />
+      <div className="fixed top-0 left-0 w-full h-full bg-grid-white/[0.02] pointer-events-none" />
     </div>
   );
 };
