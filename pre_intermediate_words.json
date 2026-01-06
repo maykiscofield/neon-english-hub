@@ -1,0 +1,698 @@
+[
+  {
+    "word": "achieve",
+    "definition": "To succeed in reaching a goal or finishing a task through hard work.",
+    "context_sentence": "I finally achieved my goal of running five kilometers without stopping.",
+    "translation": "başarmak"
+  },
+  {
+    "word": "afford",
+    "definition": "To have enough money to pay for something.",
+    "context_sentence": "I really like that laptop, but I can't afford it right now.",
+    "translation": "parası yetmek"
+  },
+  {
+    "word": "ancient",
+    "definition": "Something from a very long time ago; extremely old.",
+    "context_sentence": "We saw many ancient statues during our trip to the museum.",
+    "translation": "antik, çok eski"
+  },
+  {
+    "word": "appointment",
+    "definition": "A formal arrangement to meet someone at a specific time.",
+    "context_sentence": "I have a dentist appointment at 3 o'clock this afternoon.",
+    "translation": "randevu"
+  },
+  {
+    "word": "attend",
+    "definition": "To go to an event, a meeting, or a class.",
+    "context_sentence": "Are you going to attend the staff meeting tomorrow morning?",
+    "translation": "katılmak"
+  },
+  {
+    "word": "avoid",
+    "definition": "To stay away from a person, place, or situation.",
+    "context_sentence": "I try to avoid the city center during rush hour because of the traffic.",
+    "translation": "kaçınmak"
+  },
+  {
+    "word": "background",
+    "definition": "The things that happened in a person's life or their past experience.",
+    "context_sentence": "The manager asked me about my professional background during the interview.",
+    "translation": "geçmiş, altyapı"
+  },
+  {
+    "word": "believe",
+    "definition": "To think that something is true or that someone is telling the truth.",
+    "context_sentence": "I believe that regular exercise is the best way to stay healthy.",
+    "translation": "inanmak"
+  },
+  {
+    "word": "borrow",
+    "definition": "To take something from someone and return it later.",
+    "context_sentence": "Can I borrow your umbrella for an hour? It started raining.",
+    "translation": "ödünç almak"
+  },
+  {
+    "word": "challenge",
+    "definition": "Something new and difficult that requires effort and interest.",
+    "context_sentence": "Learning a new language is a big challenge, but it is also fun.",
+    "translation": "zorluk, meydan okuma"
+  },
+  {
+    "word": "complain",
+    "definition": "To say that something is wrong or that you are not satisfied.",
+    "context_sentence": "He went to the manager to complain about the cold food in the restaurant.",
+    "translation": "şikayet etmek"
+  },
+  {
+    "word": "confirm",
+    "definition": "To make sure that an arrangement or a fact is correct.",
+    "context_sentence": "Please call the hotel to confirm our reservation for tonight.",
+    "translation": "onaylamak"
+  },
+  {
+    "word": "decision",
+    "definition": "A choice that you make after thinking about several possibilities.",
+    "context_sentence": "It was a difficult decision, but I decided to look for a new job.",
+    "translation": "karar"
+  },
+  {
+    "word": "delicious",
+    "definition": "Having a very pleasant taste or smell.",
+    "context_sentence": "Thank you for the dinner; the chicken was absolutely delicious.",
+    "translation": "lezzetli"
+  },
+  {
+    "word": "depend",
+    "definition": "To be decided or influenced by something else.",
+    "context_sentence": "Our plans for the weekend depend on the weather.",
+    "translation": "bağlı olmak"
+  },
+  {
+    "word": "disappointed",
+    "definition": "Feeling sad because something was not as good as you expected.",
+    "context_sentence": "I was disappointed with the movie because the ending was very boring.",
+    "translation": "hayal kırıklığına uğramış"
+  },
+  {
+    "word": "encourage",
+    "definition": "To give someone confidence or hope to do something.",
+    "context_sentence": "My parents always encourage me to try new hobbies.",
+    "translation": "teşvik etmek"
+  },
+  {
+    "word": "equipment",
+    "definition": "The set of tools or machines needed for a specific activity.",
+    "context_sentence": "You need to buy some basic camping equipment before our trip.",
+    "translation": "ekipman"
+  },
+  {
+    "word": "furniture",
+    "definition": "Items such as chairs, tables, and beds used in a house.",
+    "context_sentence": "We need to buy some new furniture for the living room.",
+    "translation": "mobilya"
+  },
+  {
+    "word": "improve",
+    "definition": "To get better or to make something better than before.",
+    "context_sentence": "I want to improve my English speaking skills this year.",
+    "translation": "geliştirmek"
+  },
+  {
+    "word": "necessary",
+    "definition": "Something that is needed or must be done.",
+    "context_sentence": "It is necessary to bring your ID card to the exam.",
+    "translation": "gerekli"
+  },
+  {
+    "word": "opinion",
+    "definition": "A thought or belief about something or someone.",
+    "context_sentence": "What is your opinion on the new office rules?",
+    "translation": "fikir, görüş"
+  },
+  {
+    "word": "patient",
+    "definition": "Able to wait for a long time without getting angry.",
+    "context_sentence": "You need to be patient with the new software; it takes time to learn.",
+    "translation": "sabırlı"
+  },
+  {
+    "word": "suggest",
+    "definition": "To mention an idea or a plan for someone else to think about.",
+    "context_sentence": "I suggest going to the park since it is a beautiful day.",
+    "translation": "önermek"
+  },
+  {
+    "word": "environment",
+    "definition": "The air, water, and land where people, animals, and plants live.",
+    "context_sentence": "Using less plastic is a great way to protect the environment.",
+    "translation": "çevre"
+  },
+  {
+    "word": "excellent",
+    "definition": "Extremely good; of very high quality.",
+    "context_sentence": "The service at this hotel is excellent; the staff are so helpful.",
+    "translation": "mükemmel"
+  },
+  {
+    "word": "imagine",
+    "definition": "To form a picture or idea of something in your mind.",
+    "context_sentence": "Can you imagine living in a house by the ocean?",
+    "translation": "hayal etmek"
+  },
+  {
+    "word": "particular",
+    "definition": "One specific person, thing, or group.",
+    "context_sentence": "Is there a particular restaurant you would like to visit tonight?",
+    "translation": "belirli, özel"
+  },
+  {
+    "word": "prevent",
+    "definition": "To stop something from happening or stop someone from doing something.",
+    "context_sentence": "Regular check-ups can help prevent serious health problems.",
+    "translation": "önlemek"
+  },
+  {
+    "word": "serious",
+    "definition": "Something that is bad or dangerous and needs attention.",
+    "context_sentence": "Traffic pollution is a serious problem in large cities.",
+    "translation": "ciddi"
+  },
+  {
+    "word": "urgent",
+    "definition": "Something that needs to be dealt with immediately.",
+    "context_sentence": "I have an urgent message for the manager; please call him now.",
+    "translation": "acil"
+  },
+  {
+    "word": "rent",
+    "definition": "To pay money to use something, like a house or a car, for a period of time.",
+    "context_sentence": "We decided to rent a car for our holiday in Spain.",
+    "translation": "kiralamak"
+  },
+  {
+    "word": "repair",
+    "definition": "To fix something that is broken or not working.",
+    "context_sentence": "How much will it cost to repair my broken phone screen?",
+    "translation": "tamir etmek"
+  },
+  {
+    "word": "research",
+    "definition": "Detailed study of a subject to find out new information.",
+    "context_sentence": "I am doing some research to find the best university for my master's.",
+    "translation": "araştırma"
+  },
+  {
+    "word": "responsible",
+    "definition": "To be in charge of something or to have the duty to do it.",
+    "context_sentence": "She is responsible for organizing the company's annual party.",
+    "translation": "sorumlu"
+  },
+  {
+    "word": "satisfied",
+    "definition": "Pleased because you have what you wanted or needed.",
+    "context_sentence": "I am very satisfied with the results of my English exam.",
+    "translation": "memnun"
+  },
+  {
+    "word": "schedule",
+    "definition": "A plan that lists all the work or events and when they will happen.",
+    "context_sentence": "I have a very busy schedule today, so I can't meet for lunch.",
+    "translation": "program, takvim"
+  },
+  {
+    "word": "situation",
+    "definition": "The set of things that are happening at a particular time and place.",
+    "context_sentence": "The economic situation is difficult, so we should save money.",
+    "translation": "durum"
+  },
+  {
+    "word": "success",
+    "definition": "The achieving of the results you wanted or hoped for.",
+    "context_sentence": "Hard work is the key to success in your professional life.",
+    "translation": "başarı"
+  },
+  {
+    "word": "suitable",
+    "definition": "Right or acceptable for a particular person, purpose, or situation.",
+    "context_sentence": "This movie is not suitable for children because it is too scary.",
+    "translation": "uygun"
+  },
+  {
+    "word": "valuable",
+    "definition": "Worth a lot of money or very important.",
+    "context_sentence": "The information in this book is very valuable for my project.",
+    "translation": "değerli"
+  },
+  {
+    "word": "vehicle",
+    "definition": "A machine like a car or bus used for carrying people or goods.",
+    "context_sentence": "Electric vehicles are becoming more popular in Europe.",
+    "translation": "araç, taşıt"
+  },
+  {
+    "word": "volunteer",
+    "definition": "A person who does a job without being paid for it.",
+    "context_sentence": "I work as a volunteer at the animal shelter on weekends.",
+    "translation": "gönüllü"
+  },
+  {
+    "word": "waste",
+    "definition": "To use something in a way that is not necessary or effective.",
+    "context_sentence": "Don't waste your time playing games; you should study for the test.",
+    "translation": "israf etmek, boşa harcamak"
+  },
+  {
+    "word": "worth",
+    "definition": "Having a particular value, especially in terms of money or importance.",
+    "context_sentence": "That new museum is definitely worth a visit.",
+    "translation": "değer"
+  },
+  {
+    "word": "confident",
+    "definition": "Being certain about your own abilities or about a situation.",
+    "context_sentence": "She felt confident about her presentation after practicing all night.",
+    "translation": "kendinden emin"
+  },
+  {
+    "word": "consider",
+    "definition": "To think about something carefully before making a choice.",
+    "context_sentence": "We are considering moving to a bigger apartment next year.",
+    "translation": "düşünmek"
+  },
+  {
+    "word": "accept",
+    "definition": "To say 'yes' to an offer, invitation, or an idea.",
+    "context_sentence": "They finally accepted our invitation to dinner.",
+    "translation": "kabul etmek"
+  },
+  {
+    "word": "adventure",
+    "definition": "An exciting and often dangerous experience.",
+    "context_sentence": "Our trip to the mountains was a real adventure.",
+    "translation": "macera"
+  },
+  {
+    "word": "agree",
+    "definition": "To have the same opinion as someone else.",
+    "context_sentence": "I agree with you; the prices in this shop are too high.",
+    "translation": "aynı fikirde olmak"
+  },
+  {
+    "word": "celebrate",
+    "definition": "To do something special for an important event or holiday.",
+    "context_sentence": "How are you going to celebrate your birthday this year?",
+    "translation": "kutlamak"
+  },
+  {
+    "word": "education",
+    "definition": "The process of teaching and learning, usually in schools.",
+    "context_sentence": "The government is investing more money in university education.",
+    "translation": "eğitim"
+  },
+  {
+    "word": "knowledge",
+    "definition": "Information and understanding that you have in your mind.",
+    "context_sentence": "He has a lot of knowledge about modern technology.",
+    "translation": "bilgi"
+  },
+  {
+    "word": "manage",
+    "definition": "To succeed in doing something difficult.",
+    "context_sentence": "Did you manage to finish the report before the deadline?",
+    "translation": "başarmak, idare etmek"
+  },
+  {
+    "word": "permission",
+    "definition": "If you have permission, you are allowed to do something.",
+    "context_sentence": "You need to ask for permission before taking photos here.",
+    "translation": "izin"
+  },
+  {
+    "word": "prepare",
+    "definition": "To make something or someone ready for something.",
+    "context_sentence": "I need to prepare my suitcase for the business trip tomorrow.",
+    "translation": "hazırlanmak"
+  },
+  {
+    "word": "receive",
+    "definition": "To get or be given something.",
+    "context_sentence": "I received a lot of presents for my graduation.",
+    "translation": "almak"
+  },
+  {
+    "word": "reduce",
+    "definition": "To make something smaller in size, amount, or price.",
+    "context_sentence": "The company is trying to reduce its costs this year.",
+    "translation": "azaltmak"
+  },
+  {
+    "word": "remember",
+    "definition": "To keep information in your mind or bring it back into your mind.",
+    "context_sentence": "I can't remember where I left my car keys.",
+    "translation": "hatırlamak"
+  },
+  {
+    "word": "error",
+    "definition": "A mistake, especially in computer work or writing.",
+    "context_sentence": "There is a spelling error in the first sentence of your email.",
+    "translation": "hata"
+  },
+  {
+    "word": "creative",
+    "definition": "Having original and imaginative ideas.",
+    "context_sentence": "The marketing team came up with a very creative idea for the ad.",
+    "translation": "yaratıcı"
+  },
+  {
+    "word": "deadline",
+    "definition": "A time or day by which something must be finished.",
+    "context_sentence": "The deadline for the project is Friday afternoon.",
+    "translation": "son teslim tarihi"
+  },
+  {
+    "word": "accomplish",
+    "definition": "To finish something successfully after a lot of effort.",
+    "context_sentence": "We accomplished a lot of work during the meeting today.",
+    "translation": "tamamlamak, başarmak"
+  },
+  {
+    "word": "apparent",
+    "definition": "Something that is easy to see or understand; obvious.",
+    "context_sentence": "It was apparent that she was not happy with the decision.",
+    "translation": "bariz, aşikar"
+  },
+  {
+    "word": "capable",
+    "definition": "Having the ability or skill to do something.",
+    "context_sentence": "I am sure he is capable of passing the advanced exam.",
+    "translation": "yetenekli, yapabilir"
+  },
+  {
+    "word": "accurate",
+    "definition": "Correct and true in every detail; without any mistakes.",
+    "context_sentence": "The weather forecast was very accurate this weekend.",
+    "translation": "doğru, kesin"
+  },
+  {
+    "word": "admire",
+    "definition": "To respect and like someone for what they have done.",
+    "context_sentence": "I really admire people who speak many different languages.",
+    "translation": "hayran olmak"
+  },
+  {
+    "word": "advertise",
+    "definition": "To tell the public about a product or service to sell it.",
+    "context_sentence": "Companies advertise their products on social media to reach young people.",
+    "translation": "reklam yapmak"
+  },
+  {
+    "word": "analyze",
+    "definition": "To study something carefully to understand it better.",
+    "context_sentence": "Scientists are trying to analyze the data from the experiment.",
+    "translation": "analiz etmek"
+  },
+  {
+    "word": "anxious",
+    "definition": "Feeling worried or nervous about something.",
+    "context_sentence": "I feel anxious when I have to give a speech in public.",
+    "translation": "endişeli"
+  },
+  {
+    "word": "attitude",
+    "definition": "The way you feel or think about something or someone.",
+    "context_sentence": "He has a very positive attitude towards his work.",
+    "translation": "tutum, tavır"
+  },
+  {
+    "word": "aware",
+    "definition": "Knowing that something exists or is happening.",
+    "context_sentence": "Are you aware of the traffic problems in the city center?",
+    "translation": "farkında"
+  },
+  {
+    "word": "capacity",
+    "definition": "The maximum amount that something can contain.",
+    "context_sentence": "The stadium has a seating capacity of 50,000 people.",
+    "translation": "kapasite"
+  },
+  {
+    "word": "circumstance",
+    "definition": "The facts or conditions that affect a situation.",
+    "context_sentence": "Under the circumstances, we had to cancel our travel plans.",
+    "translation": "durum, koşul"
+  },
+  {
+    "word": "complex",
+    "definition": "Having many different parts; not simple.",
+    "context_sentence": "The instructions for the new coffee machine are quite complex.",
+    "translation": "karmaşık"
+  },
+  {
+    "word": "concentrate",
+    "definition": "To give all your attention to the thing you are doing.",
+    "context_sentence": "It is hard to concentrate on my homework when the TV is loud.",
+    "translation": "odaklanmak"
+  },
+  {
+    "word": "consequence",
+    "definition": "A result of a particular action or situation.",
+    "context_sentence": "If you don't study, the consequence will be a low grade.",
+    "translation": "sonuç"
+  },
+  {
+    "word": "demonstrate",
+    "definition": "To show someone how to do something or how something works.",
+    "context_sentence": "The salesman demonstrated how to use the new vacuum cleaner.",
+    "translation": "göstermek"
+  },
+  {
+    "word": "despite",
+    "definition": "Used to show that something is happening even though something else might stop it.",
+    "context_sentence": "We went for a walk despite the cold weather.",
+    "translation": "rağmen"
+  },
+  {
+    "word": "efficient",
+    "definition": "Working well and quickly without wasting time or energy.",
+    "context_sentence": "This new heating system is much more efficient than the old one.",
+    "translation": "verimli"
+  },
+  {
+    "word": "emphasize",
+    "definition": "To show that something is very important or worth noticing.",
+    "context_sentence": "My teacher emphasized the importance of regular practice.",
+    "translation": "vurgulamak"
+  },
+  {
+    "word": "enable",
+    "definition": "To make it possible for someone to do something.",
+    "context_sentence": "The new app enables users to pay their bills online easily.",
+    "translation": "olanak tanımak"
+  },
+  {
+    "word": "encounter",
+    "definition": "To meet someone or experience a problem unexpectedly.",
+    "context_sentence": "We encountered some difficulties during our first week in London.",
+    "translation": "karşılaşmak"
+  },
+  {
+    "word": "enormous",
+    "definition": "Extremely large in size, amount, or degree.",
+    "context_sentence": "The house was enormous with ten bedrooms and a large garden.",
+    "translation": "muazzam, kocaman"
+  },
+  {
+    "word": "evidence",
+    "definition": "Anything that shows that something is true or exists.",
+    "context_sentence": "The police are looking for evidence to solve the crime.",
+    "translation": "kanıt"
+  },
+  {
+    "word": "exaggerate",
+    "definition": "To make something seem larger, better, or worse than it really is.",
+    "context_sentence": "Don't exaggerate; the fish you caught wasn't that big!",
+    "translation": "abartmak"
+  },
+  {
+    "word": "expand",
+    "definition": "To become larger in size, number, or importance.",
+    "context_sentence": "The company plans to expand its business to Asia next year.",
+    "translation": "büyümek, genişlemek"
+  },
+  {
+    "word": "flexible",
+    "definition": "Able to change easily according to the situation.",
+    "context_sentence": "I have a flexible schedule, so I can meet you at any time.",
+    "translation": "esnek"
+  },
+  {
+    "word": "frustrated",
+    "definition": "Feeling annoyed or less confident because you cannot do what you want.",
+    "context_sentence": "I feel frustrated when I can't remember simple English words.",
+    "translation": "hüsrana uğramış"
+  },
+  {
+    "word": "guarantee",
+    "definition": "A promise that something will be done or that a product is good.",
+    "context_sentence": "This television comes with a two-year guarantee.",
+    "translation": "garanti"
+  },
+  {
+    "word": "hesitate",
+    "definition": "To pause before you do something because you are not sure.",
+    "context_sentence": "If you need any help, please don't hesitate to ask.",
+    "translation": "tereddüt etmek"
+  },
+  {
+    "word": "identify",
+    "definition": "To recognize someone or something and say who or what they are.",
+    "context_sentence": "The witness was able to identify the man in the police station.",
+    "translation": "tanımlamak"
+  },
+  {
+    "word": "impact",
+    "definition": "The powerful effect that something has on a situation or person.",
+    "context_sentence": "The new law will have a big impact on small businesses.",
+    "translation": "etki"
+  },
+  {
+    "word": "maintain",
+    "definition": "To make something continue in the same way or at the same level.",
+    "context_sentence": "It is important to maintain a healthy diet and exercise regularly.",
+    "translation": "sürdürmek"
+  },
+  {
+    "word": "negotiate",
+    "definition": "To discuss something formally to reach an agreement.",
+    "context_sentence": "I managed to negotiate a lower price for the used car.",
+    "translation": "müzakere etmek, pazarlık yapmak"
+  },
+  {
+    "word": "observe",
+    "definition": "To watch someone or something carefully.",
+    "context_sentence": "The students observed the birds for their biology project.",
+    "translation": "gözlemlemek"
+  },
+  {
+    "word": "persuade",
+    "definition": "To make someone agree to do something by giving them reasons.",
+    "context_sentence": "I finally persuaded my brother to lend me his car.",
+    "translation": "ikna etmek"
+  },
+  {
+    "word": "precise",
+    "definition": "Clear and accurate; exact.",
+    "context_sentence": "We need precise measurements before we buy the new carpet.",
+    "translation": "kesin, tam"
+  },
+  {
+    "word": "previous",
+    "definition": "Happening or existing before something else.",
+    "context_sentence": "In my previous job, I worked as a sales assistant.",
+    "translation": "önceki"
+  },
+  {
+    "word": "priority",
+    "definition": "Something that is very important and must be dealt with first.",
+    "context_sentence": "Our top priority is to finish the project before Friday.",
+    "translation": "öncelik"
+  },
+  {
+    "word": "prohibit",
+    "definition": "To officially forbid something.",
+    "context_sentence": "Smoking is strictly prohibited inside the hospital.",
+    "translation": "yasaklamak"
+  },
+  {
+    "word": "purchase",
+    "definition": "To buy something.",
+    "context_sentence": "I recently purchased a new laptop for my university studies.",
+    "translation": "satın almak"
+  },
+  {
+    "word": "recommend",
+    "definition": "To say that someone or something is good and worth choosing.",
+    "context_sentence": "Can you recommend a good place to eat in this town?",
+    "translation": "tavsiye etmek"
+  },
+  {
+    "word": "regret",
+    "definition": "To feel sorry about something you did or did not do.",
+    "context_sentence": "I regret missing your birthday party last night.",
+    "translation": "pişman olmak"
+  },
+  {
+    "word": "relevant",
+    "definition": "Connected with what is happening or being discussed.",
+    "context_sentence": "This information is not relevant to our current project.",
+    "translation": "ilgili"
+  },
+  {
+    "word": "relieved",
+    "definition": "Feeling happy because something unpleasant has stopped or didn't happen.",
+    "context_sentence": "I felt relieved when I found my lost wallet.",
+    "translation": "rahatlamış"
+  },
+  {
+    "word": "require",
+    "definition": "To need something or make something necessary.",
+    "context_sentence": "This recipe requires three eggs and 500 grams of flour.",
+    "translation": "gerektirmek"
+  },
+  {
+    "word": "resident",
+    "definition": "A person who lives in a particular place.",
+    "context_sentence": "Local residents are complaining about the noise from the park.",
+    "translation": "sakin, oturan"
+  },
+  {
+    "word": "response",
+    "definition": "An answer or a reaction to something.",
+    "context_sentence": "I am waiting for a response to my job application.",
+    "translation": "yanıt"
+  },
+  {
+    "word": "significant",
+    "definition": "Important or noticeable.",
+    "context_sentence": "There has been a significant change in the weather this week.",
+    "translation": "önemli"
+  },
+  {
+    "word": "solution",
+    "definition": "The answer to a problem.",
+    "context_sentence": "We need to find a solution to the parking problem at our school.",
+    "translation": "çözüm"
+  },
+  {
+    "word": "specify",
+    "definition": "To explain something in an exact and detailed way.",
+    "context_sentence": "The contract specifies the dates for the project's completion.",
+    "translation": "belirlemek"
+  },
+  {
+    "word": "strategy",
+    "definition": "A detailed plan for achieving success in something.",
+    "context_sentence": "Our sales strategy is to focus on younger customers.",
+    "translation": "strateji"
+  },
+  {
+    "word": "sufficient",
+    "definition": "Enough for a particular purpose.",
+    "context_sentence": "We don't have sufficient evidence to prove who broke the window.",
+    "translation": "yeterli"
+  },
+  {
+    "word": "target",
+    "definition": "Something you are trying to achieve.",
+    "context_sentence": "Our sales target for this month is very high.",
+    "translation": "hedef"
+  },
+  {
+    "word": "theory",
+    "definition": "An idea or set of ideas that explains something.",
+    "context_sentence": "In theory, this plan should work perfectly.",
+    "translation": "teori"
+  }
+]

@@ -4,17 +4,14 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { LearningProvider } from "@/contexts/LearningContext";
-
-// Sayfa Importları
 import Index from "./pages/Index";
 import Onboarding from "./pages/Onboarding";
 import Dashboard from "./pages/Dashboard";
 import Learn from "./pages/Learn";
 import Games from "./pages/Games";
 import Confusing from './pages/Confusing';
-import Topics from "./pages/Topics";
-import Review from "./pages/Review"; // 1. Review sayfasını import ettik
 import NotFound from "./pages/NotFound";
+import Topics from "@/pages/Topics";
 
 const queryClient = new QueryClient();
 
@@ -34,8 +31,8 @@ const App = () => (
             <Route path="/topics" element={<Topics />} />
             <Route path="/confusing" element={<Confusing />} />
             
-            {/* 2. YENİ ROTAYI BURAYA EKLEDİK */}
-            <Route path="/review" element={<Review />} />
+            {/* 2. YENİ ROTAYI BURAYA EKLE */}
+
 
             <Route path="*" element={<NotFound />} />
           </Routes>
