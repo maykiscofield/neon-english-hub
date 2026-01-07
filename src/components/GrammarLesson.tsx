@@ -63,18 +63,20 @@ const GrammarLesson: React.FC<GrammarLessonProps> = ({ topicTitle, onBack }) => 
   const [answers, setAnswers] = useState<Record<string, string | null>>({});
 
   // Dinamik Veri Çekme
-  const content = allLessons[topicTitle];
+  const content = (allLessons as any)[topicTitle];
 
   // Her konu değiştiğinde state'leri sıfırla
   useEffect(() => {
     setAnswers({});
     setShowResult(false);
     setActiveHint(null);
+    setActiveTab('positive'); // Konu değişince tab'i de sıfırla
   }, [topicTitle]);
 
-  if (!content) return (
+  // Hata Kontrolü: İçerik yoksa veya beklenen alanlar eksikse koruma sağlar
+  if (!content || !content.examples || !content.formulas) return (
     <div className="p-20 text-center text-purple-500 font-black italic animate-pulse">
-      SYSTEM ERROR: BLUEPRINT NOT FOUND (ID: {topicTitle})
+      SYSTEM ERROR: BLUEPRINT NOT FOUND OR INCOMPLETE (ID: {topicTitle})
     </div>
   );
 
@@ -145,7 +147,7 @@ const GrammarLesson: React.FC<GrammarLessonProps> = ({ topicTitle, onBack }) => 
           <div className="relative overflow-x-auto pb-6">
             <motion.div layout className="flex items-center gap-3 min-w-max mb-10">
               <AnimatePresence mode="popLayout">
-                {content.formulas[activeTab].map((block: any, idx: number) => (
+                {content.formulas[activeTab]?.map((block: any, idx: number) => (
                   <React.Fragment key={`${activeTab}-${idx}`}>
                     <FormulaBlock label={block.label} detail={block.detail} colorClass={block.color} />
                     {idx < content.formulas[activeTab].length - 1 && <div className="text-gray-600 font-light text-2xl">+</div>}
@@ -156,73 +158,78 @@ const GrammarLesson: React.FC<GrammarLessonProps> = ({ topicTitle, onBack }) => 
             </motion.div>
 
             {/* ÖRNEK ANALİZİ */}
-            <motion.div layout className="p-8 rounded-[32px] bg-white/[0.02] border border-white/5 relative overflow-hidden shadow-2xl">
-              <div className="absolute top-0 left-0 w-1 h-full bg-gradient-to-b from-purple-500 to-pink-500" />
-              <div className="flex items-center gap-2 mb-4 text-[10px] font-black uppercase tracking-[0.2em] text-white/30">
-                <CheckCircle2 size={12} className="text-green-500" /> Yapı Analizi & Çeviri
-              </div>
-              <div className="space-y-4">
-                <div className="text-2xl md:text-3xl font-medium tracking-tight italic flex flex-wrap gap-x-3 gap-y-2 text-white">
-                  {currentExample.parts.map((part: any, i: number) => (
-                    <span key={i} className={`${part.color} ${part.underline ? 'underline underline-offset-8 font-black' : ''}`}>
-                      {part.text}
-                    </span>
-                  ))}
+            {currentExample && (
+              <motion.div layout className="p-8 rounded-[32px] bg-white/[0.02] border border-white/5 relative overflow-hidden shadow-2xl">
+                <div className="absolute top-0 left-0 w-1 h-full bg-gradient-to-b from-purple-500 to-pink-500" />
+                <div className="flex items-center gap-2 mb-4 text-[10px] font-black uppercase tracking-[0.2em] text-white/30">
+                  <CheckCircle2 size={12} className="text-green-500" /> Yapı Analizi & Çeviri
                 </div>
-                <motion.div key={activeTab} initial={{ x: -10, opacity: 0 }} animate={{ x: 0, opacity: 1 }} className="text-lg text-slate-500 font-medium italic border-t border-white/5 pt-4">
-                  <span className="text-slate-600 mr-2 uppercase text-xs font-black tracking-widest">Çeviri:</span> "{currentExample.translation}"
-                </motion.div>
-              </div>
-            </motion.div>
+                <div className="space-y-4">
+                  <div className="text-2xl md:text-3xl font-medium tracking-tight italic flex flex-wrap gap-x-3 gap-y-2 text-white">
+                    {currentExample.parts?.map((part: any, i: number) => (
+                      <span key={i} className={`${part.color} ${part.underline ? 'underline underline-offset-8 font-black' : ''}`}>
+                        {part.text}
+                      </span>
+                    ))}
+                  </div>
+                  <motion.div key={activeTab} initial={{ x: -10, opacity: 0 }} animate={{ x: 0, opacity: 1 }} className="text-lg text-slate-500 font-medium italic border-t border-white/5 pt-4">
+                    <span className="text-slate-600 mr-2 uppercase text-xs font-black tracking-widest">Çeviri:</span> "{currentExample.translation}"
+                  </motion.div>
+                </div>
+              </motion.div>
+            )}
           </div>
 
           {/* KULLANIM SENARYOLARI */}
-          <div className="mt-12 pt-8 border-t border-white/5">
-            <h4 className="text-[11px] font-bold text-white/40 uppercase tracking-[0.3em] mb-6 flex items-center gap-2">
-              <Activity className="w-4 h-4 text-purple-500" /> Kullanım Senaryoları
-            </h4>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-              {content.scenarios.map((item: any, i: number) => (
-                <div key={i} className={`p-6 rounded-2xl bg-gradient-to-br ${item.color} border border-white/5 hover:bg-white/[0.03] transition-all group`}>
-                  <div className="text-white/80 mb-3 group-hover:scale-110 transition-transform duration-300">
-                    {/* İkon eşleşmesi için basitleştirilmiş mantık */}
-                    {i === 0 ? <Clock size={20}/> : i === 1 ? <RefreshCw size={20}/> : <Eye size={20}/>}
+          {content.scenarios && (
+            <div className="mt-12 pt-8 border-t border-white/5">
+              <h4 className="text-[11px] font-bold text-white/40 uppercase tracking-[0.3em] mb-6 flex items-center gap-2">
+                <Activity className="w-4 h-4 text-purple-500" /> Kullanım Senaryoları
+              </h4>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                {content.scenarios.map((item: any, i: number) => (
+                  <div key={i} className={`p-6 rounded-2xl bg-gradient-to-br ${item.color} border border-white/5 hover:bg-white/[0.03] transition-all group`}>
+                    <div className="text-white/80 mb-3 group-hover:scale-110 transition-transform duration-300">
+                      {i === 0 ? <Clock size={20}/> : i === 1 ? <RefreshCw size={20}/> : <Eye size={20}/>}
+                    </div>
+                    <h5 className="text-base font-extrabold text-white tracking-tight mb-1.5">{item.title}</h5>
+                    <p className="text-[13px] text-slate-400 font-medium leading-relaxed">{item.desc}</p>
                   </div>
-                  <h5 className="text-base font-extrabold text-white tracking-tight mb-1.5">{item.title}</h5>
-                  <p className="text-[13px] text-slate-400 font-medium leading-relaxed">{item.desc}</p>
-                </div>
-              ))}
+                ))}
+              </div>
             </div>
-          </div>
+          )}
         </div>
       </section>
 
       {/* KRİTİK BİLGİLER */}
-      <section className="bg-red-950/10 border border-red-500/30 p-10 rounded-[40px] shadow-2xl relative overflow-hidden">
-        <h2 className="text-2xl font-black mb-12 text-red-500 italic uppercase flex items-center gap-3 tracking-tighter">
-          <AlertTriangle className="animate-pulse" /> Kritik Bilgiler & Tuzaklar
-        </h2>
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 relative z-10">
-          {content.warnings.map((warn: any, idx: number) => (
-            <div key={idx} className="bg-black/60 p-8 rounded-[32px] border border-white/5 shadow-inner">
-               <h3 className="text-white/50 font-bold mb-6 text-[10px] uppercase tracking-[0.3em] flex items-center gap-2">
-                 <AlertTriangle className="w-4 h-4 text-red-500" /> {warn.title}
-               </h3>
-               <div className="space-y-4 mb-6">
-                 <div className="flex items-center gap-3">
-                   <span className="text-[9px] font-black bg-red-500/20 text-red-400 px-2 py-0.5 rounded uppercase tracking-widest">Wrong</span>
-                   <p className="text-red-400/50 line-through text-base italic">{warn.wrong}</p>
+      {content.warnings && content.warnings.length > 0 && (
+        <section className="bg-red-950/10 border border-red-500/30 p-10 rounded-[40px] shadow-2xl relative overflow-hidden">
+          <h2 className="text-2xl font-black mb-12 text-red-500 italic uppercase flex items-center gap-3 tracking-tighter">
+            <AlertTriangle className="animate-pulse" /> Kritik Bilgiler & Tuzaklar
+          </h2>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 relative z-10">
+            {content.warnings.map((warn: any, idx: number) => (
+              <div key={idx} className="bg-black/60 p-8 rounded-[32px] border border-white/5 shadow-inner">
+                 <h3 className="text-white/50 font-bold mb-6 text-[10px] uppercase tracking-[0.3em] flex items-center gap-2">
+                   <AlertTriangle className="w-4 h-4 text-red-500" /> {warn.title}
+                 </h3>
+                 <div className="space-y-4 mb-6">
+                   <div className="flex items-center gap-3">
+                     <span className="text-[9px] font-black bg-red-500/20 text-red-400 px-2 py-0.5 rounded uppercase tracking-widest">Wrong</span>
+                     <p className="text-red-400/50 line-through text-base italic">{warn.wrong}</p>
+                   </div>
+                   <div className="flex items-center gap-3">
+                     <span className="text-[9px] font-black bg-green-500/20 text-green-400 px-2 py-0.5 rounded uppercase tracking-widest">Right</span>
+                     <p className="text-green-400 font-extrabold text-xl tracking-tight">{warn.right}</p>
+                   </div>
                  </div>
-                 <div className="flex items-center gap-3">
-                   <span className="text-[9px] font-black bg-green-500/20 text-green-400 px-2 py-0.5 rounded uppercase tracking-widest">Right</span>
-                   <p className="text-green-400 font-extrabold text-xl tracking-tight">{warn.right}</p>
-                 </div>
-               </div>
-               <p className="text-slate-500 text-[13px] italic leading-relaxed pt-5 border-t border-white/5">{warn.note}</p>
-            </div>
-          ))}
-        </div>
-      </section>
+                 <p className="text-slate-500 text-[13px] italic leading-relaxed pt-5 border-t border-white/5">{warn.note}</p>
+              </div>
+            ))}
+          </div>
+        </section>
+      )}
 
       {/* MİNİ ALIŞTIRMA (DND) */}
       {content.challenge && (
@@ -234,10 +241,10 @@ const GrammarLesson: React.FC<GrammarLessonProps> = ({ topicTitle, onBack }) => 
           
           <DndContext onDragEnd={handleDragEnd}>
             <div className="flex flex-wrap gap-4 justify-center mb-16 px-4">
-              {content.challenge.words.map((w: string) => <DraggableItem key={w} id={w} label={w} />)}
+              {content.challenge.words?.map((w: string) => <DraggableItem key={w} id={w} label={w} />)}
             </div>
             <div className="space-y-12 text-xl max-w-3xl mx-auto bg-slate-900/50 p-12 rounded-[40px] border border-white/5 shadow-2xl relative z-10">
-              {content.challenge.questions.map((q: any) => (
+              {content.challenge.questions?.map((q: any) => (
                 <div key={q.id} className="flex flex-wrap items-center leading-loose font-bold text-slate-100">
                   {q.text[0]}
                   <DroppableZone id={q.id} currentAnswer={answers[q.id]} showResult={showResult} isCorrect={answers[q.id] === q.correct} onShowHint={(id: string) => setActiveHint(id)} />

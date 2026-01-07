@@ -3,7 +3,7 @@ import { questionFormsData } from './question-forms';
 import { adverbsFrequencyData } from './adverbs-frequency'; 
 import { indefinitePronounsData } from './indefinite-pronouns';
 import { adverbsDegreeData } from './adverbs-degree';
-import { presentSimpleVsContData } from './present-simple-vs-continuous';
+import { presentSimpleVsContData } from './present-simple-vs-continuous'; 
 import { pastSimpleData } from './past-simple';
 import { adjectivesEdIngData } from './adjectives-ed-ing';
 import { quantifiersBasicData } from './quantifiers-basic';
@@ -23,7 +23,18 @@ import { usedToData } from './used-to';
 import { reflexivePronounsData } from './reflexive-pronouns';
 import { purposeInfinitivesData } from './purpose-infinitives';
 import { firstConditionalData } from './first-conditional';
-import { secondConditionalData } from './second-conditional'; // YENİ EKLENDİ
+import { secondConditionalData } from './second-conditional';
+import { relativeClausesDefiningData } from './relative-clauses-defining'; 
+import { gerundsPrepositionsData } from './gerunds-prepositions'; 
+import { comparisonsAdvancedData } from './comparisons-advanced';
+import { needToNecessityData } from './need-to-necessity';
+import { passiveBasicData } from './passive-basic';
+import { adjInfinitiveData } from './adj-infinitive';
+import { evenUsageData } from './even-usage';
+import { reportedSpeechBasicData } from './reported-speech-basic';
+import { pastPerfectData } from './past-perfect-basic';
+// Yeni eklenen Shall dersi
+import { shallOffersData } from './shall-offers';
 
 // --- INTERMEDIATE (B1+) SEVİYESİ ---
 import { presentSimpleContinuousB1Data } from './present-simple-continuous-b1';
@@ -40,7 +51,7 @@ import { presentPerfectSimpleVsContData } from './present-perfect-simple-vs-cont
 import { hadToNeededToData } from './had-to-needed-to';
 import { modalsDeductionData } from './modals-deduction';
 import { doubleComparativesData } from './double-comparatives';
-import { relativeClausesData } from './relative-clauses';
+import { relativeClausesData } from './relative-clauses'; 
 import { zeroFirstCondData } from './zero-first-cond';
 import { conditionalsTypeTwoData } from './conditionals-type-2';
 import { reportedSpeechData } from './reported-speech';
@@ -77,7 +88,19 @@ export const allLessons: Record<string, any> = {
   '8.1-reflexive-pronouns': reflexivePronounsData,
   '8.2-purpose-infinitives': purposeInfinitivesData,
   '8.3-first-conditional': firstConditionalData,
-  '9.1-second-conditional': secondConditionalData, // YENİ EKLENDİ
+  '9.1-second-conditional': secondConditionalData,
+  '9.2-relative-clauses-defining': relativeClausesDefiningData,
+  '9.3-gerunds-prepositions': gerundsPrepositionsData,
+  '10.1-comparisons': comparisonsAdvancedData,
+  '10.3-need-to': needToNecessityData,
+  '11.1-passive-simple': passiveBasicData,
+  '11.2-adj-to-infinitive': adjInfinitiveData,
+  '11.3-even-usage': evenUsageData,
+  '12.1-reported-speech-basic': reportedSpeechBasicData,
+  '12.2-past-perfect-basic': pastPerfectData,
+  // image_204007.png hatasını çözen anahtar:
+  '12.3-shall-suggestions': shallOffersData,
+
 
   // --- Intermediate (B1+) ID'leri ---
   'b1-1.1-state-verbs': presentSimpleContinuousB1Data,
@@ -103,6 +126,5 @@ export const allLessons: Record<string, any> = {
   'b1-10.1-third-conditional': thirdConditionalData,
   'b1-10.2-wish-if-only': wishesRegretsData,
 
-  // Özel ID'ler
   'b2-2.1-perf-simple-cont': presentPerfectAdvancedData, 
 };
