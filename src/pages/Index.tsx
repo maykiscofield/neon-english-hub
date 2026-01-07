@@ -37,15 +37,23 @@ const Index = () => {
             </h2>
             
             <p className="text-xl text-muted-foreground mb-8 max-w-xl mx-auto">
-              Join thousands of learners who are mastering English through science-based methods.
+              Master English with our unique spiral curriculum and neon-powered learning experience.
             </p>
             
-            <Link to="/onboarding">
-              <Button variant="neon" size="xl" className="group">
-                Begin Your Journey
-                <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
-              </Button>
-            </Link>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Link to="/onboarding">
+                <Button variant="neon" size="xl" className="group w-full sm:w-auto">
+                  Begin Your Journey
+                  <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
+                </Button>
+              </Link>
+              {/* Kütüphaneye doğrudan gitmek için opsiyonel bir buton */}
+              <Link to="/topics">
+                <Button variant="outline" size="xl" className="w-full sm:w-auto">
+                  Explore Library
+                </Button>
+              </Link>
+            </div>
           </motion.div>
         </div>
       </section>
@@ -56,14 +64,14 @@ const Index = () => {
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
             <div className="flex items-center gap-2">
               <Zap className="w-5 h-5 text-primary" />
-              <span className="font-heading font-bold">
-                <span className="text-primary">Preparatory</span>
-                <span className="text-foreground">Master</span>
+              <span className="font-heading font-bold uppercase italic">
+                <span className="text-primary">Neon</span>
+                <span className="text-foreground"> English Hub</span>
               </span>
             </div>
             
             <p className="text-sm text-muted-foreground">
-              Science-based English learning. No gimmicks.
+              Science-based learning. Neon-styled mastery.
             </p>
             
             <div className="flex items-center gap-4 text-sm text-muted-foreground">
