@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Navbar } from '@/components/layout/Navbar';
-import { ArrowLeft, Book, Lock, CheckCircle2 } from 'lucide-react';
+import { ArrowLeft, Book, Lock, CheckCircle2, Trophy } from 'lucide-react'; // Trophy eklendi
 import { Button } from '@/components/ui/button';
 import { useNavigate, useParams } from 'react-router-dom';
 import { useLearning } from '@/contexts/LearningContext';
@@ -20,7 +20,7 @@ const Topics = () => {
   const levelOrder = ['pre-intermediate', 'intermediate', 'upper-intermediate'];
   const userLevelIndex = levelOrder.indexOf(userProfile?.level || 'pre-intermediate');
 
-  // SENİN EKSİKSİZ TÜM LİSTEN
+  // SENİN EKSİKSİZ TÜM LİSTEN + SADECE EKLEMELER
   const topics = [
     { id: '1.1-question-forms', title: '1.1 Soru Formları (ASQ)', level: 'pre-intermediate', count: 8, progress: 0 },
     { id: '1.2-adverbs-frequency', title: '1.2 Sıklık Zarfları ve İfadeleri', level: 'pre-intermediate', count: 6, progress: 0 },
@@ -79,6 +79,12 @@ const Topics = () => {
     { id: 'b1-9.2-reported-speech', title: '9.2 Reported Speech (B1+)', level: 'intermediate', count: 12, progress: 0 },
     { id: 'b1-10.1-third-conditional', title: '10.1 Third Conditional', level: 'intermediate', count: 9, progress: 0 },
     { id: 'b1-10.2-wish-if-only', title: '10.2 Umutlar ve Keşkeler', level: 'intermediate', count: 10, progress: 0 },
+    
+    // --- EKLEME: INTERMEDIATE FINAL SIMÜLASYONLARI (SARI NEON) ---
+    { id: 'b1-final-sim-1', title: 'FINAL SIMULATION I: ', level: 'intermediate', count: 15, progress: 0, isSim: true },
+    { id: 'b1-final-sim-2', title: 'FINAL SIMULATION II: ', level: 'intermediate', count: 15, progress: 0, isSim: true },
+    { id: 'b1-final-sim-3', title: 'FINAL SIMULATION III: ', level: 'intermediate', count: 15, progress: 0, isSim: true },
+
     { id: 'b2-1.1-question-forms', title: '1.1 Soru Formları Detay & Tags', level: 'upper-intermediate', count: 8, progress: 0 },
     { id: 'b2-1.2-tenses-review', title: '1.2 Zamanların Gözden Geçirilmesi', level: 'upper-intermediate', count: 12, progress: 0 },
     { id: 'b2-2.1-perf-simple-cont', title: '2.1 Present Perfect Simple & Continuous', level: 'upper-intermediate', count: 10, progress: 0 },
@@ -157,12 +163,13 @@ const Topics = () => {
               </div>
 
               {/* --- STABLE GRID AREA --- */}
-              {/* min-h-screen kullanarak listenin her zaman yeterince uzun olduğundan emin oluyoruz. */}
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 min-h-screen">
                 {topics.map((topic, idx) => {
                   const topicLevelIndex = levelOrder.indexOf(topic.level);
                   const isLocked = topicLevelIndex > userLevelIndex;
                   const isCompleted = topic.progress === 100;
+                  // @ts-ignore
+                  const isSim = topic.isSim;
 
                   return (
                     <motion.div 
@@ -174,25 +181,37 @@ const Topics = () => {
                       className={`relative group p-6 rounded-[24px] border transition-all duration-500 overflow-hidden backdrop-blur-md ${
                         isLocked 
                         ? 'border-white/5 bg-white/[0.02] cursor-not-allowed grayscale-[0.8]' 
-                        : 'border-purple-500/20 bg-purple-500/5 hover:bg-purple-500/10 hover:border-purple-500/50 hover:shadow-[0_0_40px_rgba(168,85,247,0.15)] cursor-pointer'
+                        : isSim 
+                          ? 'border-yellow-500/30 bg-yellow-500/5 hover:bg-yellow-500/10 hover:border-yellow-500/60 hover:shadow-[0_0_40px_rgba(234,179,8,0.2)] cursor-pointer'
+                          : 'border-purple-500/20 bg-purple-500/5 hover:bg-purple-500/10 hover:border-purple-500/50 hover:shadow-[0_0_40px_rgba(168,85,247,0.15)] cursor-pointer'
                       }`}
                     >
                       <div className="flex justify-between items-start mb-6">
                         <div className={`p-3 rounded-2xl transition-colors ${
-                          isLocked ? 'bg-gray-800/50 text-gray-500' : isCompleted ? 'bg-green-500/20 text-green-400' : 'bg-purple-500/20 text-purple-400 shadow-[0_0_15px_rgba(168,85,247,0.2)]'
+                          isLocked 
+                            ? 'bg-gray-800/50 text-gray-500' 
+                            : isSim 
+                              ? 'bg-yellow-500/20 text-yellow-400 shadow-[0_0_15px_rgba(234,179,8,0.3)]'
+                              : isCompleted 
+                                ? 'bg-green-500/20 text-green-400' 
+                                : 'bg-purple-500/20 text-purple-400 shadow-[0_0_15px_rgba(168,85,247,0.2)]'
                         }`}>
-                          {isLocked ? <Lock className="w-6 h-6" /> : isCompleted ? <CheckCircle2 className="w-6 h-6" /> : <Book className="w-6 h-6" />}
+                          {isLocked ? <Lock className="w-6 h-6" /> : isSim ? <Trophy className="w-6 h-6" /> : isCompleted ? <CheckCircle2 className="w-6 h-6" /> : <Book className="w-6 h-6" />}
                         </div>
                         <div className="flex flex-col items-end">
                           <span className={`text-[10px] font-black uppercase tracking-[0.2em] px-3 py-1 rounded-full border transition-all ${
-                            isLocked ? 'border-white/5 text-gray-600' : 'border-purple-500/30 text-purple-400/80 bg-purple-500/5'
+                            isLocked 
+                              ? 'border-white/5 text-gray-600' 
+                              : isSim 
+                                ? 'border-yellow-500/40 text-yellow-400 bg-yellow-500/10'
+                                : 'border-purple-500/30 text-purple-400/80 bg-purple-500/5'
                           }`}>
                             {topic.level.replace('-', ' ')}
                           </span>
                         </div>
                       </div>
                       <h3 className={`text-xl font-bold mb-4 transition-colors tracking-tight leading-tight ${
-                        isLocked ? 'text-gray-600' : 'text-white group-hover:text-purple-300'
+                        isLocked ? 'text-gray-600' : isSim ? 'text-white group-hover:text-yellow-200' : 'text-white group-hover:text-purple-300'
                       }`}>
                         {topic.title}
                       </h3>
@@ -200,9 +219,9 @@ const Topics = () => {
                         <div className="mt-auto pt-2">
                           <div className="flex justify-between items-end mb-2 text-xs">
                             <p className="font-black uppercase tracking-widest text-gray-500">
-                              {isCompleted ? 'Topic Mastered' : 'Progress'}
+                              {isSim ? 'Simulation Score' : isCompleted ? 'Topic Mastered' : 'Progress'}
                             </p>
-                            <span className={`font-bold ${isCompleted ? 'text-green-400' : 'text-purple-400'}`}>
+                            <span className={`font-bold ${isSim ? 'text-yellow-400' : isCompleted ? 'text-green-400' : 'text-purple-400'}`}>
                               {topic.progress}%
                             </span>
                           </div>
@@ -211,15 +230,27 @@ const Topics = () => {
                               initial={{ width: 0 }} 
                               animate={{ width: `${topic.progress}%` }} 
                               transition={{ duration: 1, ease: "easeOut" }}
-                              className={`h-full rounded-full ${isCompleted ? 'bg-green-500 shadow-[0_0_10px_rgba(34,197,94,0.5)]' : 'bg-gradient-to-r from-purple-600 to-pink-500'}`} 
+                              className={`h-full rounded-full ${
+                                isSim 
+                                  ? 'bg-gradient-to-r from-yellow-600 to-yellow-400 shadow-[0_0_10px_rgba(234,179,8,0.5)]'
+                                  : isCompleted 
+                                    ? 'bg-green-500 shadow-[0_0_10px_rgba(34,197,94,0.5)]' 
+                                    : 'bg-gradient-to-r from-purple-600 to-pink-500'
+                              }`} 
                             />
                           </div>
                         </div>
                       )}
                       <div className="flex items-center gap-2 mt-4">
-                        <div className={`h-1.5 w-1.5 rounded-full ${isLocked ? 'bg-gray-700' : 'bg-purple-500 animate-pulse shadow-[0_0_8px_rgba(168,85,247,1)]'}`} />
+                        <div className={`h-1.5 w-1.5 rounded-full ${
+                          isLocked 
+                            ? 'bg-gray-700' 
+                            : isSim 
+                              ? 'bg-yellow-500 animate-pulse shadow-[0_0_8px_rgba(234,179,8,1)]'
+                              : 'bg-purple-500 animate-pulse shadow-[0_0_8px_rgba(168,85,247,1)]'
+                        }`} />
                         <p className={`text-[10px] font-medium uppercase tracking-widest ${isLocked ? 'text-gray-700' : 'text-gray-500 group-hover:text-gray-400'}`}>
-                          {topic.count} Lessons
+                          {isSim ? 'Final Challenge' : `${topic.count} Lessons`}
                         </p>
                       </div>
                     </motion.div>

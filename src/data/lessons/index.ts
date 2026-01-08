@@ -32,8 +32,7 @@ import { passiveBasicData } from './passive-basic';
 import { adjInfinitiveData } from './adj-infinitive';
 import { evenUsageData } from './even-usage';
 import { reportedSpeechBasicData } from './reported-speech-basic';
-import { pastPerfectData } from './past-perfect-basic';
-// Yeni eklenen Shall dersi
+import { pastPerfectData } from './past-perfect-basic'; 
 import { shallOffersData } from './shall-offers';
 
 // --- INTERMEDIATE (B1+) SEVİYESİ ---
@@ -58,12 +57,16 @@ import { reportedSpeechData } from './reported-speech';
 import { thirdConditionalData } from './third-conditional';
 import { wishesRegretsData } from './wishes-regrets';
 import { indirectQuestionsData } from './indirect-questions'; 
+// image_82600b.png hatasını çözen import:
+import { subjectObjectQuestionssData } from './subject-object-questionss'; 
+
+// FİNAL SİMÜLASYONLARI AKTİF EDİLDİ
 
 // --- EKSTRALAR ---
 import { presentPerfectAdvancedData } from './present-perfect-advanced';
 
 export const allLessons: Record<string, any> = {
-  // --- Pre-Intermediate (A2) ID'leri ---
+  // --- A2 ID'leri ---
   '1.1-question-forms': questionFormsData,
   '1.2-adverbs-frequency': adverbsFrequencyData,
   '1.3-indefinite-pronouns': indefinitePronounsData, 
@@ -97,14 +100,13 @@ export const allLessons: Record<string, any> = {
   '11.2-adj-to-infinitive': adjInfinitiveData,
   '11.3-even-usage': evenUsageData,
   '12.1-reported-speech-basic': reportedSpeechBasicData,
-  '12.2-past-perfect-basic': pastPerfectData,
-  // image_204007.png hatasını çözen anahtar:
-  '12.3-shall-suggestions': shallOffersData,
-
+  '12.2-past-perfect': pastPerfectData,
+  '12.3-shall-offers': shallOffersData,
 
   // --- Intermediate (B1+) ID'leri ---
   'b1-1.1-state-verbs': presentSimpleContinuousB1Data,
-  'b1-1.2-subj-obj-ques': subjectObjectQuestionsData,
+  // image_82600b.png hatasını çözen anahtar eşleşmesi:
+  'b1-1.2-subj-obj-ques': subjectObjectQuestionssData, 
   'b1-ek-indirect-ques': indirectQuestionsData,
   'b1-2.1-perf-vs-past': presentPerfectVsPastB1Data,
   'b1-2.2-ability-advanced': presentPastAbilityData,
@@ -125,6 +127,11 @@ export const allLessons: Record<string, any> = {
   'b1-9.2-reported-speech': reportedSpeechData, 
   'b1-10.1-third-conditional': thirdConditionalData,
   'b1-10.2-wish-if-only': wishesRegretsData,
+
+  // --- Intermediate Final Simülasyonları ---
+
+  // 'b1-final-sim-2': b1FinalSim2Data,
+  // 'b1-final-sim-3': b1FinalSim3Data,
 
   'b2-2.1-perf-simple-cont': presentPerfectAdvancedData, 
 };
