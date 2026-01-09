@@ -6,9 +6,7 @@ import {
   ChevronUp, 
   Bookmark, 
   BookmarkCheck, 
-  Loader2, 
-  CheckCircle2, 
-  Circle 
+  Loader2
 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { VocabularyWord } from '@/types/learning';
@@ -26,19 +24,13 @@ export function WordCard({ word, showExamples = true, compact = false }: WordCar
   const [isExpanded, setIsExpanded] = useState(!compact);
   const [activeCollocation, setActiveCollocation] = useState<string | null>(null);
   
-  const { toggleSaveWord, isWordSaved, updateProgress } = useLearning();
+  const { toggleSaveWord, isWordSaved } = useLearning();
   const saved = isWordSaved(word.id);
   const { speak, isSpeaking, currentAccent, isSupported } = useSpeech();
 
   const playAudio = async (text: string, accent: Accent) => {
     if (!isSupported) return;
     await speak(text, accent);
-  };
-
-  const handleStatusUpdate = (isKnown: boolean) => {
-    if (updateProgress) {
-      updateProgress(word.id, isKnown);
-    }
   };
 
   return (
@@ -106,7 +98,7 @@ export function WordCard({ word, showExamples = true, compact = false }: WordCar
         </div>
       </div>
 
-      {/* Collocations Section - INTERACTIVE */}
+      {/* Collocations Section */}
       <div className="space-y-3 mb-6">
         <p className="text-[10px] font-black uppercase tracking-[0.2em] text-muted-foreground/60 px-1">Common Collocations</p>
         <div className="flex flex-wrap gap-2">
@@ -154,7 +146,7 @@ export function WordCard({ word, showExamples = true, compact = false }: WordCar
         </AnimatePresence>
       </div>
 
-      {/* Examples Section - CLICK TO REVEAL TRANSLATION */}
+      {/* Examples Section */}
       {showExamples && word.examples.length > 0 && (
         <div className="mt-4 pt-4 border-t border-border/30">
           <button
@@ -178,30 +170,10 @@ export function WordCard({ word, showExamples = true, compact = false }: WordCar
           )}
         </div>
       )}
-
-      {/* FOOTER: KNOWLEDGE STATUS BUTTONS */}
-      <div className="flex gap-3 mt-6 pt-6 border-t border-white/5">
-        <Button
-          onClick={() => handleStatusUpdate(true)}
-          className="flex-1 bg-primary/10 hover:bg-primary border border-primary/20 hover:text-black transition-all duration-500 rounded-xl py-6 gap-2 group/status shadow-lg shadow-primary/5"
-        >
-          <CheckCircle2 className="w-5 h-5 text-primary group-hover/status:text-black" />
-          <span className="font-black uppercase tracking-tighter">Mastered</span>
-        </Button>
-        <Button
-          onClick={() => handleStatusUpdate(false)}
-          variant="outline"
-          className="flex-1 bg-red-500/5 hover:bg-red-500 border-white/5 hover:border-red-500 transition-all duration-500 rounded-xl py-6 gap-2 group/learning"
-        >
-          <Circle className="w-5 h-5 opacity-40 group-hover/learning:opacity-100" />
-          <span className="font-black uppercase tracking-tighter text-gray-400 group-hover/learning:text-white transition-colors">Learning</span>
-        </Button>
-      </div>
     </motion.div>
   );
 }
 
-// YARDIMCI BİLEŞEN: Cümle Çevirisi Reveal Sistemi
 function ExampleItem({ text, translation }: { text: string; translation?: string }) {
   const [show, setShow] = useState(false);
 

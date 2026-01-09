@@ -5,6 +5,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 import { useEffect } from "react"; 
 import { LearningProvider } from "@/contexts/LearningContext";
+import Review from './pages/Review'; //
 import Index from "./pages/Index";
 import Onboarding from "./pages/Onboarding";
 import Dashboard from "./pages/Dashboard";
@@ -45,6 +46,7 @@ const App = () => (
             <Route path="/onboarding" element={<Onboarding />} />
             <Route path="/dashboard" element={<Dashboard />} />
             <Route path="/learn" element={<Learn />} />
+            <Route path="/review" element={<Review />} />
             <Route path="/games" element={<Games />} />
             <Route path="/topics" element={<Topics />} />
             <Route path="/topics/:topicId" element={<Topics />} />

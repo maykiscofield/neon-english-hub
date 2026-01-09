@@ -2,7 +2,7 @@ import React, { useState, useCallback, forwardRef } from 'react';
 import { motion, AnimatePresence, useMotionValue, useTransform } from 'framer-motion';
 import { 
   Archive, CheckCircle2, Volume2, Rocket, 
-  BrainCircuit, Zap, RotateCcw 
+  BrainCircuit, Zap, RotateCcw, Trophy, ArrowLeft
 } from 'lucide-react';
 import { Navbar } from '@/components/layout/Navbar';
 import { Button } from '@/components/ui/button';
@@ -38,7 +38,7 @@ const EmptyState = forwardRef(({ learnedCount }: { learnedCount: number }, ref: 
     <h3 className="text-4xl font-black italic uppercase tracking-tighter text-transparent bg-clip-text bg-gradient-to-b from-white to-cyan-300">Session Cleared!</h3>
     <p className="text-cyan-300/70 text-xs mt-4 mb-12 uppercase tracking-[0.2em] font-bold italic text-center">Neural link established for {learnedCount} data points.</p>
     <Link to="/learn" className="w-full block">
-      <Button variant="neon" size="lg" className="w-full py-8 text-sm rounded-full font-black tracking-[0.3em] border-2 border-cyan-400/50">Next Sequence</Button>
+      <Button variant="neon" size="lg" className="w-full py-8 text-sm rounded-full font-black tracking-[0.3em] border-2 border-cyan-400/50 shadow-[0_0_30px_rgba(34,211,238,0.3)]">Next Sequence</Button>
     </Link>
   </motion.div>
 ));
@@ -62,12 +62,14 @@ const SwipeCard = forwardRef(({ word, onSwipe, isTop }: any, ref: any) => {
     if (!sentence || !wordToHighlight) return sentence;
     const regex = new RegExp(`(${wordToHighlight})`, 'gi');
     return sentence.split(regex).map((part, index) => 
-      regex.test(part) ? <span key={index} className="font-black text-cyan-200 drop-shadow-[0_0_8px_rgba(6,182,212,0.9)]">{part}</span> : part
+      // --- DEĞİŞİKLİK BURADA: Neon efekti yumuşatıldı ---
+      regex.test(part) ? <span key={index} className="font-bold text-cyan-300 drop-shadow-[0_0_5px_rgba(6,182,212,0.6)]">{part}</span> : part
     );
   }, []);
 
   const handlePlayAudio = (e: React.MouseEvent) => {
     e.stopPropagation();
+    window.speechSynthesis.cancel();
     const utterance = new SpeechSynthesisUtterance(targetWord);
     utterance.lang = 'en-US';
     window.speechSynthesis.speak(utterance);
@@ -109,8 +111,7 @@ const SwipeCard = forwardRef(({ word, onSwipe, isTop }: any, ref: any) => {
           <div className="relative bg-slate-900/50 p-6 rounded-[24px] border border-cyan-400/30 w-full text-center">
             <div className="absolute -top-3 left-1/2 -translate-x-1/2 px-4 py-1 bg-[#080214] border border-cyan-400/50 rounded-full text-[9px] font-black text-cyan-300 uppercase tracking-[0.2em]">Context Output</div>
             <p className="text-lg text-slate-200 font-medium italic">
-               {/* Burası düzeldi: Diziyi metin içine sokmuyoruz */}
-              {targetExample ? <>"{highlightWord(targetExample, targetWord)}"</> : "Example context not available."}
+              {targetExample ? highlightWord(targetExample, targetWord) : "Example context not available."}
             </p>
           </div>
           <span className="absolute bottom-8 text-[9px] text-cyan-500/70 font-black uppercase tracking-[0.4em] animate-pulse">Tap to Reveal</span>
@@ -145,7 +146,7 @@ const Review = () => {
   const { isOnboarded, getProblematicWords } = useLearning();
   const [view, setView] = useState<'swipe' | 'archive'>('swipe');
   
-  const problematicIds = getProblematicWords();
+  const problematicIds = getProblematicWords ? getProblematicWords() : [];
   const [sessionWords, setSessionWords] = useState(() => 
     problematicIds.map(id => getWordById(id)).filter(Boolean)
   );
@@ -169,6 +170,31 @@ const Review = () => {
   return (
     <div className="min-h-screen bg-[#030005] bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-slate-900 via-[#05010d] to-[#030005] text-slate-200 overflow-hidden font-sans">
       <Navbar />
+
+      {/* --- BACK TO DASHBOARD BUTTON --- */}
+      <motion.div
+        initial={{ opacity: 0, x: -30 }}
+        animate={{ opacity: 1, x: 0 }}
+        className="fixed top-28 left-8 z-[100] hidden lg:block"
+      >
+        <Link 
+          to="/dashboard" 
+          className="group flex items-center gap-4 px-6 py-3 rounded-2xl bg-white/[0.03] border border-white/10 backdrop-blur-2xl transition-all duration-500 hover:border-cyan-500/50 hover:bg-cyan-500/5 hover:shadow-[0_0_40px_rgba(6,182,212,0.2)]"
+        >
+          <div className="relative">
+            <ArrowLeft className="relative w-6 h-6 text-gray-500 group-hover:text-cyan-400 group-hover:-translate-x-2 transition-all duration-300" />
+          </div>
+          <div className="flex flex-col items-start leading-none">
+            <span className="text-[10px] font-black uppercase tracking-[0.3em] text-gray-600 group-hover:text-cyan-400 transition-colors mb-1">
+              Go Back
+            </span>
+            <span className="text-sm font-bold text-gray-300 group-hover:text-white transition-colors uppercase">
+              DASHBOARD
+            </span>
+          </div>
+        </Link>
+      </motion.div>
+
       <main className="pt-24 pb-12 container mx-auto px-4 max-w-lg relative z-10">
         <div className="text-center mb-8 relative">
           <h1 className="text-4xl font-black italic uppercase tracking-tighter text-transparent bg-clip-text bg-gradient-to-r from-cyan-300 via-cyan-400 to-blue-500 drop-shadow-[0_0_20px_rgba(6,182,212,0.8)]">Review Lab</h1>
