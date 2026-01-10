@@ -1,12 +1,7 @@
-/**
- * Writing Lab - Netlify Function Üzerinden Çalışan Servis
- */
 export const getWritingFeedback = async (prompt: string, userText: string) => {
   try {
-    // Artık Google'a değil, kendi Netlify fonksiyonumuza istek atıyoruz
-    // Localde çalışırken: /.netlify/functions/gemini
-    // Canlıda çalışırken: /.netlify/functions/gemini
-    const response = await fetch('/.netlify/functions/gemini', {
+    // Vercel API rotası
+    const response = await fetch('/api/gemini', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -21,7 +16,6 @@ export const getWritingFeedback = async (prompt: string, userText: string) => {
 
     const data = await response.json();
 
-    // Veri yapısı Google'dan gelenle aynı formatta döner
     if (data.candidates && data.candidates[0].content) {
       return data.candidates[0].content.parts[0].text;
     }
@@ -29,7 +23,7 @@ export const getWritingFeedback = async (prompt: string, userText: string) => {
     throw new Error("AI boş cevap döndürdü.");
 
   } catch (error: any) {
-    console.error("Netlify Function Hatası:", error.message);
+    console.error("Vercel API Hatası:", error.message);
     return "Analiz yapılamadı. Lütfen daha sonra tekrar deneyin.";
   }
 };
