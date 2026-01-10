@@ -16,7 +16,8 @@ const levelConfig = {
   'intermediate': {
     label: 'Intermediate',
     shortLabel: 'Int',
-    color: 'bg-primary/10 text-primary border-primary/30',
+    // DEĞİŞİKLİK BURADA: Learn sayfasıyla uyumlu Emerald (Yeşil) yapıldı
+    color: 'bg-emerald-500/10 text-emerald-400 border-emerald-500/30 shadow-[0_0_10px_rgba(16,185,129,0.1)]',
   },
   'upper-intermediate': {
     label: 'Upper-Intermediate',
@@ -29,15 +30,15 @@ export function LevelBadge({ level, size = 'md', showLabel = true }: LevelBadgeP
   const config = levelConfig[level];
   
   const sizeClasses = {
-    sm: 'px-2 py-0.5 text-xs',
-    md: 'px-3 py-1 text-sm',
-    lg: 'px-4 py-1.5 text-base',
+    sm: 'px-2 py-0.5 text-[10px] font-black uppercase tracking-tighter',
+    md: 'px-3 py-1 text-xs font-bold uppercase tracking-tight',
+    lg: 'px-4 py-1.5 text-sm font-bold uppercase',
   };
 
   return (
     <span
       className={cn(
-        'inline-flex items-center font-medium rounded-md border',
+        'inline-flex items-center rounded-full border italic transition-all duration-300',
         config.color,
         sizeClasses[size]
       )}

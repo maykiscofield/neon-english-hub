@@ -43,7 +43,6 @@ class SpeechService {
   private getVoiceForAccent(accent: Accent): SpeechSynthesisVoice | null {
     const langCode = accent === 'uk' ? 'en-GB' : 'en-US';
     
-    // Priority: find native voices first, then any matching voice
     const nativeVoice = this.voices.find(
       (voice) => voice.lang === langCode && !voice.localService
     );
@@ -56,7 +55,6 @@ class SpeechService {
     
     if (localVoice) return localVoice;
     
-    // Fallback: any English voice
     const anyEnglish = this.voices.find(
       (voice) => voice.lang.startsWith('en')
     );
@@ -64,10 +62,10 @@ class SpeechService {
     return anyEnglish || null;
   }
 
-  async speak(text: string, accent: Accent, options: SpeechOptions = {}): Promise<void> {
+  // Animasyon senkronizasyonu için callback desteği eklendi, geri kalan yapı aynı
+  async speak(text: string, accent: Accent, onStart?: () => void, onEnd?: () => void, options: SpeechOptions = {}): Promise<void> {
     await this.voicesLoaded;
     
-    // Cancel any ongoing speech
     this.synth.cancel();
     
     return new Promise((resolve, reject) => {
@@ -79,13 +77,16 @@ class SpeechService {
       }
       
       utterance.lang = accent === 'uk' ? 'en-GB' : 'en-US';
-      utterance.rate = options.rate ?? 0.85; // Slightly slower for clarity
+      utterance.rate = options.rate ?? 0.85; 
       utterance.pitch = options.pitch ?? 1;
       utterance.volume = options.volume ?? 1;
       
-      utterance.onend = () => resolve();
+      // Animasyonun (AudioWaveform) başlaması ve bitmesi için tetikleyiciler
+      utterance.onstart = () => { if (onStart) onStart(); };
+      utterance.onend = () => { if (onEnd) onEnd(); resolve(); };
       utterance.onerror = (event) => {
         console.error('Speech synthesis error:', event);
+        if (onEnd) onEnd();
         reject(event);
       };
       
@@ -116,7 +117,6 @@ class SpeechService {
   }
 }
 
-// Singleton instance
 let speechServiceInstance: SpeechService | null = null;
 
 export function getSpeechService(): SpeechService {
@@ -126,7 +126,6 @@ export function getSpeechService(): SpeechService {
   return speechServiceInstance;
 }
 
-// Hook for React components
 import { useState, useCallback } from 'react';
 
 export function useSpeech() {
@@ -142,12 +141,19 @@ export function useSpeech() {
     }
 
     try {
-      setIsSpeaking(true);
       setCurrentAccent(accent);
-      await service.speak(text, accent);
+      // Animasyonun sesle tam uyumlu çalışmasını sağlar
+      await service.speak(
+        text, 
+        accent, 
+        () => setIsSpeaking(true), 
+        () => {
+          setIsSpeaking(false);
+          setCurrentAccent(null);
+        }
+      );
     } catch (error) {
       console.error('Error speaking:', error);
-    } finally {
       setIsSpeaking(false);
       setCurrentAccent(null);
     }

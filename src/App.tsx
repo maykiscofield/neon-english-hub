@@ -14,6 +14,7 @@ import Games from "./pages/Games";
 import Confusing from './pages/Confusing';
 import NotFound from "./pages/NotFound";
 import Topics from "@/pages/Topics";
+import Writing from './pages/Writing';
 
 const queryClient = new QueryClient();
 
@@ -52,6 +53,7 @@ const App = () => (
             <Route path="/topics/:topicId" element={<Topics />} />
             <Route path="/confusing" element={<Confusing />} />
             <Route path="*" element={<NotFound />} />
+            <Route path="/writing" element={<Writing />} />
           </Routes>
         </BrowserRouter>
       </LearningProvider>

@@ -5,6 +5,7 @@ export const vocabularyData: VocabularyWord[] = [
   {
     id: 'achieve',
     word: 'achieve',
+    pos: 'verb',
     meaning: 'başarmak, elde etmek',
     definition: 'To succeed in finishing something or reaching a goal.',
     ipa: '/əˈtʃiːv/',
@@ -22,6 +23,7 @@ export const vocabularyData: VocabularyWord[] = [
   {
     id: 'afford',
     word: 'afford',
+    pos: 'verb',
     meaning: 'parası yetmek, karşılayabilmek',
     definition: 'To be able to buy or do something because you have enough money or time.',
     ipa: '/əˈfɔːrd/',
@@ -39,6 +41,7 @@ export const vocabularyData: VocabularyWord[] = [
   {
     id: 'ancient',
     word: 'ancient',
+    pos: 'adjective',
     meaning: 'antik, çok eski',
     definition: 'From a long time ago; very old.',
     ipa: '/ˈeɪn.ʃənt/',
@@ -56,6 +59,7 @@ export const vocabularyData: VocabularyWord[] = [
   {
     id: 'appointment',
     word: 'appointment',
+    pos: 'noun',
     meaning: 'randevu, atama',
     definition: 'A formal arrangement to meet or visit someone at a particular time.',
     ipa: '/əˈpɔɪnt.mənt/',
@@ -73,6 +77,7 @@ export const vocabularyData: VocabularyWord[] = [
   {
     id: 'attend',
     word: 'attend',
+    pos: 'verb',
     meaning: 'katılmak, gitmek',
     definition: 'To go to an event, place, or meeting.',
     ipa: '/əˈtend/',
@@ -90,6 +95,7 @@ export const vocabularyData: VocabularyWord[] = [
   {
     id: 'avoid',
     word: 'avoid',
+    pos: 'verb',
     meaning: 'kaçınmak, sakınmak',
     definition: 'To stay away from someone or something.',
     ipa: '/əˈvɔɪd/',
@@ -107,6 +113,7 @@ export const vocabularyData: VocabularyWord[] = [
   {
     id: 'background',
     word: 'background',
+    pos: 'noun',
     meaning: 'arka plan, geçmiş',
     definition: 'The things that can be seen behind the main things or people in a picture.',
     ipa: '/ˈbæk.ɡraʊnd/',
@@ -122,6 +129,7 @@ export const vocabularyData: VocabularyWord[] = [
   {
     id: 'believe',
     word: 'believe',
+    pos: 'verb',
     meaning: 'inanmak',
     definition: 'To think that something is true or real.',
     ipa: '/bɪˈliːv/',
@@ -137,6 +145,7 @@ export const vocabularyData: VocabularyWord[] = [
   {
     id: 'borrow',
     word: 'borrow',
+    pos: 'verb',
     meaning: 'ödünç almak',
     definition: 'To get something from someone with the intention of giving it back.',
     ipa: '/ˈbɒr.əʊ/',
@@ -152,6 +161,7 @@ export const vocabularyData: VocabularyWord[] = [
   {
     id: 'challenge',
     word: 'challenge',
+    pos: 'noun',
     meaning: 'zorluk, meydan okuma',
     definition: 'Something that is difficult and needs a lot of work and skill.',
     ipa: '/ˈtʃæl.ɪndʒ/',
@@ -167,6 +177,7 @@ export const vocabularyData: VocabularyWord[] = [
   {
     id: 'complain',
     word: 'complain',
+    pos: 'verb',
     meaning: 'şikayet etmek',
     definition: 'To say that something is wrong or not good enough.',
     ipa: '/kəmˈpleɪn/',
@@ -182,6 +193,7 @@ export const vocabularyData: VocabularyWord[] = [
   {
     id: 'confirm',
     word: 'confirm',
+    pos: 'verb',
     meaning: 'onaylamak, doğrulamak',
     definition: 'To say or show that something is true or correct.',
     ipa: '/kənˈfɜːm/',
@@ -197,6 +209,7 @@ export const vocabularyData: VocabularyWord[] = [
   {
     id: 'decision',
     word: 'decision',
+    pos: 'noun',
     meaning: 'karar',
     definition: 'A choice that you make about something after thinking about it.',
     ipa: '/dɪˈsɪʒ.ən/',
@@ -212,6 +225,7 @@ export const vocabularyData: VocabularyWord[] = [
   {
     id: 'delicious',
     word: 'delicious',
+    pos: 'adjective',
     meaning: 'lezzetli',
     definition: 'Having a very pleasant taste or smell.',
     ipa: '/dɪˈlɪʃ.əs/',
@@ -227,6 +241,7 @@ export const vocabularyData: VocabularyWord[] = [
   {
     id: 'depend',
     word: 'depend',
+    pos: 'verb',
     meaning: 'bağlı olmak, güvenmek',
     definition: 'To be influenced or determined by something.',
     ipa: '/dɪˈpend/',
@@ -242,6 +257,7 @@ export const vocabularyData: VocabularyWord[] = [
   {
     id: 'disappointed',
     word: 'disappointed',
+    pos: 'adjective',
     meaning: 'hayal kırıklığına uğramış',
     definition: 'Unhappy because someone or something was not as good as you hoped.',
     ipa: '/ˌdɪs.əˈpɔɪn.tɪd/',
@@ -257,6 +273,7 @@ export const vocabularyData: VocabularyWord[] = [
   {
     id: 'encourage',
     word: 'encourage',
+    pos: 'verb',
     meaning: 'teşvik etmek, yüreklendirmek',
     definition: 'To help someone to feel confident and able to do something.',
     ipa: '/ɪnˈkʌr.ɪdʒ/',
@@ -272,6 +289,7 @@ export const vocabularyData: VocabularyWord[] = [
   {
     id: 'equipment',
     word: 'equipment',
+    pos: 'noun',
     meaning: 'ekipman, donanım',
     definition: 'The set of necessary tools or clothing for a particular purpose.',
     ipa: '/ɪˈquɪp.mənt/',
@@ -287,6 +305,7 @@ export const vocabularyData: VocabularyWord[] = [
   {
     id: 'furniture',
     word: 'furniture',
+    pos: 'noun',
     meaning: 'mobilya',
     definition: 'Things such as chairs, tables, beds in a house.',
     ipa: '/ˈfɜːrnɪtʃər/',
@@ -302,6 +321,7 @@ export const vocabularyData: VocabularyWord[] = [
   {
     id: 'improve',
     word: 'improve',
+    pos: 'verb',
     meaning: 'geliştirmek, iyileşmek',
     definition: 'To get better or to make something better.',
     ipa: '/ɪmˈpruːv/',
@@ -317,6 +337,7 @@ export const vocabularyData: VocabularyWord[] = [
   {
     id: 'necessary',
     word: 'necessary',
+    pos: 'adjective',
     meaning: 'gerekli, zorunlu',
     definition: 'Needed in order to achieve something.',
     ipa: '/ˈnesəsəri/',
@@ -332,6 +353,7 @@ export const vocabularyData: VocabularyWord[] = [
   {
     id: 'opinion',
     word: 'opinion',
+    pos: 'noun',
     meaning: 'fikir, görüş',
     definition: 'A thought or belief about something or someone.',
     ipa: '/əˈpɪnjən/',
@@ -347,6 +369,7 @@ export const vocabularyData: VocabularyWord[] = [
   {
     id: 'patient',
     word: 'patient',
+    pos: 'adjective',
     meaning: 'sabırlı',
     definition: 'Able to wait for a long time without becoming angry.',
     ipa: '/ˈpeɪʃnt/',
@@ -362,6 +385,7 @@ export const vocabularyData: VocabularyWord[] = [
   {
     id: 'suggest',
     word: 'suggest',
+    pos: 'verb',
     meaning: 'önermek, tavsiye etmek',
     definition: 'To mention an idea or a plan for someone to think about.',
     ipa: '/səˈdʒest/',
@@ -377,6 +401,7 @@ export const vocabularyData: VocabularyWord[] = [
   {
     id: 'environment',
     word: 'environment',
+    pos: 'noun',
     meaning: 'çevre',
     definition: 'The air, water, and land in or on which people live.',
     ipa: '/ɪnˈvaɪrənmənt/',
@@ -392,6 +417,7 @@ export const vocabularyData: VocabularyWord[] = [
   {
     id: 'excellent',
     word: 'excellent',
+    pos: 'adjective',
     meaning: 'mükemmel',
     definition: 'Extremely good or of very high quality.',
     ipa: '/ˈeksələnt/',
@@ -407,6 +433,7 @@ export const vocabularyData: VocabularyWord[] = [
   {
     id: 'imagine',
     word: 'imagine',
+    pos: 'verb',
     meaning: 'hayal etmek',
     definition: 'To form a picture in your mind of something.',
     ipa: '/ɪˈmædʒɪn/',
@@ -422,6 +449,7 @@ export const vocabularyData: VocabularyWord[] = [
   {
     id: 'particular',
     word: 'particular',
+    pos: 'adjective',
     meaning: 'belirli, özel',
     definition: 'Special, or this and not any other.',
     ipa: '/pəˈtɪkjələr/',
@@ -437,6 +465,7 @@ export const vocabularyData: VocabularyWord[] = [
   {
     id: 'prevent',
     word: 'prevent',
+    pos: 'verb',
     meaning: 'önlemek, engel olmak',
     definition: 'To stop something from happening.',
     ipa: '/prɪˈvent/',
@@ -452,6 +481,7 @@ export const vocabularyData: VocabularyWord[] = [
   {
     id: 'serious',
     word: 'serious',
+    pos: 'adjective',
     meaning: 'ciddi',
     definition: 'Not joking; thinking carefully; bad or dangerous.',
     ipa: '/ˈsɪəriəs/',
@@ -467,6 +497,7 @@ export const vocabularyData: VocabularyWord[] = [
   {
     id: 'urgent',
     word: 'urgent',
+    pos: 'adjective',
     meaning: 'acil',
     definition: 'Needing attention very soon.',
     ipa: '/ˈɜːdʒənt/',
@@ -482,6 +513,7 @@ export const vocabularyData: VocabularyWord[] = [
   {
     id: 'rent',
     word: 'rent',
+    pos: 'verb',
     meaning: 'kiralamak, kira',
     definition: 'To pay money to live in a building or use something for a period of time.',
     ipa: '/rent/',
@@ -497,6 +529,7 @@ export const vocabularyData: VocabularyWord[] = [
   {
     id: 'repair',
     word: 'repair',
+    pos: 'verb',
     meaning: 'tamir etmek, onarmak',
     definition: 'To fix something that is broken, damaged, or not working.',
     ipa: '/rɪˈpeər/',
@@ -512,6 +545,7 @@ export const vocabularyData: VocabularyWord[] = [
   {
     id: 'research',
     word: 'research',
+    pos: 'noun',
     meaning: 'araştırma',
     definition: 'A detailed study of a subject, especially in order to discover new information.',
     ipa: '/rɪˈsɜːtʃ/',
@@ -527,6 +561,7 @@ export const vocabularyData: VocabularyWord[] = [
   {
     id: 'responsible',
     word: 'responsible',
+    pos: 'adjective',
     meaning: 'sorumlu',
     definition: 'To have control and authority over something or someone.',
     ipa: '/rɪˈspɒn.sə.bəl/',
@@ -542,6 +577,7 @@ export const vocabularyData: VocabularyWord[] = [
   {
     id: 'satisfied',
     word: 'satisfied',
+    pos: 'adjective',
     meaning: 'memnun, tatmin olmuş',
     definition: 'Pleased because you have got what you wanted.',
     ipa: '/ˈsæt.ɪs.faɪd/',
@@ -557,6 +593,7 @@ export const vocabularyData: VocabularyWord[] = [
   {
     id: 'schedule',
     word: 'schedule',
+    pos: 'noun',
     meaning: 'program, takvim',
     definition: 'A list of planned activities or things to be done showing the times.',
     ipa: '/ˈʃedʒ.uːl/',
@@ -572,6 +609,7 @@ export const vocabularyData: VocabularyWord[] = [
   {
     id: 'situation',
     word: 'situation',
+    pos: 'noun',
     meaning: 'durum, vaziyet',
     definition: 'The set of things that are happening and the conditions that exist at a particular time.',
     ipa: '/ˌsɪtʃ.uˈeɪ.ʃən/',
@@ -587,6 +625,7 @@ export const vocabularyData: VocabularyWord[] = [
   {
     id: 'success',
     word: 'success',
+    pos: 'noun',
     meaning: 'başarı',
     definition: 'The achieving of the results wanted or hoped for.',
     ipa: '/səkˈses/',
@@ -602,6 +641,7 @@ export const vocabularyData: VocabularyWord[] = [
   {
     id: 'suitable',
     word: 'suitable',
+    pos: 'adjective',
     meaning: 'uygun',
     definition: 'Acceptable or right for someone or something.',
     ipa: '/ˈsuː.tə.bəl/',
@@ -617,6 +657,7 @@ export const vocabularyData: VocabularyWord[] = [
   {
     id: 'valuable',
     word: 'valuable',
+    pos: 'adjective',
     meaning: 'değerli',
     definition: 'Worth a lot of money or very important.',
     ipa: '/ˈvæl.ju.ə.bəl/',
@@ -632,6 +673,7 @@ export const vocabularyData: VocabularyWord[] = [
   {
     id: 'vehicle',
     word: 'vehicle',
+    pos: 'noun',
     meaning: 'araç, taşıt',
     definition: 'A machine with an engine that is used for taking people or goods from one place to another.',
     ipa: '/ˈviː.ə.kəl/',
@@ -647,6 +689,7 @@ export const vocabularyData: VocabularyWord[] = [
   {
     id: 'volunteer',
     word: 'volunteer',
+    pos: 'noun',
     meaning: 'gönüllü',
     definition: 'A person who does something willingly and without being forced or paid.',
     ipa: '/ˌvɒl.ənˈtɪər/',
@@ -662,6 +705,7 @@ export const vocabularyData: VocabularyWord[] = [
   {
     id: 'waste',
     word: 'waste',
+    pos: 'verb',
     meaning: 'israf etmek, atık',
     definition: 'An unnecessary or wrong use of money, substances, time, energy, or abilities.',
     ipa: '/weɪst/',
@@ -677,6 +721,7 @@ export const vocabularyData: VocabularyWord[] = [
   {
     id: 'worth',
     word: 'worth',
+    pos: 'adjective',
     meaning: 'değer, değmek',
     definition: 'Having a particular value, especially in money.',
     ipa: '/wɜːθ/',
@@ -692,6 +737,7 @@ export const vocabularyData: VocabularyWord[] = [
   {
     id: 'confident',
     word: 'confident',
+    pos: 'adjective',
     meaning: 'kendinden emin, özgüvenli',
     definition: 'Being certain of your abilities or having trust in people.',
     ipa: '/ˈkɒn.fɪ.dənt/',
@@ -707,6 +753,7 @@ export const vocabularyData: VocabularyWord[] = [
   {
     id: 'consider',
     word: 'consider',
+    pos: 'verb',
     meaning: 'düşünmek, dikkate almak',
     definition: 'To spend time thinking about a possibility or making a decision.',
     ipa: '/kənˈɪd.ər/',
@@ -722,6 +769,7 @@ export const vocabularyData: VocabularyWord[] = [
   {
     id: 'accept',
     word: 'accept',
+    pos: 'verb',
     meaning: 'kabul etmek',
     definition: 'To say yes to an offer or invitation.',
     ipa: '/əkˈsept/',
@@ -737,6 +785,7 @@ export const vocabularyData: VocabularyWord[] = [
   {
     id: 'adventure',
     word: 'adventure',
+    pos: 'noun',
     meaning: 'macera',
     definition: 'An exciting and sometimes dangerous experience.',
     ipa: '/ədˈven.tʃər/',
@@ -752,6 +801,7 @@ export const vocabularyData: VocabularyWord[] = [
   {
     id: 'agree',
     word: 'agree',
+    pos: 'verb',
     meaning: 'aynı fikirde olmak, kabul etmek',
     definition: 'To have the same opinion as someone else.',
     ipa: '/əˈɡriː/',
@@ -767,6 +817,7 @@ export const vocabularyData: VocabularyWord[] = [
   {
     id: 'celebrate',
     word: 'celebrate',
+    pos: 'verb',
     meaning: 'kutlamak',
     definition: 'To do something enjoyable for a special occasion.',
     ipa: '/ˈsel.ə.breɪt/',
@@ -782,6 +833,7 @@ export const vocabularyData: VocabularyWord[] = [
   {
     id: 'education',
     word: 'education',
+    pos: 'noun',
     meaning: 'eğitim',
     definition: 'The process of teaching or learning, especially in a school or college.',
     ipa: '/ˌedʒ.ʊˈkeɪ.ʃən/',
@@ -797,6 +849,7 @@ export const vocabularyData: VocabularyWord[] = [
   {
     id: 'knowledge',
     word: 'knowledge',
+    pos: 'noun',
     meaning: 'bilgi',
     definition: 'Information and understanding that you have in your mind.',
     ipa: '/ˈnɒlɪdʒ/',
@@ -812,6 +865,7 @@ export const vocabularyData: VocabularyWord[] = [
   {
     id: 'manage',
     word: 'manage',
+    pos: 'verb',
     meaning: 'yönetmek, başarmak',
     definition: 'To succeed in doing or dealing with something difficult.',
     ipa: '/ˈmænɪdʒ/',
@@ -827,6 +881,7 @@ export const vocabularyData: VocabularyWord[] = [
   {
     id: 'permission',
     word: 'permission',
+    pos: 'noun',
     meaning: 'izin',
     definition: 'If you have permission, you are allowed to do something.',
     ipa: '/pəˈmɪʃn/',
@@ -842,6 +897,7 @@ export const vocabularyData: VocabularyWord[] = [
   {
     id: 'prepare',
     word: 'prepare',
+    pos: 'verb',
     meaning: 'hazırlamak',
     definition: 'To make something or someone ready.',
     ipa: '/prɪˈpeər/',
@@ -857,6 +913,7 @@ export const vocabularyData: VocabularyWord[] = [
   {
     id: 'receive',
     word: 'receive',
+    pos: 'verb',
     meaning: 'teslim almak, almak',
     definition: 'To get or be given something.',
     ipa: '/rɪˈsiːv/',
@@ -872,6 +929,7 @@ export const vocabularyData: VocabularyWord[] = [
   {
     id: 'reduce',
     word: 'reduce',
+    pos: 'verb',
     meaning: 'azaltmak',
     definition: 'To make something smaller in size, amount, degree, etc.',
     ipa: '/rɪˈdjuːs/',
@@ -887,6 +945,7 @@ export const vocabularyData: VocabularyWord[] = [
   {
     id: 'remember',
     word: 'remember',
+    pos: 'verb',
     meaning: 'hatırlamak',
     definition: 'To be able to bring back a piece of information into your mind.',
     ipa: '/rɪˈmembər/',
@@ -902,6 +961,7 @@ export const vocabularyData: VocabularyWord[] = [
   {
     id: 'error',
     word: 'error',
+    pos: 'noun',
     meaning: 'hata',
     definition: 'A mistake, especially one that causes problems.',
     ipa: '/ˈerər/',
@@ -917,6 +977,7 @@ export const vocabularyData: VocabularyWord[] = [
   {
     id: 'creative',
     word: 'creative',
+    pos: 'adjective',
     meaning: 'yaratıcı',
     definition: 'Producing or using original and unusual ideas.',
     ipa: '/kriˈeɪtɪv/',
@@ -932,6 +993,7 @@ export const vocabularyData: VocabularyWord[] = [
   {
     id: 'deadline',
     word: 'deadline',
+    pos: 'noun',
     meaning: 'son teslim tarihi',
     definition: 'A time or day by which something must be done.',
     ipa: '/ˈdedlaɪn/',
@@ -947,6 +1009,7 @@ export const vocabularyData: VocabularyWord[] = [
   {
     id: 'accomplish',
     word: 'accomplish',
+    pos: 'verb',
     meaning: 'başarmak, tamamlamak',
     definition: 'to succeed in doing or completing something, especially something that requires effort',
     ipa: '/əˈkʌm.plɪʃ/',
@@ -972,6 +1035,7 @@ export const vocabularyData: VocabularyWord[] = [
   {
     id: 'apparent',
     word: 'apparent',
+    pos: 'adjective',
     meaning: 'bariz, aşikar',
     definition: 'easy to see or understand; obvious',
     ipa: '/əˈpær.ənt/',
@@ -997,6 +1061,7 @@ export const vocabularyData: VocabularyWord[] = [
   {
     id: 'capable',
     word: 'capable',
+    pos: 'adjective',
     meaning: 'yetenekli, yapabilen',
     definition: 'having the ability or qualities necessary to do something',
     ipa: '/ˈkeɪ.pə.bəl/',
@@ -1023,6 +1088,7 @@ export const vocabularyData: VocabularyWord[] = [
   {
     id: 'accurate',
     word: 'accurate',
+    pos: 'adjective',
     meaning: 'doğru, kesin, hatasız',
     definition: 'Correct, exact, and without any mistakes.',
     ipa: '/ˈæk.jə.rət/',
@@ -1039,6 +1105,7 @@ export const vocabularyData: VocabularyWord[] = [
   {
     id: 'admire',
     word: 'admire',
+    pos: 'verb',
     meaning: 'hayran olmak, beğenmek',
     definition: 'To respect and approve of someone or their behavior.',
     ipa: '/ədˈmaɪər/',
@@ -1054,6 +1121,7 @@ export const vocabularyData: VocabularyWord[] = [
   {
     id: 'advertise',
     word: 'advertise',
+    pos: 'verb',
     meaning: 'reklam yapmak',
     definition: 'To make something known to the public to sell it.',
     ipa: '/ˈæd.və.taɪz/',
@@ -1069,6 +1137,7 @@ export const vocabularyData: VocabularyWord[] = [
   {
     id: 'analyze',
     word: 'analyze',
+    pos: 'verb',
     meaning: 'analiz etmek, incelemek',
     definition: 'To study something in detail to understand it.',
     ipa: '/ˈæn.əl.aɪz/',
@@ -1084,6 +1153,7 @@ export const vocabularyData: VocabularyWord[] = [
   {
     id: 'anxious',
     word: 'anxious',
+    pos: 'adjective',
     meaning: 'endişeli, kaygılı',
     definition: 'Worried and nervous.',
     ipa: '/ˈæŋk.ʃəs/',
@@ -1099,6 +1169,7 @@ export const vocabularyData: VocabularyWord[] = [
   {
     id: 'attitude',
     word: 'attitude',
+    pos: 'noun',
     meaning: 'tutum, tavır',
     definition: 'A feeling or opinion about something or someone.',
     ipa: '/ˈæt.ɪ.tʃuːd/',
@@ -1114,6 +1185,7 @@ export const vocabularyData: VocabularyWord[] = [
   {
     id: 'aware',
     word: 'aware',
+    pos: 'adjective',
     meaning: 'farkında, haberdar',
     definition: 'Knowing that something exists or is happening.',
     ipa: '/əˈweər/',
@@ -1129,6 +1201,7 @@ export const vocabularyData: VocabularyWord[] = [
   {
     id: 'capacity',
     word: 'capacity',
+    pos: 'noun',
     meaning: 'kapasite',
     definition: 'The total amount that something can contain.',
     ipa: '/kəˈpæs.ə.ti/',
@@ -1144,6 +1217,7 @@ export const vocabularyData: VocabularyWord[] = [
   {
     id: 'circumstance',
     word: 'circumstance',
+    pos: 'noun',
     meaning: 'durum, koşul',
     definition: 'A fact or event that makes a situation the way it is.',
     ipa: '/ˈsɜː.kəm.stɑːns/',
@@ -1159,6 +1233,7 @@ export const vocabularyData: VocabularyWord[] = [
   {
     id: 'complex',
     word: 'complex',
+    pos: 'adjective',
     meaning: 'karmaşık',
     definition: 'Involving a lot of different but related parts.',
     ipa: '/ˈkɒm.pleks/',
@@ -1174,6 +1249,7 @@ export const vocabularyData: VocabularyWord[] = [
   {
     id: 'concentrate',
     word: 'concentrate',
+    pos: 'verb',
     meaning: 'konsantre olmak, odaklanmak',
     definition: 'To give all your attention to something.',
     ipa: '/ˈkɒn.sən.treɪt/',
@@ -1189,6 +1265,7 @@ export const vocabularyData: VocabularyWord[] = [
   {
     id: 'consequence',
     word: 'consequence',
+    pos: 'noun',
     meaning: 'sonuç, netice',
     definition: 'A result of a particular action or situation.',
     ipa: '/ˈkɒn.ɪ.kwəns/',
@@ -1204,6 +1281,7 @@ export const vocabularyData: VocabularyWord[] = [
   {
     id: 'demonstrate',
     word: 'demonstrate',
+    pos: 'verb',
     meaning: 'göstermek, kanıtlamak',
     definition: 'To show or make something clear.',
     ipa: '/ˈdem.ən.streɪt/',
@@ -1219,6 +1297,7 @@ export const vocabularyData: VocabularyWord[] = [
   {
     id: 'despite',
     word: 'despite',
+    pos: 'preposition',
     meaning: '-e rağmen',
     definition: 'Without being influenced by something.',
     ipa: '/dɪˈspaɪt/',
@@ -1235,6 +1314,7 @@ export const vocabularyData: VocabularyWord[] = [
   {
     id: 'efficient',
     word: 'efficient',
+    pos: 'adjective',
     meaning: 'verimli, etkili',
     definition: 'Working well and not wasting time or energy.',
     ipa: '/ɪˈfɪʃ.ənt/',
@@ -1250,6 +1330,7 @@ export const vocabularyData: VocabularyWord[] = [
   {
     id: 'emphasize',
     word: 'emphasize',
+    pos: 'verb',
     meaning: 'vurgulamak',
     definition: 'To show that something is very important.',
     ipa: '/ˈem.fə.saɪz/',
@@ -1265,6 +1346,7 @@ export const vocabularyData: VocabularyWord[] = [
   {
     id: 'enable',
     word: 'enable',
+    pos: 'verb',
     meaning: 'olanak tanımak, imkan vermek',
     definition: 'To make it possible for someone to do something.',
     ipa: '/ˈeɪ.nə.bəl/',
@@ -1280,6 +1362,7 @@ export const vocabularyData: VocabularyWord[] = [
   {
     id: 'encounter',
     word: 'encounter',
+    pos: 'verb',
     meaning: 'karşılaşmak',
     definition: 'To experience something, especially a problem.',
     ipa: '/ɪnˈkaʊn.tər/',
@@ -1295,6 +1378,7 @@ export const vocabularyData: VocabularyWord[] = [
   {
     id: 'enormous',
     word: 'enormous',
+    pos: 'adjective',
     meaning: 'kocaman, muazzam',
     definition: 'Extremely large in size or amount.',
     ipa: '/ɪˈnɔː.məs/',
@@ -1310,6 +1394,7 @@ export const vocabularyData: VocabularyWord[] = [
   {
     id: 'evidence',
     word: 'evidence',
+    pos: 'noun',
     meaning: 'kanıt, delil',
     definition: 'Reasons for believing that something is true.',
     ipa: '/ˈev.ɪ.dəns/',
@@ -1325,6 +1410,7 @@ export const vocabularyData: VocabularyWord[] = [
   {
     id: 'exaggerate',
     word: 'exaggerate',
+    pos: 'verb',
     meaning: 'abartmak',
     definition: 'To make something seem larger or better than it really is.',
     ipa: '/ɪɡˈzædʒ.ə.reɪt/',
@@ -1340,6 +1426,7 @@ export const vocabularyData: VocabularyWord[] = [
   {
     id: 'expand',
     word: 'expand',
+    pos: 'verb',
     meaning: 'genişlemek, büyümek',
     definition: 'To increase in size, number, or importance.',
     ipa: '/ɪkˈspænd/',
@@ -1355,6 +1442,7 @@ export const vocabularyData: VocabularyWord[] = [
   {
     id: 'flexible',
     word: 'flexible',
+    pos: 'adjective',
     meaning: 'esnek',
     definition: 'Able to change easily according to the situation.',
     ipa: '/ˈflek.sə.bəl/',
@@ -1370,6 +1458,7 @@ export const vocabularyData: VocabularyWord[] = [
   {
     id: 'frustrated',
     word: 'frustrated',
+    pos: 'adjective',
     meaning: 'hüsrana uğramış, yılmış',
     definition: 'Feeling annoyed because you cannot achieve something.',
     ipa: '/frʌsˈtreɪ.tɪd/',
@@ -1385,6 +1474,7 @@ export const vocabularyData: VocabularyWord[] = [
   {
     id: 'guarantee',
     word: 'guarantee',
+    pos: 'verb',
     meaning: 'garanti, garanti etmek',
     definition: 'A promise that something will be done.',
     ipa: '/ˌɡær.ənˈtiː/',
@@ -1400,6 +1490,7 @@ export const vocabularyData: VocabularyWord[] = [
   {
     id: 'hesitate',
     word: 'hesitate',
+    pos: 'verb',
     meaning: 'tereddüt etmek',
     definition: 'To pause before you do or say something.',
     ipa: '/ˈhez.ɪ.teɪt/',
@@ -1415,6 +1506,7 @@ export const vocabularyData: VocabularyWord[] = [
   {
     id: 'identify',
     word: 'identify',
+    pos: 'verb',
     meaning: 'tanımlamak, teşhis etmek',
     definition: 'To recognize someone or something.',
     ipa: '/aɪˈden.tɪ.faɪ/',
@@ -1430,6 +1522,7 @@ export const vocabularyData: VocabularyWord[] = [
   {
     id: 'impact',
     word: 'impact',
+    pos: 'noun',
     meaning: 'etki, darbe',
     definition: 'A powerful effect that something has.',
     ipa: '/ˈɪm.pækt/',
@@ -1445,6 +1538,7 @@ export const vocabularyData: VocabularyWord[] = [
   {
     id: 'maintain',
     word: 'maintain',
+    pos: 'verb',
     meaning: 'sürdürmek, bakım yapmak',
     definition: 'To keep something in good condition or same level.',
     ipa: '/meɪnˈteɪn/',
@@ -1460,6 +1554,7 @@ export const vocabularyData: VocabularyWord[] = [
   {
     id: 'negotiate',
     word: 'negotiate',
+    pos: 'verb',
     meaning: 'müzakere etmek',
     definition: 'To try to reach an agreement by formal discussion.',
     ipa: '/nəˈɡəʊ.ʃi.eɪt/',
@@ -1475,6 +1570,7 @@ export const vocabularyData: VocabularyWord[] = [
   {
     id: 'observe',
     word: 'observe',
+    pos: 'verb',
     meaning: 'gözlemlemek',
     definition: 'To watch carefully to learn about something.',
     ipa: '/əbˈzɜːv/',
@@ -1490,6 +1586,7 @@ export const vocabularyData: VocabularyWord[] = [
   {
     id: 'persuade',
     word: 'persuade',
+    pos: 'verb',
     meaning: 'ikna etmek',
     definition: 'To make someone do something by giving reasons.',
     ipa: '/pəˈsweɪd/',
@@ -1505,6 +1602,7 @@ export const vocabularyData: VocabularyWord[] = [
   {
     id: 'precise',
     word: 'precise',
+    pos: 'adjective',
     meaning: 'kesin, tam',
     definition: 'Exact and accurate in every detail.',
     ipa: '/prɪˈsaɪs/',
@@ -1520,6 +1618,7 @@ export const vocabularyData: VocabularyWord[] = [
   {
     id: 'previous',
     word: 'previous',
+    pos: 'adjective',
     meaning: 'önceki',
     definition: 'Happening or existing before something else.',
     ipa: '/ˈpriː.vi.əs/',
@@ -1535,6 +1634,7 @@ export const vocabularyData: VocabularyWord[] = [
   {
     id: 'priority',
     word: 'priority',
+    pos: 'noun',
     meaning: 'öncelik',
     definition: 'Something that is very important and must be done first.',
     ipa: '/praɪˈɒr.ə.ti/',
@@ -1550,6 +1650,7 @@ export const vocabularyData: VocabularyWord[] = [
   {
     id: 'prohibit',
     word: 'prohibit',
+    pos: 'verb',
     meaning: 'yasaklamak',
     definition: 'To officially forbid something.',
     ipa: '/prəˈhɪb.ɪt/',
@@ -1565,6 +1666,7 @@ export const vocabularyData: VocabularyWord[] = [
   {
     id: 'purchase',
     word: 'purchase',
+    pos: 'verb',
     meaning: 'satın almak',
     definition: 'To buy something (more formal than buy).',
     ipa: '/ˈpɜː.tʃəs/',
@@ -1580,6 +1682,7 @@ export const vocabularyData: VocabularyWord[] = [
   {
     id: 'recommend',
     word: 'recommend',
+    pos: 'verb',
     meaning: 'tavsiye etmek',
     definition: 'To suggest that someone or something is good.',
     ipa: '/ˌrek.əˈmend/',
@@ -1595,6 +1698,7 @@ export const vocabularyData: VocabularyWord[] = [
   {
     id: 'regret',
     word: 'regret',
+    pos: 'verb',
     meaning: 'pişman olmak',
     definition: 'To feel sorry about a situation or a mistake.',
     ipa: '/rɪˈɡret/',
@@ -1610,6 +1714,7 @@ export const vocabularyData: VocabularyWord[] = [
   {
     id: 'relevant',
     word: 'relevant',
+    pos: 'adjective',
     meaning: 'ilgili, alakalı',
     definition: 'Connected with what is happening or being discussed.',
     ipa: '/ˈrel.ə.vənt/',
@@ -1625,6 +1730,7 @@ export const vocabularyData: VocabularyWord[] = [
   {
     id: 'relieved',
     word: 'relieved',
+    pos: 'adjective',
     meaning: 'rahatlamış',
     definition: 'Feeling happy because something bad has not happened.',
     ipa: '/rɪˈliːvd/',
@@ -1640,6 +1746,7 @@ export const vocabularyData: VocabularyWord[] = [
   {
     id: 'require',
     word: 'require',
+    pos: 'verb',
     meaning: 'gerektirmek, ihtiyacı olmak',
     definition: 'To need something or make something necessary.',
     ipa: '/rɪˈkwaɪər/',
@@ -1655,6 +1762,7 @@ export const vocabularyData: VocabularyWord[] = [
   {
     id: 'resident',
     word: 'resident',
+    pos: 'noun',
     meaning: 'sakin, oturan kişi',
     definition: 'A person who lives or has their home in a place.',
     ipa: '/ˈrez.ɪ.dənt/',
@@ -1670,6 +1778,7 @@ export const vocabularyData: VocabularyWord[] = [
   {
     id: 'response',
     word: 'response',
+    pos: 'noun',
     meaning: 'cevap, yanıt',
     definition: 'An answer or reaction to something.',
     ipa: '/rɪˈspɒns/',
@@ -1685,6 +1794,7 @@ export const vocabularyData: VocabularyWord[] = [
   {
     id: 'significant',
     word: 'significant',
+    pos: 'adjective',
     meaning: 'önemli, kayda değer',
     definition: 'Important or noticeable.',
     ipa: '/sɪɡˈnɪf.ɪ.kənt/',
@@ -1700,6 +1810,7 @@ export const vocabularyData: VocabularyWord[] = [
   {
     id: 'solution',
     word: 'solution',
+    pos: 'noun',
     meaning: 'çözüm',
     definition: 'The answer to a problem or a difficult situation.',
     ipa: '/əˈluː.ʃən/',
@@ -1715,6 +1826,7 @@ export const vocabularyData: VocabularyWord[] = [
   {
     id: 'specify',
     word: 'specify',
+    pos: 'verb',
     meaning: 'belirlemek, netleştirmek',
     definition: 'To explain something in an exact and detailed way.',
     ipa: '/ˈspes.ɪ.faɪ/',
@@ -1730,6 +1842,7 @@ export const vocabularyData: VocabularyWord[] = [
   {
     id: 'strategy',
     word: 'strategy',
+    pos: 'noun',
     meaning: 'strateji',
     definition: 'A detailed plan for achieving success.',
     ipa: '/ˈstræt.ə.dʒi/',
@@ -1745,6 +1858,7 @@ export const vocabularyData: VocabularyWord[] = [
   {
     id: 'sufficient',
     word: 'sufficient',
+    pos: 'adjective',
     meaning: 'yeterli',
     definition: 'Enough for a particular purpose.',
     ipa: '/səˈfɪʃ.ənt/',
@@ -1760,6 +1874,7 @@ export const vocabularyData: VocabularyWord[] = [
   {
     id: 'target',
     word: 'target',
+    pos: 'noun',
     meaning: 'hedef',
     definition: 'Something you are trying to achieve.',
     ipa: '/ˈtɑː.ɡɪt/',
@@ -1775,6 +1890,7 @@ export const vocabularyData: VocabularyWord[] = [
   {
     id: 'theory',
     word: 'theory',
+    pos: 'noun',
     meaning: 'teori, kuram',
     definition: 'An idea or set of ideas that explains something.',
     ipa: '/ˈθɪə.ri/',
@@ -1791,6 +1907,7 @@ export const vocabularyData: VocabularyWord[] = [
   {
     id: 'acknowledge',
     word: 'acknowledge',
+    pos: 'verb',
     meaning: 'kabul etmek, onaylamak',
     definition: 'To accept or admit that something is true.',
     ipa: `/əkˈnɒl.ɪdʒ/`,
@@ -1806,6 +1923,7 @@ export const vocabularyData: VocabularyWord[] = [
   {
     id: 'acquire',
     word: 'acquire',
+    pos: 'verb',
     meaning: 'edinmek, kazanmak',
     definition: 'To get or buy something, or to learn a skill.',
     ipa: `/əˈkwaɪər/`,
@@ -1821,6 +1939,7 @@ export const vocabularyData: VocabularyWord[] = [
   {
     id: 'advocate',
     word: 'advocate',
+    pos: 'verb',
     meaning: 'savunmak, desteklemek',
     definition: 'To publicly support a policy or way of doing things.',
     ipa: `/ˈæd.və.keɪt/`,
@@ -1836,6 +1955,7 @@ export const vocabularyData: VocabularyWord[] = [
   {
     id: 'clarify',
     word: 'clarify',
+    pos: 'verb',
     meaning: 'açıklığa kavuşturmak',
     definition: 'To make something clearer or easier to understand.',
     ipa: `/ˈklær.ɪ.faɪ/`,
@@ -1851,6 +1971,7 @@ export const vocabularyData: VocabularyWord[] = [
   {
     id: 'compromise',
     word: 'compromise',
+    pos: 'verb',
     meaning: 'uzlaşmak, ödün vermek',
     definition: 'To reach an agreement by giving up something.',
     ipa: `/ˈkɒm.prə.maɪz/`,
@@ -1866,6 +1987,7 @@ export const vocabularyData: VocabularyWord[] = [
   {
     id: 'distinguish',
     word: 'distinguish',
+    pos: 'verb',
     meaning: 'ayırt etmek',
     definition: 'To notice or understand the difference between two things.',
     ipa: `/dɪˈstɪŋ.ɡwɪʃ/`,
@@ -1881,6 +2003,7 @@ export const vocabularyData: VocabularyWord[] = [
   {
     id: 'eliminate',
     word: 'eliminate',
+    pos: 'verb',
     meaning: 'elemek, yok etmek',
     definition: 'To remove or get rid of something completely.',
     ipa: `/iˈlɪm.ɪ.neɪt/`,
@@ -1896,6 +2019,7 @@ export const vocabularyData: VocabularyWord[] = [
   {
     id: 'enhance',
     word: 'enhance',
+    pos: 'verb',
     meaning: 'geliştirmek, artırmak',
     definition: 'To improve the quality, amount, or strength of something.',
     ipa: `/ɪnˈhɑːns/`,
@@ -1911,6 +2035,7 @@ export const vocabularyData: VocabularyWord[] = [
   {
     id: 'evaluate',
     word: 'evaluate',
+    pos: 'verb',
     meaning: 'değerlendirmek',
     definition: 'To judge or calculate the quality, importance, or value.',
     ipa: `/ɪˈvæl.ju.eɪt/`,
@@ -1926,6 +2051,7 @@ export const vocabularyData: VocabularyWord[] = [
   {
     id: 'implement',
     word: 'implement',
+    pos: 'verb',
     meaning: 'uygulamak, faaliyete geçirmek',
     definition: 'To start using a plan, system, or law.',
     ipa: `/ˈɪm.plɪ.ment/`,
@@ -1941,6 +2067,7 @@ export const vocabularyData: VocabularyWord[] = [
   {
     id: 'interpret',
     word: 'interpret',
+    pos: 'verb',
     meaning: 'yorumlamak',
     definition: 'To decide what the intended meaning of something is.',
     ipa: `/ɪnˈtɜː.prət/`,
@@ -1956,6 +2083,7 @@ export const vocabularyData: VocabularyWord[] = [
   {
     id: 'justify',
     word: 'justify',
+    pos: 'verb',
     meaning: 'haklı çıkarmak, gerekçelendirmek',
     definition: 'To give or be a good reason for something.',
     ipa: `/ˈdʒʌs.tɪ.faɪ/`,
@@ -1971,6 +2099,7 @@ export const vocabularyData: VocabularyWord[] = [
   {
     id: 'maximize',
     word: 'maximize',
+    pos: 'verb',
     meaning: 'maksimize etmek, en üst düzeye çıkarmak',
     definition: 'To make something as great as possible.',
     ipa: `/ˈmæk.sɪ.maɪz/`,
@@ -1986,6 +2115,7 @@ export const vocabularyData: VocabularyWord[] = [
   {
     id: 'obtain',
     word: 'obtain',
+    pos: 'verb',
     meaning: 'elde etmek, edinmek',
     definition: 'To get something, especially by asking for it or effort.',
     ipa: `/əbˈteɪn/`,
@@ -2001,6 +2131,7 @@ export const vocabularyData: VocabularyWord[] = [
   {
     id: 'predict',
     word: 'predict',
+    pos: 'verb',
     meaning: 'tahmin etmek',
     definition: 'To say that an event or action will happen in the future.',
     ipa: `/prɪˈdɪkt/`,
@@ -2016,6 +2147,7 @@ export const vocabularyData: VocabularyWord[] = [
   {
     id: 'undertake',
     word: 'undertake',
+    pos: 'verb',
     meaning: 'üstlenmek',
     definition: 'To do or begin something (that could be difficult).',
     ipa: `/ˌʌn.dəˈteɪk/`,
@@ -2031,6 +2163,7 @@ export const vocabularyData: VocabularyWord[] = [
   {
     id: 'ambiguous',
     word: 'ambiguous',
+    pos: 'adjective',
     meaning: 'belirsiz, muğlak',
     definition: 'Having or expressing more than one possible meaning.',
     ipa: `/æmˈbɪɡ.ju.əs/`,
@@ -2046,6 +2179,7 @@ export const vocabularyData: VocabularyWord[] = [
   {
     id: 'coherent',
     word: 'coherent',
+    pos: 'adjective',
     meaning: 'tutarlı, uyumlu',
     definition: 'Logical and well-organized; easy to understand.',
     ipa: `/kəʊˈhɪə.rənt/`,
@@ -2061,6 +2195,7 @@ export const vocabularyData: VocabularyWord[] = [
   {
     id: 'controversial',
     word: 'controversial',
+    pos: 'adjective',
     meaning: 'tartışmalı',
     definition: 'Causing a lot of angry public discussion or disagreement.',
     ipa: `/ˌkɒn.trəˈvɜː.ʃəl/`,
@@ -2076,6 +2211,7 @@ export const vocabularyData: VocabularyWord[] = [
   {
     id: 'crucial',
     word: 'crucial',
+    pos: 'adjective',
     meaning: 'çok önemli, kritik',
     definition: 'Extremely important or necessary.',
     ipa: `/ˈkruː.ʃəl/`,
@@ -2091,6 +2227,7 @@ export const vocabularyData: VocabularyWord[] = [
   {
     id: 'inevitable',
     word: 'inevitable',
+    pos: 'adjective',
     meaning: 'kaçınılmaz',
     definition: 'Certain to happen and unable to be avoided.',
     ipa: `/ɪnˈev.ɪ.tə.bəl/`,
@@ -2106,6 +2243,7 @@ export const vocabularyData: VocabularyWord[] = [
   {
     id: 'innovative',
     word: 'innovative',
+    pos: 'adjective',
     meaning: 'yenilikçi',
     definition: 'Using new methods or ideas.',
     ipa: `/ˈɪn.ə.və.tɪv/`,
@@ -2121,6 +2259,7 @@ export const vocabularyData: VocabularyWord[] = [
   {
     id: 'persistent',
     word: 'persistent',
+    pos: 'adjective',
     meaning: 'ısrarcı, kalıcı',
     definition: 'Lasting for a long time or difficult to get rid of.',
     ipa: `/pəˈsɪs.tənt/`,
@@ -2136,6 +2275,7 @@ export const vocabularyData: VocabularyWord[] = [
   {
     id: 'sophisticated',
     word: 'sophisticated',
+    pos: 'adjective',
     meaning: 'gelişmiş, sofistike',
     definition: 'Having a good understanding of way things work; complex.',
     ipa: `/səˈfɪs.tɪ.keɪ.tɪd/`,
@@ -2151,6 +2291,7 @@ export const vocabularyData: VocabularyWord[] = [
   {
     id: 'sustainable',
     word: 'sustainable',
+    pos: 'adjective',
     meaning: 'sürdürülebilir',
     definition: 'Able to continue over a period of time; environmentally friendly.',
     ipa: `/səˈsteɪ.nə.bəl/`,
@@ -2166,6 +2307,7 @@ export const vocabularyData: VocabularyWord[] = [
   {
     id: 'aspect',
     word: 'aspect',
+    pos: 'noun',
     meaning: 'yön, taraf, özellik',
     definition: 'One part of a situation, problem, or subject.',
     ipa: `/ˈæs.pekt/`,
@@ -2181,6 +2323,7 @@ export const vocabularyData: VocabularyWord[] = [
   {
     id: 'context',
     word: 'context',
+    pos: 'noun',
     meaning: 'bağlam, kapsam',
     definition: 'The situation within which something exists or happens.',
     ipa: `/ˈkɒn.tekst/`,
@@ -2196,6 +2339,7 @@ export const vocabularyData: VocabularyWord[] = [
   {
     id: 'incentive',
     word: 'incentive',
+    pos: 'noun',
     meaning: 'teşvik, güdü',
     definition: 'Something that encourages a person to do something.',
     ipa: `/ɪnˈsen.tɪv/`,
@@ -2211,6 +2355,7 @@ export const vocabularyData: VocabularyWord[] = [
   {
     id: 'outcome',
     word: 'outcome',
+    pos: 'noun',
     meaning: 'sonuç, netice',
     definition: 'A result or effect of an action or situation.',
     ipa: `/ˈaʊt.kʌm/`,
@@ -2226,6 +2371,7 @@ export const vocabularyData: VocabularyWord[] = [
   {
     id: 'phenomenon',
     word: 'phenomenon',
+    pos: 'noun',
     meaning: 'olay, fenomen',
     definition: 'Something that exists and can be seen or felt.',
     ipa: `/fəˈnɒm.ɪ.nən/`,

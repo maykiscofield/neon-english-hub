@@ -3,17 +3,18 @@ export type Level = 'pre-intermediate' | 'intermediate' | 'upper-intermediate';
 export interface VocabularyWord {
   id: string;
   word: string;
-  meaning: string; // Ana Türkçe karşılık
+  meaning: string; 
   definition: string;
   ipa: string;
+  pos: 'verb' | 'noun' | 'adj' | 'adv' | 'phrase' | string; // EKLENDİ: Kelime türü
   examples: string[];
-  exampleTranslations?: string[]; // Cümlelerin üzerine tıklayınca açılacak Türkçe karşılıklar
+  exampleTranslations?: string[]; 
   level: Level;
   audioUK?: string;
   audioUS?: string;
   usageNotes?: string;
   collocations?: string[];
-  collocationMeanings?: Record<string, string>; // Kalıpların Türkçe karşılıkları
+  collocationMeanings?: Record<string, string>; 
   relatedWords?: string[];
 }
 
