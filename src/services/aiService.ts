@@ -1,6 +1,8 @@
+// src/services/aiService.ts
+
 export const getWritingFeedback = async (prompt: string, userText: string) => {
   try {
-    // Vercel API rotası
+    // DÜZELTME BURADA: Artık '.netlify/functions/gemini' değil, '/api/gemini' diyoruz.
     const response = await fetch('/api/gemini', {
       method: 'POST',
       headers: {
@@ -20,10 +22,10 @@ export const getWritingFeedback = async (prompt: string, userText: string) => {
       return data.candidates[0].content.parts[0].text;
     }
 
-    throw new Error("AI boş cevap döndürdü.");
+    throw new Error("AI cevap veremedi.");
 
   } catch (error: any) {
-    console.error("Vercel API Hatası:", error.message);
-    return "Analiz yapılamadı. Lütfen daha sonra tekrar deneyin.";
+    console.error("API Hatası:", error.message);
+    return "Analiz yapılamadı. Lütfen tekrar deneyin.";
   }
 };
