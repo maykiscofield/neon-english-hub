@@ -73,7 +73,50 @@ const Writing = () => {
     setIsAnalyzing(true);
     setAiReport(""); 
 
-    const finalPrompt = `Ben [${userProfile?.level || 'intermediate'}] seviyesinde bir öğrenciyim. Lütfen bu metni rubrik kriterlerine göre analiz et ve Türkçe geri bildirim hazırla. Format: 1. Genel Değerlendirme, 2. Detaylı Analiz, 3. Gelişim Planı. Düzeltme yapma, beni yönlendir.`;
+    // ✨ GÜNCELLENMIŞ DETAYLI PROMPT
+    const finalPrompt = `Merhaba,
+
+Ben [${userProfile?.level || 'intermediate'}] seviyesinde İngilizce öğrenen bir öğrenciyim. Aşağıda yazdığım bir metin var. Lütfen bu metni aşağıda belirttiğim kapsamlı format ve kurallara göre analiz edip bana Türkçe, yapıcı ve profesyonel bir geri bildirim raporu hazırlar mısın?
+
+Geri Bildirim Formatını Aşağıdaki Gibi Yapılandır:
+
+1. GENEL DEĞERLENDİRME (Kısa Bir Paragraf)
+Metnin genel olarak ne kadar anlaşılır ve amacına uygun olduğunu özetleyin.
+
+Güçlü Yönlerim: Metnimde en başarılı bulduğunuz 1-2 noktayı (örn: akıcı bir giriş, iyi seçilmiş bir kelime, karmaşık bir cümlenin doğru kullanımı) belirtin.
+
+2. RUBRİK KRİTERLERİNE GÖRE DETAYLI ANALİZ
+Lütfen her bir başlık altında hem olumlu örnekler hem de gelişim alanları sunun. Her hatayı sadece listelemek yerine, "Neden bu bir hata?" veya "Bu kural neden önemli?" şeklinde kısa bir açıklama ekleyin.
+
+A. İçerik (Content): Ana fikir net mi? Konuya bağlı kaldım mı? Fikirlerimi yeterince detaylandırdım mı ve destekledim mi?
+
+B. Organizasyon (Organization): Paragraf yapısı (Giriş-Gelişme-Sonuç) mantıklı mı? Fikirler arasındaki geçişler akıcı mı? "Firstly, However, Therefore, In conclusion" gibi bağlaçları doğru kullandım mı?
+
+C. Kelime Dağarcığı (Vocabulary): Kelime seçimlerim uygun ve çeşitli mi? Aynı basit kelimeleri (good, bad, nice, think) tekrar tekrar kullandım mı? Anlamı tam karşılamayan kelimeler (yanlış collocation) var mı?
+
+D. Dil Kullanımı (Language Use - Grammar): Zaman uyumu var mı? (Örn: Geçmiş zaman anlatırken present tense kullanmak) Cümle yapıları (basit, bileşik, karmaşık) doğru mu? Özne-yüklem uyumu, çoğul-tekil uyumu gibi temel dilbilgisi kurallarına dikkat ettim mi?
+
+E. Yazım ve Noktalama (Mechanics): Yazım (spelling), noktalama işaretleri (virgül, nokta, apostrof) ve büyük harf kullanımında hatalar var mı?
+
+3. GELİŞİM PLANI ve SOMUT ÖNERİLER
+Bu bölüm, üzerinde çalışmam için bana yol haritası çizsin.
+
+A. İyileştirilebilecek 2-3 Spesifik Cümle: Metnimdeki anlamı karışık, yapısı hatalı veya daha iyi ifade edilebilecek 2-3 cümleyi tırnak içinde gösterin. Hatanın nedenini açıklayın ve bir alternatif önerin. (Örn: "Burada 'although' kullandığın için cümlenin ikinci kısmında 'but' kullanmamalısın. Daha doğrusu: 'Although it was raining, we went for a walk.' şeklinde olmalıydı.")
+
+B. Odaklanmam Gereken Dilbilgisi Konuları: Hatalarımdan yola çıkarak, tekrar çalışmamı önerdiğiniz en fazla 2 temel dilbilgisi konusunu (örn: Present Perfect vs. Past Simple kullanımı, Passive Voice cümle yapıları, Relative Clauses) belirleyin.
+
+C. Kelime Gelişimi Önerileri: Metnimde sıkça tekrarladığım veya seviyeme göre basit kalan 3-5 kelimeyi tespit edip, her biri için daha nitelikli, daha kesin veya daha ileri seviye 1-2 alternatif kelime önerin. (Örn: "Good" yerine: effective, beneficial, high-quality, impressive | "Think" yerine: believe, assume, consider, argue)
+
+D. Bir Sonraki Adım Ödevi: Gelişimim için bana küçük, uygulanabilir bir ödev verin. (Örn: "Bu metni, önerdiğim kelimeleri ve düzeltilmiş cümle yapılarını kullanarak yeniden yazmayı deneyin." veya "Önümüzdeki hafta yazacağınız bir paragrafta, burada hata yaptığınız 'Present Perfect' zamanını bilinçli olarak en az iki kere kullanmaya çalışın.")
+
+4. ÇOK ÖNEMLİ TEKNİK KURALLAR
+Hata Gösterme: Dilbilgisi, kelime ve yazım hatalarını metnimde kalın ve renkli (örneğin kırmızı) veya üzeri çizili gibi net bir şekilde işaretleyin ve her hatanın yanına kısa açıklama yapın. (Örn: She **go** to school. → (açıklama: Özne 'she' olduğu için fiil 'goes' olmalı.)
+
+DÜZELTMEYİN, YÖNLENDİRİN: Lütfen metnimi baştan sona düzeltip yeniden yazmayın. Sadece 3.A maddesinde belirttiğim gibi, seçili birkaç cümle için alternatif önerin.
+
+Dil: Tüm geri bildirimi Türkçe olarak verin. Ancak, İngilizce terimleri (örn: tense, clause, preposition) parantez içinde kullanabilirsiniz.
+
+İşte İncelenecek Metnim:`;
 
     try {
       const result = await getWritingFeedback(finalPrompt, text);
@@ -136,6 +179,17 @@ const Writing = () => {
               <div className="relative group font-black">
                 <div className="relative bg-black/80 border-2 border-blue-500/10 rounded-[40px] p-10 backdrop-blur-3xl transition-all group-focus-within:border-blue-400/40 min-h-[600px] font-black">
                   
+                  {/* ⏳ LOADING STATE - Analiz edilirken gösterilir */}
+                  {isAnalyzing && (
+                    <div className="absolute inset-0 bg-black/90 backdrop-blur-xl rounded-[40px] flex items-center justify-center z-50">
+                      <div className="text-center">
+                        <div className="w-20 h-20 border-4 border-blue-400 border-t-transparent rounded-full animate-spin mx-auto mb-6"></div>
+                        <p className="text-blue-400 text-sm font-black uppercase tracking-widest italic">ANALİZ EDİLİYOR...</p>
+                        <p className="text-gray-500 text-xs mt-2 italic">AI metninizi değerlendiriyor</p>
+                      </div>
+                    </div>
+                  )}
+
                   <AnimatePresence>
                     {finalizeStep === 1 && (
                       <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} className="absolute inset-0 z-[50] bg-black/80 backdrop-blur-xl rounded-[40px] flex items-center justify-center p-8">
@@ -168,7 +222,7 @@ const Writing = () => {
                   />
 
                   <div className="mt-10 flex justify-end gap-6 font-black italic">
-                    <Button onClick={handleFinalizeClick} disabled={isAnalyzing || text.length < 5} className="h-16 px-12 rounded-2xl bg-blue-500 text-black font-black text-xs italic uppercase shadow-xl hover:scale-105 transition-all">
+                    <Button onClick={handleFinalizeClick} disabled={isAnalyzing || text.length < 5} className="h-16 px-12 rounded-2xl bg-blue-500 text-black font-black text-xs italic uppercase shadow-xl hover:scale-105 transition-all disabled:opacity-50 disabled:cursor-not-allowed">
                       {isAnalyzing ? "ANALİZ EDİLİYOR..." : "GÖNDER VE ANALİZ ET"}
                     </Button>
                   </div>

@@ -2,7 +2,6 @@
 
 export const getWritingFeedback = async (prompt: string, userText: string) => {
   try {
-    // DÜZELTME BURADA: Artık '.netlify/functions/gemini' değil, '/api/gemini' diyoruz.
     const response = await fetch('/api/gemini', {
       method: 'POST',
       headers: {
@@ -11,21 +10,34 @@ export const getWritingFeedback = async (prompt: string, userText: string) => {
       body: JSON.stringify({ prompt, userText }),
     });
 
+    // Detaylı error handling
     if (!response.ok) {
-      const errorData = await response.json();
-      throw new Error(errorData.error || "Bağlantı hatası");
+      let errorMessage = "Bağlantı hatası";
+      try {
+        const errorData = await response.json();
+        errorMessage = errorData.error || errorData.message || errorMessage;
+      } catch {
+        errorMessage = `HTTP ${response.status}: ${response.statusText}`;
+      }
+      throw new Error(errorMessage);
     }
 
     const data = await response.json();
 
-    if (data.candidates && data.candidates[0].content) {
+    // Gemini yanıt yapısını kontrol et
+    if (data.candidates?.[0]?.content?.parts?.[0]?.text) {
       return data.candidates[0].content.parts[0].text;
     }
 
-    throw new Error("AI cevap veremedi.");
+    // Alternatif yanıt yapıları
+    if (data.text) {
+      return data.text;
+    }
+
+    throw new Error("AI'dan geçerli bir yanıt alınamadı.");
 
   } catch (error: any) {
-    console.error("API Hatası:", error.message);
-    return "Analiz yapılamadı. Lütfen tekrar deneyin.";
+    console.error("API Hatası:", error);
+    return `❌ Analiz yapılamadı: ${error.message}\n\nLütfen tekrar deneyin veya sistem yöneticinize başvurun.`;
   }
 };
