@@ -1,16 +1,19 @@
 import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { Menu, X, BookOpen, Gamepad2, BarChart3, RefreshCw, Zap, PencilLine } from 'lucide-react';
+import { Menu, X, BookOpen, Gamepad2, BarChart3, RefreshCw, Zap, PencilLine, Library } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
 // Her bölüme özel neon renkleri
 const navItems = [
-  { href: '/dashboard', label: 'Dashboard', icon: BarChart3, color: '#06b6d4' }, // Cyan
-  { href: '/learn', label: 'Learn', icon: BookOpen, color: '#10b981' },         // Emerald
-  { href: '/writing', label: 'Writing', icon: PencilLine, color: '#00f2ff' },   // Ice Blue (İkon PencilLine yapıldı)
-  { href: '/games', label: 'Games', icon: Gamepad2, color: '#a855f7' },         // Purple
-  { href: '/review', label: 'Review', icon: RefreshCw, color: '#f59e0b' },       // Amber
+  { href: '/dashboard', label: 'Dashboard', icon: BarChart3, color: '#ec4899' }, 
+  { href: '/learn', label: 'Learn', icon: BookOpen, color: '#10b981' },
+  // Görseldeki renge göre güncellendi (#ff00ff)
+  { href: '/games', label: 'Games', icon: Gamepad2, color: '#ff00ff' }, 
+  // Topic Library eklendi
+  { href: '/topics', label: 'Topics', icon: Library, color: '#8b5cf6' }, 
+  { href: '/writing', label: 'Writing', icon: PencilLine, color: '#00f2ff' }, 
+  { href: '/review', label: 'Review', icon: RefreshCw, color: '#f59e0b' }, 
 ];
 
 export function Navbar() {
@@ -24,13 +27,13 @@ export function Navbar() {
           {/* Logo Section */}
           <Link to="/" className="flex items-center gap-2 group">
             <div className="relative w-8 h-8 flex items-center justify-center">
-              <div className="absolute inset-0 bg-primary/20 rounded-lg blur-md group-hover:bg-primary/30 transition-colors" />
-              <Zap className="w-5 h-5 text-primary relative z-10" />
+              <div className="absolute inset-0 bg-cyan-500/20 rounded-lg blur-md group-hover:bg-cyan-500/30 transition-colors" />
+              <Zap className="w-5 h-5 text-cyan-400 relative z-10" />
             </div>
-            <span className="font-heading font-bold text-lg italic uppercase tracking-tighter">
-              <span className="text-primary">Preparatory</span>
-              <span className="text-white">Master</span>
-            </span>
+            <div className="flex items-center gap-1 font-black italic tracking-tighter text-lg uppercase">
+              <span className="text-cyan-400 drop-shadow-[0_0_15px_rgba(34,211,238,0.6)]">NEON ENGLISH</span>
+              <span className="text-white drop-shadow-[0_0_10px_rgba(255,255,255,0.3)]">HUB</span>
+            </div>
           </Link>
 
           {/* Desktop Navigation */}

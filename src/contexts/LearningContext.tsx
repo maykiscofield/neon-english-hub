@@ -36,14 +36,15 @@ export function LearningProvider({ children }: { children: ReactNode }) {
 
   // Profili ve Kaydedilen Kelimeleri Yükle
   useEffect(() => {
-    const savedProfile = localStorage.getItem('preparatory-master-profile');
+    // İSİM GÜNCELLENDİ
+    const savedProfile = localStorage.getItem('neon-english-hub-profile');
     if (savedProfile) {
       setUserProfile(JSON.parse(savedProfile));
       setIsOnboarded(true);
     }
 
-    // Kaydedilen kelimeleri localStorage'dan çek
-    const savedList = localStorage.getItem('preparatory-master-saved');
+    // İSİM GÜNCELLENDİ
+    const savedList = localStorage.getItem('neon-english-hub-saved');
     if (savedList) {
       setSavedWords(JSON.parse(savedList));
     }
@@ -51,7 +52,8 @@ export function LearningProvider({ children }: { children: ReactNode }) {
 
   // İlerlemeyi Yükle
   useEffect(() => {
-    const savedProgress = localStorage.getItem('preparatory-master-progress');
+    // İSİM GÜNCELLENDİ
+    const savedProgress = localStorage.getItem('neon-english-hub-progress');
     if (savedProgress) {
       const parsed = JSON.parse(savedProgress);
       setProgress(new Map(Object.entries(parsed)));
@@ -62,7 +64,8 @@ export function LearningProvider({ children }: { children: ReactNode }) {
     if (userProfile) {
       const updated = { ...userProfile, level };
       setUserProfile(updated);
-      localStorage.setItem('preparatory-master-profile', JSON.stringify(updated));
+      // İSİM GÜNCELLENDİ
+      localStorage.setItem('neon-english-hub-profile', JSON.stringify(updated));
     }
   };
 
@@ -70,7 +73,8 @@ export function LearningProvider({ children }: { children: ReactNode }) {
     const profile = { ...initialProfile, level };
     setUserProfile(profile);
     setIsOnboarded(true);
-    localStorage.setItem('preparatory-master-profile', JSON.stringify(profile));
+    // İSİM GÜNCELLENDİ
+    localStorage.setItem('neon-english-hub-profile', JSON.stringify(profile));
   };
 
   // --- YENİ FONKSİYONLAR ---
@@ -81,7 +85,8 @@ export function LearningProvider({ children }: { children: ReactNode }) {
         ? prev.filter(id => id !== wordId) 
         : [...prev, wordId];
       
-      localStorage.setItem('preparatory-master-saved', JSON.stringify(newList));
+      // İSİM GÜNCELLENDİ
+      localStorage.setItem('neon-english-hub-saved', JSON.stringify(newList));
       return newList;
     });
   };
@@ -98,7 +103,7 @@ export function LearningProvider({ children }: { children: ReactNode }) {
       
       if (existing) {
         const newCorrect = correct ? existing.correctCount + 1 : existing.correctCount;
-        const newIncorrect = correct ? existing.incorrectCount : existing.incorrectCount + 1;
+        const newIncorrect = !correct ? existing.incorrectCount + 1 : existing.incorrectCount;
         const newStreak = correct ? existing.streak + 1 : 0;
         
         const intervalDays = correct ? Math.pow(2, newStreak) : 1;
@@ -111,7 +116,7 @@ export function LearningProvider({ children }: { children: ReactNode }) {
           lastReviewed: now,
           nextReview,
           streak: newStreak,
-          isProblematic: newIncorrect >= 3,
+          isProblematic: !correct || newIncorrect >= 1,
         });
       } else {
         nextReview.setDate(now.getDate() + (correct ? 2 : 1));
@@ -122,11 +127,12 @@ export function LearningProvider({ children }: { children: ReactNode }) {
           lastReviewed: now,
           nextReview,
           streak: correct ? 1 : 0,
-          isProblematic: false,
+          isProblematic: !correct,
         });
       }
       
-      localStorage.setItem('preparatory-master-progress', JSON.stringify(Object.fromEntries(newProgress)));
+      // İSİM GÜNCELLENDİ
+      localStorage.setItem('neon-english-hub-progress', JSON.stringify(Object.fromEntries(newProgress)));
       return newProgress;
     });
 
@@ -137,7 +143,8 @@ export function LearningProvider({ children }: { children: ReactNode }) {
         weeklyProgress: userProfile.weeklyProgress + 1,
       };
       setUserProfile(updated);
-      localStorage.setItem('preparatory-master-profile', JSON.stringify(updated));
+      // İSİM GÜNCELLENDİ
+      localStorage.setItem('neon-english-hub-profile', JSON.stringify(updated));
     }
   };
 

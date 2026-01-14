@@ -1,6 +1,6 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useMemo } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { ChevronLeft, ChevronRight, Volume2, ArrowLeft, Trophy } from 'lucide-react';
+import { ChevronLeft, ChevronRight, Volume2, ArrowLeft, Trophy, RotateCcw } from 'lucide-react';
 import { Navbar } from '@/components/layout/Navbar';
 import { WordCard } from '@/components/vocabulary/WordCard';
 import { Button } from '@/components/ui/button';
@@ -9,7 +9,7 @@ import { getWordsByLevel } from '@/data/vocabulary';
 import { Navigate, Link } from 'react-router-dom';
 
 const Learn = () => {
-  const { userProfile, isOnboarded, updateProgress } = useLearning();
+  const { userProfile, isOnboarded, updateProgress, progress } = useLearning();
   const [currentIndex, setCurrentIndex] = useState(0);
   const [sessionWords, setSessionWords] = useState<any[]>([]);
 
@@ -17,26 +17,72 @@ const Learn = () => {
     return <Navigate to="/onboarding" replace />;
   }
 
+  // İlk yüklemede ve seviye değişiminde kelimeleri çek (Sadece MASTER edilenleri filtrele)
   useEffect(() => {
-    const initialWords = getWordsByLevel(userProfile?.level || 'intermediate');
-    setSessionWords(initialWords);
-  }, [userProfile?.level]);
+    const allWords = getWordsByLevel(userProfile?.level || 'intermediate');
+    
+    const filteredWords = allWords.filter(word => {
+      const wordProgress = progress.get(word.id);
+      // SADECE daha önce "ÖĞRENİLDİ" (correctCount > 0) denmişse listeden çıkar
+      // "ÖĞRENİLİYOR" denmişse (isProblematic: true olsa bile) listede kalmaya devam etmeli
+      if (wordProgress && wordProgress.correctCount > 0) {
+        return false;
+      }
+      return true;
+    });
+
+    setSessionWords(filteredWords);
+  }, [userProfile?.level]); // Sadece level değiştiğinde listeyi sıfırdan kur
 
   const currentWord = sessionWords[currentIndex];
 
+  const handleResetProgress = () => {
+    const confirmed = window.confirm("Bu seviyedeki tüm ilerlemeniz sıfırlanacak. Emin misiniz?");
+    if (confirmed) {
+      const allWords = getWordsByLevel(userProfile?.level || 'intermediate');
+      const newProgress = new Map(progress);
+      allWords.forEach(word => {
+        newProgress.delete(word.id);
+      });
+      
+      // İSİM GÜNCELLENDİ
+      localStorage.setItem('neon-english-hub-progress', JSON.stringify(Object.fromEntries(newProgress)));
+      
+      // State'leri manuel güncelle (Sayfa yenilemeden)
+      setSessionWords(allWords);
+      setCurrentIndex(0);
+    }
+  };
+
   const handleMoveToBack = () => {
-    if (sessionWords.length <= 1) return;
-    setSessionWords((prev) => {
-      const newWords = [...prev];
-      const movedItem = newWords.splice(currentIndex, 1)[0];
-      return [...newWords, movedItem];
-    });
+    if (!currentWord) return;
+
+    // 1. Kelimeyi "Problematic" olarak işaretle (Review Lab'e düşmesi için)
+    updateProgress(currentWord.id, false);
+
+    // 2. Eğer listede birden fazla kelime varsa, mevcut kelimeyi sona at
+    if (sessionWords.length > 1) {
+      setSessionWords((prev) => {
+        const newWords = [...prev];
+        const [movedItem] = newWords.splice(currentIndex, 1);
+        return [...newWords, movedItem];
+      });
+      // Index'i sıfırlama veya mevcut yerinde tutma mantığı: 
+      // Sona attığımız için currentIndex'i değiştirmemize gerek yok, 
+      // AnimatePresence key değiştiği için yeni kartı getirecektir.
+    }
   };
 
   const handleMastered = () => {
     if (!currentWord) return;
+    
+    // 1. Kalıcı olarak "Öğrenildi" işaretle
     updateProgress(currentWord.id, true);
+    
+    // 2. Mevcut oturum listesinden anında çıkart
     setSessionWords((prev) => prev.filter((_, idx) => idx !== currentIndex));
+    
+    // 3. Eğer son kelimeyi sildiysek index'i kaydır
     if (currentIndex >= sessionWords.length - 1 && currentIndex > 0) {
       setCurrentIndex(prev => prev - 1);
     }
@@ -46,7 +92,6 @@ const Learn = () => {
     <div className="min-h-screen bg-[#030303] text-white relative">
       <Navbar />
 
-      {/* Geri Dön Butonu - Emerald Neon Tema */}
       <motion.div
         initial={{ opacity: 0, x: -30 }}
         animate={{ opacity: 1, x: 0 }}
@@ -84,14 +129,24 @@ const Learn = () => {
             <div className="h-1 w-20 bg-emerald-500 mx-auto rounded-full shadow-[0_0_15px_rgba(16,185,129,0.8)]" />
           </motion.div>
 
-          {/* İyileştirilmiş Progress Bar Alanı */}
           <div className="flex flex-col gap-3 mb-12">
             <div className="flex justify-between items-end px-1">
-              <span className="text-[10px] font-black uppercase tracking-[0.2em] text-emerald-400 italic">Kalan Kelime</span>
-              <span className="text-xs font-mono text-muted-foreground font-black italic tracking-widest">
-                {sessionWords.length} Kelime Kaldı
-              </span>
+              <div className="flex flex-col">
+                <span className="text-[10px] font-black uppercase tracking-[0.2em] text-emerald-400 italic">Kalan Kelime</span>
+                <span className="text-xs font-mono text-muted-foreground font-black italic tracking-widest">
+                  {sessionWords.length} Kelime Kaldı
+                </span>
+              </div>
+              
+              <button 
+                onClick={handleResetProgress}
+                className="group flex items-center gap-2 px-3 py-1.5 rounded-lg bg-white/5 border border-white/10 hover:border-red-500/50 hover:bg-red-500/10 transition-all duration-300"
+              >
+                <RotateCcw className="w-3.5 h-3.5 text-gray-500 group-hover:text-red-400 transition-colors" />
+                <span className="text-[10px] font-black uppercase tracking-widest text-gray-500 group-hover:text-red-400">Sıfırla</span>
+              </button>
             </div>
+
             <div className="h-2 bg-white/5 rounded-full overflow-hidden border border-white/5 p-[1px] relative">
               <motion.div
                 className="h-full bg-gradient-to-r from-emerald-600 via-emerald-400 to-emerald-300 rounded-full relative"
@@ -99,7 +154,6 @@ const Learn = () => {
                 animate={{ width: `${(sessionWords.length / 50) * 100}%` }}
                 transition={{ type: "spring", stiffness: 40, damping: 15 }}
               >
-                {/* Glow Head Efekti - Bilimsel Geri Bildirim */}
                 <div className="absolute right-0 top-1/2 -translate-y-1/2 w-4 h-full bg-white/40 blur-sm rounded-full" />
                 <div className="absolute right-0 top-1/2 -translate-y-1/2 w-2 h-full bg-white shadow-[0_0_15px_#fff] rounded-full animate-pulse" />
               </motion.div>
@@ -109,7 +163,7 @@ const Learn = () => {
           <AnimatePresence mode="wait">
             {currentWord ? (
               <motion.div
-                key={currentWord.id}
+                key={currentWord.id} // ID değiştiği için animasyon tetiklenir
                 initial={{ opacity: 0, x: 50, filter: "blur(20px)" }}
                 animate={{ opacity: 1, x: 0, filter: "blur(0px)" }}
                 exit={{ opacity: 0, x: -50, filter: "blur(20px)" }}

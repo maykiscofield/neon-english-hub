@@ -1,308 +1,1619 @@
 [
   {
-    "word": "accurate",
-    "definition": "Correct, exact, and without any mistakes.",
-    "context_sentence": "We need an accurate estimate of the costs before we start the home renovation.",
-    "translation": "doğru, kesin"
+    "word": "Accent",
+    "definition": "A way of saying words that shows what country, region, or social class someone comes from.",
+    "context_sentence": "Tom hasn’t lost his Irish accent.",
+    "translation": "Aksan, şive",
+    "type": "Noun"
   },
   {
-    "word": "admire",
-    "definition": "To respect and approve of someone or their behavior.",
-    "context_sentence": "I really admire how she manages to stay calm even in very stressful situations at work.",
-    "translation": "hayran olmak, takdir etmek"
+    "word": "Accurately",
+    "definition": "In a way that is correct or true in every detail.",
+    "context_sentence": "Have I described the situation accurately?",
+    "translation": "Doğru bir şekilde, tam olarak",
+    "type": "Adverb"
   },
   {
-    "word": "advertise",
-    "definition": "To make something known to the public in order to sell it.",
-    "context_sentence": "Small businesses often advertise their products on social media to reach local customers.",
-    "translation": "reklam yapmak"
+    "word": "Action point",
+    "definition": "A small thing that you're going to do.",
+    "context_sentence": "Let's move to the second action point.",
+    "translation": "Eylem noktası, yapılacak iş",
+    "type": "Noun"
   },
   {
-    "word": "analyze",
-    "definition": "To study something in detail to understand it or find out what it is.",
-    "context_sentence": "The marketing team needs to analyze the customer feedback to improve our services.",
-    "translation": "analiz etmek, incelemek"
+    "word": "Active",
+    "definition": "Someone who is active does a lot of different activities and has a lot of energy and interests.",
+    "context_sentence": "People are remaining active into later life.",
+    "translation": "Aktif, faal",
+    "type": "Adjective"
   },
   {
-    "word": "anxious",
-    "definition": "Feeling worried, nervous, or uneasy about something with an uncertain outcome.",
-    "context_sentence": "I always feel a bit anxious before a job interview, even when I'm well prepared.",
-    "translation": "endişeli, kaygılı"
+    "word": "Admit",
+    "definition": "To agree that something is true, especially when you are unhappy, sorry, or surprised about it.",
+    "context_sentence": "I can't sing at all, he admitted.",
+    "translation": "İtiraf etmek, kabul etmek",
+    "type": "Verb"
   },
   {
-    "word": "attitude",
-    "definition": "A settled way of thinking or feeling about someone or something.",
-    "context_sentence": "Having a positive attitude can make a big difference when you are facing a difficult challenge.",
-    "translation": "tutum, tavır"
+    "word": "Advise",
+    "definition": "To give your opinion to someone about the best thing to do in a particular situation.",
+    "context_sentence": "I'm afraid I'm not able to advise you.",
+    "translation": "Tavsiye vermek, öğütlemek",
+    "type": "Verb"
   },
   {
-    "word": "aware",
-    "definition": "Having knowledge or perception of a situation or fact.",
-    "context_sentence": "Were you aware that the meeting time has been changed to 10 AM?",
-    "translation": "farkında, haberdar"
+    "word": "Advertising campaign",
+    "definition": "A series of things done to persuade people to buy a product or use a service.",
+    "context_sentence": "The new advertising campaign is very effective.",
+    "translation": "Reklam kampanyası",
+    "type": "Noun"
   },
   {
-    "word": "capacity",
-    "definition": "The maximum amount that something can contain or produce.",
-    "context_sentence": "The elevator has a maximum capacity of eight people for safety reasons.",
-    "translation": "kapasite"
+    "word": "Affect",
+    "definition": "To change or influence something.",
+    "context_sentence": "It is known that poor grades can affect university entrance.",
+    "translation": "Etkilemek",
+    "type": "Verb"
   },
   {
-    "word": "circumstance",
-    "definition": "A fact or condition connected with or relevant to an event or action.",
-    "context_sentence": "Under the current circumstances, working from home seems like the best option for the team.",
-    "translation": "durum, koşul"
+    "word": "Agreement",
+    "definition": "An arrangement or decision about what to do, made by two or more people.",
+    "context_sentence": "Our agreement was that you would pay by the first of the month.",
+    "translation": "Anlaşma, mutabakat",
+    "type": "Noun"
   },
   {
-    "word": "complex",
-    "definition": "Consisting of many different and connected parts; complicated.",
-    "context_sentence": "The tax system is so complex that most people need a professional to help them.",
-    "translation": "karmaşık"
+    "word": "All in the mind",
+    "definition": "Used for saying that something is not real and is just being imagined.",
+    "context_sentence": "He's not really ill; it's all in the mind.",
+    "translation": "Hepsi kafada bitiyor, kuruntu",
+    "type": "Idiom"
   },
   {
-    "word": "concentrate",
-    "definition": "To focus all one's attention on a particular object or activity.",
-    "context_sentence": "I find it hard to concentrate on my work when there is loud music playing in the office.",
-    "translation": "konsantre olmak, odaklanmak"
+    "word": "Allow",
+    "definition": "To give someone permission to do or have something.",
+    "context_sentence": "I'm sorry, sir, but smoking is not allowed.",
+    "translation": "İzin vermek",
+    "type": "Verb"
   },
   {
-    "word": "consequence",
-    "definition": "A result or effect of an action or condition.",
-    "context_sentence": "Losing your job is often a direct consequence of being frequently late to work.",
-    "translation": "sonuç, netice"
+    "word": "Anxious",
+    "definition": "Worried because you think something bad might happen.",
+    "context_sentence": "His silence made me anxious.",
+    "translation": "Endişeli, kaygılı",
+    "type": "Adjective"
   },
   {
-    "word": "demonstrate",
-    "definition": "To clearly show the existence or truth of something by giving proof or evidence.",
-    "context_sentence": "The chef will demonstrate how to make the perfect pasta dough during the class.",
-    "translation": "göstermek, kanıtlamak"
+    "word": "Assume",
+    "definition": "To believe that something is true, even though no one has told you or even though you have no proof.",
+    "context_sentence": "You can't assume that because he's good at this job he will know everything.",
+    "translation": "Varsaymak, farz etmek",
+    "type": "Verb"
   },
   {
-    "word": "despite",
-    "definition": "Without being affected by; in spite of.",
-    "context_sentence": "We decided to go for a hike despite the light rain and cloudy sky.",
-    "translation": "-e rağmen"
+    "word": "Attract",
+    "definition": "To make someone interested in something so that they do it or come to see or hear it.",
+    "context_sentence": "The show attracts viewers from all walks of life.",
+    "translation": "Çekmek, cezbetmek",
+    "type": "Verb"
   },
   {
-    "word": "efficient",
-    "definition": "Working in a well-organized and competent way without wasting time or energy.",
-    "context_sentence": "The new software is much more efficient and helps us complete our tasks faster.",
-    "translation": "verimli, etkili"
+    "word": "Attract new customers",
+    "definition": "Make people interested in a product or idea.",
+    "context_sentence": "The social media campaign will hopefully attract new customers.",
+    "translation": "Yeni müşteriler çekmek",
+    "type": "Phrase"
   },
   {
-    "word": "emphasize",
-    "definition": "To give special importance or prominence to something in speaking or writing.",
-    "context_sentence": "The manager wanted to emphasize that safety is our number one priority in the factory.",
-    "translation": "vurgulamak"
+    "word": "Attract new investors",
+    "definition": "Make people interested in a product or idea so they will invest money in it.",
+    "context_sentence": "We are attending conferences to attract new investors.",
+    "translation": "Yeni yatırımcılar çekmek",
+    "type": "Phrase"
   },
   {
-    "word": "enable",
-    "definition": "To give someone or something the authority or means to do something.",
-    "context_sentence": "High-speed internet enables people to work remotely from almost anywhere in the world.",
-    "translation": "olanak tanımak, imkan vermek"
+    "word": "Audience",
+    "definition": "A group of people who have come to a place to see or hear a film, performance, speech etc.",
+    "context_sentence": "She would be addressing an audience of three thousand teachers.",
+    "translation": "Seyirci, izleyici kitlesi",
+    "type": "Noun"
   },
   {
-    "word": "encounter",
-    "definition": "To unexpectedly be faced with or experience something difficult.",
-    "context_sentence": "We encountered some technical problems during the online presentation yesterday.",
-    "translation": "karşılaşmak"
+    "word": "Aware of",
+    "definition": "Knowing about a situation or a fact.",
+    "context_sentence": "We are aware of this problem.",
+    "translation": "Farkında olmak",
+    "type": "Adjective"
   },
   {
-    "word": "enormous",
-    "definition": "Very large in size, quantity, or extent.",
-    "context_sentence": "They spent an enormous amount of money on their wedding party last summer.",
-    "translation": "kocaman, muazzam"
+    "word": "Awful",
+    "definition": "Used for emphasizing how unpleasant someone or something is.",
+    "context_sentence": "This wine tastes awful.",
+    "translation": "Berbat, çok kötü",
+    "type": "Adjective"
   },
   {
-    "word": "evidence",
-    "definition": "The available body of facts or information indicating whether a belief is true.",
-    "context_sentence": "There is no clear evidence to suggest that the new rules will solve the problem.",
-    "translation": "kanıt, delil"
+    "word": "Be reliable",
+    "definition": "To be someone who you can trust to behave well, work hard, or do what you expect them to do.",
+    "context_sentence": "Hannah is very reliable.",
+    "translation": "Güvenilir olmak",
+    "type": "Phrase"
   },
   {
-    "word": "exaggerate",
-    "definition": "To represent something as being better or worse than it really is.",
-    "context_sentence": "I know he was upset, but I think he is exaggerating the situation a little bit.",
-    "translation": "abartmak"
+    "word": "Be your thing",
+    "definition": "Something that you are good at and/or like doing.",
+    "context_sentence": "I'm afraid baking is not my thing.",
+    "translation": "Senin olayın olmak, ilgi alanın olmak",
+    "type": "Idiom"
   },
   {
-    "word": "expand",
-    "definition": "To become or make larger or more extensive.",
-    "context_sentence": "The company plans to expand its business into the European market next year.",
-    "translation": "genişlemek, büyümek"
+    "word": "Bear in mind",
+    "definition": "Reminding or warning a person about something important which they should remember.",
+    "context_sentence": "Bear in mind that the deadline is approaching.",
+    "translation": "Aklında bulundurmak, unutmamak",
+    "type": "Idiom"
   },
   {
-    "word": "flexible",
-    "definition": "Able to be easily modified to respond to altered circumstances.",
-    "context_sentence": "My boss is quite flexible about my working hours as long as I finish my projects.",
-    "translation": "esnek"
+    "word": "Bilingual",
+    "definition": "Someone who is bilingual is able to speak two languages extremely well.",
+    "context_sentence": "She speaks French and Spanish so she is bilingual.",
+    "translation": "İki dilli",
+    "type": "Adjective"
   },
   {
-    "word": "frustrated",
-    "definition": "Feeling annoyed or less confident because you cannot achieve what you want.",
-    "context_sentence": "He felt frustrated when he couldn't get the new printer to work properly.",
-    "translation": "hüsrana uğramış, yılmış"
+    "word": "Bin",
+    "definition": "A container for putting rubbish in.",
+    "context_sentence": "It's time you threw those shoes in the bin.",
+    "translation": "Çöp kutusu",
+    "type": "Noun"
   },
   {
-    "word": "guarantee",
-    "definition": "A formal promise or assurance that certain conditions will be fulfilled.",
-    "context_sentence": "The car comes with a three-year guarantee that covers all major repairs.",
-    "translation": "garanti"
+    "word": "Blame yourself",
+    "definition": "To say or think that you are responsible for an accident, problem, or bad situation.",
+    "context_sentence": "If it all goes wrong, don't blame yourself.",
+    "translation": "Kendini suçlamak",
+    "type": "Phrase"
   },
   {
-    "word": "hesitate",
-    "definition": "To pause before saying or doing something that you are unsure about.",
-    "context_sentence": "Please don't hesitate to ask if you have any questions about the new policy.",
-    "translation": "tereddüt etmek"
+    "word": "Block your creativity",
+    "definition": "Something stops creative thoughts.",
+    "context_sentence": "Writing in the same space every day may block your creativity.",
+    "translation": "Yaratıcılığını engellemek/tıkamak",
+    "type": "Phrase"
   },
   {
-    "word": "identify",
-    "definition": "To establish or indicate who or what someone or something is.",
-    "context_sentence": "It was difficult to identify the problem without checking the computer system thoroughly.",
-    "translation": "tanımlamak, teşhis etmek"
+    "word": "Boost your creativity",
+    "definition": "Something helps creative thoughts.",
+    "context_sentence": "Being outdoors may boost your creativity.",
+    "translation": "Yaratıcılığını artırmak",
+    "type": "Phrase"
   },
   {
-    "word": "impact",
-    "definition": "A marked effect or influence.",
-    "context_sentence": "The new social media campaign had a positive impact on our monthly sales.",
-    "translation": "etki"
+    "word": "Break a resolution",
+    "definition": "To not do what you promised.",
+    "context_sentence": "I broke a resolution not to eat meat when I went to the restaurant yesterday.",
+    "translation": "Kararını bozmak (yeminini bozmak)",
+    "type": "Phrase"
   },
   {
-    "word": "maintain",
-    "definition": "To keep something in good condition or at the same level.",
-    "context_sentence": "You need to change the oil regularly to maintain your car's engine.",
-    "translation": "sürdürmek, bakımını yapmak"
+    "word": "Breaking news",
+    "definition": "New information about a news event that is still happening.",
+    "context_sentence": "Keep up with the latest breaking news and politics from around the world.",
+    "translation": "Son dakika haberi",
+    "type": "Noun"
   },
   {
-    "word": "negotiate",
-    "definition": "To obtain or bring about by discussion and compromise.",
-    "context_sentence": "We managed to negotiate a better deal with the supplier this morning.",
-    "translation": "müzakere etmek, pazarlık yapmak"
+    "word": "Brilliant",
+    "definition": "Very intelligent.",
+    "context_sentence": "She is a brilliant scientist.",
+    "translation": "Çok zeki, parlak, muhteşem",
+    "type": "Adjective"
   },
   {
-    "word": "observe",
-    "definition": "To watch someone or something carefully and attentively.",
-    "context_sentence": "The trainees will observe the experienced staff for the first few days.",
-    "translation": "gözlemlemek"
+    "word": "Build a brand",
+    "definition": "Make or develop a product or group of products that has its own name and is made by one particular company.",
+    "context_sentence": "We need the team to work together to build a brand.",
+    "translation": "Marka oluşturmak",
+    "type": "Phrase"
   },
   {
-    "word": "persuade",
-    "definition": "To provide a sound reason for someone to do something.",
-    "context_sentence": "It took me a long time to persuade my parents to buy a new car.",
-    "translation": "ikna etmek"
+    "word": "Build a reputation",
+    "definition": "Make or develop the opinion that people have about how good something is.",
+    "context_sentence": "It may take a while to build a reputation.",
+    "translation": "İtibar inşa etmek, isim yapmak",
+    "type": "Phrase"
   },
   {
-    "word": "precise",
-    "definition": "Marked by exactness and accuracy of expression or detail.",
-    "context_sentence": "We need the precise measurements of the kitchen before ordering the cabinets.",
-    "translation": "kesin, tam"
+    "word": "Buttery",
+    "definition": "Buttery food has a lot of butter in it, or tastes as if it has butter in it.",
+    "context_sentence": "The biscuits she made were delicious and buttery.",
+    "translation": "Tereyağlı, tereyağı tadında",
+    "type": "Adjective"
   },
   {
-    "word": "previous",
-    "definition": "Existing or occurring before in time or order.",
-    "context_sentence": "The previous owner of the house left some furniture in the garage.",
-    "translation": "önceki"
+    "word": "Carry on",
+    "definition": "To continue without stopping.",
+    "context_sentence": "He moved to London to carry on his work.",
+    "translation": "Devam etmek, sürdürmek",
+    "type": "Phrasal Verb"
   },
   {
-    "word": "priority",
-    "definition": "The fact or condition of being regarded or treated as more important.",
-    "context_sentence": "Finishing the annual report is my top priority for this week.",
-    "translation": "öncelik"
+    "word": "Catchy",
+    "definition": "A tune or phrase which attracts your attention and is easy to remember.",
+    "context_sentence": "I like this song because it's very catchy.",
+    "translation": "Akılda kalıcı (şarkı/söz)",
+    "type": "Adjective"
   },
   {
-    "word": "prohibit",
-    "definition": "To formally forbid something by law, rule, or other authority.",
-    "context_sentence": "The signs prohibit parking in front of the emergency exit.",
-    "translation": "yasaklamak"
+    "word": "Cause",
+    "definition": "An event, thing, or person that makes something happen.",
+    "context_sentence": "The major cause of these accidents is drivers going too fast.",
+    "translation": "Sebep olmak, neden",
+    "type": "Noun"
   },
   {
-    "word": "purchase",
-    "definition": "To acquire something by paying for it; to buy.",
-    "context_sentence": "Please keep your receipt as proof of purchase in case you want to return the item.",
-    "translation": "satın almak"
+    "word": "Change my mind",
+    "definition": "To adopt a different opinion or plan.",
+    "context_sentence": "I've changed my mind – I'll have a coffee.",
+    "translation": "Fikrimi değiştirmek",
+    "type": "Phrase"
   },
   {
-    "word": "recommend",
-    "definition": "To suggest that something is good or suitable for a particular purpose.",
-    "context_sentence": "I highly recommend that Italian restaurant; their pizza is the best in town.",
-    "translation": "tavsiye etmek"
+    "word": "Cheesy",
+    "definition": "Tasting like cheese.",
+    "context_sentence": "It has a very strong cheesy flavour to it.",
+    "translation": "Peynirli, peynir tadında",
+    "type": "Adjective"
   },
   {
-    "word": "regret",
-    "definition": "To feel sad, repentant, or disappointed over something that has happened.",
-    "context_sentence": "I really regret not going to the concert with my friends last night.",
-    "translation": "pişman olmak"
+    "word": "Choir",
+    "definition": "A group of singers who perform together, for example in a church or school.",
+    "context_sentence": "Jack was a member of the school choir.",
+    "translation": "Koro",
+    "type": "Noun"
   },
   {
-    "word": "relevant",
-    "definition": "Closely connected or appropriate to what is being done or considered.",
-    "context_sentence": "Please only include information that is relevant to the job you are applying for.",
-    "translation": "ilgili, alakalı"
+    "word": "Chocolatey",
+    "definition": "Chocolatey food has a lot of chocolate in it, or tastes like chocolate.",
+    "context_sentence": "The cake is a bit too chocolatey for me.",
+    "translation": "Çikolatalı, çikolata gibi",
+    "type": "Adjective"
   },
   {
-    "word": "relieved",
-    "definition": "Feeling happy because something unpleasant has stopped or didn't happen.",
-    "context_sentence": "I was so relieved to find my car keys after searching for them for an hour.",
-    "translation": "rahatlamış"
+    "word": "Clear up",
+    "definition": "To make everything clean and tidy again after making a mess.",
+    "context_sentence": "I'll clear up if you want to go to bed.",
+    "translation": "Temizlemek, ortalığı toparlamak",
+    "type": "Phrasal Verb"
   },
   {
-    "word": "require",
-    "definition": "To need for a particular purpose; to make something necessary.",
-    "context_sentence": "Most international flights require you to arrive at the airport three hours early.",
-    "translation": "gerektirmek, ihtiyacı olmak"
+    "word": "Colleague",
+    "definition": "People who work in the same organization or department as you.",
+    "context_sentence": "He is popular with his colleagues.",
+    "translation": "Meslektaş, iş arkadaşı",
+    "type": "Noun"
   },
   {
-    "word": "resident",
-    "definition": "A person who lives somewhere permanently or on a long-term basis.",
-    "context_sentence": "Local residents are unhappy about the new shopping mall project in the area.",
-    "translation": "sakin, oturan kişi"
+    "word": "Come up with",
+    "definition": "To think of something such as an idea or a plan.",
+    "context_sentence": "Is that the best you can come up with?",
+    "translation": "Bulmak (fikir vb.), üretmek",
+    "type": "Phrasal Verb"
   },
   {
-    "word": "response",
-    "definition": "A verbal or written answer; a reaction to something.",
-    "context_sentence": "I sent an email yesterday, but I am still waiting for a response.",
-    "translation": "cevap, yanıt"
+    "word": "Come up with new ideas",
+    "definition": "To think of something new.",
+    "context_sentence": "We can form a group to come up with new ideas.",
+    "translation": "Yeni fikirler bulmak",
+    "type": "Phrase"
   },
   {
-    "word": "significant",
-    "definition": "Sufficiently great or important to be worthy of attention; noteworthy.",
-    "context_sentence": "There has been a significant increase in the number of people using the new app.",
-    "translation": "önemli, kayda değer"
+    "word": "Competitive",
+    "definition": "A competitive activity is one in which companies or teams are competing against each other.",
+    "context_sentence": "He gave up playing competitive football at the age of 24.",
+    "translation": "Rekabetçi",
+    "type": "Adjective"
   },
   {
-    "word": "solution",
-    "definition": "A means of solving a problem or dealing with a difficult situation.",
-    "context_sentence": "We need to find a permanent solution to the water leak in the basement.",
-    "translation": "çözüm"
+    "word": "Confident",
+    "definition": "Someone who believes in their own abilities and so does not feel nervous or frightened.",
+    "context_sentence": "He is confident in his ability to play the piano.",
+    "translation": "Kendine güvenen",
+    "type": "Adjective"
   },
   {
-    "word": "specify",
-    "definition": "To identify clearly and definitely.",
-    "context_sentence": "Could you please specify which color and size you would like to order?",
-    "translation": "belirlemek, netleştirmek"
+    "word": "Confused",
+    "definition": "Unable to understand something or think clearly about it.",
+    "context_sentence": "She was starting to feel a bit confused.",
+    "translation": "Kafası karışık",
+    "type": "Adjective"
   },
   {
-    "word": "strategy",
-    "definition": "A plan of action designed to achieve a long-term or overall aim.",
-    "context_sentence": "Our marketing strategy for this year focuses on reaching younger audiences.",
-    "translation": "strateji"
+    "word": "Control yourself",
+    "definition": "To have the power to make decisions and decide what will happen to something.",
+    "context_sentence": "When I see chocolate I can't control myself.",
+    "translation": "Kendine hakim olmak",
+    "type": "Phrase"
   },
   {
-    "word": "sufficient",
-    "definition": "Enough; adequate for a particular purpose.",
-    "context_sentence": "Do we have sufficient time to finish the project before the deadline?",
-    "translation": "yeterli"
+    "word": "Convenient",
+    "definition": "Easy to use, or appropriate for a particular purpose.",
+    "context_sentence": "The hotel was only five minutes from the beach, which was convenient.",
+    "translation": "Uygun, elverişli, pratik",
+    "type": "Adjective"
   },
   {
-    "word": "target",
-    "definition": "An objective or result towards which efforts are directed.",
-    "context_sentence": "The sales team reached their monthly target a week earlier than expected.",
-    "translation": "hedef"
+    "word": "Creamy",
+    "definition": "A creamy substance is thick, soft, and smooth and does not flow easily.",
+    "context_sentence": "This sauce is so creamy.",
+    "translation": "Kremalı, kıvamlı, yumuşak",
+    "type": "Adjective"
   },
   {
-    "word": "theory",
-    "definition": "A system of ideas intended to explain something.",
-    "context_sentence": "In theory, the new system sounds great, but we need to see how it works in practice.",
-    "translation": "teori"
+    "word": "Crowded",
+    "definition": "A place with a lot of people, especially too many.",
+    "context_sentence": "The street was noisy and crowded.",
+    "translation": "Kalabalık",
+    "type": "Adjective"
+  },
+  {
+    "word": "Cut down",
+    "definition": "To reduce an amount of something.",
+    "context_sentence": "These improvements will cut down on traffic noise.",
+    "translation": "Azaltmak, kesinti yapmak",
+    "type": "Phrasal Verb"
+  },
+  {
+    "word": "Cut down on",
+    "definition": "To do less of something.",
+    "context_sentence": "She wants to cut down on the amount of chocolate she eats.",
+    "translation": "Azaltmak (tüketimi vb.)",
+    "type": "Phrasal Verb"
+  },
+  {
+    "word": "Deal with",
+    "definition": "To take action to do something, especially to solve a problem.",
+    "context_sentence": "The government must now deal with the problem of high unemployment.",
+    "translation": "İlgilenmek, başa çıkmak",
+    "type": "Phrasal Verb"
+  },
+  {
+    "word": "Decisive",
+    "definition": "Able to make choices or decide what to do quickly and confidently.",
+    "context_sentence": "It's best to ask her because she's very decisive.",
+    "translation": "Kararlı",
+    "type": "Adjective"
+  },
+  {
+    "word": "Design (v)",
+    "definition": "To decide how something will be made, including how it will work and what it will look like, and often to make drawings of it.",
+    "context_sentence": "The bride wore a cream silk dress that she designed herself.",
+    "translation": "Tasarlamak",
+    "type": "Verb"
+  },
+  {
+    "word": "Designer",
+    "definition": "Someone whose job is to decide how to make things or to decide their shape or appearance.",
+    "context_sentence": "Calvin Klein is a famous fashion designer.",
+    "translation": "Tasarımcı",
+    "type": "Noun"
+  },
+  {
+    "word": "Disappear",
+    "definition": "To no longer happen or exist.",
+    "context_sentence": "Many public libraries in the city are disappearing.",
+    "translation": "Gözden kaybolmak, yok olmak",
+    "type": "Verb"
+  },
+  {
+    "word": "Dishonest",
+    "definition": "Willing to do things that are not honest, for example to tell lies or steal things.",
+    "context_sentence": "They admitted that there were some dishonest employees working in the bank.",
+    "translation": "Dürüst olmayan, sahtekar",
+    "type": "Adjective"
+  },
+  {
+    "word": "Dish up",
+    "definition": "To put food into dishes so that it is ready to be eaten.",
+    "context_sentence": "Can you dish up the food while it's hot?",
+    "translation": "Yemek servis etmek",
+    "type": "Phrasal Verb"
+  },
+  {
+    "word": "Display",
+    "definition": "An arrangement of things for people to look at.",
+    "context_sentence": "Max put up the window display.",
+    "translation": "Sergilemek, gösteri",
+    "type": "Noun"
+  },
+  {
+    "word": "Donate",
+    "definition": "To give something such as money or goods to an organization.",
+    "context_sentence": "The centre was bought with money donated by a wealthy businessman.",
+    "translation": "Bağışlamak",
+    "type": "Verb"
+  },
+  {
+    "word": "Draw attention to",
+    "definition": "To make people notice somebody/something.",
+    "context_sentence": "We have to try and get in without drawing attention to ourselves.",
+    "translation": "Dikkat çekmek (bir şeye/birine)",
+    "type": "Phrase"
+  },
+  {
+    "word": "Encourage",
+    "definition": "To suggest that someone does something that you believe would be good.",
+    "context_sentence": "We encourage student participation in our classes.",
+    "translation": "Teşvik etmek, cesaretlendirmek",
+    "type": "Verb"
+  },
+  {
+    "word": "Enormous",
+    "definition": "Very large in size or quantity.",
+    "context_sentence": "We couldn't finish the enormous birthday cake.",
+    "translation": "Kocaman, muazzam",
+    "type": "Adjective"
+  },
+  {
+    "word": "Expectation",
+    "definition": "The belief that something will happen.",
+    "context_sentence": "The team set off without any expectation of success.",
+    "translation": "Beklenti",
+    "type": "Noun"
+  },
+  {
+    "word": "Expression",
+    "definition": "A look on someone's face that shows what their thoughts or feelings are.",
+    "context_sentence": "You should have seen the expression on his face!",
+    "translation": "İfade (yüz ifadesi)",
+    "type": "Noun"
+  },
+  {
+    "word": "Eye-catching",
+    "definition": "Attractive or unusual and therefore noticed.",
+    "context_sentence": "The eye-catching design was very clever.",
+    "translation": "Göz alıcı, dikkat çekici",
+    "type": "Adjective"
+  },
+  {
+    "word": "Fall flat",
+    "definition": "To not succeed in entertaining someone or making them laugh.",
+    "context_sentence": "My attempt at a joke fell flat.",
+    "translation": "Beklenen etkiyi yaratmamak, çuvallamak",
+    "type": "Idiom"
+  },
+  {
+    "word": "Fascinating",
+    "definition": "Making you very interested or attracted.",
+    "context_sentence": "He told me a fascinating story.",
+    "translation": "Büyüleyici",
+    "type": "Adjective"
+  },
+  {
+    "word": "Fatty",
+    "definition": "Containing a lot of fat.",
+    "context_sentence": "Fatty foods are bad for you.",
+    "translation": "Yağlı",
+    "type": "Adjective"
+  },
+  {
+    "word": "Filling",
+    "definition": "Food that is filling makes you feel full quickly.",
+    "context_sentence": "This pie I ordered is very filling.",
+    "translation": "Doyurucu",
+    "type": "Adjective"
+  },
+  {
+    "word": "Filthy",
+    "definition": "Very dirty.",
+    "context_sentence": "The kitchen was filthy after he had cooked.",
+    "translation": "Çok pis, kirli",
+    "type": "Adjective"
+  },
+  {
+    "word": "Fluently",
+    "definition": "Spoken well and without difficulty.",
+    "context_sentence": "He speaks English fluently.",
+    "translation": "Akıcı bir şekilde",
+    "type": "Adverb"
+  },
+  {
+    "word": "Fruity",
+    "definition": "Tasting or smelling like fruit.",
+    "context_sentence": "It is a fruity red drink.",
+    "translation": "Meyveli, meyvemsi",
+    "type": "Adjective"
+  },
+  {
+    "word": "Furious",
+    "definition": "Extremely angry.",
+    "context_sentence": "Roberts' comments provoked a furious public response.",
+    "translation": "Çok öfkeli, küplere binmiş",
+    "type": "Adjective"
+  },
+  {
+    "word": "Generate new ideas",
+    "definition": "To think of something new.",
+    "context_sentence": "When we generate new ideas, we need to make sure we write them down.",
+    "translation": "Yeni fikirler üretmek",
+    "type": "Phrase"
+  },
+  {
+    "word": "Get rid of",
+    "definition": "To throw away, give away, or sell a possession that you no longer want or need.",
+    "context_sentence": "We're moving, so we have to get rid of a lot of our furniture.",
+    "translation": "Kurtulmak, başından savmak",
+    "type": "Phrasal Verb"
+  },
+  {
+    "word": "Get yourself",
+    "definition": "To obtain, receive, or be given something.",
+    "context_sentence": "I got myself a coffee from the canteen.",
+    "translation": "Kendine (bir şey) almak/edinmek",
+    "type": "Phrase"
+  },
+  {
+    "word": "Give up",
+    "definition": "To lose something, especially something that you want to keep, to get something else or help someone.",
+    "context_sentence": "We gave up on the idea of walking and took the bus instead.",
+    "translation": "Vazgeçmek, bırakmak",
+    "type": "Phrasal Verb"
+  },
+  {
+    "word": "Gorgeous",
+    "definition": "Very beautiful.",
+    "context_sentence": "She had a gorgeous red and gold silk sari.",
+    "translation": "Muhteşem, çok güzel",
+    "type": "Adjective"
+  },
+  {
+    "word": "Heavy traffic",
+    "definition": "A lot of vehicles that are travelling in an area at a particular time.",
+    "context_sentence": "Sorry I'm late - I was stuck in heavy traffic.",
+    "translation": "Yoğun trafik",
+    "type": "Phrase"
+  },
+  {
+    "word": "Help yourself",
+    "definition": "Used for giving someone permission to do or use something.",
+    "context_sentence": "Help yourself to some paella.",
+    "translation": "Kendine ikram etmek, buyurmak",
+    "type": "Idiom"
+  },
+  {
+    "word": "Hilarious",
+    "definition": "Extremely funny.",
+    "context_sentence": "For some reason, she finds his jokes hilarious.",
+    "translation": "Çok komik, gülünç",
+    "type": "Adjective"
+  },
+  {
+    "word": "Idiom",
+    "definition": "An expression whose meaning is different from the meaning of the individual words.",
+    "context_sentence": "'To have your feet on the ground' is an idiom meaning 'to be sensible'.",
+    "translation": "Deyim",
+    "type": "Noun"
+  },
+  {
+    "word": "Impatient",
+    "definition": "Annoyed because something is not happening as quickly as you want.",
+    "context_sentence": "'Come on!' said Maggie, becoming impatient.",
+    "translation": "Sabırsız",
+    "type": "Adjective"
+  },
+  {
+    "word": "Improvement",
+    "definition": "The state of being better than before, or the process of making something better.",
+    "context_sentence": "The school is performing well, but it needs further improvement.",
+    "translation": "Gelişme, iyileşme",
+    "type": "Noun"
+  },
+  {
+    "word": "Inaccurate",
+    "definition": "Not accurate or correct.",
+    "context_sentence": "She was given inaccurate information.",
+    "translation": "Hatalı, yanlış",
+    "type": "Adjective"
+  },
+  {
+    "word": "Independent",
+    "definition": "Someone who does not depend on other people for help, or prefers to do things by themselves.",
+    "context_sentence": "Even as a child he was very independent.",
+    "translation": "Bağımsız, özgür",
+    "type": "Adjective"
+  },
+  {
+    "word": "Inexpensive",
+    "definition": "Something that is inexpensive does not cost much money.",
+    "context_sentence": "It was an inexpensive hotel.",
+    "translation": "Ucuz, masrafsız",
+    "type": "Adjective"
+  },
+  {
+    "word": "Influence",
+    "definition": "To affect the way that someone thinks or behaves, or to affect the way that something happens.",
+    "context_sentence": "Research has shown that the weather can influence people's behaviour.",
+    "translation": "Etkilemek, nüfuz etmek",
+    "type": "Verb"
+  },
+  {
+    "word": "Inspiration",
+    "definition": "A sudden feeling of enthusiasm, or a new idea that helps you to do or create something.",
+    "context_sentence": "She was the inspiration for his new book.",
+    "translation": "İlham, esin",
+    "type": "Noun"
+  },
+  {
+    "word": "Insist",
+    "definition": "To say very firmly that something must happen or be done.",
+    "context_sentence": "You must see a doctor immediately - I insist.",
+    "translation": "Israr etmek, direatmek",
+    "type": "Verb"
+  },
+  {
+    "word": "Invent",
+    "definition": "To design or create something such as a machine or process that did not exist before.",
+    "context_sentence": "Alfred Nobel invented dynamite.",
+    "translation": "İcat etmek",
+    "type": "Verb"
+  },
+  {
+    "word": "Invention",
+    "definition": "A machine, tool, or system that someone has made, designed, or thought of for the first time.",
+    "context_sentence": "Inventions like the electric light bulb changed the way people lived.",
+    "translation": "İcat, buluş",
+    "type": "Noun"
+  },
+  {
+    "word": "Inventive",
+    "definition": "Good at thinking of new and original ideas or methods.",
+    "context_sentence": "Ronaldo is a versatile and inventive player.",
+    "translation": "Yaratıcı, özgün",
+    "type": "Adjective"
+  },
+  {
+    "word": "Inventor",
+    "definition": "Someone who has invented something or whose job is to invent things.",
+    "context_sentence": "Thomas Edison was an inventor.",
+    "translation": "Mucit",
+    "type": "Noun"
+  },
+  {
+    "word": "Impressive",
+    "definition": "If something is impressive, you admire it.",
+    "context_sentence": "The list of their achievements is pretty impressive.",
+    "translation": "Etkileyici",
+    "type": "Adjective"
+  },
+  {
+    "word": "In two minds",
+    "definition": "To be unable to decide about something.",
+    "context_sentence": "I was in two minds whether or not to come this morning.",
+    "translation": "İki arada bir derede kalmak, kararsız olmak",
+    "type": "Idiom"
+  },
+  {
+    "word": "Join a society",
+    "definition": "To become a member of an organization or club for people who have a particular interest or who take part in a particular activity.",
+    "context_sentence": "I am hoping to join a society at university so I can meet more people.",
+    "translation": "Bir topluluğa/kulübe katılmak",
+    "type": "Phrase"
+  },
+  {
+    "word": "Keep a record",
+    "definition": "To write something down.",
+    "context_sentence": "Can you keep a record of what we have spent?",
+    "translation": "Kayıt tutmak, not etmek",
+    "type": "Phrase"
+  },
+  {
+    "word": "Keep a resolution",
+    "definition": "To stick to a plan.",
+    "context_sentence": "I hope you keep your resolution to stop smoking.",
+    "translation": "Kararına sadık kalmak",
+    "type": "Phrase"
+  },
+  {
+    "word": "Keep track of",
+    "definition": "To have all the information that you need about something.",
+    "context_sentence": "We need a system to keep track of all our expenses.",
+    "translation": "Takip etmek, kaydını tutmak",
+    "type": "Idiom"
+  },
+  {
+    "word": "Keep up",
+    "definition": "To continue at the same high level.",
+    "context_sentence": "Keep up the good work.",
+    "translation": "Aynı seviyeyi korumak, sürdürmek",
+    "type": "Phrasal Verb"
+  },
+  {
+    "word": "Launch a new marketing campaign",
+    "definition": "To start a series of things such as television advertisements or posters that try to persuade people to buy a product.",
+    "context_sentence": "The company plans to launch a new marketing campaign next month.",
+    "translation": "Yeni bir pazarlama kampanyası başlatmak",
+    "type": "Phrase"
+  },
+  {
+    "word": "Let",
+    "definition": "To allow something to happen.",
+    "context_sentence": "I stepped back and let him pass.",
+    "translation": "İzin vermek (bir şeyin olmasına)",
+    "type": "Verb"
+  },
+  {
+    "word": "Let down",
+    "definition": "To make someone disappointed by not doing something that they are expecting you to do.",
+    "context_sentence": "The families of the victims feel that the justice system has let them down.",
+    "translation": "Hayal kırıklığına uğratmak, yüzüstü bırakmak",
+    "type": "Phrasal Verb"
+  },
+  {
+    "word": "Let your mind wander freely",
+    "definition": "To allow your thoughts to be free and not restricted to one thing.",
+    "context_sentence": "Relax, close your eyes and let your mind wander freely.",
+    "translation": "Zihnini serbest bırakmak",
+    "type": "Phrase"
+  },
+  {
+    "word": "Look at a problem from the outside",
+    "definition": "To consider a situation from different perspectives.",
+    "context_sentence": "It's important to look at a problem from the outside if you want a good solution.",
+    "translation": "Probleme dışarıdan bakmak",
+    "type": "Phrase"
+  },
+  {
+    "word": "Lose interest in something",
+    "definition": "To stop being interested in something.",
+    "context_sentence": "I used to do yoga but I lost interest in it.",
+    "translation": "Bir şeye ilgini kaybetmek",
+    "type": "Phrase"
+  },
+  {
+    "word": "Make",
+    "definition": "To cause someone or something to be in a particular state or to change to another state.",
+    "context_sentence": "This film always makes me cry.",
+    "translation": "Yaptırmak, hissettirmek",
+    "type": "Verb"
+  },
+  {
+    "word": "Make a decision",
+    "definition": "A choice that you make after thinking carefully.",
+    "context_sentence": "The committee should make a decision later this week.",
+    "translation": "Karar vermek",
+    "type": "Phrase"
+  },
+  {
+    "word": "Make a profit",
+    "definition": "To have money remaining after you have paid all your business costs.",
+    "context_sentence": "Investors have made a 14% profit in just 3 months.",
+    "translation": "Kâr etmek",
+    "type": "Phrase"
+  },
+  {
+    "word": "Make a resolution",
+    "definition": "To set (yourself) a goal.",
+    "context_sentence": "Are you going to make a resolution this year?",
+    "translation": "Karar almak (yeni yıl kararı gibi)",
+    "type": "Phrase"
+  },
+  {
+    "word": "Make friends with",
+    "definition": "To become friends.",
+    "context_sentence": "They made friends with the children next door.",
+    "translation": "Arkadaş olmak",
+    "type": "Phrase"
+  },
+  {
+    "word": "Make fun of",
+    "definition": "To make jokes about someone or something in an unkind way.",
+    "context_sentence": "The other children made fun of her because she was always so serious.",
+    "translation": "Dalga geçmek, alay etmek",
+    "type": "Phrase"
+  },
+  {
+    "word": "Make sure",
+    "definition": "To check something so that you can be sure about it.",
+    "context_sentence": "I think I locked it but we'd better make sure.",
+    "translation": "Emin olmak, sağlama almak",
+    "type": "Phrase"
+  },
+  {
+    "word": "Make the break/change",
+    "definition": "To make a decision to change something in your life, usually something significant.",
+    "context_sentence": "I decided to make the break and buy my own place.",
+    "translation": "(Büyük bir) değişiklik yapmak, bağları koparmak",
+    "type": "Phrase"
+  },
+  {
+    "word": "Make up my mind",
+    "definition": "To make a decision.",
+    "context_sentence": "He made up his mind to attend the meeting.",
+    "translation": "Kararını vermek, kafasında netleştirmek",
+    "type": "Idiom"
+  },
+  {
+    "word": "Make use of",
+    "definition": "To use someone or something for a particular purpose, especially one that brings a benefit to you.",
+    "context_sentence": "Why doesn't she make use of her singing talent?",
+    "translation": "Yararlanmak, kullanmak",
+    "type": "Phrase"
+  },
+  {
+    "word": "Make yourself",
+    "definition": "To create or produce something by working.",
+    "context_sentence": "Jane made herself a drink while she waited.",
+    "translation": "Kendini (bir şey) yapmak/hazırlamak",
+    "type": "Phrase"
+  },
+  {
+    "word": "Massive",
+    "definition": "Very large or heavy.",
+    "context_sentence": "There are the massive columns at Luxor.",
+    "translation": "Çok büyük, ağır, kütlesel",
+    "type": "Adjective"
+  },
+  {
+    "word": "Mild",
+    "definition": "Does not have a strong taste.",
+    "context_sentence": "The curry is actually quite mild.",
+    "translation": "Hafif (acı olmayan/yumuşak tat)",
+    "type": "Adjective"
+  },
+  {
+    "word": "Misplace",
+    "definition": "To put something in the wrong place and lose it, especially temporarily.",
+    "context_sentence": "I misplaced my umbrella and now I'm really wet!",
+    "translation": "Yanlış yere koymak, yerini unutmak",
+    "type": "Verb"
+  },
+  {
+    "word": "Misunderstand",
+    "definition": "To not understand someone or something correctly.",
+    "context_sentence": "I think he has misunderstood the problem.",
+    "translation": "Yanlış anlamak",
+    "type": "Verb"
+  },
+  {
+    "word": "Monolingual",
+    "definition": "Speaking, writing, or using only one language.",
+    "context_sentence": "She only speaks French so she is monolingual.",
+    "translation": "Tek dilli",
+    "type": "Adjective"
+  },
+  {
+    "word": "My mind's gone blank",
+    "definition": "To not remember something or be able to think of something.",
+    "context_sentence": "I can't remember his name - my mind's gone blank.",
+    "translation": "Zihnim durdu, aklıma hiçbir şey gelmiyor",
+    "type": "Idiom"
+  },
+  {
+    "word": "Notice",
+    "definition": "To become conscious of someone or something by seeing, hearing, or feeling them.",
+    "context_sentence": "I noticed that the door was open.",
+    "translation": "Fark etmek",
+    "type": "Verb"
+  },
+  {
+    "word": "Nutty",
+    "definition": "Containing nuts, or having the taste of nuts.",
+    "context_sentence": "The biscuits were nutty.",
+    "translation": "Fındıklı/Fıstıklı, kuruyemiş tadında",
+    "type": "Adjective"
+  },
+  {
+    "word": "Objective",
+    "definition": "A large thing that you want to achieve.",
+    "context_sentence": "I'm not sure I understand the objective of this exercise.",
+    "translation": "Hedef, amaç",
+    "type": "Noun"
+  },
+  {
+    "word": "Observe",
+    "definition": "To notice someone doing something, or to notice something happening.",
+    "context_sentence": "Similar trends may be observed in most modern societies.",
+    "translation": "Gözlemlemek",
+    "type": "Verb"
+  },
+  {
+    "word": "Oily",
+    "definition": "Covered with oil, or containing oil.",
+    "context_sentence": "Oily fish such as mackerel or herring is good for you.",
+    "translation": "Yağlı (kaygan/sıvı yağlı)",
+    "type": "Adjective"
+  },
+  {
+    "word": "Overcrowded",
+    "definition": "Containing too many people.",
+    "context_sentence": "This train is overcrowded - I can't find a seat.",
+    "translation": "Aşırı kalabalık",
+    "type": "Adjective"
+  },
+  {
+    "word": "Overpopulated",
+    "definition": "A place that has too many people living in it.",
+    "context_sentence": "This city is overpopulated.",
+    "translation": "Aşırı nüfuslu",
+    "type": "Adjective"
+  },
+  {
+    "word": "Overwork",
+    "definition": "To work harder than you should.",
+    "context_sentence": "I think people in that company are always overworked.",
+    "translation": "Fazla çalışmak, aşırı yüklenmek",
+    "type": "Verb"
+  },
+  {
+    "word": "Pay attention to",
+    "definition": "To listen to, watch, or consider something or someone very carefully.",
+    "context_sentence": "Pay attention to the warnings printed on the label.",
+    "translation": "Dikkat etmek, kulak vermek",
+    "type": "Phrase"
+  },
+  {
+    "word": "Peppery",
+    "definition": "Flavoured with or tasting like pepper.",
+    "context_sentence": "There is a peppery taste to this.",
+    "translation": "Biberli, acı",
+    "type": "Adjective"
+  },
+  {
+    "word": "Perform",
+    "definition": "To do something in front of an audience in order to entertain them.",
+    "context_sentence": "He's a terrible actor because he can't perform on stage at all.",
+    "translation": "Performans sergilemek, sahne almak",
+    "type": "Verb"
+  },
+  {
+    "word": "Persuade",
+    "definition": "To make someone agree to do something by giving them reasons why they should.",
+    "context_sentence": "He did finally come with us, although it took a long time to persuade him.",
+    "translation": "İkna etmek",
+    "type": "Verb"
+  },
+  {
+    "word": "Phrase",
+    "definition": "A group of words that are used together in a fixed expression.",
+    "context_sentence": "Several of those interviewed used the phrase 'being my own boss'.",
+    "translation": "İfade, söz öbeği",
+    "type": "Noun"
+  },
+  {
+    "word": "Polluted",
+    "definition": "(About air, water, or land) too dirty and dangerous for people to use in a safe way.",
+    "context_sentence": "The oil spillage has polluted the harbour.",
+    "translation": "Kirli, kirlenmiş",
+    "type": "Adjective"
+  },
+  {
+    "word": "Possibility",
+    "definition": "The chance that something might happen or be true.",
+    "context_sentence": "Another possibility is that we'll go to Mexico instead.",
+    "translation": "Olasılık, ihtimal",
+    "type": "Noun"
+  },
+  {
+    "word": "Prediction",
+    "definition": "A statement about what you think will happen in the future.",
+    "context_sentence": "The government has made a prediction that unemployment will rise this year.",
+    "translation": "Tahmin, öngörü",
+    "type": "Noun"
+  },
+  {
+    "word": "Produce",
+    "definition": "To make or grow something, especially in large quantities and in order to be sold OR to organise the work and money involved in making a film, play, television programme, CD etc.",
+    "context_sentence": "Steve McQueen produced and starred in the film.",
+    "translation": "Üretmek, yapımcılığını üstlenmek",
+    "type": "Verb"
+  },
+  {
+    "word": "Producer",
+    "definition": "A person or company that grows food or makes goods to be sold OR someone whose job is to organize the work and money involved in making a movie, play, television.",
+    "context_sentence": "The producer was really angry with the director.",
+    "translation": "Üretici, yapımcı",
+    "type": "Noun"
+  },
+  {
+    "word": "Product",
+    "definition": "Something that is made, grown, or obtained in large quantities so that it can be sold.",
+    "context_sentence": "Consumers are becoming more suspicious of advertising claims about products that they buy.",
+    "translation": "Ürün",
+    "type": "Noun"
+  },
+  {
+    "word": "Productive",
+    "definition": "Working hard and producing or achieving a lot.",
+    "context_sentence": "Samuel is more productive in the morning.",
+    "translation": "Üretken, verimli",
+    "type": "Adjective"
+  },
+  {
+    "word": "Proud of",
+    "definition": "Feeling happy about your achievements, your possessions, or people who you are connected with.",
+    "context_sentence": "He was very proud of himself for winning.",
+    "translation": "Gurur duymak",
+    "type": "Phrase"
+  },
+  {
+    "word": "Put a plan into action",
+    "definition": "To start using an idea to succeed in doing something.",
+    "context_sentence": "We are ready to put our plan into action.",
+    "translation": "Planı uygulamaya koymak, eyleme dökmek",
+    "type": "Phrase"
+  },
+  {
+    "word": "Put away",
+    "definition": "To put something in the place where you usually keep it when you are not using it.",
+    "context_sentence": "He put the notebook away and stood up.",
+    "translation": "Yerine koymak, kaldırmak",
+    "type": "Phrasal Verb"
+  },
+  {
+    "word": "Put my mind to",
+    "definition": "To direct all one's attention to achieving something.",
+    "context_sentence": "She'd have made an excellent dancer, if she'd put her mind to it.",
+    "translation": "Kafaya koymak, kendini vermek",
+    "type": "Idiom"
+  },
+  {
+    "word": "Put off",
+    "definition": "To decide to do something later, not now.",
+    "context_sentence": "You can't put the decision off any longer.",
+    "translation": "Ertelemek",
+    "type": "Phrasal Verb"
+  },
+  {
+    "word": "Quit a bad habit",
+    "definition": "To stop doing something that is not good for you.",
+    "context_sentence": "You should quit biting your nails.",
+    "translation": "Kötü bir alışkanlığı bırakmak",
+    "type": "Phrase"
+  },
+  {
+    "word": "Reach a target",
+    "definition": "To achieve something.",
+    "context_sentence": "I aim to reach the target by March.",
+    "translation": "Hedefe ulaşmak",
+    "type": "Phrase"
+  },
+  {
+    "word": "Rebuild",
+    "definition": "To build something again after it has been damaged or destroyed.",
+    "context_sentence": "They had to rebuild the theatre after the fire.",
+    "translation": "Yeniden inşa etmek",
+    "type": "Verb"
+  },
+  {
+    "word": "Recognise",
+    "definition": "To know who the person is or what the thing is that you are seeing, hearing etc. because you have seen, heard etc. them before.",
+    "context_sentence": "I hardly recognized you with a beard!",
+    "translation": "Tanımak (daha önce gördüğü birini/şeyi)",
+    "type": "Verb"
+  },
+  {
+    "word": "Recording studio",
+    "definition": "A place where music or speech can be recorded.",
+    "context_sentence": "They were in the recording studio all day.",
+    "translation": "Kayıt stüdyosu",
+    "type": "Noun"
+  },
+  {
+    "word": "Recycle",
+    "definition": "To change waste materials such as newspapers and bottles so that they can be used again.",
+    "context_sentence": "Japan recycles 40% of its waste.",
+    "translation": "Geri dönüştürmek",
+    "type": "Verb"
+  },
+  {
+    "word": "Reduce",
+    "definition": "To make something smaller or less in size, amount, importance etc.",
+    "context_sentence": "Try to reduce the amount of fat in your diet.",
+    "translation": "Azaltmak, düşürmek",
+    "type": "Verb"
+  },
+  {
+    "word": "Refuse",
+    "definition": "To say you will not do something that someone has asked you to do.",
+    "context_sentence": "Mum asked him to apologize, but he refused.",
+    "translation": "Reddetmek, geri çevirmek",
+    "type": "Verb"
+  },
+  {
+    "word": "Regret",
+    "definition": "To feel sorry or sad that something has happened.",
+    "context_sentence": "We regret any inconvenience caused by the delay.",
+    "translation": "Pişman olmak, üzülmek",
+    "type": "Verb"
+  },
+  {
+    "word": "Rehearsal room",
+    "definition": "A place to practise for a performance of a play, concert, opera etc.",
+    "context_sentence": "We need to find a rehearsal room to practise.",
+    "translation": "Prova odası",
+    "type": "Noun"
+  },
+  {
+    "word": "Rehearse",
+    "definition": "To practise a play, concert, opera etc. before giving a performance.",
+    "context_sentence": "We've been rehearsing for weeks.",
+    "translation": "Prova yapmak",
+    "type": "Verb"
+  },
+  {
+    "word": "Relative",
+    "definition": "Members of your family, especially ones who do not live with you, for example a grandparent or cousin.",
+    "context_sentence": "We spent the week visiting relatives.",
+    "translation": "Akraba",
+    "type": "Noun"
+  },
+  {
+    "word": "Rely on",
+    "definition": "To trust someone to do something for you.",
+    "context_sentence": "We can rely on my brother to help us.",
+    "translation": "Güvenmek, bel bağlamak",
+    "type": "Phrasal Verb"
+  },
+  {
+    "word": "Remind",
+    "definition": "To tell someone again about an event from the past or about a fact that they used to know.",
+    "context_sentence": "I can't think of his name – can you remind me?",
+    "translation": "Hatırlatmak",
+    "type": "Verb"
+  },
+  {
+    "word": "Repeat",
+    "definition": "To say or write something again.",
+    "context_sentence": "Can you repeat what you just said, please?",
+    "translation": "Tekrar etmek",
+    "type": "Verb"
+  },
+  {
+    "word": "Reply",
+    "definition": "To say, write, or do something as an answer.",
+    "context_sentence": "'I know,' Corbett replied quietly.",
+    "translation": "Cevap vermek, yanıtlamak",
+    "type": "Verb"
+  },
+  {
+    "word": "Rethink",
+    "definition": "To consider something such as an idea, plan, or system again in order to change it.",
+    "context_sentence": "Competitive pressures are forcing managers to rethink their strategies.",
+    "translation": "Yeniden düşünmek, gözden geçirmek",
+    "type": "Verb"
+  },
+  {
+    "word": "Retire",
+    "definition": "To stop working, especially when you reach the age when you are officially too old to work.",
+    "context_sentence": "At what age do you plan to retire?",
+    "translation": "Emekli olmak",
+    "type": "Verb"
+  },
+  {
+    "word": "Reuse",
+    "definition": "To use something again, sometimes for a different purpose.",
+    "context_sentence": "My daughter reuses envelopes.",
+    "translation": "Yeniden kullanmak",
+    "type": "Verb"
+  },
+  {
+    "word": "Reward yourself",
+    "definition": "To give yourself something as a reward, for example praise, success, or money.",
+    "context_sentence": "He liked to reward himself with a short break every two hours.",
+    "translation": "Kendini ödüllendirmek",
+    "type": "Phrase"
+  },
+  {
+    "word": "Road works",
+    "definition": "Repairs that are done to the surface of a road.",
+    "context_sentence": "There are road works here because they are changing the road.",
+    "translation": "Yol çalışması",
+    "type": "Noun"
+  },
+  {
+    "word": "Rubbish",
+    "definition": "Things that you throw away because they are no longer useful.",
+    "context_sentence": "The streets were littered with rubbish.",
+    "translation": "Çöp",
+    "type": "Noun"
+  },
+  {
+    "word": "Run a company",
+    "definition": "To manage a large organization.",
+    "context_sentence": "I would love to run a company one day.",
+    "translation": "Şirket yönetmek",
+    "type": "Phrase"
+  },
+  {
+    "word": "Runny",
+    "definition": "Like a liquid.",
+    "context_sentence": "Do you like your eggs cooked hard or runny?",
+    "translation": "Akışkan, sıvılaşmış (yumurta için rafadan)",
+    "type": "Adjective"
+  },
+  {
+    "word": "Rush hour",
+    "definition": "The time of day when there are a lot of cars on the road because most people are travelling to or from work.",
+    "context_sentence": "I hate travelling in rush hour because everything is so slow.",
+    "translation": "İş çıkış saati, trafiğin yoğun olduğu saat",
+    "type": "Noun"
+  },
+  {
+    "word": "Salary",
+    "definition": "An amount of money received every month or year for the work you do.",
+    "context_sentence": "When I earn a salary, I can save to buy a house.",
+    "translation": "Maaş",
+    "type": "Noun"
+  },
+  {
+    "word": "Salty",
+    "definition": "Containing salt, or tasting like salt.",
+    "context_sentence": "The soup's a bit salty.",
+    "translation": "Tuzlu",
+    "type": "Adjective"
+  },
+  {
+    "word": "Savoury",
+    "definition": "Tasting of salt or spices and not sweet.",
+    "context_sentence": "I bought some savoury snacks.",
+    "translation": "Tuzlu/Baharatlı (tatlı olmayan)",
+    "type": "Adjective"
+  },
+  {
+    "word": "Say",
+    "definition": "To express something using words.",
+    "context_sentence": "'Pleased to meet you,' he said with a smile.",
+    "translation": "Söylemek, demek",
+    "type": "Verb"
+  },
+  {
+    "word": "Scene",
+    "definition": "A part of a play, book, film etc. in which events happen.",
+    "context_sentence": "They watched the opening scene of Macbeth.",
+    "translation": "Sahne (film/tiyatro bölümü)",
+    "type": "Noun"
+  },
+  {
+    "word": "Schedule",
+    "definition": "To plan exactly when you will do something.",
+    "context_sentence": "What's on your schedule today?",
+    "translation": "Program, takvim",
+    "type": "Verb"
+  },
+  {
+    "word": "Scientific",
+    "definition": "Relating to science, or based on its methods.",
+    "context_sentence": "Newton made an important scientific discovery.",
+    "translation": "Bilimsel",
+    "type": "Adjective"
+  },
+  {
+    "word": "Sensible",
+    "definition": "Someone who is reasonable and practical.",
+    "context_sentence": "I don't see how any sensible person could agree with him.",
+    "translation": "Mantıklı, aklı başında",
+    "type": "Adjective"
+  },
+  {
+    "word": "Set short-term and long-term goals",
+    "definition": "To decide what you want to achieve in the near future and for the future generally.",
+    "context_sentence": "It's important to set short-term and long-term goals for your career.",
+    "translation": "Kısa ve uzun vadeli hedefler belirlemek",
+    "type": "Phrase"
+  },
+  {
+    "word": "Set up",
+    "definition": "To organize or plan something such as an event or system.",
+    "context_sentence": "A film night would be very easy to set up.",
+    "translation": "Kurmak, düzenlemek",
+    "type": "Phrasal Verb"
+  },
+  {
+    "word": "Set yourself",
+    "definition": "To give something to yourself to do or to achieve.",
+    "context_sentence": "I like to set myself exercise targets for the week.",
+    "translation": "Kendine (hedef vb.) koymak",
+    "type": "Phrase"
+  },
+  {
+    "word": "Severe delay",
+    "definition": "A situation in which a plane, train etc. leaves or arrives very late.",
+    "context_sentence": "There is a severe delay on the motorway due to an accident.",
+    "translation": "Ciddi gecikme",
+    "type": "Phrase"
+  },
+  {
+    "word": "Shout",
+    "definition": "To say something in a loud voice.",
+    "context_sentence": "'Stop!' he shouted.",
+    "translation": "Bağırmak, haykırmak",
+    "type": "Verb"
+  },
+  {
+    "word": "Situation",
+    "definition": "The set of conditions that exist at a particular time in a particular place.",
+    "context_sentence": "If the situation had been different, their plan might have succeeded.",
+    "translation": "Durum, vaziyet",
+    "type": "Noun"
+  },
+  {
+    "word": "Slight delay",
+    "definition": "A situation in which a plane, train etc. leaves or arrives a little bit late.",
+    "context_sentence": "There is a slight delay to the flight.",
+    "translation": "Ufak gecikme",
+    "type": "Phrase"
+  },
+  {
+    "word": "Sophisticated",
+    "definition": "Complicated and advanced.",
+    "context_sentence": "There is highly sophisticated surveillance equipment.",
+    "translation": "Gelişmiş, sofistike, kültürlü",
+    "type": "Adjective"
+  },
+  {
+    "word": "Sort",
+    "definition": "To arrange things in groups or in a particular order, for example by date, importance, size, or colour.",
+    "context_sentence": "Once the data is collected, the computer will sort it by date.",
+    "translation": "Sıralamak, ayıklamak",
+    "type": "Verb"
+  },
+  {
+    "word": "Spectator",
+    "definition": "Someone who watches a public activity or event, especially a sports event.",
+    "context_sentence": "The final game attracted a crowd of over 50,000 spectators.",
+    "translation": "İzleyici (spor vb. için)",
+    "type": "Noun"
+  },
+  {
+    "word": "Spot",
+    "definition": "To notice someone or something.",
+    "context_sentence": "Hugh was spotted by local police and had to leave quickly.",
+    "translation": "Fark etmek, gözüne ilişmek",
+    "type": "Verb"
+  },
+  {
+    "word": "Stare",
+    "definition": "To look at someone or something very directly for a long time.",
+    "context_sentence": "It's rude to stare.",
+    "translation": "Dik dik bakmak",
+    "type": "Verb"
+  },
+  {
+    "word": "Start off",
+    "definition": "To begin, especially in a particular way or by doing a particular thing.",
+    "context_sentence": "Many store managers started off as sales assistants.",
+    "translation": "Başlamak (bir işe/konuma)",
+    "type": "Phrasal Verb"
+  },
+  {
+    "word": "Sticky",
+    "definition": "A sticky substance sticks to other things.",
+    "context_sentence": "This honey is very sticky.",
+    "translation": "Yapışkan",
+    "type": "Adjective"
+  },
+  {
+    "word": "Store",
+    "definition": "To keep something in a particular place.",
+    "context_sentence": "Nuclear waste is currently being stored close to the town.",
+    "translation": "Depolamak, saklamak",
+    "type": "Verb"
+  },
+  {
+    "word": "Suitable",
+    "definition": "Right for a particular purpose, person or situation.",
+    "context_sentence": "The nearest suitable alternative was two miles away.",
+    "translation": "Uygun",
+    "type": "Adjective"
+  },
+  {
+    "word": "Suitable for",
+    "definition": "Right for a particular purpose, person, or situation.",
+    "context_sentence": "The film wasn't suitable for a younger person.",
+    "translation": "Uygun olmak (-e uygun)",
+    "type": "Phrase"
+  },
+  {
+    "word": "Superb",
+    "definition": "Of the highest quality.",
+    "context_sentence": "The Hotel Gardesana offers superb views of the lake.",
+    "translation": "Mükemmel, üstün kalite",
+    "type": "Adjective"
+  },
+  {
+    "word": "Switch off completely",
+    "definition": "To stop thinking about something.",
+    "context_sentence": "I went on holiday to switch off completely from writing the book.",
+    "translation": "Kafayı tamamen boşaltmak, irtibatı kesmek",
+    "type": "Phrasal Verb"
+  },
+  {
+    "word": "Take note of",
+    "definition": "To notice something and try to remember it because you think it is important.",
+    "context_sentence": "I took note of what she said.",
+    "translation": "Not etmek, dikkate almak",
+    "type": "Idiom"
+  },
+  {
+    "word": "Take place",
+    "definition": "To happen.",
+    "context_sentence": "The Olympics take place every four years.",
+    "translation": "Gerçekleşmek, olmak",
+    "type": "Idiom"
+  },
+  {
+    "word": "Task",
+    "definition": "A job that you need to do.",
+    "context_sentence": "My first real task was to prepare for the meeting.",
+    "translation": "Görev, iş",
+    "type": "Noun"
+  },
+  {
+    "word": "Tell the difference between",
+    "definition": "To notice what is different between similar people or things.",
+    "context_sentence": "How do you tell the difference between the kittens?",
+    "translation": "Arasındaki farkı söylemek/ayırt etmek",
+    "type": "Phrase"
+  },
+  {
+    "word": "Tempt",
+    "definition": "To make you want to do or to have something, especially something that is not good for you.",
+    "context_sentence": "The shop windows were lit, tempting the late shoppers.",
+    "translation": "Aklını çelmek, cezbetmek",
+    "type": "Verb"
+  },
+  {
+    "word": "Think outside the box",
+    "definition": "To think of an unusual idea.",
+    "context_sentence": "We are getting nowhere, we need to think outside the box.",
+    "translation": "Kalıpların dışında düşünmek, yaratıcı olmak",
+    "type": "Idiom"
+  },
+  {
+    "word": "Throw away",
+    "definition": "To get rid of something that you no longer want, for example by putting it in a dustbin.",
+    "context_sentence": "Have you thrown the papers away?",
+    "translation": "Atmak (çöpe), fırlatıp atmak",
+    "type": "Phrasal Verb"
+  },
+  {
+    "word": "Tidy up",
+    "definition": "To put things back in the right places.",
+    "context_sentence": "Could you help me tidy up?",
+    "translation": "Ortalığı toplamak, düzenlemek",
+    "type": "Phrasal Verb"
+  },
+  {
+    "word": "Tiny",
+    "definition": "Extremely small.",
+    "context_sentence": "The floor was covered in tiny bits of paper.",
+    "translation": "Küçücük, minik",
+    "type": "Adjective"
+  },
+  {
+    "word": "Treat yourself",
+    "definition": "To behave towards yourself in a particular way.",
+    "context_sentence": "Why don't you treat yourself to a holiday.",
+    "translation": "Kendini şımartmak, kendine ısmarlamak",
+    "type": "Phrase"
+  },
+  {
+    "word": "Trick",
+    "definition": "To make someone believe something that is not true.",
+    "context_sentence": "I suddenly realized that I'd been tricked.",
+    "translation": "Kandırmak, oyun oynamak",
+    "type": "Verb"
+  },
+  {
+    "word": "Trophy",
+    "definition": "A large silver cup or similar object given as a prize to the winner of a competition, especially a sports event.",
+    "context_sentence": "Mexico has not lifted the trophy since 1975.",
+    "translation": "Kupa, ödül",
+    "type": "Noun"
+  },
+  {
+    "word": "Try out",
+    "definition": "To test someone or something to see what they are like or whether they are suitable or effective.",
+    "context_sentence": "John hopes to try out his new running shoes this weekend.",
+    "translation": "Denemek (test etmek)",
+    "type": "Phrasal Verb"
+  },
+  {
+    "word": "Turn a dream into reality",
+    "definition": "To make something happen that you have always hoped for.",
+    "context_sentence": "She turned her dream of living in Paris into a reality.",
+    "translation": "Hayali gerçeğe dönüştürmek",
+    "type": "Phrase"
+  },
+  {
+    "word": "Turn down",
+    "definition": "Make something lower/colder/quieter.",
+    "context_sentence": "Can you turn the music down a bit?",
+    "translation": "Kısmak (sesi/ısıyı) veya Reddetmek",
+    "type": "Phrasal Verb"
+  },
+  {
+    "word": "Turn up",
+    "definition": "Arrive without making an appointment.",
+    "context_sentence": "There is no need to book – just turn up on the night.",
+    "translation": "Çıkagelmek, damlamak",
+    "type": "Phrasal Verb"
+  },
+  {
+    "word": "Typical of",
+    "definition": "Used for saying that someone is behaving in the way that they usually behave.",
+    "context_sentence": "The story is typical of this newspaper.",
+    "translation": "Tipik, özgü",
+    "type": "Adjective"
+  },
+  {
+    "word": "Underpaid",
+    "definition": "Not earning enough money for work that you do.",
+    "context_sentence": "He works very hard but is underpaid.",
+    "translation": "Düşük ücretli, hakkı ödenmeyen",
+    "type": "Adjective"
+  },
+  {
+    "word": "Unique",
+    "definition": "Not the same as anything or anyone else.",
+    "context_sentence": "They have a totally unique approach to staff training.",
+    "translation": "Eşsiz, benzersiz",
+    "type": "Adjective"
+  },
+  {
+    "word": "Use up",
+    "definition": "To use all of a supply of something.",
+    "context_sentence": "We have used up all the sugar so you will need to get some more.",
+    "translation": "Tüketmek, bitirmek",
+    "type": "Phrasal Verb"
+  },
+  {
+    "word": "Warn",
+    "definition": "To tell someone that something bad will happen if they do something.",
+    "context_sentence": "I warned you not to go to that party last night.",
+    "translation": "Uyarmak, ikaz etmek",
+    "type": "Verb"
+  },
+  {
+    "word": "Waste",
+    "definition": "Failure to use something valuable in an effective way, so that it does not produce the benefits that it could.",
+    "context_sentence": "All this uneaten food – what a waste!",
+    "translation": "İsraf, atık, boşa harcama",
+    "type": "Noun"
+  },
+  {
+    "word": "Watery",
+    "definition": "Watery food or drink contains a lot of water and has a weak taste.",
+    "context_sentence": "They sell very watery coffee.",
+    "translation": "Sulu, tatsız, kıvamsız",
+    "type": "Adjective"
+  },
+  {
+    "word": "Whisper",
+    "definition": "To say something very quietly so that other people cannot hear you.",
+    "context_sentence": "'When can I see you again?' he whispered softly.",
+    "translation": "Fısıldamak",
+    "type": "Verb"
+  },
+  {
+    "word": "Wonder",
+    "definition": "To think about something because you want to know more facts or details about it.",
+    "context_sentence": "'How did they find out?' she wondered.",
+    "translation": "Merak etmek",
+    "type": "Verb"
+  },
+  {
+    "word": "Work out",
+    "definition": "Find the answer by thinking carefully.",
+    "context_sentence": "I can't work out what to do.",
+    "translation": "Çözmek, anlamak (veya antrenman yapmak)",
+    "type": "Phrasal Verb"
+  },
+  {
+    "word": "Work towards a goal",
+    "definition": "To do things that help you to make progress towards something that you want to achieve.",
+    "context_sentence": "Daniel is working towards his goal of becoming a chef.",
+    "translation": "Bir hedefe yönelik çalışmak",
+    "type": "Phrase"
   }
 ]

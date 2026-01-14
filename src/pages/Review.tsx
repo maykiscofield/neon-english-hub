@@ -2,7 +2,7 @@ import React, { useState, useCallback, forwardRef } from 'react';
 import { motion, AnimatePresence, useMotionValue, useTransform } from 'framer-motion';
 import { 
   Archive, CheckCircle2, Volume2, Rocket, 
-  BrainCircuit, Zap, RotateCcw, ArrowLeft
+  BrainCircuit, Zap, RotateCcw, ArrowLeft, Trash2
 } from 'lucide-react';
 import { Navbar } from '@/components/layout/Navbar';
 import { Button } from '@/components/ui/button';
@@ -38,11 +38,6 @@ const EmptyState = forwardRef(({ learnedCount }: { learnedCount: number }, ref: 
     <h3 className="text-4xl font-black italic uppercase tracking-tighter text-transparent bg-clip-text bg-gradient-to-b from-white via-amber-400 to-orange-500">Session Cleared!</h3>
     <p className="text-amber-300/70 text-xs mt-4 mb-12 uppercase tracking-[0.2em] font-bold italic text-center">Neural link established for {learnedCount} data points.</p>
     <Link to="/learn" className="w-full block">
-      {/* DEĞİŞİKLİK BURADA: 
-          - border rengi kesin olarak amber-500/50 yapıldı.
-          - hover durumundaki cyan parlama amber/orange ile değiştirildi.
-          - text rengi beyaz kalarak kontrast korundu.
-      */}
       <Button 
         variant="outline" 
         size="lg" 
@@ -66,12 +61,22 @@ const SwipeCard = forwardRef(({ word, onSwipe, isTop }: any, ref: any) => {
   ]);
 
   const targetWord = word.word || "Term";
+  const targetMeaning = word.meaning || "Anlam"; // Türkçe Anlam
   const targetExample = word.examples && word.examples.length > 0 ? word.examples[0] : "";
   const targetExampleTr = word.exampleTranslations && word.exampleTranslations.length > 0 ? word.exampleTranslations[0] : "Çeviri bulunamadı.";
 
+  // Geliştirilmiş Highlighting Fonksiyonu (Çoklu kelime ve Türkçe kök desteği için basit mantık)
   const highlightWord = useCallback((sentence: string, wordToHighlight: string) => {
     if (!sentence || !wordToHighlight) return sentence;
-    const regex = new RegExp(`(${wordToHighlight})`, 'gi');
+    
+    // Virgülle ayrılmış anlamları parçala (örn: "başarmak, elde etmek")
+    const terms = wordToHighlight.split(/,\s*/).filter(t => t);
+    
+    // Regex deseni oluştur (büyük küçük harf duyarsız)
+    // Kelimenin cümle içinde geçmesi yeterli (sondan eklemeli diller için boundary \b kullanmıyoruz)
+    const pattern = terms.map(t => t.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')).join('|');
+    const regex = new RegExp(`(${pattern})`, 'gi');
+
     return sentence.split(regex).map((part, index) => 
       regex.test(part) ? <span key={index} className="font-bold text-amber-300 drop-shadow-[0_0_5px_rgba(245,158,11,0.6)]">{part}</span> : part
     );
@@ -106,6 +111,7 @@ const SwipeCard = forwardRef(({ word, onSwipe, isTop }: any, ref: any) => {
         onClick={() => setFlipped(!flipped)}
         className="w-full h-full bg-[#0a0501] border-2 border-amber-400/30 rounded-[48px] relative transition-shadow duration-300 shadow-[0_0_30px_rgba(245,158,11,0.15)_inset]"
       >
+        {/* --- ÖN YÜZ (İngilizce) --- */}
         <div 
           className="absolute inset-0 flex flex-col items-center justify-center p-8 bg-slate-900/95 rounded-[48px]"
           style={{ backfaceVisibility: "hidden", WebkitBackfaceVisibility: "hidden" }}
@@ -126,6 +132,7 @@ const SwipeCard = forwardRef(({ word, onSwipe, isTop }: any, ref: any) => {
           <span className="absolute bottom-8 text-[9px] text-amber-500/70 font-black uppercase tracking-[0.4em] animate-pulse">Tap to Reveal</span>
         </div>
 
+        {/* --- ARKA YÜZ (Türkçe) --- */}
         <div 
           className="absolute inset-0 flex flex-col items-center justify-center p-8 bg-[#0a0501] rounded-[48px]"
           style={{ 
@@ -136,12 +143,19 @@ const SwipeCard = forwardRef(({ word, onSwipe, isTop }: any, ref: any) => {
         >
           <div className="absolute top-8 left-8 opacity-30 text-amber-500 shadow-[0_0_10px_rgba(255,140,0,0.5)]"><BrainCircuit size={48} /></div>
           <span className="text-amber-400 text-[10px] font-black uppercase tracking-[0.3em] mb-4">Database Result</span>
+          
+          {/* GÜNCELLEME: Burada artık Definition yerine Meaning (Türkçe karşılık) var */}
           <h2 className="text-4xl font-black text-center mb-10 text-transparent bg-clip-text bg-gradient-to-b from-white via-amber-300 to-orange-500 drop-shadow-[0_0_15px_rgba(245,158,11,0.6)]">
-            {word.definition}
+            {targetMeaning}
           </h2>
+          
           <div className="relative bg-slate-900/50 p-6 rounded-[24px] border border-amber-400/30 w-full text-center backdrop-blur-sm shadow-[inset_0_0_20px_rgba(0,0,0,0.5)]">
             <div className="absolute -top-3 left-1/2 -translate-x-1/2 px-4 py-1 bg-[#0a0501] border border-amber-400/50 rounded-full text-[9px] font-black text-amber-400 uppercase tracking-[0.2em] shadow-[0_0_10px_rgba(255,140,0,0.4)]">Translation Data</div>
-            <p className="text-base text-slate-300 italic leading-relaxed tracking-wide">"{targetExampleTr}"</p>
+            
+            {/* GÜNCELLEME: Türkçe cümle içinde kelime parlatıldı */}
+            <p className="text-base text-slate-300 italic leading-relaxed tracking-wide">
+              "{targetExampleTr ? highlightWord(targetExampleTr, targetMeaning) : "Çeviri verisi yok."}"
+            </p>
           </div>
         </div>
       </motion.div>
@@ -173,6 +187,30 @@ const Review = () => {
   const moveToReview = (word: any) => {
     setLearnedWords(prev => prev.filter(w => w.id !== word.id));
     setSessionWords(prev => [word, ...prev]);
+  };
+
+  // --- SIFIRLAMA İŞLEMİ 1: Restart (Başa Sar) ---
+  const handleRestartSession = () => {
+    const totalWords = sessionWords.length + learnedWords.length;
+    if (totalWords === 0) return;
+
+    if (window.confirm("Oturum başa sarılacak. Öğrenilen kelimeler tekrar havuza eklenecek. Emin misiniz?")) {
+      setSessionWords(prev => [...prev, ...learnedWords]);
+      setLearnedWords([]);
+      setView('swipe');
+    }
+  };
+
+  // --- SIFIRLAMA İŞLEMİ 2: Clear (Temizle) ---
+  const handleClearSession = () => {
+    const totalWords = sessionWords.length + learnedWords.length;
+    if (totalWords === 0) return;
+
+    if (window.confirm("Oturum tamamen TEMİZLENECEK. Tüm kelimeler listeden kaldırılacak. Emin misiniz?")) {
+      setSessionWords([]);
+      setLearnedWords([]);
+      setView('swipe');
+    }
   };
 
   return (
@@ -208,14 +246,37 @@ const Review = () => {
           <p className="text-[11px] text-amber-300/70 font-bold uppercase tracking-[0.4em] mt-2 shadow-[0_0_5px_rgba(255,140,0,0.4)]">NeuralSlide Mode Active</p>
         </div>
 
-        <div className="flex bg-slate-900/60 p-1.5 rounded-full mb-10 border border-amber-500/30 backdrop-blur-xl shadow-[0_0_25px_rgba(245,158,11,0.2)] relative overflow-hidden">
-          <div className={`absolute inset-y-1.5 w-1/2 bg-gradient-to-r from-amber-500/20 to-orange-500/20 rounded-full transition-all duration-300 ease-out ${view === 'swipe' ? 'left-1.5' : 'left-[calc(50%-0.375rem)] translate-x-full'}`}></div>
-          <button onClick={() => setView('swipe')} className={`flex-1 flex items-center justify-center gap-2 py-3 rounded-full transition-all relative z-10 font-black italic uppercase text-[10px] tracking-[0.2em] ${view === 'swipe' ? 'text-amber-400 shadow-[0_0_15px_rgba(245,158,11,0.8)]' : 'text-slate-500 hover:text-amber-300'}`}>
-            <Zap size={14} /> Quick Slide
-          </button>
-          <button onClick={() => setView('archive')} className={`flex-1 flex items-center justify-center gap-2 py-3 rounded-full transition-all relative z-10 font-black italic uppercase text-[10px] tracking-[0.2em] ${view === 'archive' ? 'text-amber-400 shadow-[0_0_15px_rgba(245,158,11,0.8)]' : 'text-slate-500 hover:text-amber-300'}`}>
-            <Archive size={14} /> Learned ({learnedWords.length})
-          </button>
+        {/* MENÜ ALANI - RESTART ve CLEAR BUTONLARI */}
+        <div className="flex flex-col gap-3 mb-10">
+          <div className="flex justify-end gap-2 px-2">
+             {/* RESTART BUTONU */}
+             <button 
+                onClick={handleRestartSession}
+                className="group flex items-center gap-2 px-3 py-1.5 rounded-lg bg-amber-500/10 border border-amber-500/20 hover:border-amber-500/50 hover:bg-amber-500/20 transition-all duration-300"
+              >
+                <RotateCcw className="w-3.5 h-3.5 text-gray-500 group-hover:text-amber-400 transition-colors" />
+                <span className="text-[10px] font-black uppercase tracking-widest text-gray-500 group-hover:text-amber-400">Restart</span>
+              </button>
+
+             {/* CLEAR BUTONU */}
+             <button 
+                onClick={handleClearSession}
+                className="group flex items-center gap-2 px-3 py-1.5 rounded-lg bg-red-500/10 border border-red-500/20 hover:border-red-500/50 hover:bg-red-500/20 transition-all duration-300"
+              >
+                <Trash2 className="w-3.5 h-3.5 text-gray-500 group-hover:text-red-400 transition-colors" />
+                <span className="text-[10px] font-black uppercase tracking-widest text-gray-500 group-hover:text-red-400">Clear</span>
+              </button>
+          </div>
+
+          <div className="flex bg-slate-900/60 p-1.5 rounded-full border border-amber-500/30 backdrop-blur-xl shadow-[0_0_25px_rgba(245,158,11,0.2)] relative overflow-hidden">
+            <div className={`absolute inset-y-1.5 w-1/2 bg-gradient-to-r from-amber-500/20 to-orange-500/20 rounded-full transition-all duration-300 ease-out ${view === 'swipe' ? 'left-1.5' : 'left-[calc(50%-0.375rem)] translate-x-full'}`}></div>
+            <button onClick={() => setView('swipe')} className={`flex-1 flex items-center justify-center gap-2 py-3 rounded-full transition-all relative z-10 font-black italic uppercase text-[10px] tracking-[0.2em] ${view === 'swipe' ? 'text-amber-400 shadow-[0_0_15px_rgba(245,158,11,0.8)]' : 'text-slate-500 hover:text-amber-300'}`}>
+              <Zap size={14} /> Quick Slide
+            </button>
+            <button onClick={() => setView('archive')} className={`flex-1 flex items-center justify-center gap-2 py-3 rounded-full transition-all relative z-10 font-black italic uppercase text-[10px] tracking-[0.2em] ${view === 'archive' ? 'text-amber-400 shadow-[0_0_15px_rgba(245,158,11,0.8)]' : 'text-slate-500 hover:text-amber-300'}`}>
+              <Archive size={14} /> Learned ({learnedWords.length})
+            </button>
+          </div>
         </div>
 
         <div className="relative h-[580px] w-full flex items-center justify-center perspective-[1200px]">
