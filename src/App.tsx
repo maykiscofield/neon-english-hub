@@ -15,6 +15,7 @@ import Confusing from './pages/Confusing';
 import NotFound from "./pages/NotFound";
 import Topics from "@/pages/Topics";
 import Writing from './pages/Writing';
+import LoginPage from "./pages/LoginPage";
 
 const queryClient = new QueryClient();
 
@@ -44,6 +45,7 @@ const App = () => (
           <ScrollRestore /> 
           <Routes>
             <Route path="/" element={<Index />} />
+            <Route path="/login" element={<LoginPage />} />
             <Route path="/onboarding" element={<Onboarding />} />
             <Route path="/dashboard" element={<Dashboard />} />
             <Route path="/learn" element={<Learn />} />

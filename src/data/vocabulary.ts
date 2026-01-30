@@ -4939,486 +4939,4892 @@ export const vocabularyData: VocabularyWord[] = [
   },
 
   // --- UPPER-INTERMEDIATE (B2) ---
+
+  // --- FEELINGS & PERSONALITY (UNIT 1) ---
   {
-    id: 'acknowledge',
-    word: 'acknowledge',
-    pos: 'verb',
-    meaning: 'kabul etmek, onaylamak',
-    definition: 'To accept or admit that something is true.',
-    ipa: `/əkˈnɒl.ɪdʒ/`,
-    examples: ['He acknowledged his mistake.', 'Please acknowledge receipt of this email.', 'They refused to acknowledge the problem.'],
-    exampleTranslations: ['Hatasını kabul etti.', 'Lütfen bu e-postanın ulaştığını onaylayın.', 'Sorunu kabul etmeyi reddettiler.'],
-    level: 'upper-intermediate',
-    collocations: ['publicly acknowledge', 'acknowledge receipt'],
-    collocationMeanings: {
-      'publicly acknowledge': 'herkesin önünde kabul etmek',
-      'acknowledge receipt': 'alındığını (onayını) bildirmek',
-    },
-  },
-  {
-    id: 'acquire',
-    word: 'acquire',
-    pos: 'verb',
-    meaning: 'edinmek, kazanmak',
-    definition: 'To get or buy something, or to learn a skill.',
-    ipa: `/əˈkwaɪər/`,
-    examples: ['He acquired a new company.', 'Children acquire language quickly.', 'I managed to acquire a rare book.'],
-    exampleTranslations: ['Yeni bir şirket satın aldı (bünyesine kattı).', 'Çocuklar dili hızlı edinirler.', 'Nadir bir kitabı edinmeyi başardım.'],
-    level: 'upper-intermediate',
-    collocations: ['acquire skills', 'recently acquired'],
-    collocationMeanings: {
-      'acquire skills': 'beceri edinmek',
-      'recently acquired': 'son zamanlarda edinilmiş',
-    },
-  },
-  {
-    id: 'advocate',
-    word: 'advocate',
-    pos: 'verb',
-    meaning: 'savunmak, desteklemek',
-    definition: 'To publicly support a policy or way of doing things.',
-    ipa: `/ˈæd.və.teɪt/`,
-    examples: ["She advocates for women's rights.", 'They advocate a return to tradition.', "I don't advocate using violence."],
-    exampleTranslations: ['Kadın haklarını savunuyor.', 'Geleneğe dönüşü destekliyorlar.', 'Şiddet kullanılmasını savunmuyorum/önermiyorum.'],
-    level: 'upper-intermediate',
-    collocations: ['strongly advocate', 'legal advocate'],
-    collocationMeanings: {
-      'strongly advocate': 'güçlü bir şekilde savunmak',
-      'legal advocate': 'hukuki savunucu / avukat',
-    },
-  },
-  {
-    id: 'clarify',
-    word: 'clarify',
-    pos: 'verb',
-    meaning: 'açıklığa kavuşturmak',
-    definition: 'To make something clearer or easier to understand.',
-    ipa: `/ˈklær.ɪ.faɪ/`,
-    examples: ['Could you clarify that point?', 'I need to clarify my position.', 'The law needs to be clarified.'],
-    exampleTranslations: ['O noktayı açıklığa kavuşturabilir misiniz?', 'Konumumu/Durumumu netleştirmem gerekiyor.', 'Yasanın netleştirilmesi gerekiyor.'],
-    level: 'upper-intermediate',
-    collocations: ['clarify a point', 'need to clarify'],
-    collocationMeanings: {
-      'clarify a point': 'bir noktayı açıklığa kavuşturmak',
-      'need to clarify': 'açıklama ihtiyacı duymak',
-    },
-  },
-  {
-    id: 'compromise',
-    word: 'compromise',
-    pos: 'verb',
-    meaning: 'uzlaşmak, ödün vermek',
-    definition: 'To reach an agreement by giving up something.',
-    ipa: `/ˈkɒm.prə.maɪz/`,
-    examples: ['We finally reached a compromise.', "Don't compromise your values.", 'They refused to compromise.'],
-    exampleTranslations: ['Sonunda bir uzlaşmaya vardık.', 'Değerlerinden ödün verme.', 'Uzlaşmayı reddettiler.'],
-    level: 'upper-intermediate',
-    collocations: ['reach a compromise', 'refuse to compromise'],
-    collocationMeanings: {
-      'reach a compromise': 'uzlaşmaya varmak',
-      'refuse to compromise': 'uzlaşmayı/taviz vermeyi reddetmek',
-    },
-  },
-  {
-    id: 'distinguish',
-    word: 'distinguish',
-    pos: 'verb',
-    meaning: 'ayırt etmek',
-    definition: 'To notice or understand the difference between two things.',
-    ipa: `/dɪˈstɪŋ.ɡwɪʃ/`,
-    examples: ["It's hard to distinguish the twins.", 'Can you distinguish between these colors?', 'He can distinguish right from wrong.'],
-    exampleTranslations: ['İkizleri ayırt etmek zordur.', 'Bu renkler arasındaki farkı ayırt edebilir misin?', 'Doğruyu yanlıştan ayırt edebilir.'],
-    level: 'upper-intermediate',
-    collocations: ['distinguish between', 'clearly distinguish'],
-    collocationMeanings: {
-      'distinguish between': 'ikisi arasında ayrım yapmak',
-      'clearly distinguish': 'net bir şekilde ayırt etmek',
-    },
-  },
-  {
-    id: 'eliminate',
-    word: 'eliminate',
-    pos: 'verb',
-    meaning: 'elemek, yok etmek',
-    definition: 'To remove or get rid of something completely.',
-    ipa: `/iˈlɪm.ɪ.neɪt/`,
-    examples: ['We must eliminate waste.', 'He was eliminated from the race.', 'Try to eliminate sugar from your diet.'],
-    exampleTranslations: ['İsrafı/Atığı ortadan kaldırmalıyız.', 'Yarıştan elendi.', 'Şekeri diyetinden çıkarmaya çalış.'],
-    level: 'upper-intermediate',
-    collocations: ['completely eliminate', 'eliminate the risk'],
-    collocationMeanings: {
-      'completely eliminate': 'tamamen ortadan kaldırmak',
-      'eliminate the risk': 'riski yok etmek',
-    },
-  },
-  {
-    id: 'enhance',
-    word: 'enhance',
-    pos: 'verb',
-    meaning: 'geliştirmek, artırmak',
-    definition: 'To improve the quality, amount, or strength of something.',
-    ipa: `/ɪnˈhɑːns/`,
-    examples: ['This will enhance your reputation.', 'Photos can be enhanced digitally.', 'Music enhances the atmosphere.'],
-    exampleTranslations: ['Bu, itibarınızı artıracaktır.', 'Fotoğraflar dijital olarak iyileştirilebilir/geliştirilebilir.', 'Müzik atmosferi güçlendirir.'],
-    level: 'upper-intermediate',
-    collocations: ['enhance quality', 'digitally enhanced'],
-    collocationMeanings: {
-      'enhance quality': 'kaliteyi artırmak',
-      'digitally enhanced': 'dijital olarak iyileştirilmiş',
-    },
-  },
-  {
-    id: 'evaluate',
-    word: 'evaluate',
-    pos: 'verb',
-    meaning: 'değerlendirmek',
-    definition: 'To judge or calculate the quality, importance, or value.',
-    ipa: `/ɪˈvæl.ju.eɪt/`,
-    examples: ['We need to evaluate the results.', 'How do you evaluate success?', 'The performance was evaluated.'],
-    exampleTranslations: ['Sonuçları değerlendirmemiz gerekiyor.', 'Başarıyı nasıl değerlendirirsin?', 'Performans değerlendirildi.'],
-    level: 'upper-intermediate',
-    collocations: ['carefully evaluate', 'evaluate performance'],
-    collocationMeanings: {
-      'carefully evaluate': 'dikkatlice değerlendirmek',
-      'evaluate performance': 'performansı değerlendirmek',
-    },
-  },
-  {
-    id: 'implement',
-    word: 'implement',
-    pos: 'verb',
-    meaning: 'uygulamak, faaliyete geçirmek',
-    definition: 'To start using a plan, system, or law.',
-    ipa: `/ˈɪm.plɪ.ment/`,
-    examples: ['The changes will be implemented soon.', 'We must implement the strategy.', 'New rules were implemented.'],
-    exampleTranslations: ['Değişiklikler yakında uygulanacak.', 'Stratejiyi faaliyete geçirmeliyiz.', 'Yeni kurallar uygulamaya kondu.'],
-    level: 'upper-intermediate',
-    collocations: ['implement a plan', 'successfully implement'],
-    collocationMeanings: {
-      'implement a plan': 'bir planı uygulamaya koymak',
-      'successfully implement': 'başarıyla uygulamak',
-    },
-  },
-  {
-    id: 'interpret',
-    word: 'interpret',
-    pos: 'verb',
-    meaning: 'yorumlamak',
-    definition: 'To decide what the intended meaning of something is.',
-    ipa: `/ɪnˈtɜː.prət/`,
-    examples: ['How do you interpret this poem?', 'Data can be interpreted differently.', 'He interpreted for the president.'],
-    exampleTranslations: ['Bu şiiri nasıl yorumlarsın?', 'Veriler farklı şekilde yorumlanabilir.', 'Başkan için tercümanlık yaptı (yorumladı).'],
-    level: 'upper-intermediate',
-    collocations: ['interpret data', 'widely interpreted'],
-    collocationMeanings: {
-      'interpret data': 'veriyi yorumlamak',
-      'widely interpreted': 'geniş çapta yorumlanan',
-    },
-  },
-  {
-    id: 'justify',
-    word: 'justify',
-    pos: 'verb',
-    meaning: 'haklı çıkarmak, gerekçelendirmek',
-    definition: 'To give or be a good reason for something.',
-    ipa: `/ˈdʒʌs.tɪ.faɪ/`,
-    examples: ['How can you justify this cost?', 'Nothing justifies such cruelty.', 'He tried to justify his absence.'],
-    exampleTranslations: ['Bu maliyeti nasıl haklı çıkarabilirsin?', 'Hiçbir şey böyle bir zulmü meşru kılamaz.', 'Yokluğunu/Gelmemesini gerekçelendirmeye çalıştı.'],
-    level: 'upper-intermediate',
-    collocations: ['justify the cost', 'ethically justify'],
-    collocationMeanings: {
-      'justify the cost': 'maliyeti haklı çıkarmak / makul göstermek',
-      'ethically justify': 'etik olarak gerekçelendirmek',
-    },
-  },
-  {
-    id: 'maximize',
-    word: 'maximize',
-    pos: 'verb',
-    meaning: 'maksimize etmek, en üst düzeye çıkarmak',
-    definition: 'To make something as great as possible.',
-    ipa: `/ˈmæk.sɪ.maɪz/`,
-    examples: ['We want to maximize our profits.', 'To maximize your chances of success...', 'Maximize the window on your screen.'],
-    exampleTranslations: ['Kârımızı en üst düzeye çıkarmak istiyoruz.', 'Başarı şansınızı maksimize etmek için...', 'Ekranınızdaki pencereyi büyütün (tam ekran yapın).'],
-    level: 'upper-intermediate',
-    collocations: ['maximize profit', 'maximize potential'],
-    collocationMeanings: {
-      'maximize profit': 'kârı maksimize etmek',
-      'maximize potential': 'potansiyeli en üst düzeye çıkarmak',
-    },
-  },
-  {
-    id: 'obtain',
-    word: 'obtain',
-    pos: 'verb',
-    meaning: 'elde etmek, edinmek',
-    definition: 'To get something, especially by asking for it or effort.',
-    ipa: `/əbˈteɪn/`,
-    examples: ['You can obtain a visa at the embassy.', 'Further information can be obtained.', 'He obtained high marks.'],
-    exampleTranslations: ['Büyükelçilikten vize alabilirsiniz (edinebilirsiniz).', 'Daha fazla bilgi edinilebilir.', 'Yüksek notlar aldı.'],
-    level: 'upper-intermediate',
-    collocations: ['obtain permission', 'obtain information'],
-    collocationMeanings: {
-      'obtain permission': 'izin almak',
-      'obtain information': 'bilgi edinmek',
-    },
-  },
-  {
-    id: 'predict',
-    word: 'predict',
-    pos: 'verb',
-    meaning: 'tahmin etmek',
-    definition: 'To say that an event or action will happen in the future.',
-    ipa: `/prɪˈdɪkt/`,
-    examples: ["It's hard to predict the weather.", 'Experts predict a rise in prices.', 'I predicted this would happen.'],
-    exampleTranslations: ['Hava durumunu tahmin etmek zordur.', 'Uzmanlar fiyatlarda artış öngörüyor/tahmin ediyor.', 'Bunun olacağını tahmin etmiştim.'],
-    level: 'upper-intermediate',
-    collocations: ['predict the future', 'accurately predict'],
-    collocationMeanings: {
-      'predict the future': 'geleceği tahmin etmek',
-      'accurately predict': 'doğru bir şekilde tahmin etmek',
-    },
-  },
-  {
-    id: 'undertake',
-    word: 'undertake',
-    pos: 'verb',
-    meaning: 'üstlenmek',
-    definition: 'To do or begin something (that could be difficult).',
-    ipa: `/ˌʌn.dəˈteɪk/`,
-    examples: ['He undertook a difficult task.', 'The company undertook a review.', "I can't undertake this project."],
-    exampleTranslations: ['Zor bir görevi üstlendi.', 'Şirket bir inceleme başlattı/üstlendi.', 'Bu projeyi üstlenemem.'],
-    level: 'upper-intermediate',
-    collocations: ['undertake a task', 'undertake research'],
-    collocationMeanings: {
-      'undertake a task': 'bir görevi üstlenmek',
-      'undertake research': 'araştırma yapmak / üstlenmek',
-    },
-  },
-  {
-    id: 'ambiguous',
-    word: 'ambiguous',
+    id: 'awkward',
+    word: 'Awkward',
     pos: 'adjective',
-    meaning: 'belirsiz, muğlak',
-    definition: 'Having or expressing more than one possible meaning.',
-    ipa: `/æmˈbɪɡ.ju.əs/`,
-    examples: ['His reply was ambiguous.', 'The ending of the movie is ambiguous.', 'Avoid ambiguous instructions.'],
-    exampleTranslations: ['Cevabı belirsiz/muğlaktı.', 'Filmin sonu belirsiz.', 'Karmaşık/Belirsiz talimatlardan kaçının.'],
+    meaning: 'Garip, beceriksiz, rahatsız edici',
+    definition: 'Not comfortable, relaxed, or confident.',
+    ipa: '/ˈɔːkwəd/',
+    examples: ["He's always really awkward when meeting new people."],
+    exampleTranslations: ['Yeni insanlarla tanışırken her zaman çok garip/beceriksiz davranır.'],
     level: 'upper-intermediate',
-    collocations: ['highly ambiguous', 'ambiguous language'],
+    collocations: ['awkward silence', 'awkward situation', 'feel awkward'],
     collocationMeanings: {
-      'highly ambiguous': 'oldukça muğlak',
-      'ambiguous language': 'belirsiz/kapalı dil',
-    },
+      'awkward silence': 'rahatsız edici sessizlik',
+      'awkward situation': 'zor durum/vaziyet',
+      'feel awkward': 'mahcup/garip hissetmek'
+    }
   },
   {
-    id: 'coherent',
-    word: 'coherent',
+    id: 'devastated',
+    word: 'Devastated',
     pos: 'adjective',
-    meaning: 'tutarlı, uyumlu',
-    definition: 'Logical and well-organized; easy to understand.',
-    ipa: `/kəʊˈhɪə.rənt/`,
-    examples: ['He gave a coherent explanation.', 'The essay was not very coherent.', 'We need a coherent policy.'],
-    exampleTranslations: ['Tutarlı/Anlaşılır bir açıklama yaptı.', 'Makale pek tutarlı değildi.', 'Tutarlı bir politikaya ihtiyacımız var.'],
+    meaning: 'Yıkılmış, kahrolmuş, perişan',
+    definition: 'Feeling very shocked and upset.',
+    ipa: '/ˈdevəsteɪtɪd/',
+    examples: ['Olga was devastated to learn her car had been stolen.'],
+    exampleTranslations: ['Olga arabasının çalındığını öğrendiğinde kahroldu.'],
     level: 'upper-intermediate',
-    collocations: ['coherent argument', 'clear and coherent'],
+    collocations: ['absolutely devastated', 'left devastated', 'utterly devastated'],
     collocationMeanings: {
-      'coherent argument': 'tutarlı argüman',
-      'clear and coherent': 'açık ve tutarlı',
-    },
+      'absolutely devastated': 'tamamen yıkılmış',
+      'left devastated': 'perişan halde bırakılmış',
+      'utterly devastated': 'büsbütün kahrolmuş'
+    }
   },
   {
-    id: 'controversial',
-    word: 'controversial',
+    id: 'disgusted',
+    word: 'Disgusted',
     pos: 'adjective',
-    meaning: 'tartışmalı',
-    definition: 'Causing a lot of angry public discussion or disagreement.',
-    ipa: `/ˌkɒn.trəˈvɜː.ʃəl/`,
-    examples: ["It's a controversial issue.", 'He is a controversial figure.', 'The decision was highly controversial.'],
-    exampleTranslations: ['Bu tartışmalı bir konu.', 'O tartışılan/tartışmalı bir figür.', 'Karar oldukça tartışmalıydı.'],
+    meaning: 'İğrenmiş, tiksinmiş, bıkmış',
+    definition: 'Feeling very angry and upset about something that you do not approve of.',
+    ipa: '/dɪsˈɡʌstɪd/',
+    examples: ['I was disgusted by the way he treated his employees.'],
+    exampleTranslations: ['Çalışanlarına davranış şekli beni iğrendirdi.'],
     level: 'upper-intermediate',
-    collocations: ['highly controversial', 'controversial decision'],
+    collocations: ['disgusted with', 'disgusted by', 'utterly disgusted'],
     collocationMeanings: {
-      'highly controversial': 'oldukça tartışmalı',
-      'controversial decision': 'tartışmalı karar',
-    },
+      'disgusted with': 'birinden/bir şeyden iğrenmiş',
+      'disgusted by': 'bir şeyden dolayı tiksinmiş',
+      'utterly disgusted': 'tamamen bıkmış/iğrenmiş'
+    }
   },
   {
-    id: 'crucial',
-    word: 'crucial',
+    id: 'frustrated',
+    word: 'Frustrated',
     pos: 'adjective',
-    meaning: 'çok önemli, kritik',
-    definition: 'Extremely important or necessary.',
-    ipa: `/ˈkruː.ʃəl/`,
-    examples: ['This is a crucial decision.', 'Vitamins are crucial for health.', 'Time is of crucial importance.'],
-    exampleTranslations: ['Bu çok kritik/önemli bir karar.', 'Vitaminler sağlık için hayati öneme sahiptir.', 'Zaman çok kritik bir öneme sahip.'],
+    meaning: 'Hüsrana uğramış, hayal kırıklığına uğramış',
+    definition: 'Feeling annoyed and impatient because you are prevented from achieving something.',
+    ipa: '/frʌsˈtreɪtɪd/',
+    examples: ["I'm just frustrated by our overall lack of progress."],
+    exampleTranslations: ['Genel ilerleme eksikliğimizden dolayı sadece hüsrana uğramış durumdayım.'],
     level: 'upper-intermediate',
-    collocations: ['crucial role', 'absolutely crucial'],
+    collocations: ['get frustrated', 'increasingly frustrated', 'deeply frustrated'],
     collocationMeanings: {
-      'crucial role': 'kritik rol',
-      'absolutely crucial': 'kesinlikle hayati / çok kritik',
-    },
+      'get frustrated': 'hüsrana uğramak',
+      'increasingly frustrated': 'giderek artan bir hüsran',
+      'deeply frustrated': 'derinden hüsrana uğramış'
+    }
   },
   {
-    id: 'inevitable',
-    word: 'inevitable',
+    id: 'furious',
+    word: 'Furious',
     pos: 'adjective',
-    meaning: 'kaçınılmaz',
-    definition: 'Certain to happen and unable to be avoided.',
-    ipa: `/ɪnˈev.ɪ.tə.bəl/`,
-    examples: ['Conflict is sometimes inevitable.', 'It was an inevitable result.', 'Change is inevitable in life.'],
-    exampleTranslations: ['Çatışma bazen kaçınılmazdır.', 'Bu kaçınılmaz bir sonuçtu.', 'Hayatta değişim kaçınılmazdır.'],
+    meaning: 'Çok öfkeli, küplere binmiş',
+    definition: 'Extremely angry.',
+    ipa: '/ˈfjʊəriəs/',
+    examples: ["Yuri was absolutely furious that I'd scratched her car."],
+    exampleTranslations: ['Arabasını çizdiğim için Yuri kesinlikle öfkeden deliye döndü.'],
     level: 'upper-intermediate',
-    collocations: ['seem inevitable', 'virtually inevitable'],
+    collocations: ['furious with', 'absolutely furious', 'fast and furious'],
     collocationMeanings: {
-      'seem inevitable': 'kaçınılmaz görünmek',
-      'virtually inevitable': 'neredeyse kaçınılmaz',
-    },
+      'furious with': 'birine çok öfkeli',
+      'absolutely furious': 'öfkeden kudurmuş',
+      'fast and furious': 'hızlı ve öfkeli'
+    }
   },
   {
-    id: 'innovative',
-    word: 'innovative',
+    id: 'horrified',
+    word: 'Horrified',
     pos: 'adjective',
-    meaning: 'yenilikçi',
-    definition: 'Using new methods or ideas.',
-    ipa: `/ˈɪn.ə.və.tɪv/`,
-    examples: ['They have an innovative approach.', 'This is an innovative product.', 'He is a highly innovative designer.'],
-    exampleTranslations: ['Yenilikçi bir yaklaşımları var.', 'Bu yenilikçi bir üründür.', 'O, oldukça yenilikçi bir tasarımcıdır.'],
+    meaning: 'Dehşete düşmüş, korkmuş',
+    definition: 'Very shocked or frightened.',
+    ipa: '/ˈhɒrɪfaɪd/',
+    examples: ['Dad was horrified when he saw the prices on the menu.'],
+    exampleTranslations: ['Babam menüdeki fiyatları görünce dehşete düştü.'],
     level: 'upper-intermediate',
-    collocations: ['innovative approach', 'innovative solution'],
+    collocations: ['horrified at', 'look horrified', 'absolutely horrified'],
     collocationMeanings: {
-      'innovative approach': 'yenilikçi yaklaşım',
-      'innovative solution': 'yenilikçi çözüm',
-    },
+      'horrified at': 'bir şeye dehşetle bakmak',
+      'look horrified': 'dehşete düşmüş görünmek',
+      'absolutely horrified': 'tamamen dehşet içinde'
+    }
   },
   {
-    id: 'persistent',
-    word: 'persistent',
+    id: 'impressed',
+    word: 'Impressed',
     pos: 'adjective',
-    meaning: 'ısrarcı, kalıcı',
-    definition: 'Lasting for a long time or difficult to get rid of.',
-    ipa: `/pəˈsɪs.tənt/`,
-    examples: ['He has a persistent cough.', 'She is very persistent in her work.', 'Persistent rain caused flooding.'],
-    exampleTranslations: ['Geçmeyen/Israrcı bir öksürüğü var.', 'İşinde çok ısrarcıdır/azimlidir.', 'Sürekli yağmur sel baskınlarına neden oldu.'],
+    meaning: 'Etkilenmiş, hayran kalmış',
+    definition: 'Admiring someone or something very much, especially because of an unusually good achievement.',
+    ipa: '/ɪmˈprest/',
+    examples: ['I was very impressed by the level of customer service.'],
+    exampleTranslations: ['Müşteri hizmetleri seviyesinden çok etkilendim.'],
     level: 'upper-intermediate',
-    collocations: ['persistent effort', 'persistent problem'],
+    collocations: ['deeply impressed', 'highly impressed', 'easily impressed'],
     collocationMeanings: {
-      'persistent effort': 'sürekli/vazgeçmeyen çaba',
-      'persistent problem': 'inatçı/geçmeyen sorun',
-    },
+      'deeply impressed': 'derinden etkilenmiş',
+      'highly impressed': 'oldukça etkilenmiş',
+      'easily impressed': 'kolay etkilenen'
+    }
   },
   {
-    id: 'sophisticated_upper',
-    word: 'sophisticated',
+    id: 'overwhelmed',
+    word: 'Overwhelmed',
     pos: 'adjective',
-    meaning: 'gelişmiş, sofistike',
-    definition: 'Having a good understanding of way things work; complex.',
-    ipa: `/səˈfɪs.tɪ.keɪ.tɪd/`,
-    examples: ['This is a sophisticated software.', 'She is a sophisticated woman.', 'The system is quite sophisticated.'],
-    exampleTranslations: ['Bu gelişmiş bir yazılımdır.', 'O kültürlü/sofistike bir kadındır.', 'Sistem oldukça karmaşıktır.'],
+    meaning: 'Bunalmış, (duygu/iş altında) boğulmuş',
+    definition: 'Feeling unable to cope with all the things that need to be done.',
+    ipa: '/ˌəʊvəˈwelmd/',
+    examples: ["I'm just a little overwhelmed to be honest - there's so much to do!"],
+    exampleTranslations: ['Dürüst olmak gerekirse biraz bunaldım - yapılacak çok şey var!'],
     level: 'upper-intermediate',
-    collocations: ['highly sophisticated', 'sophisticated system'],
+    collocations: ['feel overwhelmed', 'completely overwhelmed', 'overwhelmed by work'],
     collocationMeanings: {
-      'highly sophisticated': 'oldukça gelişmiş/karmaşık',
-      'sophisticated system': 'sofistike/ileri teknoloji sistem',
-    },
+      'feel overwhelmed': 'bunalanmış hissetmek',
+      'completely overwhelmed': 'tamamen boğulmuş',
+      'overwhelmed by work': 'iş yükü altında ezilmiş'
+    }
   },
   {
-    id: 'sustainable',
-    word: 'sustainable',
+    id: 'relieved',
+    word: 'Relieved',
     pos: 'adjective',
-    meaning: 'sürdürülebilir',
-    definition: 'Able to continue over a period of time; environmentally friendly.',
-    ipa: `/səˈsteɪ.nə.bəl/`,
-    examples: ['We need sustainable energy.', 'Is this level of growth sustainable?', 'Sustainable development is key.'],
-    exampleTranslations: ['Sürdürülebilir enerjiye ihtiyacımız var.', 'Bu büyüme seviyesi sürdürülebilir mi?', 'Sürdürülebilir kalkınma anahtardır.'],
+    meaning: 'Rahatlamış',
+    definition: 'Happy and relaxed because something bad has not happened.',
+    ipa: '/rɪˈliːvd/',
+    examples: ["Mum wasn't angry, just relieved that I'd made it home safely."],
+    exampleTranslations: ['Annem kızgın değildi, sadece eve sağ salim döndüğüm için rahatlamıştı.'],
     level: 'upper-intermediate',
-    collocations: ['sustainable development', 'sustainable energy'],
+    collocations: ['greatly relieved', 'feel relieved', 'sigh of relief'],
     collocationMeanings: {
-      'sustainable development': 'sürdürülebilir kalkınma',
-      'sustainable energy': 'sürdürülebilir enerji',
-    },
+      'greatly relieved': 'büyük ölçüde rahatlamış',
+      'feel relieved': 'rahatlamış hissetmek',
+      'sigh of relief': 'derin bir nefes alma/rahatlama'
+    }
   },
   {
-    id: 'aspect',
-    word: 'aspect',
+    id: 'stunned',
+    word: 'Stunned',
+    pos: 'adjective',
+    meaning: 'Şaşkına dönmüş, donakalmış',
+    definition: 'Very shocked or upset, especially so that you are unable to act normally.',
+    ipa: '/stʌnd/',
+    examples: ["Barcelona were left stunned by Liverpool's last-minute winner."],
+    exampleTranslations: ["Barcelona, Liverpool'un son dakika golüyle şaşkına döndü."],
+    level: 'upper-intermediate',
+    collocations: ['stunned silence', 'absolutely stunned', 'left stunned'],
+    collocationMeanings: {
+      'stunned silence': 'şaşkınlıktan gelen sessizlik',
+      'absolutely stunned': 'tamamen şaşkına dönmüş',
+      'left stunned': 'şoka uğratılmış'
+    }
+  },
+  {
+    id: 'tense',
+    word: 'Tense',
+    pos: 'adjective',
+    meaning: 'Gergin',
+    definition: 'Feeling nervous and not relaxed, usually because you are worried.',
+    ipa: '/tens/',
+    examples: ['He was tired, but too tense to sleep.'],
+    exampleTranslations: ['Yorgundu ama uyuyamayacak kadar gergindi.'],
+    level: 'upper-intermediate',
+    collocations: ['tense atmosphere', 'tense situation', 'become tense'],
+    collocationMeanings: {
+      'tense atmosphere': 'gergin atmosfer',
+      'tense situation': 'gergin durum',
+      'become tense': 'gerginleşmek'
+    }
+  },
+  {
+    id: 'thrilled',
+    word: 'Thrilled',
+    pos: 'adjective',
+    meaning: 'Çok heyecanlı, aşırı mutlu',
+    definition: 'Very pleased and excited.',
+    ipa: '/θrɪld/',
+    examples: ['Ben was thrilled to win the competition.'],
+    exampleTranslations: ['Ben yarışmayı kazandığı için çok heyecanlıydı.'],
+    level: 'upper-intermediate',
+    collocations: ['thrilled to bits', 'absolutely thrilled', 'thrilled with'],
+    collocationMeanings: {
+      'thrilled to bits': 'mutluluktan uçmak',
+      'absolutely thrilled': 'tamamen heyecanlanmış',
+      'thrilled with': 'bir şeyden çok memnun kalmak'
+    }
+  },
+  {
+    id: 'ambitious',
+    word: 'Ambitious',
+    pos: 'adjective',
+    meaning: 'Hırslı, azimli',
+    definition: 'Wanting to be successful, rich, famous, etc.',
+    ipa: '/æmˈbɪʃəs/',
+    examples: ["Anna is pretty ambitious; I don't think she'll stay unless they promote her."],
+    exampleTranslations: ['Anna oldukça hırslıdır; terfi almadığı sürece kalacağını sanmam.'],
+    level: 'upper-intermediate',
+    collocations: ['highly ambitious', 'ambitious project', 'ambitious goal'],
+    collocationMeanings: {
+      'highly ambitious': 'oldukça hırslı',
+      'ambitious project': 'iddialı proje',
+      'ambitious goal': 'iddialı hedef'
+    }
+  },
+  {
+    id: 'arrogant',
+    word: 'Arrogant',
+    pos: 'adjective',
+    meaning: 'Kibirli, küstah',
+    definition: 'Thinking you are better or more important than other people.',
+    ipa: '/ˈærəɡənt/',
+    examples: ['To be honest, I thought she was rude and arrogant!'],
+    exampleTranslations: ['Dürüst olmak gerekirse, onun kaba ve kibirli olduğunu düşündüm!'],
+    level: 'upper-intermediate',
+    collocations: ['arrogant attitude', 'arrogant behavior', 'somewhat arrogant'],
+    collocationMeanings: {
+      'arrogant attitude': 'kibirli tavır',
+      'arrogant behavior': 'kibirli davranış',
+      'somewhat arrogant': 'biraz kibirli'
+    }
+  },
+  {
+    id: 'determined',
+    word: 'Determined',
+    pos: 'adjective',
+    meaning: 'Kararlı, azimli',
+    definition: 'Not willing to let anything prevent you from doing what you have decided to do.',
+    ipa: '/dɪˈtɜːmɪnd/',
+    examples: ['Aishia was always determined to make it as a dancer.'],
+    exampleTranslations: ['Aishia her zaman bir dansçı olarak başarmaya kararlıydı.'],
+    level: 'upper-intermediate',
+    collocations: ['determined to succeed', 'fiercely determined', 'grimly determined'],
+    collocationMeanings: {
+      'determined to succeed': 'başarmaya kararlı',
+      'fiercely determined': 'son derece kararlı',
+      'grimly determined': 'kararlı ve amansız'
+    }
+  },
+  {
+    id: 'down_to_earth',
+    word: 'Down-to-earth',
+    pos: 'adjective',
+    meaning: 'Gerçekçi, ayakları yere basan',
+    definition: 'Practical and sensible.',
+    ipa: '/ˌdaʊn tu ˈɜːθ/',
+    examples: ["Jane's so down-to-earth; she's great in a crisis."],
+    exampleTranslations: ['Jane çok gerçekçidir; kriz anlarında harikadır.'],
+    level: 'upper-intermediate',
+    collocations: ['really down-to-earth', 'sensible and down-to-earth', 'refreshingly down-to-earth'],
+    collocationMeanings: {
+      'really down-to-earth': 'gerçekten ayakları yere basan/alçakgönüllü',
+      'sensible and down-to-earth': 'mantıklı ve gerçekçi',
+      'refreshingly down-to-earth': 'tazelik verecek kadar gerçekçi/doğal'
+    }
+  },
+  {
+    id: 'easy_going',
+    word: 'Easy-going',
+    pos: 'adjective',
+    meaning: 'Uysal, rahat, tasasız',
+    definition: 'Relaxed, calm, and not getting easily upset about things.',
+    ipa: '/ˌiːziˈɡəʊɪŋ/',
+    examples: ["Marco won't mind if we're a bit late; he's very easy-going."],
+    exampleTranslations: ['Biraz gecikirsek Marco sorun etmez; o çok rahattır.'],
+    level: 'upper-intermediate',
+    collocations: ['easy-going attitude', 'easy-going personality', 'relaxed and easy-going'],
+    collocationMeanings: {
+      'easy-going attitude': 'rahat tavır',
+      'easy-going personality': 'rahat kişilik',
+      'relaxed and easy-going': 'rahat ve kaygısız'
+    }
+  },
+  {
+    id: 'flexible',
+    word: 'Flexible',
+    pos: 'adjective',
+    meaning: 'Esnek, uyumlu',
+    definition: 'Able to make changes or deal with a situation that is changing.',
+    ipa: '/ˈfleksəbl/',
+    examples: ['You need to be more flexible in your approach.'],
+    exampleTranslations: ['Yaklaşımında daha esnek olmalısın.'],
+    level: 'upper-intermediate',
+    collocations: ['flexible schedule', 'flexible hours', 'highly flexible'],
+    collocationMeanings: {
+      'flexible schedule': 'esnek program',
+      'flexible hours': 'esnek çalışma saatleri',
+      'highly flexible': 'oldukça esnek'
+    }
+  },
+  {
+    id: 'loyal',
+    word: 'Loyal',
+    pos: 'adjective',
+    meaning: 'Sadık, vefalı',
+    definition: 'Willing to support or work for someone even in difficult times.',
+    ipa: '/ˈlɔɪəl/',
+    examples: ['Randell remained a loyal employee for 45 years.'],
+    exampleTranslations: ['Randell 45 yıl boyunca sadık bir çalışan olarak kaldı.'],
+    level: 'upper-intermediate',
+    collocations: ['loyal supporter', 'loyal friend', 'remain loyal'],
+    collocationMeanings: {
+      'loyal supporter': 'sadık destekçi',
+      'loyal friend': 'sadık dost',
+      'remain loyal': 'sadık kalmak'
+    }
+  },
+  {
+    id: 'naive',
+    word: 'Naïve',
+    pos: 'adjective',
+    meaning: 'Saf, deneyimsiz, toy',
+    definition: 'Lacking experience in life and too ready to trust others.',
+    ipa: '/naɪˈiːv/',
+    examples: ["Jim's so naïve he'll believe whatever anyone tells him."],
+    exampleTranslations: ['Jim o kadar saf ki kim ona ne derse inanır.'],
+    level: 'upper-intermediate',
+    collocations: ['politically naïve', 'somewhat naive', 'naive belief'],
+    collocationMeanings: {
+      'politically naïve': 'siyasi açıdan toy',
+      'somewhat naive': 'biraz safça',
+      'naive belief': 'safça inanış'
+    }
+  },
+  {
+    id: 'open_minded',
+    word: 'Open-minded',
+    pos: 'adjective',
+    meaning: 'Açık fikirli',
+    definition: 'Willing to consider new ideas.',
+    ipa: '/ˌəʊpən ˈmaɪndɪd/',
+    examples: ["Talk to the new manager about it - she's pretty open-minded."],
+    exampleTranslations: ['Bunu yeni müdürle konuş - o oldukça açık fikirlidir.'],
+    level: 'upper-intermediate',
+    collocations: ['open-minded approach', 'open-minded about', 'keep an open mind'],
+    collocationMeanings: {
+      'open-minded approach': 'açık fikirli yaklaşım',
+      'open-minded about': '...konusunda açık fikirli',
+      'keep an open mind': 'önyargısız olmak'
+    }
+  },
+  {
+    id: 'optimistic',
+    word: 'Optimistic',
+    pos: 'adjective',
+    meaning: 'İyimser',
+    definition: 'Hopeful about the future and expecting good things to happen.',
+    ipa: '/ˌɒptɪˈmɪstɪk/',
+    examples: ['The CEO seemed pretty optimistic about the future of the company.'],
+    exampleTranslations: ['CEO şirketin geleceği hakkında oldukça iyimser görünüyordu.'],
+    level: 'upper-intermediate',
+    collocations: ['optimistic view', 'optimistic outlook', 'cautiously optimistic'],
+    collocationMeanings: {
+      'optimistic view': 'iyimser bakış açısı',
+      'optimistic outlook': 'iyimser görünüm',
+      'cautiously optimistic': 'temkinli bir iyimserlik içinde'
+    }
+  },
+  {
+    id: 'passionate',
+    word: 'Passionate',
+    pos: 'adjective',
+    meaning: 'Tutkulu',
+    definition: 'Showing or expressing strong beliefs, interest or enthusiasm.',
+    ipa: '/ˈpæʃənət/',
+    examples: ['Cody has been a passionate Boston Celtics fan his entire life.'],
+    exampleTranslations: ['Cody hayatı boyunca tutkulu bir Boston Celtics taraftarı olmuştur.'],
+    level: 'upper-intermediate',
+    collocations: ['passionate about', 'passionate plea', 'passionate argument'],
+    collocationMeanings: {
+      'passionate about': 'bir şeye tutkuyla bağlı',
+      'passionate plea': 'hararetli savunma/rica',
+      'passionate argument': 'tutkulu tartışma'
+    }
+  },
+  {
+    id: 'pessimistic',
+    word: 'Pessimistic',
+    pos: 'adjective',
+    meaning: 'Karamsar, kötümser',
+    definition: 'Thinking that the worst thing will happen in every situation.',
+    ipa: '/ˌpesɪˈmɪstɪk/',
+    examples: ["Try not to be so pessimistic; it'll probably be fine."],
+    exampleTranslations: ['Bu kadar karamsar olmamaya çalış; muhtemelen her şey yolunda gidecek.'],
+    level: 'upper-intermediate',
+    collocations: ['pessimistic outlook', 'pessimistic view', 'deeply pessimistic'],
+    collocationMeanings: {
+      'pessimistic outlook': 'karamsar bakış',
+      'pessimistic view': 'kötümser görüş',
+      'deeply pessimistic': 'son derece karamsar'
+    }
+  },
+  {
+    id: 'self_centred',
+    word: 'Self-centred',
+    pos: 'adjective',
+    meaning: 'Benmerkezci, bencil',
+    definition: 'Too interested in yourself, so that you do not think of others.',
+    ipa: '/ˌself ˈsentəd/',
+    examples: ['Chris is so self-centred; he never thinks of anyone else!'],
+    exampleTranslations: ['Chris çok benmerkezcidir; asla başkasını düşünmez!'],
+    level: 'upper-intermediate',
+    collocations: ['selfish and self-centred', 'incredibly self-centred', 'self-centred attitude'],
+    collocationMeanings: {
+      'selfish and self-centred': 'bencil ve benmerkezci',
+      'incredibly self-centred': 'inanılmaz benmerkezci',
+      'self-centred attitude': 'benmerkezci tutum'
+    }
+  },
+  {
+    id: 'sensitive',
+    word: 'Sensitive',
+    pos: 'adjective',
+    meaning: 'Hassas, duyarlı',
+    definition: 'Likely to become upset quickly.',
+    ipa: '/ˈsensətɪv/',
+    examples: ["If I'd known Juan was so sensitive, I wouldn't have teased him."],
+    exampleTranslations: ['Juan’ın bu kadar hassas olduğunu bilseydim onunla dalga geçmezdim.'],
+    level: 'upper-intermediate',
+    collocations: ['highly sensitive', 'sensitive skin', 'sensitive issue'],
+    collocationMeanings: {
+      'highly sensitive': 'çok hassas',
+      'sensitive skin': 'hassas cilt',
+      'sensitive issue': 'hassas konu'
+    }
+  },
+  {
+    id: 'stubborn',
+    word: 'Stubborn',
+    pos: 'adjective',
+    meaning: 'İnatçı',
+    definition: 'Not willing to change ideas or consider anyone else’s reasons.',
+    ipa: '/ˈstʌbən/',
+    examples: ["He definitely won't change his mind; he's too stubborn."],
+    exampleTranslations: ['Fikrini kesinlikle değiştirmeyecek; o çok inatçıdır.'],
+    level: 'upper-intermediate',
+    collocations: ['stubborn as a mule', 'stubborn streak', 'incredibly stubborn'],
+    collocationMeanings: {
+      'stubborn as a mule': 'katır gibi inatçı',
+      'stubborn streak': 'inatçılık damarı',
+      'incredibly stubborn': 'inanılmaz inatçı'
+    }
+  },
+  {
+    id: 'witty',
+    word: 'Witty',
+    pos: 'adjective',
+    meaning: 'Hazırcevap, nüktedan, esprili',
+    definition: 'Using words in a clever and funny way.',
+    ipa: '/ˈwɪti/',
+    examples: ['Hassan struggled to think of something original and witty to say.'],
+    exampleTranslations: ['Hassan söyleyecek orijinal ve esprili bir şey bulmakta zorlandı.'],
+    level: 'upper-intermediate',
+    collocations: ['witty remark', 'witty comment', 'sharp and witty'],
+    collocationMeanings: {
+      'witty remark': 'hazırcevap yorum',
+      'witty comment': 'zekice yorum',
+      'sharp and witty': 'keskin ve nüktedan'
+    }
+  },
+
+  // --- NOUN SUFFIXES (UNIT 1) ---
+  {
+    id: 'arrogance',
+    word: 'Arrogance',
     pos: 'noun',
-    meaning: 'yön, taraf, özellik',
-    definition: 'One part of a situation, problem, or subject.',
-    ipa: `/ˈæs.pekt/`,
-    examples: ['Consider every aspect of the case.', 'This is the most important aspect.', 'He loves every aspect of his job.'],
-    exampleTranslations: ['Davanın her yönünü değerlendir.', 'En önemli özellik/yön budur.', 'İşinin her tarafını seviyor.'],
+    meaning: 'Kibir, küstahlık',
+    definition: 'Behaviour that shows you think you are better than others.',
+    ipa: '/ˈærəɡəns/',
+    examples: ["Frankly, I'm amazed by your level of arrogance."],
+    exampleTranslations: ['Açıkçası, kibir seviyen karşısında şaşkınım.'],
     level: 'upper-intermediate',
-    collocations: ['key aspect', 'every aspect'],
+    collocations: ['sheer arrogance', 'display arrogance', 'offensive arrogance'],
     collocationMeanings: {
-      'key aspect': 'anahtar/temel yön',
-      'every aspect': 'her yönüyle / her açıdan',
-    },
+      'sheer arrogance': 'tam bir kibir',
+      'display arrogance': 'kibir göstermek',
+      'offensive arrogance': 'itici/saldırgan kibir'
+    }
   },
   {
-    id: 'context',
-    word: 'context',
+    id: 'confidence',
+    word: 'Confidence',
     pos: 'noun',
-    meaning: 'bağlam, kapsam',
-    definition: 'The situation within which something exists or happens.',
-    ipa: `/ˈkɒn.tekst/`,
-    examples: ['You must look at the context.', 'These words are used in context.', 'His comments were out of context.'],
-    exampleTranslations: ['Bağlama bakmalısın.', 'Bu kelimeler bağlam içinde kullanılıyor.', 'Yorumları bağlam dışındaydı.'],
+    meaning: 'Özgüven, güven',
+    definition: 'The belief that you are able to do things well.',
+    ipa: '/ˈkɒnfɪdəns/',
+    examples: ['You should have more confidence in yourself!'],
+    exampleTranslations: ['Kendine daha fazla güvenmelisin!'],
     level: 'upper-intermediate',
-    collocations: ['historical context', 'in this context'],
+    collocations: ['lack of confidence', 'boost confidence', 'self-confidence'],
     collocationMeanings: {
-      'historical context': 'tarihsel bağlam',
-      'in this context': 'bu bağlamda / bu kapsamda',
-    },
+      'lack of confidence': 'güven eksikliği',
+      'boost confidence': 'özgüveni artırmak',
+      'self-confidence': 'özgüven'
+    }
   },
   {
-    id: 'incentive',
-    word: 'incentive',
+    id: 'determination',
+    word: 'Determination',
     pos: 'noun',
-    meaning: 'teşvik, güdü',
-    definition: 'Something that encourages a person to do something.',
-    ipa: `/ɪnˈsen.tɪv/`,
-    examples: ['Money is a powerful incentive.', 'Give them an incentive to work.', 'There is no incentive to stay.'],
-    exampleTranslations: ['Para güçlü bir teşviktir.', 'Onlara çalışmak için bir teşvik ver.', 'Kalmak için hiçbir neden/teşvik yok.'],
+    meaning: 'Kararlılık, azim',
+    definition: 'The refusal to let anything prevent you from doing what you decided.',
+    ipa: '/dɪˌtɜːmɪˈneɪʃn/',
+    examples: ["You've got to admire his determination; he never gives up."],
+    exampleTranslations: ['Onun azmine hayran kalmalısın; asla pes etmez.'],
     level: 'upper-intermediate',
-    collocations: ['financial incentive', 'strong incentive'],
+    collocations: ['show determination', 'great determination', 'fierce determination'],
     collocationMeanings: {
-      'financial incentive': 'mali teşvik',
-      'strong incentive': 'güçlü bir teşvik/güdü',
-    },
+      'show determination': 'kararlılık göstermek',
+      'great determination': 'büyük azim',
+      'fierce determination': 'şiddetli kararlılık'
+    }
   },
   {
-    id: 'outcome',
-    word: 'outcome',
+    id: 'loyalty',
+    word: 'Loyalty',
     pos: 'noun',
-    meaning: 'sonuç, netice',
-    definition: 'A result or effect of an action or situation.',
-    ipa: `/ˈaʊt.kʌm/`,
-    examples: ['What was the outcome of the trial?', 'We are waiting for the outcome.', 'The outcome was quite unexpected.'],
-    exampleTranslations: ['Davanın sonucu neydi?', 'Sonucu bekliyoruz.', 'Sonuç oldukça beklenmedikti.'],
+    meaning: 'Sadakat, vefa',
+    definition: 'Support that you always give to someone because of duty or love.',
+    ipa: '/ˈlɔɪəlti/',
+    examples: ['Barry inspires great loyalty among his employees.'],
+    exampleTranslations: ['Barry, çalışanları arasında büyük bir sadakat uyandırıyor.'],
     level: 'upper-intermediate',
-    collocations: ['likely outcome', 'final outcome'],
+    collocations: ['customer loyalty', 'brand loyalty', 'unswerving loyalty'],
     collocationMeanings: {
-      'likely outcome': 'muhtemel sonuç',
-      'final outcome': 'nihai sonuç',
-    },
+      'customer loyalty': 'müşteri sadakati',
+      'brand loyalty': 'marka sadakati',
+      'unswerving loyalty': 'sarsılmaz sadakat'
+    }
   },
   {
-    id: 'phenomenon',
-    word: 'phenomenon',
+    id: 'optimism',
+    word: 'Optimism',
     pos: 'noun',
-    meaning: 'olay, fenomen',
-    definition: 'Something that exists and can be seen or felt.',
-    ipa: `/fəˈnɒm.ɪ.nən/`,
-    examples: ["It's a natural phenomenon.", 'This is a recent phenomenon.', 'Global warming is a phenomenon.'],
-    exampleTranslations: ['Bu doğal bir fenomendir.', 'Bu yeni/yakın zamanda ortaya çıkan bir olgudur.', 'Küresel ısınma bir fenomendir.'],
+    meaning: 'İyimserlik',
+    definition: 'A tendency to be hopeful and expect good things.',
+    ipa: '/ˈɒptɪmɪzəm/',
+    examples: ["There's much greater optimism within the company now."],
+    exampleTranslations: ['Şirket içinde şu an çok daha büyük bir iyimserlik var.'],
     level: 'upper-intermediate',
-    collocations: ['natural phenomenon', 'recent phenomenon'],
+    collocations: ['blind optimism', 'cautious optimism', 'general optimism'],
     collocationMeanings: {
-      'natural phenomenon': 'doğa olayı / doğal fenomen',
-      'recent phenomenon': 'son zamanlarda ortaya çıkan olgu',
-    },
+      'blind optimism': 'körlemesine iyimserlik',
+      'cautious optimism': 'temkinli iyimserlik',
+      'general optimism': 'genel iyimserlik'
+    }
   },
+  {
+    id: 'responsibility',
+    word: 'Responsibility',
+    pos: 'noun',
+    meaning: 'Sorumluluk',
+    definition: 'Blame for something that has happened or the duty to deal with it.',
+    ipa: '/rɪˌspɒnsəˈbɪləti/',
+    examples: ['I take full responsibility for the problems.'],
+    exampleTranslations: ['Sorunlar için tüm sorumluluğu üstleniyorum.'],
+    level: 'upper-intermediate',
+    collocations: ['take responsibility', 'sense of responsibility', 'accept responsibility'],
+    collocationMeanings: {
+      'take responsibility': 'sorumluluk almak',
+      'sense of responsibility': 'sorumluluk duygusu',
+      'accept responsibility': 'sorumluluğu kabul etmek'
+    }
+  },
+
+  // --- HEALTH & FITNESS (UNIT 2) ---
+  {
+    id: 'anxiety',
+    word: 'Anxiety',
+    pos: 'noun',
+    meaning: 'Kaygı, endişe',
+    definition: 'The feeling of being very worried that something bad will happen.',
+    ipa: '/æŋˈzaɪəti/',
+    examples: ['Too much caffeine can cause anxiety.'],
+    exampleTranslations: ['Çok fazla kafein kaygıya neden olabilir.'],
+    level: 'upper-intermediate',
+    collocations: ['suffer from anxiety', 'acute anxiety', 'social anxiety'],
+    collocationMeanings: {
+      'suffer from anxiety': 'kaygıdan muzdarip olmak',
+      'acute anxiety': 'şiddetli kaygı',
+      'social anxiety': 'sosyal kaygı'
+    }
+  },
+  {
+    id: 'calorie',
+    word: 'Calorie',
+    pos: 'noun',
+    meaning: 'Kalori',
+    definition: 'Units for measuring how much energy you get from food.',
+    ipa: '/ˈkæləri/',
+    examples: ['How many calories are there in a slice of pizza?'],
+    exampleTranslations: ['Bir dilim pizzada kaç kalori var?'],
+    level: 'upper-intermediate',
+    collocations: ['low-calorie diet', 'burn calories', 'calorie intake'],
+    collocationMeanings: {
+      'low-calorie diet': 'düşük kalorili diyet',
+      'burn calories': 'kalori yakmak',
+      'calorie intake': 'kalori alımı'
+    }
+  },
+  {
+    id: 'cholesterol',
+    word: 'Cholesterol',
+    pos: 'noun',
+    meaning: 'Kolesterol',
+    definition: 'A type of fat in the blood that can cause heart disease.',
+    ipa: '/kəˈlestərɒl/',
+    examples: ['Try to avoid fatty foods that are high in cholesterol.'],
+    exampleTranslations: ['Kolesterolü yüksek yağlı gıdalardan kaçınmaya çalışın.'],
+    level: 'upper-intermediate',
+    collocations: ['high cholesterol', 'lower cholesterol', 'cholesterol level'],
+    collocationMeanings: {
+      'high cholesterol': 'yüksek kolesterol',
+      'lower cholesterol': 'kolesterolü düşürmek',
+      'cholesterol level': 'kolesterol seviyesi'
+    }
+  },
+  {
+    id: 'depression',
+    word: 'Depression',
+    pos: 'noun',
+    meaning: 'Depresyon, bunalım',
+    definition: 'A medical condition in which a person is so unhappy they cannot live a normal life.',
+    ipa: '/dɪˈpreʃn/',
+    examples: ['He has suffered from depression for years.'],
+    exampleTranslations: ['Yıllardır depresyondan muzdarip.'],
+    level: 'upper-intermediate',
+    collocations: ['severe depression', 'clinical depression', 'suffer from depression'],
+    collocationMeanings: {
+      'severe depression': 'şiddetli depresyon',
+      'clinical depression': 'klinik depresyon',
+      'suffer from depression': 'depresyon çekmek'
+    }
+  },
+  {
+    id: 'level_of_fitness',
+    word: 'Level of fitness',
+    pos: 'phrase',
+    meaning: 'Zindelik/form düzeyi',
+    definition: 'How healthy and strong someone is.',
+    ipa: '/ˈlevl əv ˈfɪtnəs/',
+    examples: ['Regular cycling can help increase your level of fitness.'],
+    exampleTranslations: ['Düzenli bisiklet sürmek form düzeyinizi artırmaya yardımcı olabilir.'],
+    level: 'upper-intermediate',
+    collocations: ['improve fitness level', 'high level of fitness', 'physical fitness'],
+    collocationMeanings: {
+      'improve fitness level': 'zindelik seviyesini artırmak',
+      'high level of fitness': 'yüksek form düzeyi',
+      'physical fitness': 'fiziksel zindelik'
+    }
+  },
+  {
+    id: 'life_expectancy',
+    word: 'Life expectancy',
+    pos: 'noun',
+    meaning: 'Ortalama yaşam süresi',
+    definition: 'The length of time that someone is likely to live.',
+    ipa: '/ˈlaɪf ɪkspektənsi/',
+    examples: ['Medical advances have helped increase life expectancy.'],
+    exampleTranslations: ['Tıbbi ilerlemeler ortalama yaşam süresinin artmasına yardımcı oldu.'],
+    level: 'upper-intermediate',
+    collocations: ['average life expectancy', 'increase life expectancy', 'longer life expectancy'],
+    collocationMeanings: {
+      'average life expectancy': 'ortalama yaşam beklentisi',
+      'increase life expectancy': 'yaşam süresini artırmak',
+      'longer life expectancy': 'daha uzun yaşam süresi'
+    }
+  },
+  {
+    id: 'mental_health',
+    word: 'Mental health',
+    pos: 'noun',
+    meaning: 'Ruh sağlığı',
+    definition: 'The condition of your mind.',
+    ipa: '/ˈmentl helθ/',
+    examples: ['Adel has suffered from various mental health problems for years.'],
+    exampleTranslations: ['Adel yıllardır çeşitli ruh sağlığı sorunları yaşıyor.'],
+    level: 'upper-intermediate',
+    collocations: ['mental health awareness', 'mental health issues', 'improve mental health'],
+    collocationMeanings: {
+      'mental health awareness': 'ruh sağlığı farkındalığı',
+      'mental health issues': 'ruh sağlığı sorunları',
+      'improve mental health': 'ruh sağlığını iyileştirmek'
+    }
+  },
+  {
+    id: 'obesity',
+    word: 'Obesity',
+    pos: 'noun',
+    meaning: 'Obezite, aşırı şişmanlık',
+    definition: 'A condition in which someone is too fat in a dangerous way.',
+    ipa: '/əʊˈbiːsəti/',
+    examples: ['Unhealthy school dinners contribute to obesity in children.'],
+    exampleTranslations: ['Sağlıksız okul yemekleri çocuklarda obeziteye katkıda bulunuyor.'],
+    level: 'upper-intermediate',
+    collocations: ['tackle obesity', 'childhood obesity', 'morbid obesity'],
+    collocationMeanings: {
+      'tackle obesity': 'obezite ile mücadele etmek',
+      'childhood obesity': 'çocukluk çağı obezitesi',
+      'morbid obesity': 'ölümcül obezite'
+    }
+  },
+  {
+    id: 'physical',
+    word: 'Physical',
+    pos: 'adjective',
+    meaning: 'Fiziksel, bedensel',
+    definition: 'Relating to your body rather than your mind.',
+    ipa: '/ˈfɪzɪkl/',
+    examples: ['Adults are advised to do at least 30 minutes of physical activity daily.'],
+    exampleTranslations: ['Yetişkinlere her gün en az 30 dakika fiziksel aktivite yapmaları önerilir.'],
+    level: 'upper-intermediate',
+    collocations: ['physical health', 'physical exercise', 'physical appearance'],
+    collocationMeanings: {
+      'physical health': 'beden sağlığı',
+      'physical exercise': 'fiziksel egzersiz',
+      'physical appearance': 'fiziksel görünüş'
+    }
+  },
+  {
+    id: 'processed_foods',
+    word: 'Processed foods',
+    pos: 'noun',
+    meaning: 'İşlenmiş gıdalar',
+    definition: 'Edible products that are manufactured.',
+    ipa: '/ˈprəʊsest fuːdz/',
+    examples: ['My doctor suggested I cut down on processed foods.'],
+    exampleTranslations: ['Doktorum işlenmiş gıdaları azaltmamı önerdi.'],
+    level: 'upper-intermediate',
+    collocations: ['avoid processed foods', 'highly processed foods', 'processed food products'],
+    collocationMeanings: {
+      'avoid processed foods': 'işlenmiş gıdalardan kaçınmak',
+      'highly processed foods': 'aşırı işlenmiş gıdalar',
+      'processed food products': 'işlenmiş gıda ürünleri'
+    }
+  },
+  {
+    id: 'reduce_the_risk',
+    word: 'Reduce the risk',
+    pos: 'phrase',
+    meaning: 'Riski azaltmak',
+    definition: 'To lower the chances of something bad happening.',
+    ipa: '/rɪˈdjuːs ðə rɪsk/',
+    examples: ['Cutting down on fatty foods can reduce the risk of heart disease.'],
+    exampleTranslations: ['Yağlı yiyecekleri azaltmak kalp hastalığı riskini düşürebilir.'],
+    level: 'upper-intermediate',
+    collocations: ['significantly reduce', 'reduce the risk of', 'ways to reduce'],
+    collocationMeanings: {
+      'significantly reduce': 'önemli ölçüde azaltmak',
+      'reduce the risk of': '...riskini azaltmak',
+      'ways to reduce': 'azaltmanın yolları'
+    }
+  },
+  {
+    id: 'slow_the_ageing_process',
+    word: 'Slow the ageing process',
+    pos: 'phrase',
+    meaning: 'Yaşlanma sürecini yavaşlatmak',
+    definition: "To reduce the speed at which people's bodies deteriorate.",
+    ipa: '/sləʊ ðə ˈeɪdʒɪŋ ˈprəʊses/',
+    examples: ['Eating well and doing exercise can slow the ageing process.'],
+    exampleTranslations: ['İyi beslenmek ve egzersiz yapmak yaşlanma sürecini yavaşlatabilir.'],
+    level: 'upper-intermediate',
+    collocations: ['natural ageing process', 'slow the ageing', 'prevent ageing'],
+    collocationMeanings: {
+      'natural ageing process': 'doğal yaşlanma süreci',
+      'slow the ageing': 'yaşlanmayı yavaşlatmak',
+      'prevent ageing': 'yaşlanmayı önlemek'
+    }
+  },
+  {
+    id: 'stress',
+    word: 'Stress',
+    pos: 'noun',
+    meaning: 'Stres, baskı',
+    definition: 'Pressure or worry caused by problems in everyday life.',
+    ipa: '/stres/',
+    examples: ["I just couldn't take the stress of working in the city anymore."],
+    exampleTranslations: ['Şehirde çalışmanın stresini artık kaldıramadım.'],
+    level: 'upper-intermediate',
+    collocations: ['under stress', 'deal with stress', 'relieve stress'],
+    collocationMeanings: {
+      'under stress': 'stres altında',
+      'deal with stress': 'stresle başa çıkmak',
+      'relieve stress': 'stresi azaltmak'
+    }
+  },
+
+  // --- ADVERBS OF STANCE (UNIT 2) ---
+  {
+    id: 'admittedly',
+    word: 'Admittedly',
+    pos: 'adverb',
+    meaning: 'Kabul etmek gerekir ki, kuşkusuz',
+    definition: 'Saying something is true even though it may weaken your argument.',
+    ipa: '/ədˈmɪtɪdli/',
+    examples: ['I’m sure it was her although, admittedly, she was wearing a different coat.'],
+    exampleTranslations: ['Eminim oydu, gerçi kabul etmek gerekir ki farklı bir palto giyiyordu.'],
+    level: 'upper-intermediate',
+    collocations: ['admittedly difficult', 'admittedly true', 'though admittedly'],
+    collocationMeanings: {
+      'admittedly difficult': 'kuşkusuz zor',
+      'admittedly true': 'kabul etmek gerekirse doğru',
+      'though admittedly': 'gerçi kabul etmek gerekirse'
+    }
+  },
+  {
+    id: 'apparently',
+    word: 'Apparently',
+    pos: 'adverb',
+    meaning: 'Görünüşe göre, anlaşılan',
+    definition: 'Based only on what you have heard, not on what you are certain is true.',
+    ipa: '/əˈpærəntli/',
+    examples: ['Apparently, Felix is looking for a new job.'],
+    exampleTranslations: ['Anlaşılan Felix yeni bir iş bakıyor.'],
+    level: 'upper-intermediate',
+    collocations: ['apparently simple', 'apparently easy', 'apparently unrelated'],
+    collocationMeanings: {
+      'apparently simple': 'görünüşte basit',
+      'apparently easy': 'görünüşte kolay',
+      'apparently unrelated': 'görünüşe göre alakasız'
+    }
+  },
+  {
+    id: 'frankly',
+    word: 'Frankly',
+    pos: 'adverb',
+    meaning: 'Açıkçası, dürüst olmak gerekirse',
+    definition: 'Giving your honest opinion, even though it might be disliked.',
+    ipa: '/ˈfræŋkli/',
+    examples: ["Frankly, I don't care who you are."],
+    exampleTranslations: ['Açıkçası kim olduğun umurumda değil.'],
+    level: 'upper-intermediate',
+    collocations: ['frankly speaking', 'quite frankly', 'tell frankly'],
+    collocationMeanings: {
+      'frankly speaking': 'açık konuşmak gerekirse',
+      'quite frankly': 'dürüst olmak gerekirse',
+      'tell frankly': 'açıkça söylemek'
+    }
+  },
+  {
+    id: 'merely',
+    word: 'Merely',
+    pos: 'adverb',
+    meaning: 'Sadece, yalnızca',
+    definition: 'Saying that something is small or unimportant.',
+    ipa: '/ˈmɪəli/',
+    examples: ['This job is merely a way for me to pay the bills.'],
+    exampleTranslations: ['Bu iş benim için sadece faturaları ödemenin bir yolu.'],
+    level: 'upper-intermediate',
+    collocations: ['merely a fraction', 'merely a formality', 'not merely but'],
+    collocationMeanings: {
+      'merely a fraction': 'sadece küçük bir kısmı',
+      'merely a formality': 'sadece bir formalite',
+      'not merely but': 'sadece ... değil aynı zamanda'
+    }
+  },
+  {
+    id: 'naturally',
+    word: 'Naturally',
+    pos: 'adverb',
+    meaning: 'Doğal olarak',
+    definition: 'Happening in the way that you would expect.',
+    ipa: '/ˈnætʃrəli/',
+    examples: ['Naturally, Maria was very keen to meet the new starters.'],
+    exampleTranslations: ['Doğal olarak Maria yeni başlayanlarla tanışmaya çok hevesliydi.'],
+    level: 'upper-intermediate',
+    collocations: ['occur naturally', 'behave naturally', 'quite naturally'],
+    collocationMeanings: {
+      'occur naturally': 'doğal olarak meydana gelmek',
+      'behave naturally': 'doğal davranmak',
+      'quite naturally': 'gayet tabii'
+    }
+  },
+  {
+    id: 'sadly',
+    word: 'Sadly',
+    pos: 'adverb',
+    meaning: 'Maalesef, ne yazık ki',
+    definition: 'Saying that you think something is bad or wrong.',
+    ipa: '/ˈsædli/',
+    examples: ["She made it through to the last round, but sadly, didn't get the job."],
+    exampleTranslations: ['Son tura kadar geldi ama ne yazık ki işi alamadı.'],
+    level: 'upper-intermediate',
+    collocations: ['sadly mistaken', 'sadly lacking', 'but sadly'],
+    collocationMeanings: {
+      'sadly mistaken': 'feci şekilde yanılmak',
+      'sadly lacking': 'ne yazık ki eksik',
+      'but sadly': 'ama maalesef'
+    }
+  },
+  {
+    id: 'simply',
+    word: 'Simply',
+    pos: 'adverb',
+    meaning: 'Sadece, düpedüz',
+    definition: 'Emphasising that what you are saying is nothing more than what you say.',
+    ipa: '/ˈsɪmpli/',
+    examples: ["We simply don't have time to go through everything now."],
+    exampleTranslations: ['Şu an her şeyin üzerinden geçmek için basitçe vaktimiz yok.'],
+    level: 'upper-intermediate',
+    collocations: ['simply too much', 'simply because', 'simply put'],
+    collocationMeanings: {
+      'simply too much': 'resmen çok fazla',
+      'simply because': 'sırf ... olduğu için',
+      'simply put': 'basitçe söylemek gerekirse'
+    }
+  },
+  {
+    id: 'undoubtedly',
+    word: 'Undoubtedly',
+    pos: 'adverb',
+    meaning: 'Şüphesiz, kuşkusuz',
+    definition: 'Saying that something is certainly true or accepted by everyone.',
+    ipa: '/ʌnˈdaʊtɪdli/',
+    examples: ['In my opinion, she was undoubtedly the best person for the job.'],
+    exampleTranslations: ['Bence o şüphesiz iş için en uygun kişiydi.'],
+    level: 'upper-intermediate',
+    collocations: ['undoubtedly true', 'undoubtedly the best', 'will undoubtedly'],
+    collocationMeanings: {
+      'undoubtedly true': 'şüphesiz doğru',
+      'undoubtedly the best': 'kuşkusuz en iyisi',
+      'will undoubtedly': 'şüphesiz olacaktır'
+    }
+  },
+
+  // --- ADVERB + ADJECTIVE COLLOCATIONS (UNIT 2) ---
+  {
+    id: 'absolutely_ridiculous',
+    word: 'Absolutely ridiculous',
+    pos: 'adjective phrase',
+    meaning: 'Tamamen saçma',
+    definition: 'Very silly or unreasonable and deserving to be laughed at.',
+    ipa: '/ˈæbsəluːtli rɪˈdɪkjələs/',
+    examples: ['Steph looks absolutely ridiculous in that hat.'],
+    exampleTranslations: ['Steph o şapkayla tamamen saçma görünüyor.'],
+    level: 'upper-intermediate',
+    collocations: ['seem absolutely ridiculous', 'sound absolutely ridiculous', 'find absolutely ridiculous'],
+    collocationMeanings: {
+      'seem absolutely ridiculous': 'tamamen saçma görünmek',
+      'sound absolutely ridiculous': 'kulağa tamamen saçma gelmek',
+      'find absolutely ridiculous': 'tamamen saçma bulmak'
+    }
+  },
+  {
+    id: 'bitterly_disappointed',
+    word: 'Bitterly disappointed',
+    pos: 'adjective phrase',
+    meaning: 'Acı bir hayal kırıklığına uğramış',
+    definition: 'Unhappy because something hoped for did not happen.',
+    ipa: '/ˈbɪtəli ˌdɪsəˈpɔɪntɪd/',
+    examples: ['They were bitterly disappointed to lose on the final day.'],
+    exampleTranslations: ['Son günde kaybettikleri için acı bir hayal kırıklığı yaşadılar.'],
+    level: 'upper-intermediate',
+    collocations: ['left bitterly disappointed', 'feel bitterly disappointed', 'bitterly disappointed by'],
+    collocationMeanings: {
+      'left bitterly disappointed': 'acı bir hayal kırıklığına uğratılmış',
+      'feel bitterly disappointed': 'acı bir hüsran hissetmek',
+      'bitterly disappointed by': '...tarafından hüsrana uğramış'
+    }
+  },
+  {
+    id: 'deeply_concerned',
+    word: 'Deeply concerned',
+    pos: 'adjective phrase',
+    meaning: 'Derinden endişeli',
+    definition: 'Very worried about something.',
+    ipa: '/ˈdiːpli kənˈsɜːnd/',
+    examples: ["I'm deeply concerned about your lack of progress this year."],
+    exampleTranslations: ['Bu yılki ilerleme eksikliğin konusunda derinden endişeliyim.'],
+    level: 'upper-intermediate',
+    collocations: ['remain deeply concerned', 'deeply concerned about', 'be deeply concerned'],
+    collocationMeanings: {
+      'remain deeply concerned': 'derinden endişeli olmaya devam etmek',
+      'deeply concerned about': '...konusunda derinden endişeli',
+      'be deeply concerned': 'çok endişelenmek'
+    }
+  },
+  {
+    id: 'highly_likely',
+    word: 'Highly likely',
+    pos: 'adjective phrase',
+    meaning: 'Kuvvetle muhtemel',
+    definition: 'Very probable.',
+    ipa: '/ˈhaɪli ˈlaɪkli/',
+    examples: ['It seems highly likely that she will step down.'],
+    exampleTranslations: ['İstifa edeceği kuvvetle muhtemel görünüyor.'],
+    level: 'upper-intermediate',
+    collocations: ['consider highly likely', 'remain highly likely', 'seem highly likely'],
+    collocationMeanings: {
+      'consider highly likely': 'kuvvetle muhtemel görmek',
+      'remain highly likely': 'yüksek olasılıkla devam etmek',
+      'seem highly likely': 'kuvvetle muhtemel görünmek'
+    }
+  },
+  {
+    id: 'ridiculously_easy',
+    word: 'Ridiculously easy',
+    pos: 'adjective phrase',
+    meaning: 'Gülünç derecede kolay',
+    definition: 'Not difficult to do at all, or not needing much work.',
+    ipa: '/rɪˈdɪkjələsli ˈiːzi/',
+    examples: ["These days, it's ridiculously easy to keep in touch with friends."],
+    exampleTranslations: ['Bugünlerde arkadaşlarla iletişimde kalmak gülünç derecede kolay.'],
+    level: 'upper-intermediate',
+    collocations: ['make it ridiculously easy', 'find it ridiculously easy', 'sound ridiculously easy'],
+    collocationMeanings: {
+      'make it ridiculously easy': 'gülünç derecede kolaylaştırmak',
+      'find it ridiculously easy': 'çok basit bulmak',
+      'sound ridiculously easy': 'kulağa çok basit gelmek'
+    }
+  },
+
+  // --- DESCRIPTIVE VERBS - SOUNDS (UNIT 3) ---
+  {
+    id: 'crackle',
+    word: 'Crackle',
+    pos: 'verb',
+    meaning: 'Çatırdamak',
+    definition: 'To make continuous short sounds like wood burning.',
+    ipa: '/ˈkrækl/',
+    examples: ['The fire crackled gently as they sat and talked.'],
+    exampleTranslations: ['Onlar oturup konuşurken ateş hafifçe çatırdıyordu.'],
+    level: 'upper-intermediate',
+    collocations: ['crackle with energy', 'radio crackle', 'crackling fire'],
+    collocationMeanings: {
+      'crackle with energy': 'enerjiyle çatırda(mak)',
+      'radio crackle': 'radyo paraziti/çatırtısı',
+      'crackling fire': 'çatırdayan ateş'
+    }
+  },
+  {
+    id: 'creak',
+    word: 'Creak',
+    pos: 'verb',
+    meaning: 'Gıcırdamak',
+    definition: 'To make a high noise when moving or under weight.',
+    ipa: '/kriːk/',
+    examples: ['The old wooden chair creaked as he sat down.'],
+    exampleTranslations: ['Eski tahta sandalye o oturduğunda gıcırdadı.'],
+    level: 'upper-intermediate',
+    collocations: ['creaking door', 'floorboards creak', 'creak open'],
+    collocationMeanings: {
+      'creaking door': 'gıcırdayan kapı',
+      'floorboards creak': 'yer döşemelerinin gıcırdaması',
+      'creak open': 'gıcırdıyarak açılmak'
+    }
+  },
+  {
+    id: 'crunch',
+    word: 'Crunch',
+    pos: 'verb',
+    meaning: 'Çıtırdamak, hışırdamak (ayak altındaki ses)',
+    definition: 'To make a noise like something being crushed.',
+    ipa: '/krʌntʃ/',
+    examples: ['The leaves crunched under our feet.'],
+    exampleTranslations: ['Yapraklar ayaklarımızın altında hışırdadı.'],
+    level: 'upper-intermediate',
+    collocations: ['crunch numbers', 'crunchy texture', 'gravel crunch'],
+    collocationMeanings: {
+      'crunch numbers': 'sayıları hesaplamak/işlemek',
+      'crunchy texture': 'kıtır doku',
+      'gravel crunch': 'çakıl sesi/hışırtısı'
+    }
+  },
+  {
+    id: 'groan',
+    word: 'Groan',
+    pos: 'verb',
+    meaning: 'İnlemek, (eşya için) gıcırdamak/zorlanmak',
+    definition: 'A long low sound as something moves or under weight.',
+    ipa: '/ɡrəʊn/',
+    examples: ['The bridge groaned under the weight of the lorry.'],
+    exampleTranslations: ['Köprü kamyonun ağırlığı altında inledi/gıcırdadı.'],
+    level: 'upper-intermediate',
+    collocations: ['groan in pain', 'groan with frustration', 'inwardly groan'],
+    collocationMeanings: {
+      'groan in pain': 'acıyla inlemek',
+      'groan with frustration': 'hüsranla inlemek',
+      'inwardly groan': 'içinden of çekmek'
+    }
+  },
+  {
+    id: 'growl',
+    word: 'Growl',
+    pos: 'verb',
+    meaning: 'Hırıldamak',
+    definition: 'A frightening or unfriendly low noise made by an animal.',
+    ipa: '/ɡraʊl/',
+    examples: ['The guard dog started to growl.'],
+    exampleTranslations: ['Bekçi köpeği hırıldamaya başladı.'],
+    level: 'upper-intermediate',
+    collocations: ['stomach growling', 'low growl', 'growl at'],
+    collocationMeanings: {
+      'stomach growling': 'karnın guruldaması',
+      'low growl': 'alçak sesli hırıltı',
+      'growl at': '...a hırlamak'
+    }
+  },
+  {
+    id: 'hiss',
+    word: 'Hiss',
+    pos: 'verb',
+    meaning: 'Tıslamak',
+    definition: "To make a long 's' sound like a snake.",
+    ipa: '/hɪs/',
+    examples: ['The snake hissed and arched its back.'],
+    exampleTranslations: ['Yılan tısladı ve sırtını kabarttı.'],
+    level: 'upper-intermediate',
+    collocations: ['hiss with rage', 'steam hiss', 'hiss at someone'],
+    collocationMeanings: {
+      'hiss with rage': 'öfkeden tıslamak',
+      'steam hiss': 'buhar tıslaması',
+      'hiss at someone': 'birine tıslamak'
+    }
+  },
+  {
+    id: 'rumble',
+    word: 'Rumble',
+    pos: 'verb',
+    meaning: 'Gürlemek, guruldamak',
+    definition: 'To make a continuous deep sound.',
+    ipa: '/ˈrʌmbl/',
+    examples: ['Thunder rumbled in the distance.'],
+    exampleTranslations: ['Gök gürültüsü uzakta gürledi.'],
+    level: 'upper-intermediate',
+    collocations: ['rumbling stomach', 'thunder rumble', 'distant rumble'],
+    collocationMeanings: {
+      'rumbling stomach': 'guruldayan mide',
+      'thunder rumble': 'gök gürlemesi',
+      'distant rumble': 'uzaktan gelen gürültü'
+    }
+  },
+  {
+    id: 'screech',
+    word: 'Screech',
+    pos: 'verb',
+    meaning: 'Acı acı bağırmak, fren sesi çıkarmak',
+    definition: 'To make a loud, high, and unpleasant noise.',
+    ipa: '/skriːtʃ/',
+    examples: ["The car's brakes screeched loudly as it came to a stop."],
+    exampleTranslations: ['Araba dururken frenleri acı acı öttü.'],
+    level: 'upper-intermediate',
+    collocations: ['screeching halt', 'screech with laughter', 'tyres screech'],
+    collocationMeanings: {
+      'screeching halt': 'ani ve gürültülü duruş',
+      'screech with laughter': 'kahkahalarla bağırmak',
+      'tyres screech': 'lastiklerin ötmesi'
+    }
+  },
+  {
+    id: 'slam',
+    word: 'Slam',
+    pos: 'verb',
+    meaning: 'Sertçe kapatmak, çarpmak',
+    definition: 'To shut a door or lid with great force.',
+    ipa: '/slæm/',
+    examples: ['He left the room angrily, slamming the door behind him.'],
+    exampleTranslations: ['Kapıyı arkasından çarparak öfkeyle odadan çıktı.'],
+    level: 'upper-intermediate',
+    collocations: ['slam dunk', 'slam the door', 'slam shut'],
+    collocationMeanings: {
+      'slam dunk': 'garanti başarı / smaç',
+      'slam the door': 'kapıyı çarpmak',
+      'slam shut': 'gürültüyle kapanmak'
+    }
+  },
+  {
+    id: 'smash',
+    word: 'Smash',
+    pos: 'verb',
+    meaning: 'Paramparça etmek, kırmak',
+    definition: 'To break something noisily into many pieces.',
+    ipa: '/smæʃ/',
+    examples: ['They smashed the window, setting off the alarm.'],
+    exampleTranslations: ['Camı paramparça edip alarmı çalıştırdılar.'],
+    level: 'upper-intermediate',
+    collocations: ['smash a record', 'smash to pieces', 'smash through'],
+    collocationMeanings: {
+      'smash a record': 'rekor kırmak',
+      'smash to pieces': 'parçalarına ayırmak',
+      'smash through': 'kırıp geçmek'
+    }
+  },
+  {
+    id: 'snap',
+    word: 'Snap',
+    pos: 'verb',
+    meaning: 'Çat diye kırılmak, kopmak',
+    definition: 'To suddenly break something with a short loud noise.',
+    ipa: '/snæp/',
+    examples: ['The rope snapped under his weight.'],
+    exampleTranslations: ['İp onun ağırlığı altında koptu.'],
+    level: 'upper-intermediate',
+    collocations: ['snap fingers', 'snap at someone', 'snap in half'],
+    collocationMeanings: {
+      'snap fingers': 'parmak şıklatmak',
+      'snap at someone': 'birine terslenmek',
+      'snap in half': 'ortadan ikiye çat diye kırılmak'
+    }
+  },
+  {
+    id: 'trickle',
+    word: 'Trickle',
+    pos: 'verb',
+    meaning: 'Damlamak, sızmak, azar azar akmak',
+    definition: 'If a liquid flows somewhere slowly in a small amount.',
+    ipa: '/ˈtrɪkl/',
+    examples: ['The sound of water trickling down the walls.'],
+    exampleTranslations: ['Duvarlardan sızan suyun sesi.'],
+    level: 'upper-intermediate',
+    collocations: ['trickle down', 'trickle in', 'slow trickle'],
+    collocationMeanings: {
+      'trickle down': 'damla damla akmak',
+      'trickle in': 'tek tük gelmek',
+      'slow trickle': 'yavaş sızıntı'
+    }
+  },
+  {
+    id: 'whirr',
+    word: 'Whirr',
+    pos: 'verb',
+    meaning: 'Vınlamak, pırpır etmek (makine sesi)',
+    definition: 'To make a fast repeated quiet sound.',
+    ipa: '/wɜː(r)/',
+    examples: ['The fan whirred quietly in the corner.'],
+    exampleTranslations: ['Vantilatör köşede sessizce vınlıyordu.'],
+    level: 'upper-intermediate',
+    collocations: ['soft whirr', 'mechanical whirr', 'whirr of a motor'],
+    collocationMeanings: {
+      'soft whirr': 'yumuşak vınlama',
+      'mechanical whirr': 'mekanik vınlama sesi',
+      'whirr of a motor': 'motorun vınlaması'
+    }
+  },
+
+  // --- PHRASAL VERBS - PROBLEMS (UNIT 3 & 9) ---
+  {
+    id: 'deal_with',
+    word: 'Deal with',
+    pos: 'phrasal verb',
+    meaning: 'Başa çıkmak, ele almak, çözmek',
+    definition: 'To take action to do something, especially to solve a problem or accept a difficult situation.',
+    ipa: '/diːl wɪð/',
+    examples: ["Dan doesn't deal with stress very well, does he?"],
+    exampleTranslations: ['Dan stresle pek iyi başa çıkamıyor, değil mi?'],
+    level: 'upper-intermediate',
+    collocations: ['deal with a problem', 'deal with a person', 'refuse to deal with'],
+    collocationMeanings: {
+      'deal with a problem': 'sorunu çözmek',
+      'deal with a person': 'biriyle ilgilenmek',
+      'refuse to deal with': 'ilgilenmeyi reddetmek'
+    }
+  },
+  {
+    id: 'go_through',
+    word: 'Go through',
+    pos: 'phrasal verb',
+    meaning: 'Yaşamak, başından geçmek, incelemek',
+    definition: 'To experience something difficult or unpleasant; to examine something.',
+    ipa: '/ɡəʊ θruː/',
+    examples: ['I hope we never have to go through it again.'],
+    exampleTranslations: ['Umarım bunu bir daha asla yaşamak zorunda kalmayız.'],
+    level: 'upper-intermediate',
+    collocations: ['go through a phase', 'go through details', 'go through a hard time'],
+    collocationMeanings: {
+      'go through a phase': 'bir evreden geçmek',
+      'go through details': 'detayları incelemek',
+      'go through a hard time': 'zor zamanlardan geçmek'
+    }
+  },
+  {
+    id: 'put_up_with',
+    word: 'Put up with',
+    pos: 'phrasal verb',
+    meaning: 'Katlanmak, tahammül etmek',
+    definition: 'To accept someone or something unpleasant in a patient way.',
+    ipa: '/pʊt ʌp wɪð/',
+    examples: ['I refuse to put up with his insults any longer!'],
+    exampleTranslations: ['Onun hakaretlerine daha fazla katlanmayı reddediyorum!'],
+    level: 'upper-intermediate',
+    collocations: ['hard to put up with', 'refuse to put up with', 'put up with someone'],
+    collocationMeanings: {
+      'hard to put up with': 'katlanması zor',
+      'refuse to put up with': 'tahammül etmeyi reddetmek',
+      'put up with someone': 'birine katlanmak'
+    }
+  },
+  {
+    id: 'sort_out',
+    word: 'Sort out',
+    pos: 'phrasal verb',
+    meaning: 'Halledetmek, çözmek, düzenlemek',
+    definition: 'To do what is necessary to solve a problem or organize something.',
+    ipa: '/sɔːt aʊt/',
+    examples: ['We still need to sort out the invitations.'],
+    exampleTranslations: ['Davetiyeleri hâlâ halletmemiz gerekiyor.'],
+    level: 'upper-intermediate',
+    collocations: ['get sorted out', 'sort out a mess', 'sort out a problem'],
+    collocationMeanings: {
+      'get sorted out': 'halledilmek',
+      'sort out a mess': 'bir karışıklığı gidermek',
+      'sort out a problem': 'problemi çözmek'
+    }
+  },
+  {
+    id: 'talk_over',
+    word: 'Talk over',
+    pos: 'phrasal verb',
+    meaning: 'Üzerine konuşmak, tartışmak',
+    definition: 'To discuss a problem or a plan.',
+    ipa: '/tɔːk ˈəʊvə(r)/',
+    examples: ['I think you both need to talk over what happened.'],
+    exampleTranslations: ['Bence ikinizin de olanlar hakkında konuşması gerekiyor.'],
+    level: 'upper-intermediate',
+    collocations: ['talk it over', 'talk over the phone', 'talk over a matter'],
+    collocationMeanings: {
+      'talk it over': 'bir meseleyi enine boyuna konuşmak',
+      'talk over the phone': 'telefonda görüşmek',
+      'talk over a matter': 'bir konuyu tartışmak'
+    }
+  },
+  {
+    id: 'weigh_up',
+    word: 'Weigh up',
+    pos: 'phrasal verb',
+    meaning: 'Tartmak, ölçüp biçmek',
+    definition: 'To consider the good and bad aspects of something.',
+    ipa: '/weɪ ʌp/',
+    examples: ['Carefully weigh up the pros and cons.'],
+    exampleTranslations: ['Avantaj ve dezavantajları dikkatlice ölçüp biçin.'],
+    level: 'upper-intermediate',
+    collocations: ['weigh up options', 'weigh up the consequences', 'weigh up the benefits'],
+    collocationMeanings: {
+      'weigh up options': 'seçenekleri tartmak',
+      'weigh up the consequences': 'sonuçları ölçüp biçmek',
+      'weigh up the benefits': 'faydaları değerlendirmek'
+    }
+  },
+  {
+    id: 'work_out',
+    word: 'Work out',
+    pos: 'phrasal verb',
+    meaning: 'Çözmek, antrenman yapmak, hesaplamak',
+    definition: 'To solve a problem by considering the facts; to exercise.',
+    ipa: '/wɜːk aʊt/',
+    examples: ['We need to work out what to do next.'],
+    exampleTranslations: ['Bir sonraki adımda ne yapacağımızı çözmemiz gerek.'],
+    level: 'upper-intermediate',
+    collocations: ['work out at the gym', 'work out details', 'things work out'],
+    collocationMeanings: {
+      'work out at the gym': 'spor salonunda çalışmak',
+      'work out details': 'detayları planlamak',
+      'things work out': 'işlerin yolunda gitmesi'
+    }
+  },
+
+  // --- DEPENDENT PREPOSITIONS: ADJECTIVES (UNIT 3) ---
+  {
+    id: 'anxious_about',
+    word: 'Anxious about',
+    pos: 'adjective + preposition',
+    meaning: 'Hakkında endişeli',
+    definition: 'Worried about something in particular.',
+    ipa: '/ˈæŋkʃəs əˈbaʊt/',
+    examples: ["I'm just a little anxious about what we're going to do next."],
+    exampleTranslations: ['Sadece bir sonraki adımda ne yapacağımız konusunda biraz endişeliyim.'],
+    level: 'upper-intermediate',
+    collocations: ['feel anxious about', 'deeply anxious about', 'increasingly anxious about'],
+    collocationMeanings: {
+      'feel anxious about': 'hakkında endişe hissetmek',
+      'deeply anxious about': 'hakkında derin endişe duymak',
+      'increasingly anxious about': 'giderek artan bir endişe duymak'
+    }
+  },
+  {
+    id: 'ashamed_of',
+    word: 'Ashamed of',
+    pos: 'adjective + preposition',
+    meaning: '...dan utanmış',
+    definition: 'Feeling guilty or embarrassed because you have done something wrong.',
+    ipa: '/əˈʃeɪmd əv/',
+    examples: ["He says he's ashamed of his behaviour."],
+    exampleTranslations: ['Davranışından utandığını söylüyor.'],
+    level: 'upper-intermediate',
+    collocations: ['feel ashamed of', 'thoroughly ashamed of', 'be ashamed of yourself'],
+    collocationMeanings: {
+      'feel ashamed of': 'bir şeyden dolayı utanç duymak',
+      'thoroughly ashamed of': 'tamamen utanmış',
+      'be ashamed of yourself': 'kendinden utanmak'
+    }
+  },
+  {
+    id: 'aware_of',
+    word: 'Aware of',
+    pos: 'adjective + preposition',
+    meaning: '...ın farkında olmak',
+    definition: 'Knowing about a situation or a fact.',
+    ipa: '/əˈweə(r) əv/',
+    examples: ['Many people are aware of the dangers of smoking.'],
+    exampleTranslations: ['Pek çok kişi sigaranın tehlikelerinin farkında.'],
+    level: 'upper-intermediate',
+    collocations: ['fully aware of', 'painfully aware of', 'make someone aware of'],
+    collocationMeanings: {
+      'fully aware of': 'tamamen farkında olmak',
+      'painfully aware of': 'acı verici bir şekilde farkında olmak',
+      'make someone aware of': 'birini ...dan haberdar etmek'
+    }
+  },
+  {
+    id: 'envious_of',
+    word: 'Envious of',
+    pos: 'adjective + preposition',
+    meaning: '...ı kıskanmak',
+    definition: 'Unhappy because you want something someone else has.',
+    ipa: '/ˈenviəs əv/',
+    examples: ["I've always been envious of his ability to make new friends."],
+    exampleTranslations: ['Onun yeni arkadaş edinme yeteneğini her zaman kıskanmışımdır.'],
+    level: 'upper-intermediate',
+    collocations: ['green with envy', 'secretly envious of', 'envious of success'],
+    collocationMeanings: {
+      'green with envy': 'kıskançlıktan çatlamak',
+      'secretly envious of': 'gizliden gizliye kıskanmak',
+      'envious of success': 'başarıyı kıskanmak'
+    }
+  },
+  {
+    id: 'sensitive_towards',
+    word: 'Sensitive towards',
+    pos: 'adjective + preposition',
+    meaning: '...a karşı duyarlı',
+    definition: 'Showing care about someone or something.',
+    ipa: '/ˈsensətɪv təˈwɔːdz/',
+    examples: ["I wish he was more sensitive towards other people's feelings."],
+    exampleTranslations: ['Keşke başkalarının duygularına karşı daha duyarlı olsaydı.'],
+    level: 'upper-intermediate',
+    collocations: ['sensitive towards needs', 'sensitive towards feelings', 'highly sensitive towards'],
+    collocationMeanings: {
+      'sensitive towards needs': 'ihtiyaçlara karşı duyarlı',
+      'sensitive towards feelings': 'duygulara karşı hassas',
+      'highly sensitive towards': '...a karşı çok duyarlı'
+    }
+  },
+  {
+    id: 'sick_of',
+    word: 'Sick of',
+    pos: 'adjective + preposition',
+    meaning: '...dan bıkmak, usanmak',
+    definition: 'Wanting something to end because you are bored or annoyed.',
+    ipa: '/sɪk əv/',
+    examples: ["I'm just sick of it now - I can't wait to work on something different."],
+    exampleTranslations: ['Artık bundan bıktım; farklı bir şey üzerinde çalışmak için sabırsızlanıyorum.'],
+    level: 'upper-intermediate',
+    collocations: ['sick and tired of', 'make me sick of', 'utterly sick of'],
+    collocationMeanings: {
+      'sick and tired of': 'canına tak etmek',
+      'make me sick of': 'beni ...dan soğutmak',
+      'utterly sick of': 'tamamen bıkmış olmak'
+    }
+  },
+
+  // --- NOUN + PREPOSITION COLLOCATIONS (UNIT 4) ---
+  {
+    id: 'congratulations_on',
+    word: 'Congratulations on',
+    pos: 'noun + preposition',
+    meaning: '...dan dolayı tebrikler',
+    definition: 'Used for telling someone that you are pleased about their success.',
+    ipa: '/kənˌɡrætʃuˈleɪʃnz ɒn/',
+    examples: ['Congratulations on the new job!'],
+    exampleTranslations: ['Yeni işin için tebrikler!'],
+    level: 'upper-intermediate',
+    collocations: ['warmest congratulations on', 'sincere congratulations on', 'offer congratulations on'],
+    collocationMeanings: {
+      'warmest congratulations on': 'en içten tebrikler',
+      'sincere congratulations on': 'samimi kutlamalar',
+      'offer congratulations on': 'kutlamalarını sunmak'
+    }
+  },
+  {
+    id: 'course_in',
+    word: 'Course in',
+    pos: 'noun + preposition',
+    meaning: '...kursu/eğitimi',
+    definition: 'A series of lessons in an academic subject.',
+    ipa: '/kɔːs ɪn/',
+    examples: ['Have you thought about taking a course in first aid?'],
+    exampleTranslations: ['İlkyardım kursu almayı düşündün mü?'],
+    level: 'upper-intermediate',
+    collocations: ['online course in', 'intensive course in', 'degree course in'],
+    collocationMeanings: {
+      'online course in': '...üzerine online kurs',
+      'intensive course in': 'yoğunlaştırılmış ... eğitimi',
+      'degree course in': '...alanında lisans programı'
+    }
+  },
+  {
+    id: 'places_in',
+    word: 'Places in',
+    pos: 'noun + preposition',
+    meaning: '...daki yerler',
+    definition: 'A particular town, country, or building.',
+    ipa: '/ˈpleɪsɪz ɪn/',
+    examples: ["Let's go to the new Italian place in town."],
+    exampleTranslations: ['Şehirdeki yeni İtalyan mekanına gidelim.'],
+    level: 'upper-intermediate',
+    collocations: ['places in town', 'places in history', 'places in the heart'],
+    collocationMeanings: {
+      'places in town': 'şehirdeki mekanlar',
+      'places in history': 'tarihteki yerler',
+      'places in the heart': 'kalpteki yerler'
+    }
+  },
+  {
+    id: 'possibility_of',
+    word: 'Possibility of',
+    pos: 'noun + preposition',
+    meaning: '...ihtimali',
+    definition: 'The chance that something might happen.',
+    ipa: '/ˌpɒsəˈbɪləti əv/',
+    examples: ['Is there any possibility of seeing someone about it today?'],
+    exampleTranslations: ['Bugün bu konuda biriyle görüşme ihtimali var mı?'],
+    level: 'upper-intermediate',
+    collocations: ['distinct possibility of', 'remote possibility of', 'rule out the possibility of'],
+    collocationMeanings: {
+      'distinct possibility of': 'belirgin/yüksek ihtimal',
+      'remote possibility of': 'uzak ihtimal',
+      'rule out the possibility of': 'ihtimali devre dışı bırakmak'
+    }
+  },
+  {
+    id: 'risk_of',
+    word: 'Risk of',
+    pos: 'noun + preposition',
+    meaning: '...riski',
+    definition: 'The possibility that something unpleasant might happen.',
+    ipa: '/rɪsk əv/',
+    examples: ['The company is at serious risk of going out of business.'],
+    exampleTranslations: ['Şirket ciddi bir iflas riski altında.'],
+    level: 'upper-intermediate',
+    collocations: ['run a risk', 'high risk of', 'reduce the risk of'],
+    collocationMeanings: {
+      'run a risk': 'risk almak',
+      'high risk of': 'yüksek risk',
+      'reduce the risk of': 'riskini azaltmak'
+    }
+  },
+  {
+    id: 'time_for',
+    word: 'Time for',
+    pos: 'noun + preposition',
+    meaning: '...vakti, zamanı',
+    definition: 'A particular point when something happens.',
+    ipa: '/taɪm fɔː(r)/',
+    examples: ["Could you call me when it's time for lunch?"],
+    exampleTranslations: ['Öğle yemeği vakti geldiğinde beni arayabilir misin?'],
+    level: 'upper-intermediate',
+    collocations: ['high time for', 'find time for', 'waste time for'],
+    collocationMeanings: {
+      'high time for': '...için tam zamanı/vakti geçti',
+      'find time for': '...için zaman bulmak',
+      'waste time for': '...için vakit kaybetmek'
+    }
+  },
+
+  // --- NOUNS & VERBS SAME SPELLING (UNIT 4) ---
+  {
+    id: 'balance',
+    word: 'Balance',
+    pos: 'noun/verb',
+    meaning: 'Denge, dengelemek',
+    definition: 'A situation where features are equal; to create or preserve a correct relationship between aspects.',
+    ipa: '/ˈbæləns/',
+    examples: ["I don't seem to have a good work-life balance."],
+    exampleTranslations: ['İyi bir iş-yaşam dengesine sahip değilim gibi görünüyor.'],
+    level: 'upper-intermediate',
+    collocations: ['keep balance', 'lose balance', 'balance the books'],
+    collocationMeanings: {
+      'keep balance': 'dengeyi korumak',
+      'lose balance': 'dengesini kaybetmek',
+      'balance the books': 'hesapları denkleştirmek'
+    }
+  },
+  {
+    id: 'benefit',
+    word: 'Benefit',
+    pos: 'noun/verb',
+    meaning: 'Fayda, yararlanmak',
+    definition: 'An advantage you get from a situation; to get help from something.',
+    ipa: '/ˈbenɪfɪt/',
+    examples: ['Thousands of households could benefit under the scheme.'],
+    exampleTranslations: ['Binlerce hane bu plandan yararlanabilir.'],
+    level: 'upper-intermediate',
+    collocations: ['mutual benefit', 'benefit from', 'lasting benefit'],
+    collocationMeanings: {
+      'mutual benefit': 'karşılıklı yarar',
+      'benefit from': '...dan faydalanmak',
+      'lasting benefit': 'kalıcı fayda'
+    }
+  },
+  {
+    id: 'challenge',
+    word: 'Challenge',
+    pos: 'noun/verb',
+    meaning: 'Zorluk, meydan okuma',
+    definition: 'Something that needs a lot of skill; to test someone’s skill.',
+    ipa: '/ˈtʃælɪndʒ/',
+    examples: ['I need a new challenge.'],
+    exampleTranslations: ['Yeni bir meydan okumaya/zorluğa ihtiyacım var.'],
+    level: 'upper-intermediate',
+    collocations: ['face a challenge', 'major challenge', 'challenge someone to'],
+    collocationMeanings: {
+      'face a challenge': 'bir zorlukla yüzleşmek',
+      'major challenge': 'büyük zorluk',
+      'challenge someone to': 'birini ...ya davet etmek/meydan okumak'
+    }
+  },
+  {
+    id: 'control',
+    word: 'Control',
+    pos: 'noun/verb',
+    meaning: 'Kontrol, denetlemek',
+    definition: 'Power to make decisions; to make people behave how you want.',
+    ipa: '/kənˈtrəʊl/',
+    examples: ['His daughter took control of the business.'],
+    exampleTranslations: ['Kızı işin yönetimini/kontrolünü devraldı.'],
+    level: 'upper-intermediate',
+    collocations: ['under control', 'out of control', 'take control'],
+    collocationMeanings: {
+      'under control': 'kontrol altında',
+      'out of control': 'kontrol dışı',
+      'take control': 'kontrolü ele almak'
+    }
+  },
+  {
+    id: 'influence',
+    word: 'Influence',
+    pos: 'noun/verb',
+    meaning: 'Etki, etkilemek',
+    definition: 'The power to affect people or things; a person/thing that has such power.',
+    ipa: '/ˈɪnfluəns/',
+    examples: ['Reklamlardaki iddialar insanları etkileyebilir.'],
+    exampleTranslations: ['Reklamlardaki iddialar insanları etkileyebilir.'],
+    level: 'upper-intermediate',
+    collocations: ['have an influence on', 'good influence', 'under the influence of'],
+    collocationMeanings: {
+      'have an influence on': 'üzerinde etkisi olmak',
+      'good influence': 'iyi etki',
+      'under the influence of': '...etkisi altında'
+    }
+  },
+  {
+    id: 'produce',
+    word: 'Produce',
+    pos: 'noun/verb',
+    meaning: 'Üretmek, ürün (tarımsal)',
+    definition: 'To make or grow something; fruit and vegetables grown for sale.',
+    ipa: '/prəˈdjuːs/ (v) /ˈprɒdjuːs/ (n)',
+    examples: ['The factory will produce 100,000 cars annually.'],
+    exampleTranslations: ['Fabrika yılda 100.000 araba üretecek.'],
+    level: 'upper-intermediate',
+    collocations: ['fresh produce', 'mass produce', 'produce evidence'],
+    collocationMeanings: {
+      'fresh produce': 'taze ürün/sebze-meyve',
+      'mass produce': 'seri üretim yapmak',
+      'produce evidence': 'kanıt sunmak'
+    }
+  },
+
+  // --- INTENSIFIERS (UNIT 4) ---
+  {
+    id: 'considerably',
+    word: 'Considerably',
+    pos: 'adverb',
+    meaning: 'Epey, önemli ölçüde',
+    definition: 'A lot.',
+    ipa: '/kənˈsɪdrəbli/',
+    examples: ['The bill was considerably more than he expected.'],
+    exampleTranslations: ['Fatura beklediğinden epey fazlaydı.'],
+    level: 'upper-intermediate',
+    collocations: ['improve considerably', 'vary considerably', 'more considerably'],
+    collocationMeanings: {
+      'improve considerably': 'önemli ölçüde gelişmek',
+      'vary considerably': 'önemli ölçüde değişmek',
+      'more considerably': 'çok daha fazla'
+    }
+  },
+  {
+    id: 'disastrously',
+    word: 'Disastrously',
+    pos: 'adverb',
+    meaning: 'Feci şekilde, felaketle sonuçlanarak',
+    definition: 'In a way that causes a lot of damage or failure.',
+    ipa: '/dɪˈzɑːstrəsli/',
+    examples: ['The company was disastrously mismanaged.'],
+    exampleTranslations: ['Şirket feci şekilde kötü yönetildi.'],
+    level: 'upper-intermediate',
+    collocations: ['disastrously mismanaged', 'fail disastrously', 'disastrously wrong'],
+    collocationMeanings: {
+      'disastrously mismanaged': 'feci şekilde kötü yönetilmiş',
+      'fail disastrously': 'feci şekilde başarısız olmak',
+      'disastrously wrong': 'feci şekilde yanlış'
+    }
+  },
+  {
+    id: 'entirely',
+    word: 'Entirely',
+    pos: 'adverb',
+    meaning: 'Tamamen, bütünüyle',
+    definition: 'Completely, or in every way.',
+    ipa: '/ɪnˈtaɪəli/',
+    examples: ['Accents can be entirely different.'],
+    exampleTranslations: ['Aksanlar tamamen farklı olabilir.'],
+    level: 'upper-intermediate',
+    collocations: ['entirely different', 'agree entirely', 'almost entirely'],
+    collocationMeanings: {
+      'entirely different': 'bambaşka',
+      'agree entirely': 'tamamen katılmak',
+      'almost entirely': 'neredeyse tamamen'
+    }
+  },
+  {
+    id: 'especially',
+    word: 'Especially',
+    pos: 'adverb',
+    meaning: 'Özellikle, bilhassa',
+    definition: 'Used when mentioning conditions that make something more relevant.',
+    ipa: '/ɪˈspeʃəli/',
+    examples: ['It is hot, especially in summer.'],
+    exampleTranslations: ['Sıcak, özellikle yazın.'],
+    level: 'upper-intermediate',
+    collocations: ['especially important', 'especially true', 'not especially'],
+    collocationMeanings: {
+      'especially important': 'özellikle önemli',
+      'especially true': 'özellikle doğru',
+      'not especially': 'pek de değil'
+    }
+  },
+  {
+    id: 'extremely',
+    word: 'Extremely',
+    pos: 'adverb',
+    meaning: 'Aşırı derecede, son derece',
+    definition: 'Very: used for emphasising an adjective or adverb.',
+    ipa: '/ɪkˈstriːmli/',
+    examples: ["She's extremely good at Arabic."],
+    exampleTranslations: ['Arapça konusunda son derece iyi.'],
+    level: 'upper-intermediate',
+    collocations: ['extremely difficult', 'extremely high', 'extremely useful'],
+    collocationMeanings: {
+      'extremely difficult': 'aşırı zor',
+      'extremely high': 'son derece yüksek',
+      'extremely useful': 'son derece yararlı'
+    }
+  },
+  {
+    id: 'firmly',
+    word: 'Firmly',
+    pos: 'adverb',
+    meaning: 'Sıkıca, kararlılıkla',
+    definition: 'Strongly.',
+    ipa: '/ˈfɜːmli/',
+    examples: ['I firmly believe we must support each other.'],
+    exampleTranslations: ['Birbirimize destek olmamız gerektiğine yürekten/kararlılıkla inanıyorum.'],
+    level: 'upper-intermediate',
+    collocations: ['firmly established', 'firmly believe', 'hold firmly'],
+    collocationMeanings: {
+      'firmly established': 'iyice yerleşmiş',
+      'firmly believe': 'yürekten inanmak',
+      'hold firmly': 'sıkıca tutmak'
+    }
+  },
+  {
+    id: 'greatly',
+    word: 'Greatly',
+    pos: 'adverb',
+    meaning: 'Büyük ölçüde, çok fazla',
+    definition: 'Very much.',
+    ipa: '/ˈɡreɪtli/',
+    examples: ['Tickets vary greatly in price.'],
+    exampleTranslations: ['Biletlerin fiyatları büyük ölçüde değişiyor.'],
+    level: 'upper-intermediate',
+    collocations: ['greatly appreciated', 'vary greatly', 'greatly improve'],
+    collocationMeanings: {
+      'greatly appreciated': 'çok takdir edilen',
+      'vary greatly': 'büyük ölçüde değişmek',
+      'greatly improve': 'büyük ölçüde iyileştirmek'
+    }
+  },
+  {
+    id: 'incredibly',
+    word: 'Incredibly',
+    pos: 'adverb',
+    meaning: 'İnanılmaz derecede',
+    definition: 'Extremely.',
+    ipa: '/ɪnˈkredəbli/',
+    examples: ['It was incredibly difficult to find a time.'],
+    exampleTranslations: ['Bir zaman bulmak inanılmaz derecede zordu.'],
+    level: 'upper-intermediate',
+    collocations: ['incredibly fast', 'incredibly hard', 'incredibly lucky'],
+    collocationMeanings: {
+      'incredibly fast': 'inanılmaz hızlı',
+      'incredibly hard': 'inanılmaz zor',
+      'incredibly lucky': 'inanılmaz şanslı'
+    }
+  },
+  {
+    id: 'intensely',
+    word: 'Intensely',
+    pos: 'adverb',
+    meaning: 'Yoğun bir şekilde, şiddetle',
+    definition: 'Very great or extreme.',
+    ipa: '/ɪnˈtensli/',
+    examples: ["It's an intensely competitive industry."],
+    exampleTranslations: ['Bu yoğun derecede rekabetçi bir sektör.'],
+    level: 'upper-intermediate',
+    collocations: ['intensely personal', 'intensely competitive', 'stare intensely'],
+    collocationMeanings: {
+      'intensely personal': 'son derece kişisel',
+      'intensely competitive': 'yoğun rekabetçi',
+      'stare intensely': 'dik dik bakmak'
+    }
+  },
+  {
+    id: 'significantly',
+    word: 'Significantly',
+    pos: 'adverb',
+    meaning: 'Önemli ölçüde',
+    definition: 'In a way that has an important effect.',
+    ipa: '/sɪɡˈnɪfɪkəntli/',
+    examples: ['Unemployment has risen significantly.'],
+    exampleTranslations: ['İşsizlik önemli ölçüde arttı.'],
+    level: 'upper-intermediate',
+    collocations: ['differ significantly', 'increase significantly', 'significantly higher'],
+    collocationMeanings: {
+      'differ significantly': 'anlamlı şekilde farklılaşmak',
+      'increase significantly': 'önemli derecede artmak',
+      'significantly higher': 'belirgin şekilde yüksek'
+    }
+  },
+  {
+    id: 'totally',
+    word: 'Totally',
+    pos: 'adverb',
+    meaning: 'Tamamen',
+    definition: 'Completely.',
+    ipa: '/ˈtəʊtəli/',
+    examples: ["I totally forgot Simon's birthday."],
+    exampleTranslations: ["Simon'un doğum gününü tamamen unutmuşum."],
+    level: 'upper-intermediate',
+    collocations: ['totally agree', 'totally different', 'totally forgot'],
+    collocationMeanings: {
+      'totally agree': 'tamamen katılmak',
+      'totally different': 'tamamen farklı',
+      'totally forgot': 'tamamen unutmuş olmak'
+    }
+  },
+  {
+    id: 'utterly',
+    word: 'Utterly',
+    pos: 'adverb',
+    meaning: 'Tamamıyla, büsbütün',
+    definition: 'Completely: often used to emphasise how bad something is.',
+    ipa: '/ˈʌtəli/',
+    examples: ["He's still utterly dependent on his parents."],
+    exampleTranslations: ['Hâlâ tamamen ebeveynlerine bağımlı.'],
+    level: 'upper-intermediate',
+    collocations: ['utterly useless', 'utterly miserable', 'utterly ridiculous'],
+    collocationMeanings: {
+      'utterly useless': 'tamamen işe yaramaz',
+      'utterly miserable': 'tamamen perişan',
+      'utterly ridiculous': 'büsbütün saçma'
+    }
+  },
+  {
+    id: 'widely',
+    word: 'Widely',
+    pos: 'adverb',
+    meaning: 'Geniş çapta, yaygın olarak',
+    definition: 'By a lot of people, or in a lot of places.',
+    ipa: '/ˈwaɪdli/',
+    examples: ['Organic foods are now much more widely available.'],
+    exampleTranslations: ['Organik gıdalar artık çok daha yaygın şekilde bulunabiliyor.'],
+    level: 'upper-intermediate',
+    collocations: ['widely accepted', 'widely used', 'widely read'],
+    collocationMeanings: {
+      'widely accepted': 'genel kabul görmüş',
+      'widely used': 'yaygın kullanılan',
+      'widely read': 'çok okunan'
+    }
+  },
+
+  // --- GREEN VOCABULARY (UNIT 5) ---
+  {
+    id: 'compost_heap',
+    word: 'Compost heap',
+    pos: 'noun',
+    meaning: 'Gübre yığını, kompost yığını',
+    definition: 'A pile of decaying plants that becomes fertiliser.',
+    ipa: '/ˈkɒmpɒst hiːp/',
+    examples: ['Throw the left-over food on the compost heap.'],
+    exampleTranslations: ['Artan yiyecekleri kompost yığınına at.'],
+    level: 'upper-intermediate',
+    collocations: ['build a compost heap', 'garden compost heap', 'decaying compost heap'],
+    collocationMeanings: {
+      'build a compost heap': 'kompost yığını oluşturmak',
+      'garden compost heap': 'bahçe gübre yığını',
+      'decaying compost heap': 'çürüyen kompost yığını'
+    }
+  },
+  {
+    id: 'double_glazing',
+    word: 'Double glazing',
+    pos: 'noun',
+    meaning: 'Çift cam',
+    definition: 'Windows with two layers of glass to keep building warmer.',
+    ipa: '/ˈdʌbl ˈɡleɪzɪŋ/',
+    examples: ['My heating bill is lower since I had double glazing installed.'],
+    exampleTranslations: ['Çift cam taktırdığımdan beri ısınma faturam daha düşük.'],
+    level: 'upper-intermediate',
+    collocations: ['install double glazing', 'double glazing unit', 'uPVC double glazing'],
+    collocationMeanings: {
+      'install double glazing': 'çift cam taktırmak',
+      'double glazing unit': 'çift cam ünitesi',
+      'uPVC double glazing': 'uPVC çift cam sistemi'
+    }
+  },
+  {
+    id: 'energy_efficient_lightbulb',
+    word: 'Energy-efficient lightbulb',
+    pos: 'noun',
+    meaning: 'Enerji tasarruflu ampul',
+    definition: 'A bulb that uses advanced technology to reduce power use.',
+    ipa: '/ˈenədʒi ɪˈfɪʃnt ˈlaɪtbʌlb/',
+    examples: ['The company have installed energy-efficient lightbulbs.'],
+    exampleTranslations: ['Şirket enerji tasarruflu ampuller taktırdı.'],
+    level: 'upper-intermediate',
+    collocations: ['led energy-efficient lightbulb', 'install lightbulbs', 'energy-efficient lighting'],
+    collocationMeanings: {
+      'led energy-efficient lightbulb': 'led tasarruflu ampul',
+      'install lightbulbs': 'ampul takmak/monte etmek',
+      'energy-efficient lighting': 'enerji tasarruflu aydınlatma'
+    }
+  },
+  {
+    id: 'insulation',
+    word: 'Insulation',
+    pos: 'noun',
+    meaning: 'Yalıtım, izolasyon',
+    definition: 'Protection from heat, cold, noise or electricity.',
+    ipa: '/ˌɪnsjuˈleɪʃn/',
+    examples: ['Houses have much better insulation than they used to.'],
+    exampleTranslations: ['Evler eskisine göre çok daha iyi yalıtıma sahip.'],
+    level: 'upper-intermediate',
+    collocations: ['loft insulation', 'thermal insulation', 'sound insulation'],
+    collocationMeanings: {
+      'loft insulation': 'çatı yalıtımı',
+      'thermal insulation': 'ısı yalıtımı',
+      'sound insulation': 'ses yalıtımı'
+    }
+  },
+  {
+    id: 'smart_meter',
+    word: 'Smart meter',
+    pos: 'noun',
+    meaning: 'Akıllı sayaç',
+    definition: 'An electronic meter that enables users to track energy use.',
+    ipa: '/smɑːt ˈmiːtə(r)/',
+    examples: ['The app allows you to access your smart meter.'],
+    exampleTranslations: ['Uygulama, akıllı sayacınıza erişmenizi sağlar.'],
+    level: 'upper-intermediate',
+    collocations: ['install a smart meter', 'read a smart meter', 'electric smart meter'],
+    collocationMeanings: {
+      'install a smart meter': 'akıllı sayaç taktırmak',
+      'read a smart meter': 'akıllı sayaç okumak',
+      'electric smart meter': 'akıllı elektrik sayacı'
+    }
+  },
+  {
+    id: 'solar_panel',
+    word: 'Solar panel',
+    pos: 'noun',
+    meaning: 'Güneş paneli',
+    definition: 'Equipment that uses energy from the Sun to create power.',
+    ipa: '/ˈsəʊlə ˈpænəl/',
+    examples: ['Solar panels generate more energy than we need.'],
+    exampleTranslations: ['Güneş panelleri ihtiyacımızdan fazla enerji üretiyor.'],
+    level: 'upper-intermediate',
+    collocations: ['install solar panels', 'solar panel system', 'roof solar panels'],
+    collocationMeanings: {
+      'install solar panels': 'güneş paneli kurmak',
+      'solar panel system': 'güneş paneli sistemi',
+      'roof solar panels': 'çatı güneş panelleri'
+    }
+  },
+  {
+    id: 'thermostat',
+    word: 'Thermostat',
+    pos: 'noun',
+    meaning: 'Termostat',
+    definition: 'Equipment that controls the temperature in a building.',
+    ipa: '/ˈθɜːməstæt/',
+    examples: ["According to the thermostat, it's over 30 degrees."],
+    exampleTranslations: ['Termostata göre burası 30 derecenin üzerinde.'],
+    level: 'upper-intermediate',
+    collocations: ['adjust thermostat', 'set thermostat', 'programmable thermostat'],
+    collocationMeanings: {
+      'adjust thermostat': 'termostatı ayarlamak',
+      'set thermostat': 'termostatı kurmak',
+      'programmable thermostat': 'programlanabilir termostat'
+    }
+  },
+  {
+    id: 'underfloor_heating',
+    word: 'Underfloor heating',
+    pos: 'noun',
+    meaning: 'Yerden ısıtma',
+    definition: 'A system that warms a building from the floors.',
+    ipa: '/ˌʌndəflɔː(r) ˈhiːtɪŋ/',
+    examples: ["It's warm because we've got underfloor heating."],
+    exampleTranslations: ['Sıcak çünkü yerden ısıtmamız var.'],
+    level: 'upper-intermediate',
+    collocations: ['electric underfloor heating', 'install heating', 'efficient heating'],
+    collocationMeanings: {
+      'electric underfloor heating': 'elektrikli yerden ısıtma',
+      'install heating': 'ısıtma sistemi kurmak',
+      'efficient heating': 'verimli ısıtma'
+    }
+  },
+  {
+    id: 'water_butt',
+    word: 'Water butt',
+    pos: 'noun',
+    meaning: 'Yağmur suyu fıçısı',
+    definition: 'A large container for collecting rain off the roof.',
+    ipa: '/ˈwɔːtə bʌt/',
+    examples: ['We use water collected in the water butt for the garden.'],
+    exampleTranslations: ['Bahçe için yağmur suyu fıçısında biriken suyu kullanıyoruz.'],
+    level: 'upper-intermediate',
+    collocations: ['garden water butt', 'plastic water butt', 'fill a water butt'],
+    collocationMeanings: {
+      'garden water butt': 'bahçe yağmur fıçısı',
+      'plastic water butt': 'plastik su fıçısı',
+      'fill a water butt': 'fıçıyı doldurmak'
+    }
+  },
+  {
+    id: 'wind_turbine',
+    word: 'Wind turbine',
+    pos: 'noun',
+    meaning: 'Rüzgar türbini',
+    definition: 'A machine like a windmill used for producing electricity.',
+    ipa: '/wɪnd ˈtɜːbaɪn/',
+    examples: ['I might get a wind turbine installed on the roof.'],
+    exampleTranslations: ['Çatıya bir rüzgar türbini kurdurabilirim.'],
+    level: 'upper-intermediate',
+    collocations: ['offshore wind turbine', 'giant wind turbine', 'wind turbine farm'],
+    collocationMeanings: {
+      'offshore wind turbine': 'deniz üstü rüzgar türbini',
+      'giant wind turbine': 'dev rüzgar türbini',
+      'wind turbine farm': 'rüzgar türbini tarlası'
+    }
+  },
+
+  // --- CITY AREAS (UNIT 5) ---
+  {
+    id: 'commercial',
+    word: 'Commercial',
+    pos: 'adjective',
+    meaning: 'Ticari',
+    definition: 'Relating to business.',
+    ipa: '/kəˈmɜːʃl/',
+    examples: ['These buildings are suitable for commercial use.'],
+    exampleTranslations: ['Bu binalar ticari kullanım için uygundur.'],
+    level: 'upper-intermediate',
+    collocations: ['commercial district', 'commercial use', 'commercial break'],
+    collocationMeanings: {
+      'commercial district': 'ticaret bölgesi',
+      'commercial use': 'ticari kullanım',
+      'commercial break': 'reklam arası'
+    }
+  },
+  {
+    id: 'housing',
+    word: 'Housing',
+    pos: 'noun',
+    meaning: 'Konut, barınma',
+    definition: 'Buildings for people to live in.',
+    ipa: '/ˈhaʊzɪŋ/',
+    examples: ["There's an urgent need for more affordable housing."],
+    exampleTranslations: ['Daha uygun fiyatlı konutlara acil ihtiyaç var.'],
+    level: 'upper-intermediate',
+    collocations: ['affordable housing', 'social housing', 'housing estate'],
+    collocationMeanings: {
+      'affordable housing': 'uygun fiyatlı konut',
+      'social housing': 'sosyal konut',
+      'housing estate': 'toplu konut alanı'
+    }
+  },
+  {
+    id: 'industrial',
+    word: 'Industrial',
+    pos: 'adjective',
+    meaning: 'Endüstriyel, sanayi',
+    definition: 'Relating to industry.',
+    ipa: '/ɪnˈdʌstriəl/',
+    examples: ['Most people work in the industrial area of the city.'],
+    exampleTranslations: ['Çoğu insan şehrin sanayi bölgesinde çalışıyor.'],
+    level: 'upper-intermediate',
+    collocations: ['industrial revolution', 'industrial estate', 'industrial waste'],
+    collocationMeanings: {
+      'industrial revolution': 'sanayi devrimi',
+      'industrial estate': 'sanayi sitesi',
+      'industrial waste': 'sanayi atığı'
+    }
+  },
+  {
+    id: 'residential',
+    word: 'Residential',
+    pos: 'adjective',
+    meaning: 'Yerleşim, konut alanı ile ilgili',
+    definition: 'Relating to where people live rather than work.',
+    ipa: '/ˌrezɪˈdenʃl/',
+    examples: ['We live in a quiet residential area.'],
+    exampleTranslations: ['Sakin bir yerleşim bölgesinde yaşıyoruz.'],
+    level: 'upper-intermediate',
+    collocations: ['residential area', 'residential building', 'residential street'],
+    collocationMeanings: {
+      'residential area': 'yerleşim alanı',
+      'residential building': 'konut binası',
+      'residential street': 'mahalle sokağı'
+    }
+  },
+  {
+    id: 'rural',
+    word: 'Rural',
+    pos: 'adjective',
+    meaning: 'Kırsal, taşra',
+    definition: 'Relating to or in the countryside.',
+    ipa: '/ˈrʊərəl/',
+    examples: ['Many people in remote rural areas lack internet access.'],
+    exampleTranslations: ['Uzak kırsal bölgelerdeki pek çok kişinin internet erişimi yok.'],
+    level: 'upper-intermediate',
+    collocations: ['rural development', 'rural area', 'rural life'],
+    collocationMeanings: {
+      'rural development': 'kırsal kalkınma',
+      'rural area': 'kırsal bölge',
+      'rural life': 'köy/taşra hayatı'
+    }
+  },
+  {
+    id: 'slum',
+    word: 'Slum',
+    pos: 'noun',
+    meaning: 'Gecekondu mahallesi, varoş',
+    definition: 'A poor area where houses are in very bad condition.',
+    ipa: '/slʌm/',
+    examples: ['She grew up in the slums on the edge of the city.'],
+    exampleTranslations: ['Şehrin kenarındaki gecekondu mahallelerinde büyüdü.'],
+    level: 'upper-intermediate',
+    collocations: ['urban slums', 'clear the slums', 'slum dweller'],
+    collocationMeanings: {
+      'urban slums': 'şehir varoşları',
+      'clear the slums': 'gecekonduları yıkmak/temizlemek',
+      'slum dweller': 'varoş sakini'
+    }
+  },
+  {
+    id: 'suburbs',
+    word: 'Suburbs',
+    pos: 'noun/adjective',
+    meaning: 'Banliyö, dış mahalleler',
+    definition: 'An area where people live that is outside the city centre.',
+    ipa: '/ˈsʌbɜːbz/',
+    examples: ["Perhaps we'll move to the suburbs when we're older."],
+    exampleTranslations: ['Belki yaşlanınca banliyöye taşınırız.'],
+    level: 'upper-intermediate',
+    collocations: ['live in the suburbs', 'leafy suburbs', 'commuter suburbs'],
+    collocationMeanings: {
+      'live in the suburbs': 'şehir dışında/banliyöde yaşamak',
+      'leafy suburbs': 'yeşillik banliyöler',
+      'commuter suburbs': 'işe gidiş geliş banliyöleri'
+    }
+  },
+  {
+    id: 'urban',
+    word: 'Urban',
+    pos: 'adjective',
+    meaning: 'Kentsel, şehirsel',
+    definition: 'Relating to towns and cities.',
+    ipa: '/ˈɜːbən/',
+    examples: ['People generally move to urban areas in search of work.'],
+    exampleTranslations: ['İnsanlar genellikle iş aramak için kentsel bölgelere taşınır.'],
+    level: 'upper-intermediate',
+    collocations: ['urban planning', 'urban development', 'urban landscape'],
+    collocationMeanings: {
+      'urban planning': 'şehir planlama',
+      'urban development': 'kentsel kalkınma',
+      'urban landscape': 'kent manzarası'
+    }
+  },
+
+  // --- PREFIXES (UNIT 5) ---
+  {
+    id: 'decontaminate',
+    word: 'Decontaminate',
+    pos: 'verb',
+    meaning: 'Arındırmak, dezenfekte etmek',
+    definition: 'To remove a dangerous or poisonous substance.',
+    ipa: '/ˌdiːkənˈtæmɪneɪt/',
+    examples: ['It took years to decontaminate the area after the leak.'],
+    exampleTranslations: ['Sızıntıdan sonra bölgeyi arındırmak yıllar sürdü.'],
+    level: 'upper-intermediate',
+    collocations: ['thoroughly decontaminate', 'decontaminate soil', 'decontaminate equipment'],
+    collocationMeanings: {
+      'thoroughly decontaminate': 'iyice arındırmak',
+      'decontaminate soil': 'toprağı temizlemek',
+      'decontaminate equipment': 'ekipmanı dezenfekte etmek'
+    }
+  },
+  {
+    id: 'disqualify',
+    word: 'Disqualify',
+    pos: 'verb',
+    meaning: 'Diskalifiye etmek, elemek',
+    definition: 'To not allow someone to take part in a competition.',
+    ipa: '/dɪsˈkwɒlɪfaɪ/',
+    examples: ['He was disqualified from the competition for cheating.'],
+    exampleTranslations: ['Hile yaptığı için yarışmadan diskalifiye edildi.'],
+    level: 'upper-intermediate',
+    collocations: ['disqualified from driving', 'disqualified for cheating', 'be disqualified from'],
+    collocationMeanings: {
+      'disqualified from driving': 'ehliyetine el konulmak',
+      'disqualified for cheating': 'hileden diskalifiye edilmek',
+      'be disqualified from': '...dan diskalifiye olmak'
+    }
+  },
+  {
+    id: 'extraordinary',
+    word: 'Extraordinary',
+    pos: 'adjective',
+    meaning: 'Olağanüstü, sıra dışı',
+    definition: 'Very unusual and surprising.',
+    ipa: '/ɪkˈstrɔːdnri/',
+    examples: ["Wow, that's an extraordinary story."],
+    exampleTranslations: ['Vay canına, bu olağanüstü bir hikaye.'],
+    level: 'upper-intermediate',
+    collocations: ['extraordinary achievement', 'extraordinary meeting', 'truly extraordinary'],
+    collocationMeanings: {
+      'extraordinary achievement': 'olağanüstü başarı',
+      'extraordinary meeting': 'olağanüstü toplantı',
+      'truly extraordinary': 'gerçekten sıra dışı'
+    }
+  },
+  {
+    id: 'illegal',
+    word: 'Illegal',
+    pos: 'adjective',
+    meaning: 'Yasadışı, illegal',
+    definition: 'Not allowed by the law.',
+    ipa: '/ɪˈliːɡl/',
+    examples: ["It's illegal to drive without a seat belt."],
+    exampleTranslations: ['Emniyet kemeri olmadan araç kullanmak yasadışıdır.'],
+    level: 'upper-intermediate',
+    collocations: ['illegal drug', 'illegal act', 'illegal immigrants'],
+    collocationMeanings: {
+      'illegal drug': 'uyuşturucu madde',
+      'illegal act': 'yasadışı eylem',
+      'illegal immigrants': 'kaçak göçmenler'
+    }
+  },
+  {
+    id: 'impossible',
+    word: 'Impossible',
+    pos: 'adjective',
+    meaning: 'İmkansız',
+    definition: 'Extremely difficult to do or deal with.',
+    ipa: '/ɪmˈpɒsəbl/',
+    examples: ['It would be impossible to get there without a car.'],
+    exampleTranslations: ['Oraya arabasız gitmek imkansız olurdu.'],
+    level: 'upper-intermediate',
+    collocations: ['next to impossible', 'mission impossible', 'virtually impossible'],
+    collocationMeanings: {
+      'next to impossible': 'neredeyse imkansız',
+      'mission impossible': 'imkansız görev',
+      'virtually impossible': 'fiilen imkansız'
+    }
+  },
+  {
+    id: 'mislead',
+    word: 'Mislead',
+    pos: 'verb',
+    meaning: 'Yanlış yönlendirmek, aldatmak',
+    definition: 'To make someone believe something that was incorrect.',
+    ipa: '/ˌmɪsˈliːd/',
+    examples: ['The community were misled by developers.'],
+    exampleTranslations: ['Topluluk, geliştiriciler tarafından yanlış yönlendirildi.'],
+    level: 'upper-intermediate',
+    collocations: ['misleading information', 'mislead the public', 'deliberately mislead'],
+    collocationMeanings: {
+      'misleading information': 'yanıltıcı bilgi',
+      'mislead the public': 'kamuoyunu aldatmak',
+      'deliberately mislead': 'kasten yanlış yönlendirmek'
+    }
+  },
+  {
+    id: 'outperform',
+    word: 'Outperform',
+    pos: 'verb',
+    meaning: 'Daha iyi performans göstermek, geride bırakmak',
+    definition: 'To do something better than someone else.',
+    ipa: '/ˌaʊtpəˈfɔːm/',
+    examples: ['The new system helped them outperform competitors.'],
+    exampleTranslations: ['Yeni sistem rakiplerini geride bırakmalarına yardımcı oldu.'],
+    level: 'upper-intermediate',
+    collocations: ['outperform peers', 'outperform the market', 'significantly outperform'],
+    collocationMeanings: {
+      'outperform peers': 'akranlarından daha iyi performans göstermek',
+      'outperform the market': 'piyasanın üstünde performans sergilemek',
+      'significantly outperform': 'belirgin şekilde üstün gelmek'
+    }
+  },
+  {
+    id: 'overpopulation',
+    word: 'Overpopulation',
+    pos: 'noun',
+    meaning: 'Aşırı nüfus artışı',
+    definition: 'The state of too many people living in the same area.',
+    ipa: '/ˌəʊvəˌpɒpjuˈleɪʃn/',
+    examples: ['Overpopulation is a problem in many parts of the world.'],
+    exampleTranslations: ['Aşırı nüfus dünyanın pek çok yerinde bir sorundur.'],
+    level: 'upper-intermediate',
+    collocations: ['global overpopulation', 'problem of overpopulation', 'tackle overpopulation'],
+    collocationMeanings: {
+      'global overpopulation': 'küresel aşırı nüfus',
+      'problem of overpopulation': 'aşırı nüfus sorunu',
+      'tackle overpopulation': 'aşırı nüfusla mücadele etmek'
+    }
+  },
+  {
+    id: 'overpriced',
+    word: 'Overpriced',
+    pos: 'adjective',
+    meaning: 'Fahiş fiyatlı, çok pahalı',
+    definition: 'Worth less than the price being charged.',
+    ipa: '/ˌəʊvəˈpraɪst/',
+    examples: ['The train is massively overpriced!'],
+    exampleTranslations: ['Tren feci şekilde pahalı!'],
+    level: 'upper-intermediate',
+    collocations: ['overpriced menu', 'wildly overpriced', 'ridiculously overpriced'],
+    collocationMeanings: {
+      'overpriced menu': 'kazık menü',
+      'wildly overpriced': 'fahiş derecede pahalı',
+      'ridiculously overpriced': 'gülünç derecede pahalı'
+    }
+  },
+  {
+    id: 'redevelop',
+    word: 'Redevelop',
+    pos: 'verb',
+    meaning: 'Yeniden yapılandırmak, imara açmak',
+    definition: 'To improve an area by building new buildings.',
+    ipa: '/ˌriːdɪˈveləp/',
+    examples: ['The whole area is being redeveloped for residential use.'],
+    exampleTranslations: ['Tüm bölge konut kullanımı için yeniden yapılandırılıyor.'],
+    level: 'upper-intermediate',
+    collocations: ['redevelop the area', 'redevelop site', 'plan to redevelop'],
+    collocationMeanings: {
+      'redevelop the area': 'bölgeyi yeniden yapılandırmak',
+      'redevelop site': 'sahayı imara açmak',
+      'plan to redevelop': 'yeniden yapılandırmayı planlamak'
+    }
+  },
+  {
+    id: 'suburban_adj',
+    word: 'Suburban',
+    pos: 'adjective',
+    meaning: 'Banliyö ile ilgili, şehir dışı',
+    definition: 'In a suburb, or relating to a suburb.',
+    ipa: '/səˈbɜːbən/',
+    examples: ['Lots of families live in suburban areas.'],
+    exampleTranslations: ['Pek çok aile banliyö bölgelerinde yaşıyor.'],
+    level: 'upper-intermediate',
+    collocations: ['suburban life', 'suburban development', 'suburban sprawl'],
+    collocationMeanings: {
+      'suburban life': 'banliyö hayatı',
+      'suburban development': 'banliyö yapılaşması',
+      'suburban sprawl': 'çarpık banliyöleşme'
+    }
+  },
+  {
+    id: 'underestimate',
+    word: 'Underestimate',
+    pos: 'verb',
+    meaning: 'Hafife almak, olduğundan az tahmin etmek',
+    definition: 'To think something is smaller or less important than it is.',
+    ipa: '/ˌʌndərˈestɪmeɪt/',
+    examples: ['I seriously underestimated the cost.'],
+    exampleTranslations: ['Maliyeti ciddi şekilde azımsamışım.'],
+    level: 'upper-intermediate',
+    collocations: ['grossly underestimate', 'seriously underestimate', 'underestimate power'],
+    collocationMeanings: {
+      'grossly underestimate': 'feci şekilde hafife almak',
+      'seriously underestimate': 'ciddi şekilde azımsamak',
+      'underestimate power': 'gücü hafife almak'
+    }
+  },
+  {
+    id: 'unhappy',
+    word: 'Unhappy',
+    pos: 'adjective',
+    meaning: 'Mutsuz, hoşnutsuz',
+    definition: 'Not satisfied or pleased.',
+    ipa: '/ʌnˈhæpi/',
+    examples: ['People are pretty unhappy about the cost of housing.'],
+    exampleTranslations: ['İnsanlar konut maliyetlerinden dolayı epey mutsuz/hoşnutsuz.'],
+    level: 'upper-intermediate',
+    collocations: ['unhappy ending', 'deeply unhappy', 'unhappy with'],
+    collocationMeanings: {
+      'unhappy ending': 'mutsuz son',
+      'deeply unhappy': 'çok mutsuz',
+      'unhappy with': '...dan memnun olmamak'
+    }
+  },
+  {
+    id: 'upgrade',
+    word: 'Upgrade',
+    pos: 'verb',
+    meaning: 'Yükseltmek, kalitesini artırmak',
+    definition: 'To improve the quality of a service or product.',
+    ipa: '/ˌʌpˈɡreɪd/',
+    examples: ["We're going to upgrade the IT system next year."],
+    exampleTranslations: ['Gelecek yıl bilişim sistemini yükselteceğiz.'],
+    level: 'upper-intermediate',
+    collocations: ['major upgrade', 'system upgrade', 'free upgrade'],
+    collocationMeanings: {
+      'major upgrade': 'büyük iyileştirme',
+      'system upgrade': 'sistem yükseltme',
+      'free upgrade': 'ücretsiz üst modele geçme'
+    }
+  },
+
+  // --- EDUCATION (UNIT 6) ---
+  {
+    id: 'boarding_school',
+    word: 'Boarding school',
+    pos: 'noun',
+    meaning: 'Yatılı okul',
+    definition: 'A school where pupils also live full-time.',
+    ipa: '/ˈbɔːdɪŋ skuːl/',
+    examples: ['My dad went to boarding school when he was young.'],
+    exampleTranslations: ['Babam gençken yatılı okula gitmiş.'],
+    level: 'upper-intermediate',
+    collocations: ['attend boarding school', 'send to boarding school', 'exclusive boarding school'],
+    collocationMeanings: {
+      'attend boarding school': 'yatılı okulda okumak',
+      'send to boarding school': 'yatılı okula göndermek',
+      'exclusive boarding school': 'seçkin yatılı okul'
+    }
+  },
+  {
+    id: 'campus',
+    word: 'Campus',
+    pos: 'noun',
+    meaning: 'Kampüs, yerleşke',
+    definition: 'An area containing all main buildings of a university.',
+    ipa: '/ˈkæmpəs/',
+    examples: ['There are rooms for over 2000 students on campus.'],
+    exampleTranslations: ['Kampüste 2000’den fazla öğrenci için odalar var.'],
+    level: 'upper-intermediate',
+    collocations: ['on campus', 'university campus', 'main campus'],
+    collocationMeanings: {
+      'on campus': 'kampüste',
+      'university campus': 'üniversite kampüsü',
+      'main campus': 'ana kampüs'
+    }
+  },
+  {
+    id: 'compulsory',
+    word: 'Compulsory',
+    pos: 'adjective',
+    meaning: 'Zorunlu, mecburi',
+    definition: 'Something that must be done because of rules or laws.',
+    ipa: '/kəmˈpʌlsəri/',
+    examples: ["School uniform isn't compulsory in many schools."],
+    exampleTranslations: ['Pek çok okulda okul üniforması zorunlu değil.'],
+    level: 'upper-intermediate',
+    collocations: ['compulsory education', 'compulsory subject', 'become compulsory'],
+    collocationMeanings: {
+      'compulsory education': 'zorunlu eğitim',
+      'compulsory subject': 'zorunlu ders',
+      'become compulsory': 'zorunlu hale gelmek'
+    }
+  },
+  {
+    id: 'curriculum',
+    word: 'Curriculum',
+    pos: 'noun',
+    meaning: 'Müfredat',
+    definition: 'Subjects studied in a school or college.',
+    ipa: '/kəˈrɪkjələm/',
+    examples: ['The science curriculum has changed this year.'],
+    exampleTranslations: ['Fen bilgisi müfredatı bu yıl değişti.'],
+    level: 'upper-intermediate',
+    collocations: ['core curriculum', 'school curriculum', 'national curriculum'],
+    collocationMeanings: {
+      'core curriculum': 'temel müfredat',
+      'school curriculum': 'okul müfredatı',
+      'national curriculum': 'ulusal müfredat'
+    }
+  },
+  {
+    id: 'entrance_exam',
+    word: 'Entrance exam',
+    pos: 'noun',
+    meaning: 'Giriş sınavı',
+    definition: 'A test taken by students applying to join a school or university.',
+    ipa: '/ˈentrəns ɪɡˈzæm/',
+    examples: ['I heard you passed the entrance exam.'],
+    exampleTranslations: ['Giriş sınavını geçtiğini duydum.'],
+    level: 'upper-intermediate',
+    collocations: ['university entrance exam', 'pass entrance exam', 'take entrance exam'],
+    collocationMeanings: {
+      'university entrance exam': 'üniversiteye giriş sınavı',
+      'pass entrance exam': 'giriş sınavını geçmek',
+      'take entrance exam': 'giriş sınavına girmek'
+    }
+  },
+  {
+    id: 'graduate',
+    word: 'Graduate',
+    pos: 'verb',
+    meaning: 'Mezun olmak',
+    definition: 'To complete your studies at a university or college.',
+    ipa: '/ˈɡrædʒueɪt/',
+    examples: ['When did Inês graduate?'],
+    exampleTranslations: ['Inês ne zaman mezun oldu?'],
+    level: 'upper-intermediate',
+    collocations: ['graduate from', 'university graduate', 'newly graduate'],
+    collocationMeanings: {
+      'graduate from': '...dan mezun olmak',
+      'university graduate': 'üniversite mezunu',
+      'newly graduate': 'yeni mezun'
+    }
+  },
+  {
+    id: 'higher_education',
+    word: 'Higher education',
+    pos: 'noun',
+    meaning: 'Yükseköğrenim',
+    definition: 'Education at a university or college level.',
+    ipa: '/ˌhaɪər edjuˈkeɪʃn/',
+    examples: ['More students are going onto higher education these days.'],
+    exampleTranslations: ['Bugünlerde daha fazla öğrenci yükseköğrenime geçiyor.'],
+    level: 'upper-intermediate',
+    collocations: ['access to higher education', 'higher education institution', 'pursue higher education'],
+    collocationMeanings: {
+      'access to higher education': 'yükseköğrenime erişim',
+      'higher education institution': 'yükseköğretim kurumu',
+      'pursue higher education': 'yükseköğrenim görmek'
+    }
+  },
+  {
+    id: 'lecture',
+    word: 'Lecture',
+    pos: 'noun',
+    meaning: 'Ders, konferans',
+    definition: 'A talk to groups of people about a subject, especially at college.',
+    ipa: '/ˈlektʃə(r)/',
+    examples: ['The course starts with a series of lectures.'],
+    exampleTranslations: ['Kurs bir dizi dersle başlıyor.'],
+    level: 'upper-intermediate',
+    collocations: ['give a lecture', 'attend a lecture', 'guest lecture'],
+    collocationMeanings: {
+      'give a lecture': 'ders anlatmak/konferans vermek',
+      'attend a lecture': 'derse katılmak',
+      'guest lecture': 'konuk dersi/konuşmacısı'
+    }
+  },
+  {
+    id: 'primary_school',
+    word: 'Primary school',
+    pos: 'noun',
+    meaning: 'İlkokul',
+    definition: 'A school for children between four or five and eleven.',
+    ipa: '/ˈpraɪməri skuːl/',
+    examples: ['I haven’t seen him since primary school.'],
+    exampleTranslations: ['Onu ilkokuldan beri görmedim.'],
+    level: 'upper-intermediate',
+    collocations: ['primary school teacher', 'primary school education', 'attend primary school'],
+    collocationMeanings: {
+      'primary school teacher': 'ilkokul öğretmeni',
+      'primary school education': 'ilköğretim',
+      'attend primary school': 'ilkokula gitmek'
+    }
+  },
+  {
+    id: 'private_school',
+    word: 'Private school',
+    pos: 'noun',
+    meaning: 'Özel okul',
+    definition: 'A school that you pay money to attend.',
+    ipa: '/ˈpraɪvət skuːl/',
+    examples: ['I’m not sure about sending him to a private school.'],
+    exampleTranslations: ['Onu özel okula gönderme konusunda emin değilim.'],
+    level: 'upper-intermediate',
+    collocations: ['expensive private school', 'private school system', 'elite private school'],
+    collocationMeanings: {
+      'expensive private school': 'pahalı özel okul',
+      'private school system': 'özel okul sistemi',
+      'elite private school': 'seçkin özel okul'
+    }
+  },
+  {
+    id: 'scholarship',
+    word: 'Scholarship',
+    pos: 'noun',
+    meaning: 'Burs',
+    definition: 'Money an organisation gives so someone can study.',
+    ipa: '/ˈskɒləʃɪp/',
+    examples: ['Sevban was awarded a scholarship at Cambridge.'],
+    exampleTranslations: ['Sevban’a Cambridge’de burs verildi.'],
+    level: 'upper-intermediate',
+    collocations: ['win a scholarship', 'apply for scholarship', 'full scholarship'],
+    collocationMeanings: {
+      'win a scholarship': 'burs kazanmak',
+      'apply for scholarship': 'bursa başvurmak',
+      'full scholarship': 'tam burs'
+    }
+  },
+  {
+    id: 'secondary_school',
+    word: 'Secondary school',
+    pos: 'noun',
+    meaning: 'Ortaokul/Lise (11-18 yaş)',
+    definition: 'A school for children between 11 and 16 or 18.',
+    ipa: '/ˈsekəndri skuːl/',
+    examples: ['I met my best friend at secondary school.'],
+    exampleTranslations: ['En iyi arkadaşımla lisede tanıştım.'],
+    level: 'upper-intermediate',
+    collocations: ['secondary school pupil', 'local secondary school', 'secondary school level'],
+    collocationMeanings: {
+      'secondary school pupil': 'ortaöğretim öğrencisi',
+      'local secondary school': 'yerel lise',
+      'secondary school level': 'lise seviyesi'
+    }
+  },
+  {
+    id: 'seminar',
+    word: 'Seminar',
+    pos: 'noun',
+    meaning: 'Seminer',
+    definition: 'A class at university in which a small group discusses a subject.',
+    ipa: '/ˈsemɪnɑː(r)/',
+    examples: ['My seminar starts in five minutes.'],
+    exampleTranslations: ['Seminerim beş dakika içinde başlıyor.'],
+    level: 'upper-intermediate',
+    collocations: ['hold a seminar', 'seminar series', 'attend a seminar'],
+    collocationMeanings: {
+      'hold a seminar': 'seminer düzenlemek',
+      'seminar series': 'seminer dizisi',
+      'attend a seminar': 'seminere katılmak'
+    }
+  },
+  {
+    id: 'state_school',
+    word: 'State school',
+    pos: 'noun',
+    meaning: 'Devlet okulu',
+    definition: 'A school that is free because it is government funded.',
+    ipa: '/ˈsteɪt skuːl/',
+    examples: ['Some excellent teachers work in state schools.'],
+    exampleTranslations: ['Devlet okullarında bazı mükemmel öğretmenler çalışıyor.'],
+    level: 'upper-intermediate',
+    collocations: ['local state school', 'state school system', 'state school funding'],
+    collocationMeanings: {
+      'local state school': 'yerel devlet okulu',
+      'state school system': 'devlet okulu sistemi',
+      'state school funding': 'devlet okulu finansmanı'
+    }
+  },
+  {
+    id: 'vocational',
+    word: 'Vocational',
+    pos: 'adjective',
+    meaning: 'Mesleki',
+    definition: 'Relating to skills necessary for a particular job.',
+    ipa: '/vəʊˈkeɪʃənl/',
+    examples: ['Why not do a vocational course like plumbing?'],
+    exampleTranslations: ['Neden tesisatçılık gibi mesleki bir kurs yapmıyorsun?'],
+    level: 'upper-intermediate',
+    collocations: ['vocational training', 'vocational course', 'vocational school'],
+    collocationMeanings: {
+      'vocational training': 'mesleki eğitim',
+      'vocational course': 'meslek kursu',
+      'vocational school': 'meslek lisesi'
+    }
+  },
+
+  // --- COMPOUND ADJECTIVES (UNIT 6) ---
+  {
+    id: 'coming_of_age',
+    word: 'Coming-of-age',
+    pos: 'adjective',
+    meaning: 'Reşit olma, olgunlaşma dönemi ile ilgili',
+    definition: 'Relating to the age at which someone is legally an adult.',
+    ipa: '/ˌkʌmɪŋ əv ˈeɪdʒ/',
+    examples: ["It's a coming-of-age film about five friends."],
+    exampleTranslations: ['Bu, beş arkadaş hakkında bir büyüme/olgunlaşma filmi.'],
+    level: 'upper-intermediate',
+    collocations: ['coming-of-age story', 'coming-of-age ritual', 'coming-of-age ceremony'],
+    collocationMeanings: {
+      'coming-of-age story': 'olgunlaşma hikayesi',
+      'coming-of-age ritual': 'erginlenme ritüeli',
+      'coming-of-age ceremony': 'reşit olma töreni'
+    }
+  },
+  {
+    id: 'last_minute',
+    word: 'Last-minute',
+    pos: 'adjective',
+    meaning: 'Son dakika',
+    definition: 'Happening or done at the latest possible time.',
+    ipa: '/ˌlɑːst ˈmɪnɪt/',
+    examples: ["Sorry, there's been a last-minute change of plans."],
+    exampleTranslations: ['Üzgünüm, planlarda son dakika değişikliği oldu.'],
+    level: 'upper-intermediate',
+    collocations: ['last-minute decision', 'last-minute deal', 'at the last minute'],
+    collocationMeanings: {
+      'last-minute decision': 'son dakika kararı',
+      'last-minute deal': 'son dakika anlaşması',
+      'at the last minute': 'son anda'
+    }
+  },
+  {
+    id: 'old_fashioned',
+    word: 'Old-fashioned',
+    pos: 'adjective',
+    meaning: 'Eski moda, demode',
+    definition: 'Methods or attitudes that are no longer useful or appropriate.',
+    ipa: '/ˌəʊld ˈfæʃnd/',
+    examples: ['They have very old-fashioned views about marriage.'],
+    exampleTranslations: ['Evlilik hakkında çok eski moda/muhafazakar görüşleri var.'],
+    level: 'upper-intermediate',
+    collocations: ['old-fashioned clothes', 'old-fashioned idea', 'rather old-fashioned'],
+    collocationMeanings: {
+      'old-fashioned clothes': 'eski moda kıyafetler',
+      'old-fashioned idea': 'modası geçmiş fikir',
+      'rather old-fashioned': 'oldukça eski usul'
+    }
+  },
+  {
+    id: 'seven_bedroom',
+    word: 'Seven-bedroom',
+    pos: 'adjective',
+    meaning: 'Yedi yatak odalı',
+    definition: 'Relating to a building with seven bedrooms.',
+    ipa: '/ˈsevn ˈbedruːm/',
+    examples: ["I'd get lost in a seven-bedroom house!"],
+    exampleTranslations: ['Yedi yatak odalı bir evde kaybolurum!'],
+    level: 'upper-intermediate',
+    collocations: ['luxury seven-bedroom', 'large seven-bedroom', 'detached seven-bedroom'],
+    collocationMeanings: {
+      'luxury seven-bedroom': 'lüks yedi yatak odalı',
+      'large seven-bedroom': 'geniş yedi yatak odalı',
+      'detached seven-bedroom': 'müstakil yedi yatak odalı'
+    }
+  },
+  {
+    id: 'up_to_date',
+    word: 'Up-to-date',
+    pos: 'adjective',
+    meaning: 'Güncel',
+    definition: 'Including the most recent news and information.',
+    ipa: '/ˌʌp tə ˈdeɪt/',
+    examples: ['For up-to-date departure times, visit our website.'],
+    exampleTranslations: ['Güncel kalkış saatleri için web sitemizi ziyaret edin.'],
+    level: 'upper-intermediate',
+    collocations: ['keep up-to-date', 'bring up-to-date', 'most up-to-date'],
+    collocationMeanings: {
+      'keep up-to-date': 'güncel kalmak/takip etmek',
+      'bring up-to-date': 'güncelleştirmek',
+      'most up-to-date': 'en güncel'
+    }
+  },
+  {
+    id: 'well_known',
+    word: 'Well-known',
+    pos: 'adjective',
+    meaning: 'Tanınmış, bilindik',
+    definition: 'Known by many people.',
+    ipa: '/ˌwel ˈnəʊn/',
+    examples: ["I can't believe you haven't heard of him - he's really well-known."],
+    exampleTranslations: ['Onu duymadığına inanamıyorum; o gerçekten tanınmış biridir.'],
+    level: 'upper-intermediate',
+    collocations: ['well-known fact', 'well-known person', 'internationally well-known'],
+    collocationMeanings: {
+      'well-known fact': 'herkesçe bilinen gerçek',
+      'well-known person': 'tanınmış kişi',
+      'internationally well-known': 'uluslararası düzeyde tanınmış'
+    }
+  },
+
+  // --- MAKE AND DO PHRASES (UNIT 6) ---
+  {
+    id: 'do_away_with',
+    word: 'Do away with',
+    pos: 'phrase',
+    meaning: 'Yürürlükten kaldırmak, kurtulmak',
+    definition: 'To get rid of something.',
+    ipa: '/duː əˈweɪ wɪð/',
+    examples: ['The company has done away with a lot of old restrictions.'],
+    exampleTranslations: ['Şirket pek çok eski kısıtlamayı yürürlükten kaldırdı.'],
+    level: 'upper-intermediate',
+    collocations: ['do away with rules', 'do away with taxes', 'do away with a tradition'],
+    collocationMeanings: {
+      'do away with rules': 'kuralları kaldırmak',
+      'do away with taxes': 'vergileri sıfırlamak',
+      'do away with a tradition': 'bir geleneğe son vermek'
+    }
+  },
+  {
+    id: 'do_somebody_a_favour',
+    word: 'Do somebody a favour',
+    pos: 'phrase',
+    meaning: 'Birine bir iyilik yapmak',
+    definition: 'Something you do for someone to help them.',
+    ipa: '/duː ˈsʌmbədi ə ˈfeɪvə(r)/',
+    examples: ['I don’t suppose you could do me a favour?'],
+    exampleTranslations: ['Bana bir iyilik yapabileceğinizi sanmıyorum (yapar mısınız)?'],
+    level: 'upper-intermediate',
+    collocations: ['ask a favour', 'owe a favour', 'return a favour'],
+    collocationMeanings: {
+      'ask a favour': 'iyilik istemek',
+      'owe a favour': 'iyilik borcu olmak',
+      'return a favour': 'iyiliğe karşılık vermek'
+    }
+  },
+  {
+    id: 'do_somebody_harm',
+    word: 'Do somebody harm',
+    pos: 'phrase',
+    meaning: 'Birine zarar vermek',
+    definition: 'To cause serious damage or injury.',
+    ipa: '/duː ˈsʌmbədi hɑːm/',
+    examples: ['Have some cake - one slice isn’t going to do any harm!'],
+    exampleTranslations: ['Biraz kek al; bir dilimden zarar gelmez!'],
+    level: 'upper-intermediate',
+    collocations: ['do more harm', 'intended harm', 'no harm done'],
+    collocationMeanings: {
+      'do more harm': 'daha fazla zarar vermek',
+      'intended harm': 'kasti zarar',
+      'no harm done': 'zarar ziyan yok'
+    }
+  },
+  {
+    id: 'do_without',
+    word: 'Do without',
+    pos: 'phrase',
+    meaning: 'Olmadan idare etmek',
+    definition: 'To succeed in working or living without someone or something.',
+    ipa: '/duː wɪˈðaʊt/',
+    examples: ["We've run out of milk so you'll have to do without."],
+    exampleTranslations: ['Sütümüz bitti, bu yüzden onsuz idare etmek zorunda kalacaksın.'],
+    level: 'upper-intermediate',
+    collocations: ['cannot do without', 'learn to do without', 'have to do without'],
+    collocationMeanings: {
+      'cannot do without': 'onsuz yapamamak',
+      'learn to do without': 'onsuz yaşamayı öğrenmek',
+      'have to do without': 'onsuz idare etmek zorunda kalmak'
+    }
+  },
+  {
+    id: 'make_a_good_impression',
+    word: 'Make a good impression',
+    pos: 'phrase',
+    meaning: 'İyi bir izlenim bırakmak',
+    definition: 'To make other people notice you in a positive way.',
+    ipa: '/meɪk ə ɡʊd ɪmˈpreʃn/',
+    examples: ["Put on your best suit - it's important to make a good impression."],
+    exampleTranslations: ['En iyi takım elbiseni giy; iyi bir izlenim bırakmak önemlidir.'],
+    level: 'upper-intermediate',
+    collocations: ['first impression', 'lasting impression', 'strive to make'],
+    collocationMeanings: {
+      'first impression': 'ilk izlenim',
+      'lasting impression': 'kalıcı izlenim',
+      'strive to make': 'yapmaya çabalamak'
+    }
+  },
+  {
+    id: 'make_allowances',
+    word: 'Make allowances',
+    pos: 'phrase',
+    meaning: 'Hoşgörü göstermek, halden anlamak',
+    definition: "To consider the reasons for someone's behaviour and not judge severely.",
+    ipa: '/meɪk əˈlaʊənsɪz/',
+    examples: ['You might need to make allowances for her lack of experience.'],
+    exampleTranslations: ['Onun deneyim eksikliğini hoş görmen gerekebilir.'],
+    level: 'upper-intermediate',
+    collocations: ['make allowances for', 'reasonable allowances', 'necessary allowances'],
+    collocationMeanings: {
+      'make allowances for': '...için hoşgörü göstermek',
+      'reasonable allowances': 'makul hoşgörü',
+      'necessary allowances': 'gerekli esneklik'
+    }
+  },
+  {
+    id: 'make_the_best_of_something',
+    word: 'Make the best of something',
+    pos: 'phrase',
+    meaning: 'Bir durumdan elinden geldiğince yararlanmak, iyi tarafına bakmak',
+    definition: "To be positive about a situation you don't like but can't change.",
+    ipa: '/meɪk ðə best əv ˈsʌmθɪŋ/',
+    examples: ["Let's make the best of our last day on holiday."],
+    exampleTranslations: ['Tatilin bu son gününü en iyi şekilde değerlendirelim.'],
+    level: 'upper-intermediate',
+    collocations: ['make the best of a bad job', 'try to make the best', 'make the best of life'],
+    collocationMeanings: {
+      'make the best of a bad job': 'kötü giden bir işten en iyisini çıkarmak',
+      'try to make the best': 'elinden gelenin en iyisini yapmaya çalışmak',
+      'make the best of life': 'hayatı en iyi şekilde yaşamak'
+    }
+  },
+  {
+    id: 'make_a_go_of_something',
+    word: 'Make a go of something',
+    pos: 'phrase',
+    meaning: 'Bir şeyi başarıyla yürütmek, başarmaya çalışmak',
+    definition: 'To try to make something work successfully.',
+    ipa: '/meɪk ə ɡəʊ əv ˈsʌmθɪŋ/',
+    examples: ["Juan's been trying to make a go of the business."],
+    exampleTranslations: ['Juan işi başarıyla yürütmeye/ayağa kaldırmaya çalışıyor.'],
+    level: 'upper-intermediate',
+    collocations: ['really make a go', 'fail to make a go', 'determined to make a go'],
+    collocationMeanings: {
+      'really make a go': 'gerçekten başarmak',
+      'fail to make a go': 'başarılı olmayı başaramamak',
+      'determined to make a go': 'başarmaya kararlı'
+    }
+  },
+
+  // --- VERBS OF CHANGE (UNIT 7) ---
+  {
+    id: 'construct',
+    word: 'Construct',
+    pos: 'verb',
+    meaning: 'İnşa etmek, yapmak',
+    definition: 'To build or make something like a building, road or machine.',
+    ipa: '/kənˈstrʌkt/',
+    examples: ['The tunnel was constructed in 1996.'],
+    exampleTranslations: ['Tünel 1996 yılında inşa edildi.'],
+    level: 'upper-intermediate',
+    collocations: ['construct a building', 'carefully construct', 'construct a theory'],
+    collocationMeanings: {
+      'construct a building': 'bina inşa etmek',
+      'carefully construct': 'dikkatle oluşturmak',
+      'construct a theory': 'teori kurmak'
+    }
+  },
+  {
+    id: 'convert',
+    word: 'Convert',
+    pos: 'verb',
+    meaning: 'Dönüştürmek',
+    definition: 'To change the use or form of something.',
+    ipa: '/kənˈvɜːt/',
+    examples: ["They're planning to convert the warehouse into a community centre."],
+    exampleTranslations: ['Depoyu bir toplum merkezine dönüştürmeyi planlıyorlar.'],
+    level: 'upper-intermediate',
+    collocations: ['convert into', 'convert to Islam', 'convert currency'],
+    collocationMeanings: {
+      'convert into': '...a dönüştürmek',
+      'convert to Islam': 'İslamiyet’e geçmek',
+      'convert currency': 'döviz bozdurmak'
+    }
+  },
+  {
+    id: 'demolish',
+    word: 'Demolish',
+    pos: 'verb',
+    meaning: 'Yıkmak, yerle bir etmek',
+    definition: 'To knock down or destroy.',
+    ipa: '/dɪˈmɒlɪʃ/',
+    examples: ["I heard they're going to demolish the old school."],
+    exampleTranslations: ['Eski okulu yıkacaklarını duydum.'],
+    level: 'upper-intermediate',
+    collocations: ['completely demolish', 'plan to demolish', 'demolish a building'],
+    collocationMeanings: {
+      'completely demolish': 'tamamen yerle bir etmek',
+      'plan to demolish': 'yıkmayı planlamak',
+      'demolish a building': 'bina yıkmak'
+    }
+  },
+  {
+    id: 'extend',
+    word: 'Extend',
+    pos: 'verb',
+    meaning: 'Uzatmak, genişletmek',
+    definition: 'To make longer or bigger.',
+    ipa: '/ɪkˈstend/',
+    examples: ["We're going to extend the back room."],
+    exampleTranslations: ['Arka odayı genişleteceğiz.'],
+    level: 'upper-intermediate',
+    collocations: ['extend a deadline', 'extend an invitation', 'extend hours'],
+    collocationMeanings: {
+      'extend a deadline': 'son teslim tarihini uzatmak',
+      'extend an invitation': 'davette bulunmak',
+      'extend hours': 'çalışma saatlerini uzatmak'
+    }
+  },
+  {
+    id: 'relocate',
+    word: 'Relocate',
+    pos: 'verb',
+    meaning: 'Yerini değiştirmek, taşınmak',
+    definition: 'To move to another place.',
+    ipa: '/ˌriːləʊˈkeɪt/',
+    examples: ['Many companies have relocated their headquarters.'],
+    exampleTranslations: ['Pek çok şirket genel merkezini başka yere taşıdı.'],
+    level: 'upper-intermediate',
+    collocations: ['relocate a business', 'decide to relocate', 'forced to relocate'],
+    collocationMeanings: {
+      'relocate a business': 'işletmeyi taşımak',
+      'decide to relocate': 'taşınmaya karar vermek',
+      'forced to relocate': 'taşınmaya zorlanmak'
+    }
+  },
+  {
+    id: 'restore',
+    word: 'Restore',
+    pos: 'verb',
+    meaning: 'Restore etmek, eski haline getirmek',
+    definition: 'To repair something so that it looks the same as it did originally.',
+    ipa: '/rɪˈstɔː(r)/',
+    examples: ['The campaign is aiming to restore the library.'],
+    exampleTranslations: ['Kampanya kütüphaneyi restore etmeyi hedefliyor.'],
+    level: 'upper-intermediate',
+    collocations: ['restore confidence', 'restore order', 'fully restore'],
+    collocationMeanings: {
+      'restore confidence': 'güveni yeniden tesis etmek',
+      'restore order': 'düzeni sağlamak',
+      'fully restore': 'tamamen onarmak'
+    }
+  },
+  {
+    id: 'transform',
+    word: 'Transform',
+    pos: 'verb',
+    meaning: 'Dönüştürmek, şeklini değiştirmek',
+    definition: 'To change someone or something completely.',
+    ipa: '/trænsˈfɔːm/',
+    examples: ['The factory was transformed into an art gallery.'],
+    exampleTranslations: ['Fabrika bir sanat galerisine dönüştürüldü.'],
+    level: 'upper-intermediate',
+    collocations: ['transform into', 'radically transform', 'completely transform'],
+    collocationMeanings: {
+      'transform into': '...a dönüştürmek',
+      'radically transform': 'kökten değiştirmek',
+      'completely transform': 'tamamen dönüştürmek'
+    }
+  },
+
+  // --- THREE-PART PHRASAL VERBS (UNIT 7) ---
+  {
+    id: 'catch_up_with',
+    word: 'Catch up with',
+    pos: 'phrasal verb',
+    meaning: 'Haberleşmek, arayı kapatmak',
+    definition: "To find out someone's news.",
+    ipa: '/kætʃ ʌp wɪð/',
+    examples: ["It'll be good to catch up with you both."],
+    exampleTranslations: ['İkinizle de hasret gidermek/haberleşmek iyi olacak.'],
+    level: 'upper-intermediate',
+    collocations: ['catch up with friends', 'catch up with work', 'catch up with the news'],
+    collocationMeanings: {
+      'catch up with friends': 'arkadaşlarla dertleşmek/görüşmek',
+      'catch up with work': 'işleri yetiştirmek',
+      'catch up with the news': 'haberleri takip etmek'
+    }
+  },
+  {
+    id: 'come_up_against',
+    word: 'Come up against',
+    pos: 'phrasal verb',
+    meaning: 'Zorlukla karşılaşmak',
+    definition: 'To have to deal with something difficult or unpleasant.',
+    ipa: '/kʌm ʌp əˈɡeɪnst/',
+    examples: ['We came up against a pretty difficult issue.'],
+    exampleTranslations: ['Oldukça zor bir meseleyle karşılaştık.'],
+    level: 'upper-intermediate',
+    collocations: ['come up against a problem', 'come up against opposition', 'come up against walls'],
+    collocationMeanings: {
+      'come up against a problem': 'bir sorunla karşılaşmak',
+      'come up against opposition': 'muhalefetle karşılaşmak',
+      'come up against walls': 'engellere takılmak'
+    }
+  },
+  {
+    id: 'come_up_with',
+    word: 'Come up with',
+    pos: 'phrasal verb',
+    meaning: 'Fikir üretmek, bulmak',
+    definition: 'To think of something such as an idea or a plan.',
+    ipa: '/kʌm ʌp wɪð/',
+    examples: ['Is that the best you can come up with?'],
+    exampleTranslations: ['Bulabildiğin en iyi şey bu mu?'],
+    level: 'upper-intermediate',
+    collocations: ['come up with an idea', 'come up with a solution', 'come up with a plan'],
+    collocationMeanings: {
+      'come up with an idea': 'bir fikir ortaya atmak',
+      'come up with a solution': 'çözüm üretmek',
+      'come up with a plan': 'bir plan tasarlamak'
+    }
+  },
+  {
+    id: 'cut_down_on',
+    word: 'Cut down on',
+    pos: 'phrasal verb',
+    meaning: 'Azaltmak',
+    definition: 'To start doing less of something, especially for health.',
+    ipa: '/kʌt daʊn ɒn/',
+    examples: ["I'm trying to cut down on sugar."],
+    exampleTranslations: ['Şekeri azaltmaya çalışıyorum.'],
+    level: 'upper-intermediate',
+    collocations: ['cut down on fatty foods', 'cut down on expenses', 'cut down on smoking'],
+    collocationMeanings: {
+      'cut down on fatty foods': 'yağlı yiyecekleri azaltmak',
+      'cut down on expenses': 'masrafları kısmak',
+      'cut down on smoking': 'sigarayı azaltmak'
+    }
+  },
+  {
+    id: 'get_around_to',
+    word: 'Get around to',
+    pos: 'phrasal verb',
+    meaning: 'Fırsat bulup yapmak',
+    definition: 'To do something after you have intended to do it for some time.',
+    ipa: '/ɡet əˈraʊnd tu/',
+    examples: ['I never seem to get around to mowing the lawn.'],
+    exampleTranslations: ['Çimleri biçmeye bir türlü fırsat bulamıyorum/sıra gelmiyor.'],
+    level: 'upper-intermediate',
+    collocations: ['finally get around to', 'never get around to', 'hope to get around to'],
+    collocationMeanings: {
+      'finally get around to': 'sonunda yapmaya vakit bulmak',
+      'never get around to': 'bir türlü yapamamak',
+      'hope to get around to': 'yapmaya vakit bulmayı ummak'
+    }
+  },
+  {
+    id: 'get_on_with',
+    word: 'Get on with',
+    pos: 'phrasal verb',
+    meaning: 'Devam etmek, (işe) koyulmak',
+    definition: 'To give your time to something and make progress with it.',
+    ipa: '/ɡet ɒn wɪð/',
+    examples: ['I need to get on with this housework.'],
+    exampleTranslations: ['Bu ev işine devam etmem/koyulmam lazım.'],
+    level: 'upper-intermediate',
+    collocations: ['get on with work', 'get on with life', 'get on with someone'],
+    collocationMeanings: {
+      'get on with work': 'işe koyulmak',
+      'get on with life': 'hayatına devam etmek',
+      'get on with someone': 'biriyle iyi geçinmek'
+    }
+  },
+  {
+    id: 'keep_up_with',
+    word: 'Keep up with',
+    pos: 'phrasal verb',
+    meaning: 'Hızına yetişmek, geri kalmamak',
+    definition: 'To continue to learn about something or keep pace with change.',
+    ipa: '/kiːp ʌp wɪð/',
+    examples: ["It's difficult to keep up with everything that's happening."],
+    exampleTranslations: ['Olup biten her şeye yetişmek/takip etmek zor.'],
+    level: 'upper-intermediate',
+    collocations: ['keep up with the trends', 'keep up with technology', 'keep up with the Joneses'],
+    collocationMeanings: {
+      'keep up with the trends': 'trendleri takip etmek',
+      'keep up with technology': 'teknolojiye ayak uydurmak',
+      'keep up with the Joneses': 'başkalarından geri kalmamaya çalışmak'
+    }
+  },
+  {
+    id: 'look_up_to',
+    word: 'Look up to',
+    pos: 'phrasal verb',
+    meaning: 'Hayranlık duymak, örnek almak',
+    definition: 'To admire and respect someone.',
+    ipa: '/lʊk ʌp tu/',
+    examples: ["She's a role model for other players to look up to."],
+    exampleTranslations: ['O, diğer oyuncuların örnek alacağı bir rol model.'],
+    level: 'upper-intermediate',
+    collocations: ['look up to parents', 'really look up to', 'someone to look up to'],
+    collocationMeanings: {
+      'look up to parents': 'ebeveynleri örnek almak',
+      'really look up to': 'gerçekten hayranlık duymak',
+      'someone to look up to': 'örnek alınacak biri'
+    }
+  },
+  {
+    id: 'run_out_of',
+    word: 'Run out of',
+    pos: 'phrasal verb',
+    meaning: 'Bitmek, tükenmek',
+    definition: 'To not have any more of something.',
+    ipa: '/rʌn aʊt əv/',
+    examples: ['They ran out of petrol fifteen miles from the airport.'],
+    exampleTranslations: ['Havaalanına on beş mil kala benzinleri bitti.'],
+    level: 'upper-intermediate',
+    collocations: ['run out of time', 'run out of money', 'run out of steam'],
+    collocationMeanings: {
+      'run out of time': 'vakti tükenmek',
+      'run out of money': 'parası bitmek',
+      'run out of steam': 'enerjisi/hızı kesilmek'
+    }
+  },
+  {
+    id: 'stand_up_for',
+    word: 'Stand up for',
+    pos: 'phrasal verb',
+    meaning: 'Savunmak, arkasında durmak',
+    definition: 'To defend someone or something that is being criticised.',
+    ipa: '/stænd ʌp fɔː(r)/',
+    examples: ['Thanks for standing up for me in there.'],
+    exampleTranslations: ['Orada beni savunduğun için teşekkürler.'],
+    level: 'upper-intermediate',
+    collocations: ['stand up for rights', 'stand up for beliefs', 'stand up for yourself'],
+    collocationMeanings: {
+      'stand up for rights': 'haklarını savunmak',
+      'stand up for beliefs': 'inançlarını savunmak',
+      'stand up for yourself': 'kendini savunmak'
+    }
+  },
+  {
+    id: 'take_care_of',
+    word: 'Take care of',
+    pos: 'phrasal verb',
+    meaning: 'İlgilenmek, bakmak, üstlenmek',
+    definition: 'To look after someone or something.',
+    ipa: '/teɪk keə(r) əv/',
+    examples: ['Who will take care of the children?'],
+    exampleTranslations: ['Çocuklara kim bakacak/ilgilenecek?'],
+    level: 'upper-intermediate',
+    collocations: ['take care of business', 'take care of family', 'take care of the details'],
+    collocationMeanings: {
+      'take care of business': 'işleri halletmek',
+      'take care of family': 'aileye bakmak',
+      'take care of the details': 'detaylarla ilgilenmek'
+    }
+  },
+  {
+    id: 'team_up_with',
+    word: 'Team up with',
+    pos: 'phrasal verb',
+    meaning: 'Takım oluşturmak, işbirliği yapmak',
+    definition: 'To work together with someone.',
+    ipa: '/tiːm ʌp wɪð/',
+    examples: ['We teamed up with a local charity.'],
+    exampleTranslations: ['Yerel bir hayır kurumuyla işbirliği yaptık.'],
+    level: 'upper-intermediate',
+    collocations: ['team up with a friend', 'team up for a project', 'decide to team up'],
+    collocationMeanings: {
+      'team up with a friend': 'bir arkadaşla ekip kurmak',
+      'team up for a project': 'bir proje için birleşmek',
+      'decide to team up': 'işbirliği yapmaya karar vermek'
+    }
+  },
+
+  // --- COMPOUND NOUNS (UNIT 7) ---
+  {
+    id: 'car_sharing_scheme',
+    word: 'Car-sharing scheme',
+    pos: 'noun',
+    meaning: 'Araç paylaşım sistemi',
+    definition: 'A system that helps people to share a car and travel together.',
+    ipa: '/ˈkɑː ʃeərɪŋ skiːm/',
+    examples: ['My company is introducing a car-sharing scheme.'],
+    exampleTranslations: ['Şirketim bir araç paylaşım sistemi başlatıyor.'],
+    level: 'upper-intermediate',
+    collocations: ['join a car-sharing scheme', 'local car-sharing scheme', 'promote car-sharing'],
+    collocationMeanings: {
+      'join a car-sharing scheme': 'araç paylaşım sistemine katılmak',
+      'local car-sharing scheme': 'yerel araç paylaşım sistemi',
+      'promote car-sharing': 'araç paylaşımını teşvik etmek'
+    }
+  },
+  {
+    id: 'food_bank',
+    word: 'Food bank',
+    pos: 'noun',
+    meaning: 'Gıda bankası',
+    definition: 'A place where people in need can collect free food.',
+    ipa: '/ˈfuːd bæŋk/',
+    examples: ['The country is increasingly reliant on food banks.'],
+    exampleTranslations: ['Ülke giderek daha fazla gıda bankalarına bağımlı hale geliyor.'],
+    level: 'upper-intermediate',
+    collocations: ['donate to food bank', 'local food bank', 'food bank usage'],
+    collocationMeanings: {
+      'donate to food bank': 'gıda bankasına bağış yapmak',
+      'local food bank': 'yerel gıda bankası',
+      'food bank usage': 'gıda bankası kullanımı'
+    }
+  },
+  {
+    id: 'language_exchange',
+    word: 'Language exchange',
+    pos: 'noun',
+    meaning: 'Dil değişimi/takası',
+    definition: 'A method where people who speak different languages meet to practise.',
+    ipa: '/ˈlæŋɡwɪdʒ ɪksˈtʃeɪndʒ/',
+    examples: ['I’ve met some good friends through language exchanges.'],
+    exampleTranslations: ['Dil takasları aracılığıyla bazı iyi arkadaşlarla tanıştım.'],
+    level: 'upper-intermediate',
+    collocations: ['language exchange partner', 'online language exchange', 'join a language exchange'],
+    collocationMeanings: {
+      'language exchange partner': 'dil takası ortağı',
+      'online language exchange': 'çevrimiçi dil değişimi',
+      'join a language exchange': 'dil takasına katılmak'
+    }
+  },
+  {
+    id: 'street_party',
+    word: 'Street party',
+    pos: 'noun',
+    meaning: 'Sokak partisi',
+    definition: 'An outside social event organised by local residents.',
+    ipa: '/ˈstriːt ˈpɑːti/',
+    examples: ['We had a street party to celebrate our World Cup win.'],
+    exampleTranslations: ['Dünya Kupası galibiyetimizi kutlamak için bir sokak partisi yaptık.'],
+    level: 'upper-intermediate',
+    collocations: ['organise a street party', 'annual street party', 'huge street party'],
+    collocationMeanings: {
+      'organise a street party': 'sokak partisi düzenlemek',
+      'annual street party': 'geleneksel sokak partisi',
+      'huge street party': 'dev sokak partisi'
+    }
+  },
+  {
+    id: 'volunteer_worker',
+    word: 'Volunteer worker',
+    pos: 'noun',
+    meaning: 'Gönüllü çalışan',
+    definition: 'A person who gives their time and work for free, often for charities.',
+    ipa: '/ˌvɒlənˈtɪə(r) ˈwɜːkə(r)/',
+    examples: ['Volunteer workers help distribute food to the homeless.'],
+    exampleTranslations: ['Gönüllü çalışanlar evsizlere yiyecek dağıtılmasına yardımcı oluyor.'],
+    level: 'upper-intermediate',
+    collocations: ['unpaid volunteer worker', 'trained volunteer worker', 'recruit volunteer workers'],
+    collocationMeanings: {
+      'unpaid volunteer worker': 'ücretsiz gönüllü çalışan',
+      'trained volunteer worker': 'eğitimli gönüllü çalışan',
+      'recruit volunteer workers': 'gönüllü çalışan toplamak'
+    }
+  },
+
+  // --- WORD FAMILIES (UNIT 8) ---
+  {
+    id: 'belief',
+    word: 'Belief',
+    pos: 'noun',
+    meaning: 'İnanç, inanış',
+    definition: 'An idea that you are certain is true, especially involving religion or politics.',
+    ipa: '/bɪˈliːf/',
+    examples: ["It's important to respect everyone's personal beliefs."],
+    exampleTranslations: ['Herkesin kişisel inançlarına saygı duymak önemlidir.'],
+    level: 'upper-intermediate',
+    collocations: ['religious belief', 'personal belief', 'strong belief'],
+    collocationMeanings: {
+      'religious belief': 'dini inanç',
+      'personal belief': 'kişisel inanç',
+      'strong belief': 'güçlü inanç'
+    }
+  },
+  {
+    id: 'believable',
+    word: 'Believable',
+    pos: 'adjective',
+    meaning: 'İnanılır, inandırıcı',
+    definition: 'Seeming possible or true.',
+    ipa: '/bɪˈliːvəbl/',
+    examples: ['I enjoyed the story, but it wasn’t very believable.'],
+    exampleTranslations: ['Hikayeden keyif aldım ama pek inandırıcı değildi.'],
+    level: 'upper-intermediate',
+    collocations: ['hardly believable', 'believable character', 'make it believable'],
+    collocationMeanings: {
+      'hardly believable': 'pek inandırıcı olmayan',
+      'believable character': 'inandırıcı karakter',
+      'make it believable': 'inandırıcı kılmak'
+    }
+  },
+  {
+    id: 'believably',
+    word: 'Believably',
+    pos: 'adverb',
+    meaning: 'İnanılır bir şekilde',
+    definition: 'In a way that seems true.',
+    ipa: '/bɪˈliːvəbli/',
+    examples: ['I thought his apology was believably sincere.'],
+    exampleTranslations: ['Özür dilemesinin inandırıcı derecede samimi olduğunu düşündüm.'],
+    level: 'upper-intermediate',
+    collocations: ['act believably', 'behave believably', 'speak believably'],
+    collocationMeanings: {
+      'act believably': 'inandırıcı şekilde rol yapmak',
+      'behave believably': 'inandırıcı davranmak',
+      'speak believably': 'inandırıcı konuşmak'
+    }
+  },
+  {
+    id: 'believe',
+    word: 'Believe',
+    pos: 'verb',
+    meaning: 'İnanmak',
+    definition: 'To think that what someone has said is true.',
+    ipa: '/bɪˈliːv/',
+    examples: ["The police didn't believe Julie's story."],
+    exampleTranslations: ['Polis Julie’nin hikayesine inanmadı.'],
+    level: 'upper-intermediate',
+    collocations: ['believe in', 'firmly believe', 'hard to believe'],
+    collocationMeanings: {
+      'believe in': 'bir şeye (varlığına/gücüne) inanmak',
+      'firmly believe': 'yürekten inanmak',
+      'hard to believe': 'inanması güç'
+    }
+  },
+  {
+    id: 'hero',
+    word: 'Hero',
+    pos: 'noun',
+    meaning: 'Kahraman',
+    definition: 'Someone who has done something brave.',
+    ipa: '/ˈhɪərəʊ/',
+    examples: ['Tony was regarded as a local hero.'],
+    exampleTranslations: ['Tony yerel bir kahraman olarak görüldü.'],
+    level: 'upper-intermediate',
+    collocations: ['unsung hero', 'national hero', 'local hero'],
+    collocationMeanings: {
+      'unsung hero': 'gizli kahraman',
+      'national hero': 'ulusal kahraman',
+      'local hero': 'yerel kahraman'
+    }
+  },
+  {
+    id: 'heroic',
+    word: 'Heroic',
+    pos: 'adjective',
+    meaning: 'Kahramanca',
+    definition: 'Very brave and deserving admiration.',
+    ipa: '/həˈrəʊɪk/',
+    examples: ['The medical staff do heroic work.'],
+    exampleTranslations: ['Sağlık personeli kahramanca işler çıkarıyor.'],
+    level: 'upper-intermediate',
+    collocations: ['heroic effort', 'heroic act', 'heroic failure'],
+    collocationMeanings: {
+      'heroic effort': 'kahramanca çaba',
+      'heroic act': 'kahramanca eylem',
+      'heroic failure': 'onurlu başarısızlık'
+    }
+  },
+  {
+    id: 'heroically',
+    word: 'Heroically',
+    pos: 'adverb',
+    meaning: 'Kahramanca (bir şekilde)',
+    definition: 'In a way that shows great determination.',
+    ipa: '/həˈrəʊɪkli/',
+    examples: ['The goalkeeper played on heroically.'],
+    exampleTranslations: ['Kaleci kahramanca oynamaya devam etti.'],
+    level: 'upper-intermediate',
+    collocations: ['struggle heroically', 'fight heroically', 'behave heroically'],
+    collocationMeanings: {
+      'struggle heroically': 'kahramanca mücadele etmek',
+      'fight heroically': 'kahramanca dövüşmek',
+      'behave heroically': 'kahramanca davranmak'
+    }
+  },
+  {
+    id: 'myth',
+    word: 'Myth',
+    pos: 'noun',
+    meaning: 'Efsane, mit',
+    definition: 'An ancient traditional story about gods, heroes and magic.',
+    ipa: '/mɪθ/',
+    examples: ['We learned about Greek myths.'],
+    exampleTranslations: ['Yunan mitlerini öğrendik.'],
+    level: 'upper-intermediate',
+    collocations: ['urban myth', 'greek myth', 'popular myth'],
+    collocationMeanings: {
+      'urban myth': 'şehir efsanesi',
+      'greek myth': 'yunan miti',
+      'popular myth': 'yaygın yanlış inanış'
+    }
+  },
+  {
+    id: 'mythical',
+    word: 'Mythical',
+    pos: 'adjective',
+    meaning: 'Efsanevi, mitolojik',
+    definition: 'Relating to or existing only in myths.',
+    ipa: '/ˈmɪθɪkl/',
+    examples: ['She loves stories with mythical beasts.'],
+    exampleTranslations: ['Efsanevi yaratıkların olduğu hikayeleri sever.'],
+    level: 'upper-intermediate',
+    collocations: ['mythical creature', 'mythical island', 'mythical beast'],
+    collocationMeanings: {
+      'mythical creature': 'mitolojik yaratık',
+      'mythical island': 'efsanevi ada',
+      'mythical beast': 'efsanevi canavar'
+    }
+  },
+  {
+    id: 'represent',
+    word: 'Represent',
+    pos: 'verb',
+    meaning: 'Temsil etmek',
+    definition: 'To speak or act officially for another person, group, or organisation.',
+    ipa: '/ˌreprɪˈzent/',
+    examples: ['I need a lawyer to represent me in court.'],
+    exampleTranslations: ['Mahkemede beni temsil etmesi için bir avukata ihtiyacım var.'],
+    level: 'upper-intermediate',
+    collocations: ['represent a client', 'represent a country', 'represent interests'],
+    collocationMeanings: {
+      'represent a client': 'müvekkili temsil etmek',
+      'represent a country': 'bir ülkeyi temsil etmek',
+      'represent interests': 'çıkarları temsil etmek'
+    }
+  },
+  {
+    id: 'representation',
+    word: 'Representation',
+    pos: 'noun',
+    meaning: 'Temsil, canlandırma',
+    definition: 'A sign, symbol or picture of something.',
+    ipa: '/ˌreprɪzenˈteɪʃn/',
+    examples: ['The film was an accurate representation of life.'],
+    exampleTranslations: ['Film, hayatın doğru bir canlandırmasıydı.'],
+    level: 'upper-intermediate',
+    collocations: ['media representation', 'visual representation', 'legal representation'],
+    collocationMeanings: {
+      'media representation': 'medyada temsil edilme',
+      'visual representation': 'görsel temsil',
+      'legal representation': 'yasal temsil/avukatlık'
+    }
+  },
+  {
+    id: 'representative',
+    word: 'Representative',
+    pos: 'adjective/noun',
+    meaning: 'Temsili, temsilci',
+    definition: 'Typical of people or things in a group; a person chosen to act for others.',
+    ipa: '/ˌreprɪˈzentətɪv/',
+    examples: ['Prices are not representative of the UK in general.'],
+    exampleTranslations: ['Fiyatlar genel olarak Birleşik Krallık’ı yansıtmıyor/temsil etmiyor.'],
+    level: 'upper-intermediate',
+    collocations: ['sales representative', 'representative sample', 'elected representative'],
+    collocationMeanings: {
+      'sales representative': 'satış temsilcisi',
+      'representative sample': 'temsili örneklem',
+      'elected representative': 'seçilmiş temsilci'
+    }
+  },
+  {
+    id: 'representatively',
+    word: 'Representatively',
+    pos: 'adverb',
+    meaning: 'Temsili olarak',
+    definition: 'In a way that is typical of people or things in a group.',
+    ipa: '/ˌreprɪˈzentətɪvli/',
+    examples: ['The population wasn’t surveyed representatively.'],
+    exampleTranslations: ['Nüfus temsili bir şekilde araştırılmadı.'],
+    level: 'upper-intermediate',
+    collocations: ['survey representatively', 'sample representatively', 'select representatively'],
+    collocationMeanings: {
+      'survey representatively': 'temsili anket yapmak',
+      'sample representatively': 'temsili örneklem almak',
+      'select representatively': 'temsili seçim yapmak'
+    }
+  },
+  {
+    id: 'tradition',
+    word: 'Tradition',
+    pos: 'noun',
+    meaning: 'Gelenek',
+    definition: 'An activity that happens regularly and has become usual.',
+    ipa: '/trəˈdɪʃn/',
+    examples: ['It is a tradition in my family.'],
+    exampleTranslations: ['Bu ailemde bir gelenektir.'],
+    level: 'upper-intermediate',
+    collocations: ['break with tradition', 'follow tradition', 'long-standing tradition'],
+    collocationMeanings: {
+      'break with tradition': 'geleneği bozmak',
+      'follow tradition': 'geleneği sürdürmek',
+      'long-standing tradition': 'köklü gelenek'
+    }
+  },
+  {
+    id: 'traditional',
+    word: 'Traditional',
+    pos: 'adjective',
+    meaning: 'Geleneksel',
+    definition: 'Relating to very old customs, beliefs or stories.',
+    ipa: '/trəˈdɪʃənl/',
+    examples: ['The performers wore traditional costumes.'],
+    exampleTranslations: ['Performansçılar geleneksel kıyafetler giydiler.'],
+    level: 'upper-intermediate',
+    collocations: ['traditional values', 'traditional medicine', 'traditional music'],
+    collocationMeanings: {
+      'traditional values': 'geleneksel değerler',
+      'traditional medicine': 'geleneksel tıp',
+      'traditional music': 'geleneksel müzik'
+    }
+  },
+  {
+    id: 'traditionally',
+    word: 'Traditionally',
+    pos: 'adverb',
+    meaning: 'Geleneksel olarak',
+    definition: 'In a way that follows very old customs.',
+    ipa: '/trəˈdɪʃənəli/',
+    examples: ['The bride was dressed traditionally.'],
+    exampleTranslations: ['Gelin geleneksel bir biçimde giyinmişti.'],
+    level: 'upper-intermediate',
+    collocations: ['traditionally made', 'traditionally associated', 'traditionally used'],
+    collocationMeanings: {
+      'traditionally made': 'geleneksel yöntemle yapılmış',
+      'traditionally associated': 'geleneksel olarak ilişkilendirilen',
+      'traditionally used': 'geleneksel olarak kullanılan'
+    }
+  },
+  {
+    id: 'transformation',
+    word: 'Transformation',
+    pos: 'noun',
+    meaning: 'Dönüşüm',
+    definition: 'A change into someone or something completely different.',
+    ipa: '/ˌtrænsfəˈmeɪʃn/',
+    examples: ['There’s been a total transformation in his behaviour.'],
+    level: 'upper-intermediate',
+    exampleTranslations: ['Davranışlarında tam bir dönüşüm oldu.'],
+    collocations: ['radical transformation', 'complete transformation', 'economic transformation'],
+    collocationMeanings: {
+      'radical transformation': 'köklü dönüşüm',
+      'complete transformation': 'tam dönüşüm',
+      'economic transformation': 'ekonomik dönüşüm'
+    }
+  },
+  {
+    id: 'transformationally',
+    word: 'Transformationally',
+    pos: 'adverb',
+    meaning: 'Dönüşümsel olarak',
+    definition: 'In a way that results in a change from one thing into another.',
+    ipa: '/ˌtrænsfəˈmeɪʃnəli/',
+    examples: ['Transformationally speaking, the project was a huge success.'],
+    exampleTranslations: ['Dönüşümsel açıdan konuşursak, proje büyük bir başarıydı.'],
+    level: 'upper-intermediate',
+    collocations: ['transformationally significant', 'think transformationally', 'change transformationally'],
+    collocationMeanings: {
+      'transformationally significant': 'dönüşümsel olarak anlamlı',
+      'think transformationally': 'dönüşümsel düşünmek',
+      'change transformationally': 'dönüşümsel olarak değişmek'
+    }
+  },
+
+  // --- EASILY CONFUSED SENSE VERBS (UNIT 8) ---
+  {
+    id: 'see',
+    word: 'See',
+    pos: 'verb',
+    meaning: 'Görmek',
+    definition: 'To notice someone or something using your eyes.',
+    ipa: '/siː/',
+    examples: ['Can you see who it is?'],
+    exampleTranslations: ['Kimin olduğunu görebiliyor musun?'],
+    level: 'upper-intermediate',
+    collocations: ['see clearly', 'wait and see', 'see the point'],
+    collocationMeanings: {
+      'see clearly': 'net görmek',
+      'wait and see': 'bekleyip görmek',
+      'see the point': 'anlamını/amacını kavramak'
+    }
+  },
+  {
+    id: 'feel',
+    word: 'Feel',
+    pos: 'verb',
+    meaning: 'Hissetmek, dokunmak',
+    definition: 'To touch something with your hand to discover what it is like; to experience an emotion.',
+    ipa: '/fiːl/',
+    examples: ['She felt his head to see if he had a temperature.'],
+    exampleTranslations: ['Ateşi var mı diye kafasına dokundu/hissetmeye çalıştı.'],
+    level: 'upper-intermediate',
+    collocations: ['feel like', 'feel free', 'feel guilty'],
+    collocationMeanings: {
+      'feel like': 'gibi hissetmek / canı istemek',
+      'feel free': 'çekinmemek',
+      'feel guilty': 'suçlu hissetmek'
+    }
+  },
+  {
+    id: 'hear',
+    word: 'Hear',
+    pos: 'verb',
+    meaning: 'Duymak',
+    definition: 'To realise that someone or something is making a sound.',
+    ipa: '/hɪə(r)/',
+    examples: ["I can't hear the radio."],
+    exampleTranslations: ['Radyoyu duyamıyorum.'],
+    level: 'upper-intermediate',
+    collocations: ['hear about', 'hear from someone', 'hear voices'],
+    collocationMeanings: {
+      'hear about': '...hakkında bir şeyler duymak',
+      'hear from someone': 'birinden haber almak',
+      'hear voices': 'sesler duymak'
+    }
+  },
+  {
+    id: 'listen',
+    word: 'Listen',
+    pos: 'verb',
+    meaning: 'Dinlemek',
+    definition: 'To pay attention to a sound.',
+    ipa: '/ˈlɪsn/',
+    examples: ['I listen to a podcast about science.'],
+    exampleTranslations: ['Bilim hakkında bir podcast dinliyorum.'],
+    level: 'upper-intermediate',
+    collocations: ['listen carefully', 'listen to music', 'listen out for'],
+    collocationMeanings: {
+      'listen carefully': 'dikkatlice dinlemek',
+      'listen to music': 'müzik dinlemek',
+      'listen out for': '...için kulak kabartmak'
+    }
+  },
+  {
+    id: 'look',
+    word: 'Look',
+    pos: 'verb',
+    meaning: 'Bakmak',
+    definition: 'To direct your eyes towards someone so you can see them.',
+    ipa: '/lʊk/',
+    examples: ['Look over there - I think that’s an eagle.'],
+    exampleTranslations: ['Şuraya bak; sanırım o bir kartal.'],
+    level: 'upper-intermediate',
+    collocations: ['look at', 'look for', 'look like'],
+    collocationMeanings: {
+      'look at': '...a bakmak',
+      'look for': 'aramak',
+      'look like': 'benzemek'
+    }
+  },
+  {
+    id: 'touch',
+    word: 'Touch',
+    pos: 'verb',
+    meaning: 'Dokunmak',
+    definition: 'To put your hand or part of your body on someone.',
+    ipa: '/tʌtʃ/',
+    examples: ['Anna reached out and touched the figure’s shoulder.'],
+    exampleTranslations: ['Anna elini uzattı ve figürün omzuna dokundu.'],
+    level: 'upper-intermediate',
+    collocations: ['get in touch', 'keep in touch', 'touch base'],
+    collocationMeanings: {
+      'get in touch': 'iletişime geçmek',
+      'keep in touch': 'bağlantıda kalmak',
+      'touch base': 'irtibata geçmek'
+    }
+  },
+  {
+    id: 'watch',
+    word: 'Watch',
+    pos: 'verb',
+    meaning: 'İzlemek',
+    definition: 'To look at someone for a period of time.',
+    ipa: '/wɒtʃ/',
+    examples: ['I’m going to stay in and watch TV.'],
+    exampleTranslations: ['Evde kalıp TV izleyeceğim.'],
+    level: 'upper-intermediate',
+    collocations: ['watch out', 'watch a movie', 'keep a watch'],
+    collocationMeanings: {
+      'watch out': 'dikkat etmek',
+      'watch a movie': 'film izlemek',
+      'keep a watch': 'gözetlemek'
+    }
+  },
+
+  // --- CRIME (UNIT 8) ---
+  {
+    id: 'arrest',
+    word: 'Arrest',
+    pos: 'verb/noun',
+    meaning: 'Tutuklamak, tutuklama',
+    definition: 'When the police take someone because they committed a crime.',
+    ipa: '/əˈrest/',
+    examples: ['Two suspects were arrested.'],
+    exampleTranslations: ['İki şüpheli tutuklandı.'],
+    level: 'upper-intermediate',
+    collocations: ['under arrest', 'make an arrest', 'house arrest'],
+    collocationMeanings: {
+      'under arrest': 'tutuklu',
+      'make an arrest': 'tutuklama yapmak',
+      'house arrest': 'ev hapsi'
+    }
+  },
+  {
+    id: 'blackmail_crime',
+    word: 'Blackmail',
+    pos: 'verb/noun',
+    meaning: 'Şantaj yapmak, şantaj',
+    definition: 'To threaten to tell embarrassing secrets to get money.',
+    ipa: '/ˈblækmeɪl/',
+    examples: ['They used this information to blackmail him.'],
+    exampleTranslations: ['Bu bilgiyi ona şantaj yapmak için kullandılar.'],
+    level: 'upper-intermediate',
+    collocations: ['emotional blackmail', 'attempted blackmail', 'pay blackmail'],
+    collocationMeanings: {
+      'emotional blackmail': 'duygusal şantaj',
+      'attempted blackmail': 'şantaj girişimi',
+      'pay blackmail': 'şantaj bedeli ödemek'
+    }
+  },
+  {
+    id: 'bribe',
+    word: 'Bribe',
+    pos: 'verb/noun',
+    meaning: 'Rüşvet vermek, rüşvet',
+    definition: 'To give money to someone so they do something dishonest or illegal.',
+    ipa: '/braɪb/',
+    examples: ['They tried to bribe city officials.'],
+    exampleTranslations: ['Şehir yetkililerine rüşvet vermeye çalıştılar.'],
+    level: 'upper-intermediate',
+    collocations: ['take a bribe', 'offer a bribe', 'accept a bribe'],
+    collocationMeanings: {
+      'take a bribe': 'rüşvet almak',
+      'offer a bribe': 'rüşvet teklif etmek',
+      'accept a bribe': 'rüşvet kabul etmek'
+    }
+  },
+  {
+    id: 'burglary',
+    word: 'Burglary',
+    pos: 'noun',
+    meaning: 'Hırsızlık (bir binaya girerek)',
+    definition: 'The crime of entering a building illegally in order to steal things.',
+    ipa: '/ˈbɜːɡləri/',
+    examples: ['She was jailed for nine months for burglary.'],
+    exampleTranslations: ['Hırsızlıktan dolayı dokuz ay hapse mahkum edildi.'],
+    level: 'upper-intermediate',
+    collocations: ['commit burglary', 'aggravated burglary', 'burglary rate'],
+    collocationMeanings: {
+      'commit burglary': 'hırsızlık yapmak',
+      'aggravated burglary': 'nitelikli hırsızlık',
+      'burglary rate': 'hırsızlık oranı'
+    }
+  },
+  {
+    id: 'catch_crime',
+    word: 'Catch',
+    pos: 'verb',
+    meaning: 'Yakalamak',
+    definition: 'When the police find someone and arrest them.',
+    ipa: '/kætʃ/',
+    examples: ['I hope the police catch him.'],
+    exampleTranslations: ['Umarım polis onu yakalar.'],
+    level: 'upper-intermediate',
+    collocations: ['catch red-handed', 'catch a thief', 'catch a criminal'],
+    collocationMeanings: {
+      'catch red-handed': 'suçüstü yakalamak',
+      'catch a thief': 'bir hırsız yakalamak',
+      'catch a criminal': 'bir suçlu yakalamak'
+    }
+  },
+  {
+    id: 'charge_crime',
+    word: 'Charge',
+    pos: 'verb/noun',
+    meaning: 'Suçlamak, itham etmek (resmi)',
+    definition: 'To accuse someone officially of a crime.',
+    ipa: '/tʃɑːdʒ/',
+    examples: ['A man has been charged in connection with the theft.'],
+    exampleTranslations: ['Bir adam hırsızlıkla bağlantılı olarak suçlandı.'],
+    level: 'upper-intermediate',
+    collocations: ['charge with murder', 'press charges', 'facing charges'],
+    collocationMeanings: {
+      'charge with murder': 'cinayetle suçlamak',
+      'press charges': 'şikayetçi olmak/dava açmak',
+      'facing charges': 'suçlamalarla karşı karşıya kalmak'
+    }
+  },
+  {
+    id: 'commit_crime',
+    word: 'Commit',
+    pos: 'verb',
+    meaning: 'Suç işlemek',
+    definition: 'To do something illegal or morally wrong.',
+    ipa: '/kəˈmɪt/',
+    examples: ['The panel were concerned he would commit further crimes.'],
+    exampleTranslations: ['Heyet, onun daha fazla suç işlemesinden endişeliydi.'],
+    level: 'upper-intermediate',
+    collocations: ['commit a crime', 'commit suicide', 'commit murder'],
+    collocationMeanings: {
+      'commit a crime': 'suç işlemek',
+      'commit suicide': 'intihar etmek',
+      'commit murder': 'cinayet işlemek'
+    }
+  },
+  {
+    id: 'fraud',
+    word: 'Fraud',
+    pos: 'noun',
+    meaning: 'Dolandırıcılık, sahtekarlık',
+    definition: 'The crime of obtaining money by tricking someone.',
+    ipa: '/frɔːd/',
+    examples: ['Police are investigating a complex fraud case.'],
+    exampleTranslations: ['Polis karmaşık bir dolandırıcılık vakasını araştırıyor.'],
+    level: 'upper-intermediate',
+    collocations: ['credit card fraud', 'identity fraud', 'commit fraud'],
+    collocationMeanings: {
+      'credit card fraud': 'kredi kartı dolandırıcılığı',
+      'identity fraud': 'kimlik sahtekarlığı',
+      'commit fraud': 'dolandırıcılık yapmak'
+    }
+  },
+  {
+    id: 'identity_theft',
+    word: 'Identity theft',
+    pos: 'noun',
+    meaning: 'Kimlik hırsızlığı',
+    definition: 'Stealing information about someone to use their bank account or credit card.',
+    ipa: '/aɪˈdentəti θeft/',
+    examples: ['New laws aims to protect consumers from identity theft.'],
+    exampleTranslations: ['Yeni yasalar tüketicileri kimlik hırsızlığından korumayı hedefliyor.'],
+    level: 'upper-intermediate',
+    collocations: ['victim of identity theft', 'prevent identity theft', 'report identity theft'],
+    collocationMeanings: {
+      'victim of identity theft': 'kimlik hırsızlığı mağduru',
+      'prevent identity theft': 'kimlik hırsızlığını önlemek',
+      'report identity theft': 'kimlik hırsızlığını bildirmek'
+    }
+  },
+  {
+    id: 'innocent',
+    word: 'Innocent',
+    pos: 'adjective',
+    meaning: 'Masum, suçsuz',
+    definition: 'Not guilty of a crime.',
+    ipa: '/ˈɪnəsnt/',
+    examples: ['He claimed he was innocent, despite the evidence against him.'],
+    exampleTranslations: ['Aleyhindeki kanıtlara rağmen masum olduğunu iddia etti.'],
+    level: 'upper-intermediate',
+    collocations: ['prove innocent', 'innocent victim', 'presumed innocent'],
+    collocationMeanings: {
+      'prove innocent': 'suçsuzluğunu kanıtlamak',
+      'innocent victim': 'masum kurban',
+      'presumed innocent': 'masum sayılan'
+    }
+  },
+  {
+    id: 'investigate',
+    word: 'Investigate',
+    pos: 'verb',
+    meaning: 'Araştırmak, soruşturmak',
+    definition: 'To try to find out facts about something in order to learn the truth.',
+    ipa: '/ɪnˈvestɪɡeɪt/',
+    examples: ['A journalist came to investigate the rumours.'],
+    exampleTranslations: ['Söylentileri araştırmak için bir gazeteci geldi.'],
+    level: 'upper-intermediate',
+    collocations: ['thoroughly investigate', 'investigate a crime', 'investigate a case'],
+    collocationMeanings: {
+      'thoroughly investigate': 'derinlemesine araştırmak',
+      'investigate a crime': 'suçu soruşturmak',
+      'investigate a case': 'vakayı incelemek'
+    }
+  },
+  {
+    id: 'punishment',
+    word: 'Punishment',
+    pos: 'noun',
+    meaning: 'Ceza',
+    definition: 'The process of punishing someone, or of being punished.',
+    ipa: '/ˈpʌnɪʃmənt/',
+    examples: ['Perhaps imprisonment isn’t always the best punishment.'],
+    exampleTranslations: ['Belki hapis cezası her zaman en iyi ceza değildir.'],
+    level: 'upper-intermediate',
+    collocations: ['capital punishment', 'severe punishment', 'escape punishment'],
+    collocationMeanings: {
+      'capital punishment': 'idam cezası',
+      'severe punishment': 'ağır ceza',
+      'escape punishment': 'cezadan kurtulmak'
+    }
+  },
+  {
+    id: 'question_crime',
+    word: 'Question',
+    pos: 'verb/noun',
+    meaning: 'Sorgulamak, soru',
+    definition: 'To ask someone questions formally or officially.',
+    ipa: '/ˈkwestʃən/',
+    examples: ['Police are keen to question the suspect.'],
+    exampleTranslations: ['Polis şüpheliyi sorgulamaya hevesli.'],
+    level: 'upper-intermediate',
+    collocations: ['question a suspect', 'call into question', 'beyond question'],
+    collocationMeanings: {
+      'question a suspect': 'şüpheliyi sorgulamak',
+      'call into question': 'sorgulamak/şüphe uyandırmak',
+      'beyond question': 'tartışmasız'
+    }
+  },
+  {
+    id: 'robbery',
+    word: 'Robbery',
+    pos: 'noun',
+    meaning: 'Soygun',
+    definition: 'Taking money or property illegally, often by using threats or violence.',
+    ipa: '/ˈrɒbəri/',
+    examples: ['Over £10,000 was stolen in the robbery.'],
+    exampleTranslations: ['Soygun sırasında 10.000 sterlinden fazla para çalındı.'],
+    level: 'upper-intermediate',
+    collocations: ['armed robbery', 'bank robbery', 'daylight robbery'],
+    collocationMeanings: {
+      'armed robbery': 'silahlı soygun',
+      'bank robbery': 'banka soygunu',
+      'daylight robbery': 'gün ortası soygunu / fahiş fiyat'
+    }
+  },
+  {
+    id: 'sentence_crime',
+    word: 'Sentence',
+    pos: 'verb/noun',
+    meaning: 'Mahkum etmek, ceza vermek, mahkumiyet',
+    definition: 'When a judge officially states what someone’s punishment will be.',
+    ipa: '/ˈsentəns/',
+    examples: ['He was sentenced to 15 years in prison.'],
+    exampleTranslations: ['15 yıl hapis cezasına çarptırıldı.'],
+    level: 'upper-intermediate',
+    collocations: ['life sentence', 'prison sentence', 'death sentence'],
+    collocationMeanings: {
+      'life sentence': 'müebbet hapis',
+      'prison sentence': 'hapis cezası',
+      'death sentence': 'ölüm cezası'
+    }
+  },
+  {
+    id: 'witness',
+    word: 'Witness',
+    pos: 'noun/verb',
+    meaning: 'Tanık, şahit, şahit olmak',
+    definition: 'Someone who sees a crime, accident or other event happen.',
+    ipa: '/ˈwɪtnəs/',
+    examples: ['A witness reported seeing two men leave.'],
+    exampleTranslations: ['Bir tanık iki adamın ayrıldığını gördüğünü bildirdi.'],
+    level: 'upper-intermediate',
+    collocations: ['eye witness', 'witness a crime', 'reliable witness'],
+    collocationMeanings: {
+      'eye witness': 'görgü tanığı',
+      'witness a crime': 'suça tanık olmak',
+      'reliable witness': 'güvenilir tanık'
+    }
+  },
+
+  // --- DEPENDENT PREPOSITIONS: VERBS (UNIT 9) ---
+  {
+    id: 'adhere_to',
+    word: 'Adhere to',
+    pos: 'verb + preposition',
+    meaning: 'Bağlı kalmak, uymak (kural/kanun)',
+    definition: 'To obey a rule, law, agreement etc.',
+    ipa: '/ədˈhɪə(r) tu/',
+    examples: ['You must strictly adhere to the terms of the contract.'],
+    exampleTranslations: ['Sözleşme şartlarına sıkı sıkıya uymalısınız.'],
+    level: 'upper-intermediate',
+    collocations: ['adhere to rules', 'adhere to standards', 'strictly adhere to'],
+    collocationMeanings: {
+      'adhere to rules': 'kurallara uymak',
+      'adhere to standards': 'standartlara bağlı kalmak',
+      'strictly adhere to': 'sıkı sıkıya bağlı kalmak'
+    }
+  },
+  {
+    id: 'apologise_for',
+    word: 'Apologise for',
+    pos: 'verb + preposition',
+    meaning: '...için özür dilemek',
+    definition: 'To tell someone that you are sorry for doing something wrong.',
+    ipa: '/əˈpɒlədʒaɪz fɔː(r)/',
+    examples: ['She apologised for arriving so late.'],
+    exampleTranslations: ['Çok geç kaldığı için özür diledi.'],
+    level: 'upper-intermediate',
+    collocations: ['apologise for delay', 'apologise for mistake', 'sincerely apologise for'],
+    collocationMeanings: {
+      'apologise for delay': 'gecikme için özür dilemek',
+      'apologise for mistake': 'hata için özür dilemek',
+      'sincerely apologise for': 'içtenlikle özür dilemek'
+    }
+  },
+  {
+    id: 'argue_about',
+    word: 'Argue about',
+    pos: 'verb + preposition',
+    meaning: '...hakkında tartışmak',
+    definition: 'To speak to each other in an angry way because you disagree.',
+    ipa: "/ˈɑː(r)ɡju əˈbaʊt/",
+    examples: ['They used to argue about who would pick up the kids.'],
+    exampleTranslations: ['Çocukları kimin alacağı konusunda tartışırlardı.'],
+    level: 'upper-intermediate',
+    collocations: ['argue about money', 'argue about politics', 'argue about details'],
+    collocationMeanings: {
+      'argue about money': 'para hakkında tartışmak',
+      'argue about politics': 'siyaset üzerine tartışmak',
+      'argue about details': 'ayrıntılar için tartışmak'
+    }
+  },
+  {
+    id: 'complain_about',
+    word: 'Complain about',
+    pos: 'verb + preposition',
+    meaning: '...hakkında şikayet etmek',
+    definition: 'To say that you are not satisfied with something.',
+    ipa: '/kəmˈpleɪn əˈbaʊt/',
+    examples: ['What are you complaining about?'],
+    exampleTranslations: ['Neden şikayet ediyorsun?'],
+    level: 'upper-intermediate',
+    collocations: ['complain about noise', 'complain about service', 'bitterly complain about'],
+    collocationMeanings: {
+      'complain about noise': 'gürültüden şikayet etmek',
+      'complain about service': 'hizmetten şikayetçi olmak',
+      'bitterly complain about': 'acı acı şikayet etmek'
+    }
+  },
+  {
+    id: 'consent_to',
+    word: 'Consent to',
+    pos: 'verb + preposition',
+    meaning: 'Razı olmak, onay vermek',
+    definition: 'To give permission to do something.',
+    ipa: '/kənˈsent tu/',
+    examples: ['The parents would not consent to the treatment.'],
+    exampleTranslations: ['Ebeveynler tedaviye onay vermedi.'],
+    level: 'upper-intermediate',
+    collocations: ['written consent to', 'refuse consent to', 'informed consent to'],
+    collocationMeanings: {
+      'written consent to': 'yazılı onay',
+      'refuse consent to': 'onay vermeyi reddetmek',
+      'informed consent to': 'bilgilendirilmiş onam'
+    }
+  },
+  {
+    id: 'insist_on',
+    word: 'Insist on',
+    pos: 'verb + preposition',
+    meaning: '...da ısrar etmek',
+    definition: 'To say very firmly that something must happen or must be done.',
+    ipa: '/ɪnˈsɪst ɒn/',
+    examples: ['Some companies insist on regular medical checks.'],
+    exampleTranslations: ['Bazı şirketler personelin düzenli sağlık kontrolünden geçmesinde ısrar ediyor.'],
+    level: 'upper-intermediate',
+    collocations: ['insist on payment', 'insist on quality', 'quietly insist on'],
+    collocationMeanings: {
+      'insist on payment': 'ödemede ısrar etmek',
+      'insist on quality': 'kalitede diretmek',
+      'quietly insist on': 'sessizce ısrar etmek'
+    }
+  },
+  {
+    id: 'thank_for',
+    word: 'Thank for',
+    pos: 'verb + preposition',
+    meaning: '...için teşekkür etmek',
+    definition: 'To tell someone that you are grateful for something.',
+    ipa: '/θæŋk fɔː(r)/',
+    examples: ["Firstly, I'd like to thank you all for coming here today."],
+    exampleTranslations: ['Öncelikle bugün buraya geldiğiniz için hepinize teşekkür etmek isterim.'],
+    level: 'upper-intermediate',
+    collocations: ['thank for support', 'thank for help', 'thank for hospitality'],
+    collocationMeanings: {
+      'thank for support': 'destek için teşekkür etmek',
+      'thank for help': 'yardım için teşekkür etmek',
+      'thank for hospitality': 'misafirperverlik için teşekkür etmek'
+    }
+  },
+
+  // --- SCIENCE (UNIT 9) ---
+  {
+    id: 'analysis_science',
+    word: 'Analysis',
+    pos: 'noun',
+    meaning: 'Analiz, çözümleme',
+    definition: 'A process of studying or examining something in order to understand it.',
+    ipa: '/əˈnæləsɪs/',
+    examples: ['The report included an analysis of customer complaints.'],
+    exampleTranslations: ['Rapor, müşteri şikayetlerinin bir analizini içeriyordu.'],
+    level: 'upper-intermediate',
+    collocations: ['data analysis', 'statistical analysis', 'detailed analysis'],
+    collocationMeanings: {
+      'data analysis': 'veri analizi',
+      'statistical analysis': 'istatistiksel analiz',
+      'detailed analysis': 'detaylı analiz'
+    }
+  },
+  {
+    id: 'data_science',
+    word: 'Data',
+    pos: 'noun',
+    meaning: 'Veri',
+    definition: 'Facts or information used for making calculations or decisions.',
+    ipa: '/ˈdeɪtə/',
+    examples: ['We have collected data from over 200,000 people.'],
+    exampleTranslations: ['200.000’den fazla kişiden veri topladık.'],
+    level: 'upper-intermediate',
+    collocations: ['raw data', 'collect data', 'analyze data'],
+    collocationMeanings: {
+      'raw data': 'işlenmemiş veri',
+      'collect data': 'veri toplamak',
+      'analyze data': 'verileri analiz etmek'
+    }
+  },
+  {
+    id: 'evidence_science',
+    word: 'Evidence',
+    pos: 'noun',
+    meaning: 'Kanıt, delil',
+    definition: 'Facts or signs that make you believe something is true.',
+    ipa: '/ˈevɪdəns/',
+    examples: ['There was no evidence to support the claim.'],
+    exampleTranslations: ['İddiayı destekleyecek hiçbir kanıt yoktu.'],
+    level: 'upper-intermediate',
+    collocations: ['clear evidence', 'scientific evidence', 'lack of evidence'],
+    collocationMeanings: {
+      'clear evidence': 'açık kanıt',
+      'scientific evidence': 'bilimsel kanıt',
+      'lack of evidence': 'kanıt yetersizliği'
+    }
+  },
+  {
+    id: 'researcher',
+    word: 'Researcher',
+    pos: 'noun',
+    meaning: 'Araştırmacı',
+    definition: 'Someone who studies something carefully to discover new information.',
+    ipa: '/rɪˈsɜː(r)tʃə(r)/',
+    examples: ['According to researchers, nine out of ten people are at risk.'],
+    exampleTranslations: ['Araştırmacılara göre, on kişiden dokuzu risk altında.'],
+    level: 'upper-intermediate',
+    collocations: ['leading researcher', 'independent researcher', 'university researcher'],
+    collocationMeanings: {
+      'leading researcher': 'önde gelen araştırmacı',
+      'independent researcher': 'bağımsız araştırmacı',
+      'university researcher': 'üniversite araştırmacısı'
+    }
+  },
+  {
+    id: 'theory_science',
+    word: 'Theory',
+    pos: 'noun',
+    meaning: 'Teori, kuram',
+    definition: 'Ideas that explain how or why something happens.',
+    ipa: '/ˈθɪəri/',
+    examples: ['One theory is that people are directly influenced by their peers.'],
+    exampleTranslations: ['Bir teoriye göre insanlar akranlarından etkileniyor.'],
+    level: 'upper-intermediate',
+    collocations: ['scientific theory', 'put into theory', 'conspiracy theory'],
+    collocationMeanings: {
+      'scientific theory': 'bilimsel teori',
+      'put into theory': 'kuramsallaştırmak',
+      'conspiracy theory': 'komplo teorisi'
+    }
+  },
+
+  // --- ADVERTISING (UNIT 9) ---
+  {
+    id: 'advertising_campaign',
+    word: 'Advertising campaign',
+    pos: 'noun',
+    meaning: 'Reklam kampanyası',
+    definition: 'A series of advertisements that share a single idea or theme.',
+    ipa: '/ˈædvə(r)ˌtaɪzɪŋ kæmˈpeɪn/',
+    examples: ['This poster is part of our new advertising campaign.'],
+    exampleTranslations: ['Bu afiş yeni reklam kampanyamızın bir parçası.'],
+    level: 'upper-intermediate',
+    collocations: ['launch a campaign', 'successful campaign', 'global campaign'],
+    collocationMeanings: {
+      'launch a campaign': 'kampanya başlatmak',
+      'successful campaign': 'başarılı kampanya',
+      'global campaign': 'küresel kampanya'
+    }
+  },
+  {
+    id: 'brand',
+    word: 'Brand',
+    pos: 'noun',
+    meaning: 'Marka',
+    definition: 'A product or group of products that has its own name and is made by one company.',
+    ipa: '/brænd/',
+    examples: ['I’ve used the same brand of toothpaste for 40 years!'],
+    exampleTranslations: ['40 yıldır aynı marka diş macununu kullanıyorum!'],
+    level: 'upper-intermediate',
+    collocations: ['brand identity', 'brand awareness', 'leading brand'],
+    collocationMeanings: {
+      'brand identity': 'marka kimliği',
+      'brand awareness': 'marka bilinirliği',
+      'leading brand': 'lider marka'
+    }
+  },
+  {
+    id: 'consumer',
+    word: 'Consumer',
+    pos: 'noun',
+    meaning: 'Tüketici',
+    definition: 'Someone who buys or uses goods and services.',
+    ipa: '/kənˈsjuːmə(r)/',
+    examples: ["She's got a good understanding of what consumers want."],
+    exampleTranslations: ['Tüketicilerin ne istediğini iyi anlıyor.'],
+    level: 'upper-intermediate',
+    collocations: ['consumer behavior', 'consumer rights', 'consumer spending'],
+    collocationMeanings: {
+      'consumer behavior': 'tüketici davranışı',
+      'consumer rights': 'tüketici hakları',
+      'consumer spending': 'tüketici harcaması'
+    }
+  },
+  {
+    id: 'endorse',
+    word: 'Endorse',
+    pos: 'verb',
+    meaning: 'Desteklemek, (reklamda) tanıtmak/onaylamak',
+    definition: 'To express support for someone or something, especially in public.',
+    ipa: '/ɪnˈdɔː(r)s/',
+    examples: ['They hired a famous musician to endorse their new range.'],
+    exampleTranslations: ['Yeni ürünlerini tanıtması/desteklemesi için ünlü bir müzisyen tuttular.'],
+    level: 'upper-intermediate',
+    collocations: ['officially endorse', 'celebrity endorse', 'strongly endorse'],
+    collocationMeanings: {
+      'officially endorse': 'resmen onaylamak/tanıtmak',
+      'celebrity endorse': 'ünlü birinin reklamında oynaması',
+      'strongly endorse': 'şiddetle desteklemek'
+    }
+  },
+  {
+    id: 'high_profile',
+    word: 'High-profile',
+    pos: 'adjective',
+    meaning: 'Göz önünde olan, dikkat çeken',
+    definition: 'Often seen in public, mentioned in newspapers or television.',
+    ipa: "/haɪ ˈprəʊfaıl/",
+    examples: ['They usually feature high-profile celebrities in their advertising.'],
+    exampleTranslations: ['Reklamlarında genellikle göz önünde olan ünlüleri kullanıyorlar.'],
+    level: 'upper-intermediate',
+    collocations: ['high-profile case', 'high-profile event', 'high-profile role'],
+    collocationMeanings: {
+      'high-profile case': 'çok ses getiren dava',
+      'high-profile event': 'önemli/dikkat çeken etkinlik',
+      'high-profile role': 'ön plandaki rol'
+    }
+  },
+  {
+    id: 'marketing_strategy',
+    word: 'Marketing strategy',
+    pos: 'noun',
+    meaning: 'Pazarlama stratejisi',
+    definition: 'A plan of how to encourage people to buy a product or service.',
+    ipa: "/ˈmɑː(r)kıtın ˈstrætədʒi/",
+    examples: ['Marcus is working on a new marketing strategy.'],
+    exampleTranslations: ['Marcus yeni bir pazarlama stratejisi üzerinde çalışıyor.'],
+    level: 'upper-intermediate',
+    collocations: ['effective marketing strategy', 'global marketing strategy', 'develop a strategy'],
+    collocationMeanings: {
+      'effective marketing strategy': 'etkili pazarlama stratejisi',
+      'global marketing strategy': 'küresel pazarlama stratejisi',
+      'develop a strategy': 'strateji geliştirmek'
+    }
+  },
+  {
+    id: 'target_market',
+    word: 'Target market',
+    pos: 'noun',
+    meaning: 'Hedef kitle/pazar',
+    definition: 'The group of people that a product or service is aimed at.',
+    ipa: "/ˈtɑː(r)ɡit ˈmɑː(r)kıt/",
+    examples: ['The target market is men over the age of 65.'],
+    exampleTranslations: ['Hedef kitle 65 yaş üstü erkekler.'],
+    level: 'upper-intermediate',
+    collocations: ['identify target market', 'reach target market', 'specific target market'],
+    collocationMeanings: {
+      'identify target market': 'hedef kitleyi belirlemek',
+      'reach target market': 'hedef kitleye ulaşmak',
+      'specific target market': 'belirli hedef kitle'
+    }
+  },
+  {
+    id: 'trend_advertising',
+    word: 'Trend',
+    pos: 'noun',
+    meaning: 'Akım, eğilim, trend',
+    definition: 'A gradual development or change in a situation.',
+    ipa: '/trend/',
+    examples: ["We've seen a trend towards veganism in the last few years."],
+    exampleTranslations: ['Son birkaç yılda veganlığa doğru bir akım/eğilim gördük.'],
+    level: 'upper-intermediate',
+    collocations: ['follow a trend', 'set a trend', 'growing trend'],
+    collocationMeanings: {
+      'follow a trend': 'akımı takip etmek',
+      'set a trend': 'akım başlatmak',
+      'growing trend': 'büyüyen eğilim'
+    }
+  },
+
+  // --- TRADITIONAL MEDIA (UNIT 10) ---
+  {
+    id: 'biased',
+    word: 'Biased',
+    pos: 'adjective',
+    meaning: 'Taraflı, önyargılı',
+    definition: 'Preferring one person, thing, or idea to another in an unfair way.',
+    ipa: '/ˈbaɪəst/',
+    examples: ['The salary structure was biased against women.'],
+    exampleTranslations: ['Maaş yapısı kadınlara karşı taraflıydı.'],
+    level: 'upper-intermediate',
+    collocations: ['heavily biased', 'politically biased', 'biased reporting'],
+    collocationMeanings: {
+      'heavily biased': 'aşırı taraflı',
+      'politically biased': 'siyasi açıdan taraflı',
+      'biased reporting': 'yanlı habercilik'
+    }
+  },
+  {
+    id: 'broadsheet',
+    word: 'Broadsheet',
+    pos: 'noun',
+    meaning: 'Ciddi gazete (büyük boy)',
+    definition: 'A large newspaper considered to be more serious than smaller newspapers.',
+    ipa: '/ˈbrɔːdʃiːt/',
+    examples: ["I'd rather read a broadsheet, but they're just too big to carry."],
+    exampleTranslations: ['Ciddi (büyük boy) gazete okumayı tercih ederim ama taşımak için çok büyükler.'],
+    level: 'upper-intermediate',
+    collocations: ['read a broadsheet', 'broadsheet newspaper', 'broadsheet editor'],
+    collocationMeanings: {
+      'read a broadsheet': 'ciddi gazete okumak',
+      'broadsheet newspaper': 'büyük boy gazete',
+      'broadsheet editor': 'broadsheet editörü'
+    }
+  },
+  {
+    id: 'coverage_media',
+    word: 'Coverage',
+    pos: 'noun',
+    meaning: 'Yayın, haber bülteni kapsamı',
+    definition: 'The way news is reported on television, radio or newspapers.',
+    ipa: '/ˈkʌv(ə)rɪdʒ/',
+    examples: ['Coverage of the cup final will begin after the news.'],
+    exampleTranslations: ['Kupa finalinin yayını haberlerden sonra başlayacak.'],
+    level: 'upper-intermediate',
+    collocations: ['media coverage', 'extensive coverage', 'live coverage'],
+    collocationMeanings: {
+      'media coverage': 'medyada yer bulma/yayın',
+      'extensive coverage': 'kapsamlı yayın',
+      'live coverage': 'canlı yayın'
+    }
+  },
+  {
+    id: 'editor_media',
+    word: 'Editor',
+    pos: 'noun',
+    meaning: 'Editör, yazı işleri müdürü',
+    definition: 'A person who is in charge of a newspaper or magazine.',
+    ipa: '/ˈedɪtə(r)/',
+    examples: ["She's currently the editor of the Los Angeles Times."],
+    exampleTranslations: ['Şu an Los Angeles Times’ın editörü.'],
+    level: 'upper-intermediate',
+    collocations: ['chief editor', 'news editor', 'letter to the editor'],
+    collocationMeanings: {
+      'chief editor': 'genel yayın yönetmeni',
+      'news editor': 'haber müdürü',
+      'letter to the editor': 'editöre mektup'
+    }
+  },
+  {
+    id: 'headline_media',
+    word: 'Headline',
+    pos: 'noun',
+    meaning: 'Manşet, başlık',
+    definition: 'The title of a newspaper story that is printed in large letters.',
+    ipa: '/ˈhedˌlaɪn/',
+    examples: ["Didn't you see the headlines? They're calling a new election."],
+    exampleTranslations: ['Manşetleri görmedin mi? Yeni seçim çağrısı yapıyorlar.'],
+    level: 'upper-intermediate',
+    collocations: ['hit the headlines', 'front-page headline', 'bold headlines'],
+    collocationMeanings: {
+      'hit the headlines': 'manşetlere çıkmak',
+      'front-page headline': 'ana sayfa manşeti',
+      'bold headlines': 'kalın puntolu başlıklar'
+    }
+  },
+  {
+    id: 'source_media',
+    word: 'Source',
+    pos: 'noun',
+    meaning: 'Kaynak',
+    definition: 'Where information comes from.',
+    ipa: '/sɔː(r)s/',
+    examples: ['The journalist refused to reveal his sources.'],
+    exampleTranslations: ['Gazeteci kaynaklarını açıklamayı reddetti.'],
+    level: 'upper-intermediate',
+    collocations: ['reliable source', 'official source', 'anonymous source'],
+    collocationMeanings: {
+      'reliable source': 'güvenilir kaynak',
+      'official source': 'resmi kaynak',
+      'anonymous source': 'isimsiz kaynak'
+    }
+  },
+  {
+    id: 'subjective',
+    word: 'Subjective',
+    pos: 'adjective',
+    meaning: 'Öznel',
+    definition: 'Based on your own feelings and beliefs, not facts.',
+    ipa: '/səbˈdzektɪv/',
+    examples: ["Assessment of performance is completely subjective."],
+    exampleTranslations: ['Performans değerlendirmesi tamamen özneldir.'],
+    level: 'upper-intermediate',
+    collocations: ['subjective view', 'purely subjective', 'subjective opinion'],
+    collocationMeanings: {
+      'subjective view': 'öznel bakış',
+      'purely subjective': 'tamamen öznel',
+      'subjective opinion': 'kişisel görüş'
+    }
+  },
+  {
+    id: 'tabloid',
+    word: 'Tabloid',
+    pos: 'noun',
+    meaning: 'Bulvar gazetesi (magazin ağırlıklı)',
+    definition: 'A small newspaper with lots of pictures, often about famous people.',
+    ipa: '/ˈtæblɔɪd/',
+    examples: ['Tabloids often focus on celebrity news and gossip.'],
+    exampleTranslations: ['Bulvar gazeteleri genellikle ünlü haberlerine ve dedikoduya odaklanır.'],
+    level: 'upper-intermediate',
+    collocations: ['tabloid press', 'read a tabloid', 'tabloid journalism'],
+    collocationMeanings: {
+      'tabloid press': 'magazin basını',
+      'read a tabloid': 'bulvar gazetesi okumak',
+      'tabloid journalism': 'sarı basın/magazin haberciliği'
+    }
+  },
+
+  // --- SOCIAL MEDIA (UNIT 10) ---
+  {
+    id: 'campaign_general',
+    word: 'Campaign',
+    pos: 'noun',
+    meaning: 'Kampanya',
+    definition: 'A series of organised activities designed to achieve a result.',
+    ipa: '/kæmˈpeɪn/',
+    examples: ["The advert is part of the government's healthy eating campaign."],
+    exampleTranslations: ['Reklam, hükümetin sağlıklı beslenme kampanyasının bir parçası.'],
+    level: 'upper-intermediate',
+    collocations: ['election campaign', 'launch a campaign', 'ad campaign'],
+    collocationMeanings: {
+      'election campaign': 'seçim kampanyası',
+      'launch a campaign': 'kampanya başlatmak',
+      'ad campaign': 'reklam kampanyası'
+    }
+  },
+  {
+    id: 'clickbait',
+    word: 'Clickbait',
+    pos: 'noun',
+    meaning: 'Tık tuzağı',
+    definition: 'A link on a website designed to catch attention and encourage people to read on.',
+    ipa: '/ˈklɪk bert/',
+    examples: ["That's clickbait, not real news."],
+    exampleTranslations: ['Bu tık tuzağı, gerçek haber değil.'],
+    level: 'upper-intermediate',
+    collocations: ['clickbait headline', 'avoid clickbait', 'clickbait article'],
+    collocationMeanings: {
+      'clickbait headline': 'tık tuzağı başlık',
+      'avoid clickbait': 'tık tuzaklarından kaçınmak',
+      'clickbait article': 'tık tuzağı makale'
+    }
+  },
+  {
+    id: 'dm_social',
+    word: 'DM',
+    pos: 'verb/noun',
+    meaning: 'Direkt mesaj atmak, direkt mesaj',
+    definition: 'To send a direct message to someone on social media.',
+    ipa: '/diː em/',
+    examples: ['DM me for more details.'],
+    exampleTranslations: ['Daha fazla detay için bana DM atın.'],
+    level: 'upper-intermediate',
+    collocations: ['send a DM', 'check DMs', 'slide into DMs'],
+    collocationMeanings: {
+      'send a DM': 'DM göndermek',
+      'check DMs': 'mesaj kutusunu kontrol etmek',
+      'slide into DMs': 'birine mesajla yürümek/ulaşmak'
+    }
+  },
+  {
+    id: 'follower_social',
+    word: 'Follower',
+    pos: 'noun',
+    meaning: 'Takipçi',
+    definition: 'Someone who receives the updates that another person sends online.',
+    ipa: '/ˈfɒləʊə(r)/',
+    examples: ['The young musician has over 10 million followers.'],
+    exampleTranslations: ['Genç müzisyenin inanılmaz bir şekilde 10 milyon takipçisi var.'],
+    level: 'upper-intermediate',
+    collocations: ['gain followers', 'lose followers', 'active followers'],
+    collocationMeanings: {
+      'gain followers': 'takipçi kazanmak',
+      'lose followers': 'takipçi kaybetmek',
+      'active followers': 'aktif takipçiler'
+    }
+  },
+  {
+    id: 'hashtag_social',
+    word: 'Hashtag',
+    pos: 'noun',
+    meaning: 'Etiket, hashtag',
+    definition: 'A word with the symbol # used in social media to identify subjects of interest.',
+    ipa: '/ˈhæʃ tæɡ/',
+    examples: ["You'll need a more memorable hashtag if you want it to go viral."],
+    exampleTranslations: ['Viral olmasını istiyorsan daha akılda kalıcı bir etikete ihtiyacın olacak.'],
+    level: 'upper-intermediate',
+    collocations: ['trending hashtag', 'use a hashtag', 'popular hashtag'],
+    collocationMeanings: {
+      'trending hashtag': 'trend olan etiket',
+      'use a hashtag': 'etiket kullanmak',
+      'popular hashtag': 'popüler hashtag'
+    }
+  },
+  {
+    id: 'influencer_social',
+    word: 'Influencer',
+    pos: 'noun',
+    meaning: 'Influencer, etkileyici kişi',
+    definition: 'People who use social media to promote products or services.',
+    ipa: '/ˈɪnfluənsə(r)/',
+    examples: ['He is a blogger, model and social media influencer.'],
+    exampleTranslations: ['O bir blogger, model ve sosyal medya influencer’ı.'],
+    level: 'upper-intermediate',
+    collocations: ['social media influencer', 'influencer marketing', 'follow an influencer'],
+    collocationMeanings: {
+      'social media influencer': 'sosyal medya etkileyicisi',
+      'influencer marketing': 'etkileyici pazarlaması',
+      'follow an influencer': 'bir influencer’ı takip etmek'
+    }
+  },
+  {
+    id: 'meme_social',
+    word: 'Meme',
+    pos: 'noun',
+    meaning: 'Meme, mim (internet akımı)',
+    definition: 'An image, video or piece of text that spreads very quickly on the internet.',
+    ipa: '/miːm/',
+    examples: ['That meme with the angry-looking cat always makes me laugh.'],
+    exampleTranslations: ['Kızgın bakan kedili o mim beni her zaman güldürüyor.'],
+    level: 'upper-intermediate',
+    collocations: ['viral meme', 'funny meme', 'create a meme'],
+    collocationMeanings: {
+      'viral meme': 'viral mim',
+      'funny meme': 'komik mim',
+      'create a meme': 'mim oluşturmak'
+    }
+  },
+  {
+    id: 'netiquette',
+    word: 'Netiquette',
+    pos: 'noun',
+    meaning: 'İnternet görgü kuralları',
+    definition: 'The polite way of communicating with other people when using the internet.',
+    ipa: '/ˈneti ket/',
+    examples: ['Should I report that post? It totally goes against netiquette.'],
+    exampleTranslations: ['O paylaşımı bildirmeli miyim? Tamamen internet görgü kurallarına aykırı.'],
+    level: 'upper-intermediate',
+    collocations: ['follow netiquette', 'basic netiquette', 'observe netiquette'],
+    collocationMeanings: {
+      'follow netiquette': 'internet nezaket kurallarına uymak',
+      'basic netiquette': 'temel netiket kuralları',
+      'observe netiquette': 'netiket kurallarını gözetmek'
+    }
+  },
+  {
+    id: 'reach_social',
+    word: 'Reach',
+    pos: 'verb/noun',
+    meaning: 'Ulaşmak, erişim',
+    definition: 'To be seen or heard by people through the media; the extent of this.',
+    ipa: '/riːtʃ/',
+    examples: ['The advertisement should reach an audience of at least 10 million.'],
+    exampleTranslations: ['Reklam en az 10 milyonluk bir kitleye ulaşmalı.'],
+    level: 'upper-intermediate',
+    collocations: ['reach an audience', 'organic reach', 'global reach'],
+    collocationMeanings: {
+      'reach an audience': 'bir kitleye ulaşmak',
+      'organic reach': 'organik erişim',
+      'global reach': 'küresel erişim'
+    }
+  },
+  {
+    id: 'thread_social',
+    word: 'Thread',
+    pos: 'noun',
+    meaning: 'Konu dizisi, tweet dizisi/zinciri',
+    definition: 'A series of messages on a forum or email about a particular subject.',
+    ipa: '/θred/',
+    examples: ['Did you see that thread about places to eat in London?'],
+    exampleTranslations: ['Londra’da yemek yenecek yerler hakkındaki o konu dizisini gördün mü?'],
+    level: 'upper-intermediate',
+    collocations: ['twitter thread', 'message thread', 'follow a thread'],
+    collocationMeanings: {
+      'twitter thread': 'tweet zinciri',
+      'message thread': 'mesaj dizisi',
+      'follow a thread': 'konuyu/diziyi takip etmek'
+    }
+  },
+  {
+    id: 'trending_social',
+    word: 'Trending',
+    pos: 'verb/adjective',
+    meaning: 'Trend olan, gündemde olan',
+    definition: 'To be frequently mentioned or discussed on the internet.',
+    ipa: '/ˈtrendɪŋ/',
+    examples: ['The royal wedding has been trending this morning.'],
+    exampleTranslations: ['Kraliyet düğünü bu sabah gündemdeydi (trend oldu).'],
+    level: 'upper-intermediate',
+    collocations: ['trending topic', 'trending now', 'start trending'],
+    collocationMeanings: {
+      'trending topic': 'popüler konu/başlık',
+      'trending now': 'şu an gündemde',
+      'start trending': 'trend olmaya başlamak'
+    }
+  },
+  {
+    id: 'troll_social',
+    word: 'Troll',
+    pos: 'noun/verb',
+    meaning: 'Trol (provoke eden kişi), trollemek',
+    definition: 'Someone who writes negative comments in order to provoke people.',
+    ipa: '/trəʊl/',
+    examples: ["Don't reply to him - he's obviously a troll."],
+    exampleTranslations: ['Ona cevap verme; belli ki o bir trol.'],
+    level: 'upper-intermediate',
+    collocations: ['internet troll', 'don’t feed the troll', 'troll someone'],
+    collocationMeanings: {
+      'internet troll': 'internet trolü',
+      'don’t feed the troll': 'trolü besleme (cevap verme)',
+      'troll someone': 'birini trollemek'
+    }
+  },
+  {
+    id: 'viral_social',
+    word: 'Viral',
+    pos: 'adjective',
+    meaning: 'Viral (hızla yayılan)',
+    definition: 'Very popular after spreading quickly on the internet.',
+    ipa: '/ˈvaɪrəl/',
+    examples: ['Within a month, her post went viral.'],
+    exampleTranslations: ['Bir ay içinde paylaşımı viral oldu.'],
+    level: 'upper-intermediate',
+    collocations: ['go viral', 'viral video', 'viral marketing'],
+    collocationMeanings: {
+      'go viral': 'internette hızla yayılmak',
+      'viral video': 'viral video',
+      'viral marketing': 'viral pazarlama'
+    }
+  },
+
+  // --- COLLOCATIONS (UNIT 10) ---
+  {
+    id: 'key_factor',
+    word: 'Key factor',
+    pos: 'noun phrase',
+    meaning: 'Anahtar faktör, temel etken',
+    definition: 'Something that significantly affects the outcome of a situation.',
+    ipa: "/kiː ˈfæktə(r)/",
+    examples: ['A key factor behind our success was the initial media coverage.'],
+    exampleTranslations: ['Başarımızın ardındaki temel etken başlangıçtaki medya yayınıydı.'],
+    level: 'upper-intermediate',
+    collocations: ['key factor in', 'identify key factors', 'major key factor'],
+    collocationMeanings: {
+      'key factor in': '...daki anahtar faktör',
+      'identify key factors': 'temel etkenleri belirlemek',
+      'major key factor': 'en önemli anahtar faktör'
+    }
+  },
+  {
+    id: 'online_comment',
+    word: 'Online comment',
+    pos: 'noun phrase',
+    meaning: 'Çevrimiçi yorum',
+    definition: 'Social media posts and written responses to online content.',
+    ipa: "/ˈɒnlaɪn ˈkɒment/",
+    examples: ["We've never received so many online comments about a single article."],
+    exampleTranslations: ['Tek bir makale hakkında hiç bu kadar çok çevrimiçi yorum almamıştık.'],
+    level: 'upper-intermediate',
+    collocations: ['post online comment', 'moderate online comments', 'anonymous online comment'],
+    collocationMeanings: {
+      'post online comment': 'çevrimiçi yorum yazmak',
+      'moderate online comments': 'yorumları denetlemek',
+      'anonymous online comment': 'isimsiz çevrimiçi yorum'
+    }
+  },
+  {
+    id: 'positive_reaction',
+    word: 'Positive reaction',
+    pos: 'noun phrase',
+    meaning: 'Olumlu tepki',
+    definition: 'Responses that indicate people like or agree with something.',
+    ipa: "/ˈpɒzətɪv riˈækʃ(ə)n/",
+    examples: ['That advert was expensive; it had better get a positive reaction!'],
+    exampleTranslations: ['O reklam pahalıydı; olumlu bir tepki alsa iyi olur!'],
+    level: 'upper-intermediate',
+    collocations: ['receive positive reaction', 'generally positive reaction', 'spark positive reaction'],
+    collocationMeanings: {
+      'receive positive reaction': 'olumlu tepki almak',
+      'generally positive reaction': 'genellikle olumlu tepki',
+      'spark positive reaction': 'olumlu tepki uyandırmak'
+    }
+  },
+  {
+    id: 'public_awareness',
+    word: 'Public awareness',
+    pos: 'noun phrase',
+    meaning: 'Kamuoyu farkındalığı',
+    definition: 'The degree to which the population knows about something.',
+    ipa: "/ˈpʌblɪk əˈweə(r)nəs/",
+    examples: ['Advertising campaigns are a good way to raise public awareness.'],
+    exampleTranslations: ['Reklam kampanyaları kamuoyu farkındalığı yaratmak için iyi bir yoldur.'],
+    level: 'upper-intermediate',
+    collocations: ['raise public awareness', 'increase public awareness', 'lack of public awareness'],
+    collocationMeanings: {
+      'raise public awareness': 'kamuoyu farkındalığı yaratmak',
+      'increase public awareness': 'kamuoyu bilincini artırmak',
+      'lack of public awareness': 'kamuoyu farkındalığı eksikliği'
+    }
+  },
+  {
+    id: 'substantial_donation',
+    word: 'Substantial donation',
+    pos: 'noun phrase',
+    meaning: 'Önemli/yüklü miktarda bağış',
+    definition: 'A large amount of money or goods given to an organisation.',
+    ipa: "/səbˈstænʃ(ə)l dəʊˈneɪʃ(ə)n/",
+    examples: ['She made a substantial donation of over £1 million.'],
+    exampleTranslations: ['1 milyon sterlinin üzerinde yüklü bir bağışta bulundu.'],
+    level: 'upper-intermediate',
+    collocations: ['receive substantial donation', 'make substantial donation', 'substantial donation to charity'],
+    collocationMeanings: {
+      'receive substantial donation': 'yüklü bağış almak',
+      'make substantial donation': 'yüklü bağış yapmak',
+      'substantial donation to charity': 'hayır kurumuna büyük bağış'
+    }
+  },
+  {
+    id: 'wider_audience',
+    word: 'Wider audience',
+    pos: 'noun phrase',
+    meaning: 'Daha geniş kitle',
+    definition: 'A greater number of people reached by broadcasting or advertising.',
+    ipa: "/ˈwaɪdə ˈɔːdiəns/",
+    examples: ['Our social media channels help us reach a much wider audience.'],
+    exampleTranslations: ['Sosyal medya kanallarımız çok daha geniş bir kitleye ulaşmamıza yardımcı oluyor.'],
+    level: 'upper-intermediate',
+    collocations: ['reach a wider audience', 'appeal to wider audience', 'target a wider audience'],
+    collocationMeanings: {
+      'reach a wider audience': 'daha geniş kitleye ulaşmak',
+      'appeal to wider audience': 'daha geniş kitleye hitap etmek',
+      'target a wider audience': 'daha geniş kitleyi hedeflemek'
+    }
+  }
 ];
 
 export const getWordsByLevel = (level: Level): VocabularyWord[] => {
