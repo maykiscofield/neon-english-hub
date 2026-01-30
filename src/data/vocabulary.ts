@@ -4941,22 +4941,36 @@ export const vocabularyData: VocabularyWord[] = [
   // --- UPPER-INTERMEDIATE (B2) ---
 
   // --- FEELINGS & PERSONALITY (UNIT 1) ---
-  {
+{
     id: 'awkward',
     word: 'Awkward',
-    pos: 'adjective',
+    pos: 'adj',
     meaning: 'Garip, beceriksiz, rahatsız edici',
-    definition: 'Not comfortable, relaxed, or confident.',
+    definition: 'Not comfortable, relaxed, or confident; difficult to deal with.',
     ipa: '/ˈɔːkwəd/',
-    examples: ["He's always really awkward when meeting new people."],
-    exampleTranslations: ['Yeni insanlarla tanışırken her zaman çok garip/beceriksiz davranır.'],
     level: 'upper-intermediate',
+    wordFamily: [
+      { word: 'awkwardness', pos: 'noun', meaning: 'beceriksizlik, gariplik' },
+      { word: 'awkwardly', pos: 'adverb', meaning: 'beceriksizce, garip bir şekilde' }
+    ],
+    synonyms: [
+      { word: 'Clumsy', meaning: 'Sakar, beceriksiz', pos: 'adj' },
+      { word: 'Uncomfortable', meaning: 'Rahatsız, huzursuz', pos: 'adj' },
+      { word: 'Inelegant', meaning: 'Zarafetten yoksun, kaba', pos: 'adj' }
+    ],
+    antonyms: [
+      { word: 'Graceful', meaning: 'Zarif, nazik', pos: 'adj' },
+      { word: 'Confident', meaning: 'Kendinden emin', pos: 'adj' },
+      { word: 'Comfortable', meaning: 'Rahat, huzurlu', pos: 'adj' }
+    ],
     collocations: ['awkward silence', 'awkward situation', 'feel awkward'],
     collocationMeanings: {
       'awkward silence': 'rahatsız edici sessizlik',
       'awkward situation': 'zor durum/vaziyet',
       'feel awkward': 'mahcup/garip hissetmek'
-    }
+    },
+    examples: ["He's always really awkward when meeting new people."],
+    exampleTranslations: ['Yeni insanlarla tanışırken her zaman çok garip/beceriksiz davranır.']
   },
   {
     id: 'devastated',
