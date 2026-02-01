@@ -1,1013 +1,1560 @@
 import { VocabularyWord, Level } from '@/types/learning';
 
 export const vocabularyData: VocabularyWord[] = [
-  // --- PRE-INTERMEDIATE (A2) ---
+         // --- PRE - INTERMEDIATE (A2) ---
   {
     id: 'relatives_lh',
     word: 'Relatives',
     pos: 'noun',
-    meaning: 'akrabalar',
+    meaning: 'Akrabalar',
     definition: 'Members of your family, especially ones who do not live with you.',
-    ipa: '/ rel. .t vz/',
+    ipa: '/ˈrel.ə.tɪvz/',
     level: 'pre-intermediate',
-    wordFamily: [{ word: 'relation', pos: 'noun', meaning: 'ili ki' }],
-    synonyms: [{ word: 'Relations', meaning: 'akrabalar', pos: 'noun' }],
-    antonyms: [{ word: 'Strangers', meaning: 'yabanc lar', pos: 'noun' }],
+    wordFamily: [
+      { word: 'relation', pos: 'noun', meaning: 'ilişki' },
+      { word: 'relative', pos: 'adj', meaning: 'göreceli' }
+    ],
+    synonyms: [
+      { word: 'Relations', meaning: 'Akrabalar', pos: 'noun' },
+      { word: 'Kin', meaning: 'Hısım, soydaş', pos: 'noun' }
+    ],
+    antonyms: [
+      { word: 'Strangers', meaning: 'Yabancılar', pos: 'noun' }
+    ],
     collocations: ['close relatives', 'distant relatives'],
-    collocationMeanings: { 'close relatives': 'yak n akrabalar', 'distant relatives': 'uzak akrabalar' },
+    collocationMeanings: {
+      'close relatives': 'yakın akrabalar',
+      'distant relatives': 'uzak akrabalar'
+    },
     examples: ['We spent the week visiting relatives.'],
-    exampleTranslations: ['Haftay  akrabalar  ziyaret ederek ge irdik.']
+    exampleTranslations: ['Haftayı akrabaları ziyaret ederek geçirdik.']
   },
   {
     id: 'strangers_lh',
     word: 'Strangers',
     pos: 'noun',
-    meaning: 'yabanc lar',
+    meaning: 'Yabancılar',
     definition: 'People who you do not know.',
-    ipa: '/ stre nd  rz/',
+    ipa: '/ˈstreɪn.dʒərz/',
     level: 'pre-intermediate',
-    wordFamily: [{ word: 'strange', pos: 'adj', meaning: 'garip' }],
-    synonyms: [{ word: 'Unknown people', meaning: 'tan nmayan ki iler', pos: 'noun' }],
-    antonyms: [{ word: 'Friends', meaning: 'arkada lar', pos: 'noun' }],
+    wordFamily: [
+      { word: 'strange', pos: 'adj', meaning: 'garip' },
+      { word: 'strangely', pos: 'adv', meaning: 'garip bir şekilde' }
+    ],
+    synonyms: [
+      { word: 'Unknown people', meaning: 'Tanınmayan kişiler', pos: 'noun' },
+      { word: 'Outsider', meaning: 'Dışarıdan kimse', pos: 'noun' }
+    ],
+    antonyms: [
+      { word: 'Friends', meaning: 'Arkadaşlar', pos: 'noun' },
+      { word: 'Acquaintances', meaning: 'Tanıdıklar', pos: 'noun' }
+    ],
     collocations: ['total stranger', 'stranger danger'],
-    collocationMeanings: { 'total stranger': 'tamamen yabanc ', 'stranger danger': 'yabanc  tehlikesi' },
+    collocationMeanings: {
+      'total stranger': 'tamamen yabancı',
+      'stranger danger': 'yabancı tehlikesi'
+    },
     examples: ['The poster warns children not to talk to strangers.'],
-    exampleTranslations: ['Afi ,  ocuklar  yabanc larla konu mamalar  konusunda uyar yor.']
+    exampleTranslations: ['Afiş, çocukları yabancılarla konuşmamaları konusunda uyarıyor.']
   },
   {
     id: 'colleagues_lh',
     word: 'Colleagues',
     pos: 'noun',
-    meaning: 'meslekta lar, i  arkada lar ',
+    meaning: 'Meslektaşlar, iş arkadaşları',
     definition: 'People who work in the same organization or department as you.',
-    ipa: '/ k l.i  z/',
+    ipa: '/ˈkɒl.iːɡz/',
     level: 'pre-intermediate',
-    wordFamily: [],
-    synonyms: [{ word: 'Co-workers', meaning: 'i  arkada lar ', pos: 'noun' }],
-    antonyms: [{ word: 'Rivals', meaning: 'rakipler', pos: 'noun' }],
+    wordFamily: [
+      { word: 'collegial', pos: 'adj', meaning: 'mesleki dayanışma içeren' }
+    ],
+    synonyms: [
+      { word: 'Co-workers', meaning: 'İş arkadaşları', pos: 'noun' },
+      { word: 'Associates', meaning: 'Ortaklar/İş arkadaşları', pos: 'noun' }
+    ],
+    antonyms: [
+      { word: 'Rivals', meaning: 'Rakipler', pos: 'noun' },
+      { word: 'Opponents', meaning: 'Karşı taraftakiler', pos: 'noun' }
+    ],
     collocations: ['work colleagues', 'former colleagues'],
-    collocationMeanings: { 'work colleagues': 'i  meslekta lar ', 'former colleagues': 'eski meslekta lar' },
+    collocationMeanings: {
+      'work colleagues': 'iş meslektaşları',
+      'former colleagues': 'eski meslektaşlar'
+    },
     examples: ['He is popular with his colleagues.'],
-    exampleTranslations: ['   arkada lar  aras nda pop lerdir.']
+    exampleTranslations: ['İş arkadaşları arasında popülerdir.']
   },
   {
     id: 'confident_lh',
     word: 'Confident',
     pos: 'adjective',
-    meaning: 'kendine g venen',
+    meaning: 'Kendine güvenen',
     definition: 'Someone who believes in their own abilities and so does not feel nervous or frightened.',
-    ipa: '/ k n.f .d nt/',
+    ipa: '/ˈkɒn.fɪ.dənt/',
     level: 'pre-intermediate',
-    wordFamily: [{ word: 'confidence', pos: 'noun', meaning: 'g ven' }],
-    synonyms: [{ word: 'Self-assured', meaning: 'kendinden emin', pos: 'adj' }],
-    antonyms: [{ word: 'Insecure', meaning: 'g vensiz', pos: 'adj' }],
-    collocations: ['feel confident', 'confident person'],
-    collocationMeanings: { 'feel confident': 'kendine g venmek', 'confident person': 'kendinden emin ki i' },
+    wordFamily: [
+      { word: 'confidence', pos: 'noun', meaning: 'güven' },
+      { word: 'confidently', pos: 'adv', meaning: 'güvenle' }
+    ],
+    synonyms: [
+      { word: 'Self-assured', meaning: 'Kendinden emin', pos: 'adj' },
+      { word: 'Certain', meaning: 'Kesin/Emin', pos: 'adj' }
+    ],
+    antonyms: [
+      { word: 'Insecure', meaning: 'Güvensiz', pos: 'adj' },
+      { word: 'Shy', meaning: 'Utangaç', pos: 'adj' }
+    ],
+    collocations: ['feel confident', 'confident person', 'fully confident'],
+    collocationMeanings: {
+      'feel confident': 'kendine güvenmek',
+      'confident person': 'kendinden emin kişi',
+      'fully confident': 'tamamen emin'
+    },
     examples: ['He is confident in his ability to play the piano.'],
-    exampleTranslations: ['Piyano  alma yetene i konusunda kendine g veniyor.']
+    exampleTranslations: ['Piyano çalma yeteneği konusunda kendine güveniyor.']
   },
   {
     id: 'curious_lh',
     word: 'Curious',
     pos: 'adjective',
-    meaning: 'merakl ',
+    meaning: 'Meraklı',
     definition: 'Someone who wants to find out about something.',
-    ipa: '/ kj  .ri. s/',
+    ipa: '/ˈkjʊə.ri.əs/',
     level: 'pre-intermediate',
-    wordFamily: [{ word: 'curiosity', pos: 'noun', meaning: 'merak' }],
-    synonyms: [{ word: 'Inquisitive', meaning: 'merakl ', pos: 'adj' }],
-    antonyms: [{ word: 'Indifferent', meaning: 'ilgisiz', pos: 'adj' }],
-    collocations: ['curious to know', 'curious about'],
-    collocationMeanings: { 'curious to know': 'bilmeye merakl ', 'curious about': 'hakk nda merakl ' },
+    wordFamily: [
+      { word: 'curiosity', pos: 'noun', meaning: 'merak' },
+      { word: 'curiously', pos: 'adv', meaning: 'merakla' }
+    ],
+    synonyms: [
+      { word: 'Inquisitive', meaning: 'Meraklı/Sorgulayıcı', pos: 'adj' },
+      { word: 'Nosy', meaning: 'Başkalarının işine burnunu sokan', pos: 'adj' }
+    ],
+    antonyms: [
+      { word: 'Indifferent', meaning: 'İlgisiz', pos: 'adj' },
+      { word: 'Uninterested', meaning: 'Hevessiz', pos: 'adj' }
+    ],
+    collocations: ['curious to know', 'curious about', 'naturally curious'],
+    collocationMeanings: {
+      'curious to know': 'bilmeye meraklı',
+      'curious about': 'hakkında meraklı',
+      'naturally curious': 'doğuştan meraklı'
+    },
     examples: ["I'm curious to know why she made that decision."],
-    exampleTranslations: ['Neden bu karar  verdi ini merak ediyorum.']
+    exampleTranslations: ['Neden bu kararı verdiğini merak ediyorum.']
   },
   {
     id: 'hard-working_lh',
     word: 'Hard-working',
     pos: 'adjective',
-    meaning: ' al  kan',
+    meaning: 'Çalışkan',
     definition: 'Someone who puts a lot of effort into their work.',
-    ipa: '/ h  d w  .k  /',
+    ipa: '/ˌhɑːdˈwɜː.kɪŋ/',
     level: 'pre-intermediate',
-    wordFamily: [],
-    synonyms: [{ word: 'Diligent', meaning: 'gayretli', pos: 'adj' }, { word: 'Industrious', meaning: ' al  kan', pos: 'adj' }],
-    antonyms: [{ word: 'Lazy', meaning: 'tembel', pos: 'adj' }],
+    wordFamily: [
+      { word: 'work', pos: 'noun/verb', meaning: 'iş/çalışmak' }
+    ],
+    synonyms: [
+      { word: 'Diligent', meaning: 'Gayretli', pos: 'adj' },
+      { word: 'Industrious', meaning: 'Çalışkan/Üretken', pos: 'adj' }
+    ],
+    antonyms: [
+      { word: 'Lazy', meaning: 'Tembel', pos: 'adj' },
+      { word: 'Idle', meaning: 'Aylak', pos: 'adj' }
+    ],
     collocations: ['extremely hard-working', 'hard-working student'],
-    collocationMeanings: { 'extremely hard-working': 'son derece  al  kan', 'hard-working student': ' al  kan   renci' },
+    collocationMeanings: {
+      'extremely hard-working': 'son derece çalışkan',
+      'hard-working student': 'çalışkan öğrenci'
+    },
     examples: ['She was very hard-working and reliable.'],
-    exampleTranslations: [' ok  al  kan ve g venilirdi.']
+    exampleTranslations: ['Çok çalışkan ve güvenilirdi.']
   },
   {
     id: 'independent_lh',
     word: 'Independent',
     pos: 'adjective',
-    meaning: 'ba  ms z,  zg r',
+    meaning: 'Bağımsız, özgür',
     definition: 'Someone who does not depend on other people for help.',
-    ipa: '/  n.d  pen.d nt/',
+    ipa: '/ˌɪn.dɪˈpen.dənt/',
     level: 'pre-intermediate',
-    wordFamily: [{ word: 'independence', pos: 'noun', meaning: 'ba  ms zl k' }],
-    synonyms: [{ word: 'Self-sufficient', meaning: 'kendi kendine yeten', pos: 'adj' }],
-    antonyms: [{ word: 'Dependent', meaning: 'ba  ml ', pos: 'adj' }],
+    wordFamily: [
+      { word: 'independence', pos: 'noun', meaning: 'bağımsızlık' },
+      { word: 'independently', pos: 'adv', meaning: 'bağımsız bir şekilde' }
+    ],
+    synonyms: [
+      { word: 'Self-sufficient', meaning: 'Kendi kendine yeten', pos: 'adj' },
+      { word: 'Autonomous', meaning: 'Özerk', pos: 'adj' }
+    ],
+    antonyms: [
+      { word: 'Dependent', meaning: 'Bağımlı', pos: 'adj' },
+      { word: 'Reliant', meaning: 'Muhtaç', pos: 'adj' }
+    ],
     collocations: ['financially independent', 'independent state'],
-    collocationMeanings: { 'financially independent': 'maddi olarak ba  ms z', 'independent state': 'ba  ms z devlet' },
+    collocationMeanings: {
+      'financially independent': 'maddi olarak bağımsız',
+      'independent state': 'bağımsız devlet'
+    },
     examples: ['Even as a child he was very independent.'],
-    exampleTranslations: [' ocukken bile  ok ba  ms zd .']
+    exampleTranslations: ['Çocukken bile çok bağımsızdı.']
   },
   {
     id: 'sensible_lh',
     word: 'Sensible',
     pos: 'adjective',
-    meaning: 'mant kl , akl  ba  nda',
+    meaning: 'Mantıklı, aklı başında',
     definition: 'Someone who is reasonable and practical.',
-    ipa: '/ sen.s .b l/',
+    ipa: '/ˈsen.sə.bəl/',
     level: 'pre-intermediate',
-    wordFamily: [{ word: 'sense', pos: 'noun', meaning: 'mant k' }],
-    synonyms: [{ word: 'Rational', meaning: 'mant kl ', pos: 'adj' }],
-    antonyms: [{ word: 'Foolish', meaning: 'aptalca', pos: 'adj' }],
-    collocations: ['sensible advice', 'sensible decision'],
-    collocationMeanings: { 'sensible advice': 'mant kl  tavsiye', 'sensible decision': 'ak lc  karar' },
+    wordFamily: [
+      { word: 'sense', pos: 'noun', meaning: 'mantık' },
+      { word: 'sensibly', pos: 'adv', meaning: 'akıllıca' }
+    ],
+    synonyms: [
+      { word: 'Rational', meaning: 'Mantıklı', pos: 'adj' },
+      { word: 'Reasonable', meaning: 'Makul', pos: 'adj' }
+    ],
+    antonyms: [
+      { word: 'Foolish', meaning: 'Aptalca', pos: 'adj' },
+      { word: 'Unreasonable', meaning: 'Mantıksız', pos: 'adj' }
+    ],
+    collocations: ['sensible advice', 'sensible decision', 'sensible option'],
+    collocationMeanings: {
+      'sensible advice': 'mantıklı tavsiye',
+      'sensible decision': 'akılcı karar',
+      'sensible option': 'mantıklı seçenek'
+    },
     examples: ["I don't see how any sensible person could agree with him."],
-    exampleTranslations: ['Akl  ba  nda herhangi birinin ona nas l kat labilece ini anlam yorum.']
+    exampleTranslations: ['Aklı başında herhangi birinin ona nasıl katılabileceğini anlamıyorum.']
   },
   {
     id: 'sociable_lh',
     word: 'Sociable',
     pos: 'adjective',
-    meaning: 'sosyal, arkada  canl s ',
+    meaning: 'Sosyal, arkadaş canlısı',
     definition: 'Someone who is friendly and enjoys being with other people.',
-    ipa: '/ s  .  .b l/',
+    ipa: '/ˈsəʊ.ʃə.bəl/',
     level: 'pre-intermediate',
-    wordFamily: [{ word: 'society', pos: 'noun', meaning: 'toplum' }],
-    synonyms: [{ word: 'Outgoing', meaning: 'canayak n', pos: 'adj' }],
-    antonyms: [{ word: 'Unsociable', meaning: 'so uk/asosyal', pos: 'adj' }],
+    wordFamily: [
+      { word: 'society', pos: 'noun', meaning: 'toplum' },
+      { word: 'socialise', pos: 'verb', meaning: 'sosyalleşmek' }
+    ],
+    synonyms: [
+      { word: 'Outgoing', meaning: 'Canayakın/Dışa dönük', pos: 'adj' },
+      { word: 'Friendly', meaning: 'Arkadaş canlısı', pos: 'adj' }
+    ],
+    antonyms: [
+      { word: 'Unsociable', meaning: 'Soğuk/Asosyal', pos: 'adj' },
+      { word: 'Withdrawn', meaning: 'İçine kapanık', pos: 'adj' }
+    ],
     collocations: ['highly sociable', 'sociable person'],
-    collocationMeanings: { 'highly sociable': 'olduk a sosyal', 'sociable person': 'sosyal ki i' },
+    collocationMeanings: {
+      'highly sociable': 'oldukça sosyal',
+      'sociable person': 'sosyal kişi'
+    },
     examples: ["I'm not feeling very sociable today."],
-    exampleTranslations: ['Bug n pek sosyal hissetmiyorum.']
+    exampleTranslations: ['Bugün pek sosyal hissetmiyorum.']
   },
   {
     id: 'well-organised_lh',
     word: 'Well-organised',
     pos: 'adjective',
-    meaning: 'd zenli, planl ',
+    meaning: 'Düzenli, planlı',
     definition: 'Someone who arranges and plans activities carefully and effectively.',
-    ipa: '/wel    .  .na zd/',
+    ipa: '/ˌwel ˈɔː.ɡə.naɪzd/',
     level: 'pre-intermediate',
-    wordFamily: [{ word: 'organise', pos: 'verb', meaning: 'd zenlemek' }],
-    synonyms: [{ word: 'Methodical', meaning: 'y ntemli', pos: 'adj' }],
-    antonyms: [{ word: 'Disorganised', meaning: 'd zensiz', pos: 'adj' }],
+    wordFamily: [
+      { word: 'organise', pos: 'verb', meaning: 'düzenlemek' },
+      { word: 'organisation', pos: 'noun', meaning: 'organizasyon/düzen' }
+    ],
+    synonyms: [
+      { word: 'Methodical', meaning: 'Yöntemli', pos: 'adj' },
+      { word: 'Efficient', meaning: 'Verimli', pos: 'adj' }
+    ],
+    antonyms: [
+      { word: 'Disorganised', meaning: 'Düzensiz', pos: 'adj' },
+      { word: 'Messy', meaning: 'Dağınık', pos: 'adj' }
+    ],
     collocations: ['well-organised office', 'stay well-organised'],
-    collocationMeanings: { 'well-organised office': 'd zenli ofis', 'stay well-organised': 'd zenli kalmak' },
+    collocationMeanings: {
+      'well-organised office': 'düzenli ofis',
+      'stay well-organised': 'düzenli kalmak'
+    },
     examples: ["He's always so well-organised."],
-    exampleTranslations: ['O her zaman  ok d zenlidir.']
+    exampleTranslations: ['O her zaman çok düzenlidir.']
   },
   {
     id: 'keen_on_lh',
     word: 'Keen on',
     pos: 'adjective + preposition',
-    meaning: 'merakl , d  k n',
+    meaning: 'Meraklı, düşkün',
     definition: 'Wanting to do something, or wanting other people to do something.',
-    ipa: '/ki n  n/',
+    ipa: '/kiːn ɒn/',
     level: 'pre-intermediate',
-    wordFamily: [],
-    synonyms: [{ word: 'Enthusiastic about', meaning: 'hevesli', pos: 'phrase' }],
-    antonyms: [{ word: 'Apathetic', meaning: 'ilgisiz', pos: 'adj' }],
+    wordFamily: [
+      { word: 'keenness', pos: 'noun', meaning: 'heves/istek' }
+    ],
+    synonyms: [
+      { word: 'Enthusiastic about', meaning: 'Hevesli', pos: 'phrase' },
+      { word: 'Eager', meaning: 'İstekli', pos: 'adj' }
+    ],
+    antonyms: [
+      { word: 'Apathetic', meaning: 'İlgisiz', pos: 'adj' },
+      { word: 'Uninterested', meaning: 'İsteksiz', pos: 'adj' }
+    ],
     collocations: ['very keen on', 'not keen on'],
-    collocationMeanings: { 'very keen on': ' ok d  k n', 'not keen on': 's cak bakmamak' },
+    collocationMeanings: {
+      'very keen on': 'çok düşkün',
+      'not keen on': 'sıcak bakmamak'
+    },
     examples: ["The captain wasn't keen on having him in the team."],
-    exampleTranslations: ['Kaptan onu tak mda g rmeye pek hevesli de ildi.']
+    exampleTranslations: ['Kaptan onu takımda görmeye pek hevesli değildi.']
   },
   {
     id: 'involved_in_lh',
     word: 'Involved in',
     pos: 'adjective + preposition',
-    meaning: 'dahil olmak, i inde yer almak',
+    meaning: 'Dahil olmak, içinde yer almak',
     definition: 'Taking part in something.',
-    ipa: '/ n v lvd  n/',
+    ipa: '/ɪnˈvɒlvd ɪn/',
     level: 'pre-intermediate',
-    wordFamily: [{ word: 'involvement', pos: 'noun', meaning: 'kat l m' }],
-    synonyms: [{ word: 'Participating in', meaning: 'kat l mc ', pos: 'phrase' }],
-    antonyms: [{ word: 'Excluded from', meaning: 'd  lanm  ', pos: 'phrase' }],
+    wordFamily: [
+      { word: 'involvement', pos: 'noun', meaning: 'katılım' },
+      { word: 'involve', pos: 'verb', meaning: 'içermek/dahil etmek' }
+    ],
+    synonyms: [
+      { word: 'Participating in', meaning: 'Katılımcı', pos: 'phrase' },
+      { word: 'Engaged in', meaning: 'Uğraşan', pos: 'phrase' }
+    ],
+    antonyms: [
+      { word: 'Excluded from', meaning: 'Dışlanmış', pos: 'phrase' }
+    ],
     collocations: ['deeply involved in', 'get involved in'],
-    collocationMeanings: { 'deeply involved in': 'derinden m dahil', 'get involved in': 'bir  eye dahil olmak' },
+    collocationMeanings: {
+      'deeply involved in': 'derinden müdahil',
+      'get involved in': 'bir şeye dahil olmak'
+    },
     examples: ['Phillip was involved in organising the party.'],
-    exampleTranslations: ['Phillip partiyi organize etme i ine dahil olmu tu.']
+    exampleTranslations: ['Phillip partiyi organize etme işine dahil olmuştu.']
   },
   {
     id: 'responsible_for_lh',
     word: 'Responsible for',
     pos: 'adjective + preposition',
-    meaning: 'sorumlu olmak',
+    meaning: 'Sorumlu olmak',
     definition: 'Being in charge of someone or something.',
-    ipa: '/r  sp n.s .b l f  r/',
+    ipa: '/rɪˈspɒn.sə.bəl fɔːr/',
     level: 'pre-intermediate',
-    wordFamily: [{ word: 'responsibility', pos: 'noun', meaning: 'sorumluluk' }],
-    synonyms: [{ word: 'In charge of', meaning: 'y netiminde', pos: 'phrase' }],
-    antonyms: [{ word: 'Irresponsible', meaning: 'sorumsuz', pos: 'adj' }],
+    wordFamily: [
+      { word: 'responsibility', pos: 'noun', meaning: 'sorumluluk' },
+      { word: 'responsibly', pos: 'adv', meaning: 'sorumlulukla' }
+    ],
+    synonyms: [
+      { word: 'In charge of', meaning: 'Yönetiminde/Başında', pos: 'phrase' },
+      { word: 'Accountable', meaning: 'Hesap verebilir', pos: 'adj' }
+    ],
+    antonyms: [
+      { word: 'Irresponsible', meaning: 'Sorumsuz', pos: 'adj' }
+    ],
     collocations: ['solely responsible for', 'personally responsible for'],
-    collocationMeanings: { 'solely responsible for': 'tek ba  na sorumlu', 'personally responsible for': ' ahsen sorumlu' },
+    collocationMeanings: {
+      'solely responsible for': 'tek başına sorumlu',
+      'personally responsible for': 'şahsen sorumlu'
+    },
     examples: ['The manager is responsible for the general running of the theatre.'],
-    exampleTranslations: ['M d r tiyatronun genel i leyi inden sorumludur.']
+    exampleTranslations: ['Müdür tiyatronun genel işleyişinden sorumludur.']
   },
   {
     id: 'attractive_lh',
     word: 'Attractive',
     pos: 'adjective',
-    meaning: ' ekici, ho ',
+    meaning: 'Çekici, hoş',
     definition: 'Pleasant in some way.',
-    ipa: '/  tr k.t v/',
+    ipa: '/əˈtræk.tɪv/',
     level: 'pre-intermediate',
-    wordFamily: [{ word: 'attraction', pos: 'noun', meaning: 'cazibe' }],
-    synonyms: [{ word: 'Appealing', meaning: ' ekici', pos: 'adj' }, { word: 'Good-looking', meaning: 'yak   kl /g zel', pos: 'adj' }],
-    antonyms: [{ word: 'Ugly', meaning: ' irkin', pos: 'adj' }],
+    wordFamily: [
+      { word: 'attraction', pos: 'noun', meaning: 'cazibe' },
+      { word: 'attract', pos: 'verb', meaning: 'cezbetmek' }
+    ],
+    synonyms: [
+      { word: 'Appealing', meaning: 'Çekici', pos: 'adj' },
+      { word: 'Good-looking', meaning: 'Yakışıklı/Güzel', pos: 'adj' }
+    ],
+    antonyms: [
+      { word: 'Ugly', meaning: 'Çirkin', pos: 'adj' },
+      { word: 'Repulsive', meaning: 'İtici', pos: 'adj' }
+    ],
     collocations: ['physically attractive', 'attractive countryside'],
-    collocationMeanings: { 'physically attractive': 'fiziksel olarak  ekici', 'attractive countryside': 'ho  k rsal manzara' },
+    collocationMeanings: {
+      'physically attractive': 'fiziksel olarak çekici',
+      'attractive countryside': 'hoş kırsal manzara'
+    },
     examples: ["It's a pretty village set in attractive countryside."],
-    exampleTranslations: [' ekici bir k rsal b lgede kurulmu  g zel bir k yd r.']
+    exampleTranslations: ['Çekici bir kırsal bölgede kurulmuş güzel bir köydür.']
   },
   {
     id: 'convenient_lh',
     word: 'Convenient',
     pos: 'adjective',
-    meaning: 'uygun, elveri li',
+    meaning: 'Uygun, elverişli',
     definition: 'Easy to use, or appropriate for a particular purpose.',
-    ipa: '/k n vi .ni. nt/',
+    ipa: '/kənˈviː.ni.ənt/',
     level: 'pre-intermediate',
-    wordFamily: [{ word: 'convenience', pos: 'noun', meaning: 'kolayl k' }],
-    synonyms: [{ word: 'Handy', meaning: 'kullan  l ', pos: 'adj' }],
-    antonyms: [{ word: 'Inconvenient', meaning: 'uygunsuz', pos: 'adj' }],
+    wordFamily: [
+      { word: 'convenience', pos: 'noun', meaning: 'kolaylık' },
+      { word: 'conveniently', pos: 'adv', meaning: 'uygun bir şekilde' }
+    ],
+    synonyms: [
+      { word: 'Handy', meaning: 'Kullanışlı', pos: 'adj' },
+      { word: 'Suitable', meaning: 'Uygun', pos: 'adj' }
+    ],
+    antonyms: [
+      { word: 'Inconvenient', meaning: 'Uygunsuz', pos: 'adj' }
+    ],
     collocations: ['convenient location', 'convenient time'],
-    collocationMeanings: { 'convenient location': 'uygun konum', 'convenient time': 'uygun zaman' },
+    collocationMeanings: {
+      'convenient location': 'uygun konum',
+      'convenient time': 'uygun zaman'
+    },
     examples: ['The hotel was only five minutes from the beach, which was convenient.'],
-    exampleTranslations: ['Otel plaja sadece be  dakika mesafeydi, bu da olduk a uygundu.']
+    exampleTranslations: ['Otel plaja sadece beş dakika mesafeydi, bu da oldukça uygundu.']
   },
   {
     id: 'inconvenient_lh',
     word: 'Inconvenient',
     pos: 'adjective',
-    meaning: 'uygunsuz, zahmetli',
+    meaning: 'Uygunsuz, zahmetli',
     definition: 'Causing difficulties or extra effort.',
-    ipa: '/  n.k n vi .ni. nt/',
+    ipa: '/ˌɪn.kənˈviː.ni.ənt/',
     level: 'pre-intermediate',
-    wordFamily: [{ word: 'convenient', pos: 'adj', meaning: 'uygun' }],
-    synonyms: [{ word: 'Troublesome', meaning: 'zahmetli', pos: 'adj' }],
-    antonyms: [{ word: 'Convenient', meaning: 'uygun', pos: 'adj' }],
+    wordFamily: [
+      { word: 'inconvenience', pos: 'noun', meaning: 'zahmet/zorluk' }
+    ],
+    synonyms: [
+      { word: 'Troublesome', meaning: 'Zahmetli', pos: 'adj' },
+      { word: 'Awkward', meaning: 'Sıkıntılı', pos: 'adj' }
+    ],
+    antonyms: [
+      { word: 'Convenient', meaning: 'Uygun', pos: 'adj' }
+    ],
     collocations: ['highly inconvenient', 'inconvenient truth'],
-    collocationMeanings: { 'highly inconvenient': 'son derece uygunsuz', 'inconvenient truth': 'ac  ger ek' },
+    collocationMeanings: {
+      'highly inconvenient': 'son derece uygunsuz',
+      'inconvenient truth': 'acı gerçek'
+    },
     examples: ['There are no trains today, which is quite inconvenient.'],
-    exampleTranslations: ['Bug n hi  tren yok, bu olduk a uygunsuz (zahmetli) bir durum.']
+    exampleTranslations: ['Bugün hiç tren yok, bu oldukça uygunsuz bir durum.']
   },
   {
     id: 'loud_lh',
     word: 'Loud',
     pos: 'adjective',
-    meaning: 'y ksek sesli',
+    meaning: 'Yüksek sesli',
     definition: 'Used for describing a sound that is strong and very easy to hear.',
-    ipa: '/la d/',
+    ipa: '/laʊd/',
     level: 'pre-intermediate',
-    wordFamily: [{ word: 'loudly', pos: 'adverb', meaning: 'y ksek sesle' }],
-    synonyms: [{ word: 'Noisy', meaning: 'g r lt l ', pos: 'adj' }],
-    antonyms: [{ word: 'Quiet', meaning: 'sessiz', pos: 'adj' }],
-    collocations: ['loud noise', 'loud music'],
-    collocationMeanings: { 'loud noise': 'y ksek ses', 'loud music': 'y ksek sesli m zik' },
+    wordFamily: [
+      { word: 'loudly', pos: 'adv', meaning: 'yüksek sesle' },
+      { word: 'loudness', pos: 'noun', meaning: 'ses yüksekliği' }
+    ],
+    synonyms: [
+      { word: 'Noisy', meaning: 'Gürültülü', pos: 'adj' },
+      { word: 'Blaring', meaning: 'Bangır bangır', pos: 'adj' }
+    ],
+    antonyms: [
+      { word: 'Quiet', meaning: 'Sessiz', pos: 'adj' },
+      { word: 'Soft', meaning: 'Yumuşak (ses)', pos: 'adj' }
+    ],
+    collocations: ['loud noise', 'loud music', 'think out loud'],
+    collocationMeanings: {
+      'loud noise': 'yüksek ses',
+      'loud music': 'yüksek sesli müzik',
+      'think out loud': 'sesli düşünmek'
+    },
     examples: ['There was a loud knocking on the door.'],
-    exampleTranslations: ['Kap da y ksek sesli bir vurma sesi vard .']
+    exampleTranslations: ['Kapıda yüksek sesli bir vurma sesi vardı.']
   },
   {
     id: 'noisy_lh',
     word: 'Noisy',
     pos: 'adjective',
-    meaning: 'g r lt l ',
+    meaning: 'Gürültülü',
     definition: 'Making a lot of noise.',
-    ipa: '/ n  .zi/',
+    ipa: '/ˈnɔɪ.zi/',
     level: 'pre-intermediate',
-    wordFamily: [{ word: 'noise', pos: 'noun', meaning: 'g r lt ' }],
-    synonyms: [{ word: 'Boisterous', meaning: 'g r lt c ', pos: 'adj' }],
-    antonyms: [{ word: 'Quiet', meaning: 'sessiz', pos: 'adj' }, { word: 'Silent', meaning: 'sessiz', pos: 'adj' }],
+    wordFamily: [
+      { word: 'noise', pos: 'noun', meaning: 'gürültü' },
+      { word: 'noisily', pos: 'adv', meaning: 'gürültülü bir şekilde' }
+    ],
+    synonyms: [
+      { word: 'Boisterous', meaning: 'Gürültücü/Şamatacı', pos: 'adj' }
+    ],
+    antonyms: [
+      { word: 'Quiet', meaning: 'Sessiz', pos: 'adj' },
+      { word: 'Silent', meaning: 'Sessiz/Gürültüsüz', pos: 'adj' }
+    ],
     collocations: ['noisy neighbors', 'noisy restaurant'],
-    collocationMeanings: { 'noisy neighbors': 'g r lt l  kom ular', 'noisy restaurant': 'g r lt l  restoran' },
+    collocationMeanings: {
+      'noisy neighbors': 'gürültülü komşular',
+      'noisy restaurant': 'gürültülü restoran'
+    },
     examples: ['Unfortunately we have noisy neighbours.'],
-    exampleTranslations: ['Maalesef g r lt l  kom ular m z var.']
+    exampleTranslations: ['Maalesef gürültülü komşularımız var.']
   },
   {
     id: 'old-fashioned_lh',
     word: 'Old-fashioned',
     pos: 'adjective',
-    meaning: 'eski moda, demode',
+    meaning: 'Eski moda, demode',
     definition: 'No longer modern or fashionable.',
-    ipa: '/   ld f  . nd/',
+    ipa: '/ˌəʊldˈfæʃ.ənd/',
     level: 'pre-intermediate',
-    wordFamily: [],
-    synonyms: [{ word: 'Outdated', meaning: 'g ncelli ini yitirmi ', pos: 'adj' }],
-    antonyms: [{ word: 'Modern', meaning: 'modern', pos: 'adj' }, { word: 'Trendy', meaning: 'moda', pos: 'adj' }],
+    wordFamily: [
+      { word: 'fashion', pos: 'noun', meaning: 'moda' }
+    ],
+    synonyms: [
+      { word: 'Outdated', meaning: 'Güncelliğini yitirmiş', pos: 'adj' },
+      { word: 'Antiquated', meaning: 'Antika/Eski', pos: 'adj' }
+    ],
+    antonyms: [
+      { word: 'Modern', meaning: 'Modern', pos: 'adj' },
+      { word: 'Trendy', meaning: 'Modaya uygun', pos: 'adj' }
+    ],
     collocations: ['old-fashioned briefcase', 'old-fashioned ideas'],
-    collocationMeanings: { 'old-fashioned briefcase': 'eski moda  anta', 'old-fashioned ideas': 'eski moda fikirler' },
+    collocationMeanings: {
+      'old-fashioned briefcase': 'eski moda çanta',
+      'old-fashioned ideas': 'eski moda fikirler'
+    },
     examples: ['Blake was carrying an old-fashioned leather briefcase.'],
-    exampleTranslations: ['Blake eski moda deri bir  anta ta  yordu.']
+    exampleTranslations: ['Blake eski moda deri bir çanta taşıyordu.']
   },
   {
     id: 'rely_on_lh',
     word: 'Rely on',
     pos: 'verb + preposition',
-    meaning: 'g venmek, bel ba lamak',
+    meaning: 'Güvenmek, bel bağlamak',
     definition: 'To trust someone to do something for you.',
-    ipa: '/r  la   n/',
+    ipa: '/rɪˈlaɪ ɒn/',
     level: 'pre-intermediate',
-    wordFamily: [{ word: 'reliable', pos: 'adj', meaning: 'g venilir' }],
-    synonyms: [{ word: 'Depend on', meaning: 'ba l  olmak', pos: 'phrase' }],
-    antonyms: [{ word: 'Distrust', meaning: 'g venmemek', pos: 'verb' }],
+    wordFamily: [
+      { word: 'reliable', pos: 'adj', meaning: 'güvenilir' },
+      { word: 'reliance', pos: 'noun', meaning: 'güven/bağımlılık' }
+    ],
+    synonyms: [
+      { word: 'Depend on', meaning: 'Bağlı olmak', pos: 'phrase' },
+      { word: 'Trust', meaning: 'Güvenmek', pos: 'verb' }
+    ],
+    antonyms: [
+      { word: 'Distrust', meaning: 'Güvenmemek', pos: 'verb' }
+    ],
     collocations: ['heavily rely on', 'can rely on'],
-    collocationMeanings: { 'heavily rely on': 'b y k  l  de bel ba lamak', 'can rely on': 'g venebilirsin' },
+    collocationMeanings: {
+      'heavily rely on': 'büyük ölçüde bel bağlamak',
+      'can rely on': 'güvenebilirsin'
+    },
     examples: ['We can rely on my brother to help us.'],
-    exampleTranslations: ['Bize yard m etmesi i in karde ime g venebiliriz.']
+    exampleTranslations: ['Bize yardım etmesi için kardeşime güvenebiliriz.']
   },
   {
     id: 'fall_in_love_lh',
     word: 'Fall in love',
     pos: 'verb phrase',
-    meaning: 'a  k olmak',
+    meaning: 'Aşık olmak',
     definition: 'To start to love someone.',
-    ipa: '/f  l  n l v/',
+    ipa: '/fɔːl ɪn lʌv/',
     level: 'pre-intermediate',
     wordFamily: [],
-    synonyms: [{ word: 'Fall for', meaning: 'tutulmak', pos: 'phrase' }],
-    antonyms: [{ word: 'Fall out of love', meaning: 'a ktan so umak', pos: 'phrase' }],
+    synonyms: [
+      { word: 'Fall for', meaning: 'Tutulmak', pos: 'phrase' }
+    ],
+    antonyms: [
+      { word: 'Fall out of love', meaning: 'Aşktan soğumak', pos: 'phrase' }
+    ],
     collocations: ['fall in love with', 'quickly fall in love'],
-    collocationMeanings: { 'fall in love with': 'birine a  k olmak', 'quickly fall in love': ' abucak a  k olmak' },
+    collocationMeanings: {
+      'fall in love with': 'birine aşık olmak',
+      'quickly fall in love': 'çabucak aşık olmak'
+    },
     examples: ['Why do we fall in love with one person rather than another?'],
-    exampleTranslations: ['Neden ba kas na de il de bir ki iye a  k oluruz?']
+    exampleTranslations: ['Neden başkasına değil de bir kişiye aşık oluruz?']
   },
   {
     id: 'coach_lh',
     word: 'Coach',
     pos: 'noun',
-    meaning: ' ehirleraras  otob s',
+    meaning: 'Şehirlerarası otobüs',
     definition: 'A long comfortable vehicle for carrying a large number of passengers, especially on long journeys.',
-    ipa: '/k  t /',
+    ipa: '/kəʊtʃ/',
     level: 'pre-intermediate',
     wordFamily: [],
-    synonyms: [{ word: 'Bus', meaning: 'otob s', pos: 'noun' }],
+    synonyms: [
+      { word: 'Bus', meaning: 'Otobüs', pos: 'noun' }
+    ],
     antonyms: [],
     collocations: ['travel by coach', 'luxury coach'],
-    collocationMeanings: { 'travel by coach': ' ehirleraras  otob sle seyahat etmek', 'luxury coach': 'l ks otob s' },
+    collocationMeanings: {
+      'travel by coach': 'otobüsle seyahat etmek',
+      'luxury coach': 'lüks otobüs'
+    },
     examples: ['We travelled to Oxford by coach.'],
-    exampleTranslations: ['Oxford a otob sle seyahat ettik.']
+    exampleTranslations: ['Oxford\'a otobüsle seyahat ettik.']
   },
   {
     id: 'tram_lh',
     word: 'Tram',
     pos: 'noun',
-    meaning: 'tramvay',
+    meaning: 'Tramvay',
     definition: 'A long narrow vehicle that travels along metal tracks in the middle of a street.',
-    ipa: '/tr m/',
+    ipa: '/træm/',
     level: 'pre-intermediate',
     wordFamily: [],
-    synonyms: [{ word: 'Streetcar', meaning: 'tramvay (ABD)', pos: 'noun' }],
+    synonyms: [
+      { word: 'Streetcar', meaning: 'Tramvay (ABD)', pos: 'noun' }
+    ],
     antonyms: [],
     collocations: ['tram tracks', 'ride the tram'],
-    collocationMeanings: { 'tram tracks': 'tramvay raylar ', 'ride the tram': 'tramvaya binmek' },
+    collocationMeanings: {
+      'tram tracks': 'tramvay rayları',
+      'ride the tram': 'tramvaya binmek'
+    },
     examples: ['The city has a tram which you can use to travel around.'],
-    exampleTranslations: [' ehirde gezmek i in kullanabilece iniz bir tramvay var.']
+    exampleTranslations: ['Şehirde gezmek için kullanabileceğiniz bir tramvay var.']
   },
   {
     id: 'dishonest_lh',
     word: 'Dishonest',
     pos: 'adjective',
-    meaning: 'd r st olmayan, sahtekar',
+    meaning: 'Dürüst olmayan, sahtekar',
     definition: 'Willing to do things that are not honest, for example to tell lies or steal things.',
-    ipa: '/d  s n. st/',
+    ipa: '/dɪˈsɒn.ɪst/',
     level: 'pre-intermediate',
-    wordFamily: [{ word: 'honesty', pos: 'noun', meaning: 'd r stl k' }],
-    synonyms: [{ word: 'Deceitful', meaning: 'aldat c ', pos: 'adj' }],
-    antonyms: [{ word: 'Honest', meaning: 'd r st', pos: 'adj' }],
+    wordFamily: [
+      { word: 'honesty', pos: 'noun', meaning: 'dürüstlük' },
+      { word: 'dishonestly', pos: 'adv', meaning: 'namussuzca' }
+    ],
+    synonyms: [
+      { word: 'Deceitful', meaning: 'Aldatıcı', pos: 'adj' },
+      { word: 'Crooked', meaning: 'Düzenbaz', pos: 'adj' }
+    ],
+    antonyms: [
+      { word: 'Honest', meaning: 'Dürüst', pos: 'adj' },
+      { word: 'Trustworthy', meaning: 'Güvenilir', pos: 'adj' }
+    ],
     collocations: ['dishonest behavior', 'dishonest employee'],
-    collocationMeanings: { 'dishonest behavior': 'd r st olmayan davran  ', 'dishonest employee': 'd r st olmayan  al  an' },
+    collocationMeanings: {
+      'dishonest behavior': 'dürüst olmayan davranış',
+      'dishonest employee': 'dürüst olmayan çalışan'
+    },
     examples: ['They admitted that there were some dishonest employees working in the bank.'],
-    exampleTranslations: ['Bankada  al  an baz  d r st olmayan personeller oldu unu kabul ettiler.']
+    exampleTranslations: ['Bankada çalışan bazı dürüst olmayan personeller olduğunu kabul ettiler.']
   },
   {
     id: 'disorganised_lh',
     word: 'Disorganised',
     pos: 'adjective',
-    meaning: 'd zensiz',
+    meaning: 'Düzensiz',
     definition: 'Not arranged according to a clear plan or system.',
-    ipa: '/d s   .  .na zd/',
+    ipa: '/dɪsˈɔː.ɡə.naɪzd/',
     level: 'pre-intermediate',
-    wordFamily: [{ word: 'organise', pos: 'verb', meaning: 'd zenlemek' }],
-    synonyms: [{ word: 'Messy', meaning: 'da  n k', pos: 'adj' }],
-    antonyms: [{ word: 'Well-organised', meaning: 'd zenli', pos: 'adj' }],
+    wordFamily: [
+      { word: 'organise', pos: 'verb', meaning: 'düzenlemek' }
+    ],
+    synonyms: [
+      { word: 'Messy', meaning: 'Dağınık', pos: 'adj' },
+      { word: 'Chaos', meaning: 'Kaotik', pos: 'adj' }
+    ],
+    antonyms: [
+      { word: 'Well-organised', meaning: 'Düzenli', pos: 'adj' },
+      { word: 'Tidy', meaning: 'Derli toplu', pos: 'adj' }
+    ],
     collocations: ['highly disorganised', 'disorganised person'],
-    collocationMeanings: { 'highly disorganised': 'son derece d zensiz', 'disorganised person': 'd zensiz ki i' },
+    collocationMeanings: {
+      'highly disorganised': 'son derece düzensiz',
+      'disorganised person': 'düzensiz kişi'
+    },
     examples: ["He is very disorganised - he doesn't know where anything is!"],
-    exampleTranslations: ['O  ok d zensizdir - hi bir  eyin nerede oldu unu bilmiyor!']
+    exampleTranslations: ['O çok düzensizdir - hiç bir şeyin nerede olduğunu bilmiyor!']
   },
   {
     id: 'impatient_lh',
     word: 'Impatient',
     pos: 'adjective',
-    meaning: 'sab rs z',
+    meaning: 'Sabırsız',
     definition: 'Annoyed because something is not happening as quickly as you want.',
-    ipa: '/ m pe .  nt/',
+    ipa: '/ɪmˈpeɪ.ʃənt/',
     level: 'pre-intermediate',
-    wordFamily: [{ word: 'patience', pos: 'noun', meaning: 'sab r' }],
-    synonyms: [{ word: 'Restless', meaning: 'huzursuz', pos: 'adj' }],
-    antonyms: [{ word: 'Patient', meaning: 'sab rl ', pos: 'adj' }],
+    wordFamily: [
+      { word: 'patience', pos: 'noun', meaning: 'sabır' },
+      { word: 'impatiently', pos: 'adv', meaning: 'sabırsızca' }
+    ],
+    synonyms: [
+      { word: 'Restless', meaning: 'Huzursuz/Sabırsız', pos: 'adj' }
+    ],
+    antonyms: [
+      { word: 'Patient', meaning: 'Sabırlı', pos: 'adj' }
+    ],
     collocations: ['get impatient', 'grow impatient'],
-    collocationMeanings: { 'get impatient': 'sab rs zlanmak', 'grow impatient': 'sab rs zl    artmak' },
+    collocationMeanings: {
+      'get impatient': 'sabırsızlanmak',
+      'grow impatient': 'sabırsızlığı artmak'
+    },
     examples: ["'Come on!' said Maggie, becoming impatient."],
-    exampleTranslations: ["'Hadi ama!' dedi Maggie sab rs zlanarak."]
+    exampleTranslations: ["'Hadi ama!' dedi Maggie sabırsızlanarak."]
   },
   {
     id: 'impolite_lh',
     word: 'Impolite',
     pos: 'adjective',
-    meaning: 'kaba, nezaketsiz',
+    meaning: 'Kaba, nezaketsiz',
     definition: 'Not polite.',
-    ipa: '/  m.p  la t/',
+    ipa: '/ˌɪm.pəˈlaɪt/',
     level: 'pre-intermediate',
-    wordFamily: [{ word: 'polite', pos: 'adj', meaning: 'nazik' }],
-    synonyms: [{ word: 'Rude', meaning: 'kaba', pos: 'adj' }],
-    antonyms: [{ word: 'Polite', meaning: 'nazik', pos: 'adj' }],
+    wordFamily: [
+      { word: 'politeness', pos: 'noun', meaning: 'nezaket' },
+      { word: 'impolitely', pos: 'adv', meaning: 'kabaca' }
+    ],
+    synonyms: [
+      { word: 'Rude', meaning: 'Kaba', pos: 'adj' },
+      { word: 'Disrespectful', meaning: 'Saygısız', pos: 'adj' }
+    ],
+    antonyms: [
+      { word: 'Polite', meaning: 'Nazik', pos: 'adj' },
+      { word: 'Courteous', meaning: 'Kibar', pos: 'adj' }
+    ],
     collocations: ['extremely impolite', 'impolite remark'],
-    collocationMeanings: { 'extremely impolite': 'son derece kaba', 'impolite remark': 'nezaketsiz s z' },
+    collocationMeanings: {
+      'extremely impolite': 'son derece kaba',
+      'impolite remark': 'nezaketsiz söz'
+    },
     examples: ['It would be impolite to leave the party so early.'],
-    exampleTranslations: ['Partiden bu kadar erken ayr lmak kabal k olur.']
+    exampleTranslations: ['Partiden bu kadar erken ayrılmak kabalık olur.']
   },
   {
     id: 'inaccurate_lh',
     word: 'Inaccurate',
     pos: 'adjective',
-    meaning: 'hatal , yanl  ',
+    meaning: 'Hatalı, yanlış',
     definition: 'Not accurate or correct.',
-    ipa: '/ n  k.j .r t/',
+    ipa: '/ɪnˈæk.jə.rət/',
     level: 'pre-intermediate',
-    wordFamily: [{ word: 'accurate', pos: 'adj', meaning: 'do ru/kesin' }],
-    synonyms: [{ word: 'Incorrect', meaning: 'yanl  ', pos: 'adj' }],
-    antonyms: [{ word: 'Accurate', meaning: 'do ru/kesin', pos: 'adj' }],
+    wordFamily: [
+      { word: 'accuracy', pos: 'noun', meaning: 'doğruluk/kesinlik' },
+      { word: 'inaccurately', pos: 'adv', meaning: 'hatalı bir şekilde' }
+    ],
+    synonyms: [
+      { word: 'Incorrect', meaning: 'Yanlış', pos: 'adj' },
+      { word: 'Wrong', meaning: 'Hatalı', pos: 'adj' }
+    ],
+    antonyms: [
+      { word: 'Accurate', meaning: 'Doğru/Kesin', pos: 'adj' },
+      { word: 'Correct', meaning: 'Doğru', pos: 'adj' }
+    ],
     collocations: ['highly inaccurate', 'totally inaccurate'],
-    collocationMeanings: { 'highly inaccurate': 'son derece hatal ', 'totally inaccurate': 'tamamen yanl  ' },
+    collocationMeanings: {
+      'highly inaccurate': 'son derece hatalı',
+      'totally inaccurate': 'tamamen yanlış'
+    },
     examples: ['She was given inaccurate information.'],
-    exampleTranslations: ['Ona yanl   bilgi verildi.']
+    exampleTranslations: ['Ona yanlış bilgi verildi.']
   },
   {
     id: 'unkind_lh',
     word: 'Unkind',
     pos: 'adjective',
-    meaning: 'nezaketsiz, kat ',
+    meaning: 'Nezaketsiz, katı',
     definition: 'Unfriendly, insulting, or cruel.',
-    ipa: '/ n ka nd/',
+    ipa: '/ʌnˈkaɪnd/',
     level: 'pre-intermediate',
-    wordFamily: [{ word: 'kind', pos: 'adj', meaning: 'nazik' }],
-    synonyms: [{ word: 'Cruel', meaning: 'zalim', pos: 'adj' }],
-    antonyms: [{ word: 'Kind', meaning: 'nazik', pos: 'adj' }],
+    wordFamily: [
+      { word: 'kindness', pos: 'noun', meaning: 'nezaket' },
+      { word: 'unkindly', pos: 'adv', meaning: 'kabaca' }
+    ],
+    synonyms: [
+      { word: 'Cruel', meaning: 'Zalim', pos: 'adj' },
+      { word: 'Mean', meaning: 'Kaba/Aşağılık', pos: 'adj' }
+    ],
+    antonyms: [
+      { word: 'Kind', meaning: 'Nazik', pos: 'adj' },
+      { word: 'Friendly', meaning: 'Arkadaş canlısı', pos: 'adj' }
+    ],
     collocations: ['unkind remark', 'be unkind to'],
-    collocationMeanings: { 'unkind remark': 'nezaketsiz s z', 'be unkind to': 'birine kar   kaba/kat  olmak' },
+    collocationMeanings: {
+      'unkind remark': 'nezaketsiz söz',
+      'be unkind to': 'birine karşı kaba olmak'
+    },
     examples: ['He made an unkind remark.'],
-    exampleTranslations: ['Kaba/nezaketsiz bir yorumda bulundu.']
+    exampleTranslations: ['Kaba bir yorumda bulundu.']
   },
   {
     id: 'balcony_lh',
     word: 'Balcony',
     pos: 'noun',
-    meaning: 'balkon',
+    meaning: 'Balkon',
     definition: 'A place where you can stand just outside an upper window.',
-    ipa: '/ b l.k .ni/',
+    ipa: '/ˈbæl.kə.ni/',
     level: 'pre-intermediate',
     wordFamily: [],
-    synonyms: [],
+    synonyms: [
+      { word: 'Terrace', meaning: 'Teras', pos: 'noun' }
+    ],
     antonyms: [],
     collocations: ['on the balcony', 'small balcony'],
-    collocationMeanings: { 'on the balcony': 'balkonda', 'small balcony': 'k   k balkon' },
+    collocationMeanings: {
+      'on the balcony': 'balkonda',
+      'small balcony': 'küçük balkon'
+    },
     examples: ['We ate dinner on the balcony.'],
-    exampleTranslations: ['Ak am yeme ini balkonda yedik.']
+    exampleTranslations: ['Akşam yemeğini balkonda yedik.']
   },
   {
     id: 'beach_resort_lh',
     word: 'Beach resort',
     pos: 'noun',
-    meaning: 'plaj tesisi/tatil yeri',
+    meaning: 'Plaj tesisi, tatil köyü',
     definition: 'A place many people go to for a holiday that is located by a beach.',
-    ipa: '/bi t  r  z  t/',
+    ipa: '/biːtʃ rɪˈzɔːt/',
     level: 'pre-intermediate',
     wordFamily: [],
-    synonyms: [{ word: 'Seaside resort', meaning: 'deniz kenar  tatil yeri', pos: 'noun' }],
+    synonyms: [
+      { word: 'Seaside resort', meaning: 'Deniz kenarı tatil yeri', pos: 'noun' }
+    ],
     antonyms: [],
     collocations: ['popular beach resort', 'luxury beach resort'],
-    collocationMeanings: { 'popular beach resort': 'pop ler plaj tesisi', 'luxury beach resort': 'l ks plaj tesisi' },
+    collocationMeanings: {
+      'popular beach resort': 'popüler plaj tesisi',
+      'luxury beach resort': 'lüks plaj tesisi'
+    },
     examples: ['A holiday at a beach resort is the most relaxing break.'],
-    exampleTranslations: ['Bir plaj tesisindeki tatil en dinlendirici molad r.']
+    exampleTranslations: ['Bir plaj tesisindeki tatil en dinlendirici moladır.']
   },
   {
     id: 'chalet_lh',
     word: 'Chalet',
     pos: 'noun',
-    meaning: 'da  evi',
+    meaning: 'Dağ evi',
     definition: 'A wooden house built in a mountain area, especially in Switzerland.',
-    ipa: '/   l.e /',
+    ipa: '/ˈʃæl.eɪ/',
     level: 'pre-intermediate',
     wordFamily: [],
-    synonyms: [{ word: 'Log cabin', meaning: 'k t k ev', pos: 'noun' }],
+    synonyms: [
+      { word: 'Log cabin', meaning: 'Kütük ev', pos: 'noun' },
+      { word: 'Mountain lodge', meaning: 'Dağ kulübesi', pos: 'noun' }
+    ],
     antonyms: [],
     collocations: ['ski chalet', 'wooden chalet'],
-    collocationMeanings: { 'ski chalet': 'kayak evi', 'wooden chalet': 'ah ap da  evi' },
+    collocationMeanings: {
+      'ski chalet': 'kayak evi',
+      'wooden chalet': 'ahşap dağ evi'
+    },
     examples: ['The chalet had a great view of the mountains.'],
-    exampleTranslations: ['Da  evinin harika bir da  manzaras  vard .']
+    exampleTranslations: ['Dağ evinin harika bir dağ manzarası vardı.']
   },
   {
     id: 'cruise_ship_lh',
     word: 'Cruise ship',
     pos: 'noun',
-    meaning: 'yolcu gemisi, kruvaziyer',
+    meaning: 'Yolcu gemisi, kruvaziyer',
     definition: 'A large comfortable ship used for cruises.',
-    ipa: '/ kru z    p/',
+    ipa: '/kruːz ʃɪp/',
     level: 'pre-intermediate',
     wordFamily: [],
-    synonyms: [{ word: 'Ocean liner', meaning: 'okyanus gemisi', pos: 'noun' }],
+    synonyms: [
+      { word: 'Ocean liner', meaning: 'Okyanus gemisi', pos: 'noun' }
+    ],
     antonyms: [],
     collocations: ['luxury cruise ship', 'on a cruise ship'],
-    collocationMeanings: { 'luxury cruise ship': 'l ks yolcu gemisi', 'on a cruise ship': 'bir yolcu gemisinde' },
+    collocationMeanings: {
+      'luxury cruise ship': 'lüks yolcu gemisi',
+      'on a cruise ship': 'bir yolcu gemisinde'
+    },
     examples: ['The cruise ship went around the Caribbean.'],
-    exampleTranslations: ['Yolcu gemisi Karayipler etraf nda tur att .']
+    exampleTranslations: ['Yolcu gemisi Karayipler etrafında tur attı.']
   },
   {
     id: 'dorm_lh',
     word: 'Dorm',
     pos: 'noun',
-    meaning: 'yurt, yatakhane',
+    meaning: 'Yurt, yatakhane',
     definition: 'Shortened form of dormitory which is a large room where a lot of people sleep.',
-    ipa: '/d  m/',
+    ipa: '/dɔːm/',
     level: 'pre-intermediate',
-    wordFamily: [{ word: 'dormitory', pos: 'noun', meaning: 'yurt' }],
-    synonyms: [{ word: 'Hostel room', meaning: 'yurt odas ', pos: 'noun' }],
+    wordFamily: [
+      { word: 'dormitory', pos: 'noun', meaning: 'yurt' }
+    ],
+    synonyms: [
+      { word: 'Hostel room', meaning: 'Yurt odası', pos: 'noun' }
+    ],
     antonyms: [],
     collocations: ['university dorm', 'crowded dorm'],
-    collocationMeanings: { 'university dorm': ' niversite yurdu', 'crowded dorm': 'kalabal k yatakhane' },
+    collocationMeanings: {
+      'university dorm': 'üniversite yurdu',
+      'crowded dorm': 'kalabalık yatakhane'
+    },
     examples: ['The dorm was full and very noisy.'],
-    exampleTranslations: ['Yatakhane doluydu ve  ok g r lt l yd .']
+    exampleTranslations: ['Yatakhane doluydu ve çok gürültülüydü.']
   },
   {
     id: 'campsite_lh',
     word: 'Campsite',
     pos: 'noun',
-    meaning: 'kamp alan ',
+    meaning: 'Kamp alanı',
     definition: 'A place where people on holiday can stay outdoors in tents.',
-    ipa: '/ k mp.sa t/',
+    ipa: '/ˈkæmp.saɪt/',
     level: 'pre-intermediate',
-    wordFamily: [{ word: 'camping', pos: 'noun', meaning: 'kamp yapma' }],
-    synonyms: [{ word: 'Campground', meaning: 'kamp yeri', pos: 'noun' }],
+    wordFamily: [
+      { word: 'camping', pos: 'noun', meaning: 'kamp yapma' },
+      { word: 'camp', pos: 'verb', meaning: 'kamp kurmak' }
+    ],
+    synonyms: [
+      { word: 'Campground', meaning: 'Kamp yeri', pos: 'noun' }
+    ],
     antonyms: [],
     collocations: ['pitch a tent at a campsite', 'official campsite'],
-    collocationMeanings: { 'pitch a tent at a campsite': 'kamp alan nda  ad r kurmak', 'official campsite': 'resmi kamp alan ' },
+    collocationMeanings: {
+      'pitch a tent at a campsite': 'kamp alanında çadır kurmak',
+      'official campsite': 'resmi kamp alanı'
+    },
     examples: ['The children enjoyed staying at the campsite.'],
-    exampleTranslations: [' ocuklar kamp alan nda kalmaktan keyif ald lar.']
+    exampleTranslations: ['Çocuklar kamp alanında kalmaktan keyif aldılar.']
   },
   {
     id: 'self-catering_lh',
     word: 'Self-catering',
     pos: 'adjective',
-    meaning: 'yeme ini kendi pi iren/sa layan',
+    meaning: 'Yemeğini kendi sağlayan',
     definition: 'A type of holiday or accommodation where you can cook your own food.',
-    ipa: '/ self ke .t r.  /',
+    ipa: '/ˌselfˈkeɪ.tər.ɪŋ/',
     level: 'pre-intermediate',
-    wordFamily: [{ word: 'catering', pos: 'noun', meaning: 'ikram hizmeti' }],
+    wordFamily: [
+      { word: 'cater', pos: 'verb', meaning: 'yemek tedarik etmek' }
+    ],
     synonyms: [],
-    antonyms: [{ word: 'All-inclusive', meaning: 'her  ey dahil', pos: 'adj' }],
+    antonyms: [
+      { word: 'All-inclusive', meaning: 'Her şey dahil', pos: 'adj' }
+    ],
     collocations: ['self-catering apartment', 'self-catering holiday'],
-    collocationMeanings: { 'self-catering apartment': 'mutfakl  daire', 'self-catering holiday': 'yeme i kendin yapt   n tatil' },
+    collocationMeanings: {
+      'self-catering apartment': 'mutfaklı daire',
+      'self-catering holiday': 'yemeği kendin yaptığın tatil'
+    },
     examples: ['It is easier to book self-catering accommodation when you have children.'],
-    exampleTranslations: [' ocu unuz oldu unda mutfakl  (kendi yeme ini yapt   n) konaklama yeri ay rtmak daha kolayd r.']
+    exampleTranslations: ['Çocuğunuz olduğunda mutfaklı konaklama yeri ayırtmak daha kolaydır.']
   },
   {
     id: 'reception_lh',
     word: 'Reception',
     pos: 'noun',
-    meaning: 'resepsiyon, kar  lama',
+    meaning: 'Resepsiyon, karşılama',
     definition: 'The part of a large building such as a hotel or office where visitors are welcomed.',
-    ipa: '/r  sep.  n/',
+    ipa: '/rɪˈsep.ʃən/',
     level: 'pre-intermediate',
-    wordFamily: [{ word: 'receptionist', pos: 'noun', meaning: 'resepsiyonist' }],
-    synonyms: [{ word: 'Front desk', meaning: ' n b ro', pos: 'noun' }],
+    wordFamily: [
+      { word: 'receptionist', pos: 'noun', meaning: 'resepsiyonist' },
+      { word: 'receive', pos: 'verb', meaning: 'karşılamak/almak' }
+    ],
+    synonyms: [
+      { word: 'Front desk', meaning: 'Ön büro', pos: 'noun' }
+    ],
     antonyms: [],
     collocations: ['reception desk', 'check in at reception'],
-    collocationMeanings: { 'reception desk': 'resepsiyon masas ', 'check in at reception': 'resepsiyonda giri  yapmak' },
+    collocationMeanings: {
+      'reception desk': 'resepsiyon masası',
+      'check in at reception': 'resepsiyonda giriş yapmak'
+    },
     examples: ['Visitors must report to reception first.'],
-    exampleTranslations: ['Ziyaret iler  nce resepsiyona bildirmelidir.']
+    exampleTranslations: ['Ziyaretçiler önce resepsiyona bildirmelidir.']
   },
   {
     id: 'possibility_lh',
     word: 'Possibility',
     pos: 'noun',
-    meaning: 'olas l k, ihtimal',
+    meaning: 'Olasılık, ihtimal',
     definition: 'The chance that something might happen or be true.',
-    ipa: '/ p s.  b l. .ti/',
+    ipa: '/ˌpɒs.əˈbɪl.ə.ti/',
     level: 'pre-intermediate',
-    wordFamily: [{ word: 'possible', pos: 'adj', meaning: 'm mk n' }],
-    synonyms: [{ word: 'Likelihood', meaning: 'olas l k', pos: 'noun' }],
-    antonyms: [{ word: 'Impossibility', meaning: 'imkans zl k', pos: 'noun' }],
+    wordFamily: [
+      { word: 'possible', pos: 'adj', meaning: 'mümkün' },
+      { word: 'possibly', pos: 'adv', meaning: 'belki/muhtemelen' }
+    ],
+    synonyms: [
+      { word: 'Likelihood', meaning: 'Olasılık', pos: 'noun' },
+      { word: 'Chance', meaning: 'Şans/İhtimal', pos: 'noun' }
+    ],
+    antonyms: [
+      { word: 'Impossibility', meaning: 'İmkansızlık', pos: 'noun' }
+    ],
     collocations: ['distinct possibility', 'explore the possibility'],
-    collocationMeanings: { 'distinct possibility': 'belirgin olas l k', 'explore the possibility': 'olas l    ara t rmak' },
+    collocationMeanings: {
+      'distinct possibility': 'belirgin olasılık',
+      'explore the possibility': 'olasılığı araştırmak'
+    },
     examples: ["Another possibility is that we'll go to Mexico instead."],
-    exampleTranslations: ['Di er bir olas l k da onun yerine Meksika ya gidecek olmam z.']
+    exampleTranslations: ['Diğer bir olasılık da onun yerine Meksika\'ya gidecek olmamız.']
   },
   {
     id: 'prediction_lh',
     word: 'Prediction',
     pos: 'noun',
-    meaning: 'tahmin,  ng r ',
+    meaning: 'Tahmin, öngörü',
     definition: 'A statement about what you think will happen in the future.',
-    ipa: '/pr  d k.  n/',
+    ipa: '/prɪˈdɪk.ʃən/',
     level: 'pre-intermediate',
-    wordFamily: [{ word: 'predict', pos: 'verb', meaning: 'tahmin etmek' }],
-    synonyms: [{ word: 'Forecast', meaning: ' ng r ', pos: 'noun' }],
+    wordFamily: [
+      { word: 'predict', pos: 'verb', meaning: 'tahmin etmek' },
+      { word: 'predictable', pos: 'adj', meaning: 'öngörülebilir' }
+    ],
+    synonyms: [
+      { word: 'Forecast', meaning: 'Öngörü', pos: 'noun' },
+      { word: 'Prophecy', meaning: 'Kehanet', pos: 'noun' }
+    ],
     antonyms: [],
     collocations: ['make a prediction', 'accurate prediction'],
-    collocationMeanings: { 'make a prediction': 'tahminde bulunmak', 'accurate prediction': 'do ru tahmin' },
+    collocationMeanings: {
+      'make a prediction': 'tahminde bulunmak',
+      'accurate prediction': 'doğru tahmin'
+    },
     examples: ['The government has made a prediction that unemployment will rise this year.'],
-    exampleTranslations: ['H k met, bu y l i sizli in artaca   y n nde bir  ng r de bulundu.']
+    exampleTranslations: ['Hükümet, bu yıl işsizliğin artacağı yönünde bir öngörüde bulundu.']
   },
   {
     id: 'agreement_lh',
     word: 'Agreement',
     pos: 'noun',
-    meaning: 'anla ma, mutabakat',
+    meaning: 'Anlaşma, mutabakat',
     definition: 'An arrangement or decision about what to do, made by two or more people or groups.',
-    ipa: '/   ri .m nt/',
+    ipa: '/əˈɡriː.mənt/',
     level: 'pre-intermediate',
-    wordFamily: [{ word: 'agree', pos: 'verb', meaning: 'anla mak' }],
-    synonyms: [{ word: 'Contract', meaning: 's zle me', pos: 'noun' }],
-    antonyms: [{ word: 'Disagreement', meaning: 'anla mazl k', pos: 'noun' }],
+    wordFamily: [
+      { word: 'agree', pos: 'verb', meaning: 'anlaşmak' }
+    ],
+    synonyms: [
+      { word: 'Contract', meaning: 'Sözleşme', pos: 'noun' },
+      { word: 'Deal', meaning: 'Anlaşma', pos: 'noun' }
+    ],
+    antonyms: [
+      { word: 'Disagreement', meaning: 'Anlaşmazlık', pos: 'noun' }
+    ],
     collocations: ['reach an agreement', 'sign an agreement'],
-    collocationMeanings: { 'reach an agreement': 'anla maya varmak', 'sign an agreement': 'anla ma imzalamak' },
+    collocationMeanings: {
+      'reach an agreement': 'anlaşmaya varmak',
+      'sign an agreement': 'anlaşma imzalamak'
+    },
     examples: ['Our agreement was that you would pay by the first of the month.'],
-    exampleTranslations: ['Anla mam z,  demeyi ay n birine kadar yapaca  n z y n ndeydi.']
+    exampleTranslations: ['Anlaşmamız, ödemeyi ayın birine kadar yapacağınız yönündeydi.']
   },
   {
     id: 'development_lh',
     word: 'Development',
     pos: 'noun',
-    meaning: 'geli im, ilerleme',
+    meaning: 'Gelişim, ilerleme',
     definition: 'Change, growth, or improvement over a period of time.',
-    ipa: '/d  vel. p.m nt/',
+    ipa: '/dɪˈvel.əp.mənt/',
     level: 'pre-intermediate',
-    wordFamily: [{ word: 'develop', pos: 'verb', meaning: 'geli tirmek' }],
-    synonyms: [{ word: 'Progress', meaning: 'ilerleme', pos: 'noun' }],
-    antonyms: [{ word: 'Regression', meaning: 'gerileme', pos: 'noun' }],
+    wordFamily: [
+      { word: 'develop', pos: 'verb', meaning: 'geliştirmek' }
+    ],
+    synonyms: [
+      { word: 'Progress', meaning: 'İlerleme', pos: 'noun' },
+      { word: 'Growth', meaning: 'Büyüme', pos: 'noun' }
+    ],
+    antonyms: [
+      { word: 'Regression', meaning: 'Gerileme', pos: 'noun' },
+      { word: 'Decline', meaning: 'Düşüş', pos: 'noun' }
+    ],
     collocations: ['personal development', 'economic development'],
-    collocationMeanings: { 'personal development': 'ki isel geli im', 'economic development': 'ekonomik geli im' },
+    collocationMeanings: {
+      'personal development': 'kişisel gelişim',
+      'economic development': 'ekonomik gelişim'
+    },
     examples: ['We encourage our staff in their development of new skills.'],
-    exampleTranslations: ['Personelimizi yeni beceriler geli tirme konusunda te vik ediyoruz.']
+    exampleTranslations: ['Personelimizi yeni beceriler geliştirme konusunda teşvik ediyoruz.']
   },
   {
     id: 'invention_lh',
     word: 'Invention',
     pos: 'noun',
-    meaning: 'icat, bulu ',
+    meaning: 'İcat, buluş',
     definition: 'A machine, tool, or system that someone has made, designed, or thought of for the first time.',
-    ipa: '/ n ven.  n/',
+    ipa: '/ɪnˈven.ʃən/',
     level: 'pre-intermediate',
-    wordFamily: [{ word: 'invent', pos: 'verb', meaning: 'icat etmek' }],
-    synonyms: [{ word: 'Innovation', meaning: 'yenilik', pos: 'noun' }],
+    wordFamily: [
+      { word: 'invent', pos: 'verb', meaning: 'icat etmek' },
+      { word: 'inventor', pos: 'noun', meaning: 'mucit' }
+    ],
+    synonyms: [
+      { word: 'Innovation', meaning: 'Yenilik', pos: 'noun' },
+      { word: 'Discovery', meaning: 'Keşif', pos: 'noun' }
+    ],
     antonyms: [],
     collocations: ['great invention', 'modern invention'],
-    collocationMeanings: { 'great invention': 'b y k bulu ', 'modern invention': 'modern icat' },
+    collocationMeanings: {
+      'great invention': 'büyük buluş',
+      'modern invention': 'modern icat'
+    },
     examples: ['Inventions like the electric light bulb changed the way people lived.'],
-    exampleTranslations: ['Elektrikli ampul gibi icatlar insanlar n ya ay   bi imini de i tirdi.']
+    exampleTranslations: ['Elektrikli ampul gibi icatlar insanların yaşayış biçimini değiştirdi.']
   },
   {
     id: 'kindness_lh',
     word: 'Kindness',
     pos: 'noun',
-    meaning: 'nezaket, iyilik',
+    meaning: 'Nezaket, iyilik',
     definition: 'Kind behaviour, or kind feelings.',
-    ipa: '/ ka nd.n s/',
+    ipa: '/ˈkaɪnd.nəs/',
     level: 'pre-intermediate',
-    wordFamily: [{ word: 'kind', pos: 'adj', meaning: 'nazik' }],
-    synonyms: [{ word: 'Benevolence', meaning: 'iyilikseverlik', pos: 'noun' }],
-    antonyms: [{ word: 'Cruelty', meaning: 'zalimlik', pos: 'noun' }],
+    wordFamily: [
+      { word: 'kind', pos: 'adj', meaning: 'nazik' }
+    ],
+    synonyms: [
+      { word: 'Benevolence', meaning: 'İyilikseverlik', pos: 'noun' },
+      { word: 'Generosity', meaning: 'Cömertlik', pos: 'noun' }
+    ],
+    antonyms: [
+      { word: 'Cruelty', meaning: 'Zalimlik', pos: 'noun' },
+      { word: 'Meanness', meaning: 'Kabalık', pos: 'noun' }
+    ],
     collocations: ['act of kindness', 'show kindness'],
-    collocationMeanings: { 'act of kindness': 'iyilik hareketi', 'show kindness': 'nezaket g stermek' },
+    collocationMeanings: {
+      'act of kindness': 'iyilik hareketi',
+      'show kindness': 'nezaket göstermek'
+    },
     examples: ['I shall never forget the kindness of the nursing staff.'],
-    exampleTranslations: ['Hem irelerin g sterdi i nezaketi asla unutmayaca  m.']
+    exampleTranslations: ['Hemşirelerin gösterdiği nezaketi asla unutmayacağım.']
   },
   {
     id: 'by_the_fire_lh',
     word: 'By the fire',
     pos: 'phrase',
-    meaning: 'ate in ba  nda,   mine yan ',
+    meaning: 'Ateşin başında, şömine yanı',
     definition: 'In a position near a fire.',
-    ipa: '/ba      fa  r/',
+    ipa: '/baɪ ðə faɪər/',
     level: 'pre-intermediate',
     wordFamily: [],
     synonyms: [],
     antonyms: [],
     collocations: ['sit by the fire'],
-    collocationMeanings: { 'sit by the fire': 'ate in ba  nda oturmak' },
+    collocationMeanings: {
+      'sit by the fire': 'ateşin başında oturmak'
+    },
     examples: ['The cat curled up by the fire.'],
-    exampleTranslations: ['Kedi ate in ba  nda k vr l p yatt .']
+    exampleTranslations: ['Kedi ateşin başında kıvrılıp yattı.']
   },
   {
     id: 'get_together_lh',
     word: 'Get together',
     pos: 'phrase',
-    meaning: 'bir araya gelmek, bulu mak',
+    meaning: 'Bir araya gelmek, buluşmak',
     definition: 'If people get together, they meet in order to do something or to spend time together.',
-    ipa: '/ et t   e . r/',
+    ipa: '/ɡet təˈɡeð.ər/',
     level: 'pre-intermediate',
     wordFamily: [],
-    synonyms: [{ word: 'Meet up', meaning: 'bulu mak', pos: 'phrase' }],
-    antonyms: [{ word: 'Part ways', meaning: 'ayr lmak', pos: 'phrase' }],
+    synonyms: [
+      { word: 'Meet up', meaning: 'Buluşmak', pos: 'phrase' },
+      { word: 'Assemble', meaning: 'Toplanmak', pos: 'verb' }
+    ],
+    antonyms: [
+      { word: 'Part ways', meaning: 'Ayrılmak', pos: 'phrase' }
+    ],
     collocations: ['family get together', 'social get together'],
-    collocationMeanings: { 'family get together': 'aile bulu mas ', 'social get together': 'sosyal toplant ' },
+    collocationMeanings: {
+      'family get together': 'aile buluşması',
+      'social get together': 'sosyal toplantı'
+    },
     examples: ['Greg suggested getting together next weekend.'],
-    exampleTranslations: ['Greg  n m zdeki hafta sonu bir araya gelmeyi  nerdi.']
+    exampleTranslations: ['Greg önümüzdeki hafta sonu bir araya gelmeyi önerdi.']
   },
   {
     id: 'sadness_lh',
     word: 'Sadness',
     pos: 'noun',
-    meaning: ' z nt , keder',
+    meaning: 'Üzüntü, keder',
     definition: 'The feeling of being unhappy, especially because something bad has happened.',
-    ipa: '/ s d.n s/',
+    ipa: '/ˈsæd.nəs/',
     level: 'pre-intermediate',
-    wordFamily: [{ word: 'sad', pos: 'adj', meaning: ' zg n' }],
-    synonyms: [{ word: 'Sorrow', meaning: 'keder', pos: 'noun' }],
-    antonyms: [{ word: 'Happiness', meaning: 'mutluluk', pos: 'noun' }],
+    wordFamily: [
+      { word: 'sad', pos: 'adj', meaning: 'üzgün' },
+      { word: 'sadly', pos: 'adv', meaning: 'maalesef' }
+    ],
+    synonyms: [
+      { word: 'Sorrow', meaning: 'Keder', pos: 'noun' },
+      { word: 'Grief', meaning: 'Yas/Derin üzüntü', pos: 'noun' }
+    ],
+    antonyms: [
+      { word: 'Happiness', meaning: 'Mutluluk', pos: 'noun' },
+      { word: 'Joy', meaning: 'Neşe', pos: 'noun' }
+    ],
     collocations: ['overcome with sadness', 'deep sadness'],
-    collocationMeanings: { 'overcome with sadness': 'kederden bitkin d  mek', 'deep sadness': 'derin  z nt ' },
+    collocationMeanings: {
+      'overcome with sadness': 'kederden bitkin düşmek',
+      'deep sadness': 'derin üzüntü'
+    },
     examples: ["Joan's childhood was filled with pain and sadness."],
-    exampleTranslations: ['Joan un  ocuklu u ac  ve kederle doluydu.']
+    exampleTranslations: ['Joan\'un çocukluğu acı ve kederle doluydu.']
   },
   {
     id: 'get_a_pay_rise_lh',
     word: 'Get a pay rise',
     pos: 'phrase',
-    meaning: 'maa  zamm  almak',
+    meaning: 'Maaş zammı almak',
     definition: 'To receive an increase in the amount of money you are paid for doing your job.',
-    ipa: '/ et   pe  ra z/',
+    ipa: '/ɡet ə peɪ raɪz/',
     level: 'pre-intermediate',
     wordFamily: [],
-    synonyms: [{ word: 'Get a salary increase', meaning: 'maa  art    almak', pos: 'phrase' }],
+    synonyms: [
+      { word: 'Get a salary increase', meaning: 'Maaş artışı almak', pos: 'phrase' }
+    ],
     antonyms: [],
     collocations: ['hope to get a pay rise'],
-    collocationMeanings: { 'hope to get a pay rise': 'maa  zamm  almay  ummak' },
+    collocationMeanings: {
+      'hope to get a pay rise': 'maaş zammı almayı ummak'
+    },
     examples: ['I hope to get a pay rise next year.'],
-    exampleTranslations: ['Gelecek y l maa  zamm  almay  umuyorum.']
+    exampleTranslations: ['Gelecek yıl maaş zammı almayı umuyorum.']
   },
   {
     id: 'earn_a_salary_lh',
     word: 'Earn a salary',
     pos: 'phrase',
-    meaning: 'maa  kazanmak',
+    meaning: 'Maaş kazanmak',
     definition: 'Receive an amount of money, every month or year, for the work you do.',
-    ipa: '/  n    s l. r.i/',
+    ipa: '/ɜːn ə ˈsæl.ər.i/',
     level: 'pre-intermediate',
     wordFamily: [],
-    synonyms: [{ word: 'Make money', meaning: 'para kazanmak', pos: 'phrase' }],
+    synonyms: [
+      { word: 'Make money', meaning: 'Para kazanmak', pos: 'phrase' }
+    ],
     antonyms: [],
     collocations: ['earn a high salary', 'start to earn a salary'],
-    collocationMeanings: { 'earn a high salary': 'y ksek maa  kazanmak', 'start to earn a salary': 'maa  almaya ba lamak' },
+    collocationMeanings: {
+      'earn a high salary': 'yüksek maaş kazanmak',
+      'start to earn a salary': 'maaş almaya başlamak'
+    },
     examples: ['When I earn a salary, I can save to buy a house.'],
-    exampleTranslations: ['Maa  almaya ba lad   mda, ev almak i in birikim yapabilirim.']
+    exampleTranslations: ['Maaş almaya başladığımda, ev almak için birikim yapabilirim.']
   },
   {
     id: 'unemployed_lh',
     word: 'Unemployed',
     pos: 'adjective',
-    meaning: 'i siz',
+    meaning: 'İşsiz',
     definition: 'Without a paid job but available to work.',
-    ipa: '/  n. m pl  d/',
+    ipa: '/ˌʌn.ɪmˈplɔɪd/',
     level: 'pre-intermediate',
-    wordFamily: [{ word: 'employment', pos: 'noun', meaning: 'istihdam' }],
-    synonyms: [{ word: 'Jobless', meaning: 'i siz', pos: 'adj' }],
-    antonyms: [{ word: 'Employed', meaning: 'i i olan', pos: 'adj' }],
+    wordFamily: [
+      { word: 'employment', pos: 'noun', meaning: 'istihdam' },
+      { word: 'employ', pos: 'verb', meaning: 'işe almak' }
+    ],
+    synonyms: [
+      { word: 'Jobless', meaning: 'İşsiz', pos: 'adj' },
+      { word: 'Out of work', meaning: 'İşsiz kalmış', pos: 'phrase' }
+    ],
+    antonyms: [
+      { word: 'Employed', meaning: 'İşi olan', pos: 'adj' }
+    ],
     collocations: ['become unemployed', 'long-term unemployed'],
-    collocationMeanings: { 'become unemployed': 'i siz kalmak', 'long-term unemployed': 'uzun s reli i siz' },
+    collocationMeanings: {
+      'become unemployed': 'işsiz kalmak',
+      'long-term unemployed': 'uzun süreli işsiz'
+    },
     examples: ['He has been unemployed for 3 months.'],
-    exampleTranslations: ['3 ayd r i siz.']
+    exampleTranslations: ['3 aydır işsiz.']
   },
   {
     id: 'work_long_hours_lh',
     word: 'Work long hours',
     pos: 'phrase',
-    meaning: 'fazla mesai yapmak, uzun saatler  al  mak',
+    meaning: 'Fazla mesai yapmak, uzun saatler çalışmak',
     definition: 'To do your job for more time than is normal.',
-    ipa: '/w  k l    a  rz/',
+    ipa: '/wɜːk lɒŋ aʊərz/',
     level: 'pre-intermediate',
     wordFamily: [],
-    synonyms: [{ word: 'Work overtime', meaning: 'fazla mesai yapmak', pos: 'phrase' }],
-    antonyms: [{ word: 'Work part-time', meaning: 'yar  zamanl   al  mak', pos: 'phrase' }],
+    synonyms: [
+      { word: 'Work overtime', meaning: 'Fazla mesai yapmak', pos: 'phrase' }
+    ],
+    antonyms: [
+      { word: 'Work part-time', meaning: 'Yarı zamanlı çalışmak', pos: 'phrase' }
+    ],
     collocations: ['forced to work long hours', 'accustomed to work long hours'],
-    collocationMeanings: { 'forced to work long hours': 'uzun saatler  al  maya zorlanmak', 'accustomed to work long hours': 'uzun saatler  al  maya al   k olmak' },
+    collocationMeanings: {
+      'forced to work long hours': 'uzun saatler çalışmaya zorlanmak',
+      'accustomed to work long hours': 'uzun saatler çalışmaya alışık olmak'
+    },
     examples: ['Police officers have to work long hours.'],
-    exampleTranslations: ['Polis memurlar  uzun saatler  al  mak zorundad r.']
+    exampleTranslations: ['Polis memurları uzun saatler çalışmak zorundadır.']
   },
-  
   {
     id: 'stylish_lh',
     word: 'Stylish',
     pos: 'adjective',
-    meaning: '  k, tarz sahibi',
+    meaning: 'Şık, tarz sahibi',
     definition: 'Showing good judgement about how to dress well.',
-    ipa: "/'sta .l  /",
+    ipa: "/ˈstaɪ.lɪʃ/",
     level: 'pre-intermediate',
-    wordFamily: [{ word: 'style', pos: 'noun', meaning: 'tarz' }],
-    synonyms: [{ word: 'Fashionable', meaning: 'modaya uygun', pos: 'adj' }, { word: 'Chic', meaning: '  k', pos: 'adj' }],
-    antonyms: [{ word: 'Unstylish', meaning: 'r k  /tarzs z', pos: 'adj' }],
+    wordFamily: [
+      { word: 'style', pos: 'noun', meaning: 'tarz' },
+      { word: 'stylishly', pos: 'adv', meaning: 'şık bir şekilde' }
+    ],
+    synonyms: [
+      { word: 'Fashionable', meaning: 'Modaya uygun', pos: 'adj' },
+      { word: 'Chic', meaning: 'Şık', pos: 'adj' }
+    ],
+    antonyms: [
+      { word: 'Unstylish', meaning: 'Rüküş/Tarzsız', pos: 'adj' }
+    ],
     collocations: ['stylish dresser', 'stylish clothes'],
-    collocationMeanings: { 'stylish dresser': '  k giyinen ki i', 'stylish clothes': '  k k yafetler' },
+    collocationMeanings: {
+      'stylish dresser': 'şık giyinen kişi',
+      'stylish clothes': 'şık kıyafetler'
+    },
     examples: ['She is a stylish dresser.'],
-    exampleTranslations: ['O,   k giyinen biridir.']
+    exampleTranslations: ['O, şık giyinen biridir.']
   },
   {
     id: 'casual_lh',
     word: 'Casual',
     pos: 'adjective',
-    meaning: 'g ndelik, spor (giyim)',
+    meaning: 'Gündelik, spor (giyim)',
     definition: 'Relaxed and comfortable.',
-    ipa: "/'k  .u. l/",
+    ipa: "/ˈkæʒ.u.əl/",
     level: 'pre-intermediate',
-    wordFamily: [{ word: 'casually', pos: 'adverb', meaning: 'g ndelik bir  ekilde' }],
-    synonyms: [{ word: 'Informal', meaning: 'resmi olmayan', pos: 'adj' }],
-    antonyms: [{ word: 'Formal', meaning: 'resmi', pos: 'adj' }],
+    wordFamily: [
+      { word: 'casually', pos: 'adv', meaning: 'gündelik bir şekilde' }
+    ],
+    synonyms: [
+      { word: 'Informal', meaning: 'Resmi olmayan', pos: 'adj' },
+      { word: 'Relaxed', meaning: 'Rahat', pos: 'adj' }
+    ],
+    antonyms: [
+      { word: 'Formal', meaning: 'Resmi', pos: 'adj' }
+    ],
     collocations: ['casual clothes', 'casual look'],
-    collocationMeanings: { 'casual clothes': 'g ndelik k yafetler', 'casual look': 'spor g r n m' },
+    collocationMeanings: {
+      'casual clothes': 'gündelik kıyafetler',
+      'casual look': 'spor görünüm'
+    },
     examples: ['He looked casual in his jeans and t-shirt.'],
-    exampleTranslations: ['Kot pantolonu ve ti  rt yle g ndelik (rahat) g r n yordu.']
+    exampleTranslations: ['Kot pantolonu ve tişörtüyle gündelik (rahat) görünüyordu.']
   },
   {
     id: 'colourful_lh',
     word: 'Colourful',
     pos: 'adjective',
-    meaning: 'renkli, c v l c v l',
+    meaning: 'Renkli, cıvıl cıvıl',
     definition: 'Has bright or many different colours.',
-    ipa: "/'k l. .f l/",
+    ipa: "/ˈkʌl.ə.fəl/",
     level: 'pre-intermediate',
-    wordFamily: [{ word: 'colour', pos: 'noun', meaning: 'renk' }],
-    synonyms: [{ word: 'Vibrant', meaning: 'canl /parlak', pos: 'adj' }],
-    antonyms: [{ word: 'Colourless', meaning: 'renksiz', pos: 'adj' }, { word: 'Plain', meaning: 'sade', pos: 'adj' }],
+    wordFamily: [
+      { word: 'colour', pos: 'noun/verb', meaning: 'renk/boyamak' }
+    ],
+    synonyms: [
+      { word: 'Vibrant', meaning: 'Canlı/Parlak', pos: 'adj' },
+      { word: 'Bright', meaning: 'Parlak', pos: 'adj' }
+    ],
+    antonyms: [
+      { word: 'Colourless', meaning: 'Renksiz', pos: 'adj' },
+      { word: 'Plain', meaning: 'Sade', pos: 'adj' }
+    ],
     collocations: ['colourful dress', 'colourful garden'],
-    collocationMeanings: { 'colourful dress': 'renkli elbise', 'colourful garden': 'renkli bah e' },
+    collocationMeanings: {
+      'colourful dress': 'renkli elbise',
+      'colourful garden': 'renkli bahçe'
+    },
     examples: ['I love that colourful dress.'],
-    exampleTranslations: ['O renkli elbiseye bay l yorum.']
+    exampleTranslations: ['O renkli elbiseye bayılıyorum.']
   },
   {
     id: 'cough_lh',
     word: 'Cough',
     pos: 'noun',
-    meaning: ' ks r k',
+    meaning: 'Öksürük',
     definition: 'An illness in which air is forced up through your throat.',
-    ipa: '/k f/',
+    ipa: '/kɒf/',
     level: 'pre-intermediate',
-    wordFamily: [{ word: 'cough', pos: 'verb', meaning: ' ks rmek' }],
+    wordFamily: [
+      { word: 'cough', pos: 'verb', meaning: 'öksürmek' }
+    ],
     synonyms: [],
     antonyms: [],
     collocations: ['bad cough', 'dry cough'],
-    collocationMeanings: { 'bad cough': 'k t   ks r k', 'dry cough': 'kuru  ks r k' },
+    collocationMeanings: {
+      'bad cough': 'kötü öksürük',
+      'dry cough': 'kuru öksürük'
+    },
     examples: ["She couldn't sleep well because of her cough."],
-    exampleTranslations: [' ks r    y z nden iyi uyuyamad .']
+    exampleTranslations: ['Öksürüğü yüzünden iyi uyuyamadı.']
   },
   {
     id: 'sore_throat_lh',
     word: 'Sore throat',
     pos: 'noun',
-    meaning: 'bo az a r s ',
+    meaning: 'Boğaz ağrısı',
     definition: 'Pain in the throat, typically caused by a cold or a virus.',
-    ipa: '/ s     r  t/',
+    ipa: '/ˌsɔː ˈθrəʊt/',
     level: 'pre-intermediate',
     wordFamily: [],
     synonyms: [],
     antonyms: [],
     collocations: ['have a sore throat', 'remedy for sore throat'],
-    collocationMeanings: { 'have a sore throat': 'bo az  a r mak', 'remedy for sore throat': 'bo az a r s  ilac ' },
+    collocationMeanings: {
+      'have a sore throat': 'boğazı ağrımak',
+      'remedy for sore throat': 'boğaz ağrısı ilacı'
+    },
     examples: ['Have we got any medicine for a sore throat?'],
-    exampleTranslations: ['Bo az a r s  i in hi  ilac m z var m ?']
+    exampleTranslations: ['Boğaz ağrısı için hiç ilacımız var mı?']
   },
   {
     id: 'sunburn_lh',
     word: 'Sunburn',
     pos: 'noun',
-    meaning: 'g ne  yan   ',
+    meaning: 'Güneş yanığı',
     definition: 'Condition of having red sore skin caused by staying in the sun for too long.',
-    ipa: "/'s n.b  n/",
+    ipa: "/ˈsʌn.bɜːn/",
     level: 'pre-intermediate',
-    wordFamily: [{ word: 'sunburnt', pos: 'adj', meaning: 'g ne ten yanm  ' }],
+    wordFamily: [
+      { word: 'sunburnt', pos: 'adj', meaning: 'güneşten yanmış' }
+    ],
     synonyms: [],
     antonyms: [],
     collocations: ['painful sunburn', 'get sunburn'],
-    collocationMeanings: { 'painful sunburn': 'ac l  g ne  yan   ', 'get sunburn': 'g ne ten yanmak' },
+    collocationMeanings: {
+      'painful sunburn': 'acılı güneş yanığı',
+      'get sunburn': 'güneşten yanmak'
+    },
     examples: ['That sunburn looks very painful.'],
-    exampleTranslations: ['O g ne  yan     ok ac l  g r n yor.']
+    exampleTranslations: ['O güneş yanığı çok acılı görünüyor.']
   },
   {
     id: 'stomach_ache_lh',
     word: 'Stomach ache',
     pos: 'noun',
-    meaning: 'kar n a r s ',
+    meaning: 'Karın ağrısı',
     definition: 'Pain in your stomach.',
-    ipa: "/'st m. k e k/",
+    ipa: "/ˈstʌm.ək eɪk/",
     level: 'pre-intermediate',
     wordFamily: [],
-    synonyms: [{ word: 'Stomach pain', meaning: 'kar n a r s ', pos: 'noun' }],
+    synonyms: [
+      { word: 'Stomach pain', meaning: 'Karın ağrısı', pos: 'noun' }
+    ],
     antonyms: [],
     collocations: ['have a stomach ache', 'terrible stomach ache'],
-    collocationMeanings: { 'have a stomach ache': 'karn  a r mak', 'terrible stomach ache': 'korkun  kar n a r s ' },
+    collocationMeanings: {
+      'have a stomach ache': 'karnı ağrımak',
+      'terrible stomach ache': 'korkunç karın ağrısı'
+    },
     examples: ['I have a stomach ache from eating too much.'],
-    exampleTranslations: [' ok fazla yemekten karn m a r yor.']
+    exampleTranslations: ['Çok fazla yemekten karnım ağrıyor.']
   },
   {
     id: 'nordic_walking_lh',
     word: 'Nordic walking',
     pos: 'noun',
-    meaning: 'iskandinav y r y    (batonlu)',
+    meaning: 'İskandinav yürüyüşü (batonlu)',
     definition: 'A version of walking that requires poles.',
-    ipa: "/'n  .d k 'w  .k  /",
+    ipa: "/ˌnɔː.dɪk ˈwɔː.kɪŋ/",
     level: 'pre-intermediate',
     wordFamily: [],
     synonyms: [],
     antonyms: [],
     collocations: ['go Nordic walking'],
-    collocationMeanings: { 'go Nordic walking': ' skandinav y r y   ne   kmak' },
+    collocationMeanings: {
+      'go Nordic walking': 'İskandinav yürüyüşüne çıkmak'
+    },
     examples: ['Dave enjoys Nordic walking.'],
-    exampleTranslations: ['Dave  skandinav y r y   nden keyif al r.']
+    exampleTranslations: ['Dave İskandinav yürüyüşünden keyif alır.']
   },
   {
     id: 'cod_lh',
     word: 'Cod',
     pos: 'noun',
-    meaning: 'morina bal   ',
+    meaning: 'Morina balığı',
     definition: 'A type of fish which is commonly eaten.',
-    ipa: '/k d/',
+    ipa: '/kɒd/',
     level: 'pre-intermediate',
     wordFamily: [],
     synonyms: [],
     antonyms: [],
     collocations: ['fresh cod', 'cod fillet'],
-    collocationMeanings: { 'fresh cod': 'taze morina', 'cod fillet': 'morina filetosu' },
+    collocationMeanings: {
+      'fresh cod': 'taze morina',
+      'cod fillet': 'morina filetosu'
+    },
     examples: ['Cod is my favourite fish.'],
-    exampleTranslations: ['Morina en sevdi im bal kt r.']
+    exampleTranslations: ['Morina en sevdiğim balıktır.']
   },
   {
     id: 'grain_lh',
     word: 'Grain',
     pos: 'noun',
-    meaning: 'tah l, tah l tanesi',
+    meaning: 'Tahıl, tahıl tanesi',
     definition: 'The seeds from crops such as wheat, rice, or barley.',
-    ipa: '/ re n/',
+    ipa: '/ɡreɪn/',
     level: 'pre-intermediate',
     wordFamily: [],
-    synonyms: [{ word: 'Cereal', meaning: 'tah l', pos: 'noun' }],
+    synonyms: [
+      { word: 'Cereal', meaning: 'Tahıl', pos: 'noun' }
+    ],
     antonyms: [],
     collocations: ['mixed grain', 'whole grain'],
-    collocationMeanings: { 'mixed grain': 'kar   k tah l', 'whole grain': 'tam tah l' },
+    collocationMeanings: {
+      'mixed grain': 'karışık tahıl',
+      'whole grain': 'tam tahıl'
+    },
     examples: ['Can I have 3 bags of mixed grain, please?'],
-    exampleTranslations: ['3 torba kar   k tah l alabilir miyim l tfen?']
+    exampleTranslations: ['3 torba karışık tahıl alabilir miyim lütfen?']
   },
   {
     id: 'lettuce_lh',
     word: 'Lettuce',
     pos: 'noun',
-    meaning: 'marul',
+    meaning: 'Marul',
     definition: 'A vegetable with large thin green leaves that you eat raw in a salad.',
-    ipa: "/'let. s/",
+    ipa: "/ˈlet.ɪs/",
     level: 'pre-intermediate',
     wordFamily: [],
     synonyms: [],
     antonyms: [],
     collocations: ['fresh lettuce', 'crisp lettuce'],
-    collocationMeanings: { 'fresh lettuce': 'taze marul', 'crisp lettuce': 'k t r marul' },
+    collocationMeanings: {
+      'fresh lettuce': 'taze marul',
+      'crisp lettuce': 'kıtır marul'
+    },
     examples: ['There is too much lettuce in this sandwich.'],
-    exampleTranslations: ['Bu sandvi te  ok fazla marul var.']
+    exampleTranslations: ['Bu sandviçte çok fazla marul var.']
   },
   {
     id: 'lobster_lh',
     word: 'Lobster',
     pos: 'noun',
-    meaning: 'istakoz',
+    meaning: 'İstakoz',
     definition: 'A shellfish that has a long body, eight legs, and two claws.',
-    ipa: "/'l b.st (r)/",
+    ipa: "/ˈlɒb.stər/",
     level: 'pre-intermediate',
     wordFamily: [],
     synonyms: [],
     antonyms: [],
     collocations: ['fresh lobster', 'grilled lobster'],
-    collocationMeanings: { 'fresh lobster': 'taze istakoz', 'grilled lobster': ' zgara istakoz' },
+    collocationMeanings: {
+      'fresh lobster': 'taze istakoz',
+      'grilled lobster': 'izgara istakoz'
+    },
     examples: ['The lobster in this restaurant is delicious but very expensive.'],
-    exampleTranslations: ['Bu restorandaki istakoz lezzetli ama  ok pahal .']
+    exampleTranslations: ['Bu restorandaki istakoz lezzetli ama çok pahalı.']
   },
   {
     id: 'oats_lh',
     word: 'Oats',
     pos: 'noun',
-    meaning: 'yulaf',
+    meaning: 'Yulaf',
     definition: 'A type of grain that people and animals eat.',
-    ipa: '/  ts/',
+    ipa: '/əʊts/',
     level: 'pre-intermediate',
     wordFamily: [],
     synonyms: [],
     antonyms: [],
     collocations: ['rolled oats', 'bowl of oats'],
-    collocationMeanings: { 'rolled oats': 'yulaf ezmesi', 'bowl of oats': 'bir kase yulaf' },
+    collocationMeanings: {
+      'rolled oats': 'yulaf ezmesi',
+      'bowl of oats': 'bir kase yulaf'
+    },
     examples: ['Horses love eating oats.'],
     exampleTranslations: ['Atlar yulaf yemeyi sever.']
   },
@@ -1015,335 +1562,517 @@ export const vocabularyData: VocabularyWord[] = [
     id: 'shrimp_lh',
     word: 'Shrimp',
     pos: 'noun',
-    meaning: 'karides',
+    meaning: 'Karides',
     definition: 'A small shellfish with a lot of legs.',
-    ipa: '/ r mp/',
+    ipa: '/ʃrɪmp/',
     level: 'pre-intermediate',
     wordFamily: [],
-    synonyms: [{ word: 'Prawn', meaning: 'karides (b y k)', pos: 'noun' }],
+    synonyms: [
+      { word: 'Prawn', meaning: 'Karides (büyük)', pos: 'noun' }
+    ],
     antonyms: [],
     collocations: ['shrimp curry', 'fried shrimp'],
-    collocationMeanings: { 'shrimp curry': 'karidesli k ri', 'fried shrimp': 'k zarm   karides' },
+    collocationMeanings: {
+      'shrimp curry': 'karidesli köri',
+      'fried shrimp': 'kızarmış karides'
+    },
     examples: ["I'll have the shrimp curry please."],
-    exampleTranslations: ['Karidesli k ri alay m l tfen.']
+    exampleTranslations: ['Karidesli köri alayım lütfen.']
   },
   {
     id: 'wheat_lh',
     word: 'Wheat',
     pos: 'noun',
-    meaning: 'bu day',
+    meaning: 'Buğday',
     definition: 'A tall plant that produces grain for making bread.',
-    ipa: '/wi t/',
+    ipa: '/wiːt/',
     level: 'pre-intermediate',
     wordFamily: [],
     synonyms: [],
     antonyms: [],
     collocations: ['wheat flour', 'wheat field'],
-    collocationMeanings: { 'wheat flour': 'bu day unu', 'wheat field': 'bu day tarlas ' },
+    collocationMeanings: {
+      'wheat flour': 'buğday unu',
+      'wheat field': 'buğday tarlası'
+    },
     examples: ['A large quantity of wheat was grown by farmers last year.'],
-    exampleTranslations: ['Ge en y l  ift iler taraf ndan b y k miktarda bu day yeti tirildi.']
+    exampleTranslations: ['Geçen yıl çiftçiler tarafından büyük miktarda buğday yetiştirildi.']
   },
   {
     id: 'anxious_lh',
     word: 'Anxious',
     pos: 'adjective',
-    meaning: 'endi eli, kayg l ',
+    meaning: 'Endişeli, kaygılı',
     definition: 'Worried because you think something bad might happen.',
-    ipa: "/'  k.  s/",
+    ipa: "/ˈæŋk.ʃəs/",
     level: 'pre-intermediate',
-    wordFamily: [{ word: 'anxiety', pos: 'noun', meaning: 'kayg ' }],
-    synonyms: [{ word: 'Worried', meaning: 'endi eli', pos: 'adj' }, { word: 'Nervous', meaning: 'gergin', pos: 'adj' }],
-    antonyms: [{ word: 'Calm', meaning: 'sakin', pos: 'adj' }, { word: 'Confident', meaning: 'kendinden emin', pos: 'adj' }],
+    wordFamily: [
+      { word: 'anxiety', pos: 'noun', meaning: 'kaygı' },
+      { word: 'anxiously', pos: 'adv', meaning: 'endişeyle' }
+    ],
+    synonyms: [
+      { word: 'Worried', meaning: 'Endişeli', pos: 'adj' },
+      { word: 'Nervous', meaning: 'Gergin', pos: 'adj' }
+    ],
+    antonyms: [
+      { word: 'Calm', meaning: 'Sakin', pos: 'adj' },
+      { word: 'Confident', meaning: 'Kendinden emin', pos: 'adj' }
+    ],
     collocations: ['feel anxious', 'anxious about'],
-    collocationMeanings: { 'feel anxious': 'endi eli hissetmek', 'anxious about': 'bir  ey hakk nda endi eli' },
+    collocationMeanings: {
+      'feel anxious': 'endişeli hissetmek',
+      'anxious about': 'bir şey hakkında endişeli'
+    },
     examples: ['His silence made me anxious.'],
-    exampleTranslations: ['Sessizli i beni endi elendirdi.']
+    exampleTranslations: ['Sessizliği beni endişelendirdi.']
   },
   {
     id: 'cheerful_lh',
     word: 'Cheerful',
     pos: 'adjective',
-    meaning: 'ne eli,  en',
+    meaning: 'Neşeli, şen',
     definition: 'Behaving in a happy, friendly way.',
-    ipa: "/'t   .f l/",
+    ipa: "/ˈtʃɪə.fəl/",
     level: 'pre-intermediate',
-    wordFamily: [{ word: 'cheer', pos: 'verb', meaning: 'ne elendirmek' }],
-    synonyms: [{ word: 'Happy', meaning: 'mutlu', pos: 'adj' }, { word: 'Joyful', meaning: 'sevin li', pos: 'adj' }],
-    antonyms: [{ word: 'Miserable', meaning: 'peri an/mutsuz', pos: 'adj' }],
+    wordFamily: [
+      { word: 'cheer', pos: 'verb', meaning: 'neşelendirmek' },
+      { word: 'cheerfully', pos: 'adv', meaning: 'neşeyle' }
+    ],
+    synonyms: [
+      { word: 'Happy', meaning: 'Mutlu', pos: 'adj' },
+      { word: 'Joyful', meaning: 'Sevinçli', pos: 'adj' }
+    ],
+    antonyms: [
+      { word: 'Miserable', meaning: 'Perişan/Mutsuz', pos: 'adj' },
+      { word: 'Gloomy', meaning: 'Kasvetli', pos: 'adj' }
+    ],
     collocations: ['cheerful person', 'stay cheerful'],
-    collocationMeanings: { 'cheerful person': 'ne eli ki i', 'stay cheerful': 'ne eli kalmak' },
+    collocationMeanings: {
+      'cheerful person': 'neşeli kişi',
+      'stay cheerful': 'neşeli kalmak'
+    },
     examples: ['Stephen was a cheerful, affectionate child.'],
-    exampleTranslations: ['Stephen ne eli ve sevgi dolu bir  ocuktu.']
+    exampleTranslations: ['Stephen neşeli ve sevgi dolu bir çocuktu.']
   },
   {
     id: 'confused_lh',
     word: 'Confused',
     pos: 'adjective',
-    meaning: 'kafas  kar  m  ',
+    meaning: 'Kafası karışmış',
     definition: 'Unable to understand something or think clearly about it.',
-    ipa: '/k n fju zd/',
+    ipa: '/kənˈfjuːzd/',
     level: 'pre-intermediate',
-    wordFamily: [{ word: 'confusion', pos: 'noun', meaning: 'kar   kl k' }],
-    synonyms: [{ word: 'Puzzled', meaning: ' a k n', pos: 'adj' }, { word: 'Baffled', meaning: 'donup kalm  ', pos: 'adj' }],
-    antonyms: [{ word: 'Clear', meaning: 'net/anla  l r', pos: 'adj' }],
+    wordFamily: [
+      { word: 'confusion', pos: 'noun', meaning: 'karışıklık' },
+      { word: 'confuse', pos: 'verb', meaning: 'kafa karıştırmak' }
+    ],
+    synonyms: [
+      { word: 'Puzzled', meaning: 'Şaşkın', pos: 'adj' },
+      { word: 'Baffled', meaning: 'Donup kalmış', pos: 'adj' }
+    ],
+    antonyms: [
+      { word: 'Clear', meaning: 'Net/Anlaşılır', pos: 'adj' }
+    ],
     collocations: ['totally confused', 'look confused'],
-    collocationMeanings: { 'totally confused': 'tamamen kafas  kar  m  ', 'look confused': 'kafas  kar  m   g r nmek' },
+    collocationMeanings: {
+      'totally confused': 'tamamen kafası karışmış',
+      'look confused': 'kafası karışmış görünmek'
+    },
     examples: ['She was starting to feel a bit confused.'],
-    exampleTranslations: ['Biraz kafas  kar  maya ba lam  t .']
+    exampleTranslations: ['Biraz kafası karışmaya başlamıştı.']
   },
   {
     id: 'glad_lh',
     word: 'Glad',
     pos: 'adjective',
-    meaning: 'memnun, mutlu',
+    meaning: 'Memnun, mutlu',
     definition: 'Happy and pleased about something.',
-    ipa: '/ l d/',
+    ipa: '/ɡlæd/',
     level: 'pre-intermediate',
-    wordFamily: [{ word: 'gladly', pos: 'adverb', meaning: 'memnuniyetle' }],
-    synonyms: [{ word: 'Pleased', meaning: 'memnun', pos: 'adj' }, { word: 'Happy', meaning: 'mutlu', pos: 'adj' }],
-    antonyms: [{ word: 'Sad', meaning: ' zg n', pos: 'adj' }, { word: 'Sorry', meaning: 'pi man/ zg n', pos: 'adj' }],
+    wordFamily: [
+      { word: 'gladly', pos: 'adv', meaning: 'memnuniyetle' }
+    ],
+    synonyms: [
+      { word: 'Pleased', meaning: 'Memnun', pos: 'adj' },
+      { word: 'Happy', meaning: 'Mutlu', pos: 'adj' }
+    ],
+    antonyms: [
+      { word: 'Sad', meaning: 'Üzgün', pos: 'adj' },
+      { word: 'Sorry', meaning: 'Pişman/Üzgün', pos: 'adj' }
+    ],
     collocations: ['glad to hear', 'glad to help'],
-    collocationMeanings: { 'glad to hear': 'duydu una sevinmek', 'glad to help': 'yard m etti ine sevinmek' },
+    collocationMeanings: {
+      'glad to hear': 'duyduğuna sevinmek',
+      'glad to help': 'yardım ettiğine sevinmek'
+    },
     examples: ['She was so glad to have met him.'],
-    exampleTranslations: ['Onunla tan  t    i in  ok mutluydu.']
+    exampleTranslations: ['Onunla tanıştığı için çok mutluydu.']
   },
   {
     id: 'nervous_lh',
     word: 'Nervous',
     pos: 'adjective',
-    meaning: 'gergin, heyecanl ',
+    meaning: 'Gergin, heyecanlı',
     definition: 'Feeling excited and worried, or slightly afraid.',
-    ipa: "/'n  .v s/",
+    ipa: "/ˈnɜː.vəs/",
     level: 'pre-intermediate',
-    wordFamily: [{ word: 'nerve', pos: 'noun', meaning: 'sinir/cesaret' }],
-    synonyms: [{ word: 'Anxious', meaning: 'endi eli', pos: 'adj' }, { word: 'Apprehensive', meaning: 'evhaml ', pos: 'adj' }],
-    antonyms: [{ word: 'Confident', meaning: 'kendinden emin', pos: 'adj' }, { word: 'Calm', meaning: 'sakin', pos: 'adj' }],
+    wordFamily: [
+      { word: 'nerve', pos: 'noun', meaning: 'sinir/cesaret' },
+      { word: 'nervously', pos: 'adv', meaning: 'gergin bir şekilde' }
+    ],
+    synonyms: [
+      { word: 'Anxious', meaning: 'Endişeli', pos: 'adj' },
+      { word: 'Apprehensive', meaning: 'Evhamlı', pos: 'adj' }
+    ],
+    antonyms: [
+      { word: 'Confident', meaning: 'Kendinden emin', pos: 'adj' },
+      { word: 'Calm', meaning: 'Sakin', pos: 'adj' }
+    ],
     collocations: ['get nervous', 'nervous tension'],
-    collocationMeanings: { 'get nervous': 'gerilmek/heyecanlanmak', 'nervous tension': 'sinirsel gerginlik' },
+    collocationMeanings: {
+      'get nervous': 'gerilmek/heyecanlanmak',
+      'nervous tension': 'sinirsel gerginlik'
+    },
     examples: ['Driving on mountain roads always makes me nervous.'],
-    exampleTranslations: ['Da  yollar nda araba s rmek beni her zaman gerer.']
+    exampleTranslations: ['Dağ yollarında araba sürmek beni her zaman gerer.']
   },
   {
     id: 'pleased_lh',
     word: 'Pleased',
     pos: 'adjective',
-    meaning: 'memnun',
+    meaning: 'Memnun',
     definition: 'Happy and satisfied.',
-    ipa: '/pli zd/',
+    ipa: '/pliːzd/',
     level: 'pre-intermediate',
-    wordFamily: [{ word: 'please', pos: 'verb', meaning: 'memnun etmek' }],
-    synonyms: [{ word: 'Satisfied', meaning: 'tatmin olmu ', pos: 'adj' }, { word: 'Happy', meaning: 'mutlu', pos: 'adj' }],
-    antonyms: [{ word: 'Disappointed', meaning: 'hayal k r kl   na u ram  ', pos: 'adj' }, { word: 'Unhappy', meaning: 'mutsuz', pos: 'adj' }],
+    wordFamily: [
+      { word: 'please', pos: 'verb', meaning: 'memnun etmek' },
+      { word: 'pleasure', pos: 'noun', meaning: 'keyif/haz' }
+    ],
+    synonyms: [
+      { word: 'Satisfied', meaning: 'Tatmin olmuş', pos: 'adj' },
+      { word: 'Happy', meaning: 'Mutlu', pos: 'adj' }
+    ],
+    antonyms: [
+      { word: 'Disappointed', meaning: 'Hayal kırıklığına uğramış', pos: 'adj' },
+      { word: 'Unhappy', meaning: 'Mutsuz', pos: 'adj' }
+    ],
     collocations: ['pleased with the results', 'pleased to meet you'],
-    collocationMeanings: { 'pleased with the results': 'sonu lardan memnun', 'pleased to meet you': 'tan  t   m za memnun oldum' },
+    collocationMeanings: {
+      'pleased with the results': 'sonuçlardan memnun',
+      'pleased to meet you': 'tanıştığımıza memnun oldum'
+    },
     examples: ["I'm very pleased with the results."],
-    exampleTranslations: ['Sonu lardan  ok memnunum.']
+    exampleTranslations: ['Sonuçlardan çok memnunum.']
   },
   {
     id: 'suitcase_lh',
     word: 'Suitcase',
     pos: 'noun',
-    meaning: 'valiz, bavul',
+    meaning: 'Valiz, bavul',
     definition: 'A large container with flat sides and a handle used for carrying clothes.',
-    ipa: "/'su t.ke s/",
+    ipa: "/ˈsuːt.keɪs/",
     level: 'pre-intermediate',
-    wordFamily: [{ word: 'case', pos: 'noun', meaning: 'kasa/ anta' }],
-    synonyms: [{ word: 'Luggage', meaning: 'bagaj', pos: 'noun' }],
+    wordFamily: [
+      { word: 'case', pos: 'noun', meaning: 'kasa/çanta' }
+    ],
+    synonyms: [
+      { word: 'Luggage', meaning: 'Bagaj', pos: 'noun' }
+    ],
     antonyms: [],
     collocations: ['pack a suitcase', 'heavy suitcase'],
-    collocationMeanings: { 'pack a suitcase': 'valiz haz rlamak', 'heavy suitcase': 'a  r valiz' },
+    collocationMeanings: {
+      'pack a suitcase': 'valiz hazırlamak',
+      'heavy suitcase': 'ağır valiz'
+    },
     examples: ['She took two large cases on holiday.'],
-    exampleTranslations: ['Tatile iki b y k valiz g t rd .']
+    exampleTranslations: ['Tatile iki büyük valiz götürdü.']
   },
   {
     id: 'bring_up_lh',
     word: 'Bring up',
     pos: 'phrasal verb',
-    meaning: ' ocuk yeti tirmek, b y tmek',
+    meaning: 'Çocuk yetiştirmek, büyütmek',
     definition: 'To look after a child until he or she becomes an adult.',
-    ipa: '/br    p/',
+    ipa: '/brɪŋ ʌp/',
     level: 'pre-intermediate',
     wordFamily: [],
-    synonyms: [{ word: 'Raise', meaning: 'yeti tirmek', pos: 'verb' }],
-    antonyms: [{ word: 'Abandon', meaning: 'terk etmek', pos: 'verb' }],
+    synonyms: [
+      { word: 'Raise', meaning: 'Yetiştirmek', pos: 'verb' },
+      { word: 'Nurture', meaning: 'Besleyip büyütmek', pos: 'verb' }
+    ],
+    antonyms: [
+      { word: 'Abandon', meaning: 'Terk etmek', pos: 'verb' },
+      { word: 'Neglect', meaning: 'İhmal etmek', pos: 'verb' }
+    ],
     collocations: ['bring up children', 'well brought up'],
-    collocationMeanings: { 'bring up children': ' ocuk yeti tirmek', 'well brought up': 'iyi yeti tirilmi ' },
+    collocationMeanings: {
+      'bring up children': 'çocuk yetiştirmek',
+      'well brought up': 'iyi yetiştirilmiş'
+    },
     examples: ['She brought up three sons on her own.'],
-    exampleTranslations: ['Kendi ba  na    o ul yeti tirdi.']
+    exampleTranslations: ['Kendi başına üç oğul yetiştirdi.']
   },
   {
     id: 'drop_out_lh',
     word: 'Drop out',
     pos: 'phrasal verb',
-    meaning: 'okulu b rakmak, ayr lmak',
+    meaning: 'Okulu bırakmak, ayrılmak',
     definition: 'To leave something such as a school or competition before you have finished.',
-    ipa: '/dr p a t/',
+    ipa: '/drɒp aʊt/',
     level: 'pre-intermediate',
     wordFamily: [],
-    synonyms: [{ word: 'Quit', meaning: 'b rakmak', pos: 'verb' }, { word: 'Leave', meaning: 'ayr lmak', pos: 'verb' }],
-    antonyms: [{ word: 'Graduate', meaning: 'mezun olmak', pos: 'verb' }, { word: 'Complete', meaning: 'tamamlamak', pos: 'verb' }],
+    synonyms: [
+      { word: 'Quit', meaning: 'Bırakmak', pos: 'verb' },
+      { word: 'Leave', meaning: 'Ayrılmak', pos: 'verb' }
+    ],
+    antonyms: [
+      { word: 'Graduate', meaning: 'Mezun olmak', pos: 'verb' },
+      { word: 'Complete', meaning: 'Tamamlamak', pos: 'verb' }
+    ],
     collocations: ['drop out of school', 'drop out of college'],
-    collocationMeanings: { 'drop out of school': 'okulu b rakmak', 'drop out of college': ' niversiteyi b rakmak' },
+    collocationMeanings: {
+      'drop out of school': 'okulu bırakmak',
+      'drop out of college': 'üniversiteyi bırakmak'
+    },
     examples: ['She was injured in the first round and had to drop out.'],
-    exampleTranslations: [' lk turda sakatland  ve (yar  madan) ayr lmak zorunda kald .']
+    exampleTranslations: ['İlk turda sakatlandı ve (yarışmadan) ayrılmak zorunda kaldı.']
   },
   {
     id: 'fall_out_lh',
     word: 'Fall out',
     pos: 'phrasal verb',
-    meaning: 'k smek, tart  mak',
+    meaning: 'Küsmek, tartışmak',
     definition: 'To stop being friendly with someone because you have had a disagreement.',
-    ipa: '/f  l a t/',
+    ipa: '/fɔːl aʊt/',
     level: 'pre-intermediate',
     wordFamily: [],
-    synonyms: [{ word: 'Argue', meaning: 'tart  mak', pos: 'verb' }, { word: 'Quarrel', meaning: 'at  mak', pos: 'verb' }],
-    antonyms: [{ word: 'Make up', meaning: 'bar  mak', pos: 'phrase' }],
+    synonyms: [
+      { word: 'Argue', meaning: 'Tartışmak', pos: 'verb' },
+      { word: 'Quarrel', meaning: 'Atışmak', pos: 'verb' }
+    ],
+    antonyms: [
+      { word: 'Make up', meaning: 'Barışmak', pos: 'phrase' }
+    ],
     collocations: ['fall out with a friend', 'rarely fall out'],
-    collocationMeanings: { 'fall out with a friend': 'bir arkada la k smek', 'rarely fall out': 'nadir tart  mak' },
+    collocationMeanings: {
+      'fall out with a friend': 'bir arkadaşla küsmek',
+      'rarely fall out': 'nadir tartışmak'
+    },
     examples: ['Have you two fallen out?'],
-    exampleTranslations: ['Siz ikiniz k st n z m ?']
+    exampleTranslations: ['Siz ikiniz küstünüz mü?']
   },
   {
     id: 'grow_up_lh',
     word: 'Grow up',
     pos: 'phrasal verb',
-    meaning: 'b y mek, serpilmek',
+    meaning: 'Büyümek, serpilmek',
     definition: 'To change from being a baby or young child to being an older child or adult.',
-    ipa: '/ r    p/',
+    ipa: '/ɡrəʊ ʌp/',
     level: 'pre-intermediate',
-    wordFamily: [{ word: 'grown-up', pos: 'noun/adj', meaning: 'yeti kin' }],
-    synonyms: [{ word: 'Mature', meaning: 'olgunla mak', pos: 'verb' }],
+    wordFamily: [
+      { word: 'grown-up', pos: 'noun/adj', meaning: 'yetişkin' }
+    ],
+    synonyms: [
+      { word: 'Mature', meaning: 'Olgunlaşmak', pos: 'verb' }
+    ],
     antonyms: [],
     collocations: ['grow up in', 'when I grow up'],
-    collocationMeanings: { 'grow up in': 'bir yerde b y mek', 'when I grow up': 'b y d   m zaman' },
+    collocationMeanings: {
+      'grow up in': 'bir yerde büyümek',
+      'when I grow up': 'büyüdüğüm zaman'
+    },
     examples: ["She's really starting to grow up now."],
-    exampleTranslations: ['Art k ger ekten b y meye ba l yor.']
+    exampleTranslations: ['Artık gerçekten büyümeye başlıyor.']
   },
   {
     id: 'make_up_lh',
     word: 'Make up',
     pos: 'phrasal verb',
-    meaning: 'uydurmak (hikaye vb.)',
+    meaning: 'Uydurmak (hikaye vb.)',
     definition: 'To invent an explanation for something, especially to avoid being punished.',
-    ipa: '/me k  p/',
+    ipa: '/meɪk ʌp/',
     level: 'pre-intermediate',
     wordFamily: [],
-    synonyms: [{ word: 'Invent', meaning: 'icat etmek/uydurmak', pos: 'verb' }, { word: 'Fabricate', meaning: 'uydurmak', pos: 'verb' }],
+    synonyms: [
+      { word: 'Invent', meaning: 'İcat etmek/Uydurmak', pos: 'verb' },
+      { word: 'Fabricate', meaning: 'Uydurmak', pos: 'verb' }
+    ],
     antonyms: [],
     collocations: ['make up an excuse', 'make up a story'],
-    collocationMeanings: { 'make up an excuse': 'bahane uydurmak', 'make up a story': 'hikaye uydurmak' },
+    collocationMeanings: {
+      'make up an excuse': 'bahane uydurmak',
+      'make up a story': 'hikaye uydurmak'
+    },
     examples: ['He made up some excuse about the dog eating his homework.'],
-    exampleTranslations: [' devini k pe in yedi ine dair bir bahane uydurdu.']
+    exampleTranslations: ['Ödevini köpeğin yediğine dair bir bahane uydurdu.']
   },
   {
     id: 'give_up_lh',
     word: 'Give up',
     pos: 'phrasal verb',
-    meaning: 'vazge mek, b rakmak',
+    meaning: 'Vazgeçmek, bırakmak',
     definition: 'To stop doing something that you do regularly.',
-    ipa: '/  v  p/',
+    ipa: '/ɡɪv ʌp/',
     level: 'pre-intermediate',
     wordFamily: [],
-    synonyms: [{ word: 'Quit', meaning: 'b rakmak', pos: 'verb' }, { word: 'Abandon', meaning: 'terk etmek', pos: 'verb' }],
-    antonyms: [{ word: 'Continue', meaning: 'devam etmek', pos: 'verb' }, { word: 'Persist', meaning: ' srar etmek', pos: 'verb' }],
+    synonyms: [
+      { word: 'Quit', meaning: 'Bırakmak', pos: 'verb' },
+      { word: 'Abandon', meaning: 'Terk etmek', pos: 'verb' }
+    ],
+    antonyms: [
+      { word: 'Continue', meaning: 'Devam etmek', pos: 'verb' },
+      { word: 'Persist', meaning: 'Israr etmek', pos: 'verb' }
+    ],
     collocations: ['give up smoking', 'never give up'],
-    collocationMeanings: { 'give up smoking': 'sigaray  b rakmak', 'never give up': 'asla pes etme' },
+    collocationMeanings: {
+      'give up smoking': 'sigarayı bırakmak',
+      'never give up': 'asla pes etme'
+    },
     examples: ['His wife finally persuaded him to give up smoking.'],
-    exampleTranslations: ['Kar s  sonunda onu sigaray  b rakmaya ikna etti.']
+    exampleTranslations: ['Karısı sonunda onu sigarayı bırakmaya ikna etti.']
   },
   {
     id: 'audience_lh',
     word: 'Audience',
     pos: 'noun',
-    meaning: 'seyirci, izleyici kitlesi',
+    meaning: 'Seyirci, izleyici kitlesi',
     definition: 'A group of people who have come to a place to see or hear a film or performance.',
-    ipa: "/'  .di. ns/",
+    ipa: "/ˈɔː.di.əns/",
     level: 'pre-intermediate',
     wordFamily: [],
-    synonyms: [{ word: 'Spectators', meaning: 'izleyiciler', pos: 'noun' }, { word: 'Viewers', meaning: 'izleyenler', pos: 'noun' }],
-    antonyms: [{ word: 'Performers', meaning: 'sergileyenler', pos: 'noun' }],
+    synonyms: [
+      { word: 'Spectators', meaning: 'İzleyiciler', pos: 'noun' },
+      { word: 'Viewers', meaning: 'İzleyenler', pos: 'noun' }
+    ],
+    antonyms: [
+      { word: 'Performers', meaning: 'Sergileyenler', pos: 'noun' }
+    ],
     collocations: ['target audience', 'live audience'],
-    collocationMeanings: { 'target audience': 'hedef kitle', 'live audience': 'canl  seyirci' },
+    collocationMeanings: {
+      'target audience': 'hedef kitle',
+      'live audience': 'canlı seyirci'
+    },
     examples: ['She would be addressing an audience of three thousand teachers.'],
-    exampleTranslations: ['   bin   retmenden olu an bir kitleye hitap edecekti.']
+    exampleTranslations: ['Üç bin öğretmenden oluşan bir kitleye hitap edecekti.']
   },
   {
     id: 'catchy_lh',
     word: 'Catchy',
     pos: 'adjective',
-    meaning: 'ak lda kal c  (melodi/slogan)',
+    meaning: 'Akılda kalıcı (melodi/slogan)',
     definition: 'A tune or phrase which attracts your attention and is easy to remember.',
-    ipa: "/'k t .i/",
+    ipa: "/ˈkætʃ.i/",
     level: 'pre-intermediate',
-    wordFamily: [{ word: 'catch', pos: 'verb', meaning: 'yakalamak' }],
-    synonyms: [{ word: 'Memorable', meaning: 'unutulmaz', pos: 'adj' }],
-    antonyms: [{ word: 'Boring', meaning: 's k c ', pos: 'adj' }, { word: 'Forgettable', meaning: 'unutulabilir', pos: 'adj' }],
+    wordFamily: [
+      { word: 'catch', pos: 'verb', meaning: 'yakalamak' }
+    ],
+    synonyms: [
+      { word: 'Memorable', meaning: 'Unutulmaz', pos: 'adj' },
+      { word: 'Haunting', meaning: 'Akıldan çıkmayan', pos: 'adj' }
+    ],
+    antonyms: [
+      { word: 'Boring', meaning: 'Sıkıcı', pos: 'adj' },
+      { word: 'Forgettable', meaning: 'Unutulabilir', pos: 'adj' }
+    ],
     collocations: ['catchy tune', 'catchy song'],
-    collocationMeanings: { 'catchy tune': 'ak lda kal c  melodi', 'catchy song': 'ak lda kal c   ark ' },
+    collocationMeanings: {
+      'catchy tune': 'akılda kalıcı melodi',
+      'catchy song': 'akılda kalıcı şarkı'
+    },
     examples: ["I like this song because it's very catchy."],
-    exampleTranslations: ['Bu  ark y  seviyorum   nk   ok ak lda kal c .']
+    exampleTranslations: ['Bu şarkıyı seviyorum çünkü çok akılda kalıcı.']
   },
   {
     id: 'drummer_lh',
     word: 'Drummer',
     pos: 'noun',
-    meaning: 'baterist, davulcu',
+    meaning: 'Baterist, davulcu',
     definition: 'Someone who plays the drums in a band.',
-    ipa: "/'dr m. (r)/",
+    ipa: "/ˈdrʌm.ər/",
     level: 'pre-intermediate',
-    wordFamily: [{ word: 'drum', pos: 'noun/verb', meaning: 'davul' }],
-    synonyms: [{ word: 'Percussionist', meaning: 'perk syonyist', pos: 'noun' }],
+    wordFamily: [
+      { word: 'drum', pos: 'noun/verb', meaning: 'davul/davul çalmak' }
+    ],
+    synonyms: [
+      { word: 'Percussionist', meaning: 'Perküsyonyist', pos: 'noun' }
+    ],
     antonyms: [],
     collocations: ['talented drummer', 'session drummer'],
-    collocationMeanings: { 'talented drummer': 'yetenekli davulcu', 'session drummer': 'st dyo davulcusu' },
+    collocationMeanings: {
+      'talented drummer': 'yetenekli davulcu',
+      'session drummer': 'stüdyo davulcusu'
+    },
     examples: ['The drummer was very talented.'],
-    exampleTranslations: ['Baterist  ok yetenekliydi.']
+    exampleTranslations: ['Baterist çok yetenekliydi.']
   },
   {
     id: 'drums_lh',
     word: 'Drums',
     pos: 'noun',
-    meaning: 'bateri, davul tak m ',
+    meaning: 'Bateri, davul takımı',
     definition: 'A musical instrument consisting of a tight skin stretched over a round frame.',
-    ipa: '/dr mz/',
+    ipa: '/drʌmz/',
     level: 'pre-intermediate',
-    wordFamily: [{ word: 'drummer', pos: 'noun', meaning: 'baterist' }],
-    synonyms: [{ word: 'Drum kit', meaning: 'bateri seti', pos: 'noun' }],
+    wordFamily: [
+      { word: 'drummer', pos: 'noun', meaning: 'baterist' }
+    ],
+    synonyms: [
+      { word: 'Drum kit', meaning: 'Bateri seti', pos: 'noun' }
+    ],
     antonyms: [],
     collocations: ['play the drums', 'beat the drums'],
-    collocationMeanings: { 'play the drums': 'bateri  almak', 'beat the drums': 'davul  almak' },
+    collocationMeanings: {
+      'play the drums': 'bateri çalmak',
+      'beat the drums': 'davul çalmak'
+    },
     examples: ['He wanted to learn to play the drums.'],
-    exampleTranslations: ['Bateri  almay    renmek istiyordu.']
+    exampleTranslations: ['Bateri çalmayı öğrenmek istiyordu.']
   },
   {
     id: 'gig_lh',
     word: 'Gig',
     pos: 'noun',
-    meaning: 'konser (genelde k   k veya pop ler m zik)',
+    meaning: 'Konser (genelde küçük veya popüler müzik)',
     definition: 'A public performance, especially of jazz or popular music.',
-    ipa: '/   /',
+    ipa: '/ɡɪɡ/',
     level: 'pre-intermediate',
     wordFamily: [],
-    synonyms: [{ word: 'Concert', meaning: 'konser', pos: 'noun' }, { word: 'Performance', meaning: 'performans', pos: 'noun' }],
+    synonyms: [
+      { word: 'Concert', meaning: 'Konser', pos: 'noun' },
+      { word: 'Performance', meaning: 'Performans', pos: 'noun' }
+    ],
     antonyms: [],
     collocations: ['live gig', 'play a gig'],
-    collocationMeanings: { 'live gig': 'canl  konser', 'play a gig': 'konser vermek' },
+    collocationMeanings: {
+      'live gig': 'canlı konser',
+      'play a gig': 'konser vermek'
+    },
     examples: ['Live gigs are the most enjoyable part of my work.'],
-    exampleTranslations: ['Canl  konserler i imin en keyifli k sm d r.']
+    exampleTranslations: ['Canlı konserler işimin en keyifli kısmıdır.']
   },
   {
     id: 'abstract_art_lh',
     word: 'Abstract art',
     pos: 'noun',
-    meaning: 'soyut sanat',
+    meaning: 'Soyut sanat',
     definition: 'A trend in painting which seeks to break away from the traditional representation.',
-    ipa: "/' b.str kt   t/",
+    ipa: "/ˈæb.strækt ɑːt/",
     level: 'pre-intermediate',
-    wordFamily: [{ word: 'abstraction', pos: 'noun', meaning: 'soyutlama' }],
-    synonyms: [],
-    antonyms: [{ word: 'Realistic art', meaning: 'ger ek i sanat', pos: 'noun' }],
+    wordFamily: [
+      { word: 'abstraction', pos: 'noun', meaning: 'soyutlama' }
+    ],
+    synonyms: [
+      { word: 'Non-representational art', meaning: 'Temsili olmayan sanat', pos: 'noun' }
+    ],
+    antonyms: [
+      { word: 'Realistic art', meaning: 'Gerçekçi sanat', pos: 'noun' },
+      { word: 'Figurative art', meaning: 'Figüratif sanat', pos: 'noun' }
+    ],
     collocations: ['interested in abstract art', 'modern abstract art'],
-    collocationMeanings: { 'interested in abstract art': 'soyut sanatla ilgili', 'modern abstract art': 'modern soyut sanat' },
+    collocationMeanings: {
+      'interested in abstract art': 'soyut sanatla ilgili',
+      'modern abstract art': 'modern soyut sanat'
+    },
     examples: ['She is interested in abstract art.'],
     exampleTranslations: ['Soyut sanatla ilgileniyor.']
   },
@@ -1351,47 +2080,70 @@ export const vocabularyData: VocabularyWord[] = [
     id: 'landscape_lh',
     word: 'Landscape',
     pos: 'noun',
-    meaning: 'manzara, peyzaj (resim)',
+    meaning: 'Manzara, peyzaj (resim)',
     definition: 'A painting of an area of land.',
-    ipa: "/'l nd.ske p/",
+    ipa: "/ˈlænd.skeɪp/",
     level: 'pre-intermediate',
     wordFamily: [],
-    synonyms: [{ word: 'Scenery', meaning: 'manzara', pos: 'noun' }, { word: 'Panorama', meaning: 'panoroma', pos: 'noun' }],
+    synonyms: [
+      { word: 'Scenery', meaning: 'Manzara', pos: 'noun' },
+      { word: 'Panorama', meaning: 'Panoroma', pos: 'noun' }
+    ],
     antonyms: [],
     collocations: ['rural landscape', 'landscape painting'],
-    collocationMeanings: { 'rural landscape': 'k rsal manzara', 'landscape painting': 'peyzaj resmi' },
+    collocationMeanings: {
+      'rural landscape': 'kırsal manzara',
+      'landscape painting': 'peyzaj resmi'
+    },
     examples: ["We saw an exhibition of Paul Gunn's most recent landscapes."],
-    exampleTranslations: ["Paul Gunn' n en son manzara resimlerinin sergisini g rd k."]
+    exampleTranslations: ["Paul Gunn'ın en son manzara resimlerinin sergisini gördük."]
   },
   {
     id: 'sculpture_lh',
     word: 'Sculpture',
     pos: 'noun',
-    meaning: 'heykel',
+    meaning: 'Heykel',
     definition: 'A solid object that someone makes as a work of art by shaping stone, metal, or wood.',
-    ipa: "/'sk lp.t  (r)/",
+    ipa: "/ˈskʌlp.tʃər/",
     level: 'pre-intermediate',
-    wordFamily: [{ word: 'sculptor', pos: 'noun', meaning: 'heykelt ra ' }, { word: 'sculpt', pos: 'verb', meaning: 'heykel yapmak' }],
-    synonyms: [{ word: 'Statue', meaning: 'heykel/biblo', pos: 'noun' }],
+    wordFamily: [
+      { word: 'sculptor', pos: 'noun', meaning: 'heykeltıraş' },
+      { word: 'sculpt', pos: 'verb', meaning: 'heykel yapmak' }
+    ],
+    synonyms: [
+      { word: 'Statue', meaning: 'Heykel/Biblo', pos: 'noun' }
+    ],
     antonyms: [],
     collocations: ['modern sculpture', 'bronze sculpture'],
-    collocationMeanings: { 'modern sculpture': 'modern heykel', 'bronze sculpture': 'bronz heykel' },
+    collocationMeanings: {
+      'modern sculpture': 'modern heykel',
+      'bronze sculpture': 'bronz heykel'
+    },
     examples: ['Works to be shown include sculptures by Houdon.'],
-    exampleTranslations: ['Sergilenecek eserler aras nda Houdon un heykelleri de bulunuyor.']
+    exampleTranslations: ['Sergilenecek eserler arasında Houdon\'un heykelleri de bulunuyor.']
   },
   {
     id: 'biopic_lh',
     word: 'Biopic',
     pos: 'noun',
-    meaning: 'biyografik film',
-    definition: 'A film based on the events of someone s life.',
-    ipa: "/'ba .  .p k/",
+    meaning: 'Biyografik film',
+    definition: 'A film based on the events of someone\'s life.',
+    ipa: "/ˈbaɪ.əʊ.pɪk/",
     level: 'pre-intermediate',
-    wordFamily: [{ word: 'biography', pos: 'noun', meaning: 'biyografi' }],
-    synonyms: [{ word: 'Biographical film', meaning: 'biyografik film', pos: 'noun' }],
-    antonyms: [{ word: 'Fiction film', meaning: 'kurgu film', pos: 'noun' }],
+    wordFamily: [
+      { word: 'biography', pos: 'noun', meaning: 'biyografi' }
+    ],
+    synonyms: [
+      { word: 'Biographical film', meaning: 'Biyografik film', pos: 'noun' }
+    ],
+    antonyms: [
+      { word: 'Fiction film', meaning: 'Kurgu film', pos: 'noun' }
+    ],
     collocations: ['new biopic', 'watch a biopic'],
-    collocationMeanings: { 'new biopic': 'yeni biyografik film', 'watch a biopic': 'biyografik film izlemek' },
+    collocationMeanings: {
+      'new biopic': 'yeni biyografik film',
+      'watch a biopic': 'biyografik film izlemek'
+    },
     examples: ['Have you seen the Jesse James biopic?'],
     exampleTranslations: ['Jesse James biyografik filmini izledin mi?']
   },
@@ -1399,224 +2151,375 @@ export const vocabularyData: VocabularyWord[] = [
     id: 'historical_lh',
     word: 'Historical',
     pos: 'adjective',
-    meaning: 'tarihi',
+    meaning: 'Tarihi',
     definition: 'Based on people or events that existed in the past.',
-    ipa: '/h  st r. .k l/',
+    ipa: '/hɪˈstɒr.ɪ.kəl/',
     level: 'pre-intermediate',
-    wordFamily: [{ word: 'history', pos: 'noun', meaning: 'tarih' }, { word: 'historian', pos: 'noun', meaning: 'tarih i' }],
-    synonyms: [{ word: 'Historic', meaning: 'tarihi  nemde', pos: 'adj' }],
-    antonyms: [{ word: 'Modern', meaning: 'modern', pos: 'adj' }, { word: 'Contemporary', meaning: 'g ncel', pos: 'adj' }],
+    wordFamily: [
+      { word: 'history', pos: 'noun', meaning: 'tarih' },
+      { word: 'historian', pos: 'noun', meaning: 'tarihçi' }
+    ],
+    synonyms: [
+      { word: 'Historic', meaning: 'Tarihi önemde', pos: 'adj' }
+    ],
+    antonyms: [
+      { word: 'Modern', meaning: 'Modern', pos: 'adj' },
+      { word: 'Contemporary', meaning: 'Güncel', pos: 'adj' }
+    ],
     collocations: ['historical events', 'historical film'],
-    collocationMeanings: { 'historical events': 'tarihi olaylar', 'historical film': 'tarihi film' },
+    collocationMeanings: {
+      'historical events': 'tarihi olaylar',
+      'historical film': 'tarihi film'
+    },
     examples: ['Watching historical films is an easy way to learn about the past.'],
-    exampleTranslations: ['Tarihi filmler izlemek, ge mi  hakk nda   renmenin kolay bir yoludur.']
+    exampleTranslations: ['Tarihi filmler izlemek, geçmiş hakkında öğrenmenin kolay bir yoludur.']
   },
   {
     id: 'western_lh',
     word: 'Western',
     pos: 'noun',
-    meaning: 'kovboy filmi',
+    meaning: 'Kovboy filmi',
     definition: 'A film about the western United States in the 1800s, usually with cowboys.',
-    ipa: "/'wes.t n/",
+    ipa: "/ˈwes.tən/",
     level: 'pre-intermediate',
-    wordFamily: [{ word: 'west', pos: 'noun', meaning: 'bat ' }],
-    synonyms: [{ word: 'Cowboy movie', meaning: 'kovboy filmi', pos: 'noun' }],
+    wordFamily: [
+      { word: 'west', pos: 'noun', meaning: 'batı' }
+    ],
+    synonyms: [
+      { word: 'Cowboy movie', meaning: 'Kovboy filmi', pos: 'noun' }
+    ],
     antonyms: [],
     collocations: ['classic western', 'western film'],
-    collocationMeanings: { 'classic western': 'klasik kovboy filmi', 'western film': 'western film' },
+    collocationMeanings: {
+      'classic western': 'klasik kovboy filmi',
+      'western film': 'western film'
+    },
     examples: ['My Dad likes western films but I think they are boring.'],
-    exampleTranslations: ['Babam kovboy filmlerini sever ama bence onlar s k c .']
+    exampleTranslations: ['Babam kovboy filmlerini sever ama bence onlar sıkıcı.']
   },
   {
     id: 'amazed_lh',
     word: 'Amazed',
     pos: 'adjective',
-    meaning: 'hayrete d  m  ,  a k n',
+    meaning: 'Hayrete düşmüş, şaşkın',
     definition: 'Very surprised.',
-    ipa: '/  me zd/',
+    ipa: '/əˈmeɪzd/',
     level: 'pre-intermediate',
-    wordFamily: [{ word: 'amaze', pos: 'verb', meaning: ' a  rtmak' }, { word: 'amazement', pos: 'noun', meaning: 'hayret' }],
-    synonyms: [{ word: 'Astonished', meaning: ' a k nl ktan donakalm  ', pos: 'adj' }, { word: 'Surprised', meaning: ' a  rm  ', pos: 'adj' }],
-    antonyms: [{ word: 'Indifferent', meaning: 'kay ts z', pos: 'adj' }, { word: 'Unimpressed', meaning: 'etkilenmemi ', pos: 'adj' }],
+    wordFamily: [
+      { word: 'amaze', pos: 'verb', meaning: 'şaşırtmak' },
+      { word: 'amazement', pos: 'noun', meaning: 'hayret' }
+    ],
+    synonyms: [
+      { word: 'Astonished', meaning: 'Şaşkınlıktan donakalmış', pos: 'adj' },
+      { word: 'Surprised', meaning: 'Şaşırmış', pos: 'adj' }
+    ],
+    antonyms: [
+      { word: 'Indifferent', meaning: 'Kayıtsız', pos: 'adj' },
+      { word: 'Unimpressed', meaning: 'Etkilenmemiş', pos: 'adj' }
+    ],
     collocations: ['absolutely amazed', 'amazed at'],
-    collocationMeanings: { 'absolutely amazed': 'tamamen hayrete d  m  ', 'amazed at': 'bir  eye  a  rmak' },
+    collocationMeanings: {
+      'absolutely amazed': 'tamamen hayrete düşmüş',
+      'amazed at': 'bir şeye şaşırmak'
+    },
     examples: ['We were absolutely amazed at the response to our appeal.'],
-    exampleTranslations: [' a r m za gelen cevaba tamamen hayrete d  t k.']
+    exampleTranslations: ['Çağrımıza gelen cevaba tamamen hayrete düştük.']
   },
   {
     id: 'amazing_lh',
     word: 'Amazing',
     pos: 'adjective',
-    meaning: ' a  rt c , harika',
+    meaning: 'Şaşırtıcı, harika',
     definition: 'Very surprising or impressive.',
-    ipa: '/  me .z  /',
+    ipa: '/əˈmeɪ.zɪŋ/',
     level: 'pre-intermediate',
-    wordFamily: [{ word: 'amaze', pos: 'verb', meaning: ' a  rtmak' }],
-    synonyms: [{ word: 'Incredible', meaning: 'inan lmaz', pos: 'adj' }, { word: 'Wonderful', meaning: 'harika', pos: 'adj' }],
-    antonyms: [{ word: 'Ordinary', meaning: 's radan', pos: 'adj' }, { word: 'Awful', meaning: 'berbat', pos: 'adj' }],
+    wordFamily: [
+      { word: 'amaze', pos: 'verb', meaning: 'şaşırtmak' }
+    ],
+    synonyms: [
+      { word: 'Incredible', meaning: 'İnanılmaz', pos: 'adj' },
+      { word: 'Wonderful', meaning: 'Harika', pos: 'adj' }
+    ],
+    antonyms: [
+      { word: 'Ordinary', meaning: 'Sıradan', pos: 'adj' },
+      { word: 'Awful', meaning: 'Berbat', pos: 'adj' }
+    ],
     collocations: ['quite amazing', 'amazing story'],
-    collocationMeanings: { 'quite amazing': 'olduk a  a  rt c ', 'amazing story': 'harika hikaye' },
+    collocationMeanings: {
+      'quite amazing': 'oldukça şaşırtıcı',
+      'amazing story': 'harika hikaye'
+    },
     examples: ['Her story was quite amazing.'],
-    exampleTranslations: ['Hikayesi olduk a  a  rt c yd .']
+    exampleTranslations: ['Hikayesi oldukça şaşırtıcıydı.']
   },
   {
     id: 'boring_lh',
     word: 'Boring',
     pos: 'adjective',
-    meaning: 's k c ',
+    meaning: 'Sıkıcı',
     definition: 'Not at all interesting.',
-    ipa: "/'b  .r  /",
+    ipa: "/ˈbɔː.rɪŋ/",
     level: 'pre-intermediate',
-    wordFamily: [{ word: 'bored', pos: 'adj', meaning: 's k lm  ' }, { word: 'boredom', pos: 'noun', meaning: 's k nt ' }],
-    synonyms: [{ word: 'Dull', meaning: 'tekd ze/s k c ', pos: 'adj' }, { word: 'Uninteresting', meaning: 'ilgisiz', pos: 'adj' }],
-    antonyms: [{ word: 'Interesting', meaning: 'ilgin ', pos: 'adj' }, { word: 'Exciting', meaning: 'heyecan verici', pos: 'adj' }],
+    wordFamily: [
+      { word: 'bored', pos: 'adj', meaning: 'sıkılmış' },
+      { word: 'boredom', pos: 'noun', meaning: 'sıkıntı' },
+      { word: 'bore', pos: 'verb', meaning: 'can sıkmak' }
+    ],
+    synonyms: [
+      { word: 'Dull', meaning: 'Tekdüze/Sıkıcı', pos: 'adj' },
+      { word: 'Uninteresting', meaning: 'İlgisiz', pos: 'adj' }
+    ],
+    antonyms: [
+      { word: 'Interesting', meaning: 'İlginç', pos: 'adj' },
+      { word: 'Exciting', meaning: 'Heyecan verici', pos: 'adj' }
+    ],
     collocations: ['boring job', 'boring book'],
-    collocationMeanings: { 'boring job': 's k c  i ', 'boring book': 's k c  kitap' },
+    collocationMeanings: {
+      'boring job': 'sıkıcı iş',
+      'boring book': 'sıkıcı kitap'
+    },
     examples: ["It's a boring badly-paid job."],
-    exampleTranslations: ['S k c  ve d   k  cretli bir i .']
+    exampleTranslations: ['Sıkıcı ve düşük ücretli bir iş.']
   },
   {
     id: 'disappointed_lh',
     word: 'Disappointed',
     pos: 'adjective',
-    meaning: 'hayal k r kl   na u ram  ',
+    meaning: 'Hayal kırıklığına uğramış',
     definition: 'Unhappy because something that you hoped for did not happen.',
-    ipa: '/ d s.  p  n.t d/',
+    ipa: '/ˌdɪs.əˈpɔɪn.tɪd/',
     level: 'pre-intermediate',
-    wordFamily: [{ word: 'disappoint', pos: 'verb', meaning: 'hayal k r kl   na u ratmak' }],
-    synonyms: [{ word: 'Let down', meaning: 'y z st  b rak lm  ', pos: 'adj' }],
-    antonyms: [{ word: 'Satisfied', meaning: 'memnun', pos: 'adj' }, { word: 'Happy', meaning: 'mutlu', pos: 'adj' }],
+    wordFamily: [
+      { word: 'disappoint', pos: 'verb', meaning: 'hayal kırıklığına uğratmak' },
+      { word: 'disappointment', pos: 'noun', meaning: 'hayal kırıklığı' }
+    ],
+    synonyms: [
+      { word: 'Let down', meaning: 'Yüzüstü bırakılmış', pos: 'adj' },
+      { word: 'Upset', meaning: 'Üzgün', pos: 'adj' }
+    ],
+    antonyms: [
+      { word: 'Satisfied', meaning: 'Memnun', pos: 'adj' },
+      { word: 'Happy', meaning: 'Mutlu', pos: 'adj' }
+    ],
     collocations: ['terribly disappointed', 'disappointed with'],
-    collocationMeanings: { 'terribly disappointed': 'feci  ekilde hayal k r kl   na u ram  ', 'disappointed with': 'bir  eyden dolay  hayal k r kl    ya ayan' },
+    collocationMeanings: {
+      'terribly disappointed': 'feci şekilde hayal kırıklığına uğramış',
+      'disappointed with': 'bir şeyden dolayı hayal kırıklığı yaşayan'
+    },
     examples: ['She was disappointed that he never replied to her letter.'],
-    exampleTranslations: ['Mektubuna hi  cevap vermedi i i in hayal k r kl   na u ram  t .']
+    exampleTranslations: ['Mektubuna hiç cevap vermediği için hayal kırıklığına uğramıştı.']
   },
   {
     id: 'disappointing_lh',
     word: 'Disappointing',
     pos: 'adjective',
-    meaning: 'hayal k r kl    yaratan',
+    meaning: 'Hayal kırıklığı yaratan',
     definition: 'Not as good as you had hoped for or expected.',
-    ipa: '/ d s.  p  n.t  /',
+    ipa: '/ˌdɪs.əˈpɔɪn.tɪŋ/',
     level: 'pre-intermediate',
-    wordFamily: [{ word: 'disappointment', pos: 'noun', meaning: 'hayal k r kl   ' }],
-    synonyms: [{ word: 'Unsatisfactory', meaning: 'yetersiz', pos: 'adj' }],
-    antonyms: [{ word: 'Satisfying', meaning: 'tatmin edici', pos: 'adj' }, { word: 'Impressive', meaning: 'etkileyici', pos: 'adj' }],
+    wordFamily: [
+      { word: 'disappoint', pos: 'verb', meaning: 'hayal kırıklığına uğratmak' }
+    ],
+    synonyms: [
+      { word: 'Unsatisfactory', meaning: 'Yetersiz', pos: 'adj' }
+    ],
+    antonyms: [
+      { word: 'Satisfying', meaning: 'Tatmin edici', pos: 'adj' },
+      { word: 'Impressive', meaning: 'Etkileyici', pos: 'adj' }
+    ],
     collocations: ['disappointing results', 'very disappointing'],
-    collocationMeanings: { 'disappointing results': 'hayal k r kl    yaratan sonu lar', 'very disappointing': ' ok  z c /yetersiz' },
+    collocationMeanings: {
+      'disappointing results': 'hayal kırıklığı yaratan sonuçlar',
+      'very disappointing': 'çok üzücü/yetersiz'
+    },
     examples: ["This year's sales figures were very disappointing."],
-    exampleTranslations: ['Bu y l n sat   rakamlar  hayal k r kl    yaratacak kadar d   kt .']
+    exampleTranslations: ['Bu yılın satış rakamları hayal kırıklığı yaratacak kadar düşüktü.']
   },
   {
     id: 'engaged_lh',
     word: 'Engaged',
     pos: 'adjective',
-    meaning: 'me gul, dahil olmu ',
+    meaning: 'Meşgul, dahil olmuş',
     definition: 'Involved in doing something.',
-    ipa: '/ n  e d d/',
+    ipa: '/ɪnˈɡeɪdʒd/',
     level: 'pre-intermediate',
-    wordFamily: [{ word: 'engage', pos: 'verb', meaning: 'ilgilenmek/ba lanmak' }],
-    synonyms: [{ word: 'Involved', meaning: 'm dahil', pos: 'adj' }, { word: 'Busy', meaning: 'me gul', pos: 'adj' }],
-    antonyms: [{ word: 'Idle', meaning: 'bo ta', pos: 'adj' }, { word: 'Free', meaning: 'm sait', pos: 'adj' }],
+    wordFamily: [
+      { word: 'engage', pos: 'verb', meaning: 'ilgilenmek/bağlanmak' },
+      { word: 'engagement', pos: 'noun', meaning: 'meşguliyet/nişan' }
+    ],
+    synonyms: [
+      { word: 'Involved', meaning: 'Müdahil', pos: 'adj' },
+      { word: 'Busy', meaning: 'Meşgul', pos: 'adj' }
+    ],
+    antonyms: [
+      { word: 'Idle', meaning: 'Boşta', pos: 'adj' },
+      { word: 'Free', meaning: 'Müsait', pos: 'adj' }
+    ],
     collocations: ['engaged in work', 'actively engaged'],
-    collocationMeanings: { 'engaged in work': 'i le me gul', 'actively engaged': 'aktif olarak dahil olmu ' },
+    collocationMeanings: {
+      'engaged in work': 'işle meşgul',
+      'actively engaged': 'aktif olarak dahil olmuş'
+    },
     examples: ['Her team knew they were engaged in work of great importance.'],
-    exampleTranslations: ['Ekibi, b y k  nem ta  yan bir i le me gul olduklar n  biliyordu.']
+    exampleTranslations: ['Ekibi, büyük önem taşıyan bir işle meşgul olduklarını biliyordu.']
   },
   {
     id: 'exciting_lh',
     word: 'Exciting',
     pos: 'adjective',
-    meaning: 'heyecan verici',
+    meaning: 'Heyecan verici',
     definition: 'Making you feel happy and enthusiastic.',
-    ipa: '/ k sa .t  /',
+    ipa: '/ɪkˈsaɪ.tɪŋ/',
     level: 'pre-intermediate',
-    wordFamily: [{ word: 'excite', pos: 'verb', meaning: 'heyecanland rmak' }, { word: 'excitement', pos: 'noun', meaning: 'heyecan' }],
-    synonyms: [{ word: 'Thrilling', meaning: 'nefes kesici', pos: 'adj' }, { word: 'Exhilarating', meaning: 'canland r c ', pos: 'adj' }],
-    antonyms: [{ word: 'Boring', meaning: 's k c ', pos: 'adj' }, { word: 'Dull', meaning: 'donuk/tekd ze', pos: 'adj' }],
+    wordFamily: [
+      { word: 'excite', pos: 'verb', meaning: 'heyecanlandırmak' },
+      { word: 'excitement', pos: 'noun', meaning: 'heyecan' }
+    ],
+    synonyms: [
+      { word: 'Thrilling', meaning: 'Nefes kesici', pos: 'adj' },
+      { word: 'Exhilarating', meaning: 'Canlandırıcı', pos: 'adj' }
+    ],
+    antonyms: [
+      { word: 'Boring', meaning: 'Sıkıcı', pos: 'adj' },
+      { word: 'Dull', meaning: 'Donuk/Tekdüze', pos: 'adj' }
+    ],
     collocations: ['exciting things', 'exciting opportunity'],
-    collocationMeanings: { 'exciting things': 'heyecan verici  eyler', 'exciting opportunity': 'heyecan verici f rsat' },
+    collocationMeanings: {
+      'exciting things': 'heyecan verici şeyler',
+      'exciting opportunity': 'heyecan verici fırsat'
+    },
     examples: ["The launch of our service is one of the most exciting things I've worked on."],
-    exampleTranslations: ['Hizmetimizin lansman ,  zerinde  al  t   m en heyecan verici  eylerden biri.']
+    exampleTranslations: ['Hizmetimizin lansmanı, üzerinde çalıştığım en heyecan verici şeylerden biri.']
   },
   {
     id: 'gripped_lh',
     word: 'Gripped',
     pos: 'adjective',
-    meaning: 'kendini kapt rm  , b y lenmi ',
+    meaning: 'Kendini kaptırmış, büyülenmiş',
     definition: 'Very interested and excited.',
-    ipa: '/ r pt/',
+    ipa: '/ɡrɪpt/',
     level: 'pre-intermediate',
-    wordFamily: [{ word: 'grip', pos: 'verb/noun', meaning: 'yakalamak/kavrama' }],
-    synonyms: [{ word: 'Fascinated', meaning: 'b y lenmi ', pos: 'adj' }, { word: 'Enthralled', meaning: 'mest olmu ', pos: 'adj' }],
-    antonyms: [{ word: 'Bored', meaning: 's k lm  ', pos: 'adj' }],
+    wordFamily: [
+      { word: 'grip', pos: 'verb/noun', meaning: 'yakalamak/kavrama' }
+    ],
+    synonyms: [
+      { word: 'Fascinated', meaning: 'Büyülenmiş', pos: 'adj' },
+      { word: 'Enthralled', meaning: 'Mest olmuş', pos: 'adj' }
+    ],
+    antonyms: [
+      { word: 'Bored', meaning: 'Sıkılmış', pos: 'adj' }
+    ],
     collocations: ['gripped by the news', 'gripped by the movie'],
-    collocationMeanings: { 'gripped by the news': 'haberlere kendini kapt rm  ', 'gripped by the movie': 'filme kilitlenmi ' },
+    collocationMeanings: {
+      'gripped by the news': 'haberlere kendini kaptırmış',
+      'gripped by the movie': 'filme kilitlenmiş'
+    },
     examples: ['The case has gripped the public because of the celebrities involved.'],
-    exampleTranslations: ['  in i inde  nl ler oldu u i in dava halk  (kendine kilitledi) b y ledi.']
+    exampleTranslations: ['İşin içinde ünlüler olduğu için dava halkı büyüledi.']
   },
   {
     id: 'gripping_lh',
     word: 'Gripping',
     pos: 'adjective',
-    meaning: 's r kleyici, etkileyici',
+    meaning: 'Sürükleyici, etkileyici',
     definition: 'Very interesting and exciting.',
-    ipa: "/' r p.  /",
+    ipa: "/ˈɡrɪp.ɪŋ/",
     level: 'pre-intermediate',
-    wordFamily: [{ word: 'grippingly', pos: 'adverb', meaning: 's r kleyici bir  ekilde' }],
-    synonyms: [{ word: 'Compelling', meaning: 'ilgi uyand ran', pos: 'adj' }, { word: 'Engrossing', meaning: 'dikkat  ekici', pos: 'adj' }],
-    antonyms: [{ word: 'Uninteresting', meaning: 'ilgisiz', pos: 'adj' }, { word: 'Dull', meaning: 'tekd ze', pos: 'adj' }],
+    wordFamily: [
+      { word: 'grippingly', pos: 'adv', meaning: 'sürükleyici bir şekilde' }
+    ],
+    synonyms: [
+      { word: 'Compelling', meaning: 'İlgi uyandıran', pos: 'adj' },
+      { word: 'Engrossing', meaning: 'Dikkat çekici', pos: 'adj' }
+    ],
+    antonyms: [
+      { word: 'Uninteresting', meaning: 'İlgisiz', pos: 'adj' },
+      { word: 'Dull', meaning: 'Tekdüze', pos: 'adj' }
+    ],
     collocations: ['gripping documentary', 'gripping story'],
-    collocationMeanings: { 'gripping documentary': 's r kleyici belgesel', 'gripping story': 's r kleyici hikaye' },
+    collocationMeanings: {
+      'gripping documentary': 'sürükleyici belgesel',
+      'gripping story': 'sürükleyici hikaye'
+    },
     examples: ['The documentary was gripping.'],
-    exampleTranslations: ['Belgesel s r kleyiciydi.']
+    exampleTranslations: ['Belgesel sürükleyiciydi.']
   },
   {
     id: 'memorable_lh',
     word: 'Memorable',
     pos: 'adjective',
-    meaning: 'unutulmaz',
+    meaning: 'Unutulmaz',
     definition: 'Worth remembering or easy to remember.',
-    ipa: "/'mem. r. .b l/",
+    ipa: "/ˈmem.ər.ə.bəl/",
     level: 'pre-intermediate',
-    wordFamily: [{ word: 'memory', pos: 'noun', meaning: 'haf za' }, { word: 'memorise', pos: 'verb', meaning: 'ezberlemek' }],
-    synonyms: [{ word: 'Unforgettable', meaning: 'unutulmaz', pos: 'adj' }],
-    antonyms: [{ word: 'Forgettable', meaning: 'unutulabilir', pos: 'adj' }],
+    wordFamily: [
+      { word: 'memory', pos: 'noun', meaning: 'hafıza' },
+      { word: 'memorise', pos: 'verb', meaning: 'ezberlemek' }
+    ],
+    synonyms: [
+      { word: 'Unforgettable', meaning: 'Unutulmaz', pos: 'adj' }
+    ],
+    antonyms: [
+      { word: 'Forgettable', meaning: 'Unutulabilir', pos: 'adj' }
+    ],
     collocations: ['memorable experience', 'memorable occasion'],
-    collocationMeanings: { 'memorable experience': 'unutulmaz deneyim', 'memorable occasion': 'unutulmaz olay' },
+    collocationMeanings: {
+      'memorable experience': 'unutulmaz deneyim',
+      'memorable occasion': 'unutulmaz olay'
+    },
     examples: ['The romantic evening cruise will be a memorable experience.'],
-    exampleTranslations: ['Romantik ak am gezisi unutulmaz bir deneyim olacak.']
+    exampleTranslations: ['Romantik akşam gezisi unutulmaz bir deneyim olacak.']
   },
   {
     id: 'moved_lh',
     word: 'Moved',
     pos: 'adjective',
-    meaning: 'duygulanm  , etkilenmi ',
+    meaning: 'Duygulanmış, etkilenmiş',
     definition: 'Affected emotionally.',
-    ipa: '/mu vd/',
+    ipa: '/muːvd/',
     level: 'pre-intermediate',
-    wordFamily: [{ word: 'move', pos: 'verb', meaning: 'hareket etmek/duyguland rmak' }],
-    synonyms: [{ word: 'Touched', meaning: 'duygulanm  ', pos: 'adj' }],
-    antonyms: [{ word: 'Unmoved', meaning: 'etkilenmemi ', pos: 'adj' }],
+    wordFamily: [
+      { word: 'move', pos: 'verb', meaning: 'hareket etmek/duygulandırmak' },
+      { word: 'movement', pos: 'noun', meaning: 'hareket' }
+    ],
+    synonyms: [
+      { word: 'Touched', meaning: 'Duygulanmış', pos: 'adj' }
+    ],
+    antonyms: [
+      { word: 'Unmoved', meaning: 'Etkilenmemiş', pos: 'adj' }
+    ],
     collocations: ['deeply moved', 'moved to tears'],
-    collocationMeanings: { 'deeply moved': 'derinden duygulanm  ', 'moved to tears': 'g zya lar na bo ulmu ' },
+    collocationMeanings: {
+      'deeply moved': 'derinden duygulanmış',
+      'moved to tears': 'gözyaşlarına boğulmuş'
+    },
     examples: ['You will be moved by the touching documentary.'],
-    exampleTranslations: ['Bu dokunakl  belgeselden duygulanacaks n z.']
-},
-
+    exampleTranslations: ['Bu dokunaklı belgeselden duygulanacaksınız.']
+  },
   {
     id: 'moving_lh',
     word: 'Moving',
     pos: 'adjective',
-    meaning: 'etkileyici, duyguland r c ',
+    meaning: 'Etkileyici, duygulandırıcı',
     definition: 'Making you feel emotional.',
-    ipa: "/'mu .v  /",
+    ipa: "/ˈmuː.vɪŋ/",
     level: 'pre-intermediate',
-    wordFamily: [{ word: 'move', pos: 'verb', meaning: 'hareket etmek/duyguland rmak' }, { word: 'moved', pos: 'adj', meaning: 'duygulanm  ' }],
-    synonyms: [{ word: 'Touching', meaning: 'dokunakl ', pos: 'adj' }, { word: 'Emotional', meaning: 'duygusal', pos: 'adj' }],
-    antonyms: [{ word: 'Unemotional', meaning: 'duygusuz', pos: 'adj' }],
+    wordFamily: [
+      { word: 'move', pos: 'verb', meaning: 'hareket etmek/duygulandırmak' },
+      { word: 'moved', pos: 'adj', meaning: 'duygulanmış' }
+    ],
+    synonyms: [
+      { word: 'Touching', meaning: 'Dokunaklı', pos: 'adj' },
+      { word: 'Emotional', meaning: 'Duygusal', pos: 'adj' }
+    ],
+    antonyms: [
+      { word: 'Unemotional', meaning: 'Duygusuz', pos: 'adj' }
+    ],
     collocations: ['deeply moving', 'moving story'],
-    collocationMeanings: { 'deeply moving': 'derinden etkileyici', 'moving story': 'duyguland r c  hikaye' },
+    collocationMeanings: {
+      'deeply moving': 'derinden etkileyici',
+      'moving story': 'duygulandırıcı hikaye'
+    },
     examples: ['His letter was deeply moving.'],
     exampleTranslations: ['Mektubu derinden etkileyiciydi.']
   },
@@ -1624,127 +2527,189 @@ export const vocabularyData: VocabularyWord[] = [
     id: 'pay_by_card_lh',
     word: 'Pay by card',
     pos: 'phrase',
-    meaning: 'kartla  demek',
+    meaning: 'Kartla ödemek',
     definition: 'To use a debit or credit card as payment.',
-    ipa: '/pe  ba  k  rd/',
+    ipa: '/peɪ baɪ kɑːd/',
     level: 'pre-intermediate',
     wordFamily: [],
-    synonyms: [{ word: 'Card payment', meaning: 'kartla  deme', pos: 'noun' }],
-    antonyms: [{ word: 'Pay in cash', meaning: 'nakit  demek', pos: 'phrase' }],
+    synonyms: [
+      { word: 'Card payment', meaning: 'Kartla ödeme', pos: 'noun' }
+    ],
+    antonyms: [
+      { word: 'Pay in cash', meaning: 'Nakit ödemek', pos: 'phrase' }
+    ],
     collocations: ['accept pay by card', 'prefer to pay by card'],
-    collocationMeanings: { 'accept pay by card': 'kartla  deme kabul etmek', 'prefer to pay by card': 'kartla  demeyi tercih etmek' },
+    collocationMeanings: {
+      'accept pay by card': 'kartla ödeme kabul etmek',
+      'prefer to pay by card': 'kartla ödemeyi tercih etmek'
+    },
     examples: ['Can I pay by card?'],
-    exampleTranslations: ['Kartla  deyebilir miyim?']
+    exampleTranslations: ['Kartla ödeyebilir miyim?']
   },
   {
     id: 'donate_lh',
     word: 'Donate',
     pos: 'verb',
-    meaning: 'ba   lamak',
+    meaning: 'Bağışlamak',
     definition: 'To give something such as money or goods to an organization.',
-    ipa: '/d   ne t/',
+    ipa: '/dəʊˈneɪt/',
     level: 'pre-intermediate',
-    wordFamily: [{ word: 'donation', pos: 'noun', meaning: 'ba   ' }, { word: 'donor', pos: 'noun', meaning: 'ba     ' }],
-    synonyms: [{ word: 'Contribute', meaning: 'katk da bulunmak', pos: 'verb' }],
-    antonyms: [{ word: 'Receive', meaning: 'almak', pos: 'verb' }],
+    wordFamily: [
+      { word: 'donation', pos: 'noun', meaning: 'bağış' },
+      { word: 'donor', pos: 'noun', meaning: 'bağışçı' }
+    ],
+    synonyms: [
+      { word: 'Contribute', meaning: 'Katkıda bulunmak', pos: 'verb' },
+      { word: 'Gift', meaning: 'Hibe etmek', pos: 'verb' }
+    ],
+    antonyms: [
+      { word: 'Receive', meaning: 'Almak', pos: 'verb' },
+      { word: 'Take', meaning: 'Almak/Götürmek', pos: 'verb' }
+    ],
     collocations: ['donate money', 'donate blood'],
-    collocationMeanings: { 'donate money': 'para ba   lamak', 'donate blood': 'kan ba   lamak' },
+    collocationMeanings: {
+      'donate money': 'para bağışlamak',
+      'donate blood': 'kan bağışlamak'
+    },
     examples: ['The centre was bought with money donated by a wealthy businessman.'],
-    exampleTranslations: ['Merkez, zengin bir i  adam  taraf ndan ba   lanan parayla sat n al nd .']
+    exampleTranslations: ['Merkez, zengin bir iş adamı tarafından bağışlanan parayla satın alındı.']
   },
   {
     id: 'earn_lh',
     word: 'Earn',
     pos: 'verb',
-    meaning: 'kazanmak (para/itibar)',
+    meaning: 'Kazanmak (para/itibar)',
     definition: 'To receive money for work that you do.',
-    ipa: '/  rn/',
+    ipa: '/ɜːn/',
     level: 'pre-intermediate',
-    wordFamily: [{ word: 'earnings', pos: 'noun', meaning: 'kazan ' }],
-    synonyms: [{ word: 'Make money', meaning: 'para kazanmak', pos: 'phrase' }],
-    antonyms: [{ word: 'Spend', meaning: 'harcamak', pos: 'verb' }],
-    collocations: ['earn a salary', 'earn a living'],
-    collocationMeanings: { 'earn a salary': 'maa  kazanmak', 'earn a living': 'hayat n  kazanmak' },
+    wordFamily: [
+      { word: 'earnings', pos: 'noun', meaning: 'kazanç' }
+    ],
+    synonyms: [
+      { word: 'Make money', meaning: 'Para kazanmak', pos: 'phrase' },
+      { word: 'Gain', meaning: 'Kazanmak/Edinmek', pos: 'verb' }
+    ],
+    antonyms: [
+      { word: 'Spend', meaning: 'Harcamak', pos: 'verb' },
+      { word: 'Waste', meaning: 'Boşa harcamak', pos: 'verb' }
+    ],
+    collocations: ['earn a salary', 'earn a living', 'earn respect'],
+    collocationMeanings: {
+      'earn a salary': 'maaş kazanmak',
+      'earn a living': 'hayatını kazanmak',
+      'earn respect': 'saygı kazanmak'
+    },
     examples: ["She doesn't earn much money, but she enjoys the work."],
-    exampleTranslations: [' ok para kazanm yor ama i inden zevk al yor.']
+    exampleTranslations: ['Çok para kazanmıyor ama işinden zevk alıyor.']
   },
   {
     id: 'give_away_lh',
     word: 'Give away',
     pos: 'phrasal verb',
-    meaning: 'kar  l ks z vermek, hibe etmek',
+    meaning: 'Karşılıksız vermek, hibe etmek',
     definition: 'To provide someone with something that you no longer want or need.',
-    ipa: '/  v   we /',
+    ipa: '/ɡɪv əˈweɪ/',
     level: 'pre-intermediate',
     wordFamily: [],
-    synonyms: [{ word: 'Donate', meaning: 'ba   lamak', pos: 'verb' }],
-    antonyms: [{ word: 'Keep', meaning: 'tutmak/saklamak', pos: 'verb' }],
+    synonyms: [
+      { word: 'Donate', meaning: 'Bağışlamak', pos: 'verb' },
+      { word: 'Hand out', meaning: 'Dağıtmak', pos: 'verb' }
+    ],
+    antonyms: [
+      { word: 'Keep', meaning: 'Tutmak/Saklamak', pos: 'verb' }
+    ],
     collocations: ['give away for free', 'give away secrets'],
-    collocationMeanings: { 'give away for free': 'bedavaya vermek', 'give away secrets': 's rlar  if a etmek' },
+    collocationMeanings: {
+      'give away for free': 'bedavaya vermek',
+      'give away secrets': 'sırları ifşa etmek'
+    },
     examples: ['I gave away any plants that were left to my neighbours.'],
-    exampleTranslations: ['Kalan t m bitkileri kom ular ma verdim.']
+    exampleTranslations: ['Kalan tüm bitkileri komşularıma verdim.']
   },
   {
     id: 'lose_lh',
     word: 'Lose',
     pos: 'verb',
-    meaning: 'kaybetmek (para/zarar etmek)',
+    meaning: 'Kaybetmek (para/zarar etmek)',
     definition: 'To make less money than you spend or invest.',
-    ipa: '/lu z/',
+    ipa: '/luːz/',
     level: 'pre-intermediate',
-    wordFamily: [{ word: 'loss', pos: 'noun', meaning: 'zarar/kay p' }],
+    wordFamily: [
+      { word: 'loss', pos: 'noun', meaning: 'zarar/kayıp' }
+    ],
     synonyms: [],
-    antonyms: [{ word: 'Win', meaning: 'kazanmak', pos: 'verb' }, { word: 'Profit', meaning: 'k r etmek', pos: 'verb' }],
+    antonyms: [
+      { word: 'Win', meaning: 'Kazanmak', pos: 'verb' },
+      { word: 'Profit', meaning: 'Kâr etmek', pos: 'verb' }
+    ],
     collocations: ['lose money', 'lose a fortune'],
-    collocationMeanings: { 'lose money': 'para kaybetmek', 'lose a fortune': 'servet kaybetmek' },
-    examples: ['The company lost more than  5 million last year.'],
-    exampleTranslations: [' irket ge en y l 5 milyon sterlinden fazla zarar etti.']
+    collocationMeanings: {
+      'lose money': 'para kaybetmek',
+      'lose a fortune': 'servet kaybetmek'
+    },
+    examples: ['The company lost more than 5 million last year.'],
+    exampleTranslations: ['Şirket geçen yıl 5 milyon sterlinden fazla zarar etti.']
   },
   {
     id: 'make_lh',
     word: 'Make',
     pos: 'verb',
-    meaning: 'yapmak, kazanmak (para)',
+    meaning: 'Yapmak, kazanmak (para)',
     definition: 'To earn or get money.',
-    ipa: '/me k/',
+    ipa: '/meɪk/',
     level: 'pre-intermediate',
     wordFamily: [],
-    synonyms: [{ word: 'Earn', meaning: 'kazanmak', pos: 'verb' }],
-    antonyms: [{ word: 'Lose', meaning: 'kaybetmek', pos: 'verb' }],
+    synonyms: [
+      { word: 'Earn', meaning: 'Kazanmak', pos: 'verb' }
+    ],
+    antonyms: [
+      { word: 'Lose', meaning: 'Kaybetmek', pos: 'verb' }
+    ],
     collocations: ['make a profit', 'make a living'],
-    collocationMeanings: { 'make a profit': 'k r etmek', 'make a living': 'ge imini sa lamak' },
-    examples: ['She makes about  2,000 a month.'],
-    exampleTranslations: ['Ayda yakla  k 2.000 sterlin kazan yor.']
+    collocationMeanings: {
+      'make a profit': 'kâr etmek',
+      'make a living': 'geçimini sağlamak'
+    },
+    examples: ['She makes about 2,000 a month.'],
+    exampleTranslations: ['Ayda yaklaşık 2.000 sterlin kazanıyor.']
   },
   {
     id: 'owe_lh',
     word: 'Owe',
     pos: 'verb',
-    meaning: 'bor lu olmak',
+    meaning: 'Borçlu olmak',
     definition: 'To have to give someone money because you have borrowed it.',
-    ipa: '/  /',
+    ipa: '/əʊ/',
     level: 'pre-intermediate',
     wordFamily: [],
     synonyms: [],
     antonyms: [],
     collocations: ['owe money', 'owe an apology'],
-    collocationMeanings: { 'owe money': 'para borcu olmak', 'owe an apology': ' z r bor lu olmak' },
+    collocationMeanings: {
+      'owe money': 'para borcu olmak',
+      'owe an apology': 'özür borçlu olmak'
+    },
     examples: ["Tell me how much I owe, and I'll give it to you."],
-    exampleTranslations: ['Ne kadar borcum oldu unu s yle, sana vereyim.']
+    exampleTranslations: ['Ne kadar borcum olduğunu söyle, sana vereyim.']
   },
   {
     id: 'do_a_favour_lh',
     word: 'Do a favour',
     pos: 'phrase',
-    meaning: 'iyilik yapmak',
+    meaning: 'İyilik yapmak',
     definition: 'Something that you do for someone in order to help them.',
-    ipa: '/du     fe .v r/',
+    ipa: '/duː ə ˈfeɪ.vər/',
     level: 'pre-intermediate',
     wordFamily: [],
-    synonyms: [{ word: 'Help out', meaning: 'yard m etmek', pos: 'phrase' }],
+    synonyms: [
+      { word: 'Help out', meaning: 'Yardım etmek', pos: 'phrase' }
+    ],
     antonyms: [],
     collocations: ['ask for a favour', 'return a favour'],
-    collocationMeanings: { 'ask for a favour': 'bir iyilik istemek', 'return a favour': 'iyili in kar  l   n  vermek' },
+    collocationMeanings: {
+      'ask for a favour': 'bir iyilik istemek',
+      'return a favour': 'iyiliğin karşılığını vermek'
+    },
     examples: ['Could you do me a favour?'],
     exampleTranslations: ['Bana bir iyilik yapabilir misin?']
   },
@@ -1752,143 +2717,196 @@ export const vocabularyData: VocabularyWord[] = [
     id: 'make_a_mess_lh',
     word: 'Make a mess',
     pos: 'phrase',
-    meaning: 'ortal    da  tmak, bat rmak',
+    meaning: 'Ortalığı dağıtmak, batırmak',
     definition: 'A situation in which a place is dirty or untidy.',
-    ipa: '/me k   mes/',
+    ipa: '/meɪk ə mes/',
     level: 'pre-intermediate',
     wordFamily: [],
-    synonyms: [{ word: 'Clutter', meaning: 'kar  t rmak', pos: 'verb' }],
-    antonyms: [{ word: 'Tidy up', meaning: 'toparlamak', pos: 'phrase' }],
+    synonyms: [
+      { word: 'Clutter', meaning: 'Karıştırmak', pos: 'verb' }
+    ],
+    antonyms: [
+      { word: 'Tidy up', meaning: 'Toparlamak', pos: 'phrase' }
+    ],
     collocations: ['don t make a mess', 'messy room'],
-    collocationMeanings: { 'don t make a mess': 'ortal    da  tma', 'messy room': 'da  n k oda' },
+    collocationMeanings: {
+      'don t make a mess': 'ortalığı dağıtma',
+      'messy room': 'dağınık oda'
+    },
     examples: ["Try not to make a mess because I've been cleaning."],
-    exampleTranslations: ['Ortal    da  tmamaya  al     nk  temizlik yapt m.']
+    exampleTranslations: ['Ortalığı dağıtmamaya çalış çünkü temizlik yaptım.']
   },
   {
     id: 'bay_lh',
     word: 'Bay',
     pos: 'noun',
-    meaning: 'koy, k rfez',
+    meaning: 'Koy, körfez',
     definition: 'An area of the coast where the land curves inwards.',
-    ipa: '/be /',
+    ipa: '/beɪ/',
     level: 'pre-intermediate',
     wordFamily: [],
-    synonyms: [{ word: 'Gulf', meaning: 'k rfez', pos: 'noun' }],
+    synonyms: [
+      { word: 'Gulf', meaning: 'Körfez', pos: 'noun' }
+    ],
     antonyms: [],
     collocations: ['visible across the bay', 'shallow bay'],
-    collocationMeanings: { 'visible across the bay': 'koyun kar  s ndan g r lebilir', 'shallow bay': 's   koy' },
+    collocationMeanings: {
+      'visible across the bay': 'koyun karşısından görülebilir',
+      'shallow bay': 'sığ koy'
+    },
     examples: ['The harbour lights were visible across the bay.'],
-    exampleTranslations: ['Liman    klar  koyun kar  s ndan g r lebiliyordu.']
+    exampleTranslations: ['Liman ışıkları koyun karşısından görülebiliyordu.']
   },
   {
     id: 'canal_lh',
     word: 'Canal',
     pos: 'noun',
-    meaning: 'kanal (yapay nehir)',
+    meaning: 'Kanal (yapay nehir)',
     definition: 'An artificial river.',
-    ipa: '/k  n l/',
+    ipa: '/kəˈnæl/',
     level: 'pre-intermediate',
     wordFamily: [],
-    synonyms: [{ word: 'Waterway', meaning: 'su yolu', pos: 'noun' }],
+    synonyms: [
+      { word: 'Waterway', meaning: 'Su yolu', pos: 'noun' }
+    ],
     antonyms: [],
     collocations: ['shipping canal', 'canal bridge'],
-    collocationMeanings: { 'shipping canal': 'nakliye kanal ', 'canal bridge': 'kanal k pr s ' },
+    collocationMeanings: {
+      'shipping canal': 'nakliye kanalı',
+      'canal bridge': 'kanal köprüsü'
+    },
     examples: ["Canals were created to connect England's industrial cities with the sea."],
-    exampleTranslations: ['Kanallar,  ngiltere nin sanayi  ehirlerini denize ba lamak i in olu turuldu.']
+    exampleTranslations: ['Kanallar, İngiltere\'nin sanayi şehirlerini denize bağlamak için oluşturuldu.']
   },
   {
     id: 'canyon_lh',
     word: 'Canyon',
     pos: 'noun',
-    meaning: 'kanyon',
+    meaning: 'Kanyon',
     definition: 'A long deep valley with very steep sides made of rock.',
-    ipa: "/'k n.j n/",
+    ipa: "/ˈkæn.jən/",
     level: 'pre-intermediate',
     wordFamily: [],
-    synonyms: [{ word: 'Gorge', meaning: 'dar ge it/kanyon', pos: 'noun' }],
+    synonyms: [
+      { word: 'Gorge', meaning: 'Dar geçit/Kanyon', pos: 'noun' }
+    ],
     antonyms: [],
     collocations: ['deep canyon', 'view across the canyon'],
-    collocationMeanings: { 'deep canyon': 'derin kanyon', 'view across the canyon': 'kanyon manzaras ' },
+    collocationMeanings: {
+      'deep canyon': 'derin kanyon',
+      'view across the canyon': 'kanyon manzarası'
+    },
     examples: ['There was an incredible view across the canyon.'],
-    exampleTranslations: ['Kanyonun kar  s nda inan lmaz bir manzara vard .']
+    exampleTranslations: ['Kanyonun karşısında inanılmaz bir manzara vardı.']
   },
   {
     id: 'cave_lh',
     word: 'Cave',
     pos: 'noun',
-    meaning: 'ma ara',
+    meaning: 'Mağara',
     definition: 'A large hole in the side of a hill or under the ground.',
-    ipa: '/ke v/',
+    ipa: '/keɪv/',
     level: 'pre-intermediate',
     wordFamily: [],
-    synonyms: [{ word: 'Cavern', meaning: 'ma ara/oyuk', pos: 'noun' }],
+    synonyms: [
+      { word: 'Cavern', meaning: 'Mağara/Oyuk', pos: 'noun' }
+    ],
     antonyms: [],
     collocations: ['dark cave', 'explore a cave'],
-    collocationMeanings: { 'dark cave': 'karanl k ma ara', 'explore a cave': 'ma ara ke fetmek' },
+    collocationMeanings: {
+      'dark cave': 'karanlık mağara',
+      'explore a cave': 'mağara keşfetmek'
+    },
     examples: ['We swam into the dark cave.'],
-    exampleTranslations: ['Karanl k ma aran n i ine do ru y zd k.']
+    exampleTranslations: ['Karanlık mağaranın içine doğru yüzdük.']
   },
   {
     id: 'cliff_lh',
     word: 'Cliff',
     pos: 'noun',
-    meaning: 'u urum, falez, kayal k',
+    meaning: 'Uçurum, falez, kayalık',
     definition: 'The steep side of an area of high land.',
-    ipa: '/kl f/',
+    ipa: '/klɪf/',
     level: 'pre-intermediate',
     wordFamily: [],
-    synonyms: [{ word: 'Precipice', meaning: 'u urum', pos: 'noun' }],
+    synonyms: [
+      { word: 'Precipice', meaning: 'Uçurum', pos: 'noun' }
+    ],
     antonyms: [],
     collocations: ['edge of the cliff', 'steep cliff'],
-    collocationMeanings: { 'edge of the cliff': 'u urumun kenar ', 'steep cliff': 'sarp kayal k' },
+    collocationMeanings: {
+      'edge of the cliff': 'uçurumun kenarı',
+      'steep cliff': 'sarp kayalık'
+    },
     examples: ['They pushed the car over the edge of the cliff.'],
-    exampleTranslations: ['Arabay  u urumun kenar ndan a a   ittikler.']
+    exampleTranslations: ['Arabayı uçurumun kenarından aşağı ittiler.']
   },
   {
     id: 'harbour_lh',
     word: 'Harbour',
     pos: 'noun',
-    meaning: 'liman',
+    meaning: 'Liman',
     definition: 'An area of water near the land where it is safe for boats to stay.',
-    ipa: "/'h  .b (r)/",
+    ipa: "/ˈhɑː.bər/",
     level: 'pre-intermediate',
     wordFamily: [],
-    synonyms: [{ word: 'Port', meaning: 'liman', pos: 'noun' }],
+    synonyms: [
+      { word: 'Port', meaning: 'Liman', pos: 'noun' }
+    ],
     antonyms: [],
     collocations: ['safe harbour', 'harbour lights'],
-    collocationMeanings: { 'safe harbour': 'g venli liman', 'harbour lights': 'liman    klar ' },
+    collocationMeanings: {
+      'safe harbour': 'güvenli liman',
+      'harbour lights': 'liman ışıkları'
+    },
     examples: ['The wind kept us in the harbour until the following afternoon.'],
-    exampleTranslations: ['R zgar bizi ertesi   leden sonraya kadar limanda tuttu.']
+    exampleTranslations: ['Rüzgar bizi ertesi öğleden sonraya kadar limanda tuttu.']
   },
   {
     id: 'mountain_lh',
     word: 'Mountain',
     pos: 'noun',
-    meaning: 'da ',
+    meaning: 'Dağ',
     definition: 'A natural structure like a very big hill.',
-    ipa: "/'ma n.t n/",
+    ipa: "/ˈmaʊn.tɪn/",
     level: 'pre-intermediate',
-    wordFamily: [{ word: 'mountainous', pos: 'adj', meaning: 'da l k' }],
-    synonyms: [{ word: 'Peak', meaning: 'zirve/da ', pos: 'noun' }],
-    antonyms: [{ word: 'Valley', meaning: 'vadi', pos: 'noun' }],
+    wordFamily: [
+      { word: 'mountainous', pos: 'adj', meaning: 'dağlık' }
+    ],
+    synonyms: [
+      { word: 'Peak', meaning: 'Zirve/Dağ', pos: 'noun' }
+    ],
+    antonyms: [
+      { word: 'Valley', meaning: 'Vadi', pos: 'noun' }
+    ],
     collocations: ['climb a mountain', 'mountain range'],
-    collocationMeanings: { 'climb a mountain': 'da a t rmanmak', 'mountain range': 'da  s ras ' },
+    collocationMeanings: {
+      'climb a mountain': 'dağa tırmanmak',
+      'mountain range': 'dağ sırası'
+    },
     examples: ['They went walking and climbing in the mountains.'],
-    exampleTranslations: ['Da larda y r y  e ve t rman  a gittiler.']
+    exampleTranslations: ['Dağlarda yürüyüşe ve tırmanışa gittiler.']
   },
   {
     id: 'ocean_lh',
     word: 'Ocean',
     pos: 'noun',
-    meaning: 'okyanus',
+    meaning: 'Okyanus',
     definition: 'One of the large areas of salt water that cover most of the Earth.',
-    ipa: "/'  .  n/",
+    ipa: "/ˈəʊ.ʃən/",
     level: 'pre-intermediate',
-    wordFamily: [{ word: 'oceanic', pos: 'adj', meaning: 'okyanusa ait' }],
-    synonyms: [{ word: 'Sea', meaning: 'deniz', pos: 'noun' }],
+    wordFamily: [
+      { word: 'oceanic', pos: 'adj', meaning: 'okyanusa ait' }
+    ],
+    synonyms: [
+      { word: 'Sea', meaning: 'Deniz', pos: 'noun' }
+    ],
     antonyms: [],
     collocations: ['deep ocean', 'Indian Ocean'],
-    collocationMeanings: { 'deep ocean': 'derin okyanus', 'Indian Ocean': 'Hint Okyanusu' },
+    collocationMeanings: {
+      'deep ocean': 'derin okyanus',
+      'Indian Ocean': 'Hint Okyanusu'
+    },
     examples: ['The Indian Ocean was a brilliant blue.'],
     exampleTranslations: ['Hint Okyanusu parlak bir maviydi.']
   },
@@ -1896,2897 +2914,2846 @@ export const vocabularyData: VocabularyWord[] = [
     id: 'rainforest_lh',
     word: 'Rainforest',
     pos: 'noun',
-    meaning: 'ya mur orman ',
+    meaning: 'Yağmur ormanı',
     definition: 'A forest in a tropical region where it rains a lot.',
-    ipa: "/'re n.f r. st/",
+    ipa: "/ˈreɪn.fɒr.ɪst/",
     level: 'pre-intermediate',
     wordFamily: [],
-    synonyms: [{ word: 'Jungle', meaning: 'balta girmemi  orman', pos: 'noun' }],
-    antonyms: [{ word: 'Desert', meaning: '  l', pos: 'noun' }],
+    synonyms: [
+      { word: 'Jungle', meaning: 'Balta girmemiş orman', pos: 'noun' }
+    ],
+    antonyms: [
+      { word: 'Desert', meaning: 'Çöl', pos: 'noun' }
+    ],
     collocations: ['tropical rainforest', 'destruction of the rainforest'],
-    collocationMeanings: { 'tropical rainforest': 'tropikal ya mur orman ', 'destruction of the rainforest': 'ya mur ormanlar n n yok olu u' },
+    collocationMeanings: {
+      'tropical rainforest': 'tropikal yağmur ormanı',
+      'destruction of the rainforest': 'yağmur ormanlarının yok oluşu'
+    },
     examples: ['There is a campaign to halt the destruction of the rainforest.'],
-    exampleTranslations: ['Ya mur ormanlar n n yok edilmesini durdurmak i in bir kampanya var.']
+    exampleTranslations: ['Yağmur ormanlarının yok edilmesini durdurmak için bir kampanya var.']
   },
   {
     id: 'reef_lh',
     word: 'Reef',
     pos: 'noun',
-    meaning: 'resif, kayal k (deniz alt )',
+    meaning: 'Resif, kayalık (deniz altı)',
     definition: 'A long line of rock or coral in the sea.',
-    ipa: '/ri f/',
+    ipa: '/riːf/',
     level: 'pre-intermediate',
     wordFamily: [],
-    synonyms: [{ word: 'Coral reef', meaning: 'mercan resifi', pos: 'noun' }],
+    synonyms: [
+      { word: 'Coral reef', meaning: 'Mercan resifi', pos: 'noun' }
+    ],
     antonyms: [],
     collocations: ['colourful reef', 'barrier reef'],
-    collocationMeanings: { 'colourful reef': 'renkli resif', 'barrier reef': 'bariyer resifi' },
+    collocationMeanings: {
+      'colourful reef': 'renkli resif',
+      'barrier reef': 'bariyer resifi'
+    },
     examples: ['She saw a colourful reef as she was swimming.'],
-    exampleTranslations: ['Y zerken renkli bir resif g rd .']
+    exampleTranslations: ['Yüzerken renkli bir resif gördü.']
   },
   {
     id: 'valley_lh',
     word: 'Valley',
     pos: 'noun',
-    meaning: 'vadi',
+    meaning: 'Vadi',
     definition: 'A low area of land between mountains or hills.',
-    ipa: "/'v l.i/",
+    ipa: "/ˈvæl.i/",
     level: 'pre-intermediate',
     wordFamily: [],
-    synonyms: [{ word: 'Dale', meaning: 'vadi/dere', pos: 'noun' }],
-    antonyms: [{ word: 'Mountain', meaning: 'da ', pos: 'noun' }],
+    synonyms: [
+      { word: 'Dale', meaning: 'Vadi/Dere', pos: 'noun' }
+    ],
+    antonyms: [
+      { word: 'Mountain', meaning: 'Dağ', pos: 'noun' }
+    ],
     collocations: ['deep valley', 'views across the valley'],
-    collocationMeanings: { 'deep valley': 'derin vadi', 'views across the valley': 'vadi manzaralar ' },
+    collocationMeanings: {
+      'deep valley': 'derin vadi',
+      'views across the valley': 'vadi manzaraları'
+    },
     examples: ['Their house has wonderful views across the valley.'],
-    exampleTranslations: ['Evlerinin harika vadi manzaralar  var.']
+    exampleTranslations: ['Evlerinin harika vadi manzaraları var.']
   },
   {
     id: 'waterfall_lh',
     word: 'Waterfall',
     pos: 'noun',
-    meaning: ' elale,  a layan',
+    meaning: 'Şelale, çağlayan',
     definition: 'A place where water flows over the edge of a cliff onto another level below.',
-    ipa: "/'w  .t .f  l/",
+    ipa: "/ˈwɔː.tə.fɔːl/",
     level: 'pre-intermediate',
     wordFamily: [],
-    synonyms: [{ word: 'Cascade', meaning: 'k   k  elale', pos: 'noun' }],
+    synonyms: [
+      { word: 'Cascade', meaning: 'Küçük şelale', pos: 'noun' }
+    ],
     antonyms: [],
     collocations: ['majestic waterfall', 'by the waterfall'],
-    collocationMeanings: { 'majestic waterfall': 'g rkemli  elale', 'by the waterfall': ' elalenin yan nda' },
+    collocationMeanings: {
+      'majestic waterfall': 'görkemli şelale',
+      'by the waterfall': 'şelalenin yanında'
+    },
     examples: ['The children swam by the waterfall.'],
-    exampleTranslations: [' ocuklar  elalenin yan nda y zd ler.']
+    exampleTranslations: ['Çocuklar şelalenin yanında yüzdüler.']
   },
   {
     id: 'alligator_lh',
     word: 'Alligator',
     pos: 'noun',
-    meaning: 'timsah (alligator)',
+    meaning: 'Alligator timsahı',
     definition: 'A large reptile with a long tail, four short legs, and sharp teeth.',
-    ipa: "/' l ,gert (r)/",
+    ipa: "/ˈæl.ɪ.ɡeɪ.tər/",
     level: 'pre-intermediate',
     wordFamily: [],
-    synonyms: [{ word: 'Croc', meaning: 'timsah (k sa)', pos: 'noun' }],
+    synonyms: [
+      { word: 'Croc', meaning: 'Timsah (kısa)', pos: 'noun' }
+    ],
     antonyms: [],
     collocations: ['alligator skin', 'wild alligator'],
-    collocationMeanings: { 'alligator skin': 'timsah derisi', 'wild alligator': 'vah i timsah' },
+    collocationMeanings: {
+      'alligator skin': 'timsah derisi',
+      'wild alligator': 'vahşi timsah'
+    },
     examples: ['We saw an alligator when we were in the USA.'],
-    exampleTranslations: ['ABD deyken bir timsah g rd k.']
+    exampleTranslations: ['ABD\'deyken bir timsah gördük.']
   },
   {
     id: 'amphibian_lh',
     word: 'Amphibian',
     pos: 'noun',
-    meaning: 'amfibi (hem suda hem karada ya ayan)',
+    meaning: 'Amfibi (hem suda hem karada yaşayan)',
     definition: 'An animal that lives mainly on land, but produces eggs in water.',
-    ipa: "/ m'f bi n/",
+    ipa: "/æmˈfɪb.i.ən/",
     level: 'pre-intermediate',
-    wordFamily: [{ word: 'amphibious', pos: 'adj', meaning: 'hem suda hem karada giden' }],
+    wordFamily: [
+      { word: 'amphibious', pos: 'adj', meaning: 'hem suda hem karada giden' }
+    ],
     synonyms: [],
     antonyms: [],
     collocations: ['amphibian species'],
-    collocationMeanings: { 'amphibian species': 'amfibi t rleri' },
+    collocationMeanings: {
+      'amphibian species': 'amfibi türleri'
+    },
     examples: ['Toads and frogs are amphibians.'],
-    exampleTranslations: ['Kara kurba alar  ve kurba alar amfibidir.']
+    exampleTranslations: ['Kara kurbağaları ve kurbağalar amfibidir.']
   },
   {
     id: 'ant_lh',
     word: 'Ant',
     pos: 'noun',
-    meaning: 'kar nca',
+    meaning: 'Karınca',
     definition: 'A small insect that lives in large organized groups called colonies.',
-    ipa: '/ nt/',
+    ipa: '/ænt/',
     level: 'pre-intermediate',
     wordFamily: [],
     synonyms: [],
     antonyms: [],
     collocations: ['ant colony', 'army of ants'],
-    collocationMeanings: { 'ant colony': 'kar nca kolonisi', 'army of ants': 'kar nca ordusu' },
+    collocationMeanings: {
+      'ant colony': 'karınca kolonisi',
+      'army of ants': 'karınca ordusu'
+    },
     examples: ['There were many ants in the garden.'],
-    exampleTranslations: ['Bah ede  ok say da kar nca vard .']
+    exampleTranslations: ['Bahçede çok sayıda karınca vardı.']
   },
   {
     id: 'insect_lh',
     word: 'Insect',
     pos: 'noun',
-    meaning: 'b cek',
+    meaning: 'Böcek',
     definition: 'A small animal that has six legs and often has wings.',
-    ipa: "/'Insekt/",
+    ipa: "/ˈɪn.sekt/",
     level: 'pre-intermediate',
-    wordFamily: [{ word: 'insecticide', pos: 'noun', meaning: 'b cek ilac ' }],
-    synonyms: [{ word: 'Bug', meaning: 'ha ere/b cek', pos: 'noun' }],
+    wordFamily: [
+      { word: 'insecticide', pos: 'noun', meaning: 'böcek ilacı' }
+    ],
+    synonyms: [
+      { word: 'Bug', meaning: 'Haşere/Böcek', pos: 'noun' }
+    ],
     antonyms: [],
     collocations: ['flying insect', 'insect bite'],
-    collocationMeanings: { 'flying insect': 'u an b cek', 'insect bite': 'b cek  s r   ' },
+    collocationMeanings: {
+      'flying insect': 'uçan böcek',
+      'insect bite': 'böcek ısırığı'
+    },
     examples: ['I thought there were insects in my tent.'],
-    exampleTranslations: [' ad r mda b cekler oldu unu d   nd m.']
+    exampleTranslations: ['Çadırımda böcekler olduğunu düşündüm.']
   },
   {
     id: 'lizard_lh',
     word: 'Lizard',
     pos: 'noun',
-    meaning: 'kertenkele',
+    meaning: 'Kertenkele',
     definition: 'A small animal with a long tail and rough skin that lives mainly in hot places.',
-    ipa: "/l z (r)d/",
+    ipa: "/ˈlɪz.əd/",
     level: 'pre-intermediate',
     wordFamily: [],
     synonyms: [],
     antonyms: [],
     collocations: ['green lizard', 'small lizard'],
-    collocationMeanings: { 'green lizard': 'ye il kertenkele', 'small lizard': 'k   k kertenkele' },
+    collocationMeanings: {
+      'green lizard': 'yeşil kertenkele',
+      'small lizard': 'küçük kertenkele'
+    },
     examples: ['Steve saw a lizard in the garden.'],
-    exampleTranslations: ['Steve bah ede bir kertenkele g rd .']
+    exampleTranslations: ['Steve bahçede bir kertenkele gördü.']
   },
   {
     id: 'mammal_lh',
     word: 'Mammal',
     pos: 'noun',
-    meaning: 'memeli hayvan',
-    definition: 'An animal that is born from its mother s body and drinks its mother s milk.',
-    ipa: "/'m m(a)l/",
+    meaning: 'Memeli hayvan',
+    definition: 'An animal that is born from its mother\'s body and drinks its mother\'s milk.',
+    ipa: "/ˈmæm.əl/",
     level: 'pre-intermediate',
-    wordFamily: [{ word: 'mammalian', pos: 'adj', meaning: 'memelilere ait' }],
+    wordFamily: [
+      { word: 'mammalian', pos: 'adj', meaning: 'memelilere ait' }
+    ],
     synonyms: [],
-    antonyms: [{ word: 'Reptile', meaning: 's r ngen', pos: 'noun' }],
+    antonyms: [
+      { word: 'Reptile', meaning: 'Sürüngen', pos: 'noun' }
+    ],
     collocations: ['marine mammal', 'land mammal'],
-    collocationMeanings: { 'marine mammal': 'deniz memelisi', 'land mammal': 'kara memelisi' },
+    collocationMeanings: {
+      'marine mammal': 'deniz memelisi',
+      'land mammal': 'kara memelisi'
+    },
     examples: ['Many mammals can be found in the zoo.'],
-    exampleTranslations: ['Hayvanat bah esinde bir ok memeli bulunabilir.']
+    exampleTranslations: ['Hayvanat bahçesinde birçok memeli bulunabilir.']
   },
   {
     id: 'bee_lh',
     word: 'Bee',
     pos: 'noun',
-    meaning: 'ar ',
+    meaning: 'Arı',
     definition: 'A flying insect that has black and yellow bands and can sting you.',
-    ipa: '/bi /',
+    ipa: '/biː/',
     level: 'pre-intermediate',
-    wordFamily: [{ word: 'beehive', pos: 'noun', meaning: 'ar  kovan ' }],
+    wordFamily: [
+      { word: 'beehive', pos: 'noun', meaning: 'arı kovanı' }
+    ],
     synonyms: [],
     antonyms: [],
     collocations: ['honey bee', 'busy as a bee'],
-    collocationMeanings: { 'honey bee': 'bal ar s ', 'busy as a bee': ' ok me gul (ar  gibi)' },
+    collocationMeanings: {
+      'honey bee': 'bal arısı',
+      'busy as a bee': 'çok meşgul (arı gibi)'
+    },
     examples: ['A bee buzzed around the garden.'],
-    exampleTranslations: ['Bah ede bir ar  v z ldad .']
+    exampleTranslations: ['Bahçede bir arı vızıldadı.']
   },
   {
     id: 'mosquito_lh',
     word: 'Mosquito',
     pos: 'noun',
-    meaning: 'sivrisinek',
+    meaning: 'Sivrisinek',
     definition: 'A small flying insect that bites the skin in order to feed on blood.',
-    ipa: "/mp'skirt u/",
+    ipa: "/məˈskiː.təʊ/",
     level: 'pre-intermediate',
     wordFamily: [],
     synonyms: [],
     antonyms: [],
     collocations: ['mosquito bite', 'mosquito net'],
-    collocationMeanings: { 'mosquito bite': 'sivrisinek  s r   ', 'mosquito net': 'cibinlik' },
+    collocationMeanings: {
+      'mosquito bite': 'sivrisinek ısırığı',
+      'mosquito net': 'cibinlik'
+    },
     examples: ['I have been bitten by a mosquito.'],
-    exampleTranslations: ['Beni bir sivrisinek  s rd .']
+    exampleTranslations: ['Beni bir sivrisinek ısırdı.']
   },
   {
     id: 'moth_lh',
     word: 'Moth',
     pos: 'noun',
-    meaning: 'g ve, gece kelebe i',
+    meaning: 'Güve, gece kelebeği',
     definition: 'An insect like a butterfly that flies mostly at night.',
-    ipa: '/m  /',
+    ipa: '/mɒθ/',
     level: 'pre-intermediate',
-    wordFamily: [{ word: 'mothball', pos: 'noun', meaning: 'naftalin' }],
+    wordFamily: [
+      { word: 'mothball', pos: 'noun', meaning: 'naftalin' }
+    ],
     synonyms: [],
-    antonyms: [{ word: 'Butterfly', meaning: 'kelebek', pos: 'noun' }],
+    antonyms: [
+      { word: 'Butterfly', meaning: 'Kelebek', pos: 'noun' }
+    ],
     collocations: ['moth flying around'],
-    collocationMeanings: { 'moth flying around': 'etrafta u u an g ve' },
+    collocationMeanings: {
+      'moth flying around': 'etrafta uçuşan güve'
+    },
     examples: ['There is a moth flying around the lamp.'],
-    exampleTranslations: ['Lamban n etraf nda u an bir g ve var.']
+    exampleTranslations: ['Lambanın etrafında uçan bir güve var.']
   },
   {
     id: 'reptile_lh',
     word: 'Reptile',
     pos: 'noun',
-    meaning: 's r ngen',
+    meaning: 'Sürüngen',
     definition: 'A type of cold-blooded animal that gives birth as eggs.',
-    ipa: "/'reptail/",
+    ipa: "/ˈrep.taɪl/",
     level: 'pre-intermediate',
-    wordFamily: [{ word: 'reptilian', pos: 'adj', meaning: 's r ngenlere ait' }],
+    wordFamily: [
+      { word: 'reptilian', pos: 'adj', meaning: 'sürüngenlere ait' }
+    ],
     synonyms: [],
-    antonyms: [{ word: 'Mammal', meaning: 'memeli', pos: 'noun' }],
+    antonyms: [
+      { word: 'Mammal', meaning: 'Memeli', pos: 'noun' }
+    ],
     collocations: ['reptile house', 'cold-blooded reptile'],
-    collocationMeanings: { 'reptile house': 's r ngen evi', 'cold-blooded reptile': 'so ukkanl  s r ngen' },
+    collocationMeanings: {
+      'reptile house': 'sürüngen evi',
+      'cold-blooded reptile': 'soğukkanlı sürüngen'
+    },
     examples: ['Can we visit the reptile house to see the snakes?'],
-    exampleTranslations: ['Y lanlar  g rmek i in s r ngen evini ziyaret edebilir miyiz?']
+    exampleTranslations: ['Yılanları görmek için sürüngen evini ziyaret edebilir miyiz?']
   },
   {
     id: 'toad_lh',
     word: 'Toad',
     pos: 'noun',
-    meaning: 'kara kurba as ',
+    meaning: 'Kara kurbağası',
     definition: 'A small animal similar to a frog but has brown skin and lives mainly on land.',
-    ipa: '/t  d/',
+    ipa: '/təʊd/',
     level: 'pre-intermediate',
     wordFamily: [],
     synonyms: [],
-    antonyms: [{ word: 'Frog', meaning: 'su kurba as ', pos: 'noun' }],
+    antonyms: [
+      { word: 'Frog', meaning: 'Su kurbağası', pos: 'noun' }
+    ],
     collocations: ['toad jumping'],
-    collocationMeanings: { 'toad jumping': 'kurba a z plamas ' },
+    collocationMeanings: {
+      'toad jumping': 'kurbağa zıplaması'
+    },
     examples: ['The toad jumped in the lake.'],
-    exampleTranslations: ['Kara kurba as  g le atlad .']
+    exampleTranslations: ['Kara kurbağası göle atladı.']
   },
   {
     id: 'breaking_news_lh',
     word: 'Breaking news',
     pos: 'noun',
-    meaning: 'son dakika haberi',
+    meaning: 'Son dakika haberi',
     definition: 'New information about a news event that is still happening.',
-    ipa: "/bre k n 'nju:z/",
+    ipa: "/ˌbreɪ.kɪŋ ˈnjuːz/",
     level: 'pre-intermediate',
     wordFamily: [],
-    synonyms: [{ word: 'Latest developments', meaning: 'son geli meler', pos: 'noun' }],
+    synonyms: [
+      { word: 'Latest developments', meaning: 'Son gelişmeler', pos: 'noun' }
+    ],
     antonyms: [],
     collocations: ['latest breaking news', 'follow breaking news'],
-    collocationMeanings: { 'latest breaking news': 'en son dakika haberi', 'follow breaking news': 'son dakika haberlerini takip etmek' },
+    collocationMeanings: {
+      'latest breaking news': 'en son dakika haberi',
+      'follow breaking news': 'son dakika haberlerini takip etmek'
+    },
     examples: ['Keep up with the latest breaking news from around the world.'],
-    exampleTranslations: ['D nyan n d rt bir yan ndan en son dakika haberlerini takip edin.']
+    exampleTranslations: ['Dünyanın dört bir yanından en son dakika haberlerini takip edin.']
   },
   {
     id: 'journalist_lh',
     word: 'Journalist',
     pos: 'noun',
-    meaning: 'gazeteci',
+    meaning: 'Gazeteci',
     definition: 'Someone whose job is to report the news.',
-    ipa: "/'d   .n .l st/",
+    ipa: "/ˈdʒɜː.nə.lɪst/",
     level: 'pre-intermediate',
-    wordFamily: [{ word: 'journalism', pos: 'noun', meaning: 'gazetecilik' }, { word: 'journal', pos: 'noun', meaning: 'g nl k/dergi' }],
-    synonyms: [{ word: 'Reporter', meaning: 'muhabir', pos: 'noun' }],
+    wordFamily: [
+      { word: 'journalism', pos: 'noun', meaning: 'gazetecilik' },
+      { word: 'journal', pos: 'noun', meaning: 'günlük/dergi' }
+    ],
+    synonyms: [
+      { word: 'Reporter', meaning: 'Muhabir', pos: 'noun' },
+      { word: 'Pressman', meaning: 'Basın mensubu', pos: 'noun' }
+    ],
     antonyms: [],
     collocations: ['leading sports journalist', 'investigative journalist'],
-    collocationMeanings: { 'leading sports journalist': ' nde gelen spor gazetecisi', 'investigative journalist': 'ara t rmac  gazeteci' },
+    collocationMeanings: {
+      'leading sports journalist': 'önde gelen spor gazetecisi',
+      'investigative journalist': 'araştırmacı gazeteci'
+    },
     examples: ['It was an article by a leading sports journalist.'],
-    exampleTranslations: [' nde gelen bir spor gazetecisinin makalesiydi.']
+    exampleTranslations: ['Önde gelen bir spor gazetecisinin makalesiydi.']
   },
   {
     id: 'news_headlines_lh',
     word: 'News headlines',
     pos: 'noun',
-    meaning: 'haber ba l klar ',
+    meaning: 'Haber başlıkları',
     definition: 'The most important stories in the news.',
-    ipa: "/nju:z 'hed,lainz/",
+    ipa: "/njuːz ˈhed.laɪnz/",
     level: 'pre-intermediate',
     wordFamily: [],
-    synonyms: [{ word: 'Main stories', meaning: 'ana haberler', pos: 'noun' }],
+    synonyms: [
+      { word: 'Main stories', meaning: 'Ana haberler', pos: 'noun' }
+    ],
     antonyms: [],
     collocations: ['read the news headlines'],
-    collocationMeanings: { 'read the news headlines': 'haber ba l klar n  okumak' },
+    collocationMeanings: {
+      'read the news headlines': 'haber başlıklarını okumak'
+    },
     examples: ['Here are the news headlines.'],
-    exampleTranslations: ['  te haber ba l klar .']
+    exampleTranslations: ['İşte haber başlıkları.']
   },
   {
     id: 'campaign_lh',
     word: 'Advertising campaign',
     pos: 'noun',
-    meaning: 'reklam kampanyas ',
+    meaning: 'Reklam kampanyası',
     definition: 'A series of things done to persuade people to buy a product.',
-    ipa: "/' dv (r), ta z n k m'pein/",
+    ipa: "/ˈæd.və.taɪ.zɪŋ kæmˈpeɪn/",
     level: 'pre-intermediate',
-    wordFamily: [{ word: 'advertise', pos: 'verb', meaning: 'reklam yapmak' }],
-    synonyms: [{ word: 'Promotion', meaning: 'tan t m/promosyon', pos: 'noun' }],
+    wordFamily: [
+      { word: 'advertise', pos: 'verb', meaning: 'reklam yapmak' },
+      { word: 'advertisement', pos: 'noun', meaning: 'reklam/ilan' }
+    ],
+    synonyms: [
+      { word: 'Promotion', meaning: 'Tanıtım/Promosyon', pos: 'noun' }
+    ],
     antonyms: [],
     collocations: ['run a campaign', 'effective campaign'],
-    collocationMeanings: { 'run a campaign': 'kampanya y r tmek', 'effective campaign': 'etkili kampanya' },
+    collocationMeanings: {
+      'run a campaign': 'kampanya yürütmek',
+      'effective campaign': 'etkili kampanya'
+    },
     examples: ['The new advertising campaign is very effective.'],
-    exampleTranslations: ['Yeni reklam kampanyas   ok etkili.']
+    exampleTranslations: ['Yeni reklam kampanyası çok etkili.']
   },
   {
     id: 'billboard_lh',
     word: 'Billboard',
     pos: 'noun',
-    meaning: 'ilan tahtas , billboard',
+    meaning: 'İlan tahtası, billboard',
     definition: 'A large board for advertisements in an outside public place.',
-    ipa: "/'bil,bo:(r)d/",
+    ipa: "/ˈbɪl.bɔːrd/",
     level: 'pre-intermediate',
     wordFamily: [],
-    synonyms: [{ word: 'Hoarding', meaning: 'reklam panosu', pos: 'noun' }],
+    synonyms: [
+      { word: 'Hoarding', meaning: 'Reklam panosu', pos: 'noun' }
+    ],
     antonyms: [],
     collocations: ['eye-catching billboard'],
-    collocationMeanings: { 'eye-catching billboard': 'g z al c  billboard' },
+    collocationMeanings: {
+      'eye-catching billboard': 'göz alıcı billboard'
+    },
     examples: ["The billboard was eye-catching to get people's attention."],
-    exampleTranslations: ['Billboard, insanlar n dikkatini  ekmek i in g z al c yd .']
+    exampleTranslations: ['Billboard, insanların dikkatini çekmek için göz alıcıydı.']
   },
   {
     id: 'brand_lh',
     word: 'Brand',
     pos: 'noun',
-    meaning: 'marka',
+    meaning: 'Marka',
     definition: 'A product or group of products that has its own name and is made by one particular company.',
-    ipa: '/br nd/',
+    ipa: '/brænd/',
     level: 'pre-intermediate',
-    wordFamily: [{ word: 'branding', pos: 'noun', meaning: 'markala ma' }],
-    synonyms: [{ word: 'Label', meaning: 'etiket/marka', pos: 'noun' }],
+    wordFamily: [
+      { word: 'branding', pos: 'noun', meaning: 'markalaşma' }
+    ],
+    synonyms: [
+      { word: 'Label', meaning: 'Etiket/Marka', pos: 'noun' },
+      { word: 'Trademark', meaning: 'Tescilli marka', pos: 'noun' }
+    ],
     antonyms: [],
     collocations: ['leading brands', 'brand name'],
-    collocationMeanings: { 'leading brands': ' nde gelen markalar', 'brand name': 'marka ad ' },
+    collocationMeanings: {
+      'leading brands': 'önde gelen markalar',
+      'brand name': 'marka adı'
+    },
     examples: ['We stock all leading brands.'],
-    exampleTranslations: ['T m  nde gelen markalar  stoklar m zda bulunduruyoruz.']
+    exampleTranslations: ['Tüm önde gelen markaları stoklarımızda bulunduruyoruz.']
   },
   {
     id: 'eye-catching_lh',
     word: 'Eye-catching',
     pos: 'adjective',
-    meaning: 'g z al c , dikkat  ekici',
+    meaning: 'Göz alıcı, dikkat çekici',
     definition: 'Attractive or unusual and therefore noticed.',
-    ipa: '/ark tf n/',
+    ipa: '/ˈaɪˌkætʃ.ɪŋ/',
     level: 'pre-intermediate',
     wordFamily: [],
-    synonyms: [{ word: 'Striking', meaning: ' arp c ', pos: 'adj' }, { word: 'Noticeable', meaning: 'fark edilebilir', pos: 'adj' }],
-    antonyms: [{ word: 'Unremarkable', meaning: 's radan', pos: 'adj' }],
+    synonyms: [
+      { word: 'Striking', meaning: 'Çarpıcı', pos: 'adj' },
+      { word: 'Noticeable', meaning: 'Fark edilebilir', pos: 'adj' }
+    ],
+    antonyms: [
+      { word: 'Unremarkable', meaning: 'Sıradan', pos: 'adj' },
+      { word: 'Plain', meaning: 'Sade', pos: 'adj' }
+    ],
     collocations: ['eye-catching design'],
-    collocationMeanings: { 'eye-catching design': 'g z al c  tasar m' },
+    collocationMeanings: {
+      'eye-catching design': 'göz alıcı tasarım'
+    },
     examples: ['The eye-catching design was very clever.'],
-    exampleTranslations: ['G z al c  tasar m  ok zekiceydi.']
+    exampleTranslations: ['Göz alıcı tasarım çok zekiceydi.']
   },
   {
     id: 'attention_lh',
     word: 'Grab your attention',
     pos: 'phrase',
-    meaning: 'dikkati  ekmek',
+    meaning: 'Dikkati çekmek',
     definition: "To draw or attract someone's attention.",
-    ipa: "/gr b jor  'ten ( )n/",
+    ipa: "/ɡræb jər əˈten.ʃən/",
     level: 'pre-intermediate',
     wordFamily: [],
-    synonyms: [{ word: 'Catch the eye', meaning: 'g ze  arpmak', pos: 'phrase' }],
-    antonyms: [{ word: 'Distract', meaning: 'dikkatini da  tmak', pos: 'verb' }],
+    synonyms: [
+      { word: 'Catch the eye', meaning: 'Göze çarpmak', pos: 'phrase' }
+    ],
+    antonyms: [
+      { word: 'Distract', meaning: 'Dikkatini dağıtmak', pos: 'verb' }
+    ],
     collocations: ['grab your attention immediately'],
-    collocationMeanings: { 'grab your attention immediately': 'dikkati hemen  zerine  ekmek' },
+    collocationMeanings: {
+      'grab your attention immediately': 'dikkati hemen üzerine çekmek'
+    },
     examples: ['We need the front page to grab your attention.'],
-    exampleTranslations: [' n sayfan n dikkatinizi  ekmesine ihtiyac m z var.']
+    exampleTranslations: ['Ön sayfanın dikkatinizi çekmesine ihtiyacımız var.']
   },
   {
     id: 'logo_lh',
     word: 'Logo',
     pos: 'noun',
-    meaning: 'logo, amblem',
+    meaning: 'Logo, amblem',
     definition: 'A symbol that represents an organization or company.',
-    ipa: "/g  /",
+    ipa: "/ˈləʊ.ɡəʊ/",
     level: 'pre-intermediate',
     wordFamily: [],
-    synonyms: [{ word: 'Emblem', meaning: 'amblem', pos: 'noun' }, { word: 'Symbol', meaning: 'sembol', pos: 'noun' }],
+    synonyms: [
+      { word: 'Emblem', meaning: 'Amblem', pos: 'noun' },
+      { word: 'Symbol', meaning: 'Sembol', pos: 'noun' }
+    ],
     antonyms: [],
     collocations: ['simple logo', 'company logo'],
-    collocationMeanings: { 'simple logo': 'basit logo', 'company logo': ' irket logosu' },
+    collocationMeanings: {
+      'simple logo': 'basit logo',
+      'company logo': 'şirket logosu'
+    },
     examples: ['The logo is simple but effective.'],
     exampleTranslations: ['Logo basit ama etkili.']
- },
+  },
 
-  
-  // --- INTERMEDIATE (B1) ---
   {
     id: 'accent',
     word: 'Accent',
     pos: 'noun',
-    meaning: 'aksan,  ive',
+    meaning: 'Aksan, şive',
     definition: 'A way of saying words that shows what country, region, or social class someone comes from.',
-    ipa: '/  k.sent/',
+    ipa: '/ˈæk.sent/',
     level: 'intermediate',
     wordFamily: [
-      { word: 'accented', pos: 'adj', meaning: 'aksanl ' },
-      { word: 'accentuate', pos: 'verb', meaning: 'vurgulamak, belirginle tirmek' }
+      { word: 'accentuate', pos: 'verb', meaning: 'vurgulamak' },
+      { word: 'accented', pos: 'adj', meaning: 'aksanlı' }
     ],
     synonyms: [
-      { word: 'Pronunciation', meaning: 'telaffuz', pos: 'noun' },
-      { word: 'Inflection', meaning: 'ses b k m ', pos: 'noun' },
-      { word: 'Dialect', meaning: 'leh e', pos: 'noun' }
+      { word: 'Inflection', meaning: 'Ses tonu değişimi', pos: 'noun' },
+      { word: 'Pronunciation', meaning: 'Telaffuz', pos: 'noun' }
     ],
     antonyms: [],
     collocations: ['heavy accent', 'foreign accent', 'slight accent'],
     collocationMeanings: {
-      'heavy accent': 'a  r aksan',
-      'foreign accent': 'yabanc  aksan',
+      'heavy accent': 'ağır aksan',
+      'foreign accent': 'yabancı aksan',
       'slight accent': 'hafif aksan'
     },
-    examples: ["Tom hasn't lost his Irish accent."],
-    exampleTranslations: ["Tom  rlanda aksan n  kaybetmedi."]
+    examples: ['Tom hasn’t lost his Irish accent.'],
+    exampleTranslations: ['Tom İrlanda aksanını kaybetmedi.']
   },
   {
     id: 'accurately',
     word: 'Accurately',
     pos: 'adverb',
-    meaning: 'do ru bir  ekilde, tam olarak',
+    meaning: 'Doğru bir şekilde, tam olarak',
     definition: 'In a way that is correct or true in every detail.',
-    ipa: '/  k.j .r t.li/',
+    ipa: '/ˈæk.jə.rət.li/',
     level: 'intermediate',
     wordFamily: [
-      { word: 'accurate', pos: 'adj', meaning: 'do ru, kesin' },
-      { word: 'accuracy', pos: 'noun', meaning: 'do ruluk, kesinlik' }
+      { word: 'accurate', pos: 'adj', meaning: 'doğru, kesin' },
+      { word: 'accuracy', pos: 'noun', meaning: 'doğruluk, kesinlik' }
     ],
     synonyms: [
-      { word: 'Precisely', meaning: 'tam olarak', pos: 'adverb' },
-      { word: 'Exactly', meaning: 'kesinlikle', pos: 'adverb' },
-      { word: 'Correctly', meaning: 'do ruca', pos: 'adverb' }
+      { word: 'Precisely', meaning: 'Tam olarak', pos: 'adv' },
+      { word: 'Correctly', meaning: 'Doğruca', pos: 'adv' }
     ],
     antonyms: [
-      { word: 'Inaccurately', meaning: 'hatal  bir  ekilde', pos: 'adverb' },
-      { word: 'Wrongly', meaning: 'yanl  l kla', pos: 'adverb' },
-      { word: 'Falsely', meaning: 'as ls zca', pos: 'adverb' }
+      { word: 'Inaccurately', meaning: 'Hatalı bir şekilde', pos: 'adv' },
+      { word: 'Wrongly', meaning: 'Yanlışlıkla', pos: 'adv' }
     ],
     collocations: ['accurately reflect', 'describe accurately', 'predict accurately'],
     collocationMeanings: {
-      'accurately reflect': 'do ru  ekilde yans tmak',
+      'accurately reflect': 'doğru şekilde yansıtmak',
       'describe accurately': 'tam olarak tarif etmek',
       'predict accurately': 'isabetli tahmin etmek'
     },
     examples: ['Have I described the situation accurately?'],
-    exampleTranslations: ['Durumu do ru bir  ekilde tarif ettim mi?']
+    exampleTranslations: ['Durumu doğru bir şekilde tarif ettim mi?']
   },
   {
     id: 'action_point',
     word: 'Action point',
     pos: 'noun',
-    meaning: 'eylem noktas , yap lacak i ',
+    meaning: 'Eylem noktası, yapılacak iş',
     definition: "A small thing that you're going to do.",
-    ipa: '/  k.  n p  nt/',
+    ipa: '/ˈæk.ʃən pɔɪnt/',
     level: 'intermediate',
-    wordFamily: [],
+    wordFamily: [
+      { word: 'act', pos: 'verb', meaning: 'hareket etmek' },
+      { word: 'action', pos: 'noun', meaning: 'eylem' }
+    ],
     synonyms: [
-      { word: 'Task', meaning: 'g rev', pos: 'noun' },
-      { word: 'Objective', meaning: 'hedef', pos: 'noun' },
-      { word: 'Measure', meaning: ' nlem/ad m', pos: 'noun' }
+      { word: 'Task', meaning: 'Görev', pos: 'noun' },
+      { word: 'Objective', meaning: 'Hedef', pos: 'noun' }
     ],
     antonyms: [],
     collocations: ['agree on action points', 'list of action points', 'key action point'],
     collocationMeanings: {
-      'agree on action points': 'eylem planlar   zerinde anla mak',
-      'list of action points': 'yap lacaklar listesi',
-      'key action point': 'temel eylem noktas '
+      'agree on action points': 'eylem planları üzerinde anlaşmak',
+      'list of action points': 'yapılacaklar listesi',
+      'key action point': 'temel eylem noktası'
     },
     examples: ["Let's move to the second action point."],
-    exampleTranslations: [" kinci eylem noktas na ge elim."]
+    exampleTranslations: ['İkinci eylem noktasına geçelim.']
   },
   {
     id: 'active',
     word: 'Active',
     pos: 'adjective',
-    meaning: 'aktif, faal',
+    meaning: 'Aktif, faal',
     definition: 'Someone who is active does a lot of different activities and has a lot of energy and interests.',
-    ipa: '/  k.t v/',
+    ipa: '/ˈæk.tɪv/',
     level: 'intermediate',
     wordFamily: [
-      { word: 'activity', pos: 'noun', meaning: 'etkinlik' },
-      { word: 'activate', pos: 'verb', meaning: 'etkinle tirmek' },
-      { word: 'actively', pos: 'adverb', meaning: 'aktif bir  ekilde' }
+      { word: 'activity', pos: 'noun', meaning: 'aktivite' },
+      { word: 'activate', pos: 'verb', meaning: 'etkinleştirmek' },
+      { word: 'actively', pos: 'adv', meaning: 'aktif olarak' }
     ],
     synonyms: [
-      { word: 'Energetic', meaning: 'enerjik', pos: 'adj' },
-      { word: 'Lively', meaning: 'canl ', pos: 'adj' },
-      { word: 'Dynamic', meaning: 'hareketli', pos: 'adj' }
+      { word: 'Energetic', meaning: 'Enerjik', pos: 'adj' },
+      { word: 'Lively', meaning: 'Canlı', pos: 'adj' }
     ],
     antonyms: [
-      { word: 'Passive', meaning: 'edilgen, pasif', pos: 'adj' },
-      { word: 'Inactive', meaning: 'durgun', pos: 'adj' },
-      { word: 'Lazy', meaning: 'tembel', pos: 'adj' }
+      { word: 'Passive', meaning: 'Pasif', pos: 'adj' },
+      { word: 'Inactive', meaning: 'Hareketsiz', pos: 'adj' }
     ],
     collocations: ['physically active', 'active role', 'active lifestyle'],
     collocationMeanings: {
       'physically active': 'fiziksel olarak aktif',
       'active role': 'aktif rol',
-      'active lifestyle': 'hareketli ya am tarz '
+      'active lifestyle': 'hareketli yaşam tarzı'
     },
     examples: ['People are remaining active into later life.'],
-    exampleTranslations: [' nsanlar ileri ya larda da aktif kalmaya devam ediyor.']
+    exampleTranslations: ['İnsanlar ileri yaşlarda da aktif kalmaya devam ediyor.']
   },
   {
     id: 'admit',
     word: 'Admit',
     pos: 'verb',
-    meaning: 'itiraf etmek, kabul etmek',
+    meaning: 'İtiraf etmek, kabul etmek',
     definition: 'To agree that something is true, especially when you are unhappy, sorry, or surprised about it.',
-    ipa: '/ d m t/',
+    ipa: '/ədˈmɪt/',
     level: 'intermediate',
     wordFamily: [
-      { word: 'admission', pos: 'noun', meaning: 'itiraf, giri  izni' },
-      { word: 'admittedly', pos: 'adverb', meaning: 'itiraf etmek gerekirse' }
+      { word: 'admission', pos: 'noun', meaning: 'itiraf/kabul' },
+      { word: 'admittedly', pos: 'adv', meaning: 'kuşkusuz' }
     ],
     synonyms: [
-      { word: 'Confess', meaning: 'itiraf etmek', pos: 'verb' },
-      { word: 'Acknowledge', meaning: 'kabullenmek', pos: 'verb' },
-      { word: 'Accept', meaning: 'kabul etmek', pos: 'verb' }
+      { word: 'Confess', meaning: 'İtiraf etmek', pos: 'verb' },
+      { word: 'Acknowledge', meaning: 'Kabul etmek', pos: 'verb' }
     ],
     antonyms: [
-      { word: 'Deny', meaning: 'inkar etmek', pos: 'verb' },
-      { word: 'Reject', meaning: 'reddetmek', pos: 'verb' }
+      { word: 'Deny', meaning: 'İnkar etmek', pos: 'verb' }
     ],
     collocations: ['admit defeat', 'admit a mistake', 'freely admit'],
     collocationMeanings: {
       'admit defeat': 'yenilgiyi kabul etmek',
-      'admit a mistake': 'hatay  kabul etmek',
-      'freely admit': 'a  k a itiraf etmek'
+      'admit a mistake': 'hatayı kabul etmek',
+      'freely admit': 'açıkça itiraf etmek'
     },
     examples: ["'I can't sing at all,' he admitted."],
-    exampleTranslations: ["'Hi   ark  s yleyemem,' diye itiraf etti."]
+    exampleTranslations: ["'Hiç şarkı söyleyemem,' diye itiraf etti."]
   },
   {
     id: 'advise',
     word: 'Advise',
     pos: 'verb',
-    meaning: 'tavsiye vermek,    tlemek',
+    meaning: 'Tavsiye vermek, öğütlemek',
     definition: 'To give your opinion to someone about the best thing to do in a particular situation.',
-    ipa: '/ d va z/',
+    ipa: '/ədˈvaɪz/',
     level: 'intermediate',
     wordFamily: [
       { word: 'advice', pos: 'noun', meaning: 'tavsiye' },
-      { word: 'adviser', pos: 'noun', meaning: 'dan  man' }
+      { word: 'adviser', pos: 'noun', meaning: 'danışman' },
+      { word: 'advisable', pos: 'adj', meaning: 'tavsiye edilen' }
     ],
     synonyms: [
-      { word: 'Counsel', meaning: 'ak l vermek', pos: 'verb' },
-      { word: 'Suggest', meaning: ' nermek', pos: 'verb' },
-      { word: 'Recommend', meaning: 'tavsiye etmek', pos: 'verb' }
+      { word: 'Counsel', meaning: 'Öğüt vermek', pos: 'verb' },
+      { word: 'Suggest', meaning: 'Önermek', pos: 'verb' }
     ],
-    antonyms: [
-      { word: 'Discourage', meaning: 'vazge irmek', pos: 'verb' }
-    ],
+    antonyms: [],
     collocations: ['strongly advise', 'advise against', 'seek advice'],
     collocationMeanings: {
-      'strongly advise': ' iddetle tavsiye etmek',
-      'advise against': 'yapmamas n  tavsiye etmek',
+      'strongly advise': 'şiddetle tavsiye etmek',
+      'advise against': 'yapmamasını tavsiye etmek',
       'seek advice': 'tavsiye aramak'
     },
     examples: ["I'm afraid I'm not able to advise you."],
-    exampleTranslations: ["Korkar m size tavsiye verecek durumda de ilim."]
+    exampleTranslations: ['Korkarım size tavsiye verecek durumda değilim.']
   },
   {
     id: 'advertising_campaign',
     word: 'Advertising campaign',
     pos: 'noun',
-    meaning: 'reklam kampanyas ',
+    meaning: 'Reklam kampanyası',
     definition: 'A series of things done to persuade people to buy a product or use a service.',
-    ipa: '/  d.v .ta .z   k m pe n/',
+    ipa: '/ˈæd.və.taɪ.zɪŋ kæmˈpeɪn/',
     level: 'intermediate',
-    wordFamily: [],
+    wordFamily: [
+      { word: 'advertise', pos: 'verb', meaning: 'reklam yapmak' },
+      { word: 'advertisement', pos: 'noun', meaning: 'reklam' }
+    ],
     synonyms: [
-      { word: 'Promotion', meaning: 'tan t m', pos: 'noun' },
-      { word: 'Marketing drive', meaning: 'pazarlama ata  ', pos: 'noun' }
+      { word: 'Promotion', meaning: 'Tanıtım', pos: 'noun' }
     ],
     antonyms: [],
     collocations: ['launch a campaign', 'run a campaign', 'effective campaign'],
     collocationMeanings: {
-      'launch a campaign': 'kampanya ba latmak',
-      'run a campaign': 'kampanya y r tmek',
+      'launch a campaign': 'kampanya başlatmak',
+      'run a campaign': 'kampanya yürütmek',
       'effective campaign': 'etkili kampanya'
     },
     examples: ['The new advertising campaign is very effective.'],
-    exampleTranslations: ['Yeni reklam kampanyas   ok etkili.']
+    exampleTranslations: ['Yeni reklam kampanyası çok etkili.']
   },
   {
     id: 'affect',
     word: 'Affect',
     pos: 'verb',
-    meaning: 'etkilemek',
+    meaning: 'Etkilemek',
     definition: 'To change or influence something.',
-    ipa: '/  fekt/',
+    ipa: '/əˈfekt/',
     level: 'intermediate',
     wordFamily: [
-      { word: 'effect', pos: 'noun', meaning: 'etki' },
-      { word: 'effective', pos: 'adj', meaning: 'etkili' }
+      { word: 'effective', pos: 'adj', meaning: 'etkili' },
+      { word: 'affective', pos: 'adj', meaning: 'duygusal' }
     ],
     synonyms: [
-      { word: 'Influence', meaning: 'etkilemek', pos: 'verb' },
-      { word: 'Impact', meaning: 'etki yaratmak', pos: 'verb' },
-      { word: 'Alter', meaning: 'de i tirmek', pos: 'verb' }
+      { word: 'Influence', meaning: 'Etki altına almak', pos: 'verb' },
+      { word: 'Impact', meaning: 'Etkilemek', pos: 'verb' }
     ],
     antonyms: [],
     collocations: ['directly affect', 'badly affect', 'affect the outcome'],
     collocationMeanings: {
-      'directly affect': 'do rudan etkilemek',
-      'badly affect': 'k t  etkilemek',
+      'directly affect': 'doğrudan etkilemek',
+      'badly affect': 'kötü etkilemek',
       'affect the outcome': 'sonucu etkilemek'
     },
     examples: ['It is known that poor grades can affect university entrance.'],
-    exampleTranslations: ['D   k notlar n  niversite giri ini etkileyebilece i biliniyor.']
+    exampleTranslations: ['Düşük notların üniversite girişini etkileyebileceği biliniyor.']
   },
   {
     id: 'agreement',
     word: 'Agreement',
     pos: 'noun',
-    meaning: 'anla ma, mutabakat',
+    meaning: 'Anlaşma, mutabakat',
     definition: 'An arrangement or decision about what to do, made by two or more people.',
-    ipa: '/   ri .m nt/',
+    ipa: '/əˈɡriː.mənt/',
     level: 'intermediate',
     wordFamily: [
-      { word: 'agree', pos: 'verb', meaning: 'anla mak' },
-      { word: 'agreeable', pos: 'adj', meaning: 'uygun, ho ' }
+      { word: 'agree', pos: 'verb', meaning: 'anlaşmak' },
+      { word: 'agreeable', pos: 'adj', meaning: 'uygun/hoş' }
     ],
     synonyms: [
-      { word: 'Contract', meaning: 's zle me', pos: 'noun' },
-      { word: 'Deal', meaning: 'anla ma', pos: 'noun' },
-      { word: 'Accord', meaning: 'uyum/mutabakat', pos: 'noun' }
+      { word: 'Accord', meaning: 'Uyum/Anlaşma', pos: 'noun' },
+      { word: 'Contract', meaning: 'Sözleşme', pos: 'noun' }
     ],
     antonyms: [
-      { word: 'Disagreement', meaning: 'anla mazl k', pos: 'noun' },
-      { word: 'Conflict', meaning: ' at  ma', pos: 'noun' },
-      { word: 'Dispute', meaning: 'tart  ma', pos: 'noun' }
+      { word: 'Disagreement', meaning: 'Anlaşmazlık', pos: 'noun' }
     ],
     collocations: ['reach an agreement', 'sign an agreement', 'mutual agreement'],
     collocationMeanings: {
-      'reach an agreement': 'anla maya varmak',
-      'sign an agreement': 'anla ma imzalamak',
-      'mutual agreement': 'kar  l kl  anla ma'
+      'reach an agreement': 'anlaşmaya varmak',
+      'sign an agreement': 'anlaşma imzalamak',
+      'mutual agreement': 'karşılıklı anlaşma'
     },
     examples: ['Our agreement was that you would pay by the first of the month.'],
-    exampleTranslations: ["Anla mam z,  demeyi ay n birine kadar yapaca  n z y n ndeydi."]
+    exampleTranslations: ['Anlaşmamız, ödemeyi ayın birine kadar yapacağınız yönündeydi.']
   },
   {
     id: 'all_in_the_mind',
     word: 'All in the mind',
     pos: 'idiom',
-    meaning: 'hepsi kafada bitiyor, kuruntu',
+    meaning: 'Hepsi kafada bitiyor, kuruntu',
     definition: 'Used for saying that something is not real and is just being imagined.',
-    ipa: '/  l  n    ma nd/',
+    ipa: '/ɔːl ɪn ðə maɪnd/',
     level: 'intermediate',
     wordFamily: [],
     synonyms: [
-      { word: 'Imaginary', meaning: 'hayali', pos: 'adj' },
-      { word: 'Illusory', meaning: 'yan lt c ', pos: 'adj' }
+      { word: 'Imaginary', meaning: 'Hayali', pos: 'adj' },
+      { word: 'Psychological', meaning: 'Psikolojik', pos: 'adj' }
     ],
     antonyms: [
-      { word: 'Real', meaning: 'ger ek', pos: 'adj' },
-      { word: 'Physical', meaning: 'fiziksel', pos: 'adj' },
-      { word: 'Tangible', meaning: 'somut', pos: 'adj' }
+      { word: 'Real', meaning: 'Gerçek', pos: 'adj' },
+      { word: 'Tangible', meaning: 'Somut', pos: 'adj' }
     ],
     collocations: ['strictly in the mind', 'entirely in the mind'],
     collocationMeanings: {
       'strictly in the mind': 'tamamen zihinde olan',
-      'entirely in the mind': 'tamam yla kuruntu'
+      'entirely in the mind': 'tamamıyla kuruntu'
     },
     examples: ["He's not really ill; it's all in the mind."],
-    exampleTranslations: ["O ger ekten hasta de il; her  ey zihninde (kuruntu)."]
+    exampleTranslations: ['O gerçekten hasta değil; her şey zihninde (kuruntu).']
   },
   {
     id: 'allow',
     word: 'Allow',
     pos: 'verb',
-    meaning: 'izin vermek',
+    meaning: 'İzin vermek',
     definition: 'To give someone permission to do or have something.',
-    ipa: '/  la /',
+    ipa: '/əˈlaʊ/',
     level: 'intermediate',
     wordFamily: [
-      { word: 'allowance', pos: 'noun', meaning: 'har l k/izin' },
+      { word: 'allowance', pos: 'noun', meaning: 'harçlık/izin' },
       { word: 'allowable', pos: 'adj', meaning: 'izin verilebilir' }
     ],
     synonyms: [
-      { word: 'Permit', meaning: 'izin vermek', pos: 'verb' },
-      { word: 'Let', meaning: 'b rakmak/izin vermek', pos: 'verb' },
-      { word: 'Authorize', meaning: 'yetki vermek', pos: 'verb' }
+      { word: 'Permit', meaning: 'İzin vermek', pos: 'verb' },
+      { word: 'Authorize', meaning: 'Yetki vermek', pos: 'verb' }
     ],
     antonyms: [
-      { word: 'Forbid', meaning: 'yasaklamak', pos: 'verb' },
-      { word: 'Prohibit', meaning: 'men etmek', pos: 'verb' },
-      { word: 'Ban', meaning: 'yasak koymak', pos: 'verb' }
+      { word: 'Forbid', meaning: 'Yasaklamak', pos: 'verb' },
+      { word: 'Ban', meaning: 'Men etmek', pos: 'verb' }
     ],
     collocations: ['allow to do', 'freely allow', 'legally allowed'],
     collocationMeanings: {
-      'allow to do': 'yapmas na izin vermek',
-      'freely allow': 'serbest e izin vermek',
+      'allow to do': 'yapmasına izin vermek',
+      'freely allow': 'serbestçe izin vermek',
       'legally allowed': 'yasal olarak izinli'
     },
     examples: ["I'm sorry, sir, but smoking is not allowed."],
-    exampleTranslations: [" zg n m efendim, ancak sigara i ilmesine izin verilmiyor."]
+    exampleTranslations: ['Üzgünüm efendim, ancak sigara içilmesine izin verilmiyor.']
   },
   {
     id: 'anxious_b1',
     word: 'Anxious',
     pos: 'adjective',
-    meaning: 'endi eli, kayg l ',
+    meaning: 'Endişeli, kaygılı',
     definition: 'Worried because you think something bad might happen.',
-    ipa: '/   k.  s/',
+    ipa: '/ˈæŋk.ʃəs/',
     level: 'intermediate',
     wordFamily: [
-      { word: 'anxiety', pos: 'noun', meaning: 'kayg ' },
-      { word: 'anxiously', pos: 'adverb', meaning: 'endi eyle' }
+      { word: 'anxiety', pos: 'noun', meaning: 'kaygı' },
+      { word: 'anxiously', pos: 'adv', meaning: 'endişeyle' }
     ],
     synonyms: [
-      { word: 'Worried', meaning: 'merakl /endi eli', pos: 'adj' },
-      { word: 'Nervous', meaning: 'gergin', pos: 'adj' },
-      { word: 'Apprehensive', meaning: 'evhaml ', pos: 'adj' }
+      { word: 'Worried', meaning: 'Endişeli', pos: 'adj' },
+      { word: 'Nervous', meaning: 'Gergin', pos: 'adj' }
     ],
     antonyms: [
-      { word: 'Calm', meaning: 'sakin', pos: 'adj' },
-      { word: 'Confident', meaning: 'kendinden emin', pos: 'adj' },
-      { word: 'Relaxed', meaning: 'rahat', pos: 'adj' }
+      { word: 'Calm', meaning: 'Sakin', pos: 'adj' },
+      { word: 'Carefree', meaning: 'Tasasız', pos: 'adj' }
     ],
     collocations: ['anxious about', 'feel anxious', 'growing anxious'],
     collocationMeanings: {
-      'anxious about': 'bir  ey hakk nda endi eli',
-      'feel anxious': 'kayg l  hissetmek',
-      'growing anxious': 'endi esi artmak'
+      'anxious about': 'bir şey hakkında endişeli',
+      'feel anxious': 'kaygılı hissetmek',
+      'growing anxious': 'endişesi artmak'
     },
     examples: ['His silence made me anxious.'],
-    exampleTranslations: ["Onun sessizli i beni endi elendirdi."]
+    exampleTranslations: ['Onun sessizliği beni endişelendirdi.']
   },
   {
     id: 'assume',
     word: 'Assume',
     pos: 'verb',
-    meaning: 'varsaymak, farz etmek',
+    meaning: 'Varsaymak, farz etmek',
     definition: 'To believe that something is true, even though no one has told you or even though you have no proof.',
-    ipa: '/  sju m/',
+    ipa: '/əˈsjuːm/',
     level: 'intermediate',
     wordFamily: [
-      { word: 'assumption', pos: 'noun', meaning: 'varsay m' }
+      { word: 'assumption', pos: 'noun', meaning: 'varsayım' }
     ],
     synonyms: [
-      { word: 'Presume', meaning: 'tahmin etmek', pos: 'verb' },
-      { word: 'Suppose', meaning: 'zannetmek', pos: 'verb' },
-      { word: 'Guess', meaning: 'tahmin y r tmek', pos: 'verb' }
+      { word: 'Presume', meaning: 'Farz etmek', pos: 'verb' },
+      { word: 'Suppose', meaning: 'Sanmak', pos: 'verb' }
     ],
     antonyms: [
-      { word: 'Prove', meaning: 'ispatlamak', pos: 'verb' },
-      { word: 'Know', meaning: 'bilmek', pos: 'verb' }
+      { word: 'Prove', meaning: 'Kanıtlamak', pos: 'verb' }
     ],
     collocations: ['automatically assume', 'reasonable to assume', 'wrongly assume'],
     collocationMeanings: {
-      'automatically assume': 'kendili inden varsaymak',
-      'reasonable to assume': 'varsaymak mant kl ',
-      'wrongly assume': 'yanl   bir  ekilde varsaymak'
+      'automatically assume': 'kendiliğinden varsaymak',
+      'reasonable to assume': 'varsaymak mantıklı',
+      'wrongly assume': 'yanlış bir şekilde varsaymak'
     },
     examples: ["You can't assume that because he's good at this job he will know everything."],
-    exampleTranslations: ["Bu i te iyi oldu u i in her  eyi bilece ini varsayamazs n."]
+    exampleTranslations: ['Bu işte iyi olduğu için her şeyi bileceğini varsayamazsın.']
   },
   {
     id: 'attract',
     word: 'Attract',
     pos: 'verb',
-    meaning: ' ekmek, cezbetmek',
+    meaning: 'Çekmek, cezbetmek',
     definition: 'To make someone interested in something so that they do it or come to see or hear it.',
-    ipa: '/  tr kt/',
+    ipa: '/əˈtrækt/',
     level: 'intermediate',
     wordFamily: [
-      { word: 'attraction', pos: 'noun', meaning: 'cazibe/ilgi oda  ' },
-      { word: 'attractive', pos: 'adj', meaning: ' ekici' }
+      { word: 'attraction', pos: 'noun', meaning: 'cazibe' },
+      { word: 'attractive', pos: 'adj', meaning: 'çekici' }
     ],
     synonyms: [
-      { word: 'Entice', meaning: 'akl n   elmek', pos: 'verb' },
-      { word: 'Charm', meaning: 'b y lemek', pos: 'verb' },
-      { word: 'Lure', meaning: 'cezbetmek', pos: 'verb' }
+      { word: 'Entice', meaning: 'Aklını çelmek', pos: 'verb' },
+      { word: 'Lure', meaning: 'Cezbetmek', pos: 'verb' }
     ],
     antonyms: [
-      { word: 'Repel', meaning: 'itmek/tiksindirmek', pos: 'verb' },
-      { word: 'Disgust', meaning: 'iğrendirmek', pos: 'verb' }
+      { word: 'Repel', meaning: 'İtmek/Tiksindirmek', pos: 'verb' }
     ],
     collocations: ['attract attention', 'attract interest', 'attract customers'],
     collocationMeanings: {
-      'attract attention': 'dikkat  çekmek',
-      'attract interest': 'ilgi  çekmek',
-      'attract customers': 'm  teri  ekmek'
+      'attract attention': 'dikkat çekmek',
+      'attract interest': 'ilgi çekmek',
+      'attract customers': 'müşteri çekmek'
     },
     examples: ['The show attracts viewers from all walks of life.'],
-    exampleTranslations: ["Program hayat n her kesiminden izleyici  ekiyor."]
+    exampleTranslations: ['Program hayatın her kesiminden izleyici çekiyor.']
   },
   {
     id: 'attract_new_customers',
     word: 'Attract new customers',
     pos: 'phrase',
-    meaning: 'yeni m  teriler  ekmek',
+    meaning: 'Yeni müşteriler çekmek',
     definition: 'Make people interested in a product or idea.',
-    ipa: '/  tr kt nju   k s.t .m rz/',
+    ipa: '/əˈtrækt njuː ˈkʌs.tə.mərz/',
     level: 'intermediate',
     wordFamily: [],
     synonyms: [
-      { word: 'Expand client base', meaning: 'm  teri kitlesini geni letmek', pos: 'phrase' }
+      { word: 'Expand client base', meaning: 'Müşteri kitlesini genişletmek', pos: 'phrase' }
     ],
     antonyms: [
-      { word: 'Lose customers', meaning: 'm  teri kaybetmek', pos: 'phrase' }
+      { word: 'Lose customers', meaning: 'Müşteri kaybetmek', pos: 'phrase' }
     ],
     collocations: ['strategy to attract', 'aim to attract'],
     collocationMeanings: {
-      'strategy to attract': ' ekme stratejisi',
-      'aim to attract': ' ekmeyi hedeflemek'
+      'strategy to attract': 'çekme stratejisi',
+      'aim to attract': 'çekmeyi hedeflemek'
     },
     examples: ['The social media campaign will hopefully attract new customers.'],
-    exampleTranslations: ["Sosyal medya kampanyas  umar z yeni m  teriler  ekecektir."]
+    exampleTranslations: ['Sosyal medya kampanyası umarız yeni müşteriler çekecektir.']
   },
   {
     id: 'attract_new_investors',
     word: 'Attract new investors',
     pos: 'phrase',
-    meaning: 'yeni yat r mc lar  ekmek',
+    meaning: 'Yeni yatırımcılar çekmek',
     definition: 'Make people interested in a product or idea so they will invest money in it.',
-    ipa: '/  tr kt nju   n ves.t rz/',
+    ipa: '/əˈtrækt njuː ɪnˈves.tərz/',
     level: 'intermediate',
     wordFamily: [],
     synonyms: [
-      { word: 'Secure funding', meaning: 'finansman sa lamak', pos: 'phrase' }
+      { word: 'Secure funding', meaning: 'Finansman sağlamak', pos: 'phrase' }
     ],
     antonyms: [],
     collocations: ['struggle to attract', 'need to attract'],
     collocationMeanings: {
-      'struggle to attract': ' ekmekte zorlanmak',
-      'need to attract': ' ekmeye ihtiya  duymak'
+      'struggle to attract': 'çekmekte zorlanmak',
+      'need to attract': 'çekmeye ihtiyaç duymak'
     },
     examples: ['We are attending conferences to attract new investors.'],
-    exampleTranslations: ["Yeni yat r mc lar  ekmek i in konferanslara kat l yoruz."]
+    exampleTranslations: ['Yeni yatırımcılar çekmek için konferanslara katılıyoruz.']
   },
   {
     id: 'audience_b1',
     word: 'Audience',
     pos: 'noun',
-    meaning: 'seyirci, izleyici kitlesi',
+    meaning: 'Seyirci, izleyici kitlesi',
     definition: 'A group of people who have come to a place to see or hear a film, performance, speech etc.',
-    ipa: '/   .di. ns/',
+    ipa: '/ˈɔː.di.əns/',
     level: 'intermediate',
     wordFamily: [],
     synonyms: [
-      { word: 'Spectators', meaning: 'izleyiciler', pos: 'noun' },
-      { word: 'Viewers', meaning: 'izleyenler', pos: 'noun' },
-      { word: 'Listeners', meaning: 'dinleyiciler', pos: 'noun' }
+      { word: 'Spectators', meaning: 'İzleyiciler', pos: 'noun' },
+      { word: 'Viewers', meaning: 'İzleyenler', pos: 'noun' }
     ],
-    antonyms: [
-      { word: 'Performers', meaning: 'sergileyenler', pos: 'noun' }
-    ],
+    antonyms: [],
     collocations: ['target audience', 'wide audience', 'live audience'],
     collocationMeanings: {
       'target audience': 'hedef kitle',
-      'wide audience': 'geni  kitle',
-      'live audience': 'canl  seyirci'
+      'wide audience': 'geniş kitle',
+      'live audience': 'canlı seyirci'
     },
     examples: ['She would be addressing an audience of three thousand teachers.'],
-    exampleTranslations: ["   bin   retmenden olu an bir kitleye hitap edecekti."]
+    exampleTranslations: ['Üç bin öğretmenden oluşan bir kitleye hitap edecekti.']
   },
   {
     id: 'aware_of',
     word: 'Aware of',
     pos: 'adjective',
-    meaning: 'fark nda olmak',
+    meaning: 'Farkında olmak',
     definition: 'Knowing about a situation or a fact.',
-    ipa: '/  we r  v/',
+    ipa: '/əˈweər əv/',
     level: 'intermediate',
     wordFamily: [
-      { word: 'awareness', pos: 'noun', meaning: 'fark ndal k' }
+      { word: 'awareness', pos: 'noun', meaning: 'farkındalık' }
     ],
     synonyms: [
-      { word: 'Conscious', meaning: 'bilincinde', pos: 'adj' },
-      { word: 'Informed', meaning: 'bilgili', pos: 'adj' }
+      { word: 'Conscious', meaning: 'Bilincinde', pos: 'adj' },
+      { word: 'Informed', meaning: 'Bilgili/Haberdar', pos: 'adj' }
     ],
     antonyms: [
-      { word: 'Unaware', meaning: 'habersiz', pos: 'adj' },
-      { word: 'Ignorant', meaning: 'bilgisiz/duyars z', pos: 'adj' }
+      { word: 'Unaware', meaning: 'Farkında olmayan', pos: 'adj' },
+      { word: 'Oblivious', meaning: 'Bihaber', pos: 'adj' }
     ],
     collocations: ['fully aware', 'well aware', 'become aware'],
     collocationMeanings: {
-      'fully aware': 'tamamen fark nda',
-      'well aware': 'gayet iyi fark nda',
-      'become aware': 'fark na varmak'
+      'fully aware': 'tamamen farkında',
+      'well aware': 'gayet iyi farkında',
+      'become aware': 'farkına varmak'
     },
     examples: ['We are aware of this problem.'],
-    exampleTranslations: ["Bu sorunun fark nday z."]
+    exampleTranslations: ['Bu sorunun farkındayız.']
   },
   {
     id: 'awful',
     word: 'Awful',
     pos: 'adjective',
-    meaning: 'berbat,  ok k t ',
+    meaning: 'Berbat, çok kötü',
     definition: 'Used for emphasizing how unpleasant someone or something is.',
-    ipa: '/   .f l/',
+    ipa: '/ˈɔː.fəl/',
     level: 'intermediate',
     wordFamily: [
-      { word: 'awfully', pos: 'adverb', meaning: 'feci  ekilde' }
+      { word: 'awfully', pos: 'adv', meaning: 'berbat şekilde' }
     ],
     synonyms: [
-      { word: 'Terrible', meaning: 'korkun ', pos: 'adj' },
-      { word: 'Dreadful', meaning: 'berbat', pos: 'adj' },
-      { word: 'Horrible', meaning: 'rezil', pos: 'adj' }
+      { word: 'Terrible', meaning: 'Korkunç', pos: 'adj' },
+      { word: 'Horrible', meaning: 'Berbat', pos: 'adj' }
     ],
     antonyms: [
-      { word: 'Wonderful', meaning: 'harika', pos: 'adj' },
-      { word: 'Excellent', meaning: 'm kemmel', pos: 'adj' },
-      { word: 'Great', meaning: 'm thi ', pos: 'adj' }
+      { word: 'Wonderful', meaning: 'Harika', pos: 'adj' },
+      { word: 'Great', meaning: 'Harika', pos: 'adj' }
     ],
     collocations: ['awful lot', 'feel awful', 'smell awful'],
     collocationMeanings: {
-      'awful lot': ' ok fazla (miktar)',
+      'awful lot': 'çok fazla (miktar)',
       'feel awful': 'berbat hissetmek',
       'smell awful': 'berbat kokmak'
     },
     examples: ['This wine tastes awful.'],
-    exampleTranslations: ["Bu  arab n tad  berbat."]
+    exampleTranslations: ['Bu şarabın tadı berbat.']
   },
   {
     id: 'be_reliable',
     word: 'Be reliable',
     pos: 'phrase',
-    meaning: 'g venilir olmak',
+    meaning: 'Güvenilir olmak',
     definition: 'To be someone who you can trust to behave well, work hard, or do what you expect them to do.',
-    ipa: '/bi r  la . .b l/',
+    ipa: '/bi rɪˈlaɪ.ə.bəl/',
     level: 'intermediate',
     wordFamily: [
-      { word: 'reliability', pos: 'noun', meaning: 'g venilirlik' }
+      { word: 'rely', pos: 'verb', meaning: 'güvenmek' },
+      { word: 'reliability', pos: 'noun', meaning: 'güvenilirlik' }
     ],
     synonyms: [
-      { word: 'Dependable', meaning: 'bel ba lanabilir', pos: 'adj' },
-      { word: 'Trustworthy', meaning: 'g venilir', pos: 'adj' }
+      { word: 'Dependable', meaning: 'Bel bağlanabilir', pos: 'adj' },
+      { word: 'Trustworthy', meaning: 'Güvenilir', pos: 'adj' }
     ],
     antonyms: [
-      { word: 'Unreliable', meaning: 'g venilmez', pos: 'adj' },
-      { word: 'Deceptive', meaning: 'aldat c ', pos: 'adj' }
+      { word: 'Unreliable', meaning: 'Güvenilmez', pos: 'adj' }
     ],
     collocations: ['prove reliable', 'highly reliable', 'totally reliable'],
     collocationMeanings: {
-      'prove reliable': 'g venilir oldu unu kan tlamak',
-      'highly reliable': 'olduk a g venilir',
-      'totally reliable': 'tamamen g venilir'
+      'prove reliable': 'güvenilir olduğunu kanıtlamak',
+      'highly reliable': 'oldukça güvenilir',
+      'totally reliable': 'tamamen güvenilir'
     },
     examples: ['Hannah is very reliable.'],
-    exampleTranslations: ["Hannah  ok g venilirdir."]
+    exampleTranslations: ['Hannah çok güvenilirdir.']
   },
   {
     id: 'be_your_thing',
     word: 'Be your thing',
     pos: 'idiom',
-    meaning: 'senin olay n olmak, ilgi alan n olmak',
+    meaning: 'Senin olayın olmak, ilgi alanın olmak',
     definition: 'Something that you are good at and/or like doing.',
-    ipa: '/bi j  r    /',
+    ipa: '/bi jɔːr θɪŋ/',
     level: 'intermediate',
     wordFamily: [],
     synonyms: [
-      { word: 'Be your cup of tea', meaning: 'harc /tarz  olmak', pos: 'idiom' },
-      { word: 'Suit someone', meaning: 'birine uymak', pos: 'verb' }
+      { word: 'Cup of tea', meaning: 'İlgi alanı', pos: 'idiom' }
     ],
-    antonyms: [
-      { word: 'Not be your thing', meaning: 'tarz  olmamak', pos: 'idiom' }
-    ],
+    antonyms: [],
     collocations: ['not really my thing', 'is it your thing?'],
     collocationMeanings: {
-      'not really my thing': 'pek bana g re de il',
-      'is it your thing?': 'bu senin ilgin  ekiyor mu?'
+      'not really my thing': 'pek bana göre değil',
+      'is it your thing?': 'bu senin ilgin çekiyor mu?'
     },
     examples: ["I'm afraid baking is not my thing."],
-    exampleTranslations: ["Korkar m f r n i leri (pasta/b rek yapma) pek bana g re de il."]
+    exampleTranslations: ['Korkarım fırın işleri (pasta/börek yapma) pek bana göre değil.']
   },
   {
     id: 'bear_in_mind',
     word: 'Bear in mind',
     pos: 'idiom',
-    meaning: 'akl nda bulundurmak, unutmamak',
+    meaning: 'Aklında bulundurmak, unutmamak',
     definition: 'Reminding or warning a person about something important which they should remember.',
-    ipa: '/be r  n ma nd/',
+    ipa: '/beər ɪn maɪnd/',
     level: 'intermediate',
     wordFamily: [],
     synonyms: [
-      { word: 'Keep in mind', meaning: 'ak lda tutmak', pos: 'idiom' },
-      { word: 'Remember', meaning: 'hat rlamak', pos: 'verb' },
-      { word: 'Consider', meaning: 'dikkate almak', pos: 'verb' }
+      { word: 'Remember', meaning: 'Hatırlamak', pos: 'verb' },
+      { word: 'Consider', meaning: 'Dikkate almak', pos: 'verb' }
     ],
     antonyms: [
-      { word: 'Forget', meaning: 'unutmak', pos: 'verb' },
-      { word: 'Ignore', meaning: 'g rmezden gelmek', pos: 'verb' }
+      { word: 'Forget', meaning: 'Unutmak', pos: 'verb' },
+      { word: 'Ignore', meaning: 'Görmezden gelmek', pos: 'verb' }
     ],
     collocations: ['bear in mind that', 'important to bear in mind'],
     collocationMeanings: {
-      'bear in mind that': ' unu akl nda tut ki',
-      'important to bear in mind': 'ak lda tutulmas   nemli'
+      'bear in mind that': 'şunu aklında tut ki',
+      'important to bear in mind': 'akılda tutulması önemli'
     },
     examples: ['Bear in mind that the deadline is approaching.'],
-    exampleTranslations: ["Son teslim tarihinin yakla t   n  akl nda bulundur."]
+    exampleTranslations: ['Son teslim tarihinin yaklaştığını aklında bulundur.']
   },
   {
     id: 'bilingual',
     word: 'Bilingual',
     pos: 'adjective',
-    meaning: 'iki dilli',
+    meaning: 'İki dilli',
     definition: 'Someone who is bilingual is able to speak two languages extremely well.',
-    ipa: '/ba  l  . w l/',
+    ipa: '/baɪˈlɪŋ.ɡwəl/',
     level: 'intermediate',
     wordFamily: [
-      { word: 'monolingual', pos: 'adj', meaning: 'tek dilli' },
-      { word: 'multilingual', pos: 'adj', meaning: ' ok dilli' }
+      { word: 'bilingualism', pos: 'noun', meaning: 'iki dillilik' }
     ],
-    synonyms: [
-      { word: 'Polyglot', meaning: ' ok dil bilen', pos: 'noun' }
-    ],
+    synonyms: [],
     antonyms: [
-      { word: 'Monolingual', meaning: 'tek dilli', pos: 'adj' }
+      { word: 'Monolingual', meaning: 'Tek dilli', pos: 'adj' }
     ],
     collocations: ['bilingual education', 'totally bilingual', 'bilingual dictionary'],
     collocationMeanings: {
-      'bilingual education': 'iki dilli e itim',
+      'bilingual education': 'iki dilli eğitim',
       'totally bilingual': 'tamamen iki dilli',
-      'bilingual dictionary': 'iki dilli s zl k'
+      'bilingual dictionary': 'iki dilli sözlük'
     },
     examples: ['She speaks French and Spanish so she is bilingual.'],
-    exampleTranslations: ["Frans zca ve  spanyolca konu uyor, bu y zden iki dilli."]
+    exampleTranslations: ['Fransızca ve İspanyolca konuşuyor, bu yüzden iki dilli.']
   },
   {
     id: 'bin',
     word: 'Bin',
     pos: 'noun',
-    meaning: '  p kutusu',
+    meaning: 'Çöp kutusu',
     definition: 'A container for putting rubbish in.',
-    ipa: '/b n/',
+    ipa: '/bɪn/',
     level: 'intermediate',
-    wordFamily: [
-      { word: 'bin', pos: 'verb', meaning: '  pe atmak' }
-    ],
+    wordFamily: [],
     synonyms: [
-      { word: 'Dustbin', meaning: '  p tenekesi', pos: 'noun' },
-      { word: 'Trash can', meaning: '  p kutusu', pos: 'noun' },
-      { word: 'Receptacle', meaning: 'kap/hazne', pos: 'noun' }
+      { word: 'Dustbin', meaning: 'Çöp tenekesi', pos: 'noun' },
+      { word: 'Trash can', meaning: 'Çöp kutusu (ABD)', pos: 'noun' }
     ],
     antonyms: [],
     collocations: ['rubbish bin', 'recycle bin', 'throw in the bin'],
     collocationMeanings: {
-      'rubbish bin': '  p tenekesi',
-      'recycle bin': 'geri d n   m kutusu',
-      'throw in the bin': '  pe f rlatmak'
+      'rubbish bin': 'çöp tenekesi',
+      'recycle bin': 'geri dönüşüm kutusu',
+      'throw in the bin': 'çöpe fırlatmak'
     },
     examples: ["It's time you threw those shoes in the bin."],
-    exampleTranslations: ["O ayakkab lar    pe atma vaktin geldi."]
+    exampleTranslations: ['O ayakkabıları çöpe atma vaktin geldi.']
   },
   {
     id: 'blame_yourself',
     word: 'Blame yourself',
     pos: 'phrase',
-    meaning: 'kendini su lamak',
+    meaning: 'Kendini suçlamak',
     definition: 'To say or think that you are responsible for an accident, problem, or bad situation.',
-    ipa: '/ble m j   self/',
+    ipa: '/bleɪm jɔːˈself/',
     level: 'intermediate',
     wordFamily: [
-      { word: 'blame', pos: 'noun', meaning: 'su lama' },
-      { word: 'blameworthy', pos: 'adj', meaning: 'su lanas ' }
+      { word: 'blame', pos: 'verb/noun', meaning: 'suçlamak/suç' }
     ],
     synonyms: [
-      { word: 'Reproach oneself', meaning: 'kendini k namak', pos: 'phrase' },
-      { word: 'Feel guilty', meaning: 'su lu hissetmek', pos: 'phrase' }
+      { word: 'Fault yourself', meaning: 'Kendini hatalı bulmak', pos: 'phrase' }
     ],
     antonyms: [
-      { word: 'Forgive yourself', meaning: 'kendini affetmek', pos: 'phrase' },
-      { word: 'Exonerate', meaning: 'su suz   karmak', pos: 'verb' }
+      { word: 'Forgive yourself', meaning: 'Kendini affetmek', pos: 'phrase' }
     ],
     collocations: ['only have yourself to blame', 'no need to blame yourself'],
     collocationMeanings: {
-      'only have yourself to blame': 'sadece kendini su layabilirsin',
-      'no need to blame yourself': 'kendini su lamana gerek yok'
+      'only have yourself to blame': 'sadece kendini suçlayabilirsin',
+      'no need to blame yourself': 'kendini suçlamana gerek yok'
     },
     examples: ["If it all goes wrong, don't blame yourself."],
-    exampleTranslations: ["E er her  ey ters giderse, kendini su lama."]
+    exampleTranslations: ['Eğer her şey ters giderse, kendini suçlama.']
   },
   {
     id: 'block_your_creativity',
     word: 'Block your creativity',
     pos: 'phrase',
-    meaning: 'yarat c l   n  engellemek/t kamak',
+    meaning: 'Yaratıcılığını engellemek/tıkamak',
     definition: 'Something stops creative thoughts.',
-    ipa: '/bl k j  r  kri .e  t v. .ti/',
+    ipa: '/blɒk jɔːr ˌkriː.eɪˈtɪv.ə.ti/',
     level: 'intermediate',
     wordFamily: [],
     synonyms: [
-      { word: 'Stifle', meaning: 'bo mak/bast rmak', pos: 'verb' },
-      { word: 'Inhibit', meaning: 'engellemek', pos: 'verb' }
+      { word: 'Stifle creativity', meaning: 'Yaratıcılığı köreltmek', pos: 'phrase' }
     ],
     antonyms: [
-      { word: 'Spark', meaning: 'ate lemek', pos: 'verb' },
-      { word: 'Stimulate', meaning: 'canland rmak', pos: 'verb' }
+      { word: 'Inspire', meaning: 'İlham vermek', pos: 'verb' }
     ],
     collocations: ['mental block', 'factors that block creativity'],
     collocationMeanings: {
-      'mental block': 'zihinsel t kan kl k',
-      'factors that block creativity': 'yarat c l    engelleyen fakt rler'
+      'mental block': 'zihinsel tıkanıklık',
+      'factors that block creativity': 'yaratıcılığı engelleyen faktörler'
     },
     examples: ['Writing in the same space every day may block your creativity.'],
-    exampleTranslations: ["Her g n ayn  yerde yazmak yarat c l   n z  engelleyebilir."]
+    exampleTranslations: ['Her gün aynı yerde yazmak yaratıcılığınızı engelleyebilir.']
   },
   {
     id: 'boost_your_creativity',
     word: 'Boost your creativity',
     pos: 'phrase',
-    meaning: 'yarat c l   n  art rmak',
+    meaning: 'Yaratıcılığını artırmak',
     definition: 'Something helps creative thoughts.',
-    ipa: '/bu st j  r  kri .e  t v. .ti/',
+    ipa: '/buːst jɔːr ˌkriː.eɪˈtɪv.ə.ti/',
     level: 'intermediate',
     wordFamily: [],
     synonyms: [
-      { word: 'Enhance', meaning: 'geli tirmek', pos: 'verb' },
-      { word: 'Fuel', meaning: 'beslemek', pos: 'verb' },
-      { word: 'Inspire', meaning: 'ilham vermek', pos: 'verb' }
+      { word: 'Enhance creativity', meaning: 'Yaratıcılığı geliştirmek', pos: 'phrase' },
+      { word: 'Stimulate', meaning: 'Uyarmak/Canlandırmak', pos: 'verb' }
     ],
     antonyms: [
-      { word: 'Dampen', meaning: 's nd rmek/azaltmak', pos: 'verb' },
-      { word: 'Hinder', meaning: 'mani olmak', pos: 'verb' }
+      { word: 'Dampen', meaning: 'Heves kırmak/Azaltmak', pos: 'verb' }
     ],
     collocations: ['boost confidence', 'boost morale', 'boost productivity'],
     collocationMeanings: {
-      'boost confidence': ' zg veni art rmak',
-      'boost morale': 'morali y kseltmek',
-      'boost productivity': 'verimlili i art rmak'
+      'boost confidence': 'özgüveni artırmak',
+      'boost morale': 'morali yükseltmek',
+      'boost productivity': 'verimliliği artırmak'
     },
     examples: ['Being outdoors may boost your creativity.'],
-    exampleTranslations: ["D  ar da olmak yarat c l   n z  art rabilir."]
+    exampleTranslations: ['Dışarıda olmak yaratıcılığınızı artırabilir.']
   },
   {
     id: 'break_a_resolution',
     word: 'Break a resolution',
     pos: 'phrase',
-    meaning: 'karar n  bozmak (yeminini bozmak)',
+    meaning: 'Kararını bozmak (yeminini bozmak)',
     definition: 'To not do what you promised.',
-    ipa: '/bre k    rez.  lu .  n/',
+    ipa: '/breɪk ə ˌrez.əˈluː.ʃən/',
     level: 'intermediate',
     wordFamily: [],
     synonyms: [
-      { word: 'Give up', meaning: 'vazge mek', pos: 'phrasal verb' },
-      { word: 'Abandon', meaning: 'terk etmek/b rakmak', pos: 'verb' }
+      { word: 'Abandon a goal', meaning: 'Hedefinden vazgeçmek', pos: 'phrase' }
     ],
     antonyms: [
-      { word: 'Keep a resolution', meaning: 'karar na sad k kalmak', pos: 'phrase' },
-      { word: 'Stick to', meaning: 'ba l  kalmak', pos: 'phrasal verb' }
+      { word: 'Keep a resolution', meaning: 'Kararına sadık kalmak', pos: 'phrase' }
     ],
     collocations: ['make or break a resolution', 'break a new year resolution'],
     collocationMeanings: {
       'make or break a resolution': 'karar almak veya bozmak',
-      'break a new year resolution': 'yeni y l karar n  bozmak'
+      'break a new year resolution': 'yeni yıl kararını bozmak'
     },
     examples: ['I broke a resolution not to eat meat when I went to the restaurant yesterday.'],
-    exampleTranslations: ["D n restorana gitti imde et yememe karar m  bozdum."]
+    exampleTranslations: ['Dün restorana gittiğimde et yememe kararımı bozdum.']
   },
   {
     id: 'breaking_news',
     word: 'Breaking news',
     pos: 'noun',
-    meaning: 'son dakika haberi',
+    meaning: 'Son dakika haberi',
     definition: 'New information about a news event that is still happening.',
-    ipa: '/ bre .k   nju z/',
+    ipa: '/ˈbreɪ.kɪŋ njuːz/',
     level: 'intermediate',
     wordFamily: [],
     synonyms: [
-      { word: 'News flash', meaning: 'haber b lteni (ani)', pos: 'noun' },
-      { word: 'Latest developments', meaning: 'son geli meler', pos: 'noun' }
+      { word: 'Latest news', meaning: 'En son haberler', pos: 'noun' },
+      { word: 'News flash', meaning: 'Haber flaşı', pos: 'noun' }
     ],
     antonyms: [],
     collocations: ['latest breaking news', 'follow breaking news'],
     collocationMeanings: {
-      'latest breaking news': 'en son dakika geli meleri',
+      'latest breaking news': 'en son dakika gelişmeleri',
       'follow breaking news': 'son dakika haberlerini takip etmek'
     },
     examples: ['Keep up with the latest breaking news and politics from around the world.'],
-    exampleTranslations: ["D nyan n d rt bir yan ndan en son dakika haberlerini ve siyaseti takip edin."]
+    exampleTranslations: ['Dünyanın dört bir yanından en son dakika haberlerini ve siyaseti takip edin.']
   },
   {
     id: 'brilliant_b1',
     word: 'Brilliant',
     pos: 'adjective',
-    meaning: ' ok zeki, parlak, muhte em',
+    meaning: 'Çok zeki, parlak, muhteşem',
     definition: 'Very intelligent.',
-    ipa: '/ br l.j nt/',
+    ipa: '/ˈbrɪl.jənt/',
     level: 'intermediate',
     wordFamily: [
-      { word: 'brilliance', pos: 'noun', meaning: 'parlakl k/deha' },
-      { word: 'brilliantly', pos: 'adverb', meaning: 'parlak bir  ekilde' }
+      { word: 'brilliantly', pos: 'adv', meaning: 'muhteşem şekilde' },
+      { word: 'brilliance', pos: 'noun', meaning: 'parlaklık/zekâ' }
     ],
     synonyms: [
-      { word: 'Exceptional', meaning: 'istisnai', pos: 'adj' },
-      { word: 'Magnificent', meaning: 'ihti aml ', pos: 'adj' },
-      { word: 'Outstanding', meaning: 'se kin', pos: 'adj' }
+      { word: 'Intelligent', meaning: 'Zeki', pos: 'adj' },
+      { word: 'Outstanding', meaning: 'Seçkin/Harika', pos: 'adj' }
     ],
     antonyms: [
-      { word: 'Dull', meaning: 's k c /mat', pos: 'adj' },
-      { word: 'Mediocre', meaning: 'vasat', pos: 'adj' },
-      { word: 'Stupid', meaning: 'aptalca', pos: 'adj' }
+      { word: 'Stupid', meaning: 'Aptal', pos: 'adj' },
+      { word: 'Dull', meaning: 'Sönük/Aptalca', pos: 'adj' }
     ],
     collocations: ['brilliant idea', 'brilliant success', 'absolutely brilliant'],
     collocationMeanings: {
       'brilliant idea': 'harika fikir',
-      'brilliant success': 'muazzam ba ar ',
+      'brilliant success': 'muazzam başarı',
       'absolutely brilliant': 'kesinlikle harika'
     },
     examples: ['She is a brilliant scientist.'],
-    exampleTranslations: ["O muhte em bir bilim insan ."]
+    exampleTranslations: ['O muhteşem bir bilim insanı.']
   },
   {
     id: 'build_a_brand',
     word: 'Build a brand',
     pos: 'phrase',
-    meaning: 'marka olu turmak',
+    meaning: 'Marka oluşturmak',
     definition: 'Make or develop a product or group of products that has its own name and is made by one particular company.',
-    ipa: '/b ld   br nd/',
+    ipa: '/bɪld ə brænd/',
     level: 'intermediate',
     wordFamily: [],
     synonyms: [
-      { word: 'Establish a brand', meaning: 'marka kurmak', pos: 'phrase' },
-      { word: 'Develop identity', meaning: 'kimlik geli tirmek', pos: 'phrase' }
+      { word: 'Establish a brand', meaning: 'Marka kurmak', pos: 'phrase' }
     ],
     antonyms: [],
     collocations: ['brand building', 'global brand'],
     collocationMeanings: {
-      'brand building': 'marka in as ',
-      'global brand': 'k resel marka'
+      'brand building': 'marka inşası',
+      'global brand': 'küresel marka'
     },
     examples: ['We need the team to work together to build a brand.'],
-    exampleTranslations: ["Bir marka olu turmak i in ekibin birlikte  al  mas na ihtiyac m z var."]
+    exampleTranslations: ['Bir marka oluşturmak için ekibin birlikte çalışmasına ihtiyacımız var.']
   },
   {
     id: 'build_a_reputation',
     word: 'Build a reputation',
     pos: 'phrase',
-    meaning: 'itibar in a etmek, isim yapmak',
+    meaning: 'İtibar inşa etmek, isim yapmak',
     definition: 'Make or develop the opinion that people have about how good something is.',
-    ipa: '/b ld    rep.j  te .  n/',
+    ipa: '/bɪld ə ˌrep.jəˈteɪ.ʃən/',
     level: 'intermediate',
     wordFamily: [],
     synonyms: [
-      { word: 'Make a name for oneself', meaning: 'ad n  duyurmak', pos: 'idiom' },
-      { word: 'Gain recognition', meaning: 'tan n rl k kazanmak', pos: 'phrase' }
+      { word: 'Gain fame', meaning: 'Ün kazanmak', pos: 'phrase' }
     ],
     antonyms: [
-      { word: 'Lose face', meaning: 'itibar kaybetmek', pos: 'idiom' },
-      { word: 'Tarnish', meaning: 'lekelemek', pos: 'verb' }
+      { word: 'Lose credibility', meaning: 'Güvenilirliğini yitirmek', pos: 'phrase' }
     ],
     collocations: ['solid reputation', 'good reputation', 'reputation for excellence'],
     collocationMeanings: {
-      'solid reputation': 'sa lam itibar',
-      'good reputation': 'iyi   hret',
-      'reputation for excellence': 'm kemmeliyetle tan nan itibar'
+      'solid reputation': 'sağlam itibar',
+      'good reputation': 'iyi şöhret',
+      'reputation for excellence': 'mükemmeliyetle tanınan itibar'
     },
     examples: ['It may take a while to build a reputation.'],
-    exampleTranslations: ["Bir itibar olu turmak biraz zaman alabilir."]
+    exampleTranslations: ['Bir itibar oluşturmak biraz zaman alabilir.']
   },
   {
     id: 'buttery',
     word: 'Buttery',
     pos: 'adjective',
-    meaning: 'tereya l , tereya   tad nda',
+    meaning: 'Tereyağlı, tereyağı tadında',
     definition: 'Buttery food has a lot of butter in it, or tastes as if it has butter in it.',
-    ipa: '/ b t. r.i/',
+    ipa: '/ˈbʌt.ər.i/',
     level: 'intermediate',
     wordFamily: [
-      { word: 'butter', pos: 'noun', meaning: 'tereya  ' }
+      { word: 'butter', pos: 'noun/verb', meaning: 'tereyağı/tereyağı sürmek' }
     ],
     synonyms: [
-      { word: 'Rich', meaning: 'ya l /yo un', pos: 'adj' },
-      { word: 'Smooth', meaning: 'p r zs z', pos: 'adj' }
+      { word: 'Rich', meaning: 'Yoğun/Yağlı', pos: 'adj' }
     ],
-    antonyms: [
-      { word: 'Dry', meaning: 'kuru', pos: 'adj' },
-      { word: 'Tasteless', meaning: 'tads z', pos: 'adj' }
-    ],
+    antonyms: [],
     collocations: ['buttery texture', 'buttery sauce'],
     collocationMeanings: {
-      'buttery texture': 'tereya l  doku',
-      'buttery sauce': 'tereya l  sos'
+      'buttery texture': 'tereyağlı doku',
+      'buttery sauce': 'tereyağlı sos'
     },
     examples: ['The biscuits she made were delicious and buttery.'],
-    exampleTranslations: ["Yapt    bisk viler lezzetli ve tereya l yd ."]
+    exampleTranslations: ['Yaptığı bisküviler lezzetli ve tereyağlıydı.']
   },
   {
     id: 'carry_on',
     word: 'Carry on',
     pos: 'phrasal verb',
-    meaning: 'devam etmek, s rd rmek',
+    meaning: 'Devam etmek, sürdürmek',
     definition: 'To continue without stopping.',
-    ipa: '/ k r.i  n/',
+    ipa: '/ˈkær.i ɒn/',
     level: 'intermediate',
     wordFamily: [],
     synonyms: [
-      { word: 'Continue', meaning: 'devam etmek', pos: 'verb' },
-      { word: 'Proceed', meaning: 'ilerlemek', pos: 'verb' },
-      { word: 'Keep on', meaning: 's rd rmek', pos: 'phrasal verb' }
+      { word: 'Continue', meaning: 'Devam etmek', pos: 'verb' },
+      { word: 'Keep on', meaning: 'Sürdürmek', pos: 'phrasal verb' }
     ],
     antonyms: [
-      { word: 'Stop', meaning: 'durmak', pos: 'verb' },
-      { word: 'Cease', meaning: 'kesmek/sonland rmak', pos: 'verb' },
-      { word: 'Quit', meaning: 'b rakmak', pos: 'verb' }
+      { word: 'Stop', meaning: 'Durmak', pos: 'verb' },
+      { word: 'Quit', meaning: 'Bırakmak', pos: 'verb' }
     ],
     collocations: ['carry on working', 'carry on with', 'keep calm and carry on'],
     collocationMeanings: {
-      'carry on working': ' al  maya devam etmek',
-      'carry on with': 'bir  eye devam etmek',
+      'carry on working': 'çalışmaya devam etmek',
+      'carry on with': 'bir şeye devam etmek',
       'keep calm and carry on': 'sakin ol ve devam et'
     },
     examples: ['He moved to London to carry on his work.'],
-    exampleTranslations: [" al  malar n  s rd rmek i in Londra'ya ta  nd ."]
+    exampleTranslations: ['Çalışmalarını sürdürmek için Londra’ya taşındı.']
   },
   {
     id: 'catchy',
     word: 'Catchy',
     pos: 'adjective',
-    meaning: 'ak lda kal c  ( ark /s z)',
+    meaning: 'Akılda kalıcı (şarkı/söz)',
     definition: 'A tune or phrase which attracts your attention and is easy to remember.',
-    ipa: '/ k t .i/',
+    ipa: '/ˈkætʃ.i/',
     level: 'intermediate',
     wordFamily: [
       { word: 'catch', pos: 'verb', meaning: 'yakalamak' }
     ],
     synonyms: [
-      { word: 'Memorable', meaning: 'unutulmaz', pos: 'adj' },
-      { word: 'Poplular', meaning: 'pop ler', pos: 'adj' }
+      { word: 'Memorable', meaning: 'Unutulmaz', pos: 'adj' },
+      { word: 'Infectious', meaning: 'Bulaşıcı/Etkileyici', pos: 'adj' }
     ],
     antonyms: [
-      { word: 'Forgettable', meaning: 'unutulabilir', pos: 'adj' },
-      { word: 'Boring', meaning: 's k c ', pos: 'adj' }
+      { word: 'Forgettable', meaning: 'Unutulabilir', pos: 'adj' },
+      { word: 'Dull', meaning: 'Sıkıcı/Donuk', pos: 'adj' }
     ],
     collocations: ['catchy tune', 'catchy song', 'catchy slogan'],
     collocationMeanings: {
-      'catchy tune': 'ak lda kal c  melodi',
-      'catchy song': 'ak lda kal c   ark ',
-      'catchy slogan': 'ak lda kal c  slogan'
+      'catchy tune': 'akılda kalıcı melodi',
+      'catchy song': 'akılda kalıcı şarkı',
+      'catchy slogan': 'akılda kalıcı slogan'
     },
     examples: ["I like this song because it's very catchy."],
-    exampleTranslations: ["Bu  ark y  seviyorum   nk   ok ak lda kal c ."]
+    exampleTranslations: ['Bu şarkıyı seviyorum çünkü çok akılda kalıcı.']
   },
   {
     id: 'cause_b1',
     word: 'Cause',
     pos: 'noun',
-    meaning: 'sebep olmak, neden',
+    meaning: 'Sebep, neden',
     definition: 'An event, thing, or person that makes something happen.',
-    ipa: '/k  z/',
+    ipa: '/kɔːz/',
     level: 'intermediate',
     wordFamily: [
       { word: 'causal', pos: 'adj', meaning: 'nedensel' },
       { word: 'causality', pos: 'noun', meaning: 'nedensellik' }
     ],
     synonyms: [
-      { word: 'Reason', meaning: 'sebep', pos: 'noun' },
-      { word: 'Source', meaning: 'kaynak', pos: 'noun' },
-      { word: 'Origin', meaning: 'k ken', pos: 'noun' }
+      { word: 'Reason', meaning: 'Sebep', pos: 'noun' },
+      { word: 'Source', meaning: 'Kaynak', pos: 'noun' }
     ],
     antonyms: [
-      { word: 'Effect', meaning: 'etki', pos: 'noun' },
-      { word: 'Result', meaning: 'sonu ', pos: 'noun' },
-      { word: 'Consequence', meaning: 'netice', pos: 'noun' }
+      { word: 'Effect', meaning: 'Etki/Sonuç', pos: 'noun' },
+      { word: 'Result', meaning: 'Sonuç', pos: 'noun' }
     ],
     collocations: ['main cause', 'common cause', 'cause for concern'],
     collocationMeanings: {
       'main cause': 'ana neden',
-      'common cause': 'yayg n neden',
-      'cause for concern': 'endi e verici neden'
+      'common cause': 'yaygın neden',
+      'cause for concern': 'endişe verici neden'
     },
     examples: ['The major cause of these accidents is drivers going too fast.'],
-    exampleTranslations: ["Bu kazalar n ana nedeni s r c lerin  ok h zl  gitmesidir."]
+    exampleTranslations: ['Bu kazaların ana nedeni sürücelerin çok hızlı gitmesidir.']
   },
   {
     id: 'change_my_mind',
     word: 'Change my mind',
     pos: 'phrase',
-    meaning: 'fikrimi de i tirmek',
+    meaning: 'Fikrimi değiştirmek',
     definition: 'To adopt a different opinion or plan.',
-    ipa: '/t e nd  ma  ma nd/',
+    ipa: '/tʃeɪndʒ maɪ maɪnd/',
     level: 'intermediate',
     wordFamily: [],
     synonyms: [
-      { word: 'Reconsider', meaning: 'yeniden de erlendirmek', pos: 'verb' },
-      { word: 'Vacillate', meaning: 'karars z kalmak', pos: 'verb' }
+      { word: 'Reconsider', meaning: 'Yeniden düşünmek', pos: 'verb' }
     ],
     antonyms: [
-      { word: "Stick to one's guns", meaning: 'fikrinden vazge memek', pos: 'idiom' }
+      { word: 'Stick to one\'s guns', meaning: 'Nuh deyip peygamber dememek', pos: 'idiom' }
     ],
-    collocations: ['never change your mind', "hard to change one's mind"],
+    collocations: ['never change your mind', 'hard to change one\'s mind'],
     collocationMeanings: {
-      'never change your mind': 'asla fikrini de i tirmemek',
-      "hard to change one's mind": "birinin fikrini de i tirmesi zordur"
+      'never change your mind': 'asla fikrini değiştirmemek',
+      'hard to change one\'s mind': 'birinin fikrini değiştirmesi zordur'
     },
-    examples: ["I've changed my mind   I'll have a coffee."],
-    exampleTranslations: ["Fikrimi de i tirdim   bir kahve alaca  m."]
+    examples: ["I've changed my mind – I'll have a coffee."],
+    exampleTranslations: ['Fikrimi değiştirdim – bir kahve alacağım.']
   },
   {
     id: 'cheesy',
     word: 'Cheesy',
     pos: 'adjective',
-    meaning: 'peynirli, peynir tad nda',
+    meaning: 'Peynirli, peynir tadında',
     definition: 'Tasting like cheese.',
-    ipa: '/ t i .zi/',
+    ipa: '/ˈtʃiː.zi/',
     level: 'intermediate',
     wordFamily: [
       { word: 'cheese', pos: 'noun', meaning: 'peynir' }
     ],
-    synonyms: [
-      { word: 'Corny', meaning: 'bayat/kli e (mecaz)', pos: 'adj' },
-      { word: 'Cheeselike', meaning: 'peynirimsi', pos: 'adj' }
-    ],
-    antonyms: [
-      { word: 'Sophisticated', meaning: 'geli mi / st d zey', pos: 'adj' }
-    ],
+    synonyms: [],
+    antonyms: [],
     collocations: ['cheesy sauce', 'cheesy pasta', 'cheesy grin'],
     collocationMeanings: {
       'cheesy sauce': 'peynirli sos',
       'cheesy pasta': 'peynirli makarna',
-      'cheesy grin': 'sahte/zoraki g l mseme (argoda)'
+      'cheesy grin': 'sahte/zoraki gülümseme (argoda)'
     },
     examples: ['It has a very strong cheesy flavour to it.'],
-    exampleTranslations: [" ok g  l  bir peynir aromas  var."]
+    exampleTranslations: ['Çok güçlü bir peynir aroması var.']
   },
   {
     id: 'choir',
     word: 'Choir',
     pos: 'noun',
-    meaning: 'koro',
+    meaning: 'Koro',
     definition: 'A group of singers who perform together, for example in a church or school.',
-    ipa: '/kwa  r/',
+    ipa: '/kwaɪər/',
     level: 'intermediate',
     wordFamily: [
-      { word: 'choral', pos: 'adj', meaning: 'koroya ait' }
+      { word: 'choral', pos: 'adj', meaning: 'koroyla ilgili' }
     ],
     synonyms: [
-      { word: 'Chorus', meaning: 'nakarat/koro', pos: 'noun' },
-      { word: 'Ensemble', meaning: 'topluluk', pos: 'noun' }
+      { word: 'Chorus', meaning: 'Koro/Nakarat', pos: 'noun' }
     ],
-    antonyms: [
-      { word: 'Soloist', meaning: 'solist', pos: 'noun' }
-    ],
+    antonyms: [],
     collocations: ['school choir', 'church choir', 'join a choir'],
     collocationMeanings: {
       'school choir': 'okul korosu',
       'church choir': 'kilise korosu',
-      'join a choir': 'koroya kat lmak'
+      'join a choir': 'koroya katılmak'
     },
     examples: ['Jack was a member of the school choir.'],
-    exampleTranslations: ["Jack okul korosunun bir  yesiydi."]
+    exampleTranslations: ['Jack okul korosunun bir üyesiydi.']
   },
   {
     id: 'chocolatey',
     word: 'Chocolatey',
     pos: 'adjective',
-    meaning: ' ikolatal ,  ikolata gibi',
+    meaning: 'Çikolatalı, çikolata gibi',
     definition: 'Chocolatey food has a lot of chocolate in it, or tastes like chocolate.',
-    ipa: '/ t  k.l .ti/',
+    ipa: '/ˈtʃɒk.lə.ti/',
     level: 'intermediate',
     wordFamily: [
-      { word: 'chocolate', pos: 'noun', meaning: ' ikolata' }
+      { word: 'chocolate', pos: 'noun', meaning: 'çikolata' }
     ],
-    synonyms: [
-      { word: 'Rich', meaning: 'yo un/lezzetli', pos: 'adj' },
-      { word: 'Sweet', meaning: 'tatl ', pos: 'adj' }
-    ],
-    antonyms: [
-      { word: 'Bitter', meaning: 'ac ', pos: 'adj' }
-    ],
+    synonyms: [],
+    antonyms: [],
     collocations: ['chocolatey taste', 'chocolatey dessert'],
     collocationMeanings: {
-      'chocolatey taste': ' ikolatal  tad',
-      'chocolatey dessert': ' ikolatal  tatl '
+      'chocolatey taste': 'çikolatalı tad',
+      'chocolatey dessert': 'çikolatalı tatlı'
     },
     examples: ['The cake is a bit too chocolatey for me.'],
-    exampleTranslations: ["Kek benim i in biraz fazla  ikolatal ."]
+    exampleTranslations: ['Kek benim için biraz fazla çikolatalı.']
   },
   {
     id: 'clear_up',
     word: 'Clear up',
     pos: 'phrasal verb',
-    meaning: 'temizlemek, ortal    toparlamak',
+    meaning: 'Temizlemek, ortalığı toparlamak',
     definition: 'To make everything clean and tidy again after making a mess.',
-    ipa: '/kl  r  p/',
+    ipa: '/klɪər ʌp/',
     level: 'intermediate',
     wordFamily: [],
     synonyms: [
-      { word: 'Tidy', meaning: 'd zenlemek', pos: 'verb' },
-      { word: 'Clean', meaning: 'temizlemek', pos: 'verb' },
-      { word: 'Resolve', meaning: 'a  kl  a kavu turmak (sorun i in)', pos: 'verb' }
+      { word: 'Tidy up', meaning: 'Toparlamak', pos: 'phrasal verb' },
+      { word: 'Clean', meaning: 'Temizlemek', pos: 'verb' }
     ],
     antonyms: [
-      { word: 'Mess up', meaning: 'kar  t rmak', pos: 'phrasal verb' },
-      { word: 'Clutter', meaning: 'darmada  n etmek', pos: 'verb' }
+      { word: 'Mess up', meaning: 'Dağıtmak', pos: 'phrasal verb' }
     ],
     collocations: ['clear up the mess', 'clear up the weather', 'clear up a doubt'],
     collocationMeanings: {
-      'clear up the mess': 'da  n kl    toplamak',
-      'clear up the weather': 'havan n a mas ',
-      'clear up a doubt': '  pheyi gidermek'
+      'clear up the mess': 'dağınıklığı toplamak',
+      'clear up the weather': 'havanın açması',
+      'clear up a doubt': 'şüpheyi gidermek'
     },
     examples: ["I'll clear up if you want to go to bed."],
-    exampleTranslations: ["E er yatmak istersen etraf  ben toparlar m."]
+    exampleTranslations: ['Eğer yatmak istersen etrafı ben toparlarım.']
   },
   {
     id: 'colleague',
     word: 'Colleague',
     pos: 'noun',
-    meaning: 'meslekta , i  arkada  ',
+    meaning: 'Meslektaş, iş arkadaşı',
     definition: 'People who work in the same organization or department as you.',
-    ipa: '/ k l.i  /',
+    ipa: '/ˈkɒl.iːɡ/',
     level: 'intermediate',
     wordFamily: [],
     synonyms: [
-      { word: 'Co-worker', meaning: 'i  arkada  ', pos: 'noun' },
-      { word: 'Teammate', meaning: 'tak m arkada  ', pos: 'noun' },
-      { word: 'Associate', meaning: 'ortak/i  orta  ', pos: 'noun' }
+      { word: 'Co-worker', meaning: 'İş arkadaşı', pos: 'noun' },
+      { word: 'Associate', meaning: 'Ortak/Meslektaş', pos: 'noun' }
     ],
     antonyms: [
-      { word: 'Rival', meaning: 'rakip', pos: 'noun' },
-      { word: 'Enemy', meaning: 'd  man', pos: 'noun' }
+      { word: 'Rival', meaning: 'Rakip', pos: 'noun' }
     ],
     collocations: ['work colleague', 'former colleague', 'senior colleague'],
     collocationMeanings: {
-      'work colleague': 'i  arkada  ',
-      'former colleague': 'eski meslekta ',
-      'senior colleague': 'k demli meslekta '
+      'work colleague': 'iş arkadaşı',
+      'former colleague': 'eski meslektaş',
+      'senior colleague': 'kıdemli meslektaş'
     },
     examples: ['He is popular with his colleagues.'],
-    exampleTranslations: ["   arkada lar  aras nda pop lerdir."]
+    exampleTranslations: ['İş arkadaşları arasında popülerdir.']
   },
   {
     id: 'come_up_with',
     word: 'Come up with',
     pos: 'phrasal verb',
-    meaning: 'bulmak (fikir vb.),  retmek',
+    meaning: 'Bulmak (fikir vb.), üretmek',
     definition: 'To think of something such as an idea or a plan.',
-    ipa: '/k m  p w  /',
+    ipa: '/kʌm ʌp wɪð/',
     level: 'intermediate',
     wordFamily: [],
     synonyms: [
-      { word: 'Produce', meaning: ' retmek', pos: 'verb' },
-      { word: 'Devise', meaning: 'tasarlamak', pos: 'verb' },
-      { word: 'Invent', meaning: 'icat etmek', pos: 'verb' }
+      { word: 'Invent', meaning: 'İcat etmek', pos: 'verb' },
+      { word: 'Propose', meaning: 'Önermek', pos: 'verb' }
     ],
-    antonyms: [
-      { word: 'Forget', meaning: 'unutmak', pos: 'verb' },
-      { word: 'Ignore', meaning: 'ihmal etmek', pos: 'verb' }
-    ],
+    antonyms: [],
     collocations: ['come up with an idea', 'come up with a solution', 'come up with a plan'],
     collocationMeanings: {
       'come up with an idea': 'bir fikir bulmak',
-      'come up with a solution': 'bir   z m  retmek',
+      'come up with a solution': 'bir çözüm üretmek',
       'come up with a plan': 'bir plan tasarlamak'
     },
     examples: ['Is that the best you can come up with?'],
-    exampleTranslations: ["Bulabildi in en iyi  ey bu mu?"]
+    exampleTranslations: ['Bulabildiğin en iyi şey bu mu?']
   },
   {
     id: 'come_up_with_new_ideas',
     word: 'Come up with new ideas',
     pos: 'phrase',
-    meaning: 'yeni fikirler bulmak',
+    meaning: 'Yeni fikirler bulmak',
     definition: 'To think of something new.',
-    ipa: '/k m  p w   nju  a  d  z/',
+    ipa: '/kʌm ʌp wɪð njuː aɪˈdɪəz/',
     level: 'intermediate',
     wordFamily: [],
     synonyms: [
-      { word: 'Innovate', meaning: 'yenilik yapmak', pos: 'verb' },
-      { word: 'Brainstorm', meaning: 'beyin f rt nas  yapmak', pos: 'verb' }
+      { word: 'Brainstorm', meaning: 'Beyin fırtınası yapmak', pos: 'verb' }
     ],
     antonyms: [],
     collocations: ['need to generate new ideas', 'strategy to generate new ideas'],
     collocationMeanings: {
-      'need to generate new ideas': 'yeni fikirler bulmaya ihtiya  duymak',
+      'need to generate new ideas': 'yeni fikirler bulmaya ihtiyaç duymak',
       'strategy to generate new ideas': 'yeni fikirler bulma stratejisi'
     },
     examples: ['We can form a group to come up with new ideas.'],
-    exampleTranslations: ["Yeni fikirler  retmek i in bir grup kurabiliriz."]
+    exampleTranslations: ['Yeni fikirler üretmek için bir grup kurabiliriz.']
   },
   {
     id: 'competitive',
     word: 'Competitive',
     pos: 'adjective',
-    meaning: 'rekabet i',
+    meaning: 'Rekabetçi',
     definition: 'A competitive activity is one in which companies or teams are competing against each other.',
-    ipa: '/k m pet. .t v/',
+    ipa: '/kəmˈpet.ɪ.tɪv/',
     level: 'intermediate',
     wordFamily: [
-      { word: 'competition', pos: 'noun', meaning: 'rekabet' },
-      { word: 'compete', pos: 'verb', meaning: 'yar  mak' },
-      { word: 'competitor', pos: 'noun', meaning: 'rakip' }
+      { word: 'compete', pos: 'verb', meaning: 'yarışmak' },
+      { word: 'competition', pos: 'noun', meaning: 'yarışma/rekabet' },
+      { word: 'competitor', pos: 'noun', meaning: 'yarışmacı/rakip' }
     ],
     synonyms: [
-      { word: 'Ambitious', meaning: 'h rsl ', pos: 'adj' },
-      { word: 'Combative', meaning: 'kavgac /rekabet i', pos: 'adj' }
+      { word: 'Ambitious', meaning: 'Hırslı', pos: 'adj' }
     ],
     antonyms: [
-      { word: 'Non-competitive', meaning: 'rekabet i olmayan', pos: 'adj' },
-      { word: 'Cooperative', meaning: 'i birlik i', pos: 'adj' }
+      { word: 'Uncompetitive', meaning: 'Rekabetçi olmayan', pos: 'adj' }
     ],
     collocations: ['competitive market', 'competitive edge', 'highly competitive'],
     collocationMeanings: {
-      'competitive market': 'rekabet i pazar',
-      'competitive edge': 'rekabet avantaj ',
-      'highly competitive': 'son derece rekabet i'
+      'competitive market': 'rekabetçi pazar',
+      'competitive edge': 'rekabet avantajı',
+      'highly competitive': 'son derece rekabetçi'
     },
     examples: ['He gave up playing competitive football at the age of 24.'],
-    exampleTranslations: ["24 ya  nda rekabet i futbol oynamay  b rakt ."]
+    exampleTranslations: ['24 yaşında rekabetçi futbol oynamayı bıraktı.']
   },
   {
     id: 'confident_b1',
     word: 'Confident',
     pos: 'adjective',
-    meaning: 'kendine g venen',
+    meaning: 'Kendine güvenen',
     definition: 'Someone who believes in their own abilities and so does not feel nervous or frightened.',
-    ipa: '/ k n.f .d nt/',
+    ipa: '/ˈkɒn.fɪ.dənt/',
     level: 'intermediate',
     wordFamily: [
-      { word: 'confidence', pos: 'noun', meaning: 'g ven' },
-      { word: 'confidant', pos: 'noun', meaning: 's rda ' },
-      { word: 'confidently', pos: 'adverb', meaning: 'kendinden emin bir  ekilde' }
+      { word: 'confidence', pos: 'noun', meaning: 'güven' },
+      { word: 'confidently', pos: 'adv', meaning: 'güvenle' }
     ],
     synonyms: [
-      { word: 'Self-assured', meaning: 'kendinden emin', pos: 'adj' },
-      { word: 'Secure', meaning: 'g venli/emin', pos: 'adj' },
-      { word: 'Bold', meaning: 'cesur', pos: 'adj' }
+      { word: 'Self-assured', meaning: 'Kendinden emin', pos: 'adj' },
+      { word: 'Positive', meaning: 'Olumlu/Emin', pos: 'adj' }
     ],
     antonyms: [
-      { word: 'Insecure', meaning: 'g vensiz', pos: 'adj' },
-      { word: 'Shy', meaning: 'utanga ', pos: 'adj' },
-      { word: 'Hesitant', meaning: 'teredd tl ', pos: 'adj' }
+      { word: 'Insecure', meaning: 'Güvensiz', pos: 'adj' },
+      { word: 'Shy', meaning: 'Utangaç', pos: 'adj' }
     ],
     collocations: ['feel confident', 'self confident', 'confident person'],
     collocationMeanings: {
-      'feel confident': 'kendine g venmek',
-      'self confident': ' zg venli',
-      'confident person': 'kendinden emin ki i'
+      'feel confident': 'kendine güvenmek',
+      'self confident': 'özgüvenli',
+      'confident person': 'kendinden emin kişi'
     },
     examples: ['He is confident in his ability to play the piano.'],
-    exampleTranslations: ["Piyano  alma yetene i konusunda kendine g veniyor."]
+    exampleTranslations: ['Piyano çalma yeteneği konusunda kendine güveniyor.']
   },
   {
     id: 'confused',
     word: 'Confused',
     pos: 'adjective',
-    meaning: 'kafas  kar   k',
+    meaning: 'Kafası karışık',
     definition: 'Unable to understand something or think clearly about it.',
-    ipa: '/k n fju zd/',
+    ipa: '/kənˈfjuːzd/',
     level: 'intermediate',
     wordFamily: [
-      { word: 'confuse', pos: 'verb', meaning: 'kafas n  kar  t rmak' },
-      { word: 'confusion', pos: 'noun', meaning: 'kar   kl k' },
-      { word: 'confusing', pos: 'adj', meaning: 'kafa kar  t r c ' }
+      { word: 'confusion', pos: 'noun', meaning: 'karışıklık' },
+      { word: 'confuse', pos: 'verb', meaning: 'kafa karıştırmak' }
     ],
     synonyms: [
-      { word: 'Puzzled', meaning: ' a k n', pos: 'adj' },
-      { word: 'Baffled', meaning: 'donup kalm  ', pos: 'adj' },
-      { word: 'Disoriented', meaning: 'y n n   a  rm  ', pos: 'adj' }
+      { word: 'Puzzled', meaning: 'Şaşkın', pos: 'adj' },
+      { word: 'Baffled', meaning: 'Donup kalmış', pos: 'adj' }
     ],
     antonyms: [
-      { word: 'Clear', meaning: 'net/anlam  ', pos: 'adj' },
-      { word: 'Lucid', meaning: 'a  k zihinli', pos: 'adj' },
-      { word: 'Understanding', meaning: 'anlay  l /anlayan', pos: 'adj' }
+      { word: 'Clear', meaning: 'Net/Anlaşılır', pos: 'adj' }
     ],
     collocations: ['totally confused', 'look confused', 'confused expression'],
     collocationMeanings: {
-      'totally confused': 'tamamen kafas  kar  m  ',
-      'look confused': 'kafas  kar  m   g r nmek',
-      'confused expression': ' a k n/kar   k ifade'
+      'totally confused': 'tamamen kafası karışmış',
+      'look confused': 'kafası karışmış görünmek',
+      'confused expression': 'şaşkın/karışık ifade'
     },
     examples: ['She was starting to feel a bit confused.'],
-    exampleTranslations: ["Biraz kafas  kar  maya ba lam  t ."]
+    exampleTranslations: ['Biraz kafası karışmaya başlamıştı.']
   },
   {
     id: 'control_yourself',
     word: 'Control yourself',
     pos: 'phrase',
-    meaning: 'kendine hakim olmak',
+    meaning: 'Kendine hakim olmak',
     definition: 'To have the power to make decisions and decide what will happen to something.',
-    ipa: '/k n tr  l j   self/',
+    ipa: '/kənˈtrəʊl jɔːˈself/',
     level: 'intermediate',
     wordFamily: [
-      { word: 'controllable', pos: 'adj', meaning: 'kontrol edilebilir' },
-      { word: 'controller', pos: 'noun', meaning: 'denetleyici' }
+      { word: 'control', pos: 'noun/verb', meaning: 'kontrol/kontrol etmek' }
     ],
     synonyms: [
-      { word: 'Restrain oneself', meaning: 'kendini dizginlemek', pos: 'phrase' },
-      { word: 'Keep one s cool', meaning: 'so ukkanl l   n  korumak', pos: 'idiom' }
+      { word: 'Restrain yourself', meaning: 'Kendini dizginlemek', pos: 'phrase' }
     ],
     antonyms: [
-      { word: 'Lose control', meaning: 'kontrol  kaybetmek', pos: 'phrase' },
-      { word: 'Go wild', meaning: '    r ndan   kmak', pos: 'idiom' }
+      { word: 'Lose control', meaning: 'Kontrolü kaybetmek', pos: 'phrase' }
     ],
     collocations: ['struggle to control yourself', 'must control yourself'],
     collocationMeanings: {
       'struggle to control yourself': 'kendine hakim olmakta zorlanmak',
-      'must control yourself': 'kendine hakim olmal s n'
+      'must control yourself': 'kendine hakim olmalısın'
     },
     examples: ["When I see chocolate I can't control myself."],
-    exampleTranslations: [" ikolata g rd   mde kendime hakim olam yorum."]
+    exampleTranslations: ['Çikolata gördüğümde kendime hakim olamıyorum.']
   },
   {
     id: 'convenient',
     word: 'Convenient',
     pos: 'adjective',
-    meaning: 'uygun, elveri li, pratik',
+    meaning: 'Uygun, elverişli, pratik',
     definition: 'Easy to use, or appropriate for a particular purpose.',
-    ipa: '/k n vi .ni. nt/',
+    ipa: '/kənˈviː.ni.ənt/',
     level: 'intermediate',
     wordFamily: [
-      { word: 'convenience', pos: 'noun', meaning: 'uygunluk/kolayl k' },
-      { word: 'conveniently', pos: 'adverb', meaning: 'uygun bir  ekilde' }
+      { word: 'convenience', pos: 'noun', meaning: 'kolaylık' },
+      { word: 'conveniently', pos: 'adv', meaning: 'uygun şekilde' }
     ],
     synonyms: [
-      { word: 'Handy', meaning: 'kullan  l ', pos: 'adj' },
-      { word: 'Practical', meaning: 'pratik', pos: 'adj' },
-      { word: 'Accessible', meaning: 'eri ilebilir', pos: 'adj' }
+      { word: 'Handy', meaning: 'Kullanışlı', pos: 'adj' },
+      { word: 'Suitable', meaning: 'Uygun', pos: 'adj' }
     ],
     antonyms: [
-      { word: 'Inconvenient', meaning: 'uygunsuz/zahmetli', pos: 'adj' },
-      { word: 'Useless', meaning: 'faydas z', pos: 'adj' }
+      { word: 'Inconvenient', meaning: 'Uygunsuz/Zahmetli', pos: 'adj' }
     ],
     collocations: ['convenient location', 'convenient time', 'very convenient'],
     collocationMeanings: {
       'convenient location': 'uygun konum',
-      'convenient time': 'm sait/uygun zaman',
-      'very convenient': ' ok pratik'
+      'convenient time': 'müsait/uygun zaman',
+      'very convenient': 'çok pratik'
     },
     examples: ['The hotel was only five minutes from the beach, which was convenient.'],
-    exampleTranslations: ["Otel plaja sadece be  dakika mesafeydi, bu da  ok uygundu/pratikti."]
+    exampleTranslations: ['Otel plaja sadece beş dakika mesafeydi, bu da çok uygundu/pratikti.']
   },
   {
     id: 'creamy',
     word: 'Creamy',
     pos: 'adjective',
-    meaning: 'kremal , k vaml , yumu ak',
+    meaning: 'Kremalı, kıvamlı, yumuşak',
     definition: 'A creamy substance is thick, soft, and smooth and does not flow easily.',
-    ipa: '/ kri .mi/',
+    ipa: '/ˈkriː.mi/',
     level: 'intermediate',
     wordFamily: [
-      { word: 'cream', pos: 'noun', meaning: 'krema' },
-      { word: 'creamery', pos: 'noun', meaning: 'mand ra' }
+      { word: 'cream', pos: 'noun', meaning: 'krema' }
     ],
     synonyms: [
-      { word: 'Smooth', meaning: 'p r zs z', pos: 'adj' },
-      { word: 'Velvety', meaning: 'kadifemsi', pos: 'adj' },
-      { word: 'Rich', meaning: 'yo un/zengin', pos: 'adj' }
+      { word: 'Smooth', meaning: 'Pürüzsüz', pos: 'adj' },
+      { word: 'Velvety', meaning: 'Kadifemsi', pos: 'adj' }
     ],
     antonyms: [
-      { word: 'Lumpy', meaning: 'topaklanm  ', pos: 'adj' },
-      { word: 'Thin', meaning: 'ince/sulu', pos: 'adj' },
-      { word: 'Watery', meaning: 'sulu', pos: 'adj' }
+      { word: 'Watery', meaning: 'Sulu/Tatsız', pos: 'adj' }
     ],
     collocations: ['creamy texture', 'creamy soup', 'rich and creamy'],
     collocationMeanings: {
-      'creamy texture': 'kremams  doku',
-      'creamy soup': 'k vaml   orba',
-      'rich and creamy': 'yo un ve kremal '
+      'creamy texture': 'kremamsı doku',
+      'creamy soup': 'kıvamlı çorba',
+      'rich and creamy': 'yoğun ve kremalı'
     },
     examples: ['This sauce is so creamy.'],
-    exampleTranslations: ["Bu sos  ok k vaml /yumu ak."]
+    exampleTranslations: ['Bu sos çok kıvamlı/yumuşak.']
   },
-
   {
     id: 'crowded',
     word: 'Crowded',
     pos: 'adjective',
-    meaning: 'kalabal k',
+    meaning: 'Kalabalık',
     definition: 'A place with a lot of people, especially too many.',
-    ipa: '/ kra .d d/',
+    ipa: '/ˈkraʊ.dɪd/',
     level: 'intermediate',
     wordFamily: [
-      { word: 'crowd', pos: 'noun', meaning: 'kalabal k' },
-      { word: 'overcrowded', pos: 'adj', meaning: 'a  r  kalabal k' }
+      { word: 'crowd', pos: 'noun/verb', meaning: 'kalabalık/toplanmak' }
     ],
     synonyms: [
-      { word: 'Packed', meaning: 't kl m t kl m', pos: 'adj' },
-      { word: 'Congested', meaning: 's k   k', pos: 'adj' },
-      { word: 'Full', meaning: 'dolu', pos: 'adj' }
+      { word: 'Packed', meaning: 'Tıklım tıklım', pos: 'adj' },
+      { word: 'Jam-packed', meaning: 'Aşırı kalabalık', pos: 'adj' }
     ],
     antonyms: [
-      { word: 'Empty', meaning: 'bo ', pos: 'adj' },
-      { word: 'Deserted', meaning: 'terk edilmi / ss z', pos: 'adj' },
-      { word: 'Spacious', meaning: 'ferah', pos: 'adj' }
+      { word: 'Empty', meaning: 'Boş', pos: 'adj' },
+      { word: 'Deserted', meaning: 'Issız', pos: 'adj' }
     ],
     collocations: ['crowded room', 'over crowded', 'crowded city'],
     collocationMeanings: {
-      'crowded room': 'kalabal k oda',
-      'over crowded': 'a  r  kalabal k',
-      'crowded city': 'kalabal k  ehir'
+      'crowded room': 'kalabalık oda',
+      'over crowded': 'aşırı kalabalık',
+      'crowded city': 'kalabalık şehir'
     },
     examples: ['The street was noisy and crowded.'],
-    exampleTranslations: ['Cadde g r lt l  ve kalabal kt .']
+    exampleTranslations: ['Cadde gürültülü ve kalabalıktı.']
   },
   {
     id: 'cut_down',
     word: 'Cut down',
     pos: 'phrasal verb',
-    meaning: 'azaltmak, kesinti yapmak',
+    meaning: 'Azaltmak, kesinti yapmak',
     definition: 'To reduce an amount of something.',
-    ipa: '/k t da n/',
+    ipa: '/kʌt daʊn/',
     level: 'intermediate',
     wordFamily: [],
     synonyms: [
-      { word: 'Reduce', meaning: 'azaltmak', pos: 'verb' },
-      { word: 'Lessen', meaning: 'eksiltmek', pos: 'verb' },
-      { word: 'Decrease', meaning: 'd   rmek', pos: 'verb' }
+      { word: 'Reduce', meaning: 'Azaltmak', pos: 'verb' },
+      { word: 'Decrease', meaning: 'Düşürmek', pos: 'verb' }
     ],
     antonyms: [
-      { word: 'Increase', meaning: 'art rmak', pos: 'verb' },
-      { word: 'Raise', meaning: 'y kseltmek', pos: 'verb' }
+      { word: 'Increase', meaning: 'Artırmak', pos: 'verb' }
     ],
     collocations: ['cut down trees', 'cut down costs', 'cut down expenses'],
     collocationMeanings: {
-      'cut down trees': 'a a  kesmek',
-      'cut down costs': 'maliyetleri d   rmek',
-      'cut down expenses': 'giderleri k smak'
+      'cut down trees': 'ağaç kesmek',
+      'cut down costs': 'maliyetleri düşürmek',
+      'cut down expenses': 'giderleri kısmak'
     },
     examples: ['These improvements will cut down on traffic noise.'],
-    exampleTranslations: ['Bu iyile tirmeler trafik g r lt s n  azaltacak.']
+    exampleTranslations: ['Bu iyileştirmeler trafik gürültüsünü azaltacak.']
   },
   {
     id: 'cut_down_on',
     word: 'Cut down on',
     pos: 'phrasal verb',
-    meaning: 'azaltmak (t ketimi vb.)',
+    meaning: 'Azaltmak (tüketimi vb.)',
     definition: 'To do less of something.',
-    ipa: '/k t da n  n/',
+    ipa: '/kʌt daʊn ɒn/',
     level: 'intermediate',
     wordFamily: [],
     synonyms: [
-      { word: 'Curtail', meaning: 'k smak', pos: 'verb' },
-      { word: 'Economize', meaning: 'tasarruf etmek', pos: 'verb' }
+      { word: 'Consume less', meaning: 'Daha az tüketmek', pos: 'phrase' }
     ],
     antonyms: [
-      { word: 'Indulge', meaning: 'kendini kapt rmak/a  r ya ka mak', pos: 'verb' }
+      { word: 'Indulge in', meaning: 'Aşırıya kaçmak', pos: 'phrasal verb' }
     ],
     collocations: ['cut down on sugar', 'cut down on salt', 'cut down on smoking'],
     collocationMeanings: {
-      'cut down on sugar': ' ekeri azaltmak',
-      'cut down on salt': 'tuz kullan m n  d   rmek',
-      'cut down on smoking': 'sigaray  azaltmak'
+      'cut down on sugar': 'şekeri azaltmak',
+      'cut down on salt': 'tuz kullanımını düşürmek',
+      'cut down on smoking': 'sigarayı azaltmak'
     },
     examples: ['She wants to cut down on the amount of chocolate she eats.'],
-    exampleTranslations: ['Yedi i  ikolata miktar n  azaltmak istiyor.']
+    exampleTranslations: ['Yediği çikolata miktarını azaltmak istiyor.']
   },
   {
     id: 'deal_with',
     word: 'Deal with',
     pos: 'phrasal verb',
-    meaning: 'ilgilenmek, ba a   kmak',
+    meaning: 'İlgilenmek, başa çıkmak',
     definition: 'To take action to do something, especially to solve a problem.',
-    ipa: '/di l w  /',
+    ipa: '/diːl wɪð/',
     level: 'intermediate',
-    wordFamily: [
-      { word: 'dealer', pos: 'noun', meaning: 'sat c /t ccar' },
-      { word: 'deal', pos: 'noun', meaning: 'anla ma' }
-    ],
+    wordFamily: [],
     synonyms: [
-      { word: 'Handle', meaning: 'idare etmek', pos: 'verb' },
-      { word: 'Cope', meaning: 'ba  etmek', pos: 'verb' },
-      { word: 'Tackle', meaning: 'ele almak/  zmek', pos: 'verb' }
+      { word: 'Handle', meaning: 'Ele almak', pos: 'verb' },
+      { word: 'Manage', meaning: 'Yönetmek', pos: 'verb' },
+      { word: 'Tackle', meaning: 'Üstesinden gelmek', pos: 'verb' }
     ],
     antonyms: [
-      { word: 'Ignore', meaning: 'g rmezden gelmek', pos: 'verb' },
-      { word: 'Neglect', meaning: 'ihmal etmek', pos: 'verb' }
+      { word: 'Avoid', meaning: 'Kaçınmak', pos: 'verb' },
+      { word: 'Ignore', meaning: 'Görmezden gelmek', pos: 'verb' }
     ],
     collocations: ['deal with a problem', 'deal with a situation', 'deal with a complaint'],
     collocationMeanings: {
       'deal with a problem': 'bir sorunu halletmek',
       'deal with a situation': 'bir durumla ilgilenmek',
-      'deal with a complaint': 'bir  ikayeti   z me kavu turmak'
+      'deal with a complaint': 'bir şikayeti çözüme kavuşturmek'
     },
     examples: ['The government must now deal with the problem of high unemployment.'],
-    exampleTranslations: ['H k met  imdi y ksek i sizlik sorunuyla ilgilenmeli.']
+    exampleTranslations: ['Hükümet şimdi yüksek işsizlik sorunuyla ilgilenmeli.']
   },
   {
     id: 'decisive',
     word: 'Decisive',
     pos: 'adjective',
-    meaning: 'kararl ',
+    meaning: 'Kararlı',
     definition: 'Able to make choices or decide what to do quickly and confidently.',
-    ipa: '/d  sa .s v/',
+    ipa: '/dɪˈsaɪ.sɪv/',
     level: 'intermediate',
     wordFamily: [
       { word: 'decide', pos: 'verb', meaning: 'karar vermek' },
       { word: 'decision', pos: 'noun', meaning: 'karar' },
-      { word: 'decisiveness', pos: 'noun', meaning: 'kararl l k' }
+      { word: 'decisively', pos: 'adv', meaning: 'kararlıca' }
     ],
     synonyms: [
-      { word: 'Determined', meaning: 'azimle karar vermi ', pos: 'adj' },
-      { word: 'Resolute', meaning: 'kararl /sabit', pos: 'adj' },
-      { word: 'Definitive', meaning: 'kesin', pos: 'adj' }
+      { word: 'Resolute', meaning: 'Azimli', pos: 'adj' },
+      { word: 'Determined', meaning: 'Kararlı', pos: 'adj' }
     ],
     antonyms: [
-      { word: 'Indecisive', meaning: 'karars z', pos: 'adj' },
-      { word: 'Hesitant', meaning: 'teredd tl ', pos: 'adj' },
-      { word: 'Irresolute', meaning: 'karars z/gev ek', pos: 'adj' }
+      { word: 'Indecisive', meaning: 'Kararsız', pos: 'adj' },
+      { word: 'Hesitant', meaning: 'Tereddütlü', pos: 'adj' }
     ],
     collocations: ['decisive factor', 'decisive victory', 'decisive action'],
     collocationMeanings: {
-      'decisive factor': 'belirleyici fakt r',
+      'decisive factor': 'belirleyici faktör',
       'decisive victory': 'kesin zafer',
-      'decisive action': 'kararl  eylem'
+      'decisive action': 'kararlı eylem'
     },
     examples: ["It's best to ask her because she's very decisive."],
-    exampleTranslations: ['Ona sormak en iyisi   nk  o  ok kararl d r.']
+    exampleTranslations: ['Ona sormak en iyisi çünkü o çok kararlıdır.']
   },
   {
     id: 'design_v',
     word: 'Design (v)',
     pos: 'verb',
-    meaning: 'tasarlamak',
+    meaning: 'Tasarlamak',
     definition: 'To decide how something will be made, including how it will work and what it will look like, and often to make drawings of it.',
-    ipa: '/d  za n/',
+    ipa: '/dɪˈzaɪn/',
     level: 'intermediate',
     wordFamily: [
-      { word: 'designer', pos: 'noun', meaning: 'tasar mc ' },
-      { word: 'design', pos: 'noun', meaning: 'tasar m' }
+      { word: 'designer', pos: 'noun', meaning: 'tasarımcı' },
+      { word: 'design', pos: 'noun', meaning: 'tasarım' }
     ],
     synonyms: [
-      { word: 'Create', meaning: 'yaratmak', pos: 'verb' },
-      { word: 'Plan', meaning: 'planlamak', pos: 'verb' },
-      { word: 'Draft', meaning: 'tasla  n  haz rlamak', pos: 'verb' }
+      { word: 'Plan', meaning: 'Planlamak', pos: 'verb' },
+      { word: 'Sketch', meaning: 'Taslağını çizmek', pos: 'verb' }
     ],
-    antonyms: [
-      { word: 'Destroy', meaning: 'y kmak', pos: 'verb' },
-      { word: 'Neglect', meaning: 'ihmal etmek', pos: 'verb' }
-    ],
+    antonyms: [],
     collocations: ['design a building', 'specially designed', 'design a website'],
     collocationMeanings: {
       'design a building': 'bina tasarlamak',
-      'specially designed': ' zel olarak tasarlanm  ',
+      'specially designed': 'özel olarak tasarlanmış',
       'design a website': 'internet sitesi tasarlamak'
     },
     examples: ['The bride wore a cream silk dress that she designed herself.'],
-    exampleTranslations: ['Gelin, kendi tasarlad    krem rengi ipek bir elbise giydi.']
+    exampleTranslations: ['Gelin, kendi tasarladığı krem rengi ipek bir elbise giydi.']
   },
   {
     id: 'designer',
     word: 'Designer',
     pos: 'noun',
-    meaning: 'tasar mc ',
+    meaning: 'Tasarımcı',
     definition: 'Someone whose job is to decide how to make things or to decide their shape or appearance.',
-    ipa: '/d  za .n r/',
+    ipa: '/dɪˈzaɪ.nər/',
     level: 'intermediate',
     wordFamily: [
-      { word: 'design', pos: 'noun/verb', meaning: 'tasar m/tasarlamak' }
+      { word: 'design', pos: 'verb', meaning: 'tasarlamak' }
     ],
     synonyms: [
-      { word: 'Creator', meaning: 'yarat c ', pos: 'noun' },
-      { word: 'Stylist', meaning: 'stilist', pos: 'noun' },
-      { word: 'Architect', meaning: 'mimar', pos: 'noun' }
+      { word: 'Creator', meaning: 'Yaratıcı', pos: 'noun' },
+      { word: 'Architect', meaning: 'Mimar/Kurucu', pos: 'noun' }
     ],
     antonyms: [],
     collocations: ['fashion designer', 'graphic designer', 'interior designer'],
     collocationMeanings: {
-      'fashion designer': 'moda tasar mc s ',
-      'graphic designer': 'grafik tasar mc ',
-      'interior designer': 'i  mimar'
+      'fashion designer': 'moda tasarımcısı',
+      'graphic designer': 'grafik tasarımcı',
+      'interior designer': 'iç mimar'
     },
     examples: ['Calvin Klein is a famous fashion designer.'],
-    exampleTranslations: ['Calvin Klein  nl  bir moda tasar mc s d r.']
+    exampleTranslations: ['Calvin Klein ünlü bir moda tasarımcısıdır.']
   },
   {
     id: 'disappear',
     word: 'Disappear',
     pos: 'verb',
-    meaning: 'g zden kaybolmak, yok olmak',
+    meaning: 'Gözden kaybolmak, yok olmak',
     definition: 'To no longer happen or exist.',
-    ipa: '/ d s.  p  r/',
+    ipa: '/ˌdɪs.əˈpɪər/',
     level: 'intermediate',
     wordFamily: [
-      { word: 'appearance', pos: 'noun', meaning: 'g r n  ' },
-      { word: 'disappearance', pos: 'noun', meaning: 'g zden kaybolma' }
+      { word: 'disappearance', pos: 'noun', meaning: 'gözden kaybolma' }
     ],
     synonyms: [
-      { word: 'Vanish', meaning: 'aniden yok olmak', pos: 'verb' },
-      { word: 'Fade', meaning: 'solup gitmek', pos: 'verb' },
-      { word: 'Evaporate', meaning: 'buharla mak/yok olmak', pos: 'verb' }
+      { word: 'Vanish', meaning: 'Aniden yok olmak', pos: 'verb' },
+      { word: 'Fade', meaning: 'Solup gitmek', pos: 'verb' }
     ],
     antonyms: [
-      { word: 'Appear', meaning: 'g r nmek', pos: 'verb' },
-      { word: 'Emerge', meaning: 'ortaya   kmak', pos: 'verb' },
-      { word: 'Materialize', meaning: 'somutla mak', pos: 'verb' }
+      { word: 'Appear', meaning: 'Görünmek', pos: 'verb' },
+      { word: 'Emerge', meaning: 'Ortaya çıkmak', pos: 'verb' }
     ],
     collocations: ['disappear completely', 'suddenly disappear', 'disappear from view'],
     collocationMeanings: {
       'disappear completely': 'tamamen yok olmak',
       'suddenly disappear': 'aniden kaybolmak',
-      'disappear from view': 'g zden kaybolmak'
+      'disappear from view': 'gözden kaybolmak'
     },
     examples: ['Many public libraries in the city are disappearing.'],
-    exampleTranslations: [' ehirdeki bir ok halk k t phanesi yok oluyor.']
+    exampleTranslations: ['Şehirdeki birçok halk kütüphanesi yok oluyor.']
   },
   {
     id: 'dishonest',
     word: 'Dishonest',
     pos: 'adjective',
-    meaning: 'd r st olmayan, sahtekar',
+    meaning: 'Dürüst olmayan, sahtekar',
     definition: 'Willing to do things that are not honest, for example to tell lies or steal things.',
-    ipa: '/d  s n. st/',
+    ipa: '/dɪˈsɒn.ɪst/',
     level: 'intermediate',
     wordFamily: [
-      { word: 'dishonesty', pos: 'noun', meaning: 'sahtekarl k' },
-      { word: 'honesty', pos: 'noun', meaning: 'd r stl k' }
+      { word: 'honesty', pos: 'noun', meaning: 'dürüstlük' },
+      { word: 'dishonestly', pos: 'adv', meaning: 'namussuzca' }
     ],
     synonyms: [
-      { word: 'Deceitful', meaning: 'aldat c ', pos: 'adj' },
-      { word: 'Corrupt', meaning: 'yozla m  ', pos: 'adj' },
-      { word: 'Unscrupulous', meaning: 'ilkesiz/ahlaks z', pos: 'adj' }
+      { word: 'Deceitful', meaning: 'Aldatıcı', pos: 'adj' },
+      { word: 'Crooked', meaning: 'Düzenbaz', pos: 'adj' }
     ],
     antonyms: [
-      { word: 'Honest', meaning: 'd r st', pos: 'adj' },
-      { word: 'Trustworthy', meaning: 'g venilir', pos: 'adj' },
-      { word: 'Sincere', meaning: 'samimi', pos: 'adj' }
+      { word: 'Honest', meaning: 'Dürüst', pos: 'adj' },
+      { word: 'Trustworthy', meaning: 'Güvenilir', pos: 'adj' }
     ],
     collocations: ['dishonest behavior', 'dishonest person', 'completely dishonest'],
     collocationMeanings: {
-      'dishonest behavior': 'd r st olmayan davran  ',
-      'dishonest person': 'sahtekar ki i',
-      'completely dishonest': 'tamamen d r stl kten uzak'
+      'dishonest behavior': 'dürüst olmayan davranış',
+      'dishonest person': 'sahtekar kişi',
+      'completely dishonest': 'tamamen dürüstlükten uzak'
     },
     examples: ['They admitted that there were some dishonest employees working in the bank.'],
-    exampleTranslations: ['Bankada  al  an baz  d r st olmayan personeller oldu unu kabul ettiler.']
+    exampleTranslations: ['Bankada çalışan bazı dürüst olmayan personeller olduğunu kabul ettiler.']
   },
   {
     id: 'dish_up',
     word: 'Dish up',
     pos: 'phrasal verb',
-    meaning: 'yemek servis etmek',
+    meaning: 'Yemek servis etmek',
     definition: 'To put food into dishes so that it is ready to be eaten.',
-    ipa: '/d    p/',
+    ipa: '/dɪʃ ʌp/',
     level: 'intermediate',
     wordFamily: [],
     synonyms: [
-      { word: 'Serve', meaning: 'servis etmek', pos: 'verb' },
-      { word: 'Present', meaning: 'sunmak', pos: 'verb' }
+      { word: 'Serve', meaning: 'Servis etmek', pos: 'verb' }
     ],
     antonyms: [],
     collocations: ['dish up a meal', 'ready to dish up'],
     collocationMeanings: {
-      'dish up a meal': 'yemek haz rlay p koymak',
-      'ready to dish up': 'servis edilmeye haz r'
+      'dish up a meal': 'yemek hazırlayıp koymak',
+      'ready to dish up': 'servis edilmeye hazır'
     },
     examples: ["Can you dish up the food while it's hot?"],
-    exampleTranslations: ['Yemek s cakken servis edebilir misin?']
+    exampleTranslations: ['Yemek sıcakken servis edebilir misin?']
   },
   {
     id: 'display',
     word: 'Display',
     pos: 'noun',
-    meaning: 'sergilemek, g steri',
+    meaning: 'Sergilemek, gösteri',
     definition: 'An arrangement of things for people to look at.',
-    ipa: '/d  sple /',
+    ipa: '/dɪˈspleɪ/',
     level: 'intermediate',
     wordFamily: [
-      { word: 'display', pos: 'verb', meaning: 'sergilemek' }
+      { word: 'display', pos: 'verb', meaning: 'göstermek/sergilemek' }
     ],
     synonyms: [
-      { word: 'Exhibition', meaning: 'sergi', pos: 'noun' },
-      { word: 'Show', meaning: 'g steri', pos: 'noun' },
-      { word: 'Spectacle', meaning: 'g steri / hti am', pos: 'noun' }
+      { word: 'Exhibition', meaning: 'Sergi', pos: 'noun' },
+      { word: 'Show', meaning: 'Gösteri', pos: 'noun' }
     ],
     antonyms: [
-      { word: 'Concealment', meaning: 'gizleme', pos: 'noun' },
-      { word: 'Hiding', meaning: 'saklama', pos: 'noun' }
+      { word: 'Concealment', meaning: 'Gizleme', pos: 'noun' }
     ],
     collocations: ['public display', 'on display', 'window display'],
     collocationMeanings: {
-      'public display': 'halka a  k g sterim',
+      'public display': 'halka açık gösterim',
       'on display': 'sergilenmekte',
       'window display': 'vitrin sergisi'
     },
     examples: ['Max put up the window display.'],
-    exampleTranslations: ['Max vitrin d zenlemesini yerle tirdi.']
+    exampleTranslations: ['Max vitrin düzenlemesini yerleştirdi.']
   },
   {
     id: 'donate',
     word: 'Donate',
     pos: 'verb',
-    meaning: 'ba   lamak',
+    meaning: 'Bağışlamak',
     definition: 'To give something such as money or goods to an organization.',
-    ipa: '/d   ne t/',
+    ipa: '/dəʊˈneɪt/',
     level: 'intermediate',
     wordFamily: [
-      { word: 'donation', pos: 'noun', meaning: 'ba   ' },
-      { word: 'donor', pos: 'noun', meaning: 'ba     ' }
+      { word: 'donation', pos: 'noun', meaning: 'bağış' },
+      { word: 'donor', pos: 'noun', meaning: 'bağışçı' }
     ],
     synonyms: [
-      { word: 'Contribute', meaning: 'katk da bulunmak', pos: 'verb' },
-      { word: 'Grant', meaning: 'hibe etmek', pos: 'verb' },
-      { word: 'Bestow', meaning: 'sunmak/bah etmek', pos: 'verb' }
+      { word: 'Contribute', meaning: 'Katkıda bulunmak', pos: 'verb' },
+      { word: 'Gift', meaning: 'Hibe etmek', pos: 'verb' }
     ],
     antonyms: [
-      { word: 'Receive', meaning: 'almak', pos: 'verb' },
-      { word: 'Take', meaning: 'almak/g t rmer', pos: 'verb' },
-      { word: 'Withdraw', meaning: 'geri  ekmek', pos: 'verb' }
+      { word: 'Receive', meaning: 'Almak', pos: 'verb' }
     ],
     collocations: ['donate blood', 'donate money', 'donate to charity'],
     collocationMeanings: {
-      'donate blood': 'kan ba   lamak',
-      'donate money': 'para ba    nda bulunmak',
-      'donate to charity': 'hay r kurumuna ba    yapmak'
+      'donate blood': 'kan bağışlamak',
+      'donate money': 'para bağışında bulunmak',
+      'donate to charity': 'hayır kurumuna bağış yapmak'
     },
     examples: ['The centre was bought with money donated by a wealthy businessman.'],
-    exampleTranslations: ['Merkez, zengin bir i  adam  taraf ndan ba   lanan parayla sat n al nd .']
+    exampleTranslations: ['Merkez, zengin bir iş adamı tarafından bağışlanan parayla satın alındı.']
   },
   {
     id: 'draw_attention_to',
     word: 'Draw attention to',
     pos: 'phrase',
-    meaning: 'dikkat  ekmek (bir  eye/birine)',
+    meaning: 'Dikkat çekmek (bir şeye/birine)',
     definition: 'To make people notice somebody/something.',
-    ipa: '/dr     ten.  n tu /',
+    ipa: '/drɔː əˈten.ʃən tuː/',
     level: 'intermediate',
     wordFamily: [],
     synonyms: [
-      { word: 'Highlight', meaning: 'vurgulamak', pos: 'verb' },
-      { word: 'Point out', meaning: 'i aret etmek', pos: 'phrasal verb' },
-      { word: 'Emphasize', meaning: 'vurgu yapmak', pos: 'verb' }
+      { word: 'Highlight', meaning: 'Vurgulamak', pos: 'verb' },
+      { word: 'Emphasize', meaning: 'Önemini belirtmek', pos: 'verb' }
     ],
     antonyms: [
-      { word: 'Distract from', meaning: 'dikkat da  tmak', pos: 'phrase' },
-      { word: 'Gloss over', meaning: ' st nk r  ge mek', pos: 'phrasal verb' }
+      { word: 'Downplay', meaning: 'Önemsememek', pos: 'verb' }
     ],
     collocations: ['draw attention to the fact', 'draw attention to the problem'],
     collocationMeanings: {
-      'draw attention to the fact': 'bir ger e e dikkat  ekmek',
-      'draw attention to the problem': 'soruna parmak basmak/dikkat  ekmek'
+      'draw attention to the fact': 'bir gerçeğe dikkat çekmek',
+      'draw attention to the problem': 'soruna parmak basmak/dikkat çekmek'
     },
     examples: ['We have to try and get in without drawing attention to ourselves.'],
-    exampleTranslations: ['Dikkat  ekmeden i eri girmeye  al  mal y z.']
+    exampleTranslations: ['Dikkat çekmeden içeri girmeye çalışmalıyız.']
   },
   {
     id: 'encourage_b1',
     word: 'Encourage',
     pos: 'verb',
-    meaning: 'te vik etmek, cesaretlendirmek',
+    meaning: 'Teşvik etmek, cesaretlendirmek',
     definition: 'To suggest that someone does something that you believe would be good.',
-    ipa: '/ n k r. d /',
+    ipa: '/ɪnˈkʌr.ɪdʒ/',
     level: 'intermediate',
     wordFamily: [
-      { word: 'encouragement', pos: 'noun', meaning: 'te vik' },
-      { word: 'encouraging', pos: 'adj', meaning: 'cesaret verici' },
-      { word: 'courage', pos: 'noun', meaning: 'cesaret' }
+      { word: 'encouragement', pos: 'noun', meaning: 'teşvik' },
+      { word: 'encouraging', pos: 'adj', meaning: 'cesaret verici' }
     ],
     synonyms: [
-      { word: 'Inspire', meaning: 'ilham vermek', pos: 'verb' },
-      { word: 'Support', meaning: 'desteklemek', pos: 'verb' },
-      { word: 'Motivate', meaning: 'motive etmek', pos: 'verb' }
+      { word: 'Support', meaning: 'Desteklemek', pos: 'verb' },
+      { word: 'Urge', meaning: 'Israr etmek/Dürtmek', pos: 'verb' }
     ],
     antonyms: [
-      { word: 'Discourage', meaning: 'vazge irmek', pos: 'verb' },
-      { word: 'Deter', meaning: 'cayd rmak', pos: 'verb' },
-      { word: 'Hinder', meaning: 'engellemek', pos: 'verb' }
+      { word: 'Discourage', meaning: 'Cesaretini kırmak', pos: 'verb' }
     ],
     collocations: ['strongly encourage', 'encourage to do', 'encourage development'],
     collocationMeanings: {
-      'strongly encourage': ' iddetle te vik etmek',
-      'encourage to do': 'yapmas  i in y reklendirmek',
-      'encourage development': 'geli imi desteklemek'
+      'strongly encourage': 'şiddetle teşvik etmek',
+      'encourage to do': 'yapması için yüreklendirmek',
+      'encourage development': 'gelişimi desteklemek'
     },
     examples: ['We encourage student participation in our classes.'],
-    exampleTranslations: ['Derslerimizde   renci kat l m n  te vik ediyoruz.']
+    exampleTranslations: ['Derslerimizde öğrenci katılımını teşvik ediyoruz.']
   },
   {
     id: 'enormous_b1',
     word: 'Enormous',
     pos: 'adjective',
-    meaning: 'kocaman, muazzam',
+    meaning: 'Kocaman, muazzam',
     definition: 'Very large in size or quantity.',
-    ipa: '/  n  .m s/',
+    ipa: '/ɪˈnɔː.məs/',
     level: 'intermediate',
     wordFamily: [
-      { word: 'enormity', pos: 'noun', meaning: 'devasal k/k t l k' },
-      { word: 'enormously', pos: 'adverb', meaning: 'muazzam derecede' }
+      { word: 'enormously', pos: 'adv', meaning: 'aşırı derecede' },
+      { word: 'enormity', pos: 'noun', meaning: 'muazzamlık' }
     ],
     synonyms: [
-      { word: 'Huge', meaning: 'devasa', pos: 'adj' },
-      { word: 'Gigantic', meaning: 'dev gibi', pos: 'adj' },
-      { word: 'Massive', meaning: 'k tlesel/b y k', pos: 'adj' }
+      { word: 'Huge', meaning: 'Devasa', pos: 'adj' },
+      { word: 'Gigantic', meaning: 'Dev gibi', pos: 'adj' },
+      { word: 'Massive', meaning: 'Çok büyük', pos: 'adj' }
     ],
     antonyms: [
-      { word: 'Tiny', meaning: 'k   c k', pos: 'adj' },
-      { word: 'Minute', meaning: 'minnac k', pos: 'adj' },
-      { word: 'Small', meaning: 'k   k', pos: 'adj' }
+      { word: 'Tiny', meaning: 'Küçücük', pos: 'adj' },
+      { word: 'Small', meaning: 'Küçük', pos: 'adj' }
     ],
     collocations: ['enormous amount', 'enormous potential', 'enormous success'],
     collocationMeanings: {
       'enormous amount': 'muazzam miktar',
-      'enormous potential': 'b y k potansiyel',
-      'enormous success': 'dev ba ar '
+      'enormous potential': 'büyük potansiyel',
+      'enormous success': 'dev başarı'
     },
     examples: ["We couldn't finish the enormous birthday cake."],
-    exampleTranslations: ['Kocaman do um g n  pastas n  bitiremedik.']
+    exampleTranslations: ['Kocaman doğum günü pastasını bitiremedik.']
   },
   {
     id: 'expectation',
     word: 'Expectation',
     pos: 'noun',
-    meaning: 'beklenti',
+    meaning: 'Beklenti',
     definition: 'The belief that something will happen.',
-    ipa: '/ ek.spek te .  n/',
+    ipa: '/ˌek.spekˈteɪ.ʃən/',
     level: 'intermediate',
     wordFamily: [
-      { word: 'expect', pos: 'verb', meaning: 'ummak/beklemek' },
-      { word: 'expected', pos: 'adj', meaning: 'beklenen' }
+      { word: 'expect', pos: 'verb', meaning: 'beklemek/ummak' },
+      { word: 'expectant', pos: 'adj', meaning: 'beklenti içinde' }
     ],
     synonyms: [
-      { word: 'Anticipation', meaning: 'beklenti/tahmin', pos: 'noun' },
-      { word: 'Assumption', meaning: 'varsay m', pos: 'noun' },
-      { word: 'Prospection', meaning: 'gelece i g rme', pos: 'noun' }
+      { word: 'Anticipation', meaning: 'Beklenti/Öngörü', pos: 'noun' },
+      { word: 'Hope', meaning: 'Umut', pos: 'noun' }
     ],
     antonyms: [
-      { word: 'Disbelief', meaning: 'inanmama', pos: 'noun' },
-      { word: 'Surprise', meaning: 's rpriz', pos: 'noun' }
+      { word: 'Disbelief', meaning: 'İnanmama', pos: 'noun' }
     ],
     collocations: ['high expectations', 'meet expectations', 'beyond expectations'],
     collocationMeanings: {
-      'high expectations': 'y ksek beklentiler',
-      'meet expectations': 'beklentileri kar  lamak',
-      'beyond expectations': 'beklentilerin  tesinde'
+      'high expectations': 'yüksek beklentiler',
+      'meet expectations': 'beklentileri karşılamak',
+      'beyond expectations': 'beklentilerin ötesinde'
     },
     examples: ['The team set off without any expectation of success.'],
-    exampleTranslations: ['Tak m, herhangi bir ba ar  beklentisi olmadan yola   kt .']
+    exampleTranslations: ['Takım, herhangi bir başarı beklentisi olmadan yola çıktı.']
   },
   {
     id: 'expression',
     word: 'Expression',
     pos: 'noun',
-    meaning: 'ifade (y z ifadesi)',
-    definition: "A look on someone's face that shows what their thoughts or feelings are.",
-    ipa: '/ k spre . n/',
+    meaning: 'İfade (yüz ifadesi)',
+    definition: 'A look on someone\'s face that shows what their thoughts or feelings are.',
+    ipa: '/ɪkˈspreʃ.ən/',
     level: 'intermediate',
     wordFamily: [
       { word: 'express', pos: 'verb', meaning: 'ifade etmek' },
-      { word: 'expressive', pos: 'adj', meaning: 'anlat mc ' }
+      { word: 'expressive', pos: 'adj', meaning: 'anlamlı' }
     ],
     synonyms: [
-      { word: 'Countenance', meaning: 'y z simas ', pos: 'noun' },
-      { word: 'Utterance', meaning: 's ylem', pos: 'noun' },
-      { word: 'Phrase', meaning: 'deyim/tabir', pos: 'noun' }
+      { word: 'Look', meaning: 'Bakış/İfade', pos: 'noun' },
+      { word: 'Utterance', meaning: 'Söylem', pos: 'noun' }
     ],
     antonyms: [],
     collocations: ['facial expression', 'common expression', 'freedom of expression'],
     collocationMeanings: {
-      'facial expression': 'y z ifadesi',
-      'common expression': 'yayg n tabir/ifade',
-      'freedom of expression': 'ifade  zg rl   '
+      'facial expression': 'yüz ifadesi',
+      'common expression': 'yaygın tabir/ifade',
+      'freedom of expression': 'ifade özgürlüğü'
     },
     examples: ['You should have seen the expression on his face!'],
-    exampleTranslations: ['Y z ndeki ifadeyi g rmeliydin!']
+    exampleTranslations: ['Yüzündeki ifadeyi görmeliydin!']
   },
   {
     id: 'eye_catching',
     word: 'Eye-catching',
     pos: 'adjective',
-    meaning: 'g z al c , dikkat  ekici',
+    meaning: 'Göz alıcı, dikkat çekici',
     definition: 'Attractive or unusual and therefore noticed.',
-    ipa: '/ a  k t .  /',
+    ipa: '/ˈaɪˌkætʃ.ɪŋ/',
     level: 'intermediate',
     wordFamily: [],
     synonyms: [
-      { word: 'Striking', meaning: ' arp c ', pos: 'adj' },
-      { word: 'Noticeable', meaning: 'fark edilebilir', pos: 'adj' },
-      { word: 'Spectacular', meaning: 'g rkemli', pos: 'adj' }
+      { word: 'Striking', meaning: 'Çarpıcı', pos: 'adj' },
+      { word: 'Noticeable', meaning: 'Fark edilebilir', pos: 'adj' }
     ],
     antonyms: [
-      { word: 'Plain', meaning: 'sade/g steri siz', pos: 'adj' },
-      { word: 'Unremarkable', meaning: 'dikkat  ekmeyen', pos: 'adj' },
-      { word: 'Inconspicuous', meaning: 'g ze  arpmayan', pos: 'adj' }
+      { word: 'Unremarkable', meaning: 'Sıradan', pos: 'adj' },
+      { word: 'Inconspicuous', meaning: 'Göze çarpmayan', pos: 'adj' }
     ],
     collocations: ['eye-catching design', 'eye-catching color', 'eye-catching advertisement'],
     collocationMeanings: {
-      'eye-catching design': 'g z al c  tasar m',
-      'eye-catching color': 'dikkat  ekici renk',
-      'eye-catching advertisement': 'ilgi  ekici reklam'
+      'eye-catching design': 'göz alıcı tasarım',
+      'eye-catching color': 'dikkat çekici renk',
+      'eye-catching advertisement': 'ilgi çekici reklam'
     },
     examples: ['The eye-catching design was very clever.'],
-    exampleTranslations: ['G z al c  tasar m  ok zekiceydi.']
+    exampleTranslations: ['Göz alıcı tasarım çok zekiceydi.']
   },
   {
     id: 'fall_flat',
     word: 'Fall flat',
     pos: 'idiom',
-    meaning: 'beklenen etkiyi yaratmamak,  uvallamak',
+    meaning: 'Beklenen etkiyi yaratmamak, çuvallamak',
     definition: 'To not succeed in entertaining someone or making them laugh.',
-    ipa: '/f  l fl t/',
+    ipa: '/fɔːl flæt/',
     level: 'intermediate',
     wordFamily: [],
     synonyms: [
-      { word: 'Fail', meaning: 'ba ar s z olmak', pos: 'verb' },
-      { word: 'Flop', meaning: 'fiyasko ile sonu lanmak', pos: 'verb' }
+      { word: 'Fail', meaning: 'Başarısız olmak', pos: 'verb' },
+      { word: 'Flop', meaning: 'Fiyasko olmak', pos: 'verb' }
     ],
     antonyms: [
-      { word: 'Succeed', meaning: 'ba armak', pos: 'verb' },
-      { word: 'Triumph', meaning: 'zafer kazanmak', pos: 'verb' }
+      { word: 'Succeed', meaning: 'Başarmak', pos: 'verb' },
+      { word: 'Triumph', meaning: 'Zafer kazanmak', pos: 'verb' }
     ],
     collocations: ['joke fell flat', 'performance fell flat', 'completely fall flat'],
     collocationMeanings: {
-      'joke fell flat': ' akan n tutmamas ',
-      'performance fell flat': 'performans n s n k kalmas ',
-      'completely fall flat': 'tamamen fiyaskoyla sonu lanmak'
+      'joke fell flat': 'şakanın tutmaması',
+      'performance fell flat': 'performansın sönük kalması',
+      'completely fall flat': 'tamamen fiyaskoyla sonuçlanmak'
     },
     examples: ['My attempt at a joke fell flat.'],
-    exampleTranslations: [' aka yapma giri imim beklenen etkiyi yaratmad .']
+    exampleTranslations: ['Şaka yapma girişimim beklenen etkiyi yaratmadı.']
   },
   {
     id: 'fascinating',
     word: 'Fascinating',
     pos: 'adjective',
-    meaning: 'b y leyici',
+    meaning: 'Büyüleyici',
     definition: 'Making you very interested or attracted.',
-    ipa: '/ f s. n.e .t  /',
+    ipa: '/ˈfæs.ən.eɪ.tɪŋ/',
     level: 'intermediate',
     wordFamily: [
-      { word: 'fascinate', pos: 'verb', meaning: 'b y lemek' },
-      { word: 'fascination', pos: 'noun', meaning: 'b y lenme/ilgi' }
+      { word: 'fascinate', pos: 'verb', meaning: 'büyülemek' },
+      { word: 'fascination', pos: 'noun', meaning: 'cazibe/hayranlık' }
     ],
     synonyms: [
-      { word: 'Captivating', meaning: 'cezbedici', pos: 'adj' },
-      { word: 'Enchanting', meaning: 'mest eden', pos: 'adj' },
-      { word: 'Intriguing', meaning: 'merak uyand r c ', pos: 'adj' }
+      { word: 'Captivating', meaning: 'Zihin çelici', pos: 'adj' },
+      { word: 'Enthralling', meaning: 'Büyüleyici', pos: 'adj' }
     ],
     antonyms: [
-      { word: 'Boring', meaning: 's k c ', pos: 'adj' },
-      { word: 'Dull', meaning: 'tekd ze', pos: 'adj' },
-      { word: 'Uninteresting', meaning: 'ilgisiz', pos: 'adj' }
+      { word: 'Boring', meaning: 'Sıkıcı', pos: 'adj' },
+      { word: 'Uninteresting', meaning: 'İlgisiz', pos: 'adj' }
     ],
     collocations: ['absolutely fascinating', 'fascinating subject', 'find something fascinating'],
     collocationMeanings: {
-      'absolutely fascinating': 'tamamen b y leyici',
-      'fascinating subject': ' ok ilgin  konu',
-      'find something fascinating': 'bir  eyi b y leyici bulmak'
+      'absolutely fascinating': 'tamamen büyüleyici',
+      'fascinating subject': 'çok ilginç konu',
+      'find something fascinating': 'bir şeyi büyüleyici bulmak'
     },
     examples: ['He told me a fascinating story.'],
-    exampleTranslations: ['Bana b y leyici bir hikaye anlatt .']
+    exampleTranslations: ['Bana büyüleyici bir hikaye anlattı.']
   },
   {
     id: 'fatty',
     word: 'Fatty',
-    pos: 'adj',
-    meaning: 'ya l ',
+    pos: 'adjective',
+    meaning: 'Yağlı',
     definition: 'Containing a lot of fat.',
-    ipa: '/ f t.i/',
+    ipa: '/ˈfæt.i/',
     level: 'intermediate',
     wordFamily: [
-      { word: 'fat', pos: 'noun/adj', meaning: 'ya  /  i man' },
-      { word: 'fattening', pos: 'adj', meaning: 'kilo ald ran' }
+      { word: 'fat', pos: 'noun/adj', meaning: 'yağ/şişman' }
     ],
     synonyms: [
-      { word: 'Greasy', meaning: 'v c k v c k ya l ', pos: 'adj' },
-      { word: 'Oily', meaning: 'ya l  (s v )', pos: 'adj' }
+      { word: 'Greasy', meaning: 'Yağlı/Vıcık vıcık', pos: 'adj' }
     ],
     antonyms: [
-      { word: 'Lean', meaning: 'ya s z (et)', pos: 'adj' },
-      { word: 'Low-fat', meaning: 'd   k ya l ', pos: 'adj' }
+      { word: 'Lean', meaning: 'Yağsız', pos: 'adj' }
     ],
     collocations: ['fatty foods', 'fatty acid', 'fatty meat'],
     collocationMeanings: {
-      'fatty foods': 'ya l  yiyecekler',
-      'fatty acid': 'ya  asidi',
-      'fatty meat': 'ya l  et'
+      'fatty foods': 'yağlı yiyecekler',
+      'fatty acid': 'yağ asidi',
+      'fatty meat': 'yağlı et'
     },
     examples: ['Fatty foods are bad for you.'],
-    exampleTranslations: ['Ya l  yiyecekler sizin i in k t d r.']
+    exampleTranslations: ['Yağlı yiyecekler sizin için kötüdür.']
   },
   {
     id: 'filling',
     word: 'Filling',
-    pos: 'adj',
-    meaning: 'doyurucu',
+    pos: 'adjective',
+    meaning: 'Doyurucu',
     definition: 'Food that is filling makes you feel full quickly.',
-    ipa: '/ f l.  /',
+    ipa: '/ˈfɪl.ɪŋ/',
     level: 'intermediate',
     wordFamily: [
-      { word: 'fill', pos: 'verb', meaning: 'doldurmak' },
-      { word: 'full', pos: 'adj', meaning: 'tok/dolu' }
+      { word: 'fill', pos: 'verb', meaning: 'doldurmak' }
     ],
     synonyms: [
-      { word: 'Satisfying', meaning: 'tatmin edici/doyurucu', pos: 'adj' },
-      { word: 'Substantial', meaning: 'besleyici/bol', pos: 'adj' }
+      { word: 'Substantial', meaning: 'Besleyici/Tatmin edici', pos: 'adj' },
+      { word: 'Satiating', meaning: 'Tok tutan', pos: 'adj' }
     ],
-    antonyms: [
-      { word: 'Light', meaning: 'hafif', pos: 'adj' },
-      { word: 'Unsatisfying', meaning: 'doyurucu olmayan', pos: 'adj' }
-    ],
+    antonyms: [],
     collocations: ['filling meal', 'very filling', 'nutritious and filling'],
     collocationMeanings: {
-      'filling meal': 'doyurucu    n',
-      'very filling': ' ok tok tutan',
+      'filling meal': 'doyurucu öğün',
+      'very filling': 'çok tok tutan',
       'nutritious and filling': 'besleyici ve doyurucu'
     },
     examples: ['This pie I ordered is very filling.'],
-    exampleTranslations: ['Sipari  etti im bu turta  ok doyurucu.']
+    exampleTranslations: ['Sipariş ettiğim bu turta çok doyurucu.']
   },
   {
     id: 'filthy',
     word: 'Filthy',
-    pos: 'adj',
-    meaning: ' ok pis, kirli',
+    pos: 'adjective',
+    meaning: 'Çok pis, kirli',
     definition: 'Very dirty.',
-    ipa: '/ f l. i/',
+    ipa: '/ˈfɪl.θi/',
     level: 'intermediate',
     wordFamily: [
-      { word: 'filth', pos: 'noun', meaning: 'pislik/kir' },
-      { word: 'filthiness', pos: 'noun', meaning: 'pis olma durumu' }
+      { word: 'filth', pos: 'noun', meaning: 'pislik' }
     ],
     synonyms: [
-      { word: 'Dirty', meaning: 'kirli', pos: 'adj' },
-      { word: 'Grimy', meaning: 'isli/kirli', pos: 'adj' },
-      { word: 'Squalid', meaning: 'pislikten kokan', pos: 'adj' }
+      { word: 'Disgusting', meaning: 'İğrenç', pos: 'adj' },
+      { word: 'Grubby', meaning: 'Pis', pos: 'adj' }
     ],
     antonyms: [
-      { word: 'Clean', meaning: 'temiz', pos: 'adj' },
-      { word: 'Spotless', meaning: 'tertemiz/lekesiz', pos: 'adj' },
-      { word: 'Pure', meaning: 'saf/temiz', pos: 'adj' }
+      { word: 'Clean', meaning: 'Temiz', pos: 'adj' },
+      { word: 'Spotless', meaning: 'Lekesiz', pos: 'adj' }
     ],
     collocations: ['filthy rich', 'filthy clothes', 'absolutely filthy'],
     collocationMeanings: {
-      'filthy rich': ' ok zengin (argoda)',
-      'filthy clothes': 'leke i indeki k yafetler',
-      'absolutely filthy': 'tamamen pislik i inde'
+      'filthy rich': 'çok zengin (argoda)',
+      'filthy clothes': 'leke içindeki kıyafetler',
+      'absolutely filthy': 'tamamen pislik içinde'
     },
     examples: ['The kitchen was filthy after he had cooked.'],
-    exampleTranslations: ['O yemek pi irdikten sonra mutfak  ok pisti.']
+    exampleTranslations: ['O yemek pişirdikten sonra mutfak çok pisti.']
   },
   {
     id: 'fluently',
     word: 'Fluently',
     pos: 'adverb',
-    meaning: 'ak c  bir  ekilde',
+    meaning: 'Akıcı bir şekilde',
     definition: 'Spoken well and without difficulty.',
-    ipa: '/ flu . nt.li/',
+    ipa: '/ˈfluː.ənt.li/',
     level: 'intermediate',
     wordFamily: [
-      { word: 'fluent', pos: 'adj', meaning: 'ak c ' },
-      { word: 'fluency', pos: 'noun', meaning: 'ak c l k' }
+      { word: 'fluent', pos: 'adj', meaning: 'akıcı' },
+      { word: 'fluency', pos: 'noun', meaning: 'akıcılık' }
     ],
     synonyms: [
-      { word: 'Smoothly', meaning: 'p r zs zce', pos: 'adverb' },
-      { word: 'Effortlessly', meaning: 'zahmetsizce', pos: 'adverb' }
+      { word: 'Effortlessly', meaning: 'Zahmetsizce', pos: 'adv' }
     ],
     antonyms: [
-      { word: 'Haltingly', meaning: 'kekeleyerek/duraksayarak', pos: 'adverb' }
+      { word: 'Haltingly', meaning: 'Kesik kesik/Tereddütle', pos: 'adv' }
     ],
     collocations: ['speak fluently', 'read fluently', 'communicate fluently'],
     collocationMeanings: {
-      'speak fluently': 'ak c  konu mak',
-      'read fluently': 'ak c  okumak',
-      'communicate fluently': 'ak c  ileti im kurmak'
+      'speak fluently': 'akıcı konuşmak',
+      'read fluently': 'akıcı okumak',
+      'communicate fluently': 'akıcı iletişim kurmak'
     },
     examples: ['He speaks English fluently.'],
-    exampleTranslations: [' ngilizceyi ak c  bir  ekilde konu uyor.']
+    exampleTranslations: ['İngilizceyi akıcı bir şekilde konuşuyor.']
   },
   {
     id: 'fruity',
     word: 'Fruity',
-    pos: 'adj',
-    meaning: 'meyveli, meyvemsi',
+    pos: 'adjective',
+    meaning: 'Meyveli, meyvemsi',
     definition: 'Tasting or smelling like fruit.',
-    ipa: '/ fru .ti/',
+    ipa: '/ˈfruː.ti/',
     level: 'intermediate',
     wordFamily: [
-      { word: 'fruit', pos: 'noun', meaning: 'meyve' },
-      { word: 'fruitless', pos: 'adj', meaning: 'verimsiz/meyvesiz' }
+      { word: 'fruit', pos: 'noun', meaning: 'meyve' }
     ],
-    synonyms: [
-      { word: 'Sweet', meaning: 'tatl /ho ', pos: 'adj' },
-      { word: 'Mellow', meaning: 'yumu ak tatl ', pos: 'adj' }
-    ],
-    antonyms: [
-      { word: 'Dry', meaning: 'kuru/sert', pos: 'adj' },
-      { word: 'Bitter', meaning: 'ac ', pos: 'adj' }
-    ],
+    synonyms: [],
+    antonyms: [],
     collocations: ['fruity smell', 'fruity taste', 'pale and fruity'],
     collocationMeanings: {
       'fruity smell': 'meyvemsi koku',
-      'fruity taste': 'meyve tad ',
+      'fruity taste': 'meyve tadı',
       'pale and fruity': 'soluk ve meyveli'
     },
     examples: ['It is a fruity red drink.'],
-    exampleTranslations: ['Bu meyveli k rm z  bir i ecek.']
+    exampleTranslations: ['Bu meyveli kırmızı bir içecek.']
   },
   {
     id: 'furious',
     word: 'Furious',
-    pos: 'adj',
-    meaning: ' ok  fkeli, k plere binmi ',
+    pos: 'adjective',
+    meaning: 'Çok öfkeli, küplere binmiş',
     definition: 'Extremely angry.',
-    ipa: '/ fj  .ri. s/',
+    ipa: '/ˈfjʊə.ri.əs/',
     level: 'intermediate',
     wordFamily: [
-      { word: 'fury', pos: 'noun', meaning: ' fke' },
-      { word: 'furiously', pos: 'adverb', meaning: ' fkeyle' }
+      { word: 'fury', pos: 'noun', meaning: 'öfke' },
+      { word: 'furiously', pos: 'adv', meaning: 'öfkeyle' }
     ],
     synonyms: [
-      { word: 'Enraged', meaning: 'kudurmu ', pos: 'adj' },
-      { word: 'Infuriated', meaning: ' ileden   km  ', pos: 'adj' },
-      { word: 'Livid', meaning: 'mosmor/ ok k zg n', pos: 'adj' }
+      { word: 'Enraged', meaning: 'Kudurmuş', pos: 'adj' },
+      { word: 'Livid', meaning: 'Mosmor kesilmiş (öfkeden)', pos: 'adj' }
     ],
     antonyms: [
-      { word: 'Calm', meaning: 'sakin', pos: 'adj' },
-      { word: 'Pleased', meaning: 'memnun', pos: 'adj' },
-      { word: 'Serene', meaning: 'huzurlu', pos: 'adj' }
+      { word: 'Calm', meaning: 'Sakin', pos: 'adj' },
+      { word: 'Pleased', meaning: 'Memnun', pos: 'adj' }
     ],
     collocations: ['absolutely furious', 'furious with someone', 'furious pace'],
     collocationMeanings: {
-      'absolutely furious': 'tamamen deliye d nm  ',
-      'furious with someone': 'birine kar    ok  fkeli',
-      'furious pace': ' ok h zl  tempo'
+      'absolutely furious': 'tamamen deliye dönmüş',
+      'furious with someone': 'birine karşı çok öfkeli',
+      'furious pace': 'çok hızlı tempo'
     },
     examples: ["Roberts' comments provoked a furious public response."],
-    exampleTranslations: ["Roberts' n yorumlar  halktan  ok  fkeli bir tepki ald ."]
+    exampleTranslations: ["Roberts'ın yorumları halktan çok öfkeli bir tepki aldı."]
   },
   {
     id: 'generate_new_ideas',
     word: 'Generate new ideas',
     pos: 'phrase',
-    meaning: 'yeni fikirler  retmek',
+    meaning: 'Yeni fikirler üretmek',
     definition: 'To think of something new.',
-    ipa: '/ d en. .re t nju  a  d  z/',
+    ipa: '/ˈdʒen.ə.reɪt njuː aɪˈdɪəz/',
     level: 'intermediate',
     wordFamily: [
-      { word: 'generation', pos: 'noun', meaning: 'nesil/ retim' },
-      { word: 'generator', pos: 'noun', meaning: 'jenerat r' }
+      { word: 'generation', pos: 'noun', meaning: 'nesil/üretim' },
+      { word: 'generator', pos: 'noun', meaning: 'jeneratör/üreteç' }
     ],
     synonyms: [
-      { word: 'Brainstorm', meaning: 'beyin f rt nas  yapmak', pos: 'verb' },
-      { word: 'Innovate', meaning: 'yenilik yapmak', pos: 'verb' }
+      { word: 'Innovate', meaning: 'Yenilik yapmak', pos: 'verb' }
     ],
     antonyms: [],
     collocations: ['need to generate new ideas', 'ability to generate new ideas'],
     collocationMeanings: {
-      'need to generate new ideas': 'yeni fikirler  retmeye ihtiya  duymak',
-      'ability to generate new ideas': 'yeni fikirler  retme yetene i'
+      'need to generate new ideas': 'yeni fikirler üretmeye ihtiyaç duymak',
+      'ability to generate new ideas': 'yeni fikirler üretme yeteneği'
     },
     examples: ['When we generate new ideas, we need to make sure we write them down.'],
-    exampleTranslations: ['Yeni fikirler  retti imizde, onlar  not etti imizden emin olmal y z.']
+    exampleTranslations: ['Yeni fikirler ürettiğimizde, onları not ettiğimizden emin olmalıyız.']
   },
   {
     id: 'get_rid_of',
     word: 'Get rid of',
     pos: 'phrasal verb',
-    meaning: 'kurtulmak, ba  ndan savmak',
+    meaning: 'Kurtulmak, başından savmak',
     definition: 'To throw away, give away, or sell a possession that you no longer want or need.',
-    ipa: '/ et r d  v/',
+    ipa: '/ɡet rɪd əv/',
     level: 'intermediate',
     wordFamily: [],
     synonyms: [
-      { word: 'Discard', meaning: 'atmak/  kar lmak', pos: 'verb' },
-      { word: 'Eliminate', meaning: 'elemek/yok etmek', pos: 'verb' },
-      { word: 'Dispose of', meaning: 'elden   karmak', pos: 'verb' }
+      { word: 'Discard', meaning: 'Atmak', pos: 'verb' },
+      { word: 'Eliminate', meaning: 'Elemek/Yok etmek', pos: 'verb' }
     ],
     antonyms: [
-      { word: 'Keep', meaning: 'tutmak/saklamak', pos: 'verb' },
-      { word: 'Acquire', meaning: 'edinmek', pos: 'verb' }
+      { word: 'Keep', meaning: 'Saklamak', pos: 'verb' },
+      { word: 'Acquire', meaning: 'Edinmek', pos: 'verb' }
     ],
     collocations: ['get rid of waste', 'get rid of a problem', 'finally get rid of'],
     collocationMeanings: {
-      'get rid of waste': 'at klardan kurtulmak',
+      'get rid of waste': 'atıklardan kurtulmak',
       'get rid of a problem': 'bir sorundan kurtulmak',
-      'finally get rid of': 'sonunda ba  ndan savmak'
+      'finally get rid of': 'sonunda başından savmak'
     },
     examples: ["We're moving, so we have to get rid of a lot of our furniture."],
-    exampleTranslations: ['Ta  n yoruz, bu y zden bir ok mobilyam zdan kurtulmam z gerekiyor.']
+    exampleTranslations: ['Taşınıyoruz, bu yüzden birçok mobilyamızdan kurtulmamız/onları çıkarmamız gerekiyor.']
   },
   {
     id: 'get_yourself',
     word: 'Get yourself',
     pos: 'phrase',
-    meaning: 'kendine (bir  ey) almak/edinmek',
+    meaning: 'Kendine (bir şey) almak/edinmek',
     definition: 'To obtain, receive, or be given something.',
-    ipa: '/ et j   self/',
+    ipa: '/ɡet jɔːˈself/',
     level: 'intermediate',
     wordFamily: [],
     synonyms: [
-      { word: 'Buy yourself', meaning: 'kendine sat n almak', pos: 'phrase' },
-      { word: 'Fetch', meaning: 'al p getirmek', pos: 'verb' }
+      { word: 'Acquire', meaning: 'Edinmek', pos: 'verb' },
+      { word: 'Obtain', meaning: 'Temin etmek', pos: 'verb' }
     ],
     antonyms: [],
     collocations: ['get yourself ready', 'get yourself organized', 'get yourself together'],
     collocationMeanings: {
-      'get yourself ready': 'kendini haz rla',
-      'get yourself organized': 'kendini d zenle/haz rla',
+      'get yourself ready': 'kendini hazırla',
+      'get yourself organized': 'kendini düzenle/hazırla',
       'get yourself together': 'kendini toparla'
     },
     examples: ['I got myself a coffee from the canteen.'],
-    exampleTranslations: ['Kantinden kendime bir kahve ald m.']
+    exampleTranslations: ['Kantinden kendime bir kahve aldım.']
   },
   {
     id: 'give_up',
     word: 'Give up',
     pos: 'phrasal verb',
-    meaning: 'vazge mek, b rakmak',
+    meaning: 'Vazgeçmek, bırakmak',
     definition: 'To lose something, especially something that you want to keep, to get something else or help someone.',
-    ipa: '/  v  p/',
+    ipa: '/ɡɪv ʌp/',
     level: 'intermediate',
     wordFamily: [],
     synonyms: [
-      { word: 'Quit', meaning: 'b rakmak', pos: 'verb' },
-      { word: 'Surrender', meaning: 'teslim olmak', pos: 'verb' },
-      { word: 'Abandon', meaning: 'vazge mek/b rakmak', pos: 'verb' }
+      { word: 'Quit', meaning: 'Bırakmak', pos: 'verb' },
+      { word: 'Surrender', meaning: 'Teslim olmak', pos: 'verb' },
+      { word: 'Abandon', meaning: 'Terk etmek', pos: 'verb' }
     ],
     antonyms: [
-      { word: 'Continue', meaning: 'devam etmek', pos: 'verb' },
-      { word: 'Persist', meaning: ' srar etmek', pos: 'verb' },
-      { word: 'Endure', meaning: 'dayanmak/s rd rmek', pos: 'verb' }
+      { word: 'Continue', meaning: 'Devam etmek', pos: 'verb' },
+      { word: 'Persist', meaning: 'Israr etmek', pos: 'verb' }
     ],
     collocations: ['give up smoking', 'never give up', 'give up easily'],
     collocationMeanings: {
-      'give up smoking': 'sigaray  b rakmak',
+      'give up smoking': 'sigarayı bırakmak',
       'never give up': 'asla pes etme',
-      'give up easily': 'kolayca vazge mek'
+      'give up easily': 'kolayca vazgeçmek'
     },
     examples: ['We gave up on the idea of walking and took the bus instead.'],
-    exampleTranslations: ['Y r me fikrinden vazge tik ve onun yerine otob se bindik.']
+    exampleTranslations: ['Yürüme fikrinden vazgeçtik ve onun yerine otobüse bindik.']
   },
   {
     id: 'gorgeous',
     word: 'Gorgeous',
-    pos: 'adj',
-    meaning: 'muhte em,  ok g zel',
+    pos: 'adjective',
+    meaning: 'Muhteşem, çok güzel',
     definition: 'Very beautiful.',
-    ipa: '/    .d  s/',
+    ipa: '/ˈɡɔː.dʒəs/',
     level: 'intermediate',
     wordFamily: [
-      { word: 'gorgeously', pos: 'adverb', meaning: 'muazzam bir  ekilde' }
+      { word: 'gorgeously', pos: 'adv', meaning: 'muhteşem şekilde' }
     ],
     synonyms: [
-      { word: 'Stunning', meaning: 'b y leyici', pos: 'adj' },
-      { word: 'Exquisite', meaning: 'zarif/nefis', pos: 'adj' },
-      { word: 'Magnificent', meaning: 'ihti aml ', pos: 'adj' }
+      { word: 'Stunning', meaning: 'Göz kamaştırıcı', pos: 'adj' },
+      { word: 'Exquisite', meaning: 'Zarif/Muazzam', pos: 'adj' }
     ],
     antonyms: [
-      { word: 'Ugly', meaning: ' irkin', pos: 'adj' },
-      { word: 'Hideous', meaning: 'i ren / irkin', pos: 'adj' },
-      { word: 'Plain', meaning: 's radan/sade', pos: 'adj' }
+      { word: 'Hideous', meaning: 'İğrenç/Çirkin', pos: 'adj' },
+      { word: 'Ugly', meaning: 'Çirkin', pos: 'adj' }
     ],
     collocations: ['absolutely gorgeous', 'look gorgeous', 'gorgeous weather'],
     collocationMeanings: {
-      'absolutely gorgeous': 'kesinlikle muhte em',
-      'look gorgeous': 'harika g r nmek',
-      'gorgeous weather': ' ahane hava'
+      'absolutely gorgeous': 'kesinlikle muhteşem',
+      'look gorgeous': 'harika görünmek',
+      'gorgeous weather': 'şahane hava'
     },
     examples: ['She had a gorgeous red and gold silk sari.'],
-    exampleTranslations: ['Muhte em bir k rm z  ve alt n rengi ipek sarisi vard .']
+    exampleTranslations: ['Muhteşem bir kırmızı ve altın rengi ipek sarisi vardı.']
   },
   {
     id: 'heavy_traffic',
     word: 'Heavy traffic',
     pos: 'phrase',
-    meaning: 'yo un trafik',
+    meaning: 'Yoğun trafik',
     definition: 'A lot of vehicles that are travelling in an area at a particular time.',
-    ipa: '/ hevi  tr f k/',
+    ipa: '/ˈhevi ˈtræfɪk/',
     level: 'intermediate',
     wordFamily: [],
     synonyms: [
-      { word: 'Gridlock', meaning: 'trafik t kan kl   ', pos: 'noun' },
-      { word: 'Congestion', meaning: 's k   kl k', pos: 'noun' }
+      { word: 'Congestion', meaning: 'Tıkanıklık', pos: 'noun' },
+      { word: 'Gridlock', meaning: 'Kilitlenmiş trafik', pos: 'noun' }
     ],
     antonyms: [
-      { word: 'Light traffic', meaning: 'az trafik', pos: 'phrase' },
-      { word: 'Empty roads', meaning: 'bo  yollar', pos: 'phrase' }
+      { word: 'Light traffic', meaning: 'Seyrek trafik', pos: 'phrase' }
     ],
     collocations: ['stuck in heavy traffic', 'cause heavy traffic', 'heavy traffic conditions'],
     collocationMeanings: {
-      'stuck in heavy traffic': 'yo un trafikte s k  mak',
-      'cause heavy traffic': 'yo un trafi e neden olmak',
-      'heavy traffic conditions': 'yo un trafik ko ullar '
+      'stuck in heavy traffic': 'yoğun trafikte sıkışmak',
+      'cause heavy traffic': 'yoğun trafiğe neden olmak',
+      'heavy traffic conditions': 'yoğun trafik koşulları'
     },
     examples: ["Sorry I'm late - I was stuck in heavy traffic."],
-    exampleTranslations: ['Gecikti im i in  zg n m - yo un trafi e tak ld m.']
+    exampleTranslations: ['Geciktiğim için üzgünüm - yoğun trafiğe takıldım.']
   },
   {
     id: 'help_yourself',
     word: 'Help yourself',
     pos: 'idiom',
-    meaning: 'kendine ikram etmek, buyurmak',
+    meaning: 'Kendine ikram etmek, buyurmak',
     definition: 'Used for giving someone permission to do or use something.',
-    ipa: '/help j   self/',
+    ipa: '/help jɔːˈself/',
     level: 'intermediate',
     wordFamily: [],
-    synonyms: [
-      { word: 'Dig in', meaning: 'yumulmak/ba lamak', pos: 'idiom' },
-      { word: 'Be my guest', meaning: 'misafirim ol/buyur', pos: 'idiom' }
-    ],
+    synonyms: [],
     antonyms: [],
     collocations: ['please help yourself', 'help yourself to a drink', 'feel free to help yourself'],
     collocationMeanings: {
-      'please help yourself': 'l tfen buyurun',
-      'help yourself to a drink': 'bir i ecek al n',
-      'feel free to help yourself': 'kendine almaktan  ekinme'
+      'please help yourself': 'lütfen buyurun',
+      'help yourself to a drink': 'bir içecek alın',
+      'feel free to help yourself': 'kendine almaktan çekinme'
     },
     examples: ['Help yourself to some paella.'],
-    exampleTranslations: ['Paelladan buyurun (kendinize al n).']
+    exampleTranslations: ['Paelladan buyurun (kendinize alın).']
   },
   {
     id: 'hilarious',
     word: 'Hilarious',
-    pos: 'adj',
-    meaning: ' ok komik, g l n ',
+    pos: 'adjective',
+    meaning: 'Çok komik, gülünç',
     definition: 'Extremely funny.',
-    ipa: '/h  le .ri. s/',
+    ipa: '/hɪˈleə.ri.əs/',
     level: 'intermediate',
     wordFamily: [
-      { word: 'hilarity', pos: 'noun', meaning: 'ne eli kahkaha' }
+      { word: 'hilarity', pos: 'noun', meaning: 'şenlik/neşe' }
     ],
     synonyms: [
-      { word: 'Comical', meaning: 'komik', pos: 'adj' },
-      { word: 'Humorous', meaning: 'mizahi', pos: 'adj' },
-      { word: 'Sidesplitting', meaning: 'g lmekten  ld ren', pos: 'adj' }
+      { word: 'Comical', meaning: 'Gülünç', pos: 'adj' },
+      { word: 'Sidesplitting', meaning: 'Gülmekten kırıp geçiren', pos: 'adj' }
     ],
     antonyms: [
-      { word: 'Serious', meaning: 'ciddi', pos: 'adj' },
-      { word: 'Tragic', meaning: 'trajik', pos: 'adj' },
-      { word: 'Solemn', meaning: 'a  rba l /kasvetli', pos: 'adj' }
+      { word: 'Serious', meaning: 'Ciddi', pos: 'adj' },
+      { word: 'Tragic', meaning: 'Trajik', pos: 'adj' }
     ],
     collocations: ['hilarious joke', 'find it hilarious', 'absolutely hilarious'],
     collocationMeanings: {
-      'hilarious joke': ' ok g l n   aka',
-      'find it hilarious': ' ok komik bulmak',
-      'absolutely hilarious': 'kesinlikle  ok g l n '
+      'hilarious joke': 'çok gülünç şaka',
+      'find it hilarious': 'çok komik bulmak',
+      'absolutely hilarious': 'kesinlikle çok gülünç'
     },
     examples: ['For some reason, she finds his jokes hilarious.'],
-    exampleTranslations: ['Nedense onun  akalar n   ok komik buluyor.']
+    exampleTranslations: ['Nedense onun şakalarını çok komik buluyor.']
   },
   {
     id: 'idiom',
     word: 'Idiom',
     pos: 'noun',
-    meaning: 'deyim',
+    meaning: 'Deyim',
     definition: 'An expression whose meaning is different from the meaning of the individual words.',
-    ipa: '/  d.i. m/',
+    ipa: '/ˈɪd.i.əm/',
     level: 'intermediate',
     wordFamily: [
       { word: 'idiomatic', pos: 'adj', meaning: 'deyimsel' }
     ],
     synonyms: [
-      { word: 'Expression', meaning: 'ifade', pos: 'noun' },
-      { word: 'Phrase', meaning: 's z  be i', pos: 'noun' },
-      { word: 'Colloquialism', meaning: 'halk a z  deyi ', pos: 'noun' }
+      { word: 'Expression', meaning: 'İfade/Tabir', pos: 'noun' },
+      { word: 'Phrase', meaning: 'Söz öbeği', pos: 'noun' }
     ],
-    antonyms: [
-      { word: 'Literal meaning', meaning: 'ger ek anlam', pos: 'noun' }
-    ],
+    antonyms: [],
     collocations: ['common idiom', 'use an idiom', 'learn idioms'],
     collocationMeanings: {
-      'common idiom': 'yayg n deyim',
+      'common idiom': 'yaygın deyim',
       'use an idiom': 'deyim kullanmak',
-      'learn idioms': 'deyim   renmek'
+      'learn idioms': 'deyim öğrenmek'
     },
     examples: ["'To have your feet on the ground' is an idiom meaning 'to be sensible'."],
-    exampleTranslations: ["'Ayaklar  yere basmak', 'mant kl  olmak' anlam na gelen bir deyimdir."]
+    exampleTranslations: ["'Ayakları yere basmak', 'mantıklı olmak' anlamına gelen bir deyimdir."]
   },
   {
     id: 'impatient',
     word: 'Impatient',
-    pos: 'adj',
-    meaning: 'sab rs z',
+    pos: 'adjective',
+    meaning: 'Sabırsız',
     definition: 'Annoyed because something is not happening as quickly as you want.',
-    ipa: '/ m pe .  nt/',
+    ipa: '/ɪmˈpeɪ.ʃənt/',
     level: 'intermediate',
     wordFamily: [
-      { word: 'patience', pos: 'noun', meaning: 'sab r' },
-      { word: 'impatiently', pos: 'adverb', meaning: 'sab rs zca' }
+      { word: 'patience', pos: 'noun', meaning: 'sabır' },
+      { word: 'impatiently', pos: 'adv', meaning: 'sabırsızca' }
     ],
     synonyms: [
-      { word: 'Restless', meaning: 'huzursuz', pos: 'adj' },
-      { word: 'Eager', meaning: 'istekli/can atan', pos: 'adj' },
-      { word: 'Short-tempered', meaning: 'tez canl ', pos: 'adj' }
+      { word: 'Restless', meaning: 'Huzursuz', pos: 'adj' },
+      { word: 'Eager', meaning: 'Can atan', pos: 'adj' }
     ],
     antonyms: [
-      { word: 'Patient', meaning: 'sab rl ', pos: 'adj' },
-      { word: 'Calm', meaning: 'sakin', pos: 'adj' },
-      { word: 'Tolerant', meaning: 'ho g r l ', pos: 'adj' }
+      { word: 'Patient', meaning: 'Sabırlı', pos: 'adj' }
     ],
     collocations: ['get impatient', 'impatient with', 'grow impatient'],
     collocationMeanings: {
-      'get impatient': 'sab rs zlanmak',
-      'impatient with': 'birine kar   sab rs z',
-      'grow impatient': 'sab rs zl    artmak'
+      'get impatient': 'sabırsızlanmak',
+      'impatient with': 'birine karşı sabırsız',
+      'grow impatient': 'sabırsızlığı artmak'
     },
     examples: ["'Come on!' said Maggie, becoming impatient."],
-    exampleTranslations: ["'Hadi ama!' dedi Maggie sab rs zlanarak."]
+    exampleTranslations: ["'Hadi ama!' dedi Maggie sabırsızlanarak."]
   },
   {
     id: 'improvement',
     word: 'Improvement',
     pos: 'noun',
-    meaning: 'geli me, iyile me',
+    meaning: 'Gelişme, iyileşme',
     definition: 'The state of being better than before, or the process of making something better.',
-    ipa: '/ m pru v.m nt/',
+    ipa: '/ɪmˈpruːv.mənt/',
     level: 'intermediate',
     wordFamily: [
-      { word: 'improve', pos: 'verb', meaning: 'geli tirmek' },
-      { word: 'improvable', pos: 'adj', meaning: 'geli tirilebilir' }
+      { word: 'improve', pos: 'verb', meaning: 'geliştirmek' }
     ],
     synonyms: [
-      { word: 'Enhancement', meaning: 'iyile tirme', pos: 'noun' },
-      { word: 'Progress', meaning: 'ilerleme', pos: 'noun' },
-      { word: 'Advance', meaning: 'at l m', pos: 'noun' }
+      { word: 'Enhancement', meaning: 'İyileştirme', pos: 'noun' },
+      { word: 'Progress', meaning: 'İlerleme', pos: 'noun' }
     ],
     antonyms: [
-      { word: 'Deterioration', meaning: 'k t le me', pos: 'noun' },
-      { word: 'Decline', meaning: 'd    /gerileme', pos: 'noun' },
-      { word: 'Regression', meaning: 'gerileme', pos: 'noun' }
+      { word: 'Deterioration', meaning: 'Kötüleşme', pos: 'noun' },
+      { word: 'Decline', meaning: 'Düşüş', pos: 'noun' }
     ],
     collocations: ['significant improvement', 'room for improvement', 'show improvement'],
     collocationMeanings: {
-      'significant improvement': ' nemli geli me',
-      'room for improvement': 'geli me alan /pay ',
-      'show improvement': 'geli me g stermek'
+      'significant improvement': 'önemli gelişme',
+      'room for improvement': 'gelişme alanı/payı',
+      'show improvement': 'gelişme göstermek'
     },
     examples: ['The school is performing well, but it needs further improvement.'],
-    exampleTranslations: ['Okul iyi performans g steriyor ancak daha fazla geli meye ihtiyac  var.']
+    exampleTranslations: ['Okul iyi performans gösteriyor ancak daha fazla gelişmeye ihtiyacı var.']
   },
   {
     id: 'inaccurate',
     word: 'Inaccurate',
-    pos: 'adj',
-    meaning: 'hatal , yanl  ',
+    pos: 'adjective',
+    meaning: 'Hatalı, yanlış',
     definition: 'Not accurate or correct.',
-    ipa: '/ n  k.j .r t/',
+    ipa: '/ɪnˈæk.jə.rət/',
     level: 'intermediate',
     wordFamily: [
-      { word: 'accuracy', pos: 'noun', meaning: 'do ruluk' },
-      { word: 'accurate', pos: 'adj', meaning: 'do ru' }
+      { word: 'accuracy', pos: 'noun', meaning: 'doğruluk' },
+      { word: 'inaccurately', pos: 'adv', meaning: 'yanlışça' }
     ],
     synonyms: [
-      { word: 'Incorrect', meaning: 'yanl  ', pos: 'adj' },
-      { word: 'False', meaning: 'hatal /yanl  ', pos: 'adj' },
-      { word: 'Wrong', meaning: 'yanl  ', pos: 'adj' }
+      { word: 'Incorrect', meaning: 'Yanlış', pos: 'adj' },
+      { word: 'Mistaken', meaning: 'Hatalı', pos: 'adj' }
     ],
     antonyms: [
-      { word: 'Accurate', meaning: 'do ru', pos: 'adj' },
-      { word: 'Correct', meaning: 'kesin/do ru', pos: 'adj' },
-      { word: 'Precise', meaning: 'tam/kesin', pos: 'adj' }
+      { word: 'Accurate', meaning: 'Doğru/Kesin', pos: 'adj' },
+      { word: 'Correct', meaning: 'Doğru', pos: 'adj' }
     ],
     collocations: ['totally inaccurate', 'highly inaccurate', 'historically inaccurate'],
     collocationMeanings: {
-      'totally inaccurate': 'tamamen yanl  ',
-      'highly inaccurate': 'b y k  l  de hatal ',
-      'historically inaccurate': 'tarihsel olarak hatal '
+      'totally inaccurate': 'tamamen yanlış',
+      'highly inaccurate': 'büyük ölçüde hatalı',
+      'historically inaccurate': 'tarihsel olarak hatalı'
     },
     examples: ['She was given inaccurate information.'],
-    exampleTranslations: ['Ona yanl   bilgi verildi.']
+    exampleTranslations: ['Ona yanlış bilgi verildi.']
   },
   {
     id: 'independent',
     word: 'Independent',
-    pos: 'adj',
-    meaning: 'ba  ms z,  zg r',
+    pos: 'adjective',
+    meaning: 'Bağımsız, özgür',
     definition: 'Someone who does not depend on other people for help, or prefers to do things by themselves.',
-    ipa: '/  n.d  pen.d nt/',
+    ipa: '/ˌɪn.dɪˈpen.dənt/',
     level: 'intermediate',
     wordFamily: [
-      { word: 'independence', pos: 'noun', meaning: 'ba  ms zl k' },
-      { word: 'independently', pos: 'adverb', meaning: 'ba  ms zca' }
+      { word: 'independence', pos: 'noun', meaning: 'bağımsızlık' },
+      { word: 'independently', pos: 'adv', meaning: 'bağımsızca' }
     ],
     synonyms: [
-      { word: 'Self-sufficient', meaning: 'kendi kendine yeten', pos: 'adj' },
-      { word: 'Autonomous', meaning: ' zerk', pos: 'adj' },
-      { word: 'Free', meaning: ' zg r', pos: 'adj' }
+      { word: 'Autonomous', meaning: 'Özerk', pos: 'adj' },
+      { word: 'Self-reliant', meaning: 'Kendine yeten', pos: 'adj' }
     ],
     antonyms: [
-      { word: 'Dependent', meaning: 'ba  ml ', pos: 'adj' },
-      { word: 'Reliant', meaning: 'bel ba layan', pos: 'adj' }
+      { word: 'Dependent', meaning: 'Bağımlı', pos: 'adj' }
     ],
     collocations: ['independent state', 'independent research', 'financially independent'],
     collocationMeanings: {
-      'independent state': 'ba  ms z devlet',
-      'independent research': 'ba  ms z ara t rma',
-      'financially independent': 'maddi olarak ba  ms z'
+      'independent state': 'bağımsız devlet',
+      'independent research': 'bağımsız araştırma',
+      'financially independent': 'maddi olarak bağımsız'
     },
     examples: ['Even as a child he was very independent.'],
-    exampleTranslations: [' ocukken bile  ok ba  ms zd .']
+    exampleTranslations: ['Çocukken bile çok bağımsızdı.']
   },
   {
     id: 'inexpensive',
     word: 'Inexpensive',
-    pos: 'adj',
-    meaning: 'ucuz, masrafs z',
+    pos: 'adjective',
+    meaning: 'Ucuz, masrafsız',
     definition: 'Something that is inexpensive does not cost much money.',
-    ipa: '/  n. k spen.s v/',
+    ipa: '/ˌɪn.ɪkˈspen.sɪv/',
     level: 'intermediate',
     wordFamily: [
-      { word: 'expense', pos: 'noun', meaning: 'masraf' },
-      { word: 'expensive', pos: 'adj', meaning: 'pahal ' }
+      { word: 'expenditure', pos: 'noun', meaning: 'harcama' }
     ],
     synonyms: [
-      { word: 'Cheap', meaning: 'ucuz', pos: 'adj' },
-      { word: 'Affordable', meaning: 'al nabilir/hesapl ', pos: 'adj' },
-      { word: 'Economical', meaning: 'ekonomik', pos: 'adj' }
+      { word: 'Cheap', meaning: 'Ucuz', pos: 'adj' },
+      { word: 'Affordable', meaning: 'Bütçe dostu', pos: 'adj' }
     ],
     antonyms: [
-      { word: 'Expensive', meaning: 'pahal ', pos: 'adj' },
-      { word: 'Costly', meaning: 'maliyetli', pos: 'adj' },
-      { word: 'Pricey', meaning: 'tuzlu/pahal ', pos: 'adj' }
+      { word: 'Expensive', meaning: 'Pahalı', pos: 'adj' },
+      { word: 'Costly', meaning: 'Maliyetli', pos: 'adj' }
     ],
     collocations: ['relatively inexpensive', 'inexpensive way', 'simple and inexpensive'],
     collocationMeanings: {
@@ -4801,116 +5768,106 @@ export const vocabularyData: VocabularyWord[] = [
     id: 'influence',
     word: 'Influence',
     pos: 'verb',
-    meaning: 'etkilemek, n fuz etmek',
+    meaning: 'Etkilemek, nüfuz etmek',
     definition: 'To affect the way that someone thinks or behaves, or to affect the way that something happens.',
-    ipa: '/  n.flu. ns/',
+    ipa: '/ˈɪn.flu.əns/',
     level: 'intermediate',
     wordFamily: [
-      { word: 'influential', pos: 'adj', meaning: 'n fuzlu/etkili' },
-      { word: 'influence', pos: 'noun', meaning: 'etki' }
+      { word: 'influential', pos: 'adj', meaning: 'nüfuzlu/etkili' }
     ],
     synonyms: [
-      { word: 'Affect', meaning: 'etkilemek', pos: 'verb' },
-      { word: 'Sway', meaning: 'fikrini  elmek', pos: 'verb' },
-      { word: 'Shape', meaning: ' ekillendirmek', pos: 'verb' }
+      { word: 'Affect', meaning: 'Etkilemek', pos: 'verb' },
+      { word: 'Sway', meaning: 'Fikrini çelmek', pos: 'verb' }
     ],
     antonyms: [],
     collocations: ['heavily influence', 'influence a decision', 'exert influence'],
     collocationMeanings: {
-      'heavily influence': 'b y k  l  de etkilemek',
-      'influence a decision': 'bir karar  etkilemek',
-      'exert influence': 'n fuzunu kullanmak/etki etmek'
+      'heavily influence': 'büyük ölçüde etkilemek',
+      'influence a decision': 'bir kararı etkilemek',
+      'exert influence': 'nüfuzunu kullanmak/etki etmek'
     },
     examples: ["Research has shown that the weather can influence people's behaviour."],
-    exampleTranslations: ['Ara t rmalar hava durumunun insanlar n davran  lar n  etkileyebilece ini g stermi tir.']
+    exampleTranslations: ['Araştırmalar hava durumunun insanların davranışlarını etkileyebileceğini göstermiştir.']
   },
   {
     id: 'inspiration',
     word: 'Inspiration',
     pos: 'noun',
-    meaning: 'ilham, esin',
+    meaning: 'İlham, esin',
     definition: 'A sudden feeling of enthusiasm, or a new idea that helps you to do or create something.',
-    ipa: '/  n.sp  re .  n/',
+    ipa: '/ˌɪn.spɪˈreɪ.ʃən/',
     level: 'intermediate',
     wordFamily: [
       { word: 'inspire', pos: 'verb', meaning: 'ilham vermek' },
       { word: 'inspirational', pos: 'adj', meaning: 'ilham verici' }
     ],
     synonyms: [
-      { word: 'Motivation', meaning: 'motivasyon', pos: 'noun' },
-      { word: 'Brainwave', meaning: 'parlak fikir', pos: 'noun' },
-      { word: 'Stimulus', meaning: 'uyar c /te vik', pos: 'noun' }
+      { word: 'Motivation', meaning: 'Motivasyon', pos: 'noun' },
+      { word: 'Brainwave', meaning: 'Parlak fikir', pos: 'noun' }
     ],
-    antonyms: [
-      { word: 'Discouragement', meaning: 'heves k rma', pos: 'noun' },
-      { word: 'Depression', meaning: '  k nt ', pos: 'noun' }
-    ],
+    antonyms: [],
     collocations: ['source of inspiration', 'draw inspiration from', 'constant inspiration'],
     collocationMeanings: {
-      'source of inspiration': 'ilham kayna  ',
-      'draw inspiration from': 'birinden/bir  eyden ilham almak',
-      'constant inspiration': 's rekli ilham'
+      'source of inspiration': 'ilham kaynağı',
+      'draw inspiration from': 'birinden/bir şeyden ilham almak',
+      'constant inspiration': 'sürekli ilham'
     },
     examples: ['She was the inspiration for his new book.'],
-    exampleTranslations: ['Yeni kitab n n ilham kayna   oydu.']
+    exampleTranslations: ['Yeni kitabının ilham kaynağı oydu.']
   },
   {
     id: 'insist',
     word: 'Insist',
     pos: 'verb',
-    meaning: ' srar etmek, diretmek',
+    meaning: 'Israr etmek, diretmek',
     definition: 'To say very firmly that something must happen or be done.',
-    ipa: '/ n s st/',
+    ipa: '/ɪnˈsɪst/',
     level: 'intermediate',
     wordFamily: [
-      { word: 'insistence', pos: 'noun', meaning: ' srar' },
-      { word: 'insistent', pos: 'adj', meaning: ' srarc ' }
+      { word: 'insistence', pos: 'noun', meaning: 'ısrar' },
+      { word: 'insistent', pos: 'adj', meaning: 'ısrarcı' }
     ],
     synonyms: [
-      { word: 'Assert', meaning: 'ileri s rmek/iddia etmek', pos: 'verb' },
-      { word: 'Demand', meaning: 'talep etmek', pos: 'verb' },
-      { word: 'Maintain', meaning: 'savunmak/s rd rmek', pos: 'verb' }
+      { word: 'Persist', meaning: 'Üstelemek', pos: 'verb' },
+      { word: 'Assert', meaning: 'İddia etmek', pos: 'verb' }
     ],
     antonyms: [
-      { word: 'Surrender', meaning: 'teslim olmak', pos: 'verb' },
-      { word: 'Yield', meaning: 'boyun e mek', pos: 'verb' }
+      { word: 'Give in', meaning: 'Boyun eğmek', pos: 'phrasal verb' }
     ],
     collocations: ['insist on doing', 'insist that', 'strictly insist'],
     collocationMeanings: {
-      'insist on doing': 'bir  eyi yapmakta  srar etmek',
-      'insist that': ' unu  srarla s ylemek',
+      'insist on doing': 'bir şeyi yapmakta ısrar etmek',
+      'insist that': 'şunu ısrarla söylemek',
       'strictly insist': 'kesin bir dille diretmek'
     },
     examples: ['You must see a doctor immediately - I insist.'],
-    exampleTranslations: ['Hemen bir doktora g r nmelisin -  srar ediyorum.']
+    exampleTranslations: ['Hemen bir doktora görünmelisin - ısrar ediyorum.']
   },
   {
     id: 'invent',
     word: 'Invent',
     pos: 'verb',
-    meaning: 'icat etmek',
+    meaning: 'İcat etmek',
     definition: 'To design or create something such as a machine or process that did not exist before.',
-    ipa: '/ n vent/',
+    ipa: '/ɪnˈvent/',
     level: 'intermediate',
     wordFamily: [
       { word: 'invention', pos: 'noun', meaning: 'icat' },
       { word: 'inventor', pos: 'noun', meaning: 'mucit' },
-      { word: 'inventive', pos: 'adj', meaning: 'yarat c ' }
+      { word: 'inventive', pos: 'adj', meaning: 'yaratıcı' }
     ],
     synonyms: [
-      { word: 'Create', meaning: 'yaratmak', pos: 'verb' },
-      { word: 'Originate', meaning: 'ba latmak/kaynakl k etmek', pos: 'verb' },
-      { word: 'Concoct', meaning: 'uydurmak/kurmak', pos: 'verb' }
+      { word: 'Create', meaning: 'Yaratmak', pos: 'verb' },
+      { word: 'Devise', meaning: 'Tasarlamak', pos: 'verb' }
     ],
     antonyms: [
-      { word: 'Destroy', meaning: 'y kmak', pos: 'verb' },
-      { word: 'Copy', meaning: 'kopyalamak', pos: 'verb' }
+      { word: 'Destroy', meaning: 'Yok etmek', pos: 'verb' }
     ],
     collocations: ['invent a device', 'invent a story', 'newly invented'],
     collocationMeanings: {
       'invent a device': 'bir cihaz icat etmek',
       'invent a story': 'hikaye uydurmak',
-      'newly invented': 'yeni icat edilmi '
+      'newly invented': 'yeni icat edilmiş'
     },
     examples: ['Alfred Nobel invented dynamite.'],
     exampleTranslations: ['Alfred Nobel dinamiti icat etti.']
@@ -4919,83 +5876,74 @@ export const vocabularyData: VocabularyWord[] = [
     id: 'invention',
     word: 'Invention',
     pos: 'noun',
-    meaning: 'icat, bulu ',
+    meaning: 'İcat, buluş',
     definition: 'A machine, tool, or system that someone has made, designed, or thought of for the first time.',
-    ipa: '/ n ven.  n/',
+    ipa: '/ɪnˈven.ʃən/',
     level: 'intermediate',
     wordFamily: [
-      { word: 'invent', pos: 'verb', meaning: 'icat etmek' },
-      { word: 'inventive', pos: 'adj', meaning: 'yarat c ' }
+      { word: 'invent', pos: 'verb', meaning: 'icat etmek' }
     ],
     synonyms: [
-      { word: 'Innovation', meaning: 'yenilik/bulu ', pos: 'noun' },
-      { word: 'Creation', meaning: 'yarat m', pos: 'noun' },
-      { word: 'Discovery', meaning: 'ke if', pos: 'noun' }
+      { word: 'Discovery', meaning: 'Keşif', pos: 'noun' },
+      { word: 'Innovation', meaning: 'Yenilik', pos: 'noun' }
     ],
     antonyms: [],
     collocations: ['great invention', 'modern invention', 'latest invention'],
     collocationMeanings: {
-      'great invention': 'b y k bulu ',
+      'great invention': 'büyük buluş',
       'modern invention': 'modern icat',
-      'latest invention': 'son bulu '
+      'latest invention': 'son buluş'
     },
     examples: ['Inventions like the electric light bulb changed the way people lived.'],
-    exampleTranslations: ['Elektrikli ampul gibi icatlar insanlar n ya ay   bi imini de i tirdi.']
+    exampleTranslations: ['Elektrikli ampul gibi icatlar insanların yaşayış biçimini değiştirdi.']
   },
   {
     id: 'inventive',
     word: 'Inventive',
-    pos: 'adj',
-    meaning: 'yarat c ,  zg n',
+    pos: 'adjective',
+    meaning: 'Yaratıcı, özgün',
     definition: 'Good at thinking of new and original ideas or methods.',
-    ipa: '/ n ven.t v/',
+    ipa: '/ɪnˈven.tɪv/',
     level: 'intermediate',
     wordFamily: [
-      { word: 'invent', pos: 'verb', meaning: 'icat etmek' },
-      { word: 'invention', pos: 'noun', meaning: 'icat/bulu ' },
-      { word: 'inventor', pos: 'noun', meaning: 'mucit' }
+      { word: 'invent', pos: 'verb', meaning: 'icat etmek' }
     ],
     synonyms: [
-      { word: 'Creative', meaning: 'yarat c ', pos: 'adj' },
-      { word: 'Original', meaning: ' zg n', pos: 'adj' },
-      { word: 'Resourceful', meaning: 'becerikli/  z m  reten', pos: 'adj' }
+      { word: 'Creative', meaning: 'Yaratıcı', pos: 'adj' },
+      { word: 'Original', meaning: 'Özgün', pos: 'adj' }
     ],
     antonyms: [
-      { word: 'Unimaginative', meaning: 'hayal g c  zay f', pos: 'adj' },
-      { word: 'Unoriginal', meaning: 'taklit/s radan', pos: 'adj' }
+      { word: 'Unimaginative', meaning: 'Hayal gücü kıt', pos: 'adj' }
     ],
     collocations: ['inventive mind', 'highly inventive', 'very inventive'],
     collocationMeanings: {
-      'inventive mind': 'yarat c  zihin',
-      'highly inventive': 'son derece  zg n',
-      'very inventive': ' ok yarat c '
+      'inventive mind': 'yaratıcı zihin',
+      'highly inventive': 'son derece özgün',
+      'very inventive': 'çok yaratıcı'
     },
     examples: ['Ronaldo is a versatile and inventive player.'],
-    exampleTranslations: ['Ronaldo  ok y nl  ve yarat c  bir oyuncudur.']
+    exampleTranslations: ['Ronaldo çok yönlü ve yaratıcı bir oyuncudur.']
   },
   {
     id: 'inventor',
     word: 'Inventor',
     pos: 'noun',
-    meaning: 'mucit',
+    meaning: 'Mucit',
     definition: 'Someone who has invented something or whose job is to invent things.',
-    ipa: '/ n ven.t r/',
+    ipa: '/ɪnˈven.tər/',
     level: 'intermediate',
     wordFamily: [
-      { word: 'invent', pos: 'verb', meaning: 'icat etmek' },
-      { word: 'inventive', pos: 'adj', meaning: 'yarat c ' }
+      { word: 'invention', pos: 'noun', meaning: 'icat' }
     ],
     synonyms: [
-      { word: 'Creator', meaning: 'yarat c ', pos: 'noun' },
-      { word: 'Originator', meaning: 'kaynak/ba latan ki i', pos: 'noun' },
-      { word: 'Designer', meaning: 'tasar mc ', pos: 'noun' }
+      { word: 'Originator', meaning: 'Kâşif/Kaynağı başlatan', pos: 'noun' }
     ],
     antonyms: [],
     collocations: ['famous inventor', 'great inventor', 'born inventor'],
     collocationMeanings: {
-      'famous inventor': ' nl  mucit',
-      'great inventor': 'b y k mucit',
-      'born inventor': 'do u tan mucit'
+      'famous inventor': 'ünlü mucit',
+      'great inventor': 'büyük mucit',
+      'born inventor': 'doğuştan mucit'
     },
     examples: ['Thomas Edison was an inventor.'],
     exampleTranslations: ['Thomas Edison bir mucitti.']
@@ -5003,1914 +5951,1757 @@ export const vocabularyData: VocabularyWord[] = [
   {
     id: 'impressive',
     word: 'Impressive',
-    pos: 'adj',
-    meaning: 'etkileyici',
+    pos: 'adjective',
+    meaning: 'Etkileyici',
     definition: 'If something is impressive, you admire it.',
-    ipa: '/ m pres. v/',
+    ipa: '/ɪmˈpres.ɪv/',
     level: 'intermediate',
     wordFamily: [
       { word: 'impress', pos: 'verb', meaning: 'etkilemek' },
-      { word: 'impression', pos: 'noun', meaning: 'izlenim' },
-      { word: 'impressively', pos: 'adverb', meaning: 'etkileyici bir  ekilde' }
+      { word: 'impression', pos: 'noun', meaning: 'izlenim' }
     ],
     synonyms: [
-      { word: 'Admirable', meaning: 'hayranl k uyand ran', pos: 'adj' },
-      { word: 'Stunning', meaning: 'g z al c ', pos: 'adj' },
-      { word: 'Grand', meaning: 'g rkemli', pos: 'adj' }
+      { word: 'Grand', meaning: 'Görkemli', pos: 'adj' },
+      { word: 'Admirable', meaning: 'Takdire şayan', pos: 'adj' }
     ],
     antonyms: [
-      { word: 'Unimpressive', meaning: 'etkileyici olmayan', pos: 'adj' },
-      { word: 'Mediocre', meaning: 'vasat', pos: 'adj' },
-      { word: 'Ordinary', meaning: 's radan', pos: 'adj' }
+      { word: 'Mediocre', meaning: 'Vasat', pos: 'adj' },
+      { word: 'Unremarkable', meaning: 'Sıradan', pos: 'adj' }
     ],
     collocations: ['highly impressive', 'look impressive', 'most impressive'],
     collocationMeanings: {
-      'highly impressive': 'olduk a etkileyici',
-      'look impressive': 'etkileyici g r nmek',
+      'highly impressive': 'oldukça etkileyici',
+      'look impressive': 'etkileyici görünmek',
       'most impressive': 'en etkileyici'
     },
     examples: ['The list of their achievements is pretty impressive.'],
-    exampleTranslations: ['Ba ar lar n n listesi olduk a etkileyici.']
+    exampleTranslations: ['Başarılarının listesi oldukça etkileyici.']
   },
   {
     id: 'in_two_minds',
     word: 'In two minds',
     pos: 'idiom',
-    meaning: 'iki arada bir derede kalmak, karars z olmak',
+    meaning: 'İki arada bir derede kalmak, kararsız olmak',
     definition: 'To be unable to decide about something.',
-    ipa: '/ n tu  ma ndz/',
+    ipa: '/ɪn tuː maɪndz/',
     level: 'intermediate',
     wordFamily: [],
     synonyms: [
-      { word: 'Undecided', meaning: 'karars z', pos: 'adj' },
-      { word: 'Hesitant', meaning: 'teredd tl ', pos: 'adj' },
-      { word: 'Uncertain', meaning: 'belirsiz/emin de il', pos: 'adj' }
+      { word: 'Undecided', meaning: 'Kararsız', pos: 'adj' },
+      { word: 'Hesitant', meaning: 'Tereddütlü', pos: 'adj' }
     ],
     antonyms: [
-      { word: 'Decided', meaning: 'kararl ', pos: 'adj' },
-      { word: 'Certain', meaning: 'emin', pos: 'adj' },
-      { word: 'Resolute', meaning: 'azimle karar vermi ', pos: 'adj' }
+      { word: 'Certain', meaning: 'Emin', pos: 'adj' },
+      { word: 'Decided', meaning: 'Karar vermiş', pos: 'adj' }
     ],
     collocations: ['be in two minds about'],
     collocationMeanings: {
-      'be in two minds about': 'bir konuda karars z kalmak'
+      'be in two minds about': 'bir konuda kararsız kalmak'
     },
     examples: ['I was in two minds whether or not to come this morning.'],
-    exampleTranslations: ['Bu sabah gelip gelmeme konusunda karars zd m.']
+    exampleTranslations: ['Bu sabah gelip gelmeme konusunda kararsızdım.']
   },
   {
     id: 'join_a_society',
     word: 'Join a society',
     pos: 'phrase',
-    meaning: 'bir toplulu a/kul be kat lmak',
-    definition: 'To become a member of an organization or club for people who have a particular interest.',
-    ipa: '/d   n   s  sa . .ti/',
+    meaning: 'Bir topluluğa/kulübe katılmak',
+    definition: 'To become a member of an organization or club for people who have a particular interest or who take part in a particular activity.',
+    ipa: '/dʒɔɪn ə səˈsaɪ.ə.ti/',
     level: 'intermediate',
     wordFamily: [],
     synonyms: [
-      { word: 'Enroll', meaning: 'kaydolmak', pos: 'verb' },
-      { word: 'Sign up', meaning: 'yaz lmak', pos: 'phrasal verb' }
+      { word: 'Enroll', meaning: 'Kaydolmak', pos: 'verb' }
     ],
     antonyms: [
-      { word: 'Leave a society', meaning: 'topluluktan ayr lmak', pos: 'phrase' },
-      { word: 'Resign', meaning: 'istifa etmek/ayr lmak', pos: 'verb' }
+      { word: 'Resign', meaning: 'İstifa etmek/Ayrılmak', pos: 'verb' }
     ],
     collocations: ['join a student society', 'join a debating society'],
     collocationMeanings: {
-      'join a student society': '  renci toplulu una kat lmak',
-      'join a debating society': 'm nazara toplulu una kat lmak'
+      'join a student society': 'öğrenci topluluğuna katılmak',
+      'join a debating society': 'münazara topluluğuna katılmak'
     },
     examples: ['I am hoping to join a society at university so I can meet more people.'],
-    exampleTranslations: ['Daha fazla insanla tan  abilmek i in  niversitede bir toplulu a kat lmay  umuyorum.']
+    exampleTranslations: ['Daha fazla insanla tanışabilmek için üniversitede bir topluluğa katılmayı umuyorum.']
   },
- 
   {
     id: 'keep_a_record',
     word: 'Keep a record',
     pos: 'phrase',
-    meaning: 'kay t tutmak, not etmek',
-    definition: 'To write something down or store information.',
-    ipa: '/ki p   r  k  rd/',
+    meaning: 'Kayıt tutmak, not etmek',
+    definition: 'To write something down.',
+    ipa: '/kiːp ə rɪˈkɔːrd/',
     level: 'intermediate',
     wordFamily: [],
     synonyms: [
-      { word: 'Document', meaning: 'belgelemek', pos: 'verb' },
-      { word: 'Register', meaning: 'kaydetmek', pos: 'verb' },
-      { word: 'Log', meaning: 'kay t tutmak', pos: 'verb' }
+      { word: 'Log', meaning: 'Kayıt altına almak', pos: 'verb' },
+      { word: 'Document', meaning: 'Belgelemek', pos: 'verb' }
     ],
-    antonyms: [
-      { word: 'Ignore', meaning: 'g rmezden gelmek', pos: 'verb' }
-    ],
+    antonyms: [],
     collocations: ['keep a detailed record', 'keep a permanent record', 'keep a written record'],
     collocationMeanings: {
-      'keep a detailed record': 'ayr nt l  kay t tutmak',
-      'keep a permanent record': 'kal c  bir kay t tutmak',
-      'keep a written record': 'yaz l  bir kay t tutmak'
+      'keep a detailed record': 'ayrıntılı kayıt tutmak',
+      'keep a permanent record': 'kalıcı bir kayıt tutmak',
+      'keep a written record': 'yazılı bir kayıt tutmak'
     },
     examples: ['Can you keep a record of what we have spent?'],
-    exampleTranslations: ['Neler harcad   m z n kayd n  tutabilir misin?']
+    exampleTranslations: ['Neler harcadığımızın kaydını tutabilir misin?']
   },
   {
     id: 'keep_a_resolution',
     word: 'Keep a resolution',
     pos: 'phrase',
-    meaning: 'karar na sad k kalmak',
-    definition: 'To stick to a plan or a promise you made to yourself.',
-    ipa: '/ki p    rez.  lu .  n/',
+    meaning: 'Kararına sadık kalmak',
+    definition: 'To stick to a plan.',
+    ipa: '/kiːp ə ˌrez.əˈluː.ʃən/',
     level: 'intermediate',
     wordFamily: [],
     synonyms: [
-      { word: 'Stick to a goal', meaning: 'hedefe ba l  kalmak', pos: 'phrase' },
-      { word: 'Honor a promise', meaning: 's z n  tutmak', pos: 'phrase' }
+      { word: 'Stay committed', meaning: 'Bağlı kalmak', pos: 'phrase' }
     ],
     antonyms: [
-      { word: 'Break a resolution', meaning: 'karar n  bozmak', pos: 'phrase' },
-      { word: 'Give up', meaning: 'vazge mek', pos: 'phrasal verb' }
+      { word: 'Break a resolution', meaning: 'Kararı bozmak', pos: 'phrase' }
     ],
     collocations: ['keep a new year resolution', 'fail to keep a resolution'],
     collocationMeanings: {
-      'keep a new year resolution': 'yeni y l karar na sad k kalmak',
-      'fail to keep a resolution': 'karar  tutamamak'
+      'keep a new year resolution': 'yeni yıl kararına sadık kalmak',
+      'fail to keep a resolution': 'kararı tutamamak'
     },
     examples: ['I hope you keep your resolution to stop smoking.'],
-    exampleTranslations: ['Umar m sigaray  b rakma karar na sad k kal rs n.']
+    exampleTranslations: ['Umarım sigarayı bırakma kararına sadık kalırsın.']
   },
   {
     id: 'keep_track_of',
     word: 'Keep track of',
     pos: 'idiom',
-    meaning: 'takip etmek, kayd n  tutmak',
+    meaning: 'Takip etmek, kaydını tutmak',
     definition: 'To have all the information that you need about something.',
-    ipa: '/ki p tr k  v/',
+    ipa: '/kiːp træk əv/',
     level: 'intermediate',
     wordFamily: [],
     synonyms: [
-      { word: 'Monitor', meaning: 'izlemek/takip etmek', pos: 'verb' },
-      { word: 'Follow', meaning: 'takip etmek', pos: 'verb' },
-      { word: 'Oversee', meaning: 'denetlemek', pos: 'verb' }
+      { word: 'Monitor', meaning: 'Gözlemlemek', pos: 'verb' },
+      { word: 'Follow', meaning: 'Takip etmek', pos: 'verb' }
     ],
     antonyms: [
-      { word: 'Lose track of', meaning: 'izini kaybetmek/takibi b rakmak', pos: 'idiom' },
-      { word: 'Overlook', meaning: 'g zden ka  rmak', pos: 'verb' }
+      { word: 'Lose track', meaning: 'İzini kaybetmek', pos: 'phrase' }
     ],
     collocations: ['keep track of time', 'keep track of changes', 'keep track of expenses'],
     collocationMeanings: {
-      'keep track of time': 'zaman n nas l ge ti ini takip etmek',
-      'keep track of changes': 'de i iklikleri takip etmek',
-      'keep track of expenses': 'harcamalar n kayd n  tutmak'
+      'keep track of time': 'zamanın nasıl geçtiğini takip etmek',
+      'keep track of changes': 'değişiklikleri takip etmek',
+      'keep track of expenses': 'harcamaların kaydını tutmak'
     },
     examples: ['We need a system to keep track of all our expenses.'],
-    exampleTranslations: ['T m giderlerimizi takip etmek i in bir sisteme ihtiyac m z var.']
+    exampleTranslations: ['Tüm giderlerimizi takip etmek için bir sisteme ihtiyacımız var.']
   },
   {
     id: 'keep_up',
     word: 'Keep up',
     pos: 'phrasal verb',
-    meaning: 'ayn  seviyeyi korumak, s rd rmek',
-    definition: 'To continue at the same high level or speed.',
-    ipa: '/ki p  p/',
+    meaning: 'Aynı seviyeyi korumak, sürdürmek',
+    definition: 'To continue at the same high level.',
+    ipa: '/kiːp ʌp/',
     level: 'intermediate',
     wordFamily: [],
     synonyms: [
-      { word: 'Maintain', meaning: 's rd rmek', pos: 'verb' },
-      { word: 'Preserve', meaning: 'korumak', pos: 'verb' },
-      { word: 'Sustain', meaning: 'devam ettirmek', pos: 'verb' }
+      { word: 'Maintain', meaning: 'Sürdürmek', pos: 'verb' },
+      { word: 'Sustain', meaning: 'Ayakta tutmak', pos: 'verb' }
     ],
     antonyms: [
-      { word: 'Fall behind', meaning: 'geride kalmak', pos: 'phrasal verb' },
-      { word: 'Quit', meaning: 'b rakmak', pos: 'verb' }
+      { word: 'Fall behind', meaning: 'Geri kalmak', pos: 'phrasal verb' }
     ],
     collocations: ['keep up with', 'keep up appearances', 'keep up the pace'],
     collocationMeanings: {
       'keep up with': 'ayak uydurmak',
-      'keep up appearances': 'durumu kurtarmak/g r n    korumak',
-      'keep up the pace': 'h z /tempoyu korumak'
+      'keep up appearances': 'durumu kurtarmak/görünüşü korumak',
+      'keep up the pace': 'hızı/tempoyu korumak'
     },
     examples: ['Keep up the good work.'],
-    exampleTranslations: [' yi  al  maya devam et (bu seviyeyi koru).']
+    exampleTranslations: ['İyi çalışmaya devam et (bu seviyeyi koru).']
   },
   {
     id: 'launch_a_marketing_campaign',
     word: 'Launch a new marketing campaign',
     pos: 'phrase',
-    meaning: 'yeni bir pazarlama kampanyas  ba latmak',
-    definition: 'To start a series of television advertisements or posters to persuade people to buy a product.',
-    ipa: '/l  nt    nju   m  .k .t   k m pe n/',
+    meaning: 'Yeni bir pazarlama kampanyası başlatmak',
+    definition: 'To start a series of things such as television advertisements or posters that try to persuade people to buy a product.',
+    ipa: '/lɔːntʃ ə njuː ˈmɑː.kɪ.tɪŋ kæmˈpeɪn/',
     level: 'intermediate',
     wordFamily: [],
     synonyms: [
-      { word: 'Initiate', meaning: 'ba latmak', pos: 'verb' },
-      { word: 'Roll out', meaning: 'piyasaya s rmek', pos: 'phrasal verb' }
+      { word: 'Initiate a campaign', meaning: 'Kampanya başlatmak', pos: 'phrase' }
     ],
-    antonyms: [
-      { word: 'Cancel', meaning: 'iptal etmek', pos: 'verb' },
-      { word: 'Suspend', meaning: 'ask ya almak', pos: 'verb' }
-    ],
+    antonyms: [],
     collocations: ['successfully launch a marketing campaign', 'plans to launch a marketing campaign'],
     collocationMeanings: {
-      'successfully launch a marketing campaign': 'ba ar yla bir pazarlama kampanyas  ba latmak',
-      'plans to launch a marketing campaign': 'pazarlama kampanyas  ba latmay  planlamak'
+      'successfully launch a marketing campaign': 'başarıyla bir pazarlama kampanyası başlatmak',
+      'plans to launch a marketing campaign': 'pazarlama kampanyası başlatmayı planlamak'
     },
     examples: ['The company plans to launch a new marketing campaign next month.'],
-    exampleTranslations: [' irket gelecek ay yeni bir pazarlama kampanyas  ba latmay  planl yor.']
+    exampleTranslations: ['Şirket gelecek ay yeni bir pazarlama kampanyası başlatmayı planlıyor.']
   },
   {
     id: 'let',
     word: 'Let',
     pos: 'verb',
-    meaning: 'izin vermek (bir  eyin olmas na)',
-    definition: 'To allow something to happen or someone to do something.',
+    meaning: 'İzin vermek (bir şeyin olmasına)',
+    definition: 'To allow something to happen.',
     ipa: '/let/',
     level: 'intermediate',
     wordFamily: [],
     synonyms: [
-      { word: 'Allow', meaning: 'izin vermek', pos: 'verb' },
-      { word: 'Permit', meaning: 'm saade etmek', pos: 'verb' }
+      { word: 'Permit', meaning: 'İzin vermek', pos: 'verb' },
+      { word: 'Allow', meaning: 'Müsaade etmek', pos: 'verb' }
     ],
     antonyms: [
-      { word: 'Forbid', meaning: 'yasaklamak', pos: 'verb' },
-      { word: 'Stop', meaning: 'durdurmak', pos: 'verb' },
-      { word: 'Prevent', meaning: 'engellemek', pos: 'verb' }
+      { word: 'Prevent', meaning: 'Engel olmak', pos: 'verb' },
+      { word: 'Stop', meaning: 'Durdurmak', pos: 'verb' }
     ],
     collocations: ['let someone go', 'let it be', 'let someone know'],
     collocationMeanings: {
-      'let someone go': 'birini serbest b rakmak',
-      'let it be': 'ak   na b rak',
+      'let someone go': 'birini serbest bırakmak',
+      'let it be': 'akışına bırak',
       'let someone know': 'birine haber vermek'
     },
     examples: ['I stepped back and let him pass.'],
-    exampleTranslations: ['Geri  ekildim ve ge mesine izin verdim.']
+    exampleTranslations: ['Geri çekildim ve geçmesine izin verdim.']
   },
   {
     id: 'let_down',
     word: 'Let down',
     pos: 'phrasal verb',
-    meaning: 'hayal k r kl   na u ratmak, y z st  b rakmak',
-    definition: 'To make someone disappointed by not doing what they expected.',
-    ipa: '/let da n/',
+    meaning: 'Hayal kırıklığına uğratmak, yüzüstü bırakmak',
+    definition: 'To make someone disappointed by not doing something that they are expecting you to do.',
+    ipa: '/let daʊn/',
     level: 'intermediate',
     wordFamily: [],
     synonyms: [
-      { word: 'Disappoint', meaning: 'hayal k r kl   na u ratmak', pos: 'verb' },
-      { word: 'Abandon', meaning: 'terk etmek/y z st  b rakmak', pos: 'verb' },
-      { word: 'Betray', meaning: 'ihanet etmek/yar  yolda b rakmak', pos: 'verb' }
+      { word: 'Disappoint', meaning: 'Hayal kırıklığına uğratmak', pos: 'verb' },
+      { word: 'Betray', meaning: 'İhanet etmek/Yarı yolda bırakmak', pos: 'verb' }
     ],
     antonyms: [
-      { word: 'Support', meaning: 'desteklemek', pos: 'verb' },
-      { word: 'Satisfy', meaning: 'tatmin etmek', pos: 'verb' },
-      { word: 'Fulfil', meaning: 'beklentiyi kar  lamak', pos: 'verb' }
+      { word: 'Support', meaning: 'Desteklemek', pos: 'verb' }
     ],
     collocations: ['let someone down gently', 'never let you down'],
     collocationMeanings: {
-      'let someone down gently': 'birini k rmadan reddetmek/hayal k r kl   na u ratmak',
-      'never let you down': 'seni asla yar  yolda b rakmaz'
+      'let someone down gently': 'birini kırmadan reddetmek/hayal kırıklığına uğratmak',
+      'never let you down': 'seni asla yarı yolda bırakmaz'
     },
     examples: ['The families of the victims feel that the justice system has let them down.'],
-    exampleTranslations: ['Kurbanlar n aileleri, adalet sisteminin onlar  y z st  b rakt   n  hissediyor.']
+    exampleTranslations: ['Kurbanların aileleri, adalet sisteminin onları yüzüstü bıraktığını hissediyor.']
   },
   {
     id: 'let_your_mind_wander_freely',
     word: 'Let your mind wander freely',
     pos: 'phrase',
-    meaning: 'zihnini serbest b rakmak',
+    meaning: 'Zihnini serbest bırakmak',
     definition: 'To allow your thoughts to be free and not restricted to one thing.',
-    ipa: '/let j  r ma nd  w n.d r  fri .li/',
+    ipa: '/let jɔːr maɪnd ˈwɒn.dər ˈfriː.li/',
     level: 'intermediate',
     wordFamily: [],
     synonyms: [
-      { word: 'Daydream', meaning: 'hayal kurmak', pos: 'verb' },
-      { word: 'Meditate', meaning: 'derin d   nmek/zihni bo altmak', pos: 'verb' }
+      { word: 'Daydream', meaning: 'Hayal kurmak', pos: 'verb' }
     ],
     antonyms: [
-      { word: 'Focus', meaning: 'odaklanmak', pos: 'verb' },
-      { word: 'Concentrate', meaning: 'yo unla mak', pos: 'verb' }
+      { word: 'Concentrate', meaning: 'Odaklanmak', pos: 'verb' }
     ],
     collocations: ['let your mind wander for a while'],
     collocationMeanings: {
-      'let your mind wander for a while': 'zihnini bir s reli ine serbest b rakmak'
+      'let your mind wander for a while': 'zihnini bir süreliğine serbest bırakmak'
     },
     examples: ['Relax, close your eyes and let your mind wander freely.'],
-    exampleTranslations: ['Rahatlay n, g zlerinizi kapat n ve zihninizin serbest e dola mas na izin verin.']
+    exampleTranslations: ['Rahatlayın, gözlerinizi kapatın ve zihninizin serbestçe dolaşmasına izin verin.']
   },
   {
     id: 'look_at_a_problem_from_the_outside',
     word: 'Look at a problem from the outside',
     pos: 'phrase',
-    meaning: 'probleme d  ar dan bakmak',
+    meaning: 'Probleme dışarıdan bakmak',
     definition: 'To consider a situation from different perspectives.',
-    ipa: '/l k  t    pr b.l m fr m  i  a t sa d/',
+    ipa: '/lʊk æt ə ˈprɒb.ləm frəm ði ˌaʊtˈsaɪd/',
     level: 'intermediate',
     wordFamily: [],
     synonyms: [
-      { word: 'Gain perspective', meaning: 'bak   a  s  kazanmak', pos: 'phrase' },
-      { word: 'Detach oneself', meaning: 'kendini soyutlamak', pos: 'phrase' }
+      { word: 'Get perspective', meaning: 'Bakış açısı kazanmak', pos: 'phrase' }
     ],
-    antonyms: [
-      { word: 'Be biased', meaning: 'tarafl  bakmak', pos: 'phrase' }
-    ],
+    antonyms: [],
     collocations: ['need to look at a problem from the outside'],
     collocationMeanings: {
-      'need to look at a problem from the outside': 'bir probleme d  ar dan bakmaya ihtiya  duymak'
+      'need to look at a problem from the outside': 'bir probleme dışarıdan bakmaya ihtiyaç duymak'
     },
     examples: ["It's important to look at a problem from the outside if you want a good solution."],
-    exampleTranslations: [' yi bir   z m istiyorsan z bir probleme d  ar dan bakmak  nemlidir.']
+    exampleTranslations: ['İyi bir çözüm istiyorsanız bir probleme dışarıdan bakmak önemlidir.']
   },
   {
     id: 'lose_interest_in_something',
     word: 'Lose interest in something',
     pos: 'phrase',
-    meaning: 'bir  eye ilgini kaybetmek',
+    meaning: 'Bir şeye ilgini kaybetmek',
     definition: 'To stop being interested in something.',
-    ipa: '/lu z   n.tr st  n  s m.   /',
+    ipa: '/luːz ˈɪn.trəst ɪn ˈsʌm.θɪŋ/',
     level: 'intermediate',
     wordFamily: [],
     synonyms: [
-      { word: 'Become bored', meaning: 's k lmak', pos: 'phrase' },
-      { word: 'Get tired of', meaning: 'b kmak', pos: 'phrase' }
+      { word: 'Get bored of', meaning: 'Bıkmak/Sıkılmak', pos: 'phrasal verb' }
     ],
     antonyms: [
-      { word: 'Become fascinated', meaning: 'b y lenmek/ilgi duymak', pos: 'phrase' },
-      { word: 'Stay curious', meaning: 'merak n  korumak', pos: 'phrase' }
+      { word: 'Become fascinated', meaning: 'Büyülenmek', pos: 'phrase' }
     ],
     collocations: ['completely lose interest', 'slowly lose interest'],
     collocationMeanings: {
       'completely lose interest': 'ilgisini tamamen kaybetmek',
-      'slowly lose interest': 'yava  yava  ilgi duymaktan vazge mek'
+      'slowly lose interest': 'yavaş yavaş ilgi duymaktan vazgeçmek'
     },
     examples: ['I used to do yoga but I lost interest in it.'],
-    exampleTranslations: ['Eskiden yoga yapard m ama ilgimi kaybettim.']
+    exampleTranslations: ['Eskiden yoga yapardım ama ilgimi kaybettim.']
   },
   {
     id: 'make_b1',
     word: 'Make',
     pos: 'verb',
-    meaning: 'yapt rmak, hissettirmek',
-    definition: 'To cause someone or something to be in a particular state.',
-    ipa: '/me k/',
+    meaning: 'Yaptırmak, hissettirmek',
+    definition: 'To cause someone or something to be in a particular state or to change to another state.',
+    ipa: '/meɪk/',
     level: 'intermediate',
-    wordFamily: [
-      { word: 'maker', pos: 'noun', meaning: 'yap c / retici' },
-      { word: 'making', pos: 'noun', meaning: 'yap m' }
-    ],
+    wordFamily: [],
     synonyms: [
-      { word: 'Cause', meaning: 'sebep olmak', pos: 'verb' },
-      { word: 'Create', meaning: 'yaratmak', pos: 'verb' },
-      { word: 'Produce', meaning: ' retmek', pos: 'verb' }
+      { word: 'Cause', meaning: 'Sebep olmak', pos: 'verb' },
+      { word: 'Render', meaning: 'Hale getirmek', pos: 'verb' }
     ],
-    antonyms: [
-      { word: 'Destroy', meaning: 'y kmak', pos: 'verb' },
-      { word: 'Dismantle', meaning: 'par alamak', pos: 'verb' }
-    ],
+    antonyms: [],
     collocations: ['make a noise', 'make a difference', 'make a mistake'],
     collocationMeanings: {
-      'make a noise': 'g r lt  yapmak',
+      'make a noise': 'gürültü yapmak',
       'make a difference': 'fark yaratmak',
       'make a mistake': 'hata yapmak'
     },
     examples: ['This film always makes me cry.'],
-    exampleTranslations: ['Bu film beni her zaman a lat r.']
+    exampleTranslations: ['Bu film beni her zaman ağlatır.']
   },
   {
     id: 'make_a_decision_b1',
     word: 'Make a decision',
     pos: 'phrase',
-    meaning: 'karar vermek',
+    meaning: 'Karar vermek',
     definition: 'A choice that you make after thinking carefully.',
-    ipa: '/me k   d  s  . n/',
+    ipa: '/meɪk ə dɪˈsɪʒ.ən/',
     level: 'intermediate',
     wordFamily: [],
     synonyms: [
-      { word: 'Decide', meaning: 'karar vermek', pos: 'verb' },
-      { word: 'Choose', meaning: 'se mek', pos: 'verb' },
-      { word: 'Determine', meaning: 'belirlemek', pos: 'verb' }
+      { word: 'Decide', meaning: 'Karar vermek', pos: 'verb' },
+      { word: 'Choose', meaning: 'Seçmek', pos: 'verb' }
     ],
     antonyms: [
-      { word: 'Hesitate', meaning: 'teredd t etmek', pos: 'verb' },
-      { word: 'Vacillate', meaning: 'karars z kalmak', pos: 'verb' }
+      { word: 'Hesitate', meaning: 'Tereddüt etmek', pos: 'verb' }
     ],
     collocations: ['make a final decision', 'make a difficult decision', 'quickly make a decision'],
     collocationMeanings: {
-      'make a final decision': 'son karar  vermek',
+      'make a final decision': 'son kararı vermek',
       'make a difficult decision': 'zor bir karar vermek',
-      'quickly make a decision': 'h zl ca karar vermek'
+      'quickly make a decision': 'hızlıca karar vermek'
     },
     examples: ['The committee should make a decision later this week.'],
-    exampleTranslations: ['Komite bu haftan n ilerleyen g nlerinde bir karar vermeli.']
+    exampleTranslations: ['Komite bu haftanın ilerleyen günlerinde bir karar vermeli.']
   },
   {
     id: 'make_a_profit',
     word: 'Make a profit',
     pos: 'phrase',
-    meaning: 'k r etmek',
+    meaning: 'Kâr etmek',
     definition: 'To have money remaining after you have paid all your business costs.',
-    ipa: '/me k    pr f. t/',
+    ipa: '/meɪk ə ˈprɒf.ɪt/',
     level: 'intermediate',
-    wordFamily: [
-      { word: 'profitable', pos: 'adj', meaning: 'k rl ' },
-      { word: 'profitability', pos: 'noun', meaning: 'k rl l k' }
-    ],
+    wordFamily: [],
     synonyms: [
-      { word: 'Earn money', meaning: 'para kazanmak', pos: 'phrase' },
-      { word: 'Gain', meaning: 'kazan  sa lamak', pos: 'verb' }
+      { word: 'Earn a return', meaning: 'Getiri sağlamak', pos: 'phrase' }
     ],
     antonyms: [
-      { word: 'Make a loss', meaning: 'zarar etmek', pos: 'phrase' }
+      { word: 'Lose money', meaning: 'Para kaybetmek', pos: 'phrase' },
+      { word: 'Incur a loss', meaning: 'Zarar etmek', pos: 'phrase' }
     ],
     collocations: ['make a huge profit', 'make a small profit', 'aim to make a profit'],
     collocationMeanings: {
-      'make a huge profit': 'b y k kar etmek',
-      'make a small profit': 'k   k bir k r elde etmek',
-      'aim to make a profit': 'k r etmeyi hedeflemek'
+      'make a huge profit': 'büyük kar etmek',
+      'make a small profit': 'küçük bir kâr elde etmek',
+      'aim to make a profit': 'kâr etmeyi hedeflemek'
     },
     examples: ['Investors have made a 14% profit in just 3 months.'],
-    exampleTranslations: ['Yat r mc lar sadece 3 ayda %14 k r elde etti.']
+    exampleTranslations: ['Yatırımcılar sadece 3 ayda %14 kâr elde etti.']
   },
   {
     id: 'make_a_resolution',
     word: 'Make a resolution',
     pos: 'phrase',
-    meaning: 'karar almak (yeni y l karar  gibi)',
-    definition: 'To set yourself a goal or make a firm decision.',
-    ipa: '/me k    rez.  lu .  n/',
+    meaning: 'Karar almak (yeni yıl kararı gibi)',
+    definition: 'To set (yourself) a goal.',
+    ipa: '/meɪk ə ˌrez.əˈluː.ʃən/',
     level: 'intermediate',
-    wordFamily: [
-      { word: 'resolve', pos: 'verb', meaning: 'karar vermek/  zmek' }
-    ],
+    wordFamily: [],
     synonyms: [
-      { word: 'Pledge', meaning: 's z vermek/adak adamak', pos: 'verb' },
-      { word: 'Commit', meaning: 'kendini adamak', pos: 'verb' }
+      { word: 'Set a goal', meaning: 'Hedef koymak', pos: 'phrase' }
     ],
     antonyms: [],
     collocations: ['make a firm resolution', 'make a new year resolution'],
     collocationMeanings: {
       'make a firm resolution': 'kesin bir karar almak',
-      'make a new year resolution': 'yeni y l karar  almak'
+      'make a new year resolution': 'yeni yıl kararı almak'
     },
     examples: ['Are you going to make a resolution this year?'],
-    exampleTranslations: ['Bu y l bir karar alacak m s n?']
+    exampleTranslations: ['Bu yıl bir karar alacak mısın?']
   },
   {
     id: 'make_friends_with',
     word: 'Make friends with',
     pos: 'phrase',
-    meaning: 'arkada  olmak',
-    definition: 'To become friends with someone.',
-    ipa: '/me k frendz w  /',
+    meaning: 'Arkadaş olmak',
+    definition: 'To become friends.',
+    ipa: '/meɪk frendz wɪð/',
     level: 'intermediate',
-    wordFamily: [
-      { word: 'friendship', pos: 'noun', meaning: 'arkada l k' },
-      { word: 'friendly', pos: 'adj', meaning: 'arkada  canl s ' }
-    ],
+    wordFamily: [],
     synonyms: [
-      { word: 'Befriend', meaning: 'arkada l k kurmak', pos: 'verb' },
-      { word: 'Get to know', meaning: 'tan mak', pos: 'verb' }
+      { word: 'Befriend', meaning: 'Arkadaşlık kurmak', pos: 'verb' }
     ],
     antonyms: [
-      { word: 'Alienate', meaning: 'so utmak/uzakla t rmak', pos: 'verb' },
-      { word: 'Make enemies', meaning: 'd  man edinmek', pos: 'phrase' }
+      { word: 'Fall out with', meaning: 'Küsüp tartışmak', pos: 'phrasal verb' }
     ],
     collocations: ['make friends with someone', 'easy to make friends with'],
     collocationMeanings: {
-      'make friends with someone': 'biriyle arkada  olmak',
-      'easy to make friends with': 'biriyle arkada  olmak kolayd r'
+      'make friends with someone': 'biriyle arkadaş olmak',
+      'easy to make friends with': 'biriyle arkadaş olmak kolaydır'
     },
     examples: ['They made friends with the children next door.'],
-    exampleTranslations: ['Yan kom unun  ocuklar yla arkada  oldular.']
+    exampleTranslations: ['Yan komşunun çocuklarıyla arkadaş oldular.']
   },
   {
     id: 'make_fun_of',
     word: 'Make fun of',
     pos: 'phrase',
-    meaning: 'dalga ge mek, alay etmek',
+    meaning: 'Dalga geçmek, alay etmek',
     definition: 'To make jokes about someone or something in an unkind way.',
-    ipa: '/me k f n  v/',
+    ipa: '/meɪk fʌn əv/',
     level: 'intermediate',
     wordFamily: [],
     synonyms: [
-      { word: 'Mock', meaning: 'alay etmek', pos: 'verb' },
-      { word: 'Ridicule', meaning: 'g l n  duruma d   rmek', pos: 'verb' },
-      { word: 'Tease', meaning: ' aka yapmak/tak lmak', pos: 'verb' }
+      { word: 'Mock', meaning: 'Alay etmek', pos: 'verb' },
+      { word: 'Tease', meaning: 'Takılmak/Şaka yollu takılmak', pos: 'verb' },
+      { word: 'Ridicule', meaning: 'Gülünç duruma düşürmek', pos: 'verb' }
     ],
     antonyms: [
-      { word: 'Respect', meaning: 'sayg  duymak', pos: 'verb' },
-      { word: 'Admire', meaning: 'hayran kalmak', pos: 'verb' },
-      { word: 'Praise', meaning: ' vmek', pos: 'verb' }
+      { word: 'Respect', meaning: 'Saygı duymak', pos: 'verb' }
     ],
     collocations: ['never make fun of someone', 'stop making fun of me'],
     collocationMeanings: {
-      'never make fun of someone': 'asla birisiyle dalga ge me',
-      'stop making fun of me': 'benimle dalga ge meyi b rak'
+      'never make fun of someone': 'asla birisiyle dalga geçme',
+      'stop making fun of me': 'benimle dalga geçmeyi bırak'
     },
     examples: ['The other children made fun of her because she was always so serious.'],
-    exampleTranslations: ['Di er  ocuklar, her zaman  ok ciddi oldu u i in onunla dalga ge iyorlard .']
+    exampleTranslations: ['Diğer çocuklar, her zaman çok ciddi olduğu için onunla dalga geçiyorlardı.']
   },
   {
     id: 'make_sure',
     word: 'Make sure',
     pos: 'phrase',
-    meaning: 'emin olmak, sa lama almak',
+    meaning: 'Emin olmak, sağlama almak',
     definition: 'To check something so that you can be sure about it.',
-    ipa: '/me k    r/',
+    ipa: '/meɪk ʃɔːr/',
     level: 'intermediate',
     wordFamily: [],
     synonyms: [
-      { word: 'Ensure', meaning: 'garantilemek', pos: 'verb' },
-      { word: 'Verify', meaning: 'do rulamak', pos: 'verb' },
-      { word: 'Confirm', meaning: 'teyit etmek', pos: 'verb' }
+      { word: 'Ensure', meaning: 'Garantiye almak', pos: 'verb' },
+      { word: 'Confirm', meaning: 'Doğrulamak', pos: 'verb' }
     ],
-    antonyms: [
-      { word: 'Forget', meaning: 'unutmak', pos: 'verb' },
-      { word: 'Neglect', meaning: 'ihmal etmek', pos: 'verb' }
-    ],
+    antonyms: [],
     collocations: ['make sure that', 'make sure of', 'just to make sure'],
     collocationMeanings: {
-      'make sure that': ' undan emin ol',
-      'make sure of': ' unu do rula/emin ol',
-      'just to make sure': 'sadece emin olmak i in'
+      'make sure that': 'şundan emin ol',
+      'make sure of': 'şunu doğrula/emin ol',
+      'just to make sure': 'sadece emin olmak için'
     },
     examples: ["I think I locked it but we'd better make sure."],
-    exampleTranslations: ['San r m kilitledim ama emin olsak iyi olur.']
+    exampleTranslations: ['Sanırım kilitledim ama emin olsak iyi olur.']
   },
   {
     id: 'make_the_break_change',
     word: 'Make the break/change',
     pos: 'phrase',
-    meaning: '(B y k bir) de i iklik yapmak, ba lar  koparmak',
-    definition: 'To make a decision to change something in your life significant.',
-    ipa: '/me k    bre k/',
+    meaning: '(Büyük bir) değişiklik yapmak, bağları koparmak',
+    definition: 'To make a decision to change something in your life, usually something significant.',
+    ipa: '/meɪk ðə breɪk/',
     level: 'intermediate',
     wordFamily: [],
     synonyms: [
-      { word: 'Transform', meaning: 'd n  t rmek', pos: 'verb' },
-      { word: 'Sever ties', meaning: 'ba lar  koparmak', pos: 'phrase' }
+      { word: 'Transform', meaning: 'Dönüştürmek', pos: 'verb' }
     ],
     antonyms: [
-      { word: 'Stay the same', meaning: 'ayn  kalmak', pos: 'phrase' }
+      { word: 'Maintain status quo', meaning: 'Mevcut durumu korumak', pos: 'phrase' }
     ],
     collocations: ['finally make the break', 'time to make the change'],
     collocationMeanings: {
-      'finally make the break': 'sonunda ba lar  koparmak/de i iklik yapmak',
-      'time to make the change': 'de i iklik yapma zaman '
+      'finally make the break': 'sonunda bağları koparmak/değişiklik yapmak',
+      'time to make the change': 'değişiklik yapma zamanı'
     },
     examples: ['I decided to make the break and buy my own place.'],
-    exampleTranslations: ['De i iklik yapmaya ve kendi yerimi sat n almaya karar verdim.']
+    exampleTranslations: ['Değişiklik yapmaya ve kendi yerimi satın almaya karar verdim.']
   },
   {
     id: 'make_up_my_mind',
     word: 'Make up my mind',
     pos: 'idiom',
-    meaning: 'karar n  vermek, kafas nda netle tirmek',
+    meaning: 'Kararını vermek, kafasında netleştirmek',
     definition: 'To make a decision.',
-    ipa: '/me k  p ma  ma nd/',
+    ipa: '/meɪk ʌp maɪ maɪnd/',
     level: 'intermediate',
     wordFamily: [],
     synonyms: [
-      { word: 'Decide', meaning: 'karar vermek', pos: 'verb' },
-      { word: 'Determine', meaning: 'kararla t rmak', pos: 'verb' }
+      { word: 'Decide', meaning: 'Karar vermek', pos: 'verb' }
     ],
     antonyms: [
-      { word: 'Hesitate', meaning: 'teredd t etmek', pos: 'verb' },
-      { word: 'Waver', meaning: 'bocalamak', pos: 'verb' }
+      { word: 'Waver', meaning: 'Tereddüt etmek', pos: 'verb' }
     ],
     collocations: ["can't make up my mind", 'already made up my mind'],
     collocationMeanings: {
-      "can't make up my mind": 'bir t rl  karar veremiyorum',
-      'already made up my mind': ' oktan karar m  verdim'
+      "can't make up my mind": 'bir türlü karar veremiyorum',
+      'already made up my mind': 'çoktan kararımı verdim'
     },
     examples: ['He made up his mind to attend the meeting.'],
-    exampleTranslations: ['Toplant ya kat lmaya karar verdi.']
+    exampleTranslations: ['Toplantıya katılmaya karar verdi.']
   },
   {
     id: 'make_use_of',
     word: 'Make use of',
     pos: 'phrase',
-    meaning: 'yararlanmak, kullanmak',
-    definition: 'To use someone or something for a particular purpose.',
-    ipa: '/me k ju s  v/',
+    meaning: 'Yararlanmak, kullanmak',
+    definition: 'To use someone or something for a particular purpose, especially one that brings a benefit to you.',
+    ipa: '/meɪk juːs əv/',
     level: 'intermediate',
     wordFamily: [],
     synonyms: [
-      { word: 'Utilize', meaning: 'faydalanmak', pos: 'verb' },
-      { word: 'Employ', meaning: 'kullanmak/i e ko mak', pos: 'verb' },
-      { word: 'Exploit', meaning: 'istifade etmek/s m rmek', pos: 'verb' }
+      { word: 'Utilize', meaning: 'Faydalanmak', pos: 'verb' },
+      { word: 'Exploit', meaning: 'Kullanmak/İstifade etmek', pos: 'verb' }
     ],
     antonyms: [
-      { word: 'Waste', meaning: 'bo a harcamak', pos: 'verb' },
-      { word: 'Ignore', meaning: 'ihmal etmek', pos: 'verb' }
+      { word: 'Waste', meaning: 'Boşa harcamak', pos: 'verb' }
     ],
     collocations: ['make good use of', 'make better use of', 'make use of resources'],
     collocationMeanings: {
-      'make good use of': 'iyi de erlendirmek',
+      'make good use of': 'iyi değerlendirmek',
       'make better use of': 'daha iyi yararlanmak',
-      'make use of resources': 'kaynaklar  kullanmak'
+      'make use of resources': 'kaynakları kullanmak'
     },
     examples: ["Why doesn't she make use of her singing talent?"],
-    exampleTranslations: ['Neden  ark  s yleme yetene inden yararlanm yor?']
+    exampleTranslations: ['Neden şarkı söyleme yeteneğinden yararlanmıyor?']
   },
   {
     id: 'make_yourself',
     word: 'Make yourself',
     pos: 'phrase',
-    meaning: 'kendini (bir  ey) yapmak/haz rlamak',
-    definition: 'To create or produce something for one s own use or benefit.',
-    ipa: '/me k j   self/',
+    meaning: 'Kendini (bir şey) yapmak/hazırlamak',
+    definition: 'To create or produce something by working.',
+    ipa: '/meɪk jɔːˈself/',
     level: 'intermediate',
-    wordFamily: [
-      { word: 'maker', pos: 'noun', meaning: 'yap c / retici' }
-    ],
+    wordFamily: [],
     synonyms: [
-      { word: 'Prepare for oneself', meaning: 'kendine haz rlamak', pos: 'phrase' }
+      { word: 'Prepare yourself', meaning: 'Kendini hazırlamak', pos: 'phrase' }
     ],
     antonyms: [],
     collocations: ['make yourself at home', 'make yourself comfortable'],
     collocationMeanings: {
       'make yourself at home': 'kendini evinde hisset',
-      'make yourself comfortable': 'rahat na bak'
+      'make yourself comfortable': 'rahatına bak'
     },
     examples: ['Jane made herself a drink while she waited.'],
-    exampleTranslations: ['Jane beklerken kendine bir i ecek haz rlad .']
+    exampleTranslations: ['Jane beklerken kendine bir içecek hazırladı.']
   },
   {
     id: 'massive',
     word: 'Massive',
-    pos: 'adj',
-    meaning: ' ok b y k, a  r, k tlesel',
-    definition: 'Very large, heavy and solid.',
-    ipa: '/ m s. v/',
+    pos: 'adjective',
+    meaning: 'Çok büyük, ağır, kütlesel',
+    definition: 'Very large or heavy.',
+    ipa: '/ˈmæs.ɪv/',
     level: 'intermediate',
     wordFamily: [
-      { word: 'mass', pos: 'noun', meaning: 'k tle/y   n' },
-      { word: 'massively', pos: 'adverb', meaning: 'b y k  l  de' }
+      { word: 'massively', pos: 'adv', meaning: 'devasa düzeyde' }
     ],
     synonyms: [
-      { word: 'Huge', meaning: 'kocaman', pos: 'adj' },
-      { word: 'Gigantic', meaning: 'dev gibi', pos: 'adj' },
-      { word: 'Enormous', meaning: 'muazzam', pos: 'adj' }
+      { word: 'Enormous', meaning: 'Muazzam', pos: 'adj' },
+      { word: 'Gigantic', meaning: 'Devasa', pos: 'adj' }
     ],
     antonyms: [
-      { word: 'Tiny', meaning: 'k   c k', pos: 'adj' },
-      { word: 'Small', meaning: 'k   k', pos: 'adj' },
-      { word: 'Slight', meaning: 'hafif/az', pos: 'adj' }
+      { word: 'Tiny', meaning: 'Küçücük', pos: 'adj' },
+      { word: 'Small', meaning: 'Küçük', pos: 'adj' }
     ],
     collocations: ['massive amount', 'massive scale', 'massive project'],
     collocationMeanings: {
       'massive amount': 'muazzam miktar',
-      'massive scale': 'b y k  l ek',
+      'massive scale': 'büyük ölçek',
       'massive project': 'devasa proje'
     },
     examples: ['There are the massive columns at Luxor.'],
-    exampleTranslations: ['Luxor da devasa s tunlar var.']
+    exampleTranslations: ['Luxor’da devasa sütunlar var.']
   },
   {
     id: 'mild',
     word: 'Mild',
-    pos: 'adj',
-    meaning: 'hafif (ac  olmayan/yumu ak tat)',
-    definition: 'Not strong, severe, or extreme in flavor or effect.',
-    ipa: '/ma ld/',
+    pos: 'adjective',
+    meaning: 'Hafif (acı olmayan/yumuşak tat)',
+    definition: 'Does not have a strong taste.',
+    ipa: '/maɪld/',
     level: 'intermediate',
     wordFamily: [
-      { word: 'mildly', pos: 'adverb', meaning: 'nazik e/hafif e' },
-      { word: 'mildness', pos: 'noun', meaning: 'yumu akl k/ l manl k' }
+      { word: 'mildly', pos: 'adv', meaning: 'hafifçe' },
+      { word: 'mildness', pos: 'noun', meaning: 'hafiflik/yumuşaklık' }
     ],
     synonyms: [
-      { word: 'Gentle', meaning: 'nazik/yumu ak', pos: 'adj' },
-      { word: 'Moderate', meaning: ' l ml ', pos: 'adj' },
-      { word: 'Bland', meaning: 'tats z/yumu ak', pos: 'adj' }
+      { word: 'Gentle', meaning: 'Yumuşak', pos: 'adj' },
+      { word: 'Bland', meaning: 'Yavan/Hafif', pos: 'adj' }
     ],
     antonyms: [
-      { word: 'Strong', meaning: 'g  l /sert', pos: 'adj' },
-      { word: 'Severe', meaning: ' iddetli', pos: 'adj' },
-      { word: 'Harsh', meaning: 'sert/kaba', pos: 'adj' }
+      { word: 'Strong', meaning: 'Güçlü/Sert', pos: 'adj' },
+      { word: 'Severe', meaning: 'Şiddetli', pos: 'adj' },
+      { word: 'Spicy', meaning: 'Baharatlı/Acı', pos: 'adj' }
     ],
     collocations: ['mild weather', 'mild cheese', 'mild case of flu'],
     collocationMeanings: {
-      'mild weather': ' l man hava',
-      'mild cheese': 'yumu ak peynir',
-      'mild case of flu': 'hafif grip vakas '
+      'mild weather': 'ılıman hava',
+      'mild cheese': 'yumuşak peynir',
+      'mild case of flu': 'hafif grip vakası'
     },
     examples: ['The curry is actually quite mild.'],
-    exampleTranslations: ['K ri asl nda olduk a hafif.']
+    exampleTranslations: ['Köri aslında oldukça hafif.']
   },
   {
     id: 'misplace',
     word: 'Misplace',
     pos: 'verb',
-    meaning: 'yanl   yere koymak, yerini unutmak',
-    definition: 'To put something in the wrong place and lose it, usually temporarily.',
-    ipa: '/ m s ple s/',
+    meaning: 'Yanlış yere koymak, yerini unutmak',
+    definition: 'To put something in the wrong place and lose it, especially temporarily.',
+    ipa: '/ˌmɪsˈpleɪs/',
     level: 'intermediate',
-    wordFamily: [
-      { word: 'placement', pos: 'noun', meaning: 'yerle tirme' }
-    ],
+    wordFamily: [],
     synonyms: [
-      { word: 'Lose', meaning: 'kaybetmek', pos: 'verb' },
-      { word: 'Mislay', meaning: 'nereye koydu unu unutmak', pos: 'verb' }
+      { word: 'Lose', meaning: 'Kaybetmek', pos: 'verb' }
     ],
     antonyms: [
-      { word: 'Find', meaning: 'bulmak', pos: 'verb' },
-      { word: 'Locate', meaning: 'yerini belirlemek', pos: 'verb' }
+      { word: 'Find', meaning: 'Bulmak', pos: 'verb' }
     ],
     collocations: ['misplace keys', 'misplace trust', 'misplace glasses'],
     collocationMeanings: {
-      'misplace keys': 'anahtarlar  bir yere koyup unutmak',
-      'misplace trust': 'yanl   ki iye g venmek',
-      'misplace glasses': 'g zl   n yerini unutmak'
+      'misplace keys': 'anahtarları bir yere koyup unutmak',
+      'misplace trust': 'yanlış kişiye güvenmek',
+      'misplace glasses': 'gözlüğün yerini unutmak'
     },
     examples: ["I misplaced my umbrella and now I'm really wet!"],
-    exampleTranslations: [' emsiyemi yanl   yere koydum ve  imdi s r ls klam oldum!']
+    exampleTranslations: ['Şemsiyemi yanlış yere koydum ve şimdi sırılsıklam oldum!']
   },
   {
     id: 'misunderstand',
     word: 'Misunderstand',
     pos: 'verb',
-    meaning: 'yanl   anlamak',
-    definition: 'To fail to understand something or someone correctly.',
-    ipa: '/ m s. n.d  st nd/',
+    meaning: 'Yanlış anlamak',
+    definition: 'To not understand someone or something correctly.',
+    ipa: '/ˌmɪs.ʌn.dəˈstænd/',
     level: 'intermediate',
     wordFamily: [
-      { word: 'understanding', pos: 'noun', meaning: 'anlay  ' },
-      { word: 'misunderstanding', pos: 'noun', meaning: 'yanl   anla  lma' }
+      { word: 'misunderstanding', pos: 'noun', meaning: 'yanlış anlaşılma' }
     ],
     synonyms: [
-      { word: 'Misinterpret', meaning: 'yanl   yorumlamak', pos: 'verb' },
-      { word: 'Misconceive', meaning: 'yanl   kavramak', pos: 'verb' }
+      { word: 'Misinterpret', meaning: 'Yanlış yorumlamak', pos: 'verb' }
     ],
     antonyms: [
-      { word: 'Understand', meaning: 'anlamak', pos: 'verb' },
-      { word: 'Comprehend', meaning: 'idrak etmek', pos: 'verb' },
-      { word: 'Grasp', meaning: 'kavramak', pos: 'verb' }
+      { word: 'Understand', meaning: 'Anlamak', pos: 'verb' },
+      { word: 'Comprehend', meaning: 'Kavramak', pos: 'verb' }
     ],
     collocations: ['completely misunderstand', 'easy to misunderstand'],
     collocationMeanings: {
-      'completely misunderstand': 'tamamen yanl   anlamak',
-      'easy to misunderstand': 'anla  lmas  g  /yanl   anla  lmaya m sait'
+      'completely misunderstand': 'tamamen yanlış anlamak',
+      'easy to misunderstand': 'anlaşılması güç/yanlış anlaşılmaya müsait'
     },
     examples: ['I think he has misunderstood the problem.'],
-    exampleTranslations: ['Bence o sorunu yanl   anlad .']
+    exampleTranslations: ['Bence o sorunu yanlış anladı.']
   },
   {
     id: 'monolingual',
     word: 'Monolingual',
-    pos: 'adj',
-    meaning: 'tek dilli',
-    definition: 'Speaking or using only one language.',
-    ipa: '/ m n.   l  . w l/',
+    pos: 'adjective',
+    meaning: 'Tek dilli',
+    definition: 'Speaking, writing, or using only one language.',
+    ipa: '/ˌmɒn.əʊˈlɪŋ.ɡwəl/',
     level: 'intermediate',
-    wordFamily: [
-      { word: 'bilingual', pos: 'adj', meaning: 'iki dilli' },
-      { word: 'multilingual', pos: 'adj', meaning: ' ok dilli' }
-    ],
+    wordFamily: [],
     synonyms: [],
     antonyms: [
-      { word: 'Bilingual', meaning: 'iki dilli', pos: 'adj' },
-      { word: 'Multilingual', meaning: ' ok dilli', pos: 'adj' }
+      { word: 'Bilingual', meaning: 'İki dilli', pos: 'adj' },
+      { word: 'Multilingual', meaning: 'Çok dilli', pos: 'adj' }
     ],
     collocations: ['monolingual dictionary', 'monolingual community'],
     collocationMeanings: {
-      'monolingual dictionary': 'tek dilli s zl k',
-      'monolingual community': 'tek dil konu ulan topluluk'
+      'monolingual dictionary': 'tek dilli sözlük',
+      'monolingual community': 'tek dil konuşulan topluluk'
     },
     examples: ['She only speaks French so she is monolingual.'],
-    exampleTranslations: ['Sadece Frans zca konu uyor, bu y zden tek dilli.']
+    exampleTranslations: ['Sadece Fransızca konuşuyor, bu yüzden tek dilli.']
   },
   {
     id: 'my_minds_gone_blank',
     word: "My mind's gone blank",
     pos: 'idiom',
-    meaning: 'zihnim durdu, akl ma hi bir  ey gelmiyor',
-    definition: 'To be suddenly unable to remember something.',
-    ipa: '/ma  ma ndz   n bl  k/',
+    meaning: 'Zihnim durdu, aklıma hiçbir şey gelmiyor',
+    definition: 'To not remember something or be able to think of something.',
+    ipa: '/maɪ maɪndz ɡɒn blæŋk/',
     level: 'intermediate',
     wordFamily: [],
     synonyms: [
-      { word: 'Forget suddenly', meaning: 'aniden unutmak', pos: 'phrase' }
+      { word: 'Forget suddenly', meaning: 'Aniden unutmak', pos: 'phrase' }
     ],
     antonyms: [
-      { word: 'Remember clearly', meaning: 'net hat rlamak', pos: 'phrase' }
+      { word: 'Recall', meaning: 'Hatırlamak', pos: 'verb' }
     ],
     collocations: ["suddenly my mind's gone blank"],
     collocationMeanings: {
-      "suddenly my mind's gone blank": 'zihnim aniden durdu/bo ald '
+      "suddenly my mind's gone blank": 'zihnim aniden durdu/boşaldı'
     },
     examples: ["I can't remember his name - my mind's gone blank."],
-    exampleTranslations: ['Ad n  hat rlayam yorum - zihnim bo ald .']
+    exampleTranslations: ['Adını hatırlayamıyorum - zihnim boşaldı.']
   },
   {
     id: 'notice',
     word: 'Notice',
     pos: 'verb',
-    meaning: 'fark etmek',
-    definition: 'To become aware of something by seeing or hearing it.',
-    ipa: '/ n  .t s/',
+    meaning: 'Fark etmek',
+    definition: 'To become conscious of someone or something by seeing, hearing, or feeling them.',
+    ipa: '/ˈnəʊ.tɪs/',
     level: 'intermediate',
     wordFamily: [
       { word: 'noticeable', pos: 'adj', meaning: 'fark edilebilir' },
-      { word: 'notification', pos: 'noun', meaning: 'bildirim' }
+      { word: 'notice', pos: 'noun', meaning: 'ilan/duyuru' }
     ],
     synonyms: [
-      { word: 'Observe', meaning: 'g zlemlemek', pos: 'verb' },
-      { word: 'Perceive', meaning: 'alg lamak', pos: 'verb' },
-      { word: 'Detect', meaning: 'tespit etmek', pos: 'verb' }
+      { word: 'Observe', meaning: 'Gözlemlemek', pos: 'verb' },
+      { word: 'Spot', meaning: 'Fark etmek/Görmek', pos: 'verb' },
+      { word: 'Perceive', meaning: 'Algılamak', pos: 'verb' }
     ],
     antonyms: [
-      { word: 'Ignore', meaning: 'g rmezden gelmek', pos: 'verb' },
-      { word: 'Overlook', meaning: 'g zden ka  rmak', pos: 'verb' }
+      { word: 'Overlook', meaning: 'Gözden kaçırmak', pos: 'verb' },
+      { word: 'Ignore', meaning: 'Görmezden gelmek', pos: 'verb' }
     ],
     collocations: ['notice a difference', 'take notice', 'hardly notice'],
     collocationMeanings: {
-      'notice a difference': 'fark  g rmek',
-      'take notice': 'dikkat etmek/fark na varmak',
-      'hardly notice': 'neredeyse hi  fark etmemek'
+      'notice a difference': 'farkı görmek',
+      'take notice': 'dikkat etmek/farkına varmak',
+      'hardly notice': 'neredeyse hiç fark etmemek'
     },
     examples: ['I noticed that the door was open.'],
-    exampleTranslations: ['Kap n n a  k oldu unu fark ettim.']
+    exampleTranslations: ['Kapının açık olduğunu fark ettim.']
   },
   {
     id: 'nutty',
     word: 'Nutty',
-    pos: 'adj',
-    meaning: 'f nd kl /f st kl , kuruyemi  tad nda',
-    definition: 'Containing nuts or having the flavor of nuts.',
-    ipa: '/ n t.i/',
+    pos: 'adjective',
+    meaning: 'Fındıklı/Fıstıklı, kuruyemiş tadında',
+    definition: 'Containing nuts, or having the taste of nuts.',
+    ipa: '/ˈnʌt.i/',
     level: 'intermediate',
     wordFamily: [
-      { word: 'nut', pos: 'noun', meaning: 'f nd k/kuruyemi ' }
+      { word: 'nut', pos: 'noun', meaning: 'fındık/fıstık' }
     ],
-    synonyms: [
-      { word: 'Nut-like', meaning: 'f nd   ms ', pos: 'adj' }
-    ],
+    synonyms: [],
     antonyms: [],
     collocations: ['nutty flavor', 'nutty taste'],
     collocationMeanings: {
-      'nutty flavor': 'f nd ks  aroma',
-      'nutty taste': 'kuruyemi  tad '
+      'nutty flavor': 'fındıksı aroma',
+      'nutty taste': 'kuruyemiş tadı'
     },
     examples: ['The biscuits were nutty.'],
-    exampleTranslations: ['Bisk viler f nd kl yd .']
+    exampleTranslations: ['Bisküviler fındıklıydı.']
   },
   {
     id: 'objective_b1',
     word: 'Objective',
     pos: 'noun',
-    meaning: 'hedef, ama ',
-    definition: 'Something that you are trying to achieve.',
-    ipa: '/ b d ek.t v/',
+    meaning: 'Hedef, amaç',
+    definition: 'A large thing that you want to achieve.',
+    ipa: '/əbˈdʒek.tɪv/',
     level: 'intermediate',
     wordFamily: [
-      { word: 'objectively', pos: 'adverb', meaning: 'tarafs zca' },
-      { word: 'objectivity', pos: 'noun', meaning: 'nesnellik' }
+      { word: 'objectively', pos: 'adv', meaning: 'nesnel olarak' }
     ],
     synonyms: [
-      { word: 'Goal', meaning: 'hedef', pos: 'noun' },
-      { word: 'Aim', meaning: 'ama ', pos: 'noun' },
-      { word: 'Target', meaning: 'hedef', pos: 'noun' }
+      { word: 'Goal', meaning: 'Hedef', pos: 'noun' },
+      { word: 'Target', meaning: 'Hedef/Menzil', pos: 'noun' },
+      { word: 'Aim', meaning: 'Amaç', pos: 'noun' }
     ],
     antonyms: [],
     collocations: ['main objective', 'clear objective', 'reach an objective'],
     collocationMeanings: {
-      'main objective': 'temel ama ',
-      'clear objective': 'a  k hedef',
-      'reach an objective': 'bir hedefe ula mak'
+      'main objective': 'temel amaç',
+      'clear objective': 'açık hedef',
+      'reach an objective': 'bir hedefe ulaşmak'
     },
     examples: ["I'm not sure I understand the objective of this exercise."],
-    exampleTranslations: ['Bu egzersizin amac n  anlad   mdan emin de ilim.']
+    exampleTranslations: ['Bu egzersizin amacını anladığımdan emin değilim.']
   },
   {
     id: 'observe_b1',
     word: 'Observe',
     pos: 'verb',
-    meaning: 'g zlemlemek',
-    definition: 'To watch carefully the way something happens.',
-    ipa: '/ b z  v/',
+    meaning: 'Gözlemlemek',
+    definition: 'To notice someone doing something, or to notice something happening.',
+    ipa: '/əbˈzɜːv/',
     level: 'intermediate',
     wordFamily: [
-      { word: 'observation', pos: 'noun', meaning: 'g zlem' },
-      { word: 'observer', pos: 'noun', meaning: 'g zlemci' }
+      { word: 'observation', pos: 'noun', meaning: 'gözlem' },
+      { word: 'observer', pos: 'noun', meaning: 'gözlemci' }
     ],
     synonyms: [
-      { word: 'Monitor', meaning: 'izlemek', pos: 'verb' },
-      { word: 'Watch', meaning: 'izlemek', pos: 'verb' },
-      { word: 'Survey', meaning: 'incelemek/anket yapmak', pos: 'verb' }
+      { word: 'Watch', meaning: 'İzlemek', pos: 'verb' },
+      { word: 'Monitor', meaning: 'Takip etmek', pos: 'verb' }
     ],
     antonyms: [
-      { word: 'Ignore', meaning: 'ihmal etmek', pos: 'verb' },
-      { word: 'Disregard', meaning: ' nemsememek', pos: 'verb' }
+      { word: 'Ignore', meaning: 'Görmezden gelmek', pos: 'verb' }
     ],
     collocations: ['observe behavior', 'carefully observe', 'observe silence'],
     collocationMeanings: {
-      'observe behavior': 'davran    izlemek',
-      'carefully observe': 'dikkatlice g zlemlemek',
-      'observe silence': 'sessizli i korumak/sayg  duru unda bulunmak'
+      'observe behavior': 'davranışı izlemek',
+      'carefully observe': 'dikkatlice gözlemlemek',
+      'observe silence': 'sessizliği korumak/saygı duruşunda bulunmak'
     },
     examples: ['Similar trends may be observed in most modern societies.'],
-    exampleTranslations: ['Benzer e ilimler  o u modern toplumda g zlemlenebilir.']
+    exampleTranslations: ['Benzer eğilimler çoğu modern toplumda gözlemlenebilir.']
   },
   {
     id: 'oily',
     word: 'Oily',
-    pos: 'adj',
-    meaning: 'ya l  (kaygan/s v  ya l )',
-    definition: 'Covered with or containing oil.',
-    ipa: '/   .li/',
+    pos: 'adjective',
+    meaning: 'Yağlı (kaygan/sıvı yağlı)',
+    definition: 'Covered with oil, or containing oil.',
+    ipa: '/ˈɔɪ.li/',
     level: 'intermediate',
     wordFamily: [
-      { word: 'oil', pos: 'noun', meaning: 'ya ' },
-      { word: 'oiliness', pos: 'noun', meaning: 'ya l l k' }
+      { word: 'oil', pos: 'noun/verb', meaning: 'yağ/yağlamak' }
     ],
     synonyms: [
-      { word: 'Greasy', meaning: 'ya l ', pos: 'adj' },
-      { word: 'Slick', meaning: 'kaygan/parlak', pos: 'adj' }
+      { word: 'Greasy', meaning: 'Vıcık vıcık/Yağlı', pos: 'adj' }
     ],
     antonyms: [
-      { word: 'Dry', meaning: 'kuru', pos: 'adj' },
-      { word: 'Rough', meaning: 'p r zl ', pos: 'adj' }
+      { word: 'Dry', meaning: 'Kuru', pos: 'adj' }
     ],
     collocations: ['oily skin', 'oily hair', 'oily surface'],
     collocationMeanings: {
-      'oily skin': 'ya l  cilt',
-      'oily hair': 'ya l  sa ',
-      'oily surface': 'kaygan/ya l  y zey'
+      'oily skin': 'yağlı cilt',
+      'oily hair': 'yağlı saç',
+      'oily surface': 'kaygan/yağlı yüzey'
     },
     examples: ['Oily fish such as mackerel or herring is good for you.'],
-    exampleTranslations: ['Uskumru veya ringa bal    gibi ya l  bal klar sizin i in iyidir.']
+    exampleTranslations: ['Uskumru veya ringa balığı gibi yağlı balıklar sizin için iyidir.']
   },
   {
     id: 'overcrowded',
     word: 'Overcrowded',
-    pos: 'adj',
-    meaning: 'a  r  kalabal k',
-    definition: 'Containing too many people or things.',
-    ipa: '/   .v  kra .d d/',
+    pos: 'adjective',
+    meaning: 'Aşırı kalabalık',
+    definition: 'Containing too many people.',
+    ipa: '/ˌəʊ.vəˈkraʊ.dɪd/',
     level: 'intermediate',
     wordFamily: [
-      { word: 'crowd', pos: 'noun', meaning: 'kalabal k' },
-      { word: 'overcrowding', pos: 'noun', meaning: 'a  r  kalabal kla ma' }
+      { word: 'crowd', pos: 'noun', meaning: 'kalabalık' }
     ],
     synonyms: [
-      { word: 'Jam-packed', meaning: 't kl m t kl m', pos: 'adj' },
-      { word: 'Congested', meaning: 's k   k', pos: 'adj' }
+      { word: 'Congested', meaning: 'Sıkışık/Tıkalı', pos: 'adj' }
     ],
     antonyms: [
-      { word: 'Empty', meaning: 'bo ', pos: 'adj' },
-      { word: 'Spacious', meaning: 'geni /ferah', pos: 'adj' }
+      { word: 'Empty', meaning: 'Boş', pos: 'adj' }
     ],
     collocations: ['overcrowded housing', 'become overcrowded'],
     collocationMeanings: {
-      'overcrowded housing': 'a  r  kalabal k konutlar',
-      'become overcrowded': ' ok kalabal kla mak'
+      'overcrowded housing': 'aşırı kalabalık konutlar',
+      'become overcrowded': 'çok kalabalıklaşmak'
     },
     examples: ["This train is overcrowded - I can't find a seat."],
-    exampleTranslations: ['Bu tren a  r  kalabal k - koltuk bulam yorum.']
+    exampleTranslations: ['Bu tren aşırı kalabalık - koltuk bulamıyorum.']
   },
   {
     id: 'overpopulated',
     word: 'Overpopulated',
-    pos: 'adj',
-    meaning: 'a  r  n fuslu',
-    definition: 'Having a population that is too large for the available resources.',
-    ipa: '/   .v  p p.j .le .t d/',
+    pos: 'adjective',
+    meaning: 'Aşırı nüfuslu',
+    definition: 'A place that has too many people living in it.',
+    ipa: '/ˌəʊ.vəˈpɒp.jə.leɪ.tɪd/',
     level: 'intermediate',
     wordFamily: [
-      { word: 'population', pos: 'noun', meaning: 'n fus' },
-      { word: 'populate', pos: 'verb', meaning: 'yerle mek' }
+      { word: 'population', pos: 'noun', meaning: 'nüfus' }
     ],
-    synonyms: [
-      { word: 'Congested', meaning: 'a  r  yo un', pos: 'adj' }
-    ],
+    synonyms: [],
     antonyms: [
-      { word: 'Underpopulated', meaning: 'seyrek n fuslu', pos: 'adj' },
-      { word: 'Uninhabited', meaning: 'insans z', pos: 'adj' }
+      { word: 'Underpopulated', meaning: 'Seyrek nüfuslu', pos: 'adj' }
     ],
     collocations: ['overpopulated city', 'densely overpopulated'],
     collocationMeanings: {
-      'overpopulated city': 'a  r  n fuslu  ehir',
-      'densely overpopulated': 'yo un bir  ekilde a  r  n fusa sahip'
+      'overpopulated city': 'aşırı nüfuslu şehir',
+      'densely overpopulated': 'yoğun bir şekilde aşırı nüfusa sahip'
     },
     examples: ['This city is overpopulated.'],
-    exampleTranslations: ['Bu  ehrin n fusu  ok fazla (a  r  n fuslu).']
+    exampleTranslations: ['Bu şehrin nüfusu çok fazla (aşırı nüfuslu).']
   },
   {
     id: 'overwork',
     word: 'Overwork',
     pos: 'verb',
-    meaning: 'fazla  al  mak, a  r  y klenmek',
-    definition: 'To work too hard or too much.',
-    ipa: '/   .v  w  k/',
+    meaning: 'Fazla çalışmak, aşırı yüklenmek',
+    definition: 'To work harder than you should.',
+    ipa: '/ˌəʊ.vəˈwɜːk/',
     level: 'intermediate',
     wordFamily: [
-      { word: 'overworked', pos: 'adj', meaning: 'fazla  al  t r lm  ' }
+      { word: 'work', pos: 'noun/verb', meaning: 'iş/çalışmak' }
     ],
     synonyms: [
-      { word: 'Burnout', meaning: 't kenmek (isim)', pos: 'noun' },
-      { word: 'Strain', meaning: 'zorlamak', pos: 'verb' }
+      { word: 'Overexert', meaning: 'Kendini aşırı zorlamak', pos: 'verb' }
     ],
     antonyms: [
-      { word: 'Relax', meaning: 'rahatlamak', pos: 'verb' },
-      { word: 'Underwork', meaning: 'gere inden az  al  mak', pos: 'verb' }
+      { word: 'Underwork', meaning: 'Az çalışmak', pos: 'verb' },
+      { word: 'Relax', meaning: 'Rahatlamak', pos: 'verb' }
     ],
     collocations: ['suffer from overwork', 'exhausted from overwork'],
     collocationMeanings: {
-      'suffer from overwork': 'a  r   al  maktan mustarip olmak',
-      'exhausted from overwork': 'fazla  al  maktan bitkin d  mek'
+      'suffer from overwork': 'aşırı çalışmaktan mustarip olmak',
+      'exhausted from overwork': 'fazla çalışmaktan bitkin düşmek'
     },
     examples: ['I think people in that company are always overworked.'],
-    exampleTranslations: ['Bence o  irketteki insanlar her zaman a  r   al  t r l yor.']
+    exampleTranslations: ['Bence o şirketteki insanlar her zaman aşırı çalıştırılıyor.']
   },
   {
     id: 'pay_attention_to',
     word: 'Pay attention to',
     pos: 'phrase',
-    meaning: 'dikkat etmek, kulak vermek',
-    definition: 'To watch, listen to, or think about something carefully.',
-    ipa: '/pe    ten.  n tu /',
+    meaning: 'Dikkat etmek, kulak vermek',
+    definition: 'To listen to, watch, or consider something or someone very carefully.',
+    ipa: '/peɪ əˈten.ʃən tuː/',
     level: 'intermediate',
     wordFamily: [],
     synonyms: [
-      { word: 'Heed', meaning: 'kulak asmak', pos: 'verb' },
-      { word: 'Focus on', meaning: 'odaklanmak', pos: 'phrase' },
-      { word: 'Take notice of', meaning: 'fark etmek', pos: 'phrase' }
+      { word: 'Listen carefully', meaning: 'Dikkatle dinlemek', pos: 'phrase' },
+      { word: 'Focus on', meaning: 'Odaklanmak', pos: 'verb' }
     ],
     antonyms: [
-      { word: 'Ignore', meaning: 'g rmezden gelmek', pos: 'verb' },
-      { word: 'Disregard', meaning: 'ald rmamak', pos: 'verb' }
+      { word: 'Ignore', meaning: 'Görmezden gelmek', pos: 'verb' },
+      { word: 'Disregard', meaning: 'Dikkate almamak', pos: 'verb' }
     ],
     collocations: ['pay close attention to', 'fail to pay attention to'],
     collocationMeanings: {
-      'pay close attention to': 'yak ndan dikkat etmek',
-      'fail to pay attention to': 'dikkat etmemek/g zden ka  rmak'
+      'pay close attention to': 'yakından dikkat etmek',
+      'fail to pay attention to': 'dikkat etmemek/gözden kaçırmak'
     },
     examples: ['Pay attention to the warnings printed on the label.'],
-    exampleTranslations: ['Etikette bas l  uyar lara dikkat edin.']
+    exampleTranslations: ['Etikette basılı uyarılara dikkat edin.']
   },
   {
     id: 'peppery',
     word: 'Peppery',
-    pos: 'adj',
-    meaning: 'biberli, ac ',
-    definition: 'Tasting of or containing a lot of pepper.',
-    ipa: '/ pep. r.i/',
+    pos: 'adjective',
+    meaning: 'Biberli, acı',
+    definition: 'Flavoured with or tasting like pepper.',
+    ipa: '/ˈpep.ər.i/',
     level: 'intermediate',
     wordFamily: [
-      { word: 'pepper', pos: 'noun', meaning: 'biber' }
+      { word: 'pepper', pos: 'noun/verb', meaning: 'biber/biberlemek' }
     ],
     synonyms: [
-      { word: 'Spicy', meaning: 'baharatl ', pos: 'adj' },
-      { word: 'Piquant', meaning: 'i tah a  c  ac ', pos: 'adj' }
+      { word: 'Spicy', meaning: 'Baharatlı', pos: 'adj' },
+      { word: 'Piquant', meaning: 'İştah açıcı derecede acı', pos: 'adj' }
     ],
     antonyms: [
-      { word: 'Mild', meaning: 'hafif', pos: 'adj' },
-      { word: 'Bland', meaning: 'tats z/yumu ak', pos: 'adj' }
+      { word: 'Mild', meaning: 'Hafif', pos: 'adj' }
     ],
     collocations: ['peppery aroma', 'peppery flavor', 'peppery sauce'],
     collocationMeanings: {
       'peppery aroma': 'biberimsi koku',
-      'peppery flavor': 'ac /biberli tad',
-      'peppery sauce': 'ac /biberli sos'
+      'peppery flavor': 'acı/biberli tad',
+      'peppery sauce': 'acı/biberli sos'
     },
     examples: ['There is a peppery taste to this.'],
-    exampleTranslations: ['Bunun biberli bir tad  var.']
+    exampleTranslations: ['Bunun biberli bir tadı var.']
   },
   {
     id: 'perform',
     word: 'Perform',
     pos: 'verb',
-    meaning: 'performans sergilemek, sahne almak',
-    definition: 'To entertain an audience by singing, acting, etc.',
-    ipa: '/p  f  m/',
+    meaning: 'Performans sergilemek, sahne almak',
+    definition: 'To do something in front of an audience in order to entertain them.',
+    ipa: '/pəˈfɔːm/',
     level: 'intermediate',
     wordFamily: [
       { word: 'performance', pos: 'noun', meaning: 'performans' },
-      { word: 'performer', pos: 'noun', meaning: 'sanat  /icrac ' }
+      { word: 'performer', pos: 'noun', meaning: 'gösterici/oyuncu' }
     ],
     synonyms: [
-      { word: 'Act', meaning: 'oynamak', pos: 'verb' },
-      { word: 'Present', meaning: 'sunmak', pos: 'verb' },
-      { word: 'Execute', meaning: 'yerine getirmek', pos: 'verb' }
+      { word: 'Act', meaning: 'Rol yapmak', pos: 'verb' },
+      { word: 'Execute', meaning: 'Uygulamak/İfa etmek', pos: 'verb' },
+      { word: 'Staged', meaning: 'Sahnelemek', pos: 'verb' }
     ],
-    antonyms: [
-      { word: 'Fail', meaning: 'ba ar s z olmak', pos: 'verb' },
-      { word: 'Neglect', meaning: 'yapmamak', pos: 'verb' }
-    ],
+    antonyms: [],
     collocations: ['perform a surgery', 'perform a dance', 'perform live'],
     collocationMeanings: {
-      'perform a surgery': 'ameliyat ger ekle tirmek',
+      'perform a surgery': 'ameliyat gerçekleştirmek',
       'perform a dance': 'dans sergilemek',
-      'perform live': 'canl  performans sergilemek'
+      'perform live': 'canlı performans sergilemek'
     },
     examples: ["He's a terrible actor because he can't perform on stage at all."],
-    exampleTranslations: ['O berbat bir oyuncu   nk  sahnede hi  performans sergileyemiyor.']
+    exampleTranslations: ['O berbat bir oyuncu çünkü sahnede hiç performans sergileyemiyor.']
   },
   {
     id: 'persuade_b1',
     word: 'Persuade',
     pos: 'verb',
-    meaning: 'ikna etmek',
-    definition: 'To make someone do or believe something by giving them good reasons.',
-    ipa: '/p  swe d/',
+    meaning: 'İkna etmek',
+    definition: 'To make someone agree to do something by giving them reasons why they should.',
+    ipa: '/pəˈsweɪd/',
     level: 'intermediate',
     wordFamily: [
       { word: 'persuasion', pos: 'noun', meaning: 'ikna' },
       { word: 'persuasive', pos: 'adj', meaning: 'ikna edici' }
     ],
     synonyms: [
-      { word: 'Convince', meaning: 'ikna etmek/inand rmak', pos: 'verb' },
-      { word: 'Influence', meaning: 'etkilemek', pos: 'verb' },
-      { word: 'Cajole', meaning: 'tatl  dille ikna etmek', pos: 'verb' }
+      { word: 'Convince', meaning: 'İkna etmek/İnandırmak', pos: 'verb' },
+      { word: 'Coax', meaning: 'Tatlı dille ikna etmek', pos: 'verb' }
     ],
     antonyms: [
-      { word: 'Dissuade', meaning: 'vazge irmek', pos: 'verb' },
-      { word: 'Discourage', meaning: 'hevesini k rmak', pos: 'verb' }
+      { word: 'Dissuade', meaning: 'Vazgeçirmek', pos: 'verb' }
     ],
     collocations: ['persuade someone to do', 'try to persuade', 'manage to persuade'],
     collocationMeanings: {
       'persuade someone to do': 'birini yapmaya ikna etmek',
-      'try to persuade': 'ikna etmeye  al  mak',
-      'manage to persuade': 'ikna etmeyi ba armak'
+      'try to persuade': 'ikna etmeye çalışmak',
+      'manage to persuade': 'ikna etmeyi başarmak'
     },
     examples: ['He did finally come with us, although it took a long time to persuade him.'],
-    exampleTranslations: ['Onu ikna etmek uzun s rse de sonunda bizimle geldi.']
+    exampleTranslations: ['Onu ikna etmek uzun sürse de sonunda bizimle geldi.']
   },
   {
     id: 'phrase',
     word: 'Phrase',
     pos: 'noun',
-    meaning: 'ifade, s z  be i',
-    definition: 'A group of words often used together.',
-    ipa: '/fre z/',
+    meaning: 'İfade, söz öbeği',
+    definition: 'A group of words that are used together in a fixed expression.',
+    ipa: '/freɪz/',
     level: 'intermediate',
     wordFamily: [
-      { word: 'phrasing', pos: 'noun', meaning: 'ifade edi  tarz ' }
+      { word: 'phrasing', pos: 'noun', meaning: 'ifade ediş biçimi' }
     ],
     synonyms: [
-      { word: 'Expression', meaning: 'ifade', pos: 'noun' },
-      { word: 'Utterance', meaning: 's ylem', pos: 'noun' },
-      { word: 'Idiom', meaning: 'deyim', pos: 'noun' }
+      { word: 'Expression', meaning: 'Tabir', pos: 'noun' },
+      { word: 'Utterance', meaning: 'İfade', pos: 'noun' }
     ],
     antonyms: [],
     collocations: ['key phrase', 'common phrase', 'catchy phrase'],
     collocationMeanings: {
       'key phrase': 'anahtar ifade',
-      'common phrase': 'yayg n tabir',
-      'catchy phrase': 'ak lda kal c  ifade'
+      'common phrase': 'yaygın tabir',
+      'catchy phrase': 'akılda kalıcı ifade'
     },
     examples: ["Several of those interviewed used the phrase 'being my own boss'."],
-    exampleTranslations: ["G r   len ki ilerin bir o u 'kendi patronum olmak' ifadesini kulland ."]
+    exampleTranslations: ["Görüşülen kişilerin birçoğu 'kendi patronum olmak' ifadesini kullandı."]
   },
   {
     id: 'polluted',
     word: 'Polluted',
-    pos: 'adj',
-    meaning: 'kirli, kirlenmi ',
-    definition: 'Dirty and dangerous for people to use, especially water or air.',
-    ipa: '/p  lu .t d/',
+    pos: 'adjective',
+    meaning: 'Kirli, kirlenmiş',
+    definition: '(About air, water, or land) too dirty and dangerous for people to use in a safe way.',
+    ipa: '/pəˈluː.tɪd/',
     level: 'intermediate',
     wordFamily: [
-      { word: 'pollute', pos: 'verb', meaning: 'kirletmek' },
       { word: 'pollution', pos: 'noun', meaning: 'kirlilik' },
+      { word: 'pollute', pos: 'verb', meaning: 'kirletmek' },
       { word: 'pollutant', pos: 'noun', meaning: 'kirletici madde' }
     ],
     synonyms: [
-      { word: 'Contaminated', meaning: 'mikrop kapm  /kirli', pos: 'adj' },
-      { word: 'Dirty', meaning: 'kirli', pos: 'adj' },
-      { word: 'Foul', meaning: 'pis/kokmu ', pos: 'adj' }
+      { word: 'Contaminated', meaning: 'Atık bulaşmış', pos: 'adj' },
+      { word: 'Dirty', meaning: 'Kirli', pos: 'adj' }
     ],
     antonyms: [
-      { word: 'Clean', meaning: 'temiz', pos: 'adj' },
-      { word: 'Pure', meaning: 'saf', pos: 'adj' },
-      { word: 'Unpolluted', meaning: 'kirlenmemi ', pos: 'adj' }
+      { word: 'Pure', meaning: 'Saf/Temiz', pos: 'adj' },
+      { word: 'Clean', meaning: 'Temiz', pos: 'adj' }
     ],
     collocations: ['heavily polluted', 'polluted river', 'highly polluted'],
     collocationMeanings: {
-      'heavily polluted': 'a  r  ekilde kirlenmi ',
+      'heavily polluted': 'ağır şekilde kirlenmiş',
       'polluted river': 'kirli nehir',
-      'highly polluted': 'y ksek derecede kirli'
+      'highly polluted': 'yüksek derecede kirli'
     },
     examples: ['The oil spillage has polluted the harbour.'],
-    exampleTranslations: ['Petrol s z nt s  liman  kirletti.']
+    exampleTranslations: ['Petrol sızıntısı limanı kirletti.']
   },
   {
     id: 'possibility',
     word: 'Possibility',
     pos: 'noun',
-    meaning: 'olas l k, ihtimal',
-    definition: 'A chance that something may happen or be true.',
-    ipa: '/ p s.  b l. .ti/',
+    meaning: 'Olasılık, ihtimal',
+    definition: 'The chance that something might happen or be true.',
+    ipa: '/ˌpɒs.əˈbɪl.ə.ti/',
     level: 'intermediate',
     wordFamily: [
-      { word: 'possible', pos: 'adj', meaning: 'm mk n' },
-      { word: 'possibly', pos: 'adverb', meaning: 'belki/m mk nce' }
+      { word: 'possible', pos: 'adj', meaning: 'mümkün' },
+      { word: 'possibly', pos: 'adv', meaning: 'belki' }
     ],
     synonyms: [
-      { word: 'Chance', meaning: ' ans/ htimal', pos: 'noun' },
-      { word: 'Likelihood', meaning: 'olas l k', pos: 'noun' },
-      { word: 'Potential', meaning: 'potansiyel', pos: 'noun' }
+      { word: 'Likelihood', meaning: 'İhtimal', pos: 'noun' },
+      { word: 'Chance', meaning: 'Şans/Olasılık', pos: 'noun' }
     ],
     antonyms: [
-      { word: 'Impossibility', meaning: 'imkans zl k', pos: 'noun' },
-      { word: 'Certainty', meaning: 'kesinlik', pos: 'noun' }
+      { word: 'Impossibility', meaning: 'İmkansızlık', pos: 'noun' }
     ],
     collocations: ['strong possibility', 'real possibility', 'explore the possibility'],
     collocationMeanings: {
-      'strong possibility': 'g  l  ihtimal',
-      'real possibility': 'ger ek olas l k',
-      'explore the possibility': 'olas l    de erlendirmek/ara t rmak'
+      'strong possibility': 'güçlü ihtimal',
+      'real possibility': 'gerçek olasılık',
+      'explore the possibility': 'olasılığı değerlendirmek/araştırmak'
     },
     examples: ["Another possibility is that we'll go to Mexico instead."],
-    exampleTranslations: ['Di er bir olas l k da onun yerine Meksika ya gidecek olmam z.']
+    exampleTranslations: ['Diğer bir olasılık da onun yerine Meksika’ya gidecek olmamız.']
   },
   {
     id: 'prediction_b1',
     word: 'Prediction',
     pos: 'noun',
-    meaning: 'tahmin,  ng r ',
+    meaning: 'Tahmin, öngörü',
     definition: 'A statement about what you think will happen in the future.',
-    ipa: '/pr  d k.  n/',
+    ipa: '/prɪˈdɪk.ʃən/',
     level: 'intermediate',
     wordFamily: [
       { word: 'predict', pos: 'verb', meaning: 'tahmin etmek' },
-      { word: 'predictable', pos: 'adj', meaning: 'tahmin edilebilir' }
+      { word: 'predictable', pos: 'adj', meaning: 'öngörülebilir' }
     ],
     synonyms: [
-      { word: 'Forecast', meaning: 'hava tahmini/ ng r ', pos: 'noun' },
-      { word: 'Prognosis', meaning: 'tahmin (genelde t bbi)', pos: 'noun' },
-      { word: 'Guess', meaning: 'tahmin', pos: 'noun' }
+      { word: 'Forecast', meaning: 'Hava tahmini/Öngörü', pos: 'noun' },
+      { word: 'Prophecy', meaning: 'Kehanet', pos: 'noun' }
     ],
     antonyms: [],
     collocations: ['make a prediction', 'accurate prediction', 'prediction comes true'],
     collocationMeanings: {
       'make a prediction': 'tahminde bulunmak',
-      'accurate prediction': 'do ru/isabetli tahmin',
-      'prediction comes true': 'tahminin ger ekle mesi'
+      'accurate prediction': 'doğru/isabetli tahmin',
+      'prediction comes true': 'tahminin gerçekleşmesi'
     },
     examples: ['The government has made a prediction that unemployment will rise this year.'],
-    exampleTranslations: ['H k met, bu y l i sizli in artaca   y n nde bir  ng r de bulundu.']
+    exampleTranslations: ['Hükümet, bu yıl işsizliğin artacağı yönünde bir öngörüde bulundu.']
   },
   {
     id: 'produce',
     word: 'Produce',
     pos: 'verb',
-    meaning: ' retmek, yap mc l   n   stlenmek',
-    definition: 'To make something or to organize a film/play.',
-    ipa: '/pr  dju s/',
+    meaning: 'Üretmek, yapımcılığını üstlenmek',
+    definition: 'To make or grow something, especially in large quantities and in order to be sold OR to organise the work and money involved in making a film, play, television programme, CD etc.',
+    ipa: '/prəˈdjuːs/',
     level: 'intermediate',
     wordFamily: [
-      { word: 'product', pos: 'noun', meaning: ' r n' },
-      { word: 'production', pos: 'noun', meaning: ' retim' },
-      { word: 'producer', pos: 'noun', meaning: ' retici' }
+      { word: 'producer', pos: 'noun', meaning: 'yapımcı' },
+      { word: 'product', pos: 'noun', meaning: 'ürün' },
+      { word: 'production', pos: 'noun', meaning: 'üretim' }
     ],
     synonyms: [
-      { word: 'Create', meaning: 'yaratmak', pos: 'verb' },
-      { word: 'Manufacture', meaning: 'imal etmek', pos: 'verb' },
-      { word: 'Generate', meaning: ' retmek', pos: 'verb' }
+      { word: 'Create', meaning: 'Yaratmak', pos: 'verb' },
+      { word: 'Manufacture', meaning: 'İmal etmek', pos: 'verb' }
     ],
     antonyms: [
-      { word: 'Destroy', meaning: 'y kmak', pos: 'verb' },
-      { word: 'Consume', meaning: 't ketmek', pos: 'verb' }
+      { word: 'Destroy', meaning: 'Yok etmek', pos: 'verb' },
+      { word: 'Consume', meaning: 'Tüketmek', pos: 'verb' }
     ],
     collocations: ['produce results', 'produce goods', 'mass produce'],
     collocationMeanings: {
-      'produce results': 'sonu   retmek',
-      'produce goods': 'e ya/mal  retmek',
-      'mass produce': 'seri  retim yapmak'
+      'produce results': 'sonuç üretmek',
+      'produce goods': 'eşya/mal üretmek',
+      'mass produce': 'seri üretim yapmak'
     },
     examples: ['Steve McQueen produced and starred in the film.'],
-    exampleTranslations: ['Steve McQueen filmin hem yap mc l   n   stlendi hem de ba rol nde oynad .']
+    exampleTranslations: ['Steve McQueen filmin hem yapımcılığını üstlendi hem de başrolünde oynadı.']
   },
   {
     id: 'producer',
     word: 'Producer',
     pos: 'noun',
-    meaning: ' retici, yap mc ',
-    definition: 'A person or company that makes goods or organizes movies.',
-    ipa: '/pr  dju .s r/',
+    meaning: 'Üretici, yapımcı',
+    definition: 'A person or company that grows food or makes goods to be sold OR someone whose job is to organize the work and money involved in making a movie, play, television.',
+    ipa: '/prəˈdjuː.sər/',
     level: 'intermediate',
     wordFamily: [
-      { word: 'produce', pos: 'verb', meaning: ' retmek' },
-      { word: 'production', pos: 'noun', meaning: ' retim' }
+      { word: 'produce', pos: 'verb', meaning: 'üretmek' }
     ],
     synonyms: [
-      { word: 'Manufacturer', meaning: 'imalat  ', pos: 'noun' },
-      { word: 'Maker', meaning: 'yap c ', pos: 'noun' },
-      { word: 'Creator', meaning: 'yarat c ', pos: 'noun' }
+      { word: 'Maker', meaning: 'Yapıcı', pos: 'noun' },
+      { word: 'Manufacturer', meaning: 'İmalatçı', pos: 'noun' }
     ],
     antonyms: [
-      { word: 'Consumer', meaning: 't ketici', pos: 'noun' }
+      { word: 'Consumer', meaning: 'Tüketici', pos: 'noun' }
     ],
     collocations: ['film producer', 'executive producer', 'leading producer'],
     collocationMeanings: {
-      'film producer': 'film yap mc s ',
-      'executive producer': 'y r t c  yap mc ',
-      'leading producer': ' nde gelen  retici'
+      'film producer': 'film yapımcısı',
+      'executive producer': 'yürütücü yapımcı',
+      'leading producer': 'önde gelen üretici'
     },
     examples: ['The producer was really angry with the director.'],
-    exampleTranslations: ['Yap mc , y netmene ger ekten  ok k zm  t .']
+    exampleTranslations: ['Yapımcı, yönetmene gerçekten çok kızmıştı.']
   },
   {
     id: 'product_b1',
     word: 'Product',
     pos: 'noun',
-    meaning: ' r n',
-    definition: 'Something that is made to be sold, usually as a result of a process.',
-    ipa: '/ pr d. kt/',
+    meaning: 'Ürün',
+    definition: 'Something that is made, grown, or obtained in large quantities so that it can be sold.',
+    ipa: '/ˈprɒd.ʌkt/',
     level: 'intermediate',
     wordFamily: [
-      { word: 'produce', pos: 'verb', meaning: ' retmek' },
-      { word: 'production', pos: 'noun', meaning: ' retim' },
-      { word: 'productive', pos: 'adj', meaning: ' retken' }
+      { word: 'produce', pos: 'verb', meaning: 'üretmek' }
     ],
     synonyms: [
-      { word: 'Commodity', meaning: 'ticari mal', pos: 'noun' },
-      { word: 'Goods', meaning: 'e ya/mal', pos: 'noun' },
-      { word: 'Merchandise', meaning: 'ticari e ya', pos: 'noun' }
+      { word: 'Goods', meaning: 'Eşya/Mal', pos: 'noun' },
+      { word: 'Merchandise', meaning: 'Ticari mal', pos: 'noun' }
     ],
     antonyms: [],
     collocations: ['new product', 'high quality product', 'dairy products'],
     collocationMeanings: {
-      'new product': 'yeni  r n',
-      'high quality product': 'y ksek kaliteli  r n',
-      'dairy products': 's t  r nleri'
+      'new product': 'yeni ürün',
+      'high quality product': 'yüksek kaliteli ürün',
+      'dairy products': 'süt ürünleri'
     },
     examples: ['Consumers are becoming more suspicious of advertising claims about products that they buy.'],
-    exampleTranslations: ['T keticiler, sat n ald klar   r nlerle ilgili reklam iddialar na kar   daha   pheci yakla  yorlar.']
+    exampleTranslations: ['Tüketiciler, satın aldıkları ürünlerle ilgili reklam iddialarına karşı daha şüpheci yaklaşıyorlar.']
   },
   {
     id: 'productive',
     word: 'Productive',
-    pos: 'adj',
-    meaning: ' retken, verimli',
-    definition: 'Producing or achieving a lot.',
-    ipa: '/pr  d k.t v/',
+    pos: 'adjective',
+    meaning: 'Üretken, verimli',
+    definition: 'Working hard and producing or achieving a lot.',
+    ipa: '/prəˈdʌk.tɪv/',
     level: 'intermediate',
     wordFamily: [
-      { word: 'product', pos: 'noun', meaning: ' r n' },
-      { word: 'productivity', pos: 'noun', meaning: 'verimlilik' },
-      { word: 'productively', pos: 'adverb', meaning: 'verimli bir  ekilde' }
+      { word: 'production', pos: 'noun', meaning: 'üretim' },
+      { word: 'productively', pos: 'adv', meaning: 'verimli şekilde' }
     ],
     synonyms: [
-      { word: 'Fruitful', meaning: 'bereketli/verimli', pos: 'adj' },
-      { word: 'Efficient', meaning: 'etkili/verimli', pos: 'adj' },
-      { word: 'Prolific', meaning: ' ok eser veren', pos: 'adj' }
+      { word: 'Fruitful', meaning: 'Bereketli/Verimli', pos: 'adj' },
+      { word: 'Efficient', meaning: 'Verimli', pos: 'adj' }
     ],
     antonyms: [
-      { word: 'Unproductive', meaning: 'verimsiz', pos: 'adj' },
-      { word: 'Inefficient', meaning: 'etkisiz', pos: 'adj' },
-      { word: 'Idle', meaning: 'aylak/bo ', pos: 'adj' }
+      { word: 'Unproductive', meaning: 'Verimsiz', pos: 'adj' },
+      { word: 'Lazy', meaning: 'Tembel', pos: 'adj' }
     ],
     collocations: ['highly productive', 'productive meeting', 'productive afternoon'],
     collocationMeanings: {
       'highly productive': 'son derece verimli',
-      'productive meeting': 'verimli toplant ',
-      'productive afternoon': ' retken ge en   leden sonra'
+      'productive meeting': 'verimli toplantı',
+      'productive afternoon': 'üretken geçen öğleden sonra'
     },
     examples: ['Samuel is more productive in the morning.'],
-    exampleTranslations: ['Samuel sabahlar  daha verimlidir.']
+    exampleTranslations: ['Samuel sabahları daha verimlidir.']
   },
   {
     id: 'proud_of',
     word: 'Proud of',
     pos: 'phrase',
-    meaning: 'gurur duymak',
-    definition: 'Feeling deep pleasure or satisfaction as a result of achievements.',
-    ipa: '/pra d  v/',
+    meaning: 'Gurur duymak',
+    definition: 'Feeling happy about your achievements, your possessions, or people who you are connected with.',
+    ipa: '/praʊd əv/',
     level: 'intermediate',
     wordFamily: [
-      { word: 'pride', pos: 'noun', meaning: 'gurur/onur' },
-      { word: 'proudly', pos: 'adverb', meaning: 'gururla' }
+      { word: 'pride', pos: 'noun', meaning: 'gurur' },
+      { word: 'proudly', pos: 'adv', meaning: 'gururla' }
     ],
     synonyms: [
-      { word: 'Pleased with', meaning: 'memnun olmak', pos: 'phrase' },
-      { word: 'Satisfied', meaning: 'tatmin olmu ', pos: 'adj' }
+      { word: 'Honoured', meaning: 'Onurlanmış', pos: 'adj' }
     ],
     antonyms: [
-      { word: 'Ashamed of', meaning: 'utanmak', pos: 'phrase' },
-      { word: 'Humiliated', meaning: 'a a  lanm  ', pos: 'adj' }
+      { word: 'Ashamed of', meaning: 'Utanç duymak', pos: 'phrase' }
     ],
     collocations: ['immensely proud of', 'make someone proud of'],
     collocationMeanings: {
-      'immensely proud of': 'fazlas yla gurur duymak',
+      'immensely proud of': 'fazlasıyla gurur duymak',
       'make someone proud of': 'birini kendisiyle gurur duyurmak'
     },
     examples: ['He was very proud of himself for winning.'],
-    exampleTranslations: ['Kazand    i in kendisiyle  ok gurur duyuyordu.']
+    exampleTranslations: ['Kazandığı için kendisiyle çok gurur duyuyordu.']
   },
   {
     id: 'put_a_plan_into_action',
     word: 'Put a plan into action',
     pos: 'phrase',
-    meaning: 'plan  uygulamaya koymak, eyleme d kmek',
-    definition: 'To start doing something that has been planned.',
-    ipa: '/p t   pl n   n.tu   k.  n/',
+    meaning: 'Planı uygulamaya koymak, eyleme dökmek',
+    definition: 'To start using an idea to succeed in doing something.',
+    ipa: '/pʊt ə plæn ˈɪn.tu ˈæk.ʃən/',
     level: 'intermediate',
     wordFamily: [],
     synonyms: [
-      { word: 'Implement', meaning: 'uygulamak', pos: 'verb' },
-      { word: 'Execute', meaning: 'y r tmek', pos: 'verb' },
-      { word: 'Carry out', meaning: 'ger ekle tirmek', pos: 'phrasal verb' }
+      { word: 'Implement', meaning: 'Uygulamak', pos: 'verb' },
+      { word: 'Execute', meaning: 'Yürütmek/Gerçekleştirmek', pos: 'verb' }
     ],
     antonyms: [
-      { word: 'Cancel', meaning: 'iptal etmek', pos: 'verb' },
-      { word: 'Postpone', meaning: 'ertelemek', pos: 'verb' }
+      { word: 'Halt', meaning: 'Durdurmak', pos: 'verb' },
+      { word: 'Postpone', meaning: 'Ertelemek', pos: 'verb' }
     ],
     collocations: ['finally put a plan into action', 'ready to put a plan into action'],
     collocationMeanings: {
-      'finally put a plan into action': 'sonunda bir plan  uygulamaya koymak',
-      'ready to put a plan into action': 'bir plan  uygulamaya koymaya haz r olmak'
+      'finally put a plan into action': 'sonunda bir planı uygulamaya koymak',
+      'ready to put a plan into action': 'bir planı uygulamaya koymaya hazır olmak'
     },
     examples: ['We are ready to put our plan into action.'],
-    exampleTranslations: ['Plan m z  eyleme d kmeye haz r z.']
+    exampleTranslations: ['Planımızı eyleme dökmeye hazırız.']
   },
   {
     id: 'put_away',
     word: 'Put away',
     pos: 'phrasal verb',
-    meaning: 'yerine koymak, kald rmak',
-    definition: 'To put something in the place where it is usually kept.',
-    ipa: '/p t   we /',
+    meaning: 'Yerine koymak, kaldırmak',
+    definition: 'To put something in the place where you usually keep it when you are not using it.',
+    ipa: '/pʊt əˈweɪ/',
     level: 'intermediate',
     wordFamily: [],
     synonyms: [
-      { word: 'Store', meaning: 'depolamak/saklamak', pos: 'verb' },
-      { word: 'Tidy up', meaning: 'toparlamak', pos: 'phrasal verb' },
-      { word: 'Discard', meaning: 'atmak/kald rmak', pos: 'verb' }
+      { word: 'Store', meaning: 'Depolamak/Saklamak', pos: 'verb' },
+      { word: 'Tidy up', meaning: 'Toparlamak', pos: 'phrasal verb' }
     ],
     antonyms: [
-      { word: 'Take out', meaning: '  karmak', pos: 'phrasal verb' }
+      { word: 'Take out', meaning: 'Çıkarmak', pos: 'phrasal verb' },
+      { word: 'Mess up', meaning: 'Dağıtmak', pos: 'phrasal verb' }
     ],
     collocations: ['put away toys', 'put away laundry', 'put away dishes'],
     collocationMeanings: {
-      'put away toys': 'oyuncaklar  kald rmak',
-      'put away laundry': ' ama  rlar  yerle tirmek',
-      'put away dishes': 'bula  klar  kald rmak'
+      'put away toys': 'oyuncakları kaldırmak',
+      'put away laundry': 'çamaşırları yerleştirmek',
+      'put away dishes': 'bulaşıkları kaldırmak'
     },
     examples: ['He put the notebook away and stood up.'],
-    exampleTranslations: ['Not defterini yerine kald rd  ve aya a kalkt .']
+    exampleTranslations: ['Not defterini yerine kaldırdı ve ayağa kalktı.']
   },
-
   {
     id: 'put_my_mind_to',
     word: 'Put my mind to',
     pos: 'idiom',
-    meaning: 'kafaya koymak, kendini vermek',
-    definition: "To decide to do something and work hard at it.",
-    ipa: '/p t ma  ma nd tu /',
+    meaning: 'Kafaya koymak, kendini vermek',
+    definition: "To direct all one's attention to achieving something.",
+    ipa: '/pʊt maɪ maɪnd tuː/',
     level: 'intermediate',
     wordFamily: [],
     synonyms: [
-      { word: 'Focus on', meaning: 'odaklanmak', pos: 'phrase' },
-      { word: 'Devote oneself', meaning: 'kendini adamak', pos: 'phrase' },
-      { word: 'Apply oneself', meaning: 'canla ba la  al  mak', pos: 'phrase' }
+      { word: 'Focus on', meaning: 'Odaklanmak', pos: 'verb' },
+      { word: 'Concentrate on', meaning: 'Yoğunlaşmak', pos: 'verb' }
     ],
     antonyms: [
-      { word: 'Neglect', meaning: 'ihmal etmek', pos: 'verb' }
+      { word: 'Give up', meaning: 'Vazgeçmek', pos: 'phrasal verb' }
     ],
     collocations: ['put your mind to the task', 'really put your mind to it'],
     collocationMeanings: {
-      'put your mind to the task': 'kendini i e vermek',
-      'really put your mind to it': 'ger ekten kafaya koymak'
+      'put your mind to the task': 'kendini işe vermek',
+      'really put your mind to it': 'gerçekten kafaya koymak'
     },
     examples: ["She'd have made an excellent dancer, if she'd put her mind to it."],
-    exampleTranslations: ['E er kafas na koysayd  (kendini verseydi) m kemmel bir dans   olurdu.']
+    exampleTranslations: ['Eğer kafasına koysaydı (kendini verseydi) mükemmel bir dansçı olurdu.']
   },
   {
     id: 'put_off',
     word: 'Put off',
     pos: 'phrasal verb',
-    meaning: 'ertelemek',
-    definition: 'To decide or arrange to do something at a later time.',
-    ipa: '/p t  f/',
+    meaning: 'Ertelemek',
+    definition: 'To decide to do something later, not now.',
+    ipa: '/pʊt ɒf/',
     level: 'intermediate',
     wordFamily: [],
     synonyms: [
-      { word: 'Postpone', meaning: 'ertelemek', pos: 'verb' },
-      { word: 'Delay', meaning: 'geciktirmek', pos: 'verb' },
-      { word: 'Defer', meaning: 'ertelemek/geri b rakmak', pos: 'verb' }
+      { word: 'Postpone', meaning: 'Ertelemek', pos: 'verb' },
+      { word: 'Delay', meaning: 'Geciktirmek', pos: 'verb' }
     ],
     antonyms: [
-      { word: 'Advance', meaning: ' ne  ekmek', pos: 'verb' },
-      { word: 'Expedite', meaning: 'h zland rmak', pos: 'verb' }
+      { word: 'Advance', meaning: 'Öne çekmek', pos: 'verb' },
+      { word: 'Rush', meaning: 'Acele ettirmek', pos: 'verb' }
     ],
     collocations: ['put off a meeting', 'put off a decision', 'keep putting off'],
     collocationMeanings: {
-      'put off a meeting': 'toplant y  ertelemek',
-      'put off a decision': 'bir karar  ertelemek',
+      'put off a meeting': 'toplantıyı ertelemek',
+      'put off a decision': 'bir kararı ertelemek',
       'keep putting off': 'erteleyip durmak'
     },
     examples: ["You can't put the decision off any longer."],
-    exampleTranslations: ['Karar  daha fazla erteleyemezsin.']
+    exampleTranslations: ['Kararı daha fazla erteleyemezsin.']
   },
   {
     id: 'quit_a_bad_habit',
     word: 'Quit a bad habit',
     pos: 'phrase',
-    meaning: 'k t  bir al  kanl    b rakmak',
-    definition: 'To stop doing something that is harmful or unhealthy.',
-    ipa: '/kw t   b d  h b. t/',
+    meaning: 'Kötü bir alışkanlığı bırakmak',
+    definition: 'To stop doing something that is not good for you.',
+    ipa: '/kwɪt ə bæd ˈhæb.ɪt/',
     level: 'intermediate',
     wordFamily: [],
     synonyms: [
-      { word: 'Abandon a habit', meaning: 'al  kanl    terk etmek', pos: 'phrase' },
-      { word: 'Break a habit', meaning: 'al  kanl    k rmak', pos: 'phrase' }
+      { word: 'Break a habit', meaning: 'Alışkanlığı kırmak', pos: 'phrase' }
     ],
     antonyms: [
-      { word: 'Start a habit', meaning: 'al  kanl k edinmek', pos: 'phrase' },
-      { word: 'Develop a habit', meaning: 'al  kanl k geli tirmek', pos: 'phrase' }
+      { word: 'Start a habit', meaning: 'Alışkanlık edinmek', pos: 'phrase' }
     ],
     collocations: ['try to quit a bad habit', 'struggle to quit a bad habit'],
     collocationMeanings: {
-      'try to quit a bad habit': 'k t  bir al  kanl    b rakmaya  al  mak',
-      'struggle to quit a bad habit': 'k t  bir al  kanl    b rakmakta zorlanmak'
+      'try to quit a bad habit': 'kötü bir alışkanlığı bırakmaya çalışmak',
+      'struggle to quit a bad habit': 'kötü bir alışkanlığı bırakmakta zorlanmak'
     },
     examples: ['You should quit biting your nails.'],
-    exampleTranslations: ['T rnaklar n  yemeyi b rakmal s n.']
+    exampleTranslations: ['Tırnaklarını yemeyi bırakmalısın.']
   },
   {
     id: 'reach_a_target_b1',
     word: 'Reach a target',
     pos: 'phrase',
-    meaning: 'hedefe ula mak',
-    definition: 'To achieve a specific goal or amount.',
-    ipa: '/ri t     t  .  t/',
+    meaning: 'Hedefe ulaşmak',
+    definition: 'To achieve something.',
+    ipa: '/riːtʃ ə ˈtɑː.ɡɪt/',
     level: 'intermediate',
     wordFamily: [],
     synonyms: [
-      { word: 'Achieve a goal', meaning: 'hedefe ula mak', pos: 'phrase' },
-      { word: 'Hit a target', meaning: 'hedefi vurmak/tutturmak', pos: 'phrase' },
-      { word: 'Attain', meaning: 'elde etmek', pos: 'verb' }
+      { word: 'Achieve a goal', meaning: 'Hedefi gerçekleştirmek', pos: 'phrase' }
     ],
     antonyms: [
-      { word: 'Fail', meaning: 'ba ar s z olmak', pos: 'verb' },
-      { word: 'Miss a target', meaning: 'hedefi  skalamak', pos: 'phrase' }
+      { word: 'Fail', meaning: 'Başarısız olmak', pos: 'verb' }
     ],
     collocations: ['easily reach a target', 'fail to reach a target'],
     collocationMeanings: {
-      'easily reach a target': 'hedefe kolayca ula mak',
-      'fail to reach a target': 'hedefe ula amamak'
+      'easily reach a target': 'hedefe kolayca ulaşmak',
+      'fail to reach a target': 'hedefe ulaşamamak'
     },
     examples: ['I aim to reach the target by March.'],
-    exampleTranslations: ['Mart ay na kadar hedefe ula may  hedefliyorum.']
+    exampleTranslations: ['Mart ayına kadar hedefe ulaşmayı hedefliyorum.']
   },
   {
     id: 'rebuild',
     word: 'Rebuild',
     pos: 'verb',
-    meaning: 'yeniden in a etmek',
+    meaning: 'Yeniden inşa etmek',
     definition: 'To build something again after it has been damaged or destroyed.',
-    ipa: '/ ri  b ld/',
+    ipa: '/ˌriːˈbɪld/',
     level: 'intermediate',
     wordFamily: [
-      { word: 'build', pos: 'verb', meaning: 'in a etmek' },
-      { word: 'builder', pos: 'noun', meaning: 'in aat  ' }
+      { word: 'build', pos: 'verb', meaning: 'inşa etmek' }
     ],
     synonyms: [
-      { word: 'Reconstruct', meaning: 'yeniden kurmak', pos: 'verb' },
-      { word: 'Restore', meaning: 'onarmak/restore etmek', pos: 'verb' },
-      { word: 'Renovate', meaning: 'yenilemek', pos: 'verb' }
+      { word: 'Reconstruct', meaning: 'Yeniden kurmak', pos: 'verb' },
+      { word: 'Restore', meaning: 'Restore etmek', pos: 'verb' }
     ],
     antonyms: [
-      { word: 'Demolish', meaning: 'y kmak', pos: 'verb' },
-      { word: 'Destroy', meaning: 'yok etmek', pos: 'verb' }
+      { word: 'Destroy', meaning: 'Yıkmak', pos: 'verb' },
+      { word: 'Demolish', meaning: 'Tahrip etmek', pos: 'verb' }
     ],
     collocations: ['rebuild trust', 'rebuild a life', 'rebuild a city'],
     collocationMeanings: {
-      'rebuild trust': 'g veni yeniden tesis etmek',
-      'rebuild a life': 'hayat  yeniden kurmak',
-      'rebuild a city': 'bir  ehri yeniden in a etmek'
+      'rebuild trust': 'güveni yeniden tesis etmek',
+      'rebuild a life': 'hayatı yeniden kurmak',
+      'rebuild a city': 'bir şehri yeniden inşa etmek'
     },
     examples: ['They had to rebuild the theatre after the fire.'],
-    exampleTranslations: ['Yang ndan sonra tiyatroyu yeniden in a etmek zorunda kald lar.']
+    exampleTranslations: ['Yangından sonra tiyatroyu yeniden inşa etmek zorunda kaldılar.']
   },
   {
     id: 'recognise',
     word: 'Recognise',
     pos: 'verb',
-    meaning: 'tan mak (daha  nce g rd    birini/ eyi)',
-    definition: 'To identify someone or something seen before.',
-    ipa: '/ rek.  .na z/',
+    meaning: 'Tanımak (daha önce gördüğü birini/şeyi)',
+    definition: 'To know who the person is or what the thing is that you are seeing, hearing etc. because you have seen, heard etc. them before.',
+    ipa: '/ˈrek.əɡ.naɪz/',
     level: 'intermediate',
     wordFamily: [
-      { word: 'recognition', pos: 'noun', meaning: 'tan ma/onay' },
-      { word: 'recognizable', pos: 'adj', meaning: 'tan nabilir' }
+      { word: 'recognition', pos: 'noun', meaning: 'tanınma/doğrulama' },
+      { word: 'recognizable', pos: 'adj', meaning: 'tanınabilir' }
     ],
     synonyms: [
-      { word: 'Identify', meaning: 'tan mlamak', pos: 'verb' },
-      { word: 'Know', meaning: 'bilmek/tan mak', pos: 'verb' }
+      { word: 'Identify', meaning: 'Tanımlamak/Teşhis etmek', pos: 'verb' }
     ],
     antonyms: [
-      { word: 'Ignore', meaning: 'g rmezden gelmek', pos: 'verb' },
-      { word: 'Overlook', meaning: 'g zden ka  rmak', pos: 'verb' }
+      { word: 'Forget', meaning: 'Unutmak', pos: 'verb' }
     ],
     collocations: ['instantly recognize', 'fail to recognize', 'recognize a voice'],
     collocationMeanings: {
-      'instantly recognize': 'an nda tan mak',
-      'fail to recognize': 'tan yamamak',
-      'recognize a voice': 'bir sesi tan mak'
+      'instantly recognize': 'anında tanımak',
+      'fail to recognize': 'tanıyamamak',
+      'recognize a voice': 'bir sesi tanımak'
     },
     examples: ['I hardly recognized you with a beard!'],
-    exampleTranslations: ['Seni sakalla neredeyse tan yamad m!']
+    exampleTranslations: ['Seni sakalla neredeyse tanıyamadım!']
   },
   {
     id: 'recording_studio',
     word: 'Recording studio',
     pos: 'noun',
-    meaning: 'kay t st dyosu',
-    definition: 'A room with special equipment where sound or music is recorded.',
-    ipa: '/r  k  .d    stju .di.  /',
+    meaning: 'Kayıt stüdyosu',
+    definition: 'A place where music or speech can be recorded.',
+    ipa: '/rɪˈkɔː.dɪŋ ˈstjuː.di.əʊ/',
     level: 'intermediate',
     wordFamily: [
-      { word: 'record', pos: 'verb/noun', meaning: 'kaydetmek/kay t' }
+      { word: 'record', pos: 'verb', meaning: 'kaydetmek' }
     ],
     synonyms: [
-      { word: 'Studio', meaning: 'st dyo', pos: 'noun' }
+      { word: 'Sound studio', meaning: 'Ses stüdyosu', pos: 'noun' }
     ],
     antonyms: [],
     collocations: ['professional recording studio', 'book a recording studio'],
     collocationMeanings: {
-      'professional recording studio': 'profesyonel kay t st dyosu',
-      'book a recording studio': 'kay t st dyosu kiralamak'
+      'professional recording studio': 'profesyonel kayıt stüdyosu',
+      'book a recording studio': 'kayıt stüdyosu kiralamak/rezerve etmek'
     },
     examples: ['They were in the recording studio all day.'],
-    exampleTranslations: ['B t n g n kay t st dyosundayd lar.']
+    exampleTranslations: ['Bütün gün kayıt stüdyosundaydılar.']
   },
   {
     id: 'recycle',
     word: 'Recycle',
     pos: 'verb',
-    meaning: 'geri d n  t rmek',
-    definition: 'To treat things that have already been used so that they can be used again.',
-    ipa: '/ ri  sa .k l/',
+    meaning: 'Geri dönüştürmek',
+    definition: 'To change waste materials such as newspapers and bottles so that they can be used again.',
+    ipa: '/ˌriːˈsaɪ.kəl/',
     level: 'intermediate',
     wordFamily: [
-      { word: 'recycling', pos: 'noun', meaning: 'geri d n   m' },
-      { word: 'recyclable', pos: 'adj', meaning: 'geri d n  t r lebilir' }
+      { word: 'recycling', pos: 'noun', meaning: 'geri dönüşüm' },
+      { word: 'recyclable', pos: 'adj', meaning: 'geri dönüştürülebilir' }
     ],
     synonyms: [
-      { word: 'Reprocess', meaning: 'yeniden i lemek', pos: 'verb' },
-      { word: 'Reclaim', meaning: 'geri kazanmak', pos: 'verb' }
+      { word: 'Reuse', meaning: 'Yeniden kullanmak', pos: 'verb' }
     ],
     antonyms: [
-      { word: 'Waste', meaning: 'israf etmek/atmak', pos: 'verb' }
+      { word: 'Discard', meaning: 'Atmak', pos: 'verb' }
     ],
     collocations: ['recycle plastic', 'recycle paper', 'encourage to recycle'],
     collocationMeanings: {
-      'recycle plastic': 'plasti i geri d n  t rmek',
-      'recycle paper': 'ka  d  geri d n  t rmek',
-      'encourage to recycle': 'geri d n   me te vik etmek'
+      'recycle plastic': 'plastiği geri dönüştürmek',
+      'recycle paper': 'kağıdı geri dönüştürmek',
+      'encourage to recycle': 'geri dönüşüme teşvik etmek'
     },
     examples: ['Japan recycles 40% of its waste.'],
-    exampleTranslations: ['Japonya at klar n n %40  n  geri d n  t r yor.']
+    exampleTranslations: ['Japonya atıklarının %40’ını geri dönüştürüyor.']
   },
   {
     id: 'reduce_b1',
     word: 'Reduce',
     pos: 'verb',
-    meaning: 'azaltmak, d   rmek',
-    definition: 'To make something smaller in size, amount, or importance.',
-    ipa: '/r  dju s/',
+    meaning: 'Azaltmak, düşürmek',
+    definition: 'To make something smaller or less in size, amount, importance etc.',
+    ipa: '/rɪˈdjuːs/',
     level: 'intermediate',
     wordFamily: [
-      { word: 'reduction', pos: 'noun', meaning: 'azalma' },
-      { word: 'reducible', pos: 'adj', meaning: 'azalt labilir' }
+      { word: 'reduction', pos: 'noun', meaning: 'azalma' }
     ],
     synonyms: [
-      { word: 'Decrease', meaning: 'azaltmak', pos: 'verb' },
-      { word: 'Lessen', meaning: 'hafifletmek/eksiltmek', pos: 'verb' },
-      { word: 'Diminish', meaning: 'azaltmak/eksiltmek', pos: 'verb' }
+      { word: 'Decrease', meaning: 'Eksiltmek', pos: 'verb' },
+      { word: 'Diminish', meaning: 'Küçültmek/Eksiltmek', pos: 'verb' }
     ],
     antonyms: [
-      { word: 'Increase', meaning: 'art rmak', pos: 'verb' },
-      { word: 'Extend', meaning: 'uzatmak/art rmak', pos: 'verb' },
-      { word: 'Enlarge', meaning: 'b y tmek', pos: 'verb' }
+      { word: 'Increase', meaning: 'Artırmak', pos: 'verb' },
+      { word: 'Boost', meaning: 'Yükseltmek', pos: 'verb' }
     ],
     collocations: ['significantly reduce', 'reduce costs', 'reduce risks'],
     collocationMeanings: {
-      'significantly reduce': ' nemli  l  de azaltmak',
-      'reduce costs': 'maliyetleri d   rmek',
+      'significantly reduce': 'önemli ölçüde azaltmak',
+      'reduce costs': 'maliyetleri düşürmek',
       'reduce risks': 'riskleri azaltmak'
     },
     examples: ['Try to reduce the amount of fat in your diet.'],
-    exampleTranslations: ['Diyetinizdeki ya  miktar n  azaltmaya  al   n.']
+    exampleTranslations: ['Diyetinizdeki yağ miktarını azaltmaya çalışın.']
   },
   {
     id: 'refuse',
     word: 'Refuse',
     pos: 'verb',
-    meaning: 'reddetmek, geri  evirmek',
-    definition: 'To say that you will not do or accept something.',
-    ipa: '/r  fju z/',
+    meaning: 'Reddetmek, geri çevirmek',
+    definition: 'To say you will not do something that someone has asked you to do.',
+    ipa: '/rɪˈfjuːz/',
     level: 'intermediate',
     wordFamily: [
       { word: 'refusal', pos: 'noun', meaning: 'ret' }
     ],
     synonyms: [
-      { word: 'Reject', meaning: 'reddetmek', pos: 'verb' },
-      { word: 'Decline', meaning: 'nazik e reddetmek', pos: 'verb' },
-      { word: 'Deny', meaning: 'geri  evirmek/inkar etmek', pos: 'verb' }
+      { word: 'Reject', meaning: 'Geri çevirmek', pos: 'verb' },
+      { word: 'Decline', meaning: 'Kibarca reddetmek', pos: 'verb' }
     ],
     antonyms: [
-      { word: 'Accept', meaning: 'kabul etmek', pos: 'verb' },
-      { word: 'Agree', meaning: 'onaylamak', pos: 'verb' },
-      { word: 'Consent', meaning: 'raz  olmak', pos: 'verb' }
+      { word: 'Accept', meaning: 'Kabul etmek', pos: 'verb' },
+      { word: 'Agree', meaning: 'Onaylamak', pos: 'verb' }
     ],
     collocations: ['refuse to accept', 'flatly refuse', 'refuse an offer'],
     collocationMeanings: {
       'refuse to accept': 'kabul etmeyi reddetmek',
       'flatly refuse': 'kesin bir dille reddetmek',
-      'refuse an offer': 'bir teklifi geri  evirmek'
+      'refuse an offer': 'bir teklifi geri çevirmek'
     },
     examples: ['Mum asked him to apologize, but he refused.'],
-    exampleTranslations: ['Annem  z r dilemesini istedi ama o reddetti.']
+    exampleTranslations: ['Annem özür dilemesini istedi ama o reddetti.']
   },
   {
     id: 'regret_b1',
     word: 'Regret',
     pos: 'verb',
-    meaning: 'pi man olmak,  z lmek',
-    definition: 'To feel sorry or sad about something that has happened or that you have done.',
-    ipa: '/r   ret/',
+    meaning: 'Pişman olmak, üzülmek',
+    definition: 'To feel sorry or sad that something has happened.',
+    ipa: '/rɪˈɡret/',
     level: 'intermediate',
     wordFamily: [
-      { word: 'regretful', pos: 'adj', meaning: 'pi manl k duyan' },
-      { word: 'regrettable', pos: 'adj', meaning: ' z c /pi manl k verici' }
+      { word: 'regretful', pos: 'adj', meaning: 'pişmanlık dolu' },
+      { word: 'regrettable', pos: 'adj', meaning: 'üzücü/pişmanlık verici' }
     ],
     synonyms: [
-      { word: 'Rue', meaning: 'pi manl k duymak', pos: 'verb' },
-      { word: 'Be sorry', meaning: ' zg n olmak', pos: 'phrase' },
-      { word: 'Lament', meaning: 'esef etmek', pos: 'verb' }
+      { word: 'Rrue', meaning: 'Pişmanlık duymak', pos: 'verb' },
+      { word: 'Be sorry', meaning: 'Üzgün olmak', pos: 'phrase' }
     ],
-    antonyms: [
-      { word: 'Celebrate', meaning: 'kutlamak', pos: 'verb' },
-      { word: 'Rejoice', meaning: 'sevinmek', pos: 'verb' }
-    ],
+    antonyms: [],
     collocations: ['deeply regret', 'express regret', 'bitterly regret'],
     collocationMeanings: {
-      'deeply regret': 'derin pi manl k duymak',
-      'express regret': 'pi manl   n  dile getirmek',
-      'bitterly regret': 'ac  bir  ekilde pi man olmak'
+      'deeply regret': 'derin pişmanlık duymak',
+      'express regret': 'pişmanlığını dile getirmek',
+      'bitterly regret': 'acı bir şekilde pişman olmak'
     },
     examples: ['We regret any inconvenience caused by the delay.'],
-    exampleTranslations: ['Gecikmenin neden oldu u her t rl  rahats zl ktan dolay   zg n z.']
+    exampleTranslations: ['Gecikmenin neden olduğu her türlü rahatsızlıktan dolayı üzgünüz.']
   },
   {
     id: 'rehearsal_room',
     word: 'Rehearsal room',
     pos: 'noun',
-    meaning: 'prova odas ',
-    definition: 'A place to practice for a performance.',
-    ipa: '/r  h  .s l ru m/',
+    meaning: 'Prova odası',
+    definition: 'A place to practise for a performance of a play, concert, opera etc.',
+    ipa: '/rɪˈhɜː.səl ruːm/',
     level: 'intermediate',
     wordFamily: [
       { word: 'rehearse', pos: 'verb', meaning: 'prova yapmak' }
     ],
     synonyms: [
-      { word: 'Practice space', meaning: 'pratik alan ', pos: 'noun' }
+      { word: 'Practice room', meaning: 'Pratik odası', pos: 'noun' }
     ],
     antonyms: [],
     collocations: ['book a rehearsal room', 'noisy rehearsal room'],
     collocationMeanings: {
-      'book a rehearsal room': 'prova odas  rezerve etmek',
-      'noisy rehearsal room': 'g r lt l  prova odas '
+      'book a rehearsal room': 'prova odası rezerve etmek',
+      'noisy rehearsal room': 'gürültülü prova odası'
     },
     examples: ['We need to find a rehearsal room to practise.'],
-    exampleTranslations: ['Pratik yapmak i in bir prova odas  bulmam z gerekiyor.']
+    exampleTranslations: ['Pratik yapmak için bir prova odası bulmamız gerekiyor.']
   },
   {
     id: 'rehearse',
     word: 'Rehearse',
     pos: 'verb',
-    meaning: 'prova yapmak',
-    definition: 'To practice a play, concert, or opera before a performance.',
-    ipa: '/r  h  s/',
+    meaning: 'Prova yapmak',
+    definition: 'To practise a play, concert, opera etc. before giving a performance.',
+    ipa: '/rɪˈhɜːs/',
     level: 'intermediate',
     wordFamily: [
       { word: 'rehearsal', pos: 'noun', meaning: 'prova' }
     ],
     synonyms: [
-      { word: 'Practice', meaning: 'pratik yapmak', pos: 'verb' },
-      { word: 'Prepare', meaning: 'haz rlanmak', pos: 'verb' },
-      { word: 'Drill', meaning: 'tekrarlamak/ al  mak', pos: 'verb' }
+      { word: 'Practice', meaning: 'Pratik yapmak', pos: 'verb' }
     ],
     antonyms: [],
     collocations: ['rehearse a play', 'rehearse a song', 'constantly rehearse'],
     collocationMeanings: {
-      'rehearse a play': 'oyun provas  yapmak',
-      'rehearse a song': ' ark  provas  yapmak',
-      'constantly rehearse': 's rekli prova yapmak'
+      'rehearse a play': 'oyun provası yapmak',
+      'rehearse a song': 'şarkı provası yapmak',
+      'constantly rehearse': 'sürekli prova yapmak'
     },
     examples: ["We've been rehearsing for weeks."],
-    exampleTranslations: ['Haftalard r prova yap yoruz.']
+    exampleTranslations: ['Haftalardır prova yapıyoruz.']
   },
   {
     id: 'relative',
     word: 'Relative',
     pos: 'noun',
-    meaning: 'akraba',
-    definition: 'A member of your family.',
-    ipa: '/ rel. .t v/',
+    meaning: 'Akraba',
+    definition: 'Members of your family, especially ones who do not live with you, for example a grandparent or cousin.',
+    ipa: '/ˈrel.ə.tɪv/',
     level: 'intermediate',
     wordFamily: [
-      { word: 'relate', pos: 'verb', meaning: 'ili ki kurmak' },
-      { word: 'relation', pos: 'noun', meaning: 'akrabal k/ili ki' },
-      { word: 'relationship', pos: 'noun', meaning: 'ili ki' }
+      { word: 'relation', pos: 'noun', meaning: 'ilişki' }
     ],
     synonyms: [
-      { word: 'Relation', meaning: 'yak n/akraba', pos: 'noun' },
-      { word: 'Kinsman', meaning: 'soyda /akraba', pos: 'noun' },
-      { word: 'Family member', meaning: 'aile  yesi', pos: 'noun' }
+      { word: 'Relation', meaning: 'Akraba', pos: 'noun' },
+      { word: 'Kin', meaning: 'Hısım/Soydaş', pos: 'noun' }
     ],
     antonyms: [
-      { word: 'Stranger', meaning: 'yabanc ', pos: 'noun' }
+      { word: 'Stranger', meaning: 'Yabancı', pos: 'noun' }
     ],
     collocations: ['close relative', 'distant relative', 'family relative'],
     collocationMeanings: {
-      'close relative': 'yak n akraba',
+      'close relative': 'yakın akraba',
       'distant relative': 'uzak akraba',
-      'family relative': 'aile akrabas '
+      'family relative': 'aile akrabası'
     },
     examples: ['We spent the week visiting relatives.'],
-    exampleTranslations: ['Haftay  akrabalar  ziyaret ederek ge irdik.']
+    exampleTranslations: ['Haftayı akrabaları ziyaret ederek geçirdik.']
   },
   {
     id: 'rely_on',
     word: 'Rely on',
     pos: 'phrasal verb',
-    meaning: 'g venmek, bel ba lamak',
-    definition: 'To trust someone or something or to need them for help.',
-    ipa: '/r  la   n/',
+    meaning: 'Güvenmek, bel bağlamak',
+    definition: 'To trust someone to do something for you.',
+    ipa: '/rɪˈlaɪ ɒn/',
     level: 'intermediate',
     wordFamily: [
-      { word: 'reliable', pos: 'adj', meaning: 'g venilir' },
-      { word: 'reliability', pos: 'noun', meaning: 'g venilirlik' },
-      { word: 'reliance', pos: 'noun', meaning: 'dayanak/g ven' }
+      { word: 'reliable', pos: 'adj', meaning: 'güvenilir' },
+      { word: 'reliance', pos: 'noun', meaning: 'güven/bağımlılık' }
     ],
     synonyms: [
-      { word: 'Depend on', meaning: 'bel ba lamak', pos: 'phrasal verb' },
-      { word: 'Trust', meaning: 'g venmek', pos: 'verb' },
-      { word: 'Count on', meaning: 'hesaba katmak/g venmek', pos: 'phrasal verb' }
+      { word: 'Depend on', meaning: 'Bağlı olmak', pos: 'phrase' },
+      { word: 'Count on', meaning: 'Güvenmek', pos: 'phrasal verb' }
     ],
     antonyms: [
-      { word: 'Distrust', meaning: 'g venmemek', pos: 'verb' },
-      { word: 'Doubt', meaning: '  phelenmek', pos: 'verb' }
+      { word: 'Distrust', meaning: 'Güvenmemek', pos: 'verb' }
     ],
     collocations: ['rely heavily on', 'can rely on', 'rely on technology'],
     collocationMeanings: {
-      'rely heavily on': 'b y k  l  de g venmek',
-      'can rely on': 'g venebilirsin',
-      'rely on technology': 'teknolojiye bel ba lamak'
+      'rely heavily on': 'büyük ölçüde güvenmek',
+      'can rely on': 'güvenebilirsin',
+      'rely on technology': 'teknolojiye bel bağlamak'
     },
     examples: ['We can rely on my brother to help us.'],
-    exampleTranslations: ['Bize yard m etmesi i in erkek karde ime g venebiliriz.']
+    exampleTranslations: ['Bize yardım etmesi için erkek kardeşime güvenebiliriz.']
   },
   {
     id: 'remind_b1',
     word: 'Remind',
     pos: 'verb',
-    meaning: 'hat rlatmak',
-    definition: 'To make someone remember something.',
-    ipa: '/r  ma nd/',
+    meaning: 'Hatırlatmak',
+    definition: 'To tell someone again about an event from the past or about a fact that they used to know.',
+    ipa: '/rɪˈmaɪnd/',
     level: 'intermediate',
     wordFamily: [
-      { word: 'reminder', pos: 'noun', meaning: 'hat rlat c ' }
+      { word: 'reminder', pos: 'noun', meaning: 'hatırlatıcı' }
     ],
     synonyms: [
-      { word: 'Prompt', meaning: 'harekete ge irmek/an msatmak', pos: 'verb' },
-      { word: 'Jog someone s memory', meaning: 'haf zas n  tazelemek', pos: 'phrase' }
+      { word: 'Prompt', meaning: 'Anımsatmak/Dürtmek', pos: 'verb' }
     ],
     antonyms: [
-      { word: 'Forget', meaning: 'unutmak', pos: 'verb' },
-      { word: 'Ignore', meaning: 'ihmal etmek', pos: 'verb' }
+      { word: 'Forget', meaning: 'Unutmak', pos: 'verb' }
     ],
     collocations: ['remind someone of', 'gently remind', 'remind me later'],
     collocationMeanings: {
-      'remind someone of': 'birine bir  eyi hat rlatmak',
-      'gently remind': 'nazik e hat rlatmak',
-      'remind me later': 'bana sonra hat rlat'
+      'remind someone of': 'birine bir şeyi hatırlatmak',
+      'gently remind': 'nazikçe hatırlatmak',
+      'remind me later': 'bana sonra hatırlat'
     },
-    examples: ["I can't think of his name   can you remind me?"],
-    exampleTranslations: ['Ad n    karam yorum   bana hat rlatabilir misin?']
+    examples: ["I can't think of his name – can you remind me?"],
+    exampleTranslations: ['Adını çıkaramıyorum – bana hatırlatabilir misin?']
   },
   {
     id: 'repeat_b1',
     word: 'Repeat',
     pos: 'verb',
-    meaning: 'tekrar etmek',
-    definition: 'To say or do something again.',
-    ipa: '/r  pi t/',
+    meaning: 'Tekrar etmek',
+    definition: 'To say or write something again.',
+    ipa: '/rɪˈpiːt/',
     level: 'intermediate',
     wordFamily: [
       { word: 'repetition', pos: 'noun', meaning: 'tekrar' },
-      { word: 'repeatedly', pos: 'adverb', meaning: 'tekrar tekrar' },
       { word: 'repetitive', pos: 'adj', meaning: 'tekrarlayan' }
     ],
     synonyms: [
-      { word: 'Iterate', meaning: 'tekrarlamak', pos: 'verb' },
-      { word: 'Reiterate', meaning: 'yinelemek', pos: 'verb' },
-      { word: 'Echo', meaning: 'yank lamak', pos: 'verb' }
+      { word: 'Reiterate', meaning: 'Yeniden söylemek', pos: 'verb' },
+      { word: 'Duplicate', meaning: 'Kopyalamak/Yinelemek', pos: 'verb' }
     ],
-    antonyms: [
-      { word: 'Change', meaning: 'de i tirmek', pos: 'verb' },
-      { word: 'Halt', meaning: 'durdurmak', pos: 'verb' }
-    ],
+    antonyms: [],
     collocations: ['repeat a question', 'repeat a word', "don't repeat this"],
     collocationMeanings: {
       'repeat a question': 'soruyu tekrarlamak',
@@ -6918,604 +7709,555 @@ export const vocabularyData: VocabularyWord[] = [
       "don't repeat this": 'bunu tekrarlama (gizli tut)'
     },
     examples: ['Can you repeat what you just said, please?'],
-    exampleTranslations: ['L tfen az  nce s yledi ini tekrar edebilir misin?']
+    exampleTranslations: ['Lütfen az önce söylediğini tekrar edebilir misin?']
   },
   {
     id: 'reply_b1',
     word: 'Reply',
     pos: 'verb',
-    meaning: 'cevap vermek, yan tlamak',
-    definition: 'To answer someone by saying or writing something.',
-    ipa: '/r  pla /',
+    meaning: 'Cevap vermek, yanıtlamak',
+    definition: 'To say, write, or do something as an answer.',
+    ipa: '/rɪˈplaɪ/',
     level: 'intermediate',
     wordFamily: [
-      { word: 'reply', pos: 'noun', meaning: 'cevap' }
+      { word: 'reply', pos: 'noun', meaning: 'cevap/yanıt' }
     ],
     synonyms: [
-      { word: 'Answer', meaning: 'cevaplamak', pos: 'verb' },
-      { word: 'Respond', meaning: 'yan t vermek', pos: 'verb' },
-      { word: 'Retort', meaning: 'sert cevap vermek', pos: 'verb' }
+      { word: 'Answer', meaning: 'Cevap vermek', pos: 'verb' },
+      { word: 'Respond', meaning: 'Yanıtlamak/Tepki vermek', pos: 'verb' }
     ],
     antonyms: [
-      { word: 'Question', meaning: 'sormak', pos: 'verb' },
-      { word: 'Inquire', meaning: 'soru turmak', pos: 'verb' }
+      { word: 'Question', meaning: 'Soru sormak', pos: 'verb' }
     ],
     collocations: ['reply to an email', 'reply immediately', 'prompt reply'],
     collocationMeanings: {
-      'reply to an email': 'e-postay  yan tlamak',
-      'reply immediately': 'an nda cevap vermek',
-      'prompt reply': 'h zl  yan t'
+      'reply to an email': 'e-postayı yanıtlamak',
+      'reply immediately': 'anında cevap vermek',
+      'prompt reply': 'hızlı yanıt'
     },
     examples: ["'I know,' Corbett replied quietly."],
-    exampleTranslations: ["'Biliyorum,' diye yan tlad  Corbett sessizce."]
+    exampleTranslations: ["'Biliyorum,' diye yanıtladı Corbett sessizce."]
   },
   {
     id: 'rethink',
     word: 'Rethink',
     pos: 'verb',
-    meaning: 'yeniden d   nmek, g zden ge irmek',
-    definition: 'To consider something again in order to change it.',
-    ipa: '/ ri     k/',
+    meaning: 'Yeniden düşünmek, gözden geçirmek',
+    definition: 'To consider something such as an idea, plan, or system again in order to change it.',
+    ipa: '/ˌriːˈθɪŋk/',
     level: 'intermediate',
-    wordFamily: [
-      { word: 'thought', pos: 'noun', meaning: 'd   nce' },
-      { word: 'think', pos: 'verb', meaning: 'd   nmek' }
-    ],
+    wordFamily: [],
     synonyms: [
-      { word: 'Reconsider', meaning: 'tekrar d   nmek', pos: 'verb' },
-      { word: 'Review', meaning: 'g zden ge irmek', pos: 'verb' },
-      { word: 'Reassess', meaning: 'yeniden de erlendirmek', pos: 'verb' }
+      { word: 'Reconsider', meaning: 'Yeniden değerlendirmek', pos: 'verb' },
+      { word: 'Re-evaluate', meaning: 'Tekrar ölçüp biçmek', pos: 'verb' }
     ],
-    antonyms: [
-      { word: 'Proceed', meaning: 'devam etmek', pos: 'verb' },
-      { word: 'Accept', meaning: 'kabullenmek', pos: 'verb' }
-    ],
+    antonyms: [],
     collocations: ['rethink strategy', 'complete rethink', 'force to rethink'],
     collocationMeanings: {
-      'rethink strategy': 'stratejiyi yeniden d   nmek',
-      'complete rethink': 'tamamen yeniden g zden ge irme',
-      'force to rethink': 'yeniden d   nmeye zorlamak'
+      'rethink strategy': 'stratejiyi yeniden düşünmek',
+      'complete rethink': 'tamamen yeniden gözden geçirme',
+      'force to rethink': 'yeniden düşünmeye zorlamak'
     },
     examples: ['Competitive pressures are forcing managers to rethink their strategies.'],
-    exampleTranslations: ['Rekabet i bask lar, y neticileri stratejilerini yeniden g zden ge irmeye zorluyor.']
+    exampleTranslations: ['Rekabetçi baskılar, yöneticileri stratejilerini yeniden gözden geçirmeye zorluyor.']
   },
   {
     id: 'retire',
     word: 'Retire',
     pos: 'verb',
-    meaning: 'emekli olmak',
-    definition: 'To stop working, especially because you have reached a certain age.',
-    ipa: '/r  ta  r/',
+    meaning: 'Emekli olmak',
+    definition: 'To stop working, especially when you reach the age when you are officially too old to work.',
+    ipa: '/rɪˈtaɪər/',
     level: 'intermediate',
     wordFamily: [
       { word: 'retirement', pos: 'noun', meaning: 'emeklilik' },
       { word: 'retired', pos: 'adj', meaning: 'emekli' }
     ],
-    synonyms: [
-      { word: 'Withdraw', meaning: 'geri  ekilmek', pos: 'verb' },
-      { word: 'Step down', meaning: ' ekilmek/istifa etmek', pos: 'phrasal verb' }
-    ],
+    synonyms: [],
     antonyms: [
-      { word: 'Work', meaning: ' al  mak', pos: 'verb' },
-      { word: 'Start', meaning: 'ba lamak', pos: 'verb' }
+      { word: 'Work', meaning: 'Çalışmak', pos: 'verb' }
     ],
     collocations: ['retire from work', 'early retirement', 'plan to retire'],
     collocationMeanings: {
-      'retire from work': 'i ten emekli olmak',
+      'retire from work': 'işten emekli olmak',
       'early retirement': 'erken emeklilik',
-      'plan to retire': 'emekli olmay  planlamak'
+      'plan to retire': 'emekli olmayı planlamak'
     },
     examples: ['At what age do you plan to retire?'],
-    exampleTranslations: ['Ka  ya  nda emekli olmay  planl yorsun?']
+    exampleTranslations: ['Kaç yaşında emekli olmayı planlıyorsun?']
   },
   {
     id: 'reuse',
     word: 'Reuse',
     pos: 'verb',
-    meaning: 'yeniden kullanmak',
+    meaning: 'Yeniden kullanmak',
     definition: 'To use something again, sometimes for a different purpose.',
-    ipa: '/ ri  ju z/',
+    ipa: '/ˌriːˈjuːz/',
     level: 'intermediate',
     wordFamily: [
-      { word: 'reusable', pos: 'adj', meaning: 'yeniden kullan labilir' },
-      { word: 'usage', pos: 'noun', meaning: 'kullan m' }
+      { word: 'reusable', pos: 'adj', meaning: 'yeniden kullanılabilir' }
     ],
     synonyms: [
-      { word: 'Recycle', meaning: 'geri d n  t rmek', pos: 'verb' },
-      { word: 'Repurpose', meaning: 'ba ka ama la kullanmak', pos: 'verb' }
+      { word: 'Recycle', meaning: 'Geri dönüştürmek', pos: 'verb' }
     ],
     antonyms: [
-      { word: 'Discard', meaning: 'atmak/  kar lmak', pos: 'verb' },
-      { word: 'Waste', meaning: 'israf etmek', pos: 'verb' }
+      { word: 'Discard', meaning: 'Atmak', pos: 'verb' }
     ],
     collocations: ['reuse bags', 'recycle and reuse', 'wash and reuse'],
     collocationMeanings: {
-      'reuse bags': ' antalar  tekrar kullanmak',
-      'recycle and reuse': 'geri d n  t r ve tekrar kullan',
-      'wash and reuse': 'y ka ve tekrar kullan'
+      'reuse bags': 'çantaları tekrar kullanmak',
+      'recycle and reuse': 'geri dönüştür ve tekrar kullan',
+      'wash and reuse': 'yıka ve tekrar kullan'
     },
     examples: ['My daughter reuses envelopes.'],
-    exampleTranslations: ['K z m zarflar  yeniden kullan yor.']
+    exampleTranslations: ['Kızım zarfları yeniden kullanıyor.']
   },
   {
     id: 'reward_yourself',
     word: 'Reward yourself',
     pos: 'phrase',
-    meaning: 'kendini  d llendirmek',
-    definition: 'To give yourself something as a reward for success or hard work.',
-    ipa: '/r  w  rd j   self/',
+    meaning: 'Kendini ödüllendirmek',
+    definition: 'To give yourself something as a reward, for example praise, success, or money.',
+    ipa: '/rɪˈwɔːrd jɔːˈself/',
     level: 'intermediate',
     wordFamily: [
-      { word: 'rewarding', pos: 'adj', meaning: 'tatmin edici/ d llendirici' }
+      { word: 'reward', pos: 'noun/verb', meaning: 'ödül/ödüllendirmek' },
+      { word: 'rewarding', pos: 'adj', meaning: 'tatmin edici' }
     ],
     synonyms: [
-      { word: 'Treat yourself', meaning: 'kendine  smarlamak/  martmak', pos: 'phrase' },
-      { word: 'Indulge yourself', meaning: 'kendine ayr cal k tan mak', pos: 'phrase' }
+      { word: 'Treat yourself', meaning: 'Kendini şımartmak', pos: 'phrase' }
     ],
     antonyms: [
-      { word: 'Punish yourself', meaning: 'kendini cezaland rmak', pos: 'phrase' }
+      { word: 'Punish yourself', meaning: 'Kendini cezalandırmak', pos: 'phrase' }
     ],
     collocations: ['reward yourself for hard work', 'reward yourself with a treat'],
     collocationMeanings: {
-      'reward yourself for hard work': 's k   al  ma i in kendini  d llendirmek',
-      'reward yourself with a treat': 'kendini bir hediye/ikramla  d llendirmek'
+      'reward yourself for hard work': 'sıkı çalışma için kendini ödüllendirmek',
+      'reward yourself with a treat': 'kendini bir hediye/ikramla ödüllendirmek'
     },
     examples: ['He liked to reward himself with a short break every two hours.'],
-    exampleTranslations: ['Her iki saatte bir k sa bir mola vererek kendini  d llendirmeyi severdi.']
+    exampleTranslations: ['Her iki saatte bir kısa bir mola vererek kendini ödüllendirmeyi severdi.']
   },
   {
     id: 'road_works',
     word: 'Road works',
     pos: 'noun',
-    meaning: 'yol  al  mas ',
+    meaning: 'Yol çalışması',
     definition: 'Repairs that are done to the surface of a road.',
-    ipa: '/r  d w  ks/',
+    ipa: '/rəʊd wɜːks/',
     level: 'intermediate',
     wordFamily: [],
     synonyms: [
-      { word: 'Road repairs', meaning: 'yol onar m ', pos: 'noun' },
-      { word: 'Street maintenance', meaning: 'sokak bak m ', pos: 'noun' }
+      { word: 'Road repairs', meaning: 'Yol onarımı', pos: 'noun' }
     ],
     antonyms: [],
     collocations: ['heavy road works', 'major road works', 'delayed by road works'],
     collocationMeanings: {
-      'heavy road works': 'yo un yol  al  mas ',
-      'major road works': 'b y k  apl  yol  al  mas ',
-      'delayed by road works': 'yol  al  mas  nedeniyle gecikmek'
+      'heavy road works': 'yoğun yol çalışması',
+      'major road works': 'büyük çaplı yol çalışması',
+      'delayed by road works': 'yol çalışması nedeniyle gecikmek'
     },
     examples: ['There are road works here because they are changing the road.'],
-    exampleTranslations: ['Burada yol  al  mas  var   nk  yolu de i tiriyorlar.']
+    exampleTranslations: ['Burada yol çalışması var çünkü yolu değiştiriyorlar.']
   },
   {
     id: 'rubbish',
     word: 'Rubbish',
     pos: 'noun',
-    meaning: '  p',
+    meaning: 'Çöp',
     definition: 'Things that you throw away because they are no longer useful.',
-    ipa: '/ r b.  /',
+    ipa: '/ˈrʌb.ɪʃ/',
     level: 'intermediate',
-    wordFamily: [
-      { word: 'rubbishy', pos: 'adj', meaning: 'de ersiz/  p gibi' }
-    ],
+    wordFamily: [],
     synonyms: [
-      { word: 'Garbage', meaning: '  p (mutfak)', pos: 'noun' },
-      { word: 'Trash', meaning: '  p (genel)', pos: 'noun' },
-      { word: 'Waste', meaning: 'at k', pos: 'noun' }
+      { word: 'Garbage', meaning: 'Çöp (ABD)', pos: 'noun' },
+      { word: 'Trash', meaning: 'Çöp/Süprüntü', pos: 'noun' },
+      { word: 'Waste', meaning: 'Atık', pos: 'noun' }
     ],
     antonyms: [
-      { word: 'Valuables', meaning: 'de erli e yalar', pos: 'noun' }
+      { word: 'Valuables', meaning: 'Değerli eşyalar', pos: 'noun' }
     ],
     collocations: ['rubbish bin', 'collect rubbish', 'absolute rubbish'],
     collocationMeanings: {
-      'rubbish bin': '  p tenekesi',
-      'collect rubbish': '  p toplamak',
-      'absolute rubbish': 'tamamen sa mal k (argoda)'
+      'rubbish bin': 'çöp tenekesi',
+      'collect rubbish': 'çöp toplamak',
+      'absolute rubbish': 'tamamen saçmalık (argoda)'
     },
     examples: ['The streets were littered with rubbish.'],
-    exampleTranslations: ['Sokaklar   plerle doluydu.']
+    exampleTranslations: ['Sokaklar çöplerle doluydu.']
   },
   {
     id: 'run_a_company',
     word: 'Run a company',
     pos: 'phrase',
-    meaning: ' irket y netmek',
-    definition: 'To be in charge of a business organization.',
-    ipa: '/r n    k m.p .ni/',
+    meaning: 'Şirket yönetmek',
+    definition: 'To manage a large organization.',
+    ipa: '/rʌn ə ˈkʌm.pə.ni/',
     level: 'intermediate',
-    wordFamily: [
-      { word: 'manager', pos: 'noun', meaning: 'y netici' }
-    ],
+    wordFamily: [],
     synonyms: [
-      { word: 'Manage a business', meaning: 'i  y netmek', pos: 'phrase' },
-      { word: 'Direct a company', meaning: ' irket idare etmek', pos: 'phrase' },
-      { word: 'Operate', meaning: 'i letmek', pos: 'verb' }
+      { word: 'Manage a firm', meaning: 'Firma yönetmek', pos: 'phrase' },
+      { word: 'Lead an organization', meaning: 'Organizasyona liderlik etmek', pos: 'phrase' }
     ],
-    antonyms: [
-      { word: 'Work for', meaning: 'i in  al  mak', pos: 'verb' }
-    ],
+    antonyms: [],
     collocations: ['successfully run a company', 'experience to run a company'],
     collocationMeanings: {
-      'successfully run a company': 'bir  irket ba ar yla y netmek',
-      'experience to run a company': ' irket y netmek i in gereken tecr be'
+      'successfully run a company': 'bir şirket başarıyla yönetmek',
+      'experience to run a company': 'şirket yönetmek için gereken tecrübe'
     },
     examples: ['I would love to run a company one day.'],
-    exampleTranslations: ['Bir g n bir  irket y netmeyi  ok isterim.']
+    exampleTranslations: ['Bir gün bir şirket yönetmeyi çok isterim.']
   },
   {
     id: 'runny',
     word: 'Runny',
-    pos: 'adj',
-    meaning: 'ak  kan, s v la m   (yumurta i in rafadan)',
-    definition: 'More liquid than usual or desired.',
-    ipa: '/ r n.i/',
+    pos: 'adjective',
+    meaning: 'Akışkan, sıvılaşmış (yumurta için rafadan)',
+    definition: 'Like a liquid.',
+    ipa: '/ˈrʌn.i/',
     level: 'intermediate',
     wordFamily: [
-      { word: 'run', pos: 'verb', meaning: 'ko mak/akmak' }
+      { word: 'run', pos: 'verb', meaning: 'koşmak/akmak' }
     ],
     synonyms: [
-      { word: 'Liquid', meaning: 's v ', pos: 'adj' },
-      { word: 'Flowing', meaning: 'akan', pos: 'adj' },
-      { word: 'Watery', meaning: 'sulu', pos: 'adj' }
+      { word: 'Liquid', meaning: 'Sıvı', pos: 'adj' },
+      { word: 'Fluid', meaning: 'Akışkan', pos: 'adj' }
     ],
     antonyms: [
-      { word: 'Solid', meaning: 'kat ', pos: 'adj' },
-      { word: 'Thick', meaning: 'koyu/youn', pos: 'adj' },
-      { word: 'Hard', meaning: 'sert/kat ', pos: 'adj' }
+      { word: 'Solid', meaning: 'Katı', pos: 'adj' },
+      { word: 'Hard', meaning: 'Sert', pos: 'adj' }
     ],
     collocations: ['runny nose', 'runny egg', 'runny honey'],
     collocationMeanings: {
-      'runny nose': 'burun ak nt s ',
+      'runny nose': 'burun akıntısı',
       'runny egg': 'rafadan yumurta',
-      'runny honey': 'ak  kan bal'
+      'runny honey': 'akışkan bal'
     },
     examples: ['Do you like your eggs cooked hard or runny?'],
-    exampleTranslations: ['Yumurtan z  kat  m  yoksa rafadan m  seversiniz?']
+    exampleTranslations: ['Yumurtanızı katı mı yoksa rafadan mı seversiniz?']
   },
   {
     id: 'rush_hour',
     word: 'Rush hour',
     pos: 'noun',
-    meaning: 'i    k   saati, trafi in yo un oldu u saat',
-    definition: 'The time of day when traffic is heaviest.',
-    ipa: '/ r    a  r/',
+    meaning: 'İş çıkış saati, trafiğin yoğun olduğu saat',
+    definition: 'The time of day when there are a lot of cars on the road because most people are travelling to or from work.',
+    ipa: '/ˈrʌʃ ˌaʊər/',
     level: 'intermediate',
     wordFamily: [],
     synonyms: [
-      { word: 'Peak hour', meaning: 'yo un saat', pos: 'noun' }
+      { word: 'Peak hour', meaning: 'En yoğun saat', pos: 'noun' }
     ],
     antonyms: [
-      { word: 'Off-peak', meaning: 'yo un olmayan saat', pos: 'noun' }
+      { word: 'Off-peak', meaning: 'Yoğun olmayan zaman', pos: 'adj' }
     ],
     collocations: ['morning rush hour', 'evening rush hour', 'avoid rush hour'],
     collocationMeanings: {
-      'morning rush hour': 'sabah trafi i',
-      'evening rush hour': 'ak am trafi i',
-      'avoid rush hour': 'yo un trafik saatlerinden ka  nmak'
+      'morning rush hour': 'sabah trafiği',
+      'evening rush hour': 'akşam trafiği',
+      'avoid rush hour': 'yoğun trafik saatlerinden kaçınmak'
     },
     examples: ['I hate travelling in rush hour because everything is so slow.'],
-    exampleTranslations: ['Trafi in yo un oldu u saatlerde seyahat etmekten nefret ediyorum   nk  her  ey  ok yava  ilerliyor.']
+    exampleTranslations: ['Trafiğin yoğun olduğu saatlerde seyahat etmekten nefret ediyorum çünkü her şey çok yavaş ilerliyor.']
   },
   {
     id: 'salary',
     word: 'Salary',
     pos: 'noun',
-    meaning: 'maa ',
-    definition: 'A fixed amount of money paid to an employee, usually every month.',
-    ipa: '/ s l. r.i/',
+    meaning: 'Maaş',
+    definition: 'An amount of money received every month or year for the work you do.',
+    ipa: '/ˈsæl.ər.i/',
     level: 'intermediate',
-    wordFamily: [
-      { word: 'salaried', pos: 'adj', meaning: 'maa l ' }
-    ],
+    wordFamily: [],
     synonyms: [
-      { word: 'Wage', meaning: ' cret (genelde haftal k)', pos: 'noun' },
-      { word: 'Pay', meaning: ' deme', pos: 'noun' },
-      { word: 'Income', meaning: 'gelir', pos: 'noun' }
+      { word: 'Wage', meaning: 'Ücret/Haftalık', pos: 'noun' },
+      { word: 'Pay', meaning: 'Ödeme', pos: 'noun' },
+      { word: 'Earnings', meaning: 'Kazanç', pos: 'noun' }
     ],
-    antonyms: [
-      { word: 'Expense', meaning: 'gider', pos: 'noun' }
-    ],
+    antonyms: [],
     collocations: ['annual salary', 'high salary', 'earn a salary'],
     collocationMeanings: {
-      'annual salary': 'y ll k maa ',
-      'high salary': 'y ksek maa ',
-      'earn a salary': 'maa  kazanmak'
+      'annual salary': 'yıllık maaş',
+      'high salary': 'yüksek maaş',
+      'earn a salary': 'maaş kazanmak'
     },
     examples: ['When I earn a salary, I can save to buy a house.'],
-    exampleTranslations: ['Maa  almaya ba lad   mda, ev almak i in birikim yapabilirim.']
+    exampleTranslations: ['Maaş almaya başladığımda, ev almak için birikim yapabilirim.']
   },
   {
     id: 'salty',
     word: 'Salty',
-    pos: 'adj',
-    meaning: 'tuzlu',
-    definition: 'Containing or tasting of salt.',
-    ipa: '/ s l.ti/',
+    pos: 'adjective',
+    meaning: 'Tuzlu',
+    definition: 'Containing salt, or tasting like salt.',
+    ipa: '/ˈsɒl.ti/',
     level: 'intermediate',
     wordFamily: [
-      { word: 'salt', pos: 'noun', meaning: 'tuz' }
+      { word: 'salt', pos: 'noun/verb', meaning: 'tuz/tuzlamak' }
     ],
     synonyms: [
-      { word: 'Briny', meaning: 'tuzlu/deniz suyu gibi', pos: 'adj' },
-      { word: 'Saline', meaning: 'tuzlu', pos: 'adj' }
+      { word: 'Briny', meaning: 'Çok tuzlu/Deniz suyu gibi', pos: 'adj' }
     ],
     antonyms: [
-      { word: 'Sweet', meaning: 'tatl ', pos: 'adj' },
-      { word: 'Bland', meaning: 'tats z/yavan', pos: 'adj' }
+      { word: 'Sweet', meaning: 'Tatlı', pos: 'adj' },
+      { word: 'Bland', meaning: 'Tatsız', pos: 'adj' }
     ],
     collocations: ['salty taste', 'salty sea air', 'too salty'],
     collocationMeanings: {
       'salty taste': 'tuzlu tad',
-      'salty sea air': 'tuzlu deniz havas ',
-      'too salty': ' ok tuzlu'
+      'salty sea air': 'tuzlu deniz havası',
+      'too salty': 'çok tuzlu'
     },
     examples: ["The soup's a bit salty."],
-    exampleTranslations: [' orba biraz tuzlu.']
+    exampleTranslations: ['Çorba biraz tuzlu.']
   },
   {
     id: 'savoury',
     word: 'Savoury',
-    pos: 'adj',
-    meaning: 'tuzlu/baharatl  (tatl  olmayan)',
-    definition: 'Tasting of salt or spice and not sweet.',
-    ipa: '/ se .v r.i/',
+    pos: 'adjective',
+    meaning: 'Tuzlu/Baharatlı (tatlı olmayan)',
+    definition: 'Tasting of salt or spices and not sweet.',
+    ipa: '/ˈseɪ.vər.i/',
     level: 'intermediate',
     wordFamily: [
-      { word: 'savour', pos: 'verb', meaning: 'tad n    karmak' }
+      { word: 'savour', pos: 'verb', meaning: 'tadını çıkarmak' }
     ],
     synonyms: [
-      { word: 'Salty', meaning: 'tuzlu', pos: 'adj' },
-      { word: 'Spicy', meaning: 'baharatl ', pos: 'adj' },
-      { word: 'Piquant', meaning: 'i tah a  c ', pos: 'adj' }
+      { word: 'Piquant', meaning: 'Hoş kokulu/Baharatlı', pos: 'adj' },
+      { word: 'Spicy', meaning: 'Baharatlı', pos: 'adj' }
     ],
     antonyms: [
-      { word: 'Sweet', meaning: 'tatl ', pos: 'adj' },
-      { word: 'Sugary', meaning: ' ekerli', pos: 'adj' }
+      { word: 'Sweet', meaning: 'Tatlı', pos: 'adj' }
     ],
     collocations: ['savoury dish', 'savoury snack', 'savoury smell'],
     collocationMeanings: {
-      'savoury dish': 'tuzlu/baharatl  yemek',
-      'savoury snack': 'tuzlu at  t rmal k',
-      'savoury smell': 'i tah a  c  baharat kokusu'
+      'savoury dish': 'tuzlu/baharatlı yemek',
+      'savoury snack': 'tuzlu atıştırmalık',
+      'savoury smell': 'iştah açıcı baharat kokusu'
     },
     examples: ['I bought some savoury snacks.'],
-    exampleTranslations: ['Baz  tuzlu at  t rmal klar ald m.']
+    exampleTranslations: ['Bazı tuzlu/atıştırmalıklar aldım.']
   },
   {
     id: 'say_b1',
     word: 'Say',
     pos: 'verb',
-    meaning: 's ylemek, demek',
-    definition: 'To pronounce words or sounds.',
-    ipa: '/se /',
+    meaning: 'Söylemek, demek',
+    definition: 'To express something using words.',
+    ipa: '/seɪ/',
     level: 'intermediate',
     wordFamily: [
-      { word: 'saying', pos: 'noun', meaning: 'deyi /atas z ' }
+      { word: 'saying', pos: 'noun', meaning: 'atasözü/deyiş' }
     ],
     synonyms: [
-      { word: 'Speak', meaning: 'konu mak', pos: 'verb' },
-      { word: 'Tell', meaning: 'anlatmak/demek', pos: 'verb' },
-      { word: 'State', meaning: 'belirtmek', pos: 'verb' }
+      { word: 'State', meaning: 'Belirtmek', pos: 'verb' },
+      { word: 'Utter', meaning: 'Dile getirmek', pos: 'verb' },
+      { word: 'Declare', meaning: 'Beyan etmek', pos: 'verb' }
     ],
     antonyms: [],
     collocations: ['say hello', 'say goodbye', 'say sorry'],
     collocationMeanings: {
       'say hello': 'selam vermek',
-      'say goodbye': 'ho  a kal demek',
-      'say sorry': ' z r dilemek'
+      'say goodbye': 'hoşça kal demek',
+      'say sorry': 'özür dilemek'
     },
     examples: ["'Pleased to meet you,' he said with a smile."],
-    exampleTranslations: ["'Tan  t   m za memnun oldum,' dedi g l mseyerek."]
+    exampleTranslations: ["'Tanıştığımıza memnun oldum,' dedi gülümseyerek."]
   },
   {
     id: 'scene',
     word: 'Scene',
     pos: 'noun',
-    meaning: 'sahne (film/tiyatro b l m )',
-    definition: 'A part of a play or film in which the action stays in one place.',
-    ipa: '/si n/',
+    meaning: 'Sahne (film/tiyatro bölümü)',
+    definition: 'A part of a play, book, film etc. in which events happen.',
+    ipa: '/siːn/',
     level: 'intermediate',
     wordFamily: [
-      { word: 'scenery', pos: 'noun', meaning: 'manzara/dekor' },
-      { word: 'scenic', pos: 'adj', meaning: 'manzaral ' }
+      { word: 'scenic', pos: 'adj', meaning: 'manzaralı' }
     ],
     synonyms: [
-      { word: 'Episode', meaning: 'b l m', pos: 'noun' },
-      { word: 'Sequence', meaning: 'sekans', pos: 'noun' },
-      { word: 'Setting', meaning: 'mekan', pos: 'noun' }
+      { word: 'Episode', meaning: 'Bölüm', pos: 'noun' },
+      { word: 'Setting', meaning: 'Mekan/Ortam', pos: 'noun' }
     ],
     antonyms: [],
     collocations: ['crime scene', 'opening scene', 'movie scene'],
     collocationMeanings: {
       'crime scene': 'olay yeri',
-      'opening scene': 'a  l   sahnesi',
+      'opening scene': 'açılış sahnesi',
       'movie scene': 'film sahnesi'
     },
     examples: ['They watched the opening scene of Macbeth.'],
-    exampleTranslations: ['Macbeth in a  l   sahnesini izlediler.']
+    exampleTranslations: ['Macbeth’in açılış sahnesini izlediler.']
   },
   {
     id: 'schedule_b1',
     word: 'Schedule',
     pos: 'verb',
-    meaning: 'program, takvim',
-    definition: 'To arrange that something will happen at a particular time.',
-    ipa: '/  ed .u l/',
+    meaning: 'Programlamak, takvime bağlamak',
+    definition: 'To plan exactly when you will do something.',
+    ipa: '/ˈʃedʒ.uːl/',
     level: 'intermediate',
     wordFamily: [
-      { word: 'scheduler', pos: 'noun', meaning: 'programlay c ' }
+      { word: 'schedule', pos: 'noun', meaning: 'program/takvim' }
     ],
     synonyms: [
-      { word: 'Plan', meaning: 'planlamak', pos: 'verb' },
-      { word: 'Arrange', meaning: 'd zenlemek', pos: 'verb' },
-      { word: 'Organize', meaning: 'organize etmek', pos: 'verb' }
+      { word: 'Plan', meaning: 'Planlamak', pos: 'verb' },
+      { word: 'Arrange', meaning: 'Düzenlemek', pos: 'verb' }
     ],
-    antonyms: [
-      { word: 'Cancel', meaning: 'iptal etmek', pos: 'verb' }
-    ],
+    antonyms: [],
     collocations: ['busy schedule', 'on schedule', 'ahead of schedule'],
     collocationMeanings: {
-      'busy schedule': 'yo un program',
-      'on schedule': 'zaman nda/takvime uygun',
-      'ahead of schedule': 'vaktinden  nce'
+      'busy schedule': 'yoğun program',
+      'on schedule': 'zamanında/takvime uygun',
+      'ahead of schedule': 'vaktinden önce'
     },
     examples: ["What's on your schedule today?"],
-    exampleTranslations: ['Bug n program nda ne var?']
+    exampleTranslations: ['Bugün programında ne var?']
   },
   {
     id: 'scientific_b1',
     word: 'Scientific',
-    pos: 'adj',
-    meaning: 'bilimsel',
-    definition: 'Based on or characterized by the methods and principles of science.',
-    ipa: '/ sa  n t f. k/',
+    pos: 'adjective',
+    meaning: 'Bilimsel',
+    definition: 'Relating to science, or based on its methods.',
+    ipa: '/ˌsaɪənˈtɪf.ɪk/',
     level: 'intermediate',
     wordFamily: [
       { word: 'science', pos: 'noun', meaning: 'bilim' },
-      { word: 'scientist', pos: 'noun', meaning: 'bilim insan ' },
-      { word: 'scientifically', pos: 'adverb', meaning: 'bilimsel olarak' }
+      { word: 'scientist', pos: 'noun', meaning: 'bilim insanı' },
+      { word: 'scientifically', pos: 'adv', meaning: 'bilimsel olarak' }
     ],
-    synonyms: [
-      { word: 'Empirical', meaning: 'deneysel/bilimsel', pos: 'adj' },
-      { word: 'Systematic', meaning: 'sistematik', pos: 'adj' }
-    ],
+    synonyms: [],
     antonyms: [
-      { word: 'Unscientific', meaning: 'bilimsel olmayan', pos: 'adj' }
+      { word: 'Unscientific', meaning: 'Bilimsel olmayan', pos: 'adj' }
     ],
     collocations: ['scientific research', 'scientific discovery', 'scientific proof'],
     collocationMeanings: {
-      'scientific research': 'bilimsel ara t rma',
-      'scientific discovery': 'bilimsel bulu ',
-      'scientific proof': 'bilimsel kan t'
+      'scientific research': 'bilimsel araştırma',
+      'scientific discovery': 'bilimsel buluş',
+      'scientific proof': 'bilimsel kanıt'
     },
     examples: ['Newton made an important scientific discovery.'],
-    exampleTranslations: ['Newton  nemli bir bilimsel ke if yapt .']
+    exampleTranslations: ['Newton önemli bir bilimsel keşif yaptı.']
   },
   {
     id: 'sensible',
     word: 'Sensible',
-    pos: 'adj',
-    meaning: 'mant kl , akl  ba  nda',
-    definition: 'Having, using, or showing good sense or sound judgment.',
-    ipa: '/ sen.s .b l/',
+    pos: 'adjective',
+    meaning: 'Mantıklı, aklı başında',
+    definition: 'Someone who is reasonable and practical.',
+    ipa: '/ˈsen.sə.bəl/',
     level: 'intermediate',
     wordFamily: [
-      { word: 'sense', pos: 'noun', meaning: 'duyu/anlam' },
-      { word: 'sensibly', pos: 'adverb', meaning: 'mant kl ca' },
-      { word: 'sensibility', pos: 'noun', meaning: 'duyarl l k' }
+      { word: 'sense', pos: 'noun/verb', meaning: 'duyu/hissetmek' },
+      { word: 'sensibly', pos: 'adv', meaning: 'mantıklıca' }
     ],
     synonyms: [
-      { word: 'Rational', meaning: 'mant kl ', pos: 'adj' },
-      { word: 'Practical', meaning: 'pratik', pos: 'adj' },
-      { word: 'Wise', meaning: 'bilgece/ak ll ca', pos: 'adj' }
+      { word: 'Reasonable', meaning: 'Makul', pos: 'adj' },
+      { word: 'Rational', meaning: 'Rasyonel', pos: 'adj' },
+      { word: 'Practical', meaning: 'Pratik', pos: 'adj' }
     ],
     antonyms: [
-      { word: 'Foolish', meaning: 'aptalca', pos: 'adj' },
-      { word: 'Silly', meaning: 'sa ma/aptalca', pos: 'adj' },
-      { word: 'Irrational', meaning: 'mant ks z', pos: 'adj' }
+      { word: 'Foolish', meaning: 'Aptalca', pos: 'adj' },
+      { word: 'Unreasonable', meaning: 'Mantıksız', pos: 'adj' },
+      { word: 'Silly', meaning: 'Saçma', pos: 'adj' }
     ],
     collocations: ['sensible advice', 'sensible decision', 'sensible approach'],
     collocationMeanings: {
-      'sensible advice': 'mant kl  tavsiye',
-      'sensible decision': 'ak lc  karar',
-      'sensible approach': 'makul yakla  m'
+      'sensible advice': 'mantıklı tavsiye',
+      'sensible decision': 'akılcı karar',
+      'sensible approach': 'makul yaklaşım'
     },
     examples: ["I don't see how any sensible person could agree with him."],
-    exampleTranslations: ['Akl  ba  nda herhangi birinin ona nas l kat labilece ini anlam yorum.']
+    exampleTranslations: ['Aklı başında herhangi birinin ona nasıl katılabileceğini anlamıyorum.']
   },
   {
     id: 'set_goals',
-    word: 'Set goals',
+    word: 'Set short-term and long-term goals',
     pos: 'phrase',
-    meaning: 'k sa ve uzun vadeli hedefler belirlemek',
-    definition: 'To decide on aims to achieve in the near or distant future.',
-    ipa: '/set    rt t  m  nd l   t  m    lz/',
+    meaning: 'Kısa ve uzun vadeli hedefler belirlemek',
+    definition: 'To decide what you want to achieve in the near future and for the future generally.',
+    ipa: '/set ʃɔːrt tɜːm ænd lɒŋ tɜːm ɡəʊlz/',
     level: 'intermediate',
     wordFamily: [],
     synonyms: [
-      { word: 'Plan objectives', meaning: 'hedefleri planlamak', pos: 'phrase' }
+      { word: 'Establish objectives', meaning: 'Hedefler belirlemek', pos: 'phrase' }
     ],
     antonyms: [],
     collocations: ['set goals for the year', 'need to set goals'],
     collocationMeanings: {
-      'set goals for the year': 'y l i in hedefler belirlemek',
-      'need to set goals': 'hedefler koymaya ihtiya  duymak'
+      'set goals for the year': 'yıl için hedefler belirlemek',
+      'need to set goals': 'hedefler koymaya ihtiyaç duymak'
     },
     examples: ["It's important to set short-term and long-term goals for your career."],
-    exampleTranslations: ['Kariyeriniz i in k sa ve uzun vadeli hedefler belirlemek  nemlidir.']
+    exampleTranslations: ['Kariyeriniz için kısa ve uzun vadeli hedefler belirlemek önemlidir.']
   },
   {
     id: 'set_up',
     word: 'Set up',
     pos: 'phrasal verb',
-    meaning: 'kurmak, d zenlemek',
+    meaning: 'Kurmak, düzenlemek',
     definition: 'To organize or plan something such as an event or system.',
-    ipa: '/set  p/',
+    ipa: '/set ʌp/',
     level: 'intermediate',
-    wordFamily: [
-      { word: 'setup', pos: 'noun', meaning: 'kurulum/d zen' }
-    ],
+    wordFamily: [],
     synonyms: [
-      { word: 'Establish', meaning: 'kurmak', pos: 'verb' },
-      { word: 'Arrange', meaning: 'ayarlamak', pos: 'verb' },
-      { word: 'Install', meaning: 'kurmak/y klemek', pos: 'verb' }
+      { word: 'Establish', meaning: 'Kurmak', pos: 'verb' },
+      { word: 'Organize', meaning: 'Organize etmek', pos: 'verb' },
+      { word: 'Install', meaning: 'Yüklemek/Kurmak', pos: 'verb' }
     ],
     antonyms: [
-      { word: 'Dismantle', meaning: 'par alamak/bozmak', pos: 'verb' },
-      { word: 'Disband', meaning: 'da  tmak', pos: 'verb' }
+      { word: 'Dismantle', meaning: 'Sökmek/Dağıtmak', pos: 'verb' }
     ],
     collocations: ['set up a business', 'set up a meeting', 'set up a system'],
     collocationMeanings: {
-      'set up a business': 'i  kurmak',
-      'set up a meeting': 'toplant  ayarlamak',
+      'set up a business': 'iş kurmak',
+      'set up a meeting': 'toplantı ayarlamak',
       'set up a system': 'sistem kurmak'
     },
     examples: ['A film night would be very easy to set up.'],
-    exampleTranslations: ['Bir film gecesi d zenlemek  ok kolay olurdu.']
+    exampleTranslations: ['Bir film gecesi düzenlemek çok kolay olurdu.']
   },
   {
     id: 'set_yourself',
     word: 'Set yourself',
     pos: 'phrase',
-    meaning: 'kendine (hedef vb.) koymak',
-    definition: 'To give yourself a task or a challenge.',
-    ipa: '/set j   self/',
+    meaning: 'Kendine (hedef vb.) koymak',
+    definition: 'To give something to yourself to do or to achieve.',
+    ipa: '/set jɔːˈself/',
     level: 'intermediate',
     wordFamily: [],
     synonyms: [
-      { word: 'Assign oneself', meaning: 'kendine g rev atamak', pos: 'phrase' }
+      { word: 'Challenge yourself', meaning: 'Kendini zorlamak', pos: 'phrase' }
     ],
     antonyms: [],
     collocations: ['set yourself a goal', 'set yourself a task', 'set yourself high standards'],
     collocationMeanings: {
       'set yourself a goal': 'kendine bir hedef koymak',
-      'set yourself a task': 'kendine bir g rev belirlemek',
-      'set yourself high standards': 'kendine y ksek standartlar koymak'
+      'set yourself a task': 'kendine bir görev belirlemek',
+      'set yourself high standards': 'kendine yüksek standartlar koymak'
     },
     examples: ['I like to set myself exercise targets for the week.'],
-    exampleTranslations: ['Kendime haftal k egzersiz hedefleri koymay  seviyorum.']
+    exampleTranslations: ['Kendime haftalık egzersiz hedefleri koymayı seviyorum.']
   },
   {
     id: 'severe_delay',
     word: 'Severe delay',
     pos: 'phrase',
-    meaning: 'ciddi gecikme',
-    definition: 'A very long or serious postponement of an event.',
-    ipa: '/s  v  r d  le /',
+    meaning: 'Ciddi gecikme',
+    definition: 'A situation in which a plane, train etc. leaves or arrives very late.',
+    ipa: '/sɪˈvɪər dɪˈleɪ/',
     level: 'intermediate',
-    wordFamily: [
-      { word: 'severity', pos: 'noun', meaning: ' iddet/ciddiyet' }
-    ],
+    wordFamily: [],
     synonyms: [
-      { word: 'Major delay', meaning: 'b y k gecikme', pos: 'phrase' },
-      { word: 'Heavy delay', meaning: 'yo un gecikme', pos: 'phrase' }
+      { word: 'Major disruption', meaning: 'Büyük aksaklık', pos: 'noun' }
     ],
     antonyms: [
-      { word: 'Minor delay', meaning: 'ufak gecikme', pos: 'phrase' },
-      { word: 'On time', meaning: 'vaktinde', pos: 'phrase' }
+      { word: 'On time', meaning: 'Tam vaktinde', pos: 'phrase' }
     ],
     collocations: ['experience a severe delay', 'cause a severe delay'],
     collocationMeanings: {
-      'experience a severe delay': 'ciddi bir gecikme ya amak',
+      'experience a severe delay': 'ciddi bir gecikme yaşamak',
       'cause a severe delay': 'ciddi gecikmeye sebep olmak'
     },
     examples: ['There is a severe delay on the motorway due to an accident.'],
@@ -7525,313 +8267,288 @@ export const vocabularyData: VocabularyWord[] = [
     id: 'shout',
     word: 'Shout',
     pos: 'verb',
-    meaning: 'ba  rmak, hayk rmak',
-    definition: 'To speak extremely loudly, usually because of anger or excitement.',
-    ipa: '/ a t/',
+    meaning: 'Bağırmak, haykırmak',
+    definition: 'To say something in a loud voice.',
+    ipa: '/ʃaʊt/',
     level: 'intermediate',
-    wordFamily: [
-      { word: 'shout', pos: 'noun', meaning: 'ba  r  ' },
-      { word: 'shouter', pos: 'noun', meaning: 'ba  ran kimse' }
-    ],
+    wordFamily: [],
     synonyms: [
-      { word: 'Yell', meaning: 'ba  rmak', pos: 'verb' },
-      { word: 'Scream', meaning: '   l k atmak', pos: 'verb' },
-      { word: 'Bellow', meaning: 'b   rmek/k kremek', pos: 'verb' }
+      { word: 'Yell', meaning: 'Bağırmak', pos: 'verb' },
+      { word: 'Scream', meaning: 'Çığlık atmak', pos: 'verb' },
+      { word: 'Bellow', meaning: 'Böğürmek/Gürlemek', pos: 'verb' }
     ],
     antonyms: [
-      { word: 'Whisper', meaning: 'f s ldamak', pos: 'verb' },
-      { word: 'Murmur', meaning: 'm r ldanmak', pos: 'verb' }
+      { word: 'Whisper', meaning: 'Fısıldamak', pos: 'verb' }
     ],
     collocations: ['shout at someone', 'shout for help', 'shout loudly'],
     collocationMeanings: {
-      'shout at someone': 'birine ba  rmak',
-      'shout for help': 'yard m i in ba  rmak',
-      'shout loudly': 'y ksek sesle ba  rmak'
+      'shout at someone': 'birine bağırmak',
+      'shout for help': 'yardım için bağırmak',
+      'shout loudly': 'yüksek sesle bağırmak'
     },
     examples: ["'Stop!' he shouted."],
-    exampleTranslations: ["'Dur!' diye ba  rd ."]
+    exampleTranslations: ["'Dur!' diye bağırdı."]
   },
   {
     id: 'situation_b1',
     word: 'Situation',
     pos: 'noun',
-    meaning: 'durum, vaziyet',
-    definition: 'The set of conditions that exist at a particular time and place.',
-    ipa: '/ s t .u e .  n/',
+    meaning: 'Durum, vaziyet',
+    definition: 'The set of conditions that exist at a particular time in a particular place.',
+    ipa: '/ˌsɪtʃ.uˈeɪ.ʃən/',
     level: 'intermediate',
     wordFamily: [
-      { word: 'situate', pos: 'verb', meaning: 'konumland rmak' },
-      { word: 'situated', pos: 'adj', meaning: 'konumlanm  ' }
+      { word: 'situate', pos: 'verb', meaning: 'konumlandırmak' },
+      { word: 'situated', pos: 'adj', meaning: 'konumlanmış' }
     ],
     synonyms: [
-      { word: 'Circumstance', meaning: ' art/durum', pos: 'noun' },
-      { word: 'Condition', meaning: 'ko ul', pos: 'noun' },
-      { word: 'State', meaning: 'h l/durum', pos: 'noun' }
+      { word: 'Circumstances', meaning: 'Koşullar/Durumlar', pos: 'noun' },
+      { word: 'Context', meaning: 'Bağlam/Ortam', pos: 'noun' },
+      { word: 'State of affairs', meaning: 'Gidişat', pos: 'noun' }
     ],
     antonyms: [],
     collocations: ['difficult situation', 'current situation', 'win-win situation'],
     collocationMeanings: {
       'difficult situation': 'zor durum',
       'current situation': 'mevcut durum',
-      'win-win situation': 'her iki taraf n da kazand    durum'
+      'win-win situation': 'her iki tarafın da kazandığı durum'
     },
     examples: ['If the situation had been different, their plan might have succeeded.'],
-    exampleTranslations: ['Durum farkl  olsayd , planlar  ba ar l  olabilirdi.']
+    exampleTranslations: ['Durum farklı olsaydı, planları başarılı olabilirdi.']
   },
   {
     id: 'slight_delay',
     word: 'Slight delay',
     pos: 'phrase',
-    meaning: 'ufak gecikme',
-    definition: 'A small postponement or hold-up.',
-    ipa: '/sla t d  le /',
+    meaning: 'Ufak gecikme',
+    definition: 'A situation in which a plane, train etc. leaves or arrives a little bit late.',
+    ipa: '/slaɪt dɪˈleɪ/',
     level: 'intermediate',
-    wordFamily: [
-      { word: 'slightly', pos: 'adverb', meaning: 'hafif e/biraz' }
-    ],
+    wordFamily: [],
     synonyms: [
-      { word: 'Minor delay', meaning: 'k   k gecikme', pos: 'phrase' },
-      { word: 'Brief delay', meaning: 'k sa s reli gecikme', pos: 'phrase' }
+      { word: 'Minor delay', meaning: 'Küçük gecikme', pos: 'noun' }
     ],
     antonyms: [
-      { word: 'Severe delay', meaning: 'ciddi gecikme', pos: 'phrase' },
-      { word: 'Major delay', meaning: 'b y k gecikme', pos: 'phrase' }
+      { word: 'Severe delay', meaning: 'Ciddi gecikme', pos: 'phrase' }
     ],
     collocations: ['expect a slight delay', 'cause a slight delay'],
     collocationMeanings: {
       'expect a slight delay': 'ufak bir gecikme beklemek',
-      'cause a slight delay': 'k   k bir gecikmeye neden olmak'
+      'cause a slight delay': 'küçük bir gecikmeye neden olmak'
     },
     examples: ['There is a slight delay to the flight.'],
-    exampleTranslations: ['U u ta ufak bir gecikme var.']
+    exampleTranslations: ['Uçuşta ufak bir gecikme var.']
   },
   {
     id: 'sophisticated_b1',
     word: 'Sophisticated',
-    pos: 'adj',
-    meaning: 'geli mi , sofistike, k lt rl ',
-    definition: 'Having a high degree of complexity; advanced.',
-    ipa: '/s  f s.t .ke .t d/',
+    pos: 'adjective',
+    meaning: 'Gelişmiş, sofistike, kültürlü',
+    definition: 'Complicated and advanced.',
+    ipa: '/səˈfɪs.tɪ.keɪ.tɪd/',
     level: 'intermediate',
     wordFamily: [
-      { word: 'sophistication', pos: 'noun', meaning: 'k lt rl l k/karma  kl k' }
+      { word: 'sophistication', pos: 'noun', meaning: 'gelişmişlik/kültürlülük' }
     ],
     synonyms: [
-      { word: 'Advanced', meaning: 'ileri d zey', pos: 'adj' },
-      { word: 'Complex', meaning: 'karma  k', pos: 'adj' },
-      { word: 'Cultured', meaning: 'k lt rl ', pos: 'adj' }
+      { word: 'Advanced', meaning: 'İleri düzey', pos: 'adj' },
+      { word: 'Complex', meaning: 'Karmaşık', pos: 'adj' },
+      { word: 'Refined', meaning: 'Nazik/Seçkin', pos: 'adj' }
     ],
     antonyms: [
-      { word: 'Simple', meaning: 'basit', pos: 'adj' },
-      { word: 'Primitive', meaning: 'ilkel', pos: 'adj' },
-      { word: 'Naive', meaning: 'saf/deneyimsiz', pos: 'adj' }
+      { word: 'Simple', meaning: 'Basit', pos: 'adj' },
+      { word: 'Primitive', meaning: 'İlkel', pos: 'adj' },
+      { word: 'Naive', meaning: 'Toy/Saf', pos: 'adj' }
     ],
     collocations: ['sophisticated technology', 'sophisticated taste', 'highly sophisticated'],
     collocationMeanings: {
       'sophisticated technology': 'ileri teknoloji',
-      'sophisticated taste': 'se kin zevk',
-      'highly sophisticated': 'son derece geli mi '
+      'sophisticated taste': 'seçkin zevk',
+      'highly sophisticated': 'son derece gelişmiş'
     },
     examples: ['There is highly sophisticated surveillance equipment.'],
-    exampleTranslations: ['Son derece geli mi  (sofistike) g zetleme ekipmanlar  var.']
+    exampleTranslations: ['Son derece gelişmiş (sofistike) gözetleme ekipmanları var.']
   },
   {
     id: 'sort',
     word: 'Sort',
     pos: 'verb',
-    meaning: 's ralamak, ay klamak',
-    definition: 'To arrange things in groups or in a particular order.',
-    ipa: '/s  t/',
+    meaning: 'Sıralamak, ayıklamak',
+    definition: 'To arrange things in groups or in a particular order, for example by date, importance, size, or colour.',
+    ipa: '/sɔːt/',
     level: 'intermediate',
     wordFamily: [
-      { word: 'sorter', pos: 'noun', meaning: 's ralay c ' }
+      { word: 'sorter', pos: 'noun', meaning: 'ayıklayıcı' }
     ],
     synonyms: [
-      { word: 'Classify', meaning: 's n fland rmak', pos: 'verb' },
-      { word: 'Categorize', meaning: 'kategorize etmek', pos: 'verb' },
-      { word: 'Arrange', meaning: 'd zenlemek', pos: 'verb' }
+      { word: 'Organize', meaning: 'Düzenlemek', pos: 'verb' },
+      { word: 'Classify', meaning: 'Sınıflandırmak', pos: 'verb' },
+      { word: 'Arrange', meaning: 'Dizmek', pos: 'verb' }
     ],
     antonyms: [
-      { word: 'Disorganize', meaning: 'da  tmak/kar  t rmak', pos: 'verb' },
-      { word: 'Mix up', meaning: 'kar  t rmak', pos: 'phrasal verb' }
+      { word: 'Disorder', meaning: 'Dağıtmak', pos: 'verb' }
     ],
     collocations: ['sort by size', 'sort out a problem', 'sort through papers'],
     collocationMeanings: {
-      'sort by size': 'boyuta g re s ralamak',
+      'sort by size': 'boyuta göre sıralamak',
       'sort out a problem': 'bir sorunu halletmek',
-      'sort through papers': 'ka  tlar  ay klamak/g zden ge irmek'
+      'sort through papers': 'kağıtları ayıklamak/gözden geçirmek'
     },
     examples: ['Once the data is collected, the computer will sort it by date.'],
-    exampleTranslations: ['Veriler topland ktan sonra bilgisayar bunlar  tarihe g re s ralayacakt r.']
+    exampleTranslations: ['Veriler toplandıktan sonra bilgisayar bunları tarihe göre sıralayacaktır.']
   },
   {
     id: 'spectator',
     word: 'Spectator',
     pos: 'noun',
-    meaning: 'izleyici (spor vb. i in)',
-    definition: 'A person who watches a show, game, or other event.',
-    ipa: '/spek te .t r/',
+    meaning: 'İzleyici (spor vb. için)',
+    definition: 'Someone who watches a public activity or event, especially a sports event.',
+    ipa: '/spekˈteɪ.tər/',
     level: 'intermediate',
     wordFamily: [
-      { word: 'spectacle', pos: 'noun', meaning: 'g rkemli olay' },
-      { word: 'spectacular', pos: 'adj', meaning: 'g rkemli' }
+      { word: 'spectate', pos: 'verb', meaning: 'izlemek (müsabaka)' }
     ],
     synonyms: [
-      { word: 'Viewer', meaning: 'izleyici', pos: 'noun' },
-      { word: 'Observer', meaning: 'g zlemci', pos: 'noun' },
-      { word: 'Bystander', meaning: 'seyirci/yan nda duran', pos: 'noun' }
+      { word: 'Onlooker', meaning: 'Seyirci', pos: 'noun' },
+      { word: 'Viewer', meaning: 'İzleyici', pos: 'noun' }
     ],
     antonyms: [
-      { word: 'Participant', meaning: 'kat l mc ', pos: 'noun' },
-      { word: 'Player', meaning: 'oyuncu', pos: 'noun' }
+      { word: 'Participant', meaning: 'Katılımcı', pos: 'noun' },
+      { word: 'Player', meaning: 'Oyuncu', pos: 'noun' }
     ],
     collocations: ['crowd of spectators', 'cheering spectators'],
     collocationMeanings: {
       'crowd of spectators': 'izleyici kitlesi',
-      'cheering spectators': 'tezah rat yapan seyirciler'
+      'cheering spectators': 'tezahürat yapan seyirciler'
     },
     examples: ['The final game attracted a crowd of over 50,000 spectators.'],
-    exampleTranslations: ['Final ma   50.000 den fazla seyirci  ekti.']
+    exampleTranslations: ['Final maçı 50.000’den fazla seyirci çekti.']
   },
   {
     id: 'spot',
     word: 'Spot',
     pos: 'verb',
-    meaning: 'fark etmek, g z ne ili mek',
-    definition: 'To see or notice someone or something, usually because you are looking hard.',
-    ipa: '/sp t/',
+    meaning: 'Fark etmek, gözüne ilişmek',
+    definition: 'To notice someone or something.',
+    ipa: '/spɒt/',
     level: 'intermediate',
     wordFamily: [
-      { word: 'spotless', pos: 'adj', meaning: 'tertemiz/lekesiz' },
-      { word: 'spotted', pos: 'adj', meaning: 'benekli/fark edilmi ' }
+      { word: 'spotless', pos: 'adj', meaning: 'tertemiz' }
     ],
     synonyms: [
-      { word: 'Notice', meaning: 'fark etmek', pos: 'verb' },
-      { word: 'Identify', meaning: 'tan mlamak', pos: 'verb' },
-      { word: 'Detect', meaning: 'tespit etmek', pos: 'verb' }
+      { word: 'Notice', meaning: 'Fark etmek', pos: 'verb' },
+      { word: 'Detect', meaning: 'Tespit etmek', pos: 'verb' },
+      { word: 'Identify', meaning: 'Tanımlamak', pos: 'verb' }
     ],
     antonyms: [
-      { word: 'Overlook', meaning: 'g zden ka  rmak', pos: 'verb' },
-      { word: 'Miss', meaning: ' skalamak/fark etmemek', pos: 'verb' }
+      { word: 'Miss', meaning: 'Gözden kaçırmak', pos: 'verb' },
+      { word: 'Overlook', meaning: 'Görmemek', pos: 'verb' }
     ],
     collocations: ['spot the difference', 'spot a mistake', 'hard to spot'],
     collocationMeanings: {
-      'spot the difference': 'fark  bulmak',
-      'spot a mistake': 'bir hatay  fark etmek',
+      'spot the difference': 'farkı bulmak',
+      'spot a mistake': 'bir hatayı fark etmek',
       'hard to spot': 'fark etmesi zor'
     },
     examples: ['Hugh was spotted by local police and had to leave quickly.'],
-    exampleTranslations: ['Hugh yerel polis taraf ndan fark edildi ve h zla oradan ayr lmak zorunda kald .']
+    exampleTranslations: ['Hugh yerel polis tarafından fark edildi ve hızla oradan ayrılmak zorunda kaldı.']
   },
   {
     id: 'stare',
     word: 'Stare',
     pos: 'verb',
-    meaning: 'dik dik bakmak',
-    definition: 'To look for a long time with the eyes wide open, especially when surprised, frightened, or thinking.',
-    ipa: '/ste r/',
+    meaning: 'Dik dik bakmak',
+    definition: 'To look at someone or something very directly for a long time.',
+    ipa: '/steər/',
     level: 'intermediate',
-    wordFamily: [
-      { word: 'stare', pos: 'noun', meaning: 'dik dik bak  ' }
-    ],
+    wordFamily: [],
     synonyms: [
-      { word: 'Gaze', meaning: 'g z n  ay rmadan bakmak', pos: 'verb' },
-      { word: 'Gape', meaning: 'a z  a  k bakmak', pos: 'verb' },
-      { word: 'Glare', meaning: 'ters ters bakmak', pos: 'verb' }
+      { word: 'Gaze', meaning: 'Gözünü dikip bakmak', pos: 'verb' },
+      { word: 'Glare', meaning: 'Öfkeyle bakmak', pos: 'verb' }
     ],
     antonyms: [
-      { word: 'Glance', meaning: 'g z ucuyla bakmak', pos: 'verb' },
-      { word: 'Peek', meaning: 'dikizlemek/k saca bakmak', pos: 'verb' },
-      { word: 'Glimpse', meaning: 'anl k g rmek', pos: 'verb' }
+      { word: 'Glance', meaning: 'Göz atmak', pos: 'verb' },
+      { word: 'Peek', meaning: 'Dikizlemek/Kısaca bakmak', pos: 'verb' }
     ],
     collocations: ['stare at someone', 'blank stare', 'stare in amazement'],
     collocationMeanings: {
       'stare at someone': 'birine dik dik bakmak',
-      'blank stare': 'bo  bak  ',
+      'blank stare': 'boş bakış',
       'stare in amazement': 'hayretle bakmak'
     },
     examples: ["It's rude to stare."],
-    exampleTranslations: ['Dik dik bakmak kabal kt r.']
+    exampleTranslations: ['Dik dik bakmak kabalıktır.']
   },
   {
     id: 'start_off',
     word: 'Start off',
     pos: 'phrasal verb',
-    meaning: 'ba lamak (bir i e/konuma)',
-    definition: 'To begin by doing something, or to make something begin by doing something.',
-    ipa: '/st  t  f/',
+    meaning: 'Başlamak (bir işe/konuma)',
+    definition: 'To begin, especially in a particular way or by doing a particular thing.',
+    ipa: '/stɑːt ɒf/',
     level: 'intermediate',
     wordFamily: [],
     synonyms: [
-      { word: 'Commence', meaning: 'ba lamak', pos: 'verb' },
-      { word: 'Begin', meaning: 'ba lamak', pos: 'verb' },
-      { word: 'Initiate', meaning: 'ba latmak', pos: 'verb' }
+      { word: 'Commence', meaning: 'Başlamak', pos: 'verb' },
+      { word: 'Begin', meaning: 'Başlamak', pos: 'verb' }
     ],
     antonyms: [
-      { word: 'Finish', meaning: 'bitirmek', pos: 'verb' },
-      { word: 'End', meaning: 'sonland rmak', pos: 'verb' },
-      { word: 'Conclude', meaning: 'sonu land rmak', pos: 'verb' }
+      { word: 'Finish', meaning: 'Bitirmek', pos: 'verb' },
+      { word: 'End', meaning: 'Sonlandırmak', pos: 'verb' }
     ],
     collocations: ['start off with', 'start off small'],
     collocationMeanings: {
-      'start off with': 'ile ba lamak',
-      'start off small': 'k   kten ba lamak'
+      'start off with': 'ile başlamak',
+      'start off small': 'küçükten başlamak'
     },
     examples: ['Many store managers started off as sales assistants.'],
-    exampleTranslations: ['Bir ok ma aza m d r  i e sat   asistan  olarak ba lad .']
+    exampleTranslations: ['Birçok mağaza müdürü işe satış asistanı olarak başladı.']
   },
   {
     id: 'sticky',
     word: 'Sticky',
-    pos: 'adj',
-    meaning: 'yap  kan',
-    definition: 'Made of or covered with a substance that stays attached to anything it touches.',
-    ipa: '/ st k.i/',
+    pos: 'adjective',
+    meaning: 'Yapışkan',
+    definition: 'A sticky substance sticks to other things.',
+    ipa: '/ˈstɪk.i/',
     level: 'intermediate',
     wordFamily: [
-      { word: 'stick', pos: 'verb', meaning: 'yap  t rmak' },
-      { word: 'stickiness', pos: 'noun', meaning: 'yap  kanl k' }
+      { word: 'stick', pos: 'verb', meaning: 'yapışmak/yapıştırmak' }
     ],
     synonyms: [
-      { word: 'Adhesive', meaning: 'yap  t r c /yap  kan', pos: 'adj' },
-      { word: 'Gluey', meaning: 'yap   yap  ', pos: 'adj' },
-      { word: 'Gummy', meaning: 'yap  kan', pos: 'adj' }
+      { word: 'Adhesive', meaning: 'Yapıştırıcı özellikli', pos: 'adj' },
+      { word: 'Gummy', meaning: 'Sakızımsı', pos: 'adj' }
     ],
     antonyms: [
-      { word: 'Slippery', meaning: 'kaygan', pos: 'adj' },
-      { word: 'Dry', meaning: 'kuru', pos: 'adj' },
-      { word: 'Smooth', meaning: 'p r zs z', pos: 'adj' }
+      { word: 'Slippery', meaning: 'Kaygan', pos: 'adj' }
     ],
     collocations: ['sticky fingers', 'sticky tape', 'sticky situation'],
     collocationMeanings: {
-      'sticky fingers': 'yap  kan parmaklar',
+      'sticky fingers': 'yapışkan parmaklar',
       'sticky tape': 'seloteyp/bant',
-      'sticky situation': 'zor/ etrefilli durum'
+      'sticky situation': 'zor/çetrefilli durum'
     },
     examples: ['This honey is very sticky.'],
-    exampleTranslations: ['Bu bal  ok yap  kan.']
+    exampleTranslations: ['Bu bal çok yapışkan.']
   },
   {
     id: 'store',
     word: 'Store',
     pos: 'verb',
-    meaning: 'depolamak, saklamak',
-    definition: 'To keep or put something in a special place while it is not being used.',
-    ipa: '/st  r/',
+    meaning: 'Depolamak, saklamak',
+    definition: 'To keep something in a particular place.',
+    ipa: '/stɔːr/',
     level: 'intermediate',
     wordFamily: [
       { word: 'storage', pos: 'noun', meaning: 'depolama' },
-      { word: 'store', pos: 'noun', meaning: 'ma aza/depo' }
+      { word: 'store', pos: 'noun', meaning: 'mağaza/depo' }
     ],
     synonyms: [
-      { word: 'Stockpile', meaning: 'stok yapmak', pos: 'verb' },
-      { word: 'Keep', meaning: 'tutmak/saklamak', pos: 'verb' },
-      { word: 'Stash', meaning: 'gizlice saklamak', pos: 'verb' }
+      { word: 'Stash', meaning: 'Zulalamak/Saklamak', pos: 'verb' },
+      { word: 'Keep', meaning: 'Muhafaza etmek', pos: 'verb' }
     ],
     antonyms: [
-      { word: 'Discard', meaning: 'atmak', pos: 'verb' },
-      { word: 'Spend', meaning: 'harcamak', pos: 'verb' },
-      { word: 'Use', meaning: 'kullanmak', pos: 'verb' }
+      { word: 'Discard', meaning: 'Atmak', pos: 'verb' }
     ],
     collocations: ['store information', 'store energy', 'store data'],
     collocationMeanings: {
@@ -7840,856 +8557,788 @@ export const vocabularyData: VocabularyWord[] = [
       'store data': 'veri kaydetmek'
     },
     examples: ['Nuclear waste is currently being stored close to the town.'],
-    exampleTranslations: ['N kleer at klar  u anda kasaban n yak n nda depolan yor.']
+    exampleTranslations: ['Nükleer atıklar şu anda kasabanın yakınında depolanıyor.']
   },
-
   {
     id: 'suitable_b1',
     word: 'Suitable',
-    pos: 'adj',
-    meaning: 'uygun',
-    definition: 'Right or appropriate for a particular person, purpose, or situation.',
-    ipa: '/ su .t .b l/',
+    pos: 'adjective',
+    meaning: 'Uygun',
+    definition: 'Right for a particular purpose, person or situation.',
+    ipa: '/ˈsuː.tə.bəl/',
     level: 'intermediate',
     wordFamily: [
-      { word: 'suit', pos: 'verb', meaning: 'uymak/yak  mak' },
       { word: 'suitability', pos: 'noun', meaning: 'uygunluk' },
-      { word: 'suitably', pos: 'adverb', meaning: 'uygun bir  ekilde' }
+      { word: 'suitably', pos: 'adv', meaning: 'uygun şekilde' },
+      { word: 'suit', pos: 'verb', meaning: 'yakışmak/uygun olmak' }
     ],
     synonyms: [
-      { word: 'Appropriate', meaning: 'uygun', pos: 'adj' },
-      { word: 'Proper', meaning: 'do ru/uygun', pos: 'adj' },
-      { word: 'Fitting', meaning: 'yak  an/uygun', pos: 'adj' }
+      { word: 'Appropriate', meaning: 'Uygun/Yerinde', pos: 'adj' },
+      { word: 'Fitting', meaning: 'Münasip', pos: 'adj' }
     ],
     antonyms: [
-      { word: 'Unsuitable', meaning: 'uygunsuz', pos: 'adj' },
-      { word: 'Inappropriate', meaning: 'yersiz/uygunsuz', pos: 'adj' },
-      { word: 'Unfit', meaning: 'elveri siz', pos: 'adj' }
+      { word: 'Unsuitable', meaning: 'Uygun olmayan', pos: 'adj' },
+      { word: 'Inappropriate', meaning: 'Yersiz', pos: 'adj' }
     ],
     collocations: ['suitable for', 'not suitable', 'highly suitable'],
     collocationMeanings: {
-      'suitable for': 'bir  ey i in uygun',
-      'not suitable': 'uygun de il',
+      'suitable for': 'bir şey için uygun',
+      'not suitable': 'uygun değil',
       'highly suitable': 'son derece uygun'
     },
     examples: ['The nearest suitable alternative was two miles away.'],
-    exampleTranslations: ['En yak n uygun alternatif iki mil uzaktayd .']
+    exampleTranslations: ['En yakın uygun alternatif iki mil uzaktaydı.']
   },
   {
     id: 'suitable_for_b1',
     word: 'Suitable for',
     pos: 'phrase',
-    meaning: 'uygun olmak (-e uygun)',
-    definition: 'Accepted as right or appropriate for a specific group or use.',
-    ipa: '/ su .t .b l f  r/',
+    meaning: 'Uygun olmak (-e uygun)',
+    definition: 'Right for a particular purpose, person, or situation.',
+    ipa: '/ˈsuː.tə.bəl fɔːr/',
     level: 'intermediate',
     wordFamily: [],
     synonyms: [
-      { word: 'Fit for', meaning: 'i in uygun/yeterli', pos: 'phrase' },
-      { word: 'Geared towards', meaning: 'y nelik/uygun', pos: 'phrase' }
+      { word: 'Ideal for', meaning: 'İçin ideal', pos: 'phrase' }
     ],
     antonyms: [
-      { word: 'Ill-suited', meaning: 'yak  mayan/uymayan', pos: 'adj' }
+      { word: 'Unfit for', meaning: 'İçin elverişsiz', pos: 'phrase' }
     ],
     collocations: ['suitable for all ages', 'not suitable for children'],
     collocationMeanings: {
-      'suitable for all ages': 'her ya a uygun',
-      'not suitable for children': ' ocuklar i in uygun de il'
+      'suitable for all ages': 'her yaşa uygun',
+      'not suitable for children': 'çocuklar için uygun değil'
     },
     examples: ["The film wasn't suitable for a younger person."],
-    exampleTranslations: ['Film daha gen  biri i in uygun de ildi.']
+    exampleTranslations: ['Film daha genç biri için uygun değildi.']
   },
   {
     id: 'superb',
     word: 'Superb',
-    pos: 'adj',
-    meaning: 'm kemmel,  st n kalite',
-    definition: 'Of excellent quality; very good indeed.',
-    ipa: '/su  p  b/',
+    pos: 'adjective',
+    meaning: 'Mükemmel, üstün kalite',
+    definition: 'Of the highest quality.',
+    ipa: '/suːˈpɜːb/',
     level: 'intermediate',
     wordFamily: [
-      { word: 'superbly', pos: 'adverb', meaning: 'harika bir  ekilde' }
+      { word: 'superbly', pos: 'adv', meaning: 'mükemmelce' }
     ],
     synonyms: [
-      { word: 'Excellent', meaning: 'm kemmel', pos: 'adj' },
-      { word: 'Splendid', meaning: ' ahane', pos: 'adj' },
-      { word: 'Magnificent', meaning: 'ihti aml ', pos: 'adj' }
+      { word: 'Excellent', meaning: 'Harika', pos: 'adj' },
+      { word: 'Magnificent', meaning: 'Görkemli/Mükemmel', pos: 'adj' },
+      { word: 'First-rate', meaning: 'Birinci sınıf', pos: 'adj' }
     ],
     antonyms: [
-      { word: 'Terrible', meaning: 'berbat', pos: 'adj' },
-      { word: 'Awful', meaning: ' ok k t ', pos: 'adj' },
-      { word: 'Poor', meaning: 'zay f/k t ', pos: 'adj' }
+      { word: 'Poor', meaning: 'Kötü/Zayıf', pos: 'adj' },
+      { word: 'Mediocre', meaning: 'Vasat', pos: 'adj' }
     ],
     collocations: ['superb performance', 'superb view', 'superb quality'],
     collocationMeanings: {
       'superb performance': 'harika performans',
       'superb view': 'muazzam manzara',
-      'superb quality': ' st n kalite'
+      'superb quality': 'üstün kalite'
     },
     examples: ['The Hotel Gardesana offers superb views of the lake.'],
-    exampleTranslations: ['Hotel Gardesana muhte em g l manzaralar  sunmaktad r.']
+    exampleTranslations: ['Hotel Gardesana muhteşem göl manzaraları sunmaktadır.']
   },
   {
     id: 'switch_off_completely',
     word: 'Switch off completely',
     pos: 'phrasal verb',
-    meaning: 'kafay  tamamen bo altmak, irtibat  kesmek',
-    definition: 'To stop giving your attention to someone or something.',
-    ipa: '/sw t   f k m pli t.li/',
+    meaning: 'Kafayı tamamen boşaltmak, irtibatı kesmek',
+    definition: 'To stop thinking about something.',
+    ipa: '/swɪtʃ ɒf kəmˈpliːt.li/',
     level: 'intermediate',
     wordFamily: [],
     synonyms: [
-      { word: 'Relax', meaning: 'rahatlamak', pos: 'verb' },
-      { word: 'Unwind', meaning: 'gev emek/zihni bo altmak', pos: 'verb' },
-      { word: 'Disconnect', meaning: 'ba lant y  kesmek', pos: 'verb' }
+      { word: 'Unwind', meaning: 'Gevşemek', pos: 'verb' },
+      { word: 'Disconnect', meaning: 'Bağlantıyı kesmek', pos: 'verb' }
     ],
     antonyms: [
-      { word: 'Focus', meaning: 'odaklanmak', pos: 'verb' },
-      { word: 'Concentrate', meaning: 'yo unla mak', pos: 'verb' }
+      { word: 'Focus', meaning: 'Odaklanmak', pos: 'verb' }
     ],
     collocations: ['need to switch off completely'],
     collocationMeanings: {
-      'need to switch off completely': 'zihni tamamen bo altmaya ihtiya  duymak'
+      'need to switch off completely': 'zihni tamamen boşaltmaya ihtiyaç duymak'
     },
     examples: ['I went on holiday to switch off completely from writing the book.'],
-    exampleTranslations: ['Kitap yazmaktan tamamen uzakla mak (kafay  bo altmak) i in tatile   kt m.']
+    exampleTranslations: ['Kitap yazmaktan tamamen uzaklaşmak (kafayı boşaltmak) için tatile çıktım.']
   },
   {
     id: 'take_note_of',
     word: 'Take note of',
     pos: 'idiom',
-    meaning: 'not etmek, dikkate almak',
-    definition: 'To give attention to something you have heard or seen.',
-    ipa: '/te k n  t  v/',
+    meaning: 'Not etmek, dikkate almak',
+    definition: 'To notice something and try to remember it because you think it is important.',
+    ipa: '/teɪk nəʊt əv/',
     level: 'intermediate',
     wordFamily: [],
     synonyms: [
-      { word: 'Observe', meaning: 'g zlemlemek', pos: 'verb' },
-      { word: 'Notice', meaning: 'fark etmek', pos: 'verb' },
-      { word: 'Heed', meaning: 'kulak asmak/dikkate almak', pos: 'verb' }
+      { word: 'Pay attention to', meaning: 'Dikkat etmek', pos: 'phrase' },
+      { word: 'Observe', meaning: 'Gözlemlemek', pos: 'verb' }
     ],
     antonyms: [
-      { word: 'Ignore', meaning: 'g rmezden gelmek', pos: 'verb' },
-      { word: 'Disregard', meaning: 'ald rmamak', pos: 'verb' }
+      { word: 'Ignore', meaning: 'Görmezden gelmek', pos: 'verb' },
+      { word: 'Overlook', meaning: 'Gözden kaçırmak', pos: 'verb' }
     ],
     collocations: ['take note of details', 'please take note'],
     collocationMeanings: {
-      'take note of details': 'ayr nt lara dikkat etmek',
-      'please take note': 'l tfen dikkate al n'
+      'take note of details': 'ayrıntılara dikkat etmek',
+      'please take note': 'lütfen dikkate alın'
     },
     examples: ['I took note of what she said.'],
-    exampleTranslations: ['S ylediklerini not ettim / dikkate ald m.']
+    exampleTranslations: ['Söylediklerini not ettim / dikkate aldım.']
   },
   {
     id: 'take_place',
     word: 'Take place',
     pos: 'idiom',
-    meaning: 'ger ekle mek, olmak',
-    definition: 'To happen, especially after being planned or arranged.',
-    ipa: '/te k ple s/',
+    meaning: 'Gerçekleşmek, olmak',
+    definition: 'To happen.',
+    ipa: '/teɪk pleɪs/',
     level: 'intermediate',
     wordFamily: [],
     synonyms: [
-      { word: 'Happen', meaning: 'olmak', pos: 'verb' },
-      { word: 'Occur', meaning: 'meydana gelmek', pos: 'verb' },
-      { word: 'Transpire', meaning: 'vuku bulmak', pos: 'verb' }
+      { word: 'Occur', meaning: 'Vuku bulmak', pos: 'verb' },
+      { word: 'Happen', meaning: 'Olmak', pos: 'verb' }
     ],
     antonyms: [
-      { word: 'Be cancelled', meaning: 'iptal olmak', pos: 'phrase' }
+      { word: 'Be cancelled', meaning: 'İptal edilmek', pos: 'phrase' }
     ],
     collocations: ['take place in', 'will take place'],
     collocationMeanings: {
-      'take place in': ' urada ger ekle mek',
-      'will take place': 'olacak/yap lacak'
+      'take_place in': 'şurada gerçekleşmek',
+      'will take place': 'olacak/yapılacak'
     },
     examples: ['The Olympics take place every four years.'],
-    exampleTranslations: ['Olimpiyatlar her d rt y lda bir ger ekle ir.']
+    exampleTranslations: ['Olimpiyatlar her dört yılda bir gerçekleşir.']
   },
   {
     id: 'task',
     word: 'Task',
     pos: 'noun',
-    meaning: 'g rev, i ',
-    definition: 'A piece of work to be done, especially one done regularly or unwillingly.',
-    ipa: '/t  sk/',
+    meaning: 'Görev, iş',
+    definition: 'A job that you need to do.',
+    ipa: '/tɑːsk/',
     level: 'intermediate',
-    wordFamily: [
-      { word: 'taskmaster', pos: 'noun', meaning: 'i  yapt ran/disiplinli patron' }
-    ],
+    wordFamily: [],
     synonyms: [
-      { word: 'Assignment', meaning: 'atama/ dev', pos: 'noun' },
-      { word: 'Duty', meaning: 'g rev', pos: 'noun' },
-      { word: 'Chore', meaning: 'angarya/ev i i', pos: 'noun' }
+      { word: 'Assignment', meaning: 'Atama/Ödev', pos: 'noun' },
+      { word: 'Duty', meaning: 'Vazife', pos: 'noun' },
+      { word: 'Chore', meaning: 'Gündelik iş', pos: 'noun' }
     ],
-    antonyms: [
-      { word: 'Pastime', meaning: 'e lence/bo  vakit u ra  ', pos: 'noun' },
-      { word: 'Leisure', meaning: 'serbest zaman', pos: 'noun' }
-    ],
+    antonyms: [],
     collocations: ['difficult task', 'complete a task', 'daily task'],
     collocationMeanings: {
-      'difficult task': 'zor g rev',
-      'complete a task': 'bir i i tamamlamak',
-      'daily task': 'g nl k i '
+      'difficult task': 'zor görev',
+      'complete a task': 'bir işi tamamlamak',
+      'daily task': 'günlük iş'
     },
     examples: ['My first real task was to prepare for the meeting.'],
-    exampleTranslations: [' lk ger ek g revim toplant  i in haz rlanmakt .']
+    exampleTranslations: ['İlk gerçek görevim toplantı için hazırlanmaktı.']
   },
   {
     id: 'tell_the_difference_between',
     word: 'Tell the difference between',
     pos: 'phrase',
-    meaning: 'aras ndaki fark  s ylemek/ay rt etmek',
-    definition: 'To be able to see how two or more things are different.',
-    ipa: '/tel     d f. r. ns b  twi n/',
+    meaning: 'Arasındaki farkı söylemek/ayırt etmek',
+    definition: 'To notice what is different between similar people or things.',
+    ipa: '/tel ðə ˈdɪf.ər.əns bɪˈtwiːn/',
     level: 'intermediate',
     wordFamily: [],
     synonyms: [
-      { word: 'Distinguish', meaning: 'ay rt etmek', pos: 'verb' },
-      { word: 'Differentiate', meaning: 'farkl la t rmak/ay rmak', pos: 'verb' },
-      { word: 'Discriminate', meaning: 'ayr m yapmak', pos: 'verb' }
+      { word: 'Distinguish', meaning: 'Ayırt etmek', pos: 'verb' },
+      { word: 'Differentiate', meaning: 'Farklılaştırmak', pos: 'verb' }
     ],
     antonyms: [
-      { word: 'Confuse', meaning: 'kar  t rmak', pos: 'verb' },
-      { word: 'Mix up', meaning: 'birbirine kar  t rmak', pos: 'phrasal verb' }
+      { word: 'Confuse', meaning: 'Kafası karışmak/Karıştırmak', pos: 'verb' }
     ],
     collocations: ['hard to tell the difference'],
     collocationMeanings: {
-      'hard to tell the difference': 'aradaki fark  s ylemek zordur'
+      'hard to tell the difference': 'aradaki farkı söylemek zordur'
     },
     examples: ['How do you tell the difference between the kittens?'],
-    exampleTranslations: ['Yavrular aras ndaki fark  nas l ay rt ediyorsun?']
+    exampleTranslations: ['Yavrular arasındaki farkı nasıl ayırt ediyorsun?']
   },
   {
     id: 'tempt',
     word: 'Tempt',
     pos: 'verb',
-    meaning: 'akl n   elmek, cezbetmek',
-    definition: 'To make someone want to have or do something, especially something wrong or unwise.',
+    meaning: 'Aklını çelmek, cezbetmek',
+    definition: 'To make you want to do or to have something, especially something that is not good for you.',
     ipa: '/tempt/',
     level: 'intermediate',
     wordFamily: [
-      { word: 'temptation', pos: 'noun', meaning: 'cezbedici  ey' },
-      { word: 'tempting', pos: 'adj', meaning: ' ekici/ba tan   kar c ' }
+      { word: 'temptation', pos: 'noun', meaning: 'ayartma/cezbedici şey' },
+      { word: 'tempting', pos: 'adj', meaning: 'cezbedici' }
     ],
     synonyms: [
-      { word: 'Entice', meaning: 'ikna etmek/ayartmak', pos: 'verb' },
-      { word: 'Lure', meaning: 'cezbetmek', pos: 'verb' },
-      { word: 'Invite', meaning: 'davetiye   karmak', pos: 'verb' }
+      { word: 'Entice', meaning: 'Ayartmak', pos: 'verb' },
+      { word: 'Allure', meaning: 'Cezbetmek', pos: 'verb' }
     ],
     antonyms: [
-      { word: 'Discourage', meaning: 'vazge irmek', pos: 'verb' },
-      { word: 'Repel', meaning: 'itmek/tiksindirmek', pos: 'verb' },
-      { word: 'Deter', meaning: 'cayd rmak', pos: 'verb' }
+      { word: 'Repel', meaning: 'İtmek/Tiksindirmek', pos: 'verb' },
+      { word: 'Dissuade', meaning: 'Vazgeçirmek', pos: 'verb' }
     ],
     collocations: ['tempt fate', 'tempted to do', 'tempt someone'],
     collocationMeanings: {
       'tempt fate': 'kaderini zorlamak',
-      'tempted to do': 'bir  eyi yapmaya meyilli olmak',
+      'tempted to do': 'bir şeyi yapmaya meyilli olmak',
       'tempt someone': 'birini cezbetmek'
     },
     examples: ['The shop windows were lit, tempting the late shoppers.'],
-    exampleTranslations: ['Ma aza vitrinleri ayd nlat lm  t , ge  saatte al  veri  yapanlar n akl n   eliyordu.']
+    exampleTranslations: ['Mağaza vitrinleri aydınlatılmıştı, geç saatte alışveriş yapanların aklını çeliyordu.']
   },
   {
     id: 'think_outside_the_box',
     word: 'Think outside the box',
     pos: 'idiom',
-    meaning: 'kal plar n d   nda d   nmek, yarat c  olmak',
-    definition: 'To think imaginatively using new ideas instead of traditional ones.',
-    ipa: '/   k  a t sa d    b ks/',
+    meaning: 'Kalıpların dışında düşünmek, yaratıcı olmak',
+    definition: 'To think of an unusual idea.',
+    ipa: '/θɪŋk ˌaʊtˈsaɪd ðə bɒks/',
     level: 'intermediate',
     wordFamily: [],
     synonyms: [
-      { word: 'Innovate', meaning: 'yenilik yapmak', pos: 'verb' },
-      { word: 'Be creative', meaning: 'yarat c  olmak', pos: 'phrase' }
+      { word: 'Innovate', meaning: 'Yenilik yapmak', pos: 'verb' }
     ],
     antonyms: [
-      { word: 'Follow tradition', meaning: 'geleneklere uymak', pos: 'phrase' },
-      { word: 'Be conventional', meaning: 'al   lm   olmak', pos: 'phrase' }
+      { word: 'Follow convention', meaning: 'Geleneği takip etmek', pos: 'phrase' }
     ],
     collocations: ['ability to think outside the box'],
     collocationMeanings: {
-      'ability to think outside the box': 'yarat c  d   nebilme becerisi'
+      'ability to think outside the box': 'yaratıcı düşünebilme becerisi'
     },
     examples: ['We are getting nowhere, we need to think outside the box.'],
-    exampleTranslations: ['Hi bir yere varam yoruz, kal plar n d   nda d   nmemiz gerekiyor.']
+    exampleTranslations: ['Hiçbir yere varamıyoruz, kalıpların dışında düşünmemiz gerekiyor.']
   },
   {
     id: 'throw_away',
     word: 'Throw away',
     pos: 'phrasal verb',
-    meaning: 'atmak (  pe), f rlat p atmak',
-    definition: 'To get rid of something that you do not want any more.',
-    ipa: '/ r     we /',
+    meaning: 'Atmak (çöpe), fırlatıp atmak',
+    definition: 'To get rid of something that you know longer want, for example by putting it in a dustbin.',
+    ipa: '/θrəʊ əˈweɪ/',
     level: 'intermediate',
     wordFamily: [],
     synonyms: [
-      { word: 'Discard', meaning: 'atmak', pos: 'verb' },
-      { word: 'Bin', meaning: '  pe atmak', pos: 'verb' },
-      { word: 'Dispose of', meaning: 'elden   karmak', pos: 'verb' }
+      { word: 'Discard', meaning: 'Elden çıkarmak', pos: 'verb' },
+      { word: 'Dispose of', meaning: 'İmha etmek/Atmak', pos: 'phrasal verb' }
     ],
     antonyms: [
-      { word: 'Keep', meaning: 'tutmak', pos: 'verb' },
-      { word: 'Save', meaning: 'saklamak', pos: 'verb' },
-      { word: 'Preserve', meaning: 'korumak', pos: 'verb' }
+      { word: 'Keep', meaning: 'Tutmak', pos: 'verb' },
+      { word: 'Save', meaning: 'Biriktirmek/Saklamak', pos: 'verb' }
     ],
     collocations: ['throw away rubbish', 'throw away a chance', 'throw away money'],
     collocationMeanings: {
-      'throw away rubbish': '  p atmak',
-      'throw away a chance': 'bir  ans  tepmek',
-      'throw away money': 'paray  soka a atmak'
+      'throw away rubbish': 'çöp atmak',
+      'throw away a chance': 'bir şansı tepmek',
+      'throw away money': 'parayı sokağa atmak'
     },
     examples: ['Have you thrown the papers away?'],
-    exampleTranslations: ['Ka  tlar    pe att n m ?']
+    exampleTranslations: ['Kağıtları çöpe attın mı?']
   },
   {
     id: 'tidy_up',
     word: 'Tidy up',
     pos: 'phrasal verb',
-    meaning: 'ortal    toplamak, d zenlemek',
-    definition: 'To make a room or a group of things tidy by putting things in the right place.',
-    ipa: '/ ta .di  p/',
+    meaning: 'Ortalığı toplamak, düzenlemek',
+    definition: 'To put things back in the right places.',
+    ipa: '/ˈtaɪ.di ʌp/',
     level: 'intermediate',
     wordFamily: [
-      { word: 'tidiness', pos: 'noun', meaning: 'titizlik/d zen' }
+      { word: 'tidy', pos: 'adj', meaning: 'düzenli' }
     ],
     synonyms: [
-      { word: 'Clean up', meaning: 'temizlemek', pos: 'phrasal verb' },
-      { word: 'Straighten up', meaning: 'd zeltmek', pos: 'phrasal verb' },
-      { word: 'Organize', meaning: 'organize etmek', pos: 'verb' }
+      { word: 'Neaten', meaning: 'Düzenlemek', pos: 'verb' },
+      { word: 'Clean up', meaning: 'Temizlemek', pos: 'phrasal verb' }
     ],
     antonyms: [
-      { word: 'Mess up', meaning: 'da  tmak', pos: 'phrasal verb' },
-      { word: 'Clutter', meaning: 'darmada  n etmek', pos: 'verb' }
+      { word: 'Clutter', meaning: 'Dağıtmak', pos: 'verb' },
+      { word: 'Mess up', meaning: 'Batırmak', pos: 'phrasal verb' }
     ],
     collocations: ['tidy up a room', 'tidy up a mess'],
     collocationMeanings: {
-      'tidy up a room': 'oday  toplamak',
-      'tidy up a mess': 'da  n kl    toplamak'
+      'tidy up a room': 'odayı toplamak',
+      'tidy up a mess': 'dağınıklığı toplamak'
     },
     examples: ['Could you help me tidy up?'],
-    exampleTranslations: ['Ortal    toplamama yard m edebilir misin?']
+    exampleTranslations: ['Ortalığı toplamama yardım edebilir misin?']
   },
   {
     id: 'tiny',
     word: 'Tiny',
-    pos: 'adj',
-    meaning: 'k   c k, minik',
+    pos: 'adjective',
+    meaning: 'Küçücük, minik',
     definition: 'Extremely small.',
-    ipa: '/ ta .ni/',
+    ipa: '/ˈtaɪ.ni/',
     level: 'intermediate',
     wordFamily: [],
     synonyms: [
-      { word: 'Minute', meaning: 'minnac k', pos: 'adj' },
-      { word: 'Microscopic', meaning: 'mikroskobik', pos: 'adj' },
-      { word: 'Small', meaning: 'k   k', pos: 'adj' }
+      { word: 'Minute', meaning: 'Çok küçük', pos: 'adj' },
+      { word: 'Microscopic', meaning: 'Mikroskobik', pos: 'adj' }
     ],
     antonyms: [
-      { word: 'Huge', meaning: 'kocaman', pos: 'adj' },
-      { word: 'Enormous', meaning: 'muazzam', pos: 'adj' },
-      { word: 'Giant', meaning: 'dev', pos: 'adj' }
+      { word: 'Huge', meaning: 'Kocaman', pos: 'adj' },
+      { word: 'Enormous', meaning: 'Muazzam', pos: 'adj' }
     ],
     collocations: ['tiny amount', 'tiny bit', 'tiny detail'],
     collocationMeanings: {
-      'tiny amount': 'k   k miktar',
-      'tiny bit': ' ok azc k',
-      'tiny detail': 'k   k bir ayr nt '
+      'tiny amount': 'küçük miktar',
+      'tiny bit': 'çok azcık',
+      'tiny detail': 'küçük bir ayrıntı'
     },
     examples: ['The floor was covered in tiny bits of paper.'],
-    exampleTranslations: ['Yer k   c k ka  t par alar yla doluydu.']
+    exampleTranslations: ['Yer küçücük kağıt parçalarıyla doluydu.']
   },
   {
     id: 'treat_yourself',
     word: 'Treat yourself',
     pos: 'phrase',
-    meaning: 'kendini   martmak, kendine  smarlamak',
-    definition: 'To do something special or buy something special for yourself.',
-    ipa: '/tri t j   self/',
+    meaning: 'Kendini şımartmak, kendine ısmarlamak',
+    definition: 'To behave towards yourself in a particular way.',
+    ipa: '/triːt jɔːˈself/',
     level: 'intermediate',
-    wordFamily: [],
+    wordFamily: [
+      { word: 'treat', pos: 'noun/verb', meaning: 'ikram/davranmak' }
+    ],
     synonyms: [
-      { word: 'Indulge', meaning: 'kendine ziyafet  ekmek/ayr cal k tan mak', pos: 'verb' },
-      { word: 'Pamper yourself', meaning: 'kendini pohpohlamak/  martmak', pos: 'phrase' }
+      { word: 'Pamper yourself', meaning: 'Kendini pohpohlamak', pos: 'phrase' },
+      { word: 'Splurge', meaning: 'Savurganlık yapmak/Şımarmak', pos: 'verb' }
     ],
-    antonyms: [
-      { word: 'Deprive oneself', meaning: 'kendini mahrum b rakmak', pos: 'phrase' }
-    ],
+    antonyms: [],
     collocations: ['treat yourself to something'],
     collocationMeanings: {
-      'treat yourself to something': 'kendine bir  ey  smarlamak'
+      'treat yourself to something': 'kendine bir şey ısmarlamak'
     },
     examples: ["Why don't you treat yourself to a holiday."],
-    exampleTranslations: ['Neden kendine bir tatil  smarlam yorsun (kendini   martm yorsun).']
+    exampleTranslations: ['Neden kendine bir tatil ısmarlamıyorsun (kendini şımartmıyorsun).']
   },
   {
     id: 'trick',
     word: 'Trick',
     pos: 'verb',
-    meaning: 'kand rmak, oyun oynamak',
-    definition: 'To deceive someone, often as a part of a plan to get some advantage.',
-    ipa: '/tr k/',
+    meaning: 'Kandırmak, oyun oynamak',
+    definition: 'To make someone believe something that is not true.',
+    ipa: '/trɪk/',
     level: 'intermediate',
     wordFamily: [
-      { word: 'trickery', pos: 'noun', meaning: 'hilekarl k' },
-      { word: 'tricky', pos: 'adj', meaning: ' etrefilli/zor' }
+      { word: 'trickery', pos: 'noun', meaning: 'hilekârlık' },
+      { word: 'tricky', pos: 'adj', meaning: 'çetrefilli' }
     ],
     synonyms: [
-      { word: 'Deceive', meaning: 'aldatmak', pos: 'verb' },
-      { word: 'Cheat', meaning: 'doland rmak/kand rmak', pos: 'verb' },
-      { word: 'Fool', meaning: 'kand rmak', pos: 'verb' }
+      { word: 'Deceive', meaning: 'Aldatmak', pos: 'verb' },
+      { word: 'Fool', meaning: 'Kandırmak', pos: 'verb' },
+      { word: 'Cheat', meaning: 'Dolandırmak', pos: 'verb' }
     ],
     antonyms: [
-      { word: 'Guide', meaning: 'rehberlik etmek', pos: 'verb' },
-      { word: 'Help', meaning: 'yard m etmek', pos: 'verb' },
-      { word: 'Be honest', meaning: 'd r st olmak', pos: 'phrase' }
+      { word: 'Be honest', meaning: 'Dürüst olmak', pos: 'phrase' }
     ],
     collocations: ['trick someone into', 'play a trick', 'confidence trick'],
     collocationMeanings: {
-      'trick someone into': 'birini yapmaya kand rmak',
-      'play a trick': 'oyun oynamak (kand rmak)',
-      'confidence trick': 'doland r c l k'
+      'trick someone into': 'birini yapmaya kandırmak',
+      'play a trick': 'oyun oynamak (kandırmak)',
+      'confidence trick': 'dolandırıcılık'
     },
     examples: ["I suddenly realized that I'd been tricked."],
-    exampleTranslations: ['Aniden kand r ld   m  fark ettim.']
+    exampleTranslations: ['Aniden kandırıldığımı fark ettim.']
   },
   {
     id: 'trophy',
     word: 'Trophy',
     pos: 'noun',
-    meaning: 'kupa,  d l',
-    definition: 'A prize, such as a large silver cup, given to the winner of a competition.',
-    ipa: '/ tr  .fi/',
+    meaning: 'Kupa, ödül',
+    definition: 'A large silver cup given as a prize to the winner of a competition.',
+    ipa: '/ˈtrəʊ.fi/',
     level: 'intermediate',
     wordFamily: [],
     synonyms: [
-      { word: 'Award', meaning: ' d l', pos: 'noun' },
-      { word: 'Prize', meaning: ' d l', pos: 'noun' },
-      { word: 'Cup', meaning: 'kupa', pos: 'noun' }
+      { word: 'Award', meaning: 'Ödül', pos: 'noun' },
+      { word: 'Cup', meaning: 'Kupa', pos: 'noun' }
     ],
     antonyms: [],
     collocations: ['win a trophy', 'lift a trophy', 'championship trophy'],
     collocationMeanings: {
       'win a trophy': 'kupa kazanmak',
-      'lift a trophy': 'kupay  kald rmak',
-      'championship trophy': ' ampiyonluk kupas '
+      'lift a trophy': 'kupayı kaldırmak',
+      'championship trophy': 'şampiyonluk kupası'
     },
     examples: ['Mexico has not lifted the trophy since 1975.'],
-    exampleTranslations: ['Meksika 1975 ten beri kupay  kald rmad .']
+    exampleTranslations: ['Meksika 1975’ten beri kupayı kaldırmadı.']
   },
   {
     id: 'try_out',
     word: 'Try out',
     pos: 'phrasal verb',
-    meaning: 'denemek (test etmek)',
-    definition: 'To use or do something to see if it is suitable or if you like it.',
-    ipa: '/tra  a t/',
+    meaning: 'Denemek, test etmek',
+    definition: 'To test someone or something to see what they are like or whether they are suitable.',
+    ipa: '/traɪ aʊt/',
     level: 'intermediate',
-    wordFamily: [
-      { word: 'trial', pos: 'noun', meaning: 'deneme/test' }
-    ],
+    wordFamily: [],
     synonyms: [
-      { word: 'Test', meaning: 'test etmek', pos: 'verb' },
-      { word: 'Experiment with', meaning: 'denemek', pos: 'phrase' },
-      { word: 'Sample', meaning: 'tad na bakmak/denemek', pos: 'verb' }
+      { word: 'Test', meaning: 'Test etmek', pos: 'verb' },
+      { word: 'Trial', meaning: 'Denemek', pos: 'verb' }
     ],
     antonyms: [],
     collocations: ['try out a new plan', 'try out for a team'],
     collocationMeanings: {
-      'try out a new plan': 'yeni bir plan  denemek',
-      'try out for a team': 'tak m se melerine girmek'
+      'try out a new plan': 'yeni bir planı denemek',
+      'try out for a team': 'takım seçmelerine girmek'
     },
     examples: ['John hopes to try out his new running shoes this weekend.'],
-    exampleTranslations: ['John bu hafta sonu yeni ko u ayakkab lar n  denemeyi umuyor.']
+    exampleTranslations: ['John bu hafta sonu yeni koşu ayakkabılarını denemeyi umuyor.']
   },
   {
     id: 'turn_dream_into_reality',
     word: 'Turn a dream into reality',
     pos: 'phrase',
-    meaning: 'hayali ger e e d n  t rmek',
-    definition: 'To make something that you have long desired actually happen.',
-    ipa: '/t  n   dri m   n.tu ri  l. .ti/',
+    meaning: 'Hayali gerçeğe dönüştürmek',
+    definition: 'To make something happen that you have always hoped for.',
+    ipa: '/tɜːn ə driːm ˈɪn.tu riˈæl.ə.ti/',
     level: 'intermediate',
     wordFamily: [],
     synonyms: [
-      { word: 'Realize', meaning: 'ger ekle tirmek', pos: 'verb' },
-      { word: 'Fulfill', meaning: 'yerine getirmek/ger ekle tirmek', pos: 'verb' },
-      { word: 'Achieve', meaning: 'ba armak', pos: 'verb' }
+      { word: 'Materialize', meaning: 'Gerçekleşmek', pos: 'verb' }
     ],
-    antonyms: [
-      { word: 'Abandon a dream', meaning: 'hayalinden vazge mek', pos: 'phrase' }
-    ],
+    antonyms: [],
     collocations: ['work to turn a dream into reality'],
     collocationMeanings: {
-      'work to turn a dream into reality': 'hayali ger ekle tirmek i in  al  mak'
+      'work to turn a dream into reality': 'hayali gerçekleştirmek için çalışmak'
     },
     examples: ['She turned her dream of living in Paris into a reality.'],
-    exampleTranslations: ['Paris te ya ama hayalini ger e e d n  t rd .']
+    exampleTranslations: ['Paris’te yaşama hayalini gerçeğe dönüştürdü.']
   },
   {
     id: 'turn_down',
     word: 'Turn down',
     pos: 'phrasal verb',
-    meaning: 'k smak (sesi/ s y ) veya reddetmek',
-    definition: 'To refuse an offer or request OR to reduce the amount of sound, heat, etc.',
-    ipa: '/t  n da n/',
+    meaning: 'Kısmak veya Reddetmek',
+    definition: 'To make something lower/quieter OR to refuse an offer.',
+    ipa: '/tɜːn daʊn/',
     level: 'intermediate',
     wordFamily: [],
     synonyms: [
-      { word: 'Reject', meaning: 'reddetmek', pos: 'verb' },
-      { word: 'Refuse', meaning: 'geri  evirmek', pos: 'verb' },
-      { word: 'Lower', meaning: 'azaltmak/k smak', pos: 'verb' }
+      { word: 'Reject', meaning: 'Reddetmek', pos: 'verb' },
+      { word: 'Decline', meaning: 'Geri çevirmek', pos: 'verb' }
     ],
     antonyms: [
-      { word: 'Accept', meaning: 'kabul etmek', pos: 'verb' },
-      { word: 'Increase', meaning: 'art rmak/a mak', pos: 'verb' }
+      { word: 'Accept', meaning: 'Kabul etmek', pos: 'verb' },
+      { word: 'Turn up', meaning: 'Sesi açmak', pos: 'phrasal verb' }
     ],
     collocations: ['turn down the volume', 'turn down an offer', 'turn down the heat'],
     collocationMeanings: {
-      'turn down the volume': 'sesi k smak',
+      'turn down the volume': 'sesi kısmak',
       'turn down an offer': 'teklifi reddetmek',
-      'turn down the heat': ' s y  k smak'
+      'turn down the heat': 'ısıyı kısmak'
     },
     examples: ['Can you turn the music down a bit?'],
-    exampleTranslations: ['M zi in sesini biraz k sabilir misin?']
+    exampleTranslations: ['Müziğin sesini biraz kısabilir misin?']
   },
   {
     id: 'turn_up',
     word: 'Turn up',
     pos: 'phrasal verb',
-    meaning: '  kagelmek, damlamak',
-    definition: 'To arrive or appear, often unexpectedly.',
-    ipa: '/t  n  p/',
+    meaning: 'Çıkagelmek, varmak',
+    definition: 'To arrive, often unexpectedly or without making an appointment.',
+    ipa: '/tɜːn ʌp/',
     level: 'intermediate',
     wordFamily: [],
     synonyms: [
-      { word: 'Arrive', meaning: 'varmak', pos: 'verb' },
-      { word: 'Appear', meaning: 'g r nmek/ortaya   kmak', pos: 'verb' },
-      { word: 'Show up', meaning: 'gelmek/ortaya   kmak', pos: 'verb' }
+      { word: 'Arrive', meaning: 'Varmak', pos: 'verb' },
+      { word: 'Show up', meaning: 'Ortaya çıkmak', pos: 'phrasal verb' }
     ],
     antonyms: [
-      { word: 'Leave', meaning: 'ayr lmak', pos: 'verb' },
-      { word: 'Disappear', meaning: 'yok olmak', pos: 'verb' }
+      { word: 'Depart', meaning: 'Ayrılmak', pos: 'verb' }
     ],
     collocations: ['turn up late', 'unexpectedly turn up', 'turn up the volume'],
     collocationMeanings: {
-      'turn up late': 'ge  gelmek',
-      'unexpectedly turn up': 'aniden/beklenmedik  ekilde ortaya   kmak',
-      'turn up the volume': 'sesi a mak'
+      'turn up late': 'geç gelmek',
+      'unexpectedly turn up': 'beklenmedik şekilde ortaya çıkmak',
+      'turn up the volume': 'sesi açmak'
     },
-    examples: ['There is no need to book   just turn up on the night.'],
-    exampleTranslations: ['Rezervasyon yapmaya gerek yok   o gece   kagelmeniz yeterli.']
+    examples: ['There is no need to book – just turn up on the night.'],
+    exampleTranslations: ['Rezervasyon yapmaya gerek yok – o gece çıkagelmeniz yeterli.']
   },
   {
     id: 'typical_of',
     word: 'Typical of',
     pos: 'adjective',
-    meaning: 'tipik,  zg ',
-    definition: 'Having all the characteristics that you would usually expect from someone or something.',
-    ipa: '/ t p. .k l  v/',
+    meaning: 'Tipik, -e özgü',
+    definition: 'Behaving in the way that someone or something usually behaves.',
+    ipa: '/ˈtɪp.ɪ.kəl əv/',
     level: 'intermediate',
     wordFamily: [
-      { word: 'type', pos: 'noun', meaning: 't r/tip' },
-      { word: 'typically', pos: 'adverb', meaning: 'tipik olarak' }
+      { word: 'typically', pos: 'adv', meaning: 'tipik olarak' }
     ],
     synonyms: [
-      { word: 'Characteristic of', meaning: 'karakteristik/has', pos: 'phrase' },
-      { word: 'Representative of', meaning: 'temsil eden', pos: 'phrase' }
+      { word: 'Characteristic of', meaning: 'Karakteristiği olan', pos: 'phrase' }
     ],
     antonyms: [
-      { word: 'Unusual', meaning: 'ola and   ', pos: 'adj' },
-      { word: 'Abnormal', meaning: 'normal olmayan', pos: 'adj' },
-      { word: 'Atypical', meaning: 'tipik olmayan', pos: 'adj' }
+      { word: 'Unusual', meaning: 'Sıradışı', pos: 'adj' },
+      { word: 'Atypical', meaning: 'Tipik olmayan', pos: 'adj' }
     ],
     collocations: ['typical of someone', 'typical behavior', 'typical example'],
     collocationMeanings: {
-      'typical of someone': 'birine  zg ',
-      'typical behavior': 'tipik davran  ',
-      'typical example': 'tipik bir  rnek'
+      'typical of someone': 'birine özgü',
+      'typical behavior': 'tipik davranış',
+      'typical example': 'tipik bir örnek'
     },
     examples: ['The story is typical of this newspaper.'],
-    exampleTranslations: ['Bu hikaye bu gazeteye  zg d r (onun tarz d r).']
+    exampleTranslations: ['Bu hikaye bu gazeteye özgüdür (onun tarzıdır).']
   },
   {
     id: 'underpaid',
     word: 'Underpaid',
     pos: 'adjective',
-    meaning: 'd   k  cretli, hakk   denmeyen',
-    definition: 'Paid too little for the work that you do.',
-    ipa: '/  n.d  pe d/',
+    meaning: 'Düşük ücretli, hakkı ödenmeyen',
+    definition: 'Not earning enough money for work that you do.',
+    ipa: '/ˌʌn.dəˈpeɪd/',
     level: 'intermediate',
     wordFamily: [
-      { word: 'pay', pos: 'verb/noun', meaning: ' demek/ deme' },
-      { word: 'payment', pos: 'noun', meaning: ' deme' }
+      { word: 'pay', pos: 'verb', meaning: 'ödemek' }
     ],
-    synonyms: [
-      { word: 'Undercompensated', meaning: 'yetersiz  deme alan', pos: 'adj' }
-    ],
+    synonyms: [],
     antonyms: [
-      { word: 'Overpaid', meaning: ' ok y ksek  cretli', pos: 'adj' },
-      { word: 'Well-paid', meaning: 'iyi  cretli', pos: 'adj' }
+      { word: 'Overpaid', meaning: 'Hakkından fazla alan', pos: 'adj' }
     ],
     collocations: ['underpaid workers', 'feel underpaid'],
     collocationMeanings: {
-      'underpaid workers': 'd   k maa l  i  iler',
-      'feel underpaid': 'd   k  cret ald   n  hissetmek'
+      'underpaid workers': 'düşük maaşlı işçiler',
+      'feel underpaid': 'düşük ücret aldığını hissetmek'
     },
     examples: ['He works very hard but is underpaid.'],
-    exampleTranslations: [' ok s k   al   yor ama d   k  cret al yor.']
+    exampleTranslations: ['Çok sıkı çalışıyor ama düşük ücret alıyor.']
   },
   {
     id: 'unique',
     word: 'Unique',
     pos: 'adjective',
-    meaning: 'e siz, benzersiz',
-    definition: 'Being the only existing one of its type or, more generally, unusual, or special.',
-    ipa: '/ju  ni k/',
+    meaning: 'Eşsiz, benzersiz',
+    definition: 'Not the same as anything or anyone else.',
+    ipa: '/juːˈniːk/',
     level: 'intermediate',
     wordFamily: [
-      { word: 'uniquely', pos: 'adverb', meaning: 'benzersiz bir  ekilde' },
-      { word: 'uniqueness', pos: 'noun', meaning: 'e sizlik' }
+      { word: 'uniquely', pos: 'adv', meaning: 'benzersiz bir şekilde' }
     ],
     synonyms: [
-      { word: 'Singular', meaning: 'tekil/e siz', pos: 'adj' },
-      { word: 'Exceptional', meaning: 'istisnai', pos: 'adj' },
-      { word: 'Unrivalled', meaning: 'rakipsiz', pos: 'adj' }
+      { word: 'Distinctive', meaning: 'Ayırt edici', pos: 'adj' },
+      { word: 'One-of-a-kind', meaning: 'Türünün tek örneği', pos: 'adj' }
     ],
     antonyms: [
-      { word: 'Common', meaning: 'yayg n', pos: 'adj' },
-      { word: 'Ordinary', meaning: 's radan', pos: 'adj' },
-      { word: 'Normal', meaning: 'normal', pos: 'adj' }
+      { word: 'Common', meaning: 'Yaygın', pos: 'adj' },
+      { word: 'Ordinary', meaning: 'Sıradan', pos: 'adj' }
     ],
     collocations: ['totally unique', 'unique style', 'unique opportunity'],
     collocationMeanings: {
       'totally unique': 'tamamen benzersiz',
-      'unique style': 'e siz stil',
-      'unique opportunity': 'e siz bir f rsat'
+      'unique style': 'eşsiz stil',
+      'unique opportunity': 'eşsiz bir fırsat'
     },
     examples: ['They have a totally unique approach to staff training.'],
-    exampleTranslations: ['Personel e itimi konusunda tamamen benzersiz bir yakla  m lar  var.']
+    exampleTranslations: ['Personel eğitimi konusunda tamamen benzersiz bir yaklaşımları var.']
   },
   {
     id: 'use_up',
     word: 'Use up',
     pos: 'phrasal verb',
-    meaning: 't ketmek, bitirmek',
-    definition: 'To finish a supply of something.',
-    ipa: '/ju z  p/',
+    meaning: 'Tüketmek, bitirmek',
+    definition: 'To use all of a supply of something.',
+    ipa: '/juːz ʌp/',
     level: 'intermediate',
-    wordFamily: [
-      { word: 'usable', pos: 'adj', meaning: 'kullan labilir' }
-    ],
+    wordFamily: [],
     synonyms: [
-      { word: 'Exhaust', meaning: 't ketmek', pos: 'verb' },
-      { word: 'Consume', meaning: 't ketmek', pos: 'verb' },
-      { word: 'Deplete', meaning: 'bo altmak/azaltmak', pos: 'verb' }
+      { word: 'Exhaust', meaning: 'Tüketmek', pos: 'verb' },
+      { word: 'Consume', meaning: 'Bitirmek', pos: 'verb' }
     ],
     antonyms: [
-      { word: 'Replenish', meaning: 'yeniden doldurmak', pos: 'verb' },
-      { word: 'Save', meaning: 'biriktirmek/saklamak', pos: 'verb' }
+      { word: 'Save', meaning: 'Biriktirmek', pos: 'verb' }
     ],
     collocations: ['use up energy', 'use up all the resources', 'use up time'],
     collocationMeanings: {
-      'use up energy': 'enerjiyi t ketmek',
-      'use up all the resources': 't m kaynaklar  bitirmek',
+      'use up energy': 'enerjiyi tüketmek',
+      'use up all the resources': 'tüm kaynakları bitirmek',
       'use up time': 'vakit harcamak'
     },
     examples: ['We have used up all the sugar so you will need to get some more.'],
-    exampleTranslations: ['T m  ekeri bitirdik, bu y zden biraz daha alman gerekecek.']
+    exampleTranslations: ['Tüm şekeri bitirdik, bu yüzden biraz daha alman gerekecek.']
   },
   {
     id: 'warn',
     word: 'Warn',
     pos: 'verb',
-    meaning: 'uyarmak, ikaz etmek',
-    definition: 'To make someone realize a possible danger or problem, especially one in the future.',
-    ipa: '/w  n/',
+    meaning: 'Uyarmak, ikaz etmek',
+    definition: 'To tell someone that something bad will happen if they do something.',
+    ipa: '/wɔːn/',
     level: 'intermediate',
     wordFamily: [
-      { word: 'warning', pos: 'noun', meaning: 'uyar ' }
+      { word: 'warning', pos: 'noun', meaning: 'uyarı' }
     ],
     synonyms: [
-      { word: 'Alert', meaning: 'alarm vermek/uyarmak', pos: 'verb' },
-      { word: 'Caution', meaning: 'tembihlemek/uyarmak', pos: 'verb' },
-      { word: 'Notify', meaning: 'bildirmek', pos: 'verb' }
+      { word: 'Caution', meaning: 'Sakındırmak', pos: 'verb' },
+      { word: 'Alert', meaning: 'Alarma geçirmek', pos: 'verb' }
     ],
     antonyms: [],
     collocations: ['warn someone against', 'warn about', 'strongly warn'],
     collocationMeanings: {
-      'warn someone against': 'birini  eye kar   uyarmak',
-      'warn about': 'hakk nda uyarmak',
-      'strongly warn': ' iddetle uyarmak'
+      'warn someone against': 'birini şeye karşı uyarmak',
+      'warn about': 'hakkında uyarmak',
+      'strongly warn': 'şiddetle uyarmak'
     },
     examples: ['I warned you not to go to that party last night.'],
-    exampleTranslations: ['D n gece o partiye gitmemen konusunda seni uyarm  t m.']
+    exampleTranslations: ['Dün gece o partiye gitmemen konusunda seni uyarmıştım.']
   },
   {
     id: 'waste_b1',
     word: 'Waste',
     pos: 'noun',
-    meaning: 'israf, at k, bo a harcama',
-    definition: 'An unnecessary or wrong use of money, substances, time, energy, or abilities.',
-    ipa: '/we st/',
+    meaning: 'İsraf, atık, boşa harcama',
+    definition: 'Failure to use something valuable in an effective way.',
+    ipa: '/weɪst/',
     level: 'intermediate',
     wordFamily: [
-      { word: 'wasteful', pos: 'adj', meaning: 'm srif/savurgan' },
-      { word: 'wastage', pos: 'noun', meaning: 'fire/israf' }
+      { word: 'wasteful', pos: 'adj', meaning: 'savurgan' }
     ],
     synonyms: [
-      { word: 'Squander', meaning: ' ar ur etmek', pos: 'verb' },
-      { word: 'Misuse', meaning: 'k t ye kullanma', pos: 'noun' },
-      { word: 'Refuse', meaning: '  p/at k', pos: 'noun' }
+      { word: 'Loss', meaning: 'Kayıp', pos: 'noun' },
+      { word: 'Squander', meaning: 'Harcayıp bitirme', pos: 'noun' }
     ],
     antonyms: [
-      { word: 'Saving', meaning: 'tasarruf', pos: 'noun' },
-      { word: 'Thrift', meaning: 'tutum', pos: 'noun' },
-      { word: 'Economy', meaning: 'ekonomi/tasarruf', pos: 'noun' }
+      { word: 'Saving', meaning: 'Tasarruf', pos: 'noun' }
     ],
     collocations: ['waste of time', 'waste of money', 'toxic waste'],
     collocationMeanings: {
-      'waste of time': 'zaman kayb ',
-      'waste of money': 'para israf ',
-      'toxic waste': 'toksik at k'
+      'waste of time': 'zaman kaybı',
+      'waste of money': 'para israfı',
+      'toxic waste': 'toksik atık'
     },
-    examples: ['All this uneaten food   what a waste!'],
-    exampleTranslations: ['T m bu yenmemi  yiyecekler   ne israf!']
+    examples: ['All this uneaten food – what a waste!'],
+    exampleTranslations: ['Tüm bu yenmemiş yiyecekler – ne israf!']
   },
   {
     id: 'watery',
     word: 'Watery',
     pos: 'adjective',
-    meaning: 'sulu, tats z, k vams z',
-    definition: 'Containing or filled with water, or resembling water.',
-    ipa: '/ w  .t r.i/',
+    meaning: 'Sulu, tatsız, kıvamsız',
+    definition: 'Containing a lot of water and having a weak taste.',
+    ipa: '/ˈwɔː.tər.i/',
     level: 'intermediate',
     wordFamily: [
       { word: 'water', pos: 'noun', meaning: 'su' }
     ],
     synonyms: [
-      { word: 'Diluted', meaning: 'seyreltilmi /sulu', pos: 'adj' },
-      { word: 'Thin', meaning: 'ak  kan/c v k', pos: 'adj' },
-      { word: 'Weak', meaning: 'zay f/tats z', pos: 'adj' }
+      { word: 'Diluted', meaning: 'Sulandırılmış', pos: 'adj' },
+      { word: 'Thin', meaning: 'İnce/Sulu', pos: 'adj' }
     ],
     antonyms: [
-      { word: 'Concentrated', meaning: 'yo un/konsantre', pos: 'adj' },
-      { word: 'Thick', meaning: 'koyu', pos: 'adj' }
+      { word: 'Thick', meaning: 'Koyu/Kıvamlı', pos: 'adj' },
+      { word: 'Rich', meaning: 'Zengin/Yoğun', pos: 'adj' }
     ],
     collocations: ['watery soup', 'watery eyes', 'pale and watery'],
     collocationMeanings: {
-      'watery soup': 'sulu/tats z  orba',
-      'watery eyes': 'ya l /nemli g zler',
+      'watery soup': 'sulu/tatsız çorba',
+      'watery eyes': 'yaşlı/nemli gözler',
       'pale and watery': 'soluk ve sulu'
     },
     examples: ['They sell very watery coffee.'],
-    exampleTranslations: [' ok sulu (tats z) kahve sat yorlar.']
+    exampleTranslations: ['Çok sulu (tatsız) kahve satıyorlar.']
   },
   {
     id: 'whisper',
     word: 'Whisper',
     pos: 'verb',
-    meaning: 'f s ldamak',
-    definition: 'To speak very softly, using one s breath rather than one s throat.',
-    ipa: '/ w s.p r/',
+    meaning: 'Fısıldamak',
+    definition: 'To say something very quietly so that other people cannot hear you.',
+    ipa: '/ˈwɪs.pər/',
     level: 'intermediate',
     wordFamily: [
-      { word: 'whisper', pos: 'noun', meaning: 'f s lt ' }
+      { word: 'whisper', pos: 'noun', meaning: 'fısıltı' }
     ],
     synonyms: [
-      { word: 'Murmur', meaning: 'm r ldanmak', pos: 'verb' },
-      { word: 'Mutter', meaning: 'm r ldanmak/s ylenmek', pos: 'verb' }
+      { word: 'Mutter', meaning: 'Mırıldanmak', pos: 'verb' },
+      { word: 'Murmur', meaning: 'Uğuldamak/Mırıldanmak', pos: 'verb' }
     ],
     antonyms: [
-      { word: 'Shout', meaning: 'ba  rmak', pos: 'verb' },
-      { word: 'Yell', meaning: 'hayk rmak', pos: 'verb' },
-      { word: 'Roar', meaning: 'k kremek/ba  rmak', pos: 'verb' }
+      { word: 'Shout', meaning: 'Bağırmak', pos: 'verb' },
+      { word: 'Yell', meaning: 'Haykırmak', pos: 'verb' }
     ],
     collocations: ['whisper softly', 'stage whisper', 'in a whisper'],
     collocationMeanings: {
-      'whisper softly': 'yumu ak a f s ldamak',
-      'stage whisper': 'sahne f s lt s ',
-      'in a whisper': 'f s lt  ile'
+      'whisper softly': 'yumuşakça fısıldamak',
+      'stage whisper': 'sahne fısıltısı',
+      'in a whisper': 'fısıltı ile'
     },
     examples: ["'When can I see you again?' he whispered softly."],
-    exampleTranslations: ["'Seni tekrar ne zaman g rebilirim?' diye f s ldad  yumu ak a."]
+    exampleTranslations: ["'Seni tekrar ne zaman görebilirim?' diye fısıldadı yumuşakça."]
   },
   {
     id: 'wonder',
     word: 'Wonder',
     pos: 'verb',
-    meaning: 'merak etmek',
-    definition: 'To ask yourself questions or express a wish to know about something.',
-    ipa: '/ w n.d r/',
+    meaning: 'Merak etmek',
+    definition: 'To think about something because you want to know more facts or details about it.',
+    ipa: '/ˈwʌn.dər/',
     level: 'intermediate',
     wordFamily: [
       { word: 'wonderful', pos: 'adj', meaning: 'harika' },
-      { word: 'wonderfully', pos: 'adverb', meaning: 'harika bir  ekilde' }
+      { word: 'wonderfully', pos: 'adv', meaning: 'harika bir şekilde' }
     ],
     synonyms: [
-      { word: 'Ponder', meaning: ' zerine d   nmek', pos: 'verb' },
-      { word: 'Speculate', meaning: 'tahmin y r tmek/merak etmek', pos: 'verb' },
-      { word: 'Query', meaning: 'sorgulamak', pos: 'verb' }
+      { word: 'Ponder', meaning: 'Üzerine düşünmek', pos: 'verb' },
+      { word: 'Query', meaning: 'Sorgulamak', pos: 'verb' }
     ],
-    antonyms: [
-      { word: 'Ignore', meaning: 'g rmezden gelmek', pos: 'verb' },
-      { word: 'Know', meaning: 'bilmek', pos: 'verb' }
-    ],
+    antonyms: [],
     collocations: ['wonder why', 'no wonder', 'wonder if'],
     collocationMeanings: {
       'wonder why': 'nedenini merak etmek',
-      'no wonder': ' a mamal ',
-      'wonder if': 'acaba ... m  diye merak etmek'
+      'no wonder': 'şaşmamalı',
+      'wonder if': 'acaba ... mı diye merak etmek'
     },
     examples: ["'How did they find out?' she wondered."],
-    exampleTranslations: ["'Nas l   rendiler?' diye merak etti."]
+    exampleTranslations: ["'Nasıl öğrendiler?' diye merak etti."]
   },
   {
     id: 'work_out',
     word: 'Work out',
     pos: 'phrasal verb',
-    meaning: '  zmek, anlamak (veya antrenman yapmak)',
-    definition: 'To find a solution to a problem OR to do physical exercises.',
-    ipa: '/w  k a t/',
+    meaning: 'Çözmek veya Antrenman yapmak',
+    definition: 'To find an answer by thinking carefully OR to do physical exercise.',
+    ipa: '/wɜːk aʊt/',
     level: 'intermediate',
     wordFamily: [],
     synonyms: [
-      { word: 'Solve', meaning: '  zmek', pos: 'verb' },
-      { word: 'Exercise', meaning: 'egzersiz yapmak', pos: 'verb' },
-      { word: 'Understand', meaning: 'anlamak', pos: 'verb' }
+      { word: 'Solve', meaning: 'Çözmek', pos: 'verb' },
+      { word: 'Exercise', meaning: 'Egzersiz yapmak', pos: 'verb' }
     ],
-    antonyms: [
-      { word: 'Fail', meaning: 'ba ar s z olmak', pos: 'verb' }
-    ],
+    antonyms: [],
     collocations: ['work out a problem', 'work out at the gym', 'work out well'],
     collocationMeanings: {
-      'work out a problem': 'bir sorunu   zmek',
+      'work out a problem': 'bir sorunu çözmek',
       'work out at the gym': 'spor salonunda antrenman yapmak',
       'work out well': 'sonucun iyi bitmesi/iyi gitmek'
     },
     examples: ["I can't work out what to do."],
-    exampleTranslations: ['Ne yapaca  m    zemiyorum.']
+    exampleTranslations: ['Ne yapacağımı çözemiyorum.']
   },
   {
     id: 'work_towards_a_goal',
     word: 'Work towards a goal',
     pos: 'phrase',
-    meaning: 'bir hedefe y nelik  al  mak',
-    definition: 'To do activities that help make progress towards a desired achievement.',
-    ipa: '/w  k t  w  rdz      l/',
+    meaning: 'Bir hedefe yönelik çalışmak',
+    definition: 'To do things that help you to make progress towards something you want to achieve.',
+    ipa: '/wɜːk təˈwɔːrdz ə ɡəʊl/',
     level: 'intermediate',
     wordFamily: [],
     synonyms: [
-      { word: 'Strive for', meaning: ' abalamak', pos: 'phrase' },
-      { word: 'Pursue', meaning: 'pe inden ko mak', pos: 'verb' }
+      { word: 'Pursue a goal', meaning: 'Hedef peşinde koşmak', pos: 'phrase' }
     ],
-    antonyms: [
-      { word: 'Give up', meaning: 'vazge mek', pos: 'phrasal verb' }
-    ],
+    antonyms: [],
     collocations: ['hard work towards a goal'],
     collocationMeanings: {
-      'hard work towards a goal': 'bir hedef do rultusunda s k   al  ma'
+      'hard work towards a goal': 'bir hedef doğrultusunda sıkı çalışma'
     },
     examples: ['Daniel is working towards his goal of becoming a chef.'],
-    exampleTranslations: ['Daniel a    olma hedefine do ru  al   yor.']
+    exampleTranslations: ['Daniel aşçı olma hedefine doğru çalışıyor.']
   },
+
 
   // --- UPPER-INTERMEDIATE (B2) ---
 
@@ -8918,7 +9567,7 @@ export const vocabularyData: VocabularyWord[] = [
     id: 'overwhelmed',
     word: 'Overwhelmed',
     pos: 'adj',
-    meaning: 'Bunallmış, (duygu/iş altında) boğulmuş',
+    meaning: 'Bunalmış, (duygu/iş altında) boğulmuş',
     definition: 'Feeling unable to cope with all the things that need to be done.',
     ipa: '/ˌəʊ.vəˈwelmd/',
     level: 'upper-intermediate',
