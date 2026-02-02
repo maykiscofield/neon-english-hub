@@ -1,43 +1,25 @@
-// src/services/aiService.ts
+const API_BASE_URL = import.meta.env.VITE_API_URL || 'http://localhost:3001';
 
 export const getWritingFeedback = async (prompt: string, userText: string) => {
   try {
-    const response = await fetch('/api/gemini', {
+    console.log('🔄 Backend istek:', `${API_BASE_URL}/api/gemini`);
+    
+    const response = await fetch(`${API_BASE_URL}/api/gemini`, {
       method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
+      headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ prompt, userText }),
     });
 
-    // Detaylı error handling
     if (!response.ok) {
-      let errorMessage = "Bağlantı hatası";
-      try {
-        const errorData = await response.json();
-        errorMessage = errorData.error || errorData.message || errorMessage;
-      } catch {
-        errorMessage = `HTTP ${response.status}: ${response.statusText}`;
-      }
-      throw new Error(errorMessage);
+      const errorData = await response.json().catch(() => ({}));
+      throw new Error(errorData.error || `HTTP ${response.status}`);
     }
 
     const data = await response.json();
-
-    // Gemini yanıt yapısını kontrol et
-    if (data.candidates?.[0]?.content?.parts?.[0]?.text) {
-      return data.candidates[0].content.parts[0].text;
-    }
-
-    // Alternatif yanıt yapıları
-    if (data.text) {
-      return data.text;
-    }
-
-    throw new Error("AI'dan geçerli bir yanıt alınamadı.");
+    return data.candidates?.[0]?.content?.parts?.[0]?.text || "Yanıt alınamadı";
 
   } catch (error: any) {
-    console.error("API Hatası:", error);
-    return `❌ Analiz yapılamadı: ${error.message}\n\nLütfen tekrar deneyin veya sistem yöneticinize başvurun.`;
+    console.error("❌ Hata:", error);
+    return `❌ Hata: ${error.message}`;
   }
 };
